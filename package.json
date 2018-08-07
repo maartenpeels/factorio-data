@@ -1,0 +1,17 @@
+{
+  "name": "factorio-data",
+  "version": "0.1.0",
+  "description": "Factorio Data",
+  "author": "Teoxoy",
+  "license": "MIT",
+  "scripts": {
+    "build": "node src"
+  },
+  "devDependencies": {
+    "javascript-stringify": "^1.6.0",
+    "fs-extra": "^7.0.0",
+    "jimp": "^0.3.2",
+    "lua2js": "git+https://github.com/Teoxoy/lua2js.git",
+    "node-sprite-generator": "^0.10.2"
+  }
+}
