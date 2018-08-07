@@ -140,11 +140,12 @@ function cropAndGenSpritesheet(paths, spritesheetName, tempDir) {
         })
         .map(data => {
             if (typeof data === 'string') return data
-            Jimp.read(data.path)
+            return Jimp
+                .read(data.path)
                 .then(img => img
                     .crop(0, 0, img.bitmap.width / data.x, img.bitmap.height / data.y)
                     .write(data.outPath))
-            return data.outPath
+                .then(() => data.outPath)
         }
     )).then(paths =>
         nsg({
