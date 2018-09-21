@@ -151,7 +151,7 @@ function cropAndGenSpritesheet(paths, spritesheetName, tempDir) {
         nsg({
             src: paths,
             spritePath: spritesheetsOutDir + spritesheetName + '.png',
-            stylesheet: './json-entity.tpl',
+            stylesheet: './json.tpl',
             stylesheetPath: spritesheetsOutDir + spritesheetName + '.json',
             stylesheetOptions: { nameMapping: path => path.includes(tempDir) ?
                 path.replace(tempDir, '') :

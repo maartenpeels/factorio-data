@@ -17,3 +17,4 @@ execSync(`node inventoryLayout.js ${rawData} ${outputDirectory}prototypes/invent
 
 execSync(`node entitySprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, { stdio: 'inherit' })
 execSync(`node itemSprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, { stdio: 'inherit' })
+execSync(`node utilitySprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, { stdio: 'inherit' })

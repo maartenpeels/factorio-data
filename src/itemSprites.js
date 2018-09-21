@@ -27,7 +27,7 @@ console.log('Icon sprites: ' + iconPaths.length)
 nsg({
     src: iconPaths,
     spritePath: spritesheetsOutDir + 'iconSpritesheet.png',
-    stylesheet: './json-icon.tpl',
+    stylesheet: './json.tpl',
     stylesheetPath: spritesheetsOutDir + 'iconSpritesheet.json',
     stylesheetOptions: { nameMapping: path => path.replace(factorioDataDirectory + 'base/', '') },
     compositor: 'jimp',

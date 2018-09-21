@@ -1,0 +1,53 @@
+{
+  "frames": {
+    "graphics/cursor-boxes.png": {
+      "frame": { "x": 1, "y": 1, "w": 320, "h": 320 },
+      "sourceSize": { "w": 320, "h": 320 }
+    },
+    "graphics/hr-red-wire.png": {
+      "frame": { "x": 323, "y": 1, "w": 448, "h": 92 },
+      "sourceSize": { "w": 448, "h": 92 }
+    },
+    "graphics/hr-green-wire.png": {
+      "frame": { "x": 323, "y": 95, "w": 448, "h": 92 },
+      "sourceSize": { "w": 448, "h": 92 }
+    },
+    "graphics/hr-copper-wire.png": {
+      "frame": { "x": 323, "y": 189, "w": 448, "h": 92 },
+      "sourceSize": { "w": 448, "h": 92 }
+    },
+    "graphics/cursor-boxes-32x32.png": {
+      "frame": { "x": 1, "y": 323, "w": 320, "h": 64 },
+      "sourceSize": { "w": 320, "h": 64 }
+    },
+    "graphics/arrows/underground-lines.png": {
+      "frame": { "x": 323, "y": 323, "w": 128, "h": 64 },
+      "sourceSize": { "w": 128, "h": 64 }
+    },
+    "graphics/arrows/indication-arrow.png": {
+      "frame": { "x": 453, "y": 323, "w": 64, "h": 64 },
+      "sourceSize": { "w": 64, "h": 64 }
+    },
+    "graphics/electricity-icon-unplugged.png": {
+      "frame": { "x": 519, "y": 323, "w": 64, "h": 64 },
+      "sourceSize": { "w": 64, "h": 64 }
+    },
+    "graphics/entity-info-dark-background.png": {
+      "frame": { "x": 585, "y": 323, "w": 53, "h": 53 },
+      "sourceSize": { "w": 53, "h": 53 }
+    },
+    "graphics/arrows/fluid-indication-arrow.png": {
+      "frame": { "x": 640, "y": 323, "w": 48, "h": 48 },
+      "sourceSize": { "w": 48, "h": 48 }
+    },
+    "graphics/arrows/fluid-indication-arrow-both-ways.png": {
+      "frame": { "x": 690, "y": 323, "w": 48, "h": 48 },
+      "sourceSize": { "w": 48, "h": 48 }
+    },
+    "graphics/too-far.png": {
+      "frame": { "x": 323, "y": 283, "w": 32, "h": 32 },
+      "sourceSize": { "w": 32, "h": 32 }
+    }
+  },
+  "meta": { "image": "./utilitySpritesheet.png" }
+}
