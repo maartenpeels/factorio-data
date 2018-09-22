@@ -12,10 +12,7 @@ const utilityPaths = [
     'arrows/fluid-indication-arrow',
     'arrows/fluid-indication-arrow-both-ways',
     'arrows/indication-arrow',
-    'arrows/underground-lines',
-    'hr-copper-wire',
-    'hr-green-wire',
-    'hr-red-wire'
+    'arrows/underground-lines'
 ].map(p => factorioDataDirectory + 'core/graphics/' + p + '.png')
 
 console.log('Utility sprites: ' + utilityPaths.length)
