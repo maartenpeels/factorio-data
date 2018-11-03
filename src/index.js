@@ -19,6 +19,7 @@ execSync(`node inventoryLayout.js ${rawData} ${outputDirectory}prototypes/invent
 
 execSync(`node entitySprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
 execSync(`node itemSprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
+execSync(`node tileSprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
 execSync(`node utilitySprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
 
 glob('../data/graphics/*.png', (_, files) => {
