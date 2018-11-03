@@ -5,21 +5,22 @@ const factorioDataDirectory = 'B:/SteamLibrary/steamapps/common/Factorio/data/'
 
 const rawData = '../data/raw.json'
 const outputDirectory = '../data/'
+const options = { stdio: 'inherit' }
 
 process.chdir('./src')
 
-execSync(`node exportRawData.js ${factorioDataDirectory} ${rawData}`, { stdio: 'inherit' })
+execSync(`node exportRawData.js ${factorioDataDirectory} ${rawData}`, options)
 
-execSync(`node recipes.js ${rawData} ${outputDirectory}prototypes/recipes.js`, { stdio: 'inherit' })
-execSync(`node tiles.js ${rawData} ${outputDirectory}prototypes/tiles.js`, { stdio: 'inherit' })
-execSync(`node entities.js ${rawData} ${outputDirectory}prototypes/entities.js`, { stdio: 'inherit' })
-execSync(`node items.js ${rawData} ${outputDirectory}prototypes/items.js`, { stdio: 'inherit' })
-execSync(`node inventoryLayout.js ${rawData} ${outputDirectory}prototypes/inventoryLayout.js`, { stdio: 'inherit' })
+execSync(`node recipes.js ${rawData} ${outputDirectory}prototypes/recipes.js`, options)
+execSync(`node tiles.js ${rawData} ${outputDirectory}prototypes/tiles.js`, options)
+execSync(`node entities.js ${rawData} ${outputDirectory}prototypes/entities.js`, options)
+execSync(`node items.js ${rawData} ${outputDirectory}prototypes/items.js`, options)
+execSync(`node inventoryLayout.js ${rawData} ${outputDirectory}prototypes/inventoryLayout.js`, options)
 
-execSync(`node entitySprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, { stdio: 'inherit' })
-execSync(`node itemSprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, { stdio: 'inherit' })
-execSync(`node utilitySprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, { stdio: 'inherit' })
+execSync(`node entitySprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
+execSync(`node itemSprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
+execSync(`node utilitySprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
 
 glob('../data/graphics/*.png', (_, files) => {
-    files.forEach(f => execSync(`..\\lib\\cwebp -lossless ${f} -o ${f.replace('png', 'webp')}`, { stdio: 'inherit' }))
+    files.forEach(f => execSync(`..\\lib\\cwebp -lossless ${f} -o ${f.replace('png', 'webp')}`, options))
 })
