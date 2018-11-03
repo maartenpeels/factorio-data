@@ -1,4 +1,5 @@
 const execSync = require('child_process').execSync
+const glob = require('glob')
 
 const factorioDataDirectory = 'B:/SteamLibrary/steamapps/common/Factorio/data/'
 
@@ -18,3 +19,7 @@ execSync(`node inventoryLayout.js ${rawData} ${outputDirectory}prototypes/invent
 execSync(`node entitySprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, { stdio: 'inherit' })
 execSync(`node itemSprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, { stdio: 'inherit' })
 execSync(`node utilitySprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, { stdio: 'inherit' })
+
+glob('../data/graphics/*.png', (_, files) => {
+    files.forEach(f => execSync(`..\\lib\\cwebp -lossless ${f} -o ${f.replace('png', 'webp')}`, { stdio: 'inherit' }))
+})

@@ -8,8 +8,9 @@
     "build": "node src"
   },
   "devDependencies": {
-    "javascript-stringify": "^1.6.0",
     "fs-extra": "^7.0.0",
+    "glob": "^7.1.3",
+    "javascript-stringify": "^1.6.0",
     "jimp": "^0.3.2",
     "lua2js": "git+https://github.com/Teoxoy/lua2js.git",
     "node-sprite-generator": "^0.10.2"
