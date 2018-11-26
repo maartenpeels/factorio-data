@@ -106,10 +106,8 @@ function add_to_Y_shift(y_shift, layer) {
     if (layer.hr_version) layer.hr_version.shift[1] += y_shift
 }
 
-// Fix inconsistent radiuses
+// Fix inconsistent radius
 entities.beacon.supply_area_distance += 1
-entities.roboport.construction_radius += 4
-entities.roboport.logistics_radius += 4
 
 console.log('Entities: ' + Object.keys(entities).length)
 
