@@ -31,7 +31,7 @@ In addition to all entity properties I've added new ones:
 
 ### items.js
 
-It contains all items in the game including fluids and virtual signals.
+It contains all items in the game including fluids and virtual signals. It also contains fluid recipes because I needed the icons.
 
 ### inventoryLayout.js
 

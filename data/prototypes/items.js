@@ -4,41 +4,6 @@ module.exports = {
     name: 'firearm_magazine',
     icon: 'graphics/icons/firearm-magazine.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    ammo_type: {
-      category: 'bullet',
-      action: [
-        {
-          type: 'direct',
-          action_delivery: [
-            {
-              type: 'instant',
-              source_effects: [
-                {
-                  type: 'create_explosion',
-                  entity_name: 'explosion_gunshot'
-                }
-              ],
-              target_effects: [
-                {
-                  type: 'create_entity',
-                  entity_name: 'explosion_hit'
-                },
-                {
-                  type: 'damage',
-                  damage: {
-                    amount: 5,
-                    type: 'physical'
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     magazine_size: 10,
     subgroup: 'ammo',
     order: 'a[basic_clips]_a[firearm_magazine]',
@@ -49,35 +14,6 @@ module.exports = {
     name: 'piercing_rounds_magazine',
     icon: 'graphics/icons/piercing-rounds-magazine.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    ammo_type: {
-      category: 'bullet',
-      action: {
-        type: 'direct',
-        action_delivery: {
-          type: 'instant',
-          source_effects: {
-            type: 'create_explosion',
-            entity_name: 'explosion_gunshot'
-          },
-          target_effects: [
-            {
-              type: 'create_entity',
-              entity_name: 'explosion_hit'
-            },
-            {
-              type: 'damage',
-              damage: {
-                amount: 8,
-                type: 'physical'
-              }
-            }
-          ]
-        }
-      }
-    },
     magazine_size: 10,
     subgroup: 'ammo',
     order: 'a[basic_clips]_b[piercing_rounds_magazine]',
@@ -88,35 +24,6 @@ module.exports = {
     name: 'uranium_rounds_magazine',
     icon: 'graphics/icons/uranium-rounds-magazine.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    ammo_type: {
-      category: 'bullet',
-      action: {
-        type: 'direct',
-        action_delivery: {
-          type: 'instant',
-          source_effects: {
-            type: 'create_explosion',
-            entity_name: 'explosion_gunshot'
-          },
-          target_effects: [
-            {
-              type: 'create_entity',
-              entity_name: 'explosion_hit'
-            },
-            {
-              type: 'damage',
-              damage: {
-                amount: 24,
-                type: 'physical'
-              }
-            }
-          ]
-        }
-      }
-    },
     magazine_size: 10,
     subgroup: 'ammo',
     order: 'a[basic_clips]_c[uranium_rounds_magazine]',
@@ -127,42 +34,6 @@ module.exports = {
     name: 'flamethrower_ammo',
     icon: 'graphics/icons/flamethrower-ammo.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    ammo_type: [
-      {
-        source_type: 'default',
-        category: 'flamethrower',
-        target_type: 'position',
-        clamp_position: true,
-        action: {
-          type: 'direct',
-          action_delivery: {
-            type: 'stream',
-            stream: 'handheld_flamethrower_fire_stream',
-            max_length: 15,
-            duration: 160
-          }
-        }
-      },
-      {
-        source_type: 'vehicle',
-        consumption_modifier: 1.125,
-        category: 'flamethrower',
-        target_type: 'position',
-        clamp_position: true,
-        action: {
-          type: 'direct',
-          action_delivery: {
-            type: 'stream',
-            stream: 'tank_flamethrower_fire_stream',
-            max_length: 9,
-            duration: 160
-          }
-        }
-      }
-    ],
     magazine_size: 100,
     subgroup: 'ammo',
     order: 'e[flamethrower]',
@@ -173,24 +44,6 @@ module.exports = {
     name: 'rocket',
     icon: 'graphics/icons/rocket.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    ammo_type: {
-      category: 'rocket',
-      action: {
-        type: 'direct',
-        action_delivery: {
-          type: 'projectile',
-          projectile: 'rocket',
-          starting_speed: 0.1,
-          source_effects: {
-            type: 'create_entity',
-            entity_name: 'explosion_hit'
-          }
-        }
-      }
-    },
     subgroup: 'ammo',
     order: 'd[rocket_launcher]_a[basic]',
     stack_size: 200
@@ -200,24 +53,6 @@ module.exports = {
     name: 'explosive_rocket',
     icon: 'graphics/icons/explosive-rocket.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    ammo_type: {
-      category: 'rocket',
-      action: {
-        type: 'direct',
-        action_delivery: {
-          type: 'projectile',
-          projectile: 'explosive_rocket',
-          starting_speed: 0.1,
-          source_effects: {
-            type: 'create_entity',
-            entity_name: 'explosion_hit'
-          }
-        }
-      }
-    },
     subgroup: 'ammo',
     order: 'd[rocket_launcher]_b[explosive]',
     stack_size: 200
@@ -227,27 +62,6 @@ module.exports = {
     name: 'atomic_bomb',
     icon: 'graphics/icons/atomic-bomb.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    ammo_type: {
-      range_modifier: 3,
-      cooldown_modifier: 3,
-      target_type: 'position',
-      category: 'rocket',
-      action: {
-        type: 'direct',
-        action_delivery: {
-          type: 'projectile',
-          projectile: 'atomic_rocket',
-          starting_speed: 0.05,
-          source_effects: {
-            type: 'create_entity',
-            entity_name: 'explosion_hit'
-          }
-        }
-      }
-    },
     subgroup: 'ammo',
     order: 'd[rocket_launcher]_c[atomic_bomb]',
     stack_size: 10
@@ -257,40 +71,6 @@ module.exports = {
     name: 'shotgun_shell',
     icon: 'graphics/icons/shotgun-shell.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    ammo_type: {
-      category: 'shotgun_shell',
-      target_type: 'direction',
-      clamp_position: true,
-      action: [
-        {
-          type: 'direct',
-          action_delivery: {
-            type: 'instant',
-            source_effects: [
-              {
-                type: 'create_explosion',
-                entity_name: 'explosion_gunshot'
-              }
-            ]
-          }
-        },
-        {
-          type: 'direct',
-          repeat_count: 12,
-          action_delivery: {
-            type: 'projectile',
-            projectile: 'shotgun_pellet',
-            starting_speed: 1,
-            direction_deviation: 0.3,
-            range_deviation: 0.3,
-            max_range: 15
-          }
-        }
-      ]
-    },
     magazine_size: 10,
     subgroup: 'ammo',
     order: 'b[shotgun]_a[basic]',
@@ -301,40 +81,6 @@ module.exports = {
     name: 'piercing_shotgun_shell',
     icon: 'graphics/icons/piercing-shotgun-shell.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    ammo_type: {
-      category: 'shotgun_shell',
-      target_type: 'direction',
-      clamp_position: true,
-      action: [
-        {
-          type: 'direct',
-          action_delivery: {
-            type: 'instant',
-            source_effects: [
-              {
-                type: 'create_explosion',
-                entity_name: 'explosion_gunshot'
-              }
-            ]
-          }
-        },
-        {
-          type: 'direct',
-          repeat_count: 16,
-          action_delivery: {
-            type: 'projectile',
-            projectile: 'piercing_shotgun_pellet',
-            starting_speed: 1,
-            direction_deviation: 0.3,
-            range_deviation: 0.3,
-            max_range: 15
-          }
-        }
-      ]
-    },
     magazine_size: 10,
     subgroup: 'ammo',
     order: 'b[shotgun]_b[piercing]',
@@ -345,29 +91,6 @@ module.exports = {
     name: 'cannon_shell',
     icon: 'graphics/icons/cannon-shell.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    ammo_type: {
-      category: 'cannon_shell',
-      target_type: 'direction',
-      action: {
-        type: 'direct',
-        action_delivery: {
-          type: 'projectile',
-          projectile: 'cannon_projectile',
-          starting_speed: 1,
-          direction_deviation: 0.1,
-          range_deviation: 0.1,
-          max_range: 30,
-          min_range: 5,
-          source_effects: {
-            type: 'create_explosion',
-            entity_name: 'explosion_gunshot'
-          }
-        }
-      }
-    },
     subgroup: 'ammo',
     order: 'd[cannon_shell]_a[basic]',
     stack_size: 200
@@ -377,29 +100,6 @@ module.exports = {
     name: 'explosive_cannon_shell',
     icon: 'graphics/icons/explosive-cannon-shell.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    ammo_type: {
-      category: 'cannon_shell',
-      target_type: 'direction',
-      action: {
-        type: 'direct',
-        action_delivery: {
-          type: 'projectile',
-          projectile: 'explosive_cannon_projectile',
-          starting_speed: 1,
-          direction_deviation: 0.1,
-          range_deviation: 0.1,
-          max_range: 30,
-          min_range: 5,
-          source_effects: {
-            type: 'create_explosion',
-            entity_name: 'explosion_gunshot'
-          }
-        }
-      }
-    },
     subgroup: 'ammo',
     order: 'd[cannon_shell]_c[explosive]',
     stack_size: 200
@@ -409,28 +109,6 @@ module.exports = {
     name: 'uranium_cannon_shell',
     icon: 'graphics/icons/uranium-cannon-shell.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    ammo_type: {
-      category: 'cannon_shell',
-      target_type: 'direction',
-      action: {
-        type: 'direct',
-        action_delivery: {
-          type: 'projectile',
-          projectile: 'uranium_cannon_projectile',
-          starting_speed: 1,
-          direction_deviation: 0.1,
-          range_deviation: 0.1,
-          max_range: 30,
-          source_effects: {
-            type: 'create_explosion',
-            entity_name: 'explosion_gunshot'
-          }
-        }
-      }
-    },
     subgroup: 'ammo',
     order: 'd[cannon_shell]_c[uranium]',
     stack_size: 200
@@ -440,28 +118,6 @@ module.exports = {
     name: 'explosive_uranium_cannon_shell',
     icon: 'graphics/icons/explosive-uranium-cannon-shell.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    ammo_type: {
-      category: 'cannon_shell',
-      target_type: 'direction',
-      action: {
-        type: 'direct',
-        action_delivery: {
-          type: 'projectile',
-          projectile: 'explosive_uranium_cannon_projectile',
-          starting_speed: 1,
-          direction_deviation: 0.1,
-          range_deviation: 0.1,
-          max_range: 30,
-          source_effects: {
-            type: 'create_explosion',
-            entity_name: 'explosion_gunshot'
-          }
-        }
-      }
-    },
     subgroup: 'ammo',
     order: 'd[explosive_cannon_shell]_c[uranium]',
     stack_size: 200
@@ -471,27 +127,6 @@ module.exports = {
     name: 'artillery_shell',
     icon: 'graphics/icons/artillery-shell.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    ammo_type: {
-      category: 'artillery_shell',
-      target_type: 'position',
-      action: {
-        type: 'direct',
-        action_delivery: {
-          type: 'artillery',
-          projectile: 'artillery_projectile',
-          starting_speed: 1,
-          direction_deviation: 0,
-          range_deviation: 0,
-          source_effects: {
-            type: 'create_explosion',
-            entity_name: 'artillery_cannon_muzzle_flash'
-          }
-        }
-      }
-    },
     subgroup: 'ammo',
     order: 'd[explosive_cannon_shell]_d[artillery]',
     stack_size: 1
@@ -501,31 +136,6 @@ module.exports = {
     name: 'light_armor',
     icon: 'graphics/icons/light-armor.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    resistances: [
-      {
-        type: 'physical',
-        decrease: 3,
-        percent: 20
-      },
-      {
-        type: 'acid',
-        decrease: 0,
-        percent: 10
-      },
-      {
-        type: 'explosion',
-        decrease: 2,
-        percent: 20
-      },
-      {
-        type: 'fire',
-        decrease: 0,
-        percent: 10
-      }
-    ],
     durability: 1000,
     subgroup: 'armor',
     order: 'a[light_armor]',
@@ -536,31 +146,6 @@ module.exports = {
     name: 'heavy_armor',
     icon: 'graphics/icons/heavy-armor.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    resistances: [
-      {
-        type: 'physical',
-        decrease: 6,
-        percent: 30
-      },
-      {
-        type: 'explosion',
-        decrease: 20,
-        percent: 30
-      },
-      {
-        type: 'acid',
-        decrease: 3,
-        percent: 30
-      },
-      {
-        type: 'fire',
-        decrease: 0,
-        percent: 30
-      }
-    ],
     durability: 5000,
     subgroup: 'armor',
     order: 'b[heavy_armor]',
@@ -571,31 +156,6 @@ module.exports = {
     name: 'modular_armor',
     icon: 'graphics/icons/modular-armor.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    resistances: [
-      {
-        type: 'physical',
-        decrease: 6,
-        percent: 30
-      },
-      {
-        type: 'acid',
-        decrease: 5,
-        percent: 30
-      },
-      {
-        type: 'explosion',
-        decrease: 30,
-        percent: 35
-      },
-      {
-        type: 'fire',
-        decrease: 0,
-        percent: 40
-      }
-    ],
     durability: 10000,
     subgroup: 'armor',
     order: 'c[modular_armor]',
@@ -608,31 +168,6 @@ module.exports = {
     name: 'power_armor',
     icon: 'graphics/icons/power-armor.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    resistances: [
-      {
-        type: 'physical',
-        decrease: 8,
-        percent: 30
-      },
-      {
-        type: 'acid',
-        decrease: 7,
-        percent: 30
-      },
-      {
-        type: 'explosion',
-        decrease: 40,
-        percent: 40
-      },
-      {
-        type: 'fire',
-        decrease: 0,
-        percent: 60
-      }
-    ],
     durability: 15000,
     subgroup: 'armor',
     order: 'd[power_armor]',
@@ -645,31 +180,6 @@ module.exports = {
     name: 'power_armor_mk2',
     icon: 'graphics/icons/power-armor-mk2.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    resistances: [
-      {
-        type: 'physical',
-        decrease: 10,
-        percent: 40
-      },
-      {
-        type: 'acid',
-        decrease: 10,
-        percent: 40
-      },
-      {
-        type: 'explosion',
-        decrease: 60,
-        percent: 50
-      },
-      {
-        type: 'fire',
-        decrease: 0,
-        percent: 70
-      }
-    ],
     durability: 20000,
     subgroup: 'armor',
     order: 'e[power_armor_mk2]',
@@ -682,46 +192,8 @@ module.exports = {
     name: 'pistol',
     icon: 'graphics/icons/pistol.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'gun',
     order: 'a[basic_clips]_a[pistol]',
-    attack_parameters: {
-      type: 'projectile',
-      ammo_category: 'bullet',
-      cooldown: 15,
-      movement_slow_down_factor: 0.2,
-      shell_particle: {
-        name: 'shell_particle',
-        direction_deviation: 0.1,
-        speed: 0.1,
-        speed_deviation: 0.03,
-        center: [
-          0,
-          0.1
-        ],
-        creation_distance: -0.5,
-        starting_frame_speed: 0.4,
-        starting_frame_speed_deviation: 0.1
-      },
-      projectile_creation_distance: 1.125,
-      range: 15,
-      sound: [
-        {
-          filename: 'sound/fight/light-gunshot-1.ogg',
-          volume: 0.3
-        },
-        {
-          filename: 'sound/fight/light-gunshot-2.ogg',
-          volume: 0.3
-        },
-        {
-          filename: 'sound/fight/light-gunshot-3.ogg',
-          volume: 0.3
-        }
-      ]
-    },
     stack_size: 5
   },
   submachine_gun: {
@@ -729,46 +201,8 @@ module.exports = {
     name: 'submachine_gun',
     icon: 'graphics/icons/submachine-gun.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'gun',
     order: 'a[basic_clips]_b[submachine_gun]',
-    attack_parameters: {
-      type: 'projectile',
-      ammo_category: 'bullet',
-      cooldown: 6,
-      movement_slow_down_factor: 0.7,
-      shell_particle: {
-        name: 'shell_particle',
-        direction_deviation: 0.1,
-        speed: 0.1,
-        speed_deviation: 0.03,
-        center: [
-          0,
-          0.1
-        ],
-        creation_distance: -0.5,
-        starting_frame_speed: 0.4,
-        starting_frame_speed_deviation: 0.1
-      },
-      projectile_creation_distance: 1.125,
-      range: 18,
-      sound: [
-        {
-          filename: 'sound/fight/light-gunshot-1.ogg',
-          volume: 0.3
-        },
-        {
-          filename: 'sound/fight/light-gunshot-2.ogg',
-          volume: 0.3
-        },
-        {
-          filename: 'sound/fight/light-gunshot-3.ogg',
-          volume: 0.3
-        }
-      ]
-    },
     stack_size: 5
   },
   flamethrower: {
@@ -776,45 +210,8 @@ module.exports = {
     name: 'flamethrower',
     icon: 'graphics/icons/flamethrower.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'gun',
     order: 'e[flamethrower]',
-    attack_parameters: {
-      type: 'stream',
-      ammo_category: 'flamethrower',
-      cooldown: 1,
-      movement_slow_down_factor: 0.4,
-      projectile_creation_distance: 0.6,
-      gun_barrel_length: 0.8,
-      gun_center_shift: [
-        0,
-        -1
-      ],
-      range: 15,
-      min_range: 3,
-      cyclic_sound: {
-        begin_sound: [
-          {
-            filename: 'sound/fight/flamethrower-start.ogg',
-            volume: 0.7
-          }
-        ],
-        middle_sound: [
-          {
-            filename: 'sound/fight/flamethrower-mid.ogg',
-            volume: 0.7
-          }
-        ],
-        end_sound: [
-          {
-            filename: 'sound/fight/flamethrower-end.ogg',
-            volume: 0.7
-          }
-        ]
-      }
-    },
     stack_size: 5
   },
   rocket_launcher: {
@@ -822,29 +219,8 @@ module.exports = {
     name: 'rocket_launcher',
     icon: 'graphics/icons/rocket-launcher.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'gun',
     order: 'd[rocket_launcher]',
-    attack_parameters: {
-      type: 'projectile',
-      ammo_category: 'rocket',
-      movement_slow_down_factor: 0.8,
-      cooldown: 60,
-      projectile_creation_distance: 0.6,
-      range: 22,
-      projectile_center: [
-        -0.17,
-        0
-      ],
-      sound: [
-        {
-          filename: 'sound/fight/rocket-launcher.ogg',
-          volume: 0.7
-        }
-      ]
-    },
     stack_size: 5
   },
   shotgun: {
@@ -852,26 +228,8 @@ module.exports = {
     name: 'shotgun',
     icon: 'graphics/icons/shotgun.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'gun',
     order: 'b[shotgun]_a[basic]',
-    attack_parameters: {
-      type: 'projectile',
-      ammo_category: 'shotgun_shell',
-      cooldown: 60,
-      movement_slow_down_factor: 0.6,
-      projectile_creation_distance: 1.125,
-      range: 20,
-      min_range: 1,
-      sound: [
-        {
-          filename: 'sound/pump-shotgun.ogg',
-          volume: 0.5
-        }
-      ]
-    },
     stack_size: 5
   },
   combat_shotgun: {
@@ -879,26 +237,8 @@ module.exports = {
     name: 'combat_shotgun',
     icon: 'graphics/icons/combat-shotgun.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'gun',
     order: 'b[shotgun]_a[combat]',
-    attack_parameters: {
-      type: 'projectile',
-      ammo_category: 'shotgun_shell',
-      cooldown: 30,
-      movement_slow_down_factor: 0.5,
-      damage_modifier: 1.2,
-      projectile_creation_distance: 1.125,
-      range: 20,
-      sound: [
-        {
-          filename: 'sound/pump-shotgun.ogg',
-          volume: 0.5
-        }
-      ]
-    },
     stack_size: 5
   },
   stone_brick: {
@@ -906,9 +246,6 @@ module.exports = {
     name: 'stone_brick',
     icon: 'graphics/icons/stone-brick.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'terrain',
     order: 'a[stone_brick]',
     stack_size: 100,
@@ -925,9 +262,6 @@ module.exports = {
     name: 'raw_wood',
     icon: 'graphics/icons/raw-wood.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     fuel_value: '4MJ',
     fuel_category: 'chemical',
     subgroup: 'raw_resource',
@@ -939,10 +273,6 @@ module.exports = {
     name: 'coal',
     icon: 'graphics/icons/coal.png',
     icon_size: 32,
-    dark_background_icon: 'graphics/icons/coal-dark-background.png',
-    flags: [
-      'goes_to_main_inventory'
-    ],
     fuel_category: 'chemical',
     fuel_value: '8MJ',
     subgroup: 'raw_resource',
@@ -954,9 +284,6 @@ module.exports = {
     name: 'stone',
     icon: 'graphics/icons/stone.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'raw_resource',
     order: 'd[stone]',
     stack_size: 50
@@ -966,9 +293,6 @@ module.exports = {
     name: 'iron_ore',
     icon: 'graphics/icons/iron-ore.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'raw_resource',
     order: 'e[iron_ore]',
     stack_size: 50
@@ -978,9 +302,6 @@ module.exports = {
     name: 'copper_ore',
     icon: 'graphics/icons/copper-ore.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'raw_resource',
     order: 'f[copper_ore]',
     stack_size: 50
@@ -990,9 +311,6 @@ module.exports = {
     name: 'wood',
     icon: 'graphics/icons/wood.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     fuel_category: 'chemical',
     fuel_value: '2MJ',
     subgroup: 'raw_material',
@@ -1004,9 +322,6 @@ module.exports = {
     name: 'iron_plate',
     icon: 'graphics/icons/iron-plate.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'raw_material',
     order: 'b[iron_plate]',
     stack_size: 100
@@ -1016,9 +331,6 @@ module.exports = {
     name: 'copper_plate',
     icon: 'graphics/icons/copper-plate.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'raw_material',
     order: 'c[copper_plate]',
     stack_size: 100
@@ -1028,9 +340,6 @@ module.exports = {
     name: 'copper_cable',
     icon: 'graphics/icons/copper-cable.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'a[copper_cable]',
     stack_size: 200
@@ -1040,9 +349,6 @@ module.exports = {
     name: 'iron_stick',
     icon: 'graphics/icons/iron-stick.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'b[iron_stick]',
     stack_size: 100
@@ -1052,9 +358,6 @@ module.exports = {
     name: 'iron_gear_wheel',
     icon: 'graphics/icons/iron-gear-wheel.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'c[iron_gear_wheel]',
     stack_size: 100
@@ -1064,9 +367,6 @@ module.exports = {
     name: 'electronic_circuit',
     icon: 'graphics/icons/electronic-circuit.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'e[electronic_circuit]',
     stack_size: 200
@@ -1076,9 +376,6 @@ module.exports = {
     name: 'wooden_chest',
     icon: 'graphics/icons/wooden-chest.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     fuel_category: 'chemical',
     fuel_value: '4MJ',
     subgroup: 'storage',
@@ -1091,9 +388,6 @@ module.exports = {
     name: 'stone_furnace',
     icon: 'graphics/icons/stone-furnace.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'smelting_machine',
     order: 'a[stone_furnace]',
     place_result: 'stone_furnace',
@@ -1104,9 +398,6 @@ module.exports = {
     name: 'burner_mining_drill',
     icon: 'graphics/icons/burner-mining-drill.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'extraction_machine',
     order: 'a[items]_a[burner_mining_drill]',
     place_result: 'burner_mining_drill',
@@ -1117,9 +408,6 @@ module.exports = {
     name: 'electric_mining_drill',
     icon: 'graphics/icons/electric-mining-drill.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'extraction_machine',
     order: 'a[items]_b[electric_mining_drill]',
     place_result: 'electric_mining_drill',
@@ -1130,9 +418,6 @@ module.exports = {
     name: 'transport_belt',
     icon: 'graphics/icons/transport-belt.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'belt',
     order: 'a[transport_belt]_a[transport_belt]',
     place_result: 'transport_belt',
@@ -1143,9 +428,6 @@ module.exports = {
     name: 'burner_inserter',
     icon: 'graphics/icons/burner-inserter.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'inserter',
     order: 'a[burner_inserter]',
     place_result: 'burner_inserter',
@@ -1156,9 +438,6 @@ module.exports = {
     name: 'inserter',
     icon: 'graphics/icons/inserter.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'inserter',
     order: 'b[inserter]',
     place_result: 'inserter',
@@ -1169,9 +448,6 @@ module.exports = {
     name: 'offshore_pump',
     icon: 'graphics/icons/offshore-pump.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'extraction_machine',
     order: 'b[fluids]_a[offshore_pump]',
     place_result: 'offshore_pump',
@@ -1182,9 +458,6 @@ module.exports = {
     name: 'pipe',
     icon: 'graphics/icons/pipe.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'energy_pipe_distribution',
     order: 'a[pipe]_a[pipe]',
     place_result: 'pipe',
@@ -1195,9 +468,6 @@ module.exports = {
     name: 'boiler',
     icon: 'graphics/icons/boiler.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'energy',
     order: 'b[steam_power]_a[boiler]',
     place_result: 'boiler',
@@ -1208,9 +478,6 @@ module.exports = {
     name: 'steam_engine',
     icon: 'graphics/icons/steam-engine.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'energy',
     order: 'b[steam_power]_b[steam_engine]',
     place_result: 'steam_engine',
@@ -1221,9 +488,6 @@ module.exports = {
     name: 'small_electric_pole',
     icon: 'graphics/icons/small-electric-pole.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'energy_pipe_distribution',
     order: 'a[energy]_a[small_electric_pole]',
     place_result: 'small_electric_pole',
@@ -1236,9 +500,6 @@ module.exports = {
     name: 'radar',
     icon: 'graphics/icons/radar.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'defensive_structure',
     order: 'd[radar]_a[radar]',
     place_result: 'radar',
@@ -1249,9 +510,6 @@ module.exports = {
     name: 'small_lamp',
     icon: 'graphics/icons/small-lamp.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'circuit_network',
     order: 'a[light]_a[small_lamp]',
     place_result: 'small_lamp',
@@ -1262,9 +520,6 @@ module.exports = {
     name: 'pipe_to_ground',
     icon: 'graphics/icons/pipe-to-ground.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'energy_pipe_distribution',
     order: 'a[pipe]_b[pipe_to_ground]',
     place_result: 'pipe_to_ground',
@@ -1275,9 +530,6 @@ module.exports = {
     name: 'assembling_machine_1',
     icon: 'graphics/icons/assembling-machine-1.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'production_machine',
     order: 'a[assembling_machine_1]',
     place_result: 'assembling_machine_1',
@@ -1288,9 +540,6 @@ module.exports = {
     name: 'red_wire',
     icon: 'graphics/icons/red-wire.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'circuit_network',
     order: 'b[wires]_a[red_wire]',
     stack_size: 200
@@ -1300,9 +549,6 @@ module.exports = {
     name: 'green_wire',
     icon: 'graphics/icons/green-wire.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'circuit_network',
     order: 'b[wires]_b[green_wire]',
     stack_size: 200
@@ -1312,9 +558,6 @@ module.exports = {
     name: 'stone_wall',
     icon: 'graphics/icons/stone-wall.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'defensive_structure',
     order: 'a[stone_wall]_a[stone_wall]',
     place_result: 'stone_wall',
@@ -1325,9 +568,6 @@ module.exports = {
     name: 'gun_turret',
     icon: 'graphics/icons/gun-turret.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'defensive_structure',
     order: 'b[turret]_a[gun_turret]',
     place_result: 'gun_turret',
@@ -1338,10 +578,6 @@ module.exports = {
     name: 'solar_panel_equipment',
     icon: 'graphics/icons/solar-panel-equipment.png',
     icon_size: 32,
-    placed_as_equipment_result: 'solar_panel_equipment',
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'equipment',
     order: 'a[energy_source]_a[solar_panel]',
     stack_size: 20
@@ -1351,10 +587,6 @@ module.exports = {
     name: 'fusion_reactor_equipment',
     icon: 'graphics/icons/fusion-reactor-equipment.png',
     icon_size: 32,
-    placed_as_equipment_result: 'fusion_reactor_equipment',
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'equipment',
     order: 'a[energy_source]_b[fusion_reactor]',
     stack_size: 20
@@ -1364,10 +596,6 @@ module.exports = {
     name: 'energy_shield_equipment',
     icon: 'graphics/icons/energy-shield-equipment.png',
     icon_size: 32,
-    placed_as_equipment_result: 'energy_shield_equipment',
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'equipment',
     order: 'b[shield]_a[energy_shield_equipment]',
     stack_size: 50,
@@ -1376,15 +604,8 @@ module.exports = {
   energy_shield_mk2_equipment: {
     type: 'item',
     name: 'energy_shield_mk2_equipment',
-    localised_description: [
-      'item_description.energy_shield_equipment'
-    ],
     icon: 'graphics/icons/energy-shield-mk2-equipment.png',
     icon_size: 32,
-    placed_as_equipment_result: 'energy_shield_mk2_equipment',
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'equipment',
     order: 'b[shield]_b[energy_shield_equipment_mk2]',
     stack_size: 50,
@@ -1395,10 +616,6 @@ module.exports = {
     name: 'battery_equipment',
     icon: 'graphics/icons/battery-equipment.png',
     icon_size: 32,
-    placed_as_equipment_result: 'battery_equipment',
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'equipment',
     order: 'c[battery]_a[battery_equipment]',
     stack_size: 50,
@@ -1407,15 +624,8 @@ module.exports = {
   battery_mk2_equipment: {
     type: 'item',
     name: 'battery_mk2_equipment',
-    localised_description: [
-      'item_description.battery_equipment'
-    ],
     icon: 'graphics/icons/battery-mk2-equipment.png',
     icon_size: 32,
-    placed_as_equipment_result: 'battery_mk2_equipment',
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'equipment',
     order: 'c[battery]_b[battery_equipment_mk2]',
     stack_size: 50,
@@ -1426,10 +636,6 @@ module.exports = {
     name: 'personal_laser_defense_equipment',
     icon: 'graphics/icons/personal-laser-defense-equipment.png',
     icon_size: 32,
-    placed_as_equipment_result: 'personal_laser_defense_equipment',
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'equipment',
     order: 'd[active_defense]_a[personal_laser_defense_equipment]',
     stack_size: 20
@@ -1439,10 +645,6 @@ module.exports = {
     name: 'discharge_defense_equipment',
     icon: 'graphics/icons/discharge-defense-equipment.png',
     icon_size: 32,
-    placed_as_equipment_result: 'discharge_defense_equipment',
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'equipment',
     order: 'd[active_defense]_b[discharge_defense_equipment]',
     stack_size: 20
@@ -1452,10 +654,6 @@ module.exports = {
     name: 'exoskeleton_equipment',
     icon: 'graphics/icons/exoskeleton-equipment.png',
     icon_size: 32,
-    placed_as_equipment_result: 'exoskeleton_equipment',
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'equipment',
     order: 'e[exoskeleton]_a[exoskeleton_equipment]',
     stack_size: 10
@@ -1465,10 +663,6 @@ module.exports = {
     name: 'personal_roboport_equipment',
     icon: 'graphics/icons/personal-roboport-equipment.png',
     icon_size: 32,
-    placed_as_equipment_result: 'personal_roboport_equipment',
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'equipment',
     order: 'e[robotics]_a[personal_roboport_equipment]',
     stack_size: 5
@@ -1476,15 +670,8 @@ module.exports = {
   personal_roboport_mk2_equipment: {
     type: 'item',
     name: 'personal_roboport_mk2_equipment',
-    localised_description: [
-      'item_description.personal_roboport_equipment'
-    ],
     icon: 'graphics/icons/personal-roboport-mk2-equipment.png',
     icon_size: 32,
-    placed_as_equipment_result: 'personal_roboport_mk2_equipment',
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'equipment',
     order: 'e[robotics]_b[personal_roboport_mk2_equipment]',
     stack_size: 5
@@ -1494,10 +681,6 @@ module.exports = {
     name: 'night_vision_equipment',
     icon: 'graphics/icons/night-vision-equipment.png',
     icon_size: 32,
-    placed_as_equipment_result: 'night_vision_equipment',
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'equipment',
     order: 'f[night_vision]_a[night_vision_equipment]',
     stack_size: 20
@@ -1507,24 +690,16 @@ module.exports = {
     name: 'land_mine',
     icon: 'graphics/icons/land-mine.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
-    damage_radius: 5,
     subgroup: 'gun',
     order: 'f[land_mine]',
     place_result: 'land_mine',
-    stack_size: 100,
-    trigger_radius: 1
+    stack_size: 100
   },
   iron_chest: {
     type: 'item',
     name: 'iron_chest',
     icon: 'graphics/icons/iron-chest.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'storage',
     order: 'a[items]_b[iron_chest]',
     place_result: 'iron_chest',
@@ -1535,9 +710,6 @@ module.exports = {
     name: 'steel_chest',
     icon: 'graphics/icons/steel-chest.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'storage',
     order: 'a[items]_c[steel_chest]',
     place_result: 'steel_chest',
@@ -1548,9 +720,6 @@ module.exports = {
     name: 'fast_transport_belt',
     icon: 'graphics/icons/fast-transport-belt.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'belt',
     order: 'a[transport_belt]_b[fast_transport_belt]',
     place_result: 'fast_transport_belt',
@@ -1561,9 +730,6 @@ module.exports = {
     name: 'express_transport_belt',
     icon: 'graphics/icons/express-transport-belt.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'belt',
     order: 'a[transport_belt]_c[express_transport_belt]',
     place_result: 'express_transport_belt',
@@ -1574,9 +740,6 @@ module.exports = {
     name: 'long_handed_inserter',
     icon: 'graphics/icons/long-handed-inserter.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'inserter',
     order: 'c[long_handed_inserter]',
     place_result: 'long_handed_inserter',
@@ -1587,9 +750,6 @@ module.exports = {
     name: 'fast_inserter',
     icon: 'graphics/icons/fast-inserter.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'inserter',
     order: 'd[fast_inserter]',
     place_result: 'fast_inserter',
@@ -1600,9 +760,6 @@ module.exports = {
     name: 'filter_inserter',
     icon: 'graphics/icons/filter-inserter.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'inserter',
     order: 'e[filter_inserter]',
     place_result: 'filter_inserter',
@@ -1613,9 +770,6 @@ module.exports = {
     name: 'stack_inserter',
     icon: 'graphics/icons/stack-inserter.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'inserter',
     order: 'f[stack_inserter]',
     place_result: 'stack_inserter',
@@ -1626,9 +780,6 @@ module.exports = {
     name: 'stack_filter_inserter',
     icon: 'graphics/icons/stack-filter-inserter.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'inserter',
     order: 'g[stack_filter_inserter]',
     place_result: 'stack_filter_inserter',
@@ -1639,9 +790,6 @@ module.exports = {
     name: 'assembling_machine_2',
     icon: 'graphics/icons/assembling-machine-2.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'production_machine',
     order: 'b[assembling_machine_2]',
     place_result: 'assembling_machine_2',
@@ -1652,9 +800,6 @@ module.exports = {
     name: 'assembling_machine_3',
     icon: 'graphics/icons/assembling-machine-3.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'production_machine',
     order: 'c[assembling_machine_3]',
     place_result: 'assembling_machine_3',
@@ -1665,9 +810,6 @@ module.exports = {
     name: 'solar_panel',
     icon: 'graphics/icons/solar-panel.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'energy',
     order: 'd[solar_panel]_a[solar_panel]',
     place_result: 'solar_panel',
@@ -1678,9 +820,6 @@ module.exports = {
     name: 'gate',
     icon: 'graphics/icons/gate.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'defensive_structure',
     order: 'a[wall]_b[gate]',
     place_result: 'gate',
@@ -1691,9 +830,6 @@ module.exports = {
     name: 'lab',
     icon: 'graphics/icons/lab.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'production_machine',
     order: 'g[lab]',
     place_result: 'lab',
@@ -1704,9 +840,6 @@ module.exports = {
     name: 'train_stop',
     icon: 'graphics/icons/train-stop.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'transport',
     order: 'a[train_system]_c[train_stop]',
     place_result: 'train_stop',
@@ -1717,9 +850,6 @@ module.exports = {
     name: 'rail_signal',
     icon: 'graphics/icons/rail-signal.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'transport',
     order: 'a[train_system]_d[rail_signal]',
     place_result: 'rail_signal',
@@ -1730,9 +860,6 @@ module.exports = {
     name: 'rail_chain_signal',
     icon: 'graphics/icons/rail-chain-signal.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'transport',
     order: 'a[train_system]_e[rail_signal_chain]',
     place_result: 'rail_chain_signal',
@@ -1743,9 +870,6 @@ module.exports = {
     name: 'steel_plate',
     icon: 'graphics/icons/steel-plate.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'raw_material',
     order: 'd[steel_plate]',
     stack_size: 100
@@ -1755,9 +879,6 @@ module.exports = {
     name: 'underground_belt',
     icon: 'graphics/icons/underground-belt.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'belt',
     order: 'b[underground_belt]_a[underground_belt]',
     place_result: 'underground_belt',
@@ -1768,9 +889,6 @@ module.exports = {
     name: 'fast_underground_belt',
     icon: 'graphics/icons/fast-underground-belt.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'belt',
     order: 'b[underground_belt]_b[fast_underground_belt]',
     place_result: 'fast_underground_belt',
@@ -1781,9 +899,6 @@ module.exports = {
     name: 'express_underground_belt',
     icon: 'graphics/icons/express-underground-belt.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'belt',
     order: 'b[underground_belt]_c[express_underground_belt]',
     place_result: 'express_underground_belt',
@@ -1794,9 +909,6 @@ module.exports = {
     name: 'splitter',
     icon: 'graphics/icons/splitter.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'belt',
     order: 'c[splitter]_a[splitter]',
     place_result: 'splitter',
@@ -1807,9 +919,6 @@ module.exports = {
     name: 'fast_splitter',
     icon: 'graphics/icons/fast-splitter.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'belt',
     order: 'c[splitter]_b[fast_splitter]',
     place_result: 'fast_splitter',
@@ -1820,9 +929,6 @@ module.exports = {
     name: 'express_splitter',
     icon: 'graphics/icons/express-splitter.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'belt',
     order: 'c[splitter]_c[express_splitter]',
     place_result: 'express_splitter',
@@ -1833,9 +939,6 @@ module.exports = {
     name: 'advanced_circuit',
     icon: 'graphics/icons/advanced-circuit.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'f[advanced_circuit]',
     stack_size: 200
@@ -1845,9 +948,6 @@ module.exports = {
     name: 'processing_unit',
     icon: 'graphics/icons/processing-unit.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'g[processing_unit]',
     stack_size: 100
@@ -1857,9 +957,6 @@ module.exports = {
     name: 'logistic_robot',
     icon: 'graphics/icons/logistic-robot.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'logistic_network',
     order: 'a[robot]_a[logistic_robot]',
     place_result: 'logistic_robot',
@@ -1870,9 +967,6 @@ module.exports = {
     name: 'construction_robot',
     icon: 'graphics/icons/construction-robot.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'logistic_network',
     order: 'a[robot]_b[construction_robot]',
     place_result: 'construction_robot',
@@ -1883,9 +977,6 @@ module.exports = {
     name: 'logistic_chest_passive_provider',
     icon: 'graphics/icons/logistic-chest-passive-provider.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'logistic_network',
     order: 'b[storage]_c[logistic_chest_passive_provider]',
     place_result: 'logistic_chest_passive_provider',
@@ -1896,9 +987,6 @@ module.exports = {
     name: 'logistic_chest_active_provider',
     icon: 'graphics/icons/logistic-chest-active-provider.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'logistic_network',
     order: 'b[storage]_c[logistic_chest_active_provider]',
     place_result: 'logistic_chest_active_provider',
@@ -1909,9 +997,6 @@ module.exports = {
     name: 'logistic_chest_storage',
     icon: 'graphics/icons/logistic-chest-storage.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'logistic_network',
     order: 'b[storage]_c[logistic_chest_storage]',
     place_result: 'logistic_chest_storage',
@@ -1922,9 +1007,6 @@ module.exports = {
     name: 'logistic_chest_buffer',
     icon: 'graphics/icons/logistic-chest-buffer.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'logistic_network',
     order: 'b[storage]_d[logistic_chest_buffer]',
     place_result: 'logistic_chest_buffer',
@@ -1935,9 +1017,6 @@ module.exports = {
     name: 'logistic_chest_requester',
     icon: 'graphics/icons/logistic-chest-requester.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'logistic_network',
     order: 'b[storage]_e[logistic_chest_requester]',
     place_result: 'logistic_chest_requester',
@@ -1948,9 +1027,6 @@ module.exports = {
     name: 'rocket_silo',
     icon: 'graphics/icons/rocket-silo.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'defensive_structure',
     order: 'e[rocket_silo]',
     place_result: 'rocket_silo',
@@ -1961,9 +1037,6 @@ module.exports = {
     name: 'roboport',
     icon: 'graphics/icons/roboport.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'logistic_network',
     order: 'c[signal]_a[roboport]',
     place_result: 'roboport',
@@ -1974,9 +1047,6 @@ module.exports = {
     name: 'big_electric_pole',
     icon: 'graphics/icons/big-electric-pole.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'energy_pipe_distribution',
     order: 'a[energy]_c[big_electric_pole]',
     place_result: 'big_electric_pole',
@@ -1987,9 +1057,6 @@ module.exports = {
     name: 'medium_electric_pole',
     icon: 'graphics/icons/medium-electric-pole.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'energy_pipe_distribution',
     order: 'a[energy]_b[medium_electric_pole]',
     place_result: 'medium_electric_pole',
@@ -2000,9 +1067,6 @@ module.exports = {
     name: 'substation',
     icon: 'graphics/icons/substation.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'energy_pipe_distribution',
     order: 'a[energy]_d[substation]',
     place_result: 'substation',
@@ -2013,9 +1077,6 @@ module.exports = {
     name: 'accumulator',
     icon: 'graphics/icons/accumulator.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'energy',
     order: 'e[accumulator]_a[accumulator]',
     place_result: 'accumulator',
@@ -2026,9 +1087,6 @@ module.exports = {
     name: 'steel_furnace',
     icon: 'graphics/icons/steel-furnace.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'smelting_machine',
     order: 'b[steel_furnace]',
     place_result: 'steel_furnace',
@@ -2039,9 +1097,6 @@ module.exports = {
     name: 'electric_furnace',
     icon: 'graphics/icons/electric-furnace.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'smelting_machine',
     order: 'c[electric_furnace]',
     place_result: 'electric_furnace',
@@ -2052,9 +1107,6 @@ module.exports = {
     name: 'beacon',
     icon: 'graphics/icons/beacon.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'module',
     order: 'a[beacon]',
     place_result: 'beacon',
@@ -2065,9 +1117,6 @@ module.exports = {
     name: 'storage_tank',
     icon: 'graphics/icons/storage-tank.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'storage',
     order: 'b[fluid]_a[storage_tank]',
     place_result: 'storage_tank',
@@ -2078,9 +1127,6 @@ module.exports = {
     name: 'pump',
     icon: 'graphics/icons/pump.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'energy_pipe_distribution',
     order: 'b[pipe]_c[pump]',
     place_result: 'pump',
@@ -2091,9 +1137,6 @@ module.exports = {
     name: 'pumpjack',
     icon: 'graphics/icons/pumpjack.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'extraction_machine',
     order: 'b[fluids]_b[pumpjack]',
     place_result: 'pumpjack',
@@ -2104,9 +1147,6 @@ module.exports = {
     name: 'oil_refinery',
     icon: 'graphics/icons/oil-refinery.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'production_machine',
     order: 'd[refinery]',
     place_result: 'oil_refinery',
@@ -2117,9 +1157,6 @@ module.exports = {
     name: 'chemical_plant',
     icon: 'graphics/icons/chemical-plant.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'production_machine',
     order: 'e[chemical_plant]',
     place_result: 'chemical_plant',
@@ -2130,9 +1167,6 @@ module.exports = {
     name: 'sulfur',
     icon: 'graphics/icons/sulfur.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'raw_material',
     order: 'g[sulfur]',
     stack_size: 50
@@ -2142,9 +1176,6 @@ module.exports = {
     name: 'empty_barrel',
     icon: 'graphics/icons/fluid/barreling/empty-barrel.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'd[empty_barrel]',
     stack_size: 10
@@ -2154,9 +1185,6 @@ module.exports = {
     name: 'solid_fuel',
     icon: 'graphics/icons/solid-fuel.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     fuel_category: 'chemical',
     fuel_value: '25MJ',
     fuel_acceleration_multiplier: 1.2,
@@ -2170,9 +1198,6 @@ module.exports = {
     name: 'plastic_bar',
     icon: 'graphics/icons/plastic-bar.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'raw_material',
     order: 'f[plastic_bar]',
     stack_size: 100
@@ -2182,9 +1207,6 @@ module.exports = {
     name: 'engine_unit',
     icon: 'graphics/icons/engine-unit.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'h[engine_unit]',
     stack_size: 50
@@ -2194,9 +1216,6 @@ module.exports = {
     name: 'electric_engine_unit',
     icon: 'graphics/icons/electric-engine-unit.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'i[electric_engine_unit]',
     stack_size: 50
@@ -2206,9 +1225,6 @@ module.exports = {
     name: 'explosives',
     icon: 'graphics/icons/explosives.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'raw_material',
     order: 'j[explosives]',
     stack_size: 50
@@ -2218,9 +1234,6 @@ module.exports = {
     name: 'battery',
     icon: 'graphics/icons/battery.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'raw_material',
     order: 'h[battery]',
     stack_size: 200
@@ -2230,9 +1243,6 @@ module.exports = {
     name: 'flying_robot_frame',
     icon: 'graphics/icons/flying-robot-frame.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'l[flying_robot_frame]',
     stack_size: 50
@@ -2242,9 +1252,6 @@ module.exports = {
     name: 'arithmetic_combinator',
     icon: 'graphics/icons/arithmetic-combinator.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'circuit_network',
     place_result: 'arithmetic_combinator',
     order: 'c[combinators]_a[arithmetic_combinator]',
@@ -2255,9 +1262,6 @@ module.exports = {
     name: 'decider_combinator',
     icon: 'graphics/icons/decider-combinator.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'circuit_network',
     place_result: 'decider_combinator',
     order: 'c[combinators]_b[decider_combinator]',
@@ -2268,9 +1272,6 @@ module.exports = {
     name: 'constant_combinator',
     icon: 'graphics/icons/constant-combinator.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'circuit_network',
     place_result: 'constant_combinator',
     order: 'c[combinators]_c[constant_combinator]',
@@ -2281,9 +1282,6 @@ module.exports = {
     name: 'power_switch',
     icon: 'graphics/icons/power-switch.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'circuit_network',
     place_result: 'power_switch',
     order: 'd[other]_a[power_switch]',
@@ -2294,9 +1292,6 @@ module.exports = {
     name: 'programmable_speaker',
     icon: 'graphics/icons/programmable-speaker.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'circuit_network',
     order: 'd[other]_b[programmable_speaker]',
     place_result: 'programmable_speaker',
@@ -2307,9 +1302,6 @@ module.exports = {
     name: 'low_density_structure',
     icon: 'graphics/icons/rocket-structure.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'o[rocket_structure]',
     stack_size: 10
@@ -2319,9 +1311,6 @@ module.exports = {
     name: 'rocket_fuel',
     icon: 'graphics/icons/rocket-fuel.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     fuel_category: 'chemical',
     fuel_value: '225MJ',
     fuel_acceleration_multiplier: 1.8,
@@ -2335,9 +1324,6 @@ module.exports = {
     name: 'nuclear_fuel',
     icon: 'graphics/icons/nuclear-fuel.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     fuel_category: 'chemical',
     fuel_value: '1.21GJ',
     fuel_acceleration_multiplier: 2.5,
@@ -2351,9 +1337,6 @@ module.exports = {
     name: 'rocket_control_unit',
     icon: 'graphics/icons/rocket-control-unit.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'n[rocket_control_unit]',
     stack_size: 10
@@ -2363,9 +1346,6 @@ module.exports = {
     name: 'satellite',
     icon: 'graphics/icons/satellite.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'm[satellite]',
     stack_size: 1,
@@ -2379,9 +1359,6 @@ module.exports = {
     name: 'concrete',
     icon: 'graphics/icons/concrete.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'terrain',
     order: 'b[concrete]_a[plain]',
     stack_size: 100,
@@ -2398,9 +1375,6 @@ module.exports = {
     name: 'refined_concrete',
     icon: 'graphics/icons/refined-concrete.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'terrain',
     order: 'b[concrete]_c[refined]',
     stack_size: 100,
@@ -2417,9 +1391,6 @@ module.exports = {
     name: 'hazard_concrete',
     icon: 'graphics/icons/hazard-concrete.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'terrain',
     order: 'b[concrete]_b[hazard]',
     stack_size: 100,
@@ -2436,9 +1407,6 @@ module.exports = {
     name: 'refined_hazard_concrete',
     icon: 'graphics/icons/refined-hazard-concrete.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'terrain',
     order: 'b[concrete]_d[refined_hazard]',
     stack_size: 100,
@@ -2455,9 +1423,6 @@ module.exports = {
     name: 'landfill',
     icon: 'graphics/icons/landfill.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'terrain',
     order: 'c[landfill]_a[dirt]',
     stack_size: 100,
@@ -2474,9 +1439,6 @@ module.exports = {
     name: 'uranium_ore',
     icon: 'graphics/icons/uranium-ore.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'raw_resource',
     order: 'g[uranium_ore]',
     stack_size: 50
@@ -2486,9 +1448,6 @@ module.exports = {
     name: 'nuclear_reactor',
     icon: 'graphics/icons/nuclear-reactor.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'energy',
     order: 'f[nuclear_energy]_a[reactor]',
     place_result: 'nuclear_reactor',
@@ -2499,9 +1458,6 @@ module.exports = {
     name: 'uranium_235',
     icon: 'graphics/icons/uranium-235.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'r[uranium_235]',
     stack_size: 100
@@ -2511,9 +1467,6 @@ module.exports = {
     name: 'uranium_238',
     icon: 'graphics/icons/uranium-238.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'r[uranium_238]',
     stack_size: 100
@@ -2523,9 +1476,6 @@ module.exports = {
     name: 'centrifuge',
     icon: 'graphics/icons/centrifuge.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'production_machine',
     order: 'g[centrifuge]',
     place_result: 'centrifuge',
@@ -2536,9 +1486,6 @@ module.exports = {
     name: 'uranium_fuel_cell',
     icon: 'graphics/icons/uranium-fuel-cell.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'r[uranium_processing]_a[uranium_fuel_cell]',
     fuel_category: 'nuclear',
@@ -2551,9 +1498,6 @@ module.exports = {
     name: 'used_up_uranium_fuel_cell',
     icon: 'graphics/icons/used-up-uranium-fuel-cell.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'intermediate_product',
     order: 'r[used_up_uranium_fuel_cell]',
     stack_size: 50
@@ -2563,9 +1507,6 @@ module.exports = {
     name: 'heat_exchanger',
     icon: 'graphics/icons/heat-boiler.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'energy',
     order: 'f[nuclear_energy]_b[heat_exchanger]',
     place_result: 'heat_exchanger',
@@ -2576,9 +1517,6 @@ module.exports = {
     name: 'steam_turbine',
     icon: 'graphics/icons/steam-turbine.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'energy',
     order: 'b[steam_power]_c[steam_turbine]',
     place_result: 'steam_turbine',
@@ -2589,9 +1527,6 @@ module.exports = {
     name: 'heat_pipe',
     icon: 'graphics/icons/heat-pipe.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'energy',
     order: 'f[nuclear_energy]_c[heat_pipe]',
     place_result: 'heat_pipe',
@@ -2602,9 +1537,6 @@ module.exports = {
     name: 'laser_turret',
     icon: 'graphics/icons/laser-turret.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'defensive_structure',
     order: 'b[turret]_b[laser_turret]',
     place_result: 'laser_turret',
@@ -2615,9 +1547,6 @@ module.exports = {
     name: 'flamethrower_turret',
     icon: 'graphics/icons/flamethrower-turret.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'defensive_structure',
     order: 'b[turret]_c[flamethrower_turret]',
     place_result: 'flamethrower_turret',
@@ -2628,9 +1557,6 @@ module.exports = {
     name: 'artillery_turret',
     icon: 'graphics/icons/artillery-turret.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'defensive_structure',
     order: 'b[turret]_d[artillery_turret]',
     place_result: 'artillery_turret',
@@ -2639,12 +1565,6 @@ module.exports = {
   water_barrel: {
     type: 'item',
     name: 'water_barrel',
-    localised_name: [
-      'item_name.filled_barrel',
-      [
-        'fluid_name.water'
-      ]
-    ],
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/empty-barrel.png'
@@ -2669,9 +1589,6 @@ module.exports = {
       }
     ],
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'fill_barrel',
     order: 'b[water_barrel]',
     stack_size: 10
@@ -2679,12 +1596,6 @@ module.exports = {
   crude_oil_barrel: {
     type: 'item',
     name: 'crude_oil_barrel',
-    localised_name: [
-      'item_name.filled_barrel',
-      [
-        'fluid_name.crude_oil'
-      ]
-    ],
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/empty-barrel.png'
@@ -2709,9 +1620,6 @@ module.exports = {
       }
     ],
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'fill_barrel',
     order: 'b[crude_oil_barrel]',
     stack_size: 10
@@ -2719,12 +1627,6 @@ module.exports = {
   heavy_oil_barrel: {
     type: 'item',
     name: 'heavy_oil_barrel',
-    localised_name: [
-      'item_name.filled_barrel',
-      [
-        'fluid_name.heavy_oil'
-      ]
-    ],
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/empty-barrel.png'
@@ -2749,9 +1651,6 @@ module.exports = {
       }
     ],
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'fill_barrel',
     order: 'b[heavy_oil_barrel]',
     stack_size: 10
@@ -2759,12 +1658,6 @@ module.exports = {
   light_oil_barrel: {
     type: 'item',
     name: 'light_oil_barrel',
-    localised_name: [
-      'item_name.filled_barrel',
-      [
-        'fluid_name.light_oil'
-      ]
-    ],
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/empty-barrel.png'
@@ -2789,9 +1682,6 @@ module.exports = {
       }
     ],
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'fill_barrel',
     order: 'b[light_oil_barrel]',
     stack_size: 10
@@ -2799,12 +1689,6 @@ module.exports = {
   petroleum_gas_barrel: {
     type: 'item',
     name: 'petroleum_gas_barrel',
-    localised_name: [
-      'item_name.filled_barrel',
-      [
-        'fluid_name.petroleum_gas'
-      ]
-    ],
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/empty-barrel.png'
@@ -2829,9 +1713,6 @@ module.exports = {
       }
     ],
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'fill_barrel',
     order: 'b[petroleum_gas_barrel]',
     stack_size: 10
@@ -2839,12 +1720,6 @@ module.exports = {
   lubricant_barrel: {
     type: 'item',
     name: 'lubricant_barrel',
-    localised_name: [
-      'item_name.filled_barrel',
-      [
-        'fluid_name.lubricant'
-      ]
-    ],
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/empty-barrel.png'
@@ -2869,9 +1744,6 @@ module.exports = {
       }
     ],
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'fill_barrel',
     order: 'b[lubricant_barrel]',
     stack_size: 10
@@ -2879,12 +1751,6 @@ module.exports = {
   sulfuric_acid_barrel: {
     type: 'item',
     name: 'sulfuric_acid_barrel',
-    localised_name: [
-      'item_name.filled_barrel',
-      [
-        'fluid_name.sulfuric_acid'
-      ]
-    ],
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/empty-barrel.png'
@@ -2909,9 +1775,6 @@ module.exports = {
       }
     ],
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'fill_barrel',
     order: 'b[sulfuric_acid_barrel]',
     stack_size: 10
@@ -2921,36 +1784,7 @@ module.exports = {
     name: 'raw_fish',
     icon: 'graphics/icons/fish.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'raw_resource',
-    capsule_action: {
-      type: 'use_on_self',
-      attack_parameters: {
-        type: 'projectile',
-        ammo_category: 'capsule',
-        cooldown: 30,
-        range: 0,
-        ammo_type: {
-          category: 'capsule',
-          target_type: 'position',
-          action: {
-            type: 'direct',
-            action_delivery: {
-              type: 'instant',
-              target_effects: {
-                type: 'damage',
-                damage: {
-                  type: 'physical',
-                  amount: -80
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     order: 'h[raw_fish]',
     stack_size: 100
   },
@@ -2959,31 +1793,6 @@ module.exports = {
     name: 'grenade',
     icon: 'graphics/icons/grenade.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
-    capsule_action: {
-      type: 'throw',
-      attack_parameters: {
-        type: 'projectile',
-        ammo_category: 'grenade',
-        cooldown: 30,
-        projectile_creation_distance: 0.6,
-        range: 15,
-        ammo_type: {
-          category: 'grenade',
-          target_type: 'position',
-          action: {
-            type: 'direct',
-            action_delivery: {
-              type: 'projectile',
-              projectile: 'grenade',
-              starting_speed: 0.3
-            }
-          }
-        }
-      }
-    },
     subgroup: 'capsule',
     order: 'a[grenade]_a[normal]',
     stack_size: 100
@@ -2993,31 +1802,6 @@ module.exports = {
     name: 'cluster_grenade',
     icon: 'graphics/icons/cluster-grenade.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
-    capsule_action: {
-      type: 'throw',
-      attack_parameters: {
-        type: 'projectile',
-        ammo_category: 'grenade',
-        cooldown: 30,
-        projectile_creation_distance: 0.6,
-        range: 20,
-        ammo_type: {
-          category: 'grenade',
-          target_type: 'position',
-          action: {
-            type: 'direct',
-            action_delivery: {
-              type: 'projectile',
-              projectile: 'cluster_grenade',
-              starting_speed: 0.3
-            }
-          }
-        }
-      }
-    },
     subgroup: 'capsule',
     order: 'a[grenade]_b[cluster]',
     stack_size: 100
@@ -3027,31 +1811,6 @@ module.exports = {
     name: 'poison_capsule',
     icon: 'graphics/icons/poison-capsule.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
-    capsule_action: {
-      type: 'throw',
-      attack_parameters: {
-        type: 'projectile',
-        ammo_category: 'capsule',
-        cooldown: 30,
-        projectile_creation_distance: 0.6,
-        range: 25,
-        ammo_type: {
-          category: 'capsule',
-          target_type: 'position',
-          action: {
-            type: 'direct',
-            action_delivery: {
-              type: 'projectile',
-              projectile: 'poison_capsule',
-              starting_speed: 0.3
-            }
-          }
-        }
-      }
-    },
     subgroup: 'capsule',
     order: 'b[poison_capsule]',
     stack_size: 100
@@ -3061,31 +1820,6 @@ module.exports = {
     name: 'slowdown_capsule',
     icon: 'graphics/icons/slowdown-capsule.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
-    capsule_action: {
-      type: 'throw',
-      attack_parameters: {
-        type: 'projectile',
-        ammo_category: 'capsule',
-        cooldown: 30,
-        projectile_creation_distance: 0.6,
-        range: 25,
-        ammo_type: {
-          category: 'capsule',
-          target_type: 'position',
-          action: {
-            type: 'direct',
-            action_delivery: {
-              type: 'projectile',
-              projectile: 'slowdown_capsule',
-              starting_speed: 0.3
-            }
-          }
-        }
-      }
-    },
     subgroup: 'capsule',
     order: 'c[slowdown_capsule]',
     stack_size: 100
@@ -3095,31 +1829,6 @@ module.exports = {
     name: 'defender_capsule',
     icon: 'graphics/icons/defender.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
-    capsule_action: {
-      type: 'throw',
-      attack_parameters: {
-        type: 'projectile',
-        ammo_category: 'capsule',
-        cooldown: 15,
-        projectile_creation_distance: 0.6,
-        range: 20,
-        ammo_type: {
-          category: 'capsule',
-          target_type: 'position',
-          action: {
-            type: 'direct',
-            action_delivery: {
-              type: 'projectile',
-              projectile: 'defender_capsule',
-              starting_speed: 0.3
-            }
-          }
-        }
-      }
-    },
     subgroup: 'capsule',
     order: 'd[defender_capsule]',
     stack_size: 100
@@ -3129,31 +1838,6 @@ module.exports = {
     name: 'distractor_capsule',
     icon: 'graphics/icons/distractor.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
-    capsule_action: {
-      type: 'throw',
-      attack_parameters: {
-        type: 'projectile',
-        ammo_category: 'capsule',
-        cooldown: 30,
-        projectile_creation_distance: 0.6,
-        range: 25,
-        ammo_type: {
-          category: 'capsule',
-          target_type: 'position',
-          action: {
-            type: 'direct',
-            action_delivery: {
-              type: 'projectile',
-              projectile: 'distractor_capsule',
-              starting_speed: 0.3
-            }
-          }
-        }
-      }
-    },
     subgroup: 'capsule',
     order: 'e[defender_capsule]',
     stack_size: 100
@@ -3163,31 +1847,6 @@ module.exports = {
     name: 'destroyer_capsule',
     icon: 'graphics/icons/destroyer.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
-    capsule_action: {
-      type: 'throw',
-      attack_parameters: {
-        type: 'projectile',
-        ammo_category: 'capsule',
-        cooldown: 30,
-        projectile_creation_distance: 0.6,
-        range: 25,
-        ammo_type: {
-          category: 'capsule',
-          target_type: 'position',
-          action: {
-            type: 'direct',
-            action_delivery: {
-              type: 'projectile',
-              projectile: 'destroyer_capsule',
-              starting_speed: 0.3
-            }
-          }
-        }
-      }
-    },
     subgroup: 'capsule',
     order: 'f[destroyer_capsule]',
     stack_size: 100
@@ -3197,13 +1856,6 @@ module.exports = {
     name: 'discharge_defense_remote',
     icon: 'graphics/equipment/discharge-defense-equipment-ability.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
-    capsule_action: {
-      type: 'equipment_remote',
-      equipment: 'discharge_defense_equipment'
-    },
     subgroup: 'capsule',
     order: 'z',
     stack_size: 1
@@ -3213,33 +1865,6 @@ module.exports = {
     name: 'cliff_explosives',
     icon: 'graphics/icons/cliff-explosives.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar',
-      'hide_from_bonus_gui'
-    ],
-    capsule_action: {
-      type: 'destroy_cliffs',
-      radius: 1.5,
-      attack_parameters: {
-        type: 'projectile',
-        ammo_category: 'grenade',
-        cooldown: 30,
-        projectile_creation_distance: 0.6,
-        range: 10,
-        ammo_type: {
-          category: 'grenade',
-          target_type: 'position',
-          action: {
-            type: 'direct',
-            action_delivery: {
-              type: 'projectile',
-              projectile: 'cliff_explosives',
-              starting_speed: 0.3
-            }
-          }
-        }
-      }
-    },
     subgroup: 'terrain',
     order: 'd[cliff_explosives]',
     stack_size: 20
@@ -3249,13 +1874,6 @@ module.exports = {
     name: 'artillery_targeting_remote',
     icon: 'graphics/icons/artillery-targeting-remote.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
-    capsule_action: {
-      type: 'artillery_remote',
-      flare: 'artillery_flare'
-    },
     subgroup: 'capsule',
     order: 'zz',
     stack_size: 1
@@ -3265,9 +1883,6 @@ module.exports = {
     name: 'repair_pack',
     icon: 'graphics/icons/repair-pack.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'tool',
     order: 'b[repair]_a[repair_pack]',
     speed: 2,
@@ -3277,27 +1892,8 @@ module.exports = {
   iron_axe: {
     type: 'mining_tool',
     name: 'iron_axe',
-    localised_description: [
-      'item_description.mining_tool'
-    ],
     icon: 'graphics/icons/iron-axe.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    action: {
-      type: 'direct',
-      action_delivery: {
-        type: 'instant',
-        target_effects: {
-          type: 'damage',
-          damage: {
-            amount: 5,
-            type: 'physical'
-          }
-        }
-      }
-    },
     durability: 4000,
     subgroup: 'tool',
     order: 'a[mining]_a[iron_axe]',
@@ -3307,27 +1903,8 @@ module.exports = {
   steel_axe: {
     type: 'mining_tool',
     name: 'steel_axe',
-    localised_description: [
-      'item_description.mining_tool'
-    ],
     icon: 'graphics/icons/steel-axe.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
-    action: {
-      type: 'direct',
-      action_delivery: {
-        type: 'instant',
-        target_effects: {
-          type: 'damage',
-          damage: {
-            amount: 8,
-            type: 'physical'
-          }
-        }
-      }
-    },
     durability: 5000,
     subgroup: 'tool',
     order: 'a[mining]_b[steel_axe]',
@@ -3337,33 +1914,6 @@ module.exports = {
   basic_oil_processing: {
     type: 'recipe',
     name: 'basic_oil_processing',
-    category: 'oil_processing',
-    enabled: false,
-    energy_required: 5,
-    ingredients: [
-      {
-        type: 'fluid',
-        name: 'crude_oil',
-        amount: 100
-      }
-    ],
-    results: [
-      {
-        type: 'fluid',
-        name: 'heavy_oil',
-        amount: 30
-      },
-      {
-        type: 'fluid',
-        name: 'light_oil',
-        amount: 30
-      },
-      {
-        type: 'fluid',
-        name: 'petroleum_gas',
-        amount: 40
-      }
-    ],
     icon: 'graphics/icons/fluid/basic-oil-processing.png',
     icon_size: 32,
     subgroup: 'fluid_recipes',
@@ -3372,38 +1922,6 @@ module.exports = {
   advanced_oil_processing: {
     type: 'recipe',
     name: 'advanced_oil_processing',
-    category: 'oil_processing',
-    enabled: false,
-    energy_required: 5,
-    ingredients: [
-      {
-        type: 'fluid',
-        name: 'water',
-        amount: 50
-      },
-      {
-        type: 'fluid',
-        name: 'crude_oil',
-        amount: 100
-      }
-    ],
-    results: [
-      {
-        type: 'fluid',
-        name: 'heavy_oil',
-        amount: 10
-      },
-      {
-        type: 'fluid',
-        name: 'light_oil',
-        amount: 45
-      },
-      {
-        type: 'fluid',
-        name: 'petroleum_gas',
-        amount: 55
-      }
-    ],
     icon: 'graphics/icons/fluid/advanced-oil-processing.png',
     icon_size: 32,
     subgroup: 'fluid_recipes',
@@ -3412,75 +1930,14 @@ module.exports = {
   coal_liquefaction: {
     type: 'recipe',
     name: 'coal_liquefaction',
-    category: 'oil_processing',
-    enabled: false,
-    energy_required: 5,
-    ingredients: [
-      {
-        type: 'item',
-        name: 'coal',
-        amount: 10
-      },
-      {
-        type: 'fluid',
-        name: 'heavy_oil',
-        amount: 25
-      },
-      {
-        type: 'fluid',
-        name: 'steam',
-        amount: 50
-      }
-    ],
-    results: [
-      {
-        type: 'fluid',
-        name: 'heavy_oil',
-        amount: 35
-      },
-      {
-        type: 'fluid',
-        name: 'light_oil',
-        amount: 15
-      },
-      {
-        type: 'fluid',
-        name: 'petroleum_gas',
-        amount: 20
-      }
-    ],
     icon: 'graphics/icons/fluid/coal-liquefaction.png',
     icon_size: 32,
     subgroup: 'fluid_recipes',
-    order: 'a[oil_processing]_c[coal_liquefaction]',
-    allow_decomposition: false
+    order: 'a[oil_processing]_c[coal_liquefaction]'
   },
   heavy_oil_cracking: {
     type: 'recipe',
     name: 'heavy_oil_cracking',
-    category: 'chemistry',
-    enabled: false,
-    energy_required: 3,
-    ingredients: [
-      {
-        type: 'fluid',
-        name: 'water',
-        amount: 30
-      },
-      {
-        type: 'fluid',
-        name: 'heavy_oil',
-        amount: 40
-      }
-    ],
-    results: [
-      {
-        type: 'fluid',
-        name: 'light_oil',
-        amount: 30
-      }
-    ],
-    main_product: '',
     icon: 'graphics/icons/fluid/heavy-oil-cracking.png',
     icon_size: 32,
     subgroup: 'fluid_recipes',
@@ -3509,29 +1966,6 @@ module.exports = {
   light_oil_cracking: {
     type: 'recipe',
     name: 'light_oil_cracking',
-    category: 'chemistry',
-    enabled: false,
-    energy_required: 3,
-    ingredients: [
-      {
-        type: 'fluid',
-        name: 'water',
-        amount: 30
-      },
-      {
-        type: 'fluid',
-        name: 'light_oil',
-        amount: 30
-      }
-    ],
-    results: [
-      {
-        type: 'fluid',
-        name: 'petroleum_gas',
-        amount: 20
-      }
-    ],
-    main_product: '',
     icon: 'graphics/icons/fluid/light-oil-cracking.png',
     icon_size: 32,
     subgroup: 'fluid_recipes',
@@ -3560,26 +1994,9 @@ module.exports = {
   solid_fuel_from_light_oil: {
     type: 'recipe',
     name: 'solid_fuel_from_light_oil',
-    category: 'chemistry',
-    energy_required: 3,
-    ingredients: [
-      {
-        type: 'fluid',
-        name: 'light_oil',
-        amount: 10
-      }
-    ],
-    results: [
-      {
-        type: 'item',
-        name: 'solid_fuel',
-        amount: 1
-      }
-    ],
     icon: 'graphics/icons/solid-fuel-from-light-oil.png',
     icon_size: 32,
     subgroup: 'fluid_recipes',
-    enabled: false,
     order: 'b[fluid_chemistry]_c[solid_fuel_from_light_oil]',
     crafting_machine_tint: {
       primary: {
@@ -3605,26 +2022,9 @@ module.exports = {
   solid_fuel_from_petroleum_gas: {
     type: 'recipe',
     name: 'solid_fuel_from_petroleum_gas',
-    category: 'chemistry',
-    energy_required: 3,
-    ingredients: [
-      {
-        type: 'fluid',
-        name: 'petroleum_gas',
-        amount: 20
-      }
-    ],
-    results: [
-      {
-        type: 'item',
-        name: 'solid_fuel',
-        amount: 1
-      }
-    ],
     icon: 'graphics/icons/solid-fuel-from-petroleum-gas.png',
     icon_size: 32,
     subgroup: 'fluid_recipes',
-    enabled: false,
     order: 'b[fluid_chemistry]_d[solid_fuel_from_petroleum_gas]',
     crafting_machine_tint: {
       primary: {
@@ -3650,26 +2050,9 @@ module.exports = {
   solid_fuel_from_heavy_oil: {
     type: 'recipe',
     name: 'solid_fuel_from_heavy_oil',
-    category: 'chemistry',
-    energy_required: 3,
-    ingredients: [
-      {
-        type: 'fluid',
-        name: 'heavy_oil',
-        amount: 20
-      }
-    ],
-    results: [
-      {
-        type: 'item',
-        name: 'solid_fuel',
-        amount: 1
-      }
-    ],
     icon: 'graphics/icons/solid-fuel-from-heavy-oil.png',
     icon_size: 32,
     subgroup: 'fluid_recipes',
-    enabled: false,
     order: 'b[fluid_chemistry]_e[solid_fuel_from_heavy_oil]',
     crafting_machine_tint: {
       primary: {
@@ -3695,104 +2078,32 @@ module.exports = {
   uranium_processing: {
     type: 'recipe',
     name: 'uranium_processing',
-    energy_required: 10,
-    enabled: false,
-    category: 'centrifuging',
-    ingredients: [
-      [
-        'uranium_ore',
-        10
-      ]
-    ],
     icon: 'graphics/icons/uranium-processing.png',
     icon_size: 32,
     subgroup: 'raw_material',
-    order: 'k[uranium_processing]',
-    results: [
-      {
-        name: 'uranium_235',
-        probability: 0.007,
-        amount: 1
-      },
-      {
-        name: 'uranium_238',
-        probability: 0.993,
-        amount: 1
-      }
-    ]
+    order: 'k[uranium_processing]'
   },
   kovarex_enrichment_process: {
     type: 'recipe',
     name: 'kovarex_enrichment_process',
-    energy_required: 50,
-    enabled: false,
-    category: 'centrifuging',
-    ingredients: [
-      [
-        'uranium_235',
-        40
-      ],
-      [
-        'uranium_238',
-        5
-      ]
-    ],
     icon: 'graphics/icons/kovarex-enrichment-process.png',
     icon_size: 32,
     subgroup: 'intermediate_product',
-    order: 'r[uranium_processing]_c[kovarex_enrichment_process]',
-    main_product: '',
-    results: [
-      {
-        name: 'uranium_235',
-        amount: 41
-      },
-      {
-        name: 'uranium_238',
-        amount: 2
-      }
-    ],
-    allow_decomposition: false
+    order: 'r[uranium_processing]_c[kovarex_enrichment_process]'
   },
   nuclear_fuel_reprocessing: {
     type: 'recipe',
     name: 'nuclear_fuel_reprocessing',
-    energy_required: 50,
-    enabled: false,
-    category: 'centrifuging',
-    ingredients: [
-      [
-        'used_up_uranium_fuel_cell',
-        5
-      ]
-    ],
     icon: 'graphics/icons/nuclear-fuel-reprocessing.png',
     icon_size: 32,
     subgroup: 'intermediate_product',
-    order: 'r[uranium_processing]_b[nuclear_fuel_reprocessing]',
-    main_product: '',
-    results: [
-      {
-        name: 'uranium_238',
-        amount: 3
-      }
-    ],
-    allow_decomposition: false
+    order: 'r[uranium_processing]_b[nuclear_fuel_reprocessing]'
   },
   fill_water_barrel: {
     type: 'recipe',
     name: 'fill_water_barrel',
-    localised_name: [
-      'recipe_name.fill_barrel',
-      [
-        'fluid_name.water'
-      ]
-    ],
-    category: 'crafting_with_fluid',
-    energy_required: 0.2,
     subgroup: 'fill_barrel',
     order: 'b[fill_water_barrel]',
-    enabled: false,
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/barrel-fill.png'
@@ -3824,43 +2135,13 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32,
-    ingredients: [
-      {
-        type: 'fluid',
-        name: 'water',
-        amount: 50
-      },
-      {
-        type: 'item',
-        name: 'empty_barrel',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        type: 'item',
-        name: 'water_barrel',
-        amount: 1
-      }
-    ],
-    hide_from_stats: true,
-    allow_decomposition: false
+    icon_size: 32
   },
   empty_water_barrel: {
     type: 'recipe',
     name: 'empty_water_barrel',
-    localised_name: [
-      'recipe_name.empty_filled_barrel',
-      [
-        'fluid_name.water'
-      ]
-    ],
-    category: 'crafting_with_fluid',
-    energy_required: 0.2,
     subgroup: 'empty_barrel',
     order: 'c[empty_water_barrel]',
-    enabled: false,
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/barrel-empty.png'
@@ -3892,43 +2173,13 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32,
-    ingredients: [
-      {
-        type: 'item',
-        name: 'water_barrel',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        type: 'fluid',
-        name: 'water',
-        amount: 50
-      },
-      {
-        type: 'item',
-        name: 'empty_barrel',
-        amount: 1
-      }
-    ],
-    hide_from_stats: true,
-    allow_decomposition: false
+    icon_size: 32
   },
   fill_crude_oil_barrel: {
     type: 'recipe',
     name: 'fill_crude_oil_barrel',
-    localised_name: [
-      'recipe_name.fill_barrel',
-      [
-        'fluid_name.crude_oil'
-      ]
-    ],
-    category: 'crafting_with_fluid',
-    energy_required: 0.2,
     subgroup: 'fill_barrel',
     order: 'b[fill_crude_oil_barrel]',
-    enabled: false,
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/barrel-fill.png'
@@ -3960,43 +2211,13 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32,
-    ingredients: [
-      {
-        type: 'fluid',
-        name: 'crude_oil',
-        amount: 50
-      },
-      {
-        type: 'item',
-        name: 'empty_barrel',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        type: 'item',
-        name: 'crude_oil_barrel',
-        amount: 1
-      }
-    ],
-    hide_from_stats: true,
-    allow_decomposition: false
+    icon_size: 32
   },
   empty_crude_oil_barrel: {
     type: 'recipe',
     name: 'empty_crude_oil_barrel',
-    localised_name: [
-      'recipe_name.empty_filled_barrel',
-      [
-        'fluid_name.crude_oil'
-      ]
-    ],
-    category: 'crafting_with_fluid',
-    energy_required: 0.2,
     subgroup: 'empty_barrel',
     order: 'c[empty_crude_oil_barrel]',
-    enabled: false,
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/barrel-empty.png'
@@ -4028,43 +2249,13 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32,
-    ingredients: [
-      {
-        type: 'item',
-        name: 'crude_oil_barrel',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        type: 'fluid',
-        name: 'crude_oil',
-        amount: 50
-      },
-      {
-        type: 'item',
-        name: 'empty_barrel',
-        amount: 1
-      }
-    ],
-    hide_from_stats: true,
-    allow_decomposition: false
+    icon_size: 32
   },
   fill_heavy_oil_barrel: {
     type: 'recipe',
     name: 'fill_heavy_oil_barrel',
-    localised_name: [
-      'recipe_name.fill_barrel',
-      [
-        'fluid_name.heavy_oil'
-      ]
-    ],
-    category: 'crafting_with_fluid',
-    energy_required: 0.2,
     subgroup: 'fill_barrel',
     order: 'b[fill_heavy_oil_barrel]',
-    enabled: false,
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/barrel-fill.png'
@@ -4096,43 +2287,13 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32,
-    ingredients: [
-      {
-        type: 'fluid',
-        name: 'heavy_oil',
-        amount: 50
-      },
-      {
-        type: 'item',
-        name: 'empty_barrel',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        type: 'item',
-        name: 'heavy_oil_barrel',
-        amount: 1
-      }
-    ],
-    hide_from_stats: true,
-    allow_decomposition: false
+    icon_size: 32
   },
   empty_heavy_oil_barrel: {
     type: 'recipe',
     name: 'empty_heavy_oil_barrel',
-    localised_name: [
-      'recipe_name.empty_filled_barrel',
-      [
-        'fluid_name.heavy_oil'
-      ]
-    ],
-    category: 'crafting_with_fluid',
-    energy_required: 0.2,
     subgroup: 'empty_barrel',
     order: 'c[empty_heavy_oil_barrel]',
-    enabled: false,
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/barrel-empty.png'
@@ -4164,43 +2325,13 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32,
-    ingredients: [
-      {
-        type: 'item',
-        name: 'heavy_oil_barrel',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        type: 'fluid',
-        name: 'heavy_oil',
-        amount: 50
-      },
-      {
-        type: 'item',
-        name: 'empty_barrel',
-        amount: 1
-      }
-    ],
-    hide_from_stats: true,
-    allow_decomposition: false
+    icon_size: 32
   },
   fill_light_oil_barrel: {
     type: 'recipe',
     name: 'fill_light_oil_barrel',
-    localised_name: [
-      'recipe_name.fill_barrel',
-      [
-        'fluid_name.light_oil'
-      ]
-    ],
-    category: 'crafting_with_fluid',
-    energy_required: 0.2,
     subgroup: 'fill_barrel',
     order: 'b[fill_light_oil_barrel]',
-    enabled: false,
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/barrel-fill.png'
@@ -4232,43 +2363,13 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32,
-    ingredients: [
-      {
-        type: 'fluid',
-        name: 'light_oil',
-        amount: 50
-      },
-      {
-        type: 'item',
-        name: 'empty_barrel',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        type: 'item',
-        name: 'light_oil_barrel',
-        amount: 1
-      }
-    ],
-    hide_from_stats: true,
-    allow_decomposition: false
+    icon_size: 32
   },
   empty_light_oil_barrel: {
     type: 'recipe',
     name: 'empty_light_oil_barrel',
-    localised_name: [
-      'recipe_name.empty_filled_barrel',
-      [
-        'fluid_name.light_oil'
-      ]
-    ],
-    category: 'crafting_with_fluid',
-    energy_required: 0.2,
     subgroup: 'empty_barrel',
     order: 'c[empty_light_oil_barrel]',
-    enabled: false,
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/barrel-empty.png'
@@ -4300,43 +2401,13 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32,
-    ingredients: [
-      {
-        type: 'item',
-        name: 'light_oil_barrel',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        type: 'fluid',
-        name: 'light_oil',
-        amount: 50
-      },
-      {
-        type: 'item',
-        name: 'empty_barrel',
-        amount: 1
-      }
-    ],
-    hide_from_stats: true,
-    allow_decomposition: false
+    icon_size: 32
   },
   fill_petroleum_gas_barrel: {
     type: 'recipe',
     name: 'fill_petroleum_gas_barrel',
-    localised_name: [
-      'recipe_name.fill_barrel',
-      [
-        'fluid_name.petroleum_gas'
-      ]
-    ],
-    category: 'crafting_with_fluid',
-    energy_required: 0.2,
     subgroup: 'fill_barrel',
     order: 'b[fill_petroleum_gas_barrel]',
-    enabled: false,
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/barrel-fill.png'
@@ -4368,43 +2439,13 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32,
-    ingredients: [
-      {
-        type: 'fluid',
-        name: 'petroleum_gas',
-        amount: 50
-      },
-      {
-        type: 'item',
-        name: 'empty_barrel',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        type: 'item',
-        name: 'petroleum_gas_barrel',
-        amount: 1
-      }
-    ],
-    hide_from_stats: true,
-    allow_decomposition: false
+    icon_size: 32
   },
   empty_petroleum_gas_barrel: {
     type: 'recipe',
     name: 'empty_petroleum_gas_barrel',
-    localised_name: [
-      'recipe_name.empty_filled_barrel',
-      [
-        'fluid_name.petroleum_gas'
-      ]
-    ],
-    category: 'crafting_with_fluid',
-    energy_required: 0.2,
     subgroup: 'empty_barrel',
     order: 'c[empty_petroleum_gas_barrel]',
-    enabled: false,
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/barrel-empty.png'
@@ -4436,43 +2477,13 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32,
-    ingredients: [
-      {
-        type: 'item',
-        name: 'petroleum_gas_barrel',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        type: 'fluid',
-        name: 'petroleum_gas',
-        amount: 50
-      },
-      {
-        type: 'item',
-        name: 'empty_barrel',
-        amount: 1
-      }
-    ],
-    hide_from_stats: true,
-    allow_decomposition: false
+    icon_size: 32
   },
   fill_lubricant_barrel: {
     type: 'recipe',
     name: 'fill_lubricant_barrel',
-    localised_name: [
-      'recipe_name.fill_barrel',
-      [
-        'fluid_name.lubricant'
-      ]
-    ],
-    category: 'crafting_with_fluid',
-    energy_required: 0.2,
     subgroup: 'fill_barrel',
     order: 'b[fill_lubricant_barrel]',
-    enabled: false,
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/barrel-fill.png'
@@ -4504,43 +2515,13 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32,
-    ingredients: [
-      {
-        type: 'fluid',
-        name: 'lubricant',
-        amount: 50
-      },
-      {
-        type: 'item',
-        name: 'empty_barrel',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        type: 'item',
-        name: 'lubricant_barrel',
-        amount: 1
-      }
-    ],
-    hide_from_stats: true,
-    allow_decomposition: false
+    icon_size: 32
   },
   empty_lubricant_barrel: {
     type: 'recipe',
     name: 'empty_lubricant_barrel',
-    localised_name: [
-      'recipe_name.empty_filled_barrel',
-      [
-        'fluid_name.lubricant'
-      ]
-    ],
-    category: 'crafting_with_fluid',
-    energy_required: 0.2,
     subgroup: 'empty_barrel',
     order: 'c[empty_lubricant_barrel]',
-    enabled: false,
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/barrel-empty.png'
@@ -4572,43 +2553,13 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32,
-    ingredients: [
-      {
-        type: 'item',
-        name: 'lubricant_barrel',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        type: 'fluid',
-        name: 'lubricant',
-        amount: 50
-      },
-      {
-        type: 'item',
-        name: 'empty_barrel',
-        amount: 1
-      }
-    ],
-    hide_from_stats: true,
-    allow_decomposition: false
+    icon_size: 32
   },
   fill_sulfuric_acid_barrel: {
     type: 'recipe',
     name: 'fill_sulfuric_acid_barrel',
-    localised_name: [
-      'recipe_name.fill_barrel',
-      [
-        'fluid_name.sulfuric_acid'
-      ]
-    ],
-    category: 'crafting_with_fluid',
-    energy_required: 0.2,
     subgroup: 'fill_barrel',
     order: 'b[fill_sulfuric_acid_barrel]',
-    enabled: false,
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/barrel-fill.png'
@@ -4640,43 +2591,13 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32,
-    ingredients: [
-      {
-        type: 'fluid',
-        name: 'sulfuric_acid',
-        amount: 50
-      },
-      {
-        type: 'item',
-        name: 'empty_barrel',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        type: 'item',
-        name: 'sulfuric_acid_barrel',
-        amount: 1
-      }
-    ],
-    hide_from_stats: true,
-    allow_decomposition: false
+    icon_size: 32
   },
   empty_sulfuric_acid_barrel: {
     type: 'recipe',
     name: 'empty_sulfuric_acid_barrel',
-    localised_name: [
-      'recipe_name.empty_filled_barrel',
-      [
-        'fluid_name.sulfuric_acid'
-      ]
-    ],
-    category: 'crafting_with_fluid',
-    energy_required: 0.2,
     subgroup: 'empty_barrel',
     order: 'c[empty_sulfuric_acid_barrel]',
-    enabled: false,
     icons: [
       {
         icon: 'graphics/icons/fluid/barreling/barrel-empty.png'
@@ -4708,28 +2629,7 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32,
-    ingredients: [
-      {
-        type: 'item',
-        name: 'sulfuric_acid_barrel',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        type: 'fluid',
-        name: 'sulfuric_acid',
-        amount: 50
-      },
-      {
-        type: 'item',
-        name: 'empty_barrel',
-        amount: 1
-      }
-    ],
-    hide_from_stats: true,
-    allow_decomposition: false
+    icon_size: 32
   },
   signal_everything: {
     type: 'virtual_signal',
@@ -5123,9 +3023,6 @@ module.exports = {
     name: 'locomotive',
     icon: 'graphics/icons/diesel-locomotive.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'transport',
     order: 'a[train_system]_f[diesel_locomotive]',
     place_result: 'locomotive',
@@ -5136,9 +3033,6 @@ module.exports = {
     name: 'cargo_wagon',
     icon: 'graphics/icons/cargo-wagon.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'transport',
     order: 'a[train_system]_g[cargo_wagon]',
     place_result: 'cargo_wagon',
@@ -5149,9 +3043,6 @@ module.exports = {
     name: 'fluid_wagon',
     icon: 'graphics/icons/fluid-wagon.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'transport',
     order: 'a[train_system]_h[fluid_wagon]',
     place_result: 'fluid_wagon',
@@ -5162,9 +3053,6 @@ module.exports = {
     name: 'artillery_wagon',
     icon: 'graphics/icons/artillery-wagon.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'transport',
     order: 'a[train_system]_i[artillery_wagon]',
     place_result: 'artillery_wagon',
@@ -5175,9 +3063,6 @@ module.exports = {
     name: 'car',
     icon: 'graphics/icons/car.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'transport',
     order: 'b[personal_transport]_a[car]',
     place_result: 'car',
@@ -5188,9 +3073,6 @@ module.exports = {
     name: 'tank',
     icon: 'graphics/icons/tank.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'transport',
     order: 'b[personal_transport]_b[tank]',
     place_result: 'tank',
@@ -5201,153 +3083,90 @@ module.exports = {
     name: 'rail',
     icon: 'graphics/icons/rail.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'transport',
     order: 'a[train_system]_a[rail]',
     place_result: 'straight_rail',
-    stack_size: 100,
-    straight_rail: 'straight_rail',
-    curved_rail: 'curved_rail'
+    stack_size: 100
   },
   science_pack_1: {
     type: 'tool',
     name: 'science_pack_1',
-    localised_description: [
-      'item_description.science_pack'
-    ],
     icon: 'graphics/icons/science-pack-1.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'science_pack',
     order: 'a[science_pack_1]',
     stack_size: 200,
-    durability: 1,
-    durability_description_key: 'description.science_pack_remaining_amount_key',
-    durability_description_value: 'description.science_pack_remaining_amount_value'
+    durability: 1
   },
   science_pack_2: {
     type: 'tool',
     name: 'science_pack_2',
-    localised_description: [
-      'item_description.science_pack'
-    ],
     icon: 'graphics/icons/science-pack-2.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'science_pack',
     order: 'b[science_pack_2]',
     stack_size: 200,
-    durability: 1,
-    durability_description_key: 'description.science_pack_remaining_amount_key',
-    durability_description_value: 'description.science_pack_remaining_amount_value'
+    durability: 1
   },
   science_pack_3: {
     type: 'tool',
     name: 'science_pack_3',
-    localised_description: [
-      'item_description.science_pack'
-    ],
     icon: 'graphics/icons/science-pack-3.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'science_pack',
     order: 'c[science_pack_3]',
     stack_size: 200,
-    durability: 1,
-    durability_description_key: 'description.science_pack_remaining_amount_key',
-    durability_description_value: 'description.science_pack_remaining_amount_value'
+    durability: 1
   },
   military_science_pack: {
     type: 'tool',
     name: 'military_science_pack',
-    localised_description: [
-      'item_description.science_pack'
-    ],
     icon: 'graphics/icons/military-science-pack.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'science_pack',
     order: 'd[military_science_pack]',
     stack_size: 200,
-    durability: 1,
-    durability_description_key: 'description.science_pack_remaining_amount_key',
-    durability_description_value: 'description.science_pack_remaining_amount_value'
+    durability: 1
   },
   production_science_pack: {
     type: 'tool',
     name: 'production_science_pack',
-    localised_description: [
-      'item_description.science_pack'
-    ],
     icon: 'graphics/icons/production-science-pack.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'science_pack',
     order: 'e[production_science_pack]',
     stack_size: 200,
-    durability: 1,
-    durability_description_key: 'description.science_pack_remaining_amount_key',
-    durability_description_value: 'description.science_pack_remaining_amount_value'
+    durability: 1
   },
   high_tech_science_pack: {
     type: 'tool',
     name: 'high_tech_science_pack',
-    localised_description: [
-      'item_description.science_pack'
-    ],
     icon: 'graphics/icons/high-tech-science-pack.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'science_pack',
     order: 'f[high_tech_science_pack]',
     stack_size: 200,
-    durability: 1,
-    durability_description_key: 'description.science_pack_remaining_amount_key',
-    durability_description_value: 'description.science_pack_remaining_amount_value'
+    durability: 1
   },
   space_science_pack: {
     type: 'tool',
     name: 'space_science_pack',
     icon: 'graphics/icons/space-science-pack.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'science_pack',
     order: 'g[space_science_pack]',
     stack_size: 2000,
-    durability: 1,
-    durability_description_key: 'description.science_pack_remaining_amount_key',
-    durability_description_value: 'description.science_pack_remaining_amount_value'
+    durability: 1
   },
   blueprint: {
     type: 'blueprint',
     name: 'blueprint',
     icon: 'graphics/icons/blueprint.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'tool',
     order: 'c[automated_construction]_a[blueprint]',
     stack_size: 1,
     stackable: false,
-    draw_label_for_cursor_render: true,
-    item_to_clear: 'electronic_circuit',
     selection_color: {
       r: 0,
       g: 1,
@@ -5372,14 +3191,9 @@ module.exports = {
     name: 'deconstruction_planner',
     icon: 'graphics/icons/deconstruction-planner.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'tool',
     order: 'c[automated_construction]_b[deconstruction_planner]',
     stack_size: 1,
-    entity_filter_count: 30,
-    tile_filter_count: 30,
     selection_color: {
       r: 1,
       g: 0,
@@ -5404,9 +3218,6 @@ module.exports = {
     name: 'blueprint_book',
     icon: 'graphics/icons/blueprint-book.png',
     icon_size: 32,
-    flags: [
-      'goes_to_quickbar'
-    ],
     subgroup: 'tool',
     order: 'c[automated_construction]_c[blueprint_book]',
     stack_size: 1,
@@ -5415,16 +3226,9 @@ module.exports = {
   speed_module: {
     type: 'module',
     name: 'speed_module',
-    localised_description: [
-      'item_description.speed_module'
-    ],
     icon: 'graphics/icons/speed-module.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'module',
-    category: 'speed',
     tier: 1,
     order: 'a[speed]_a[speed_module_1]',
     stack_size: 50,
@@ -5441,16 +3245,9 @@ module.exports = {
   speed_module_2: {
     type: 'module',
     name: 'speed_module_2',
-    localised_description: [
-      'item_description.speed_module'
-    ],
     icon: 'graphics/icons/speed-module-2.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'module',
-    category: 'speed',
     tier: 2,
     order: 'a[speed]_b[speed_module_2]',
     stack_size: 50,
@@ -5467,16 +3264,9 @@ module.exports = {
   speed_module_3: {
     type: 'module',
     name: 'speed_module_3',
-    localised_description: [
-      'item_description.speed_module'
-    ],
     icon: 'graphics/icons/speed-module-3.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'module',
-    category: 'speed',
     tier: 3,
     order: 'a[speed]_c[speed_module_3]',
     stack_size: 50,
@@ -5493,16 +3283,9 @@ module.exports = {
   effectivity_module: {
     type: 'module',
     name: 'effectivity_module',
-    localised_description: [
-      'item_description.effectivity_module'
-    ],
     icon: 'graphics/icons/effectivity-module.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'module',
-    category: 'effectivity',
     tier: 1,
     order: 'c[effectivity]_a[effectivity_module_1]',
     stack_size: 50,
@@ -5516,16 +3299,9 @@ module.exports = {
   effectivity_module_2: {
     type: 'module',
     name: 'effectivity_module_2',
-    localised_description: [
-      'item_description.effectivity_module'
-    ],
     icon: 'graphics/icons/effectivity-module-2.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'module',
-    category: 'effectivity',
     tier: 2,
     order: 'c[effectivity]_b[effectivity_module_2]',
     stack_size: 50,
@@ -5539,16 +3315,9 @@ module.exports = {
   effectivity_module_3: {
     type: 'module',
     name: 'effectivity_module_3',
-    localised_description: [
-      'item_description.effectivity_module'
-    ],
     icon: 'graphics/icons/effectivity-module-3.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'module',
-    category: 'effectivity',
     tier: 3,
     order: 'c[effectivity]_c[effectivity_module_3]',
     stack_size: 50,
@@ -5562,16 +3331,9 @@ module.exports = {
   productivity_module: {
     type: 'module',
     name: 'productivity_module',
-    localised_description: [
-      'item_description.productivity_module'
-    ],
     icon: 'graphics/icons/productivity-module.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'module',
-    category: 'productivity',
     tier: 1,
     order: 'c[productivity]_a[productivity_module_1]',
     stack_size: 50,
@@ -5632,22 +3394,14 @@ module.exports = {
       'military_science_pack',
       'production_science_pack',
       'high_tech_science_pack'
-    ],
-    limitation_message_key: 'production_module_usable_only_on_intermediates'
+    ]
   },
   productivity_module_2: {
     type: 'module',
     name: 'productivity_module_2',
-    localised_description: [
-      'item_description.productivity_module'
-    ],
     icon: 'graphics/icons/productivity-module-2.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'module',
-    category: 'productivity',
     tier: 2,
     order: 'c[productivity]_b[productivity_module_2]',
     stack_size: 50,
@@ -5708,22 +3462,14 @@ module.exports = {
       'military_science_pack',
       'production_science_pack',
       'high_tech_science_pack'
-    ],
-    limitation_message_key: 'production_module_usable_only_on_intermediates'
+    ]
   },
   productivity_module_3: {
     type: 'module',
     name: 'productivity_module_3',
-    localised_description: [
-      'item_description.productivity_module'
-    ],
     icon: 'graphics/icons/productivity-module-3.png',
     icon_size: 32,
-    flags: [
-      'goes_to_main_inventory'
-    ],
     subgroup: 'module',
-    category: 'productivity',
     tier: 3,
     order: 'c[productivity]_c[productivity_module_3]',
     stack_size: 50,
@@ -5784,8 +3530,7 @@ module.exports = {
       'military_science_pack',
       'production_science_pack',
       'high_tech_science_pack'
-    ],
-    limitation_message_key: 'production_module_usable_only_on_intermediates'
+    ]
   },
   water: {
     type: 'fluid',
@@ -5832,7 +3577,6 @@ module.exports = {
     pressure_to_speed_ratio: 0.4,
     flow_to_energy_ratio: 0.59,
     gas_temperature: 15,
-    auto_barrel: false,
     subgroup: 'fluid'
   },
   crude_oil: {
