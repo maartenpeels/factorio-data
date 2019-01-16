@@ -169,6 +169,72 @@ declare module FD {
         [name: string]: Item
     }
 
+    const tiles: {
+        [name: string]: Tile
+    }
+
+    interface Tile {
+        type: string
+        name: string
+        needs_correction: boolean
+        minable: Minable
+        mined_sound: Sound
+        collision_mask?: string[]
+        walking_speed_modifier: number
+        layer: number
+        decorative_removal_probability: number
+        variants: Variants
+        transitions?: Transition[]
+        transitions_between_transitions?: Transition[]
+        walking_sound?: Sound[]
+        map_color: Color
+        ageing: number
+        vehicle_friction_modifier: number
+        transition_overlay_layer_offset?: number
+        next_direction?: string
+        transition_merges_with_tile?: string
+    }
+    interface Variants extends TileSpriteLayers {
+        main: TileSpriteData[]
+        material_background?: TileSpriteData
+    }
+    interface Transition extends TileSpriteLayers {
+        to_tiles: string[]
+    }
+    interface TileSpriteLayers {
+        inner_corner?: TileSpriteData
+        inner_corner_mask?: TileSpriteData
+        inner_corner_background?: TileSpriteData
+
+        outer_corner?: TileSpriteData
+        outer_corner_mask?: TileSpriteData
+        outer_corner_background?: TileSpriteData
+
+        side?: TileSpriteData
+        side_mask?: TileSpriteData
+        side_background?: TileSpriteData
+
+        u_transition?: TileSpriteData
+        u_transition_mask?: TileSpriteData
+        u_transition_background?: TileSpriteData
+
+        o_transition?: TileSpriteData
+        o_transition_mask?: TileSpriteData
+        o_transition_background?: TileSpriteData
+    }
+    interface TileSpriteData {
+        picture: string
+        count: number
+        line_length?: number
+        x?: number
+        y?: number
+        tall?: boolean
+        size?: number
+        scale?: number
+        probability?: number
+        hr_version?: TileSpriteData
+    }
+
     const entities: {
         [name: string]: Entity
     }
