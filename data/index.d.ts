@@ -900,6 +900,7 @@ declare module FD {
         copper?: number[]
         red?: number[]
         green?: number[]
+        [key: string]: number[]
     }
     interface CircuitConnectorSprites {
         led_blue: SpriteData
