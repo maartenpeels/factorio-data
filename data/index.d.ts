@@ -169,6 +169,10 @@ declare module FD {
         [name: string]: Item
     }
 
+    const entities: {
+        [name: string]: Entity
+    }
+
     // TODO: document the entity properties
     interface Entity {
         type: string
