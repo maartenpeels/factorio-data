@@ -1,5 +1,5 @@
 const fs = require('fs')
-const lua2js = require('lua2js')
+const luainjs = require('lua-in-js')
 const execSync = require('child_process').execSync
 
 const factorioDirectory = process.argv[2]
@@ -80,10 +80,10 @@ const luaFileData =
 
 // fs.writeFileSync('./temp.lua', luaFileData)
 
-const data = lua2js.parser.parse(luaFileData)
+const data = luainjs.parser.parse(luaFileData)
 fs.writeFileSync('./temp.js', `
 const fs = require("fs");
-require("lua2js").runtime;
+require("lua-in-js").runtime;
 ${data}
 fs.writeFileSync('${outputFile}', JSON.stringify(Tget($get($, 'data'), 'raw').toObject(), null, 2));
 fs.unlinkSync('./temp.js');
