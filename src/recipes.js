@@ -17,10 +17,10 @@ for (const k in rawData.recipe) {
         category: recipe.category || 'crafting',
         hidden: recipe.hidden,
         time: recipe.energy_required || 0.5,
-        ingredients: recipe.ingredients[0] instanceof Array ? recipe.ingredients.map(i => ({
-            name: i[0],
-            amount: i[1]
-        })) : recipe.ingredients,
+        ingredients: recipe.ingredients.map(ingredient => ingredient instanceof Array ? {
+            name: ingredient[0],
+            amount: ingredient[1]
+        } : ingredient),
         results: recipe.result ? [{
             name: recipe.result,
             amount: recipe.result_count || 1

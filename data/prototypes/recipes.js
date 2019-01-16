@@ -2401,7 +2401,11 @@ module.exports = {
         name: 'fast_transport_belt',
         amount: 1
       },
-      {}
+      {
+        type: 'fluid',
+        name: 'lubricant',
+        amount: 20
+      }
     ],
     results: [
       {
@@ -3335,7 +3339,11 @@ module.exports = {
         name: 'fast_underground_belt',
         amount: 2
       },
-      {}
+      {
+        type: 'fluid',
+        name: 'lubricant',
+        amount: 40
+      }
     ],
     results: [
       {
@@ -3486,7 +3494,11 @@ module.exports = {
         name: 'advanced_circuit',
         amount: 10
       },
-      {}
+      {
+        type: 'fluid',
+        name: 'lubricant',
+        amount: 80
+      }
     ],
     results: [
       {
@@ -3533,7 +3545,11 @@ module.exports = {
         name: 'advanced_circuit',
         amount: 2
       },
-      {}
+      {
+        type: 'fluid',
+        name: 'sulfuric_acid',
+        amount: 5
+      }
     ],
     results: [
       {
@@ -4048,7 +4064,11 @@ module.exports = {
         name: 'engine_unit',
         amount: 1
       },
-      {},
+      {
+        type: 'fluid',
+        name: 'lubricant',
+        amount: 15
+      },
       {
         name: 'electronic_circuit',
         amount: 2
@@ -4148,14 +4168,14 @@ module.exports = {
         name: 'sulfuric_acid',
         amount: 20
       },
-      [
-        'iron_plate',
-        1
-      ],
-      [
-        'copper_plate',
-        1
-      ]
+      {
+        name: 'iron_plate',
+        amount: 1
+      },
+      {
+        name: 'copper_plate',
+        amount: 1
+      }
     ],
     results: [
       {
@@ -4541,7 +4561,11 @@ module.exports = {
         name: 'iron_ore',
         amount: 1
       },
-      {}
+      {
+        type: 'fluid',
+        name: 'water',
+        amount: 100
+      }
     ],
     results: [
       {
@@ -4584,7 +4608,11 @@ module.exports = {
         name: 'steel_plate',
         amount: 1
       },
-      {}
+      {
+        type: 'fluid',
+        name: 'water',
+        amount: 100
+      }
     ],
     results: [
       {
