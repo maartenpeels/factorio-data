@@ -12,7 +12,19 @@ const utilityPaths = [
     'arrows/fluid-indication-arrow',
     'arrows/fluid-indication-arrow-both-ways',
     'arrows/indication-arrow',
-    'arrows/underground-lines'
+    'arrows/underground-lines',
+    'slot-icon-module',
+    'slot-icon-blueprint',
+    'circuit-network-panel',
+    'logistic-network-panel',
+    'clock-icon',
+    'clone-icon',
+    'export',
+    'import',
+    'enter-icon',
+    'remove-icon',
+    'rename-normal',
+    'side-menu-icons'
 ].map(p => factorioDataDirectory + 'core/graphics/' + p + '.png')
 
 console.log('Utility sprites: ' + utilityPaths.length)
