@@ -109,9 +109,25 @@ function add_to_Y_shift(y_shift, layer) {
 // Fix inconsistent radius
 entities.beacon.supply_area_distance += 1
 
+const keysToDelete = [
+    'repair_sound',
+    'vehicle_impact_sound',
+    'resistances',
+    'action',
+    'meltdown_action',
+    'ammo_type',
+    'attack_parameters',
+    'fluid_wagon_connector_graphics'
+]
+
+Object.keys(entities).forEach(entK =>
+    Object.keys(entities[entK])
+        .filter(k => keysToDelete.includes(k))
+        .forEach(k => delete entities[entK][k])
+)
+
 console.log('Entities: ' + Object.keys(entities).length)
 
 fse.writeFileSync(outputFile, 'module.exports = ' + javascriptStringify(JSON.parse(JSON.stringify(entities)
     .replace(/"(__base__|__core__)\/(.+?)"/g, '"$2"')
 ), null, 2))
-

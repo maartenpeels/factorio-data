@@ -15,9 +15,6 @@ module.exports = {
     },
     max_health: 200,
     corpse: 'medium_remnants',
-    repair_sound: {
-      filename: 'sound/manual-repair-simple.ogg'
-    },
     mined_sound: {
       filename: 'sound/deconstruct-bricks.ogg'
     },
@@ -29,29 +26,11 @@ module.exports = {
       filename: 'sound/machine-close.ogg',
       volume: 0.75
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-stone-impact.ogg',
-      volume: 1
-    },
     working_sound: {
       sound: {
         filename: 'sound/furnace.ogg'
       }
     },
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      },
-      {
-        type: 'explosion',
-        percent: 30
-      },
-      {
-        type: 'impact',
-        percent: 30
-      }
-    ],
     collision_box: [
       [
         -0.7,
@@ -234,21 +213,11 @@ module.exports = {
     },
     max_health: 300,
     corpse: 'medium_remnants',
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       sound: {
         filename: 'sound/furnace.ogg'
       }
     },
-    resistances: [
-      {
-        type: 'fire',
-        percent: 100
-      }
-    ],
     collision_box: [
       [
         -0.7,
@@ -509,12 +478,6 @@ module.exports = {
     max_health: 350,
     corpse: 'big_remnants',
     dying_explosion: 'medium_explosion',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 80
-      }
-    ],
     collision_box: [
       [
         -1.2,
@@ -559,10 +522,6 @@ module.exports = {
       type: 'electric',
       usage_priority: 'secondary_input',
       emissions: 0.005
-    },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
     },
     working_sound: {
       sound: {
@@ -741,12 +700,6 @@ module.exports = {
     },
     max_health: 150,
     corpse: 'small_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      }
-    ],
     collision_box: [
       [
         -0.4,
@@ -2077,12 +2030,6 @@ module.exports = {
     },
     max_health: 160,
     corpse: 'small_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 50
-      }
-    ],
     collision_box: [
       [
         -0.4,
@@ -3422,12 +3369,6 @@ module.exports = {
     },
     max_health: 170,
     corpse: 'small_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 50
-      }
-    ],
     collision_box: [
       [
         -0.4,
@@ -4767,25 +4708,7 @@ module.exports = {
     },
     max_health: 200,
     corpse: 'medium_remnants',
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     mode: 'output_to_separate_pipe',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      },
-      {
-        type: 'explosion',
-        percent: 30
-      },
-      {
-        type: 'impact',
-        percent: 30
-      }
-    ],
     collision_box: [
       [
         -1.29,
@@ -5603,25 +5526,7 @@ module.exports = {
     },
     max_health: 200,
     corpse: 'medium_remnants',
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     mode: 'output_to_separate_pipe',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      },
-      {
-        type: 'explosion',
-        percent: 30
-      },
-      {
-        type: 'impact',
-        percent: 30
-      }
-    ],
     collision_box: [
       [
         -1.29,
@@ -6298,10 +6203,6 @@ module.exports = {
     close_sound: {
       filename: 'sound/wooden-chest-close.ogg'
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     picture: {
       filename: 'graphics/entity/wooden-chest/wooden-chest.png',
       priority: 'extra_high',
@@ -6483,16 +6384,6 @@ module.exports = {
       filename: 'sound/metallic-chest-close.ogg',
       volume: 0.7
     },
-    resistances: [
-      {
-        type: 'fire',
-        percent: 80
-      },
-      {
-        type: 'impact',
-        percent: 30
-      }
-    ],
     collision_box: [
       [
         -0.35,
@@ -6515,10 +6406,6 @@ module.exports = {
     ],
     fast_replaceable_group: 'container',
     inventory_size: 32,
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     picture: {
       filename: 'graphics/entity/iron-chest/iron-chest.png',
       priority: 'extra_high',
@@ -6700,16 +6587,6 @@ module.exports = {
       filename: 'sound/metallic-chest-close.ogg',
       volume: 0.7
     },
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      },
-      {
-        type: 'impact',
-        percent: 60
-      }
-    ],
     collision_box: [
       [
         -0.35,
@@ -6732,10 +6609,6 @@ module.exports = {
     ],
     fast_replaceable_group: 'container',
     inventory_size: 48,
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     picture: {
       filename: 'graphics/entity/steel-chest/steel-chest.png',
       priority: 'extra_high',
@@ -6943,10 +6816,6 @@ module.exports = {
     ],
     maximum_wire_distance: 7.5,
     supply_area_distance: 2.5,
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     track_coverage_during_build_by_moving: true,
     fast_replaceable_group: 'electric_pole',
     pictures: {
@@ -7110,12 +6979,6 @@ module.exports = {
     },
     max_health: 150,
     corpse: 'medium_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 100
-      }
-    ],
     collision_box: [
       [
         -0.65,
@@ -7148,10 +7011,6 @@ module.exports = {
     ],
     maximum_wire_distance: 30,
     supply_area_distance: 2,
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     pictures: {
       filename: 'graphics/entity/big-electric-pole/big-electric-pole.png',
       priority: 'high',
@@ -7315,12 +7174,6 @@ module.exports = {
     corpse: 'small_remnants',
     track_coverage_during_build_by_moving: true,
     fast_replaceable_group: 'electric_pole',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 100
-      }
-    ],
     collision_box: [
       [
         -0.15,
@@ -7353,10 +7206,6 @@ module.exports = {
     ],
     maximum_wire_distance: 9,
     supply_area_distance: 3.5,
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     pictures: {
       filename: 'graphics/entity/medium-electric-pole/medium-electric-pole.png',
       priority: 'high',
@@ -7518,12 +7367,6 @@ module.exports = {
     max_health: 200,
     corpse: 'medium_remnants',
     track_coverage_during_build_by_moving: true,
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      }
-    ],
     collision_box: [
       [
         -0.7,
@@ -7566,10 +7409,6 @@ module.exports = {
         0.9,
         -1
       ]
-    },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
     },
     working_sound: {
       sound: {
@@ -7735,16 +7574,6 @@ module.exports = {
     effectivity: 1,
     fluid_usage_per_tick: 0.5,
     maximum_temperature: 165,
-    resistances: [
-      {
-        type: 'fire',
-        percent: 70
-      },
-      {
-        type: 'impact',
-        percent: 30
-      }
-    ],
     fast_replaceable_group: 'steam_engine',
     collision_box: [
       [
@@ -8045,10 +7874,6 @@ module.exports = {
         starting_frame_deviation: 60
       }
     ],
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       sound: {
         filename: 'sound/steam-engine-90bpm.ogg',
@@ -8091,12 +7916,6 @@ module.exports = {
     fluid_usage_per_tick: 1,
     maximum_temperature: 500,
     burns_fluid: false,
-    resistances: [
-      {
-        type: 'fire',
-        percent: 70
-      }
-    ],
     fast_replaceable_group: 'steam_engine',
     collision_box: [
       [
@@ -8401,10 +8220,6 @@ module.exports = {
         starting_frame_deviation: 60
       }
     ],
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       sound: {
         filename: 'sound/steam-engine-90bpm.ogg',
@@ -8450,16 +8265,6 @@ module.exports = {
     max_health: 150,
     corpse: 'small_remnants',
     fluid: 'water',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 70
-      },
-      {
-        type: 'impact',
-        percent: 30
-      }
-    ],
     collision_box: [
       [
         -0.6,
@@ -8627,10 +8432,6 @@ module.exports = {
     pumping_speed: 20,
     tile_width: 1,
     tile_height: 1,
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     picture: {
       north: {
         filename: 'graphics/entity/offshore-pump/offshore-pump.png',
@@ -9229,12 +9030,6 @@ module.exports = {
     },
     max_health: 150,
     corpse: 'small_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      }
-    ],
     collision_box: [
       [
         -0.15,
@@ -9265,10 +9060,6 @@ module.exports = {
     extension_speed: 0.03,
     rotation_speed: 0.014,
     fast_replaceable_group: 'inserter',
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       match_progress_to_activity: true,
       sound: [
@@ -10008,12 +9799,6 @@ module.exports = {
     },
     max_health: 100,
     corpse: 'small_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      }
-    ],
     collision_box: [
       [
         -0.15,
@@ -10054,10 +9839,6 @@ module.exports = {
     },
     extension_speed: 0.0214,
     fast_replaceable_group: 'inserter',
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       match_progress_to_activity: true,
       sound: [
@@ -10798,12 +10579,6 @@ module.exports = {
     },
     max_health: 160,
     corpse: 'small_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      }
-    ],
     collision_box: [
       [
         -0.15,
@@ -10843,10 +10618,6 @@ module.exports = {
       drain: '0.4kW'
     },
     fast_replaceable_group: 'long_handed_inserter',
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       match_progress_to_activity: true,
       sound: [
@@ -11578,12 +11349,6 @@ module.exports = {
     },
     max_health: 150,
     corpse: 'small_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      }
-    ],
     collision_box: [
       [
         -0.15,
@@ -11622,10 +11387,6 @@ module.exports = {
     extension_speed: 0.07,
     rotation_speed: 0.04,
     fast_replaceable_group: 'inserter',
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       match_progress_to_activity: true,
       sound: [
@@ -12358,12 +12119,6 @@ module.exports = {
     },
     max_health: 160,
     corpse: 'small_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      }
-    ],
     collision_box: [
       [
         -0.15,
@@ -12402,10 +12157,6 @@ module.exports = {
     extension_speed: 0.07,
     rotation_speed: 0.04,
     fast_replaceable_group: 'inserter',
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       match_progress_to_activity: true,
       sound: [
@@ -13139,12 +12890,6 @@ module.exports = {
     },
     max_health: 160,
     corpse: 'small_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      }
-    ],
     collision_box: [
       [
         -0.15,
@@ -13183,10 +12928,6 @@ module.exports = {
     extension_speed: 0.07,
     rotation_speed: 0.04,
     fast_replaceable_group: 'inserter',
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       match_progress_to_activity: true,
       sound: [
@@ -13918,16 +13659,6 @@ module.exports = {
     },
     max_health: 150,
     corpse: 'small_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      }
-    ],
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       match_progress_to_activity: true,
       sound: [
@@ -14697,16 +14428,6 @@ module.exports = {
     },
     max_health: 100,
     corpse: 'small_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 80
-      },
-      {
-        type: 'impact',
-        percent: 30
-      }
-    ],
     fast_replaceable_group: 'pipe',
     collision_box: [
       [
@@ -14756,10 +14477,6 @@ module.exports = {
           ]
         }
       ]
-    },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
     },
     pictures: {
       straight_vertical_single: {
@@ -15125,16 +14842,6 @@ module.exports = {
     },
     max_health: 250,
     corpse: 'big_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 70
-      },
-      {
-        type: 'impact',
-        percent: 30
-      }
-    ],
     collision_box: [
       [
         -1.2,
@@ -15253,10 +14960,6 @@ module.exports = {
         }
       ]
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       sound: [
         {
@@ -15312,10 +15015,6 @@ module.exports = {
         0.5
       ]
     ],
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     energy_source: {
       type: 'electric',
       usage_priority: 'lamp'
@@ -15650,16 +15349,6 @@ module.exports = {
     },
     max_health: 150,
     corpse: 'small_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 80
-      },
-      {
-        type: 'impact',
-        percent: 40
-      }
-    ],
     collision_box: [
       [
         -0.29,
@@ -15835,10 +15524,6 @@ module.exports = {
       height: 64,
       scale: 0.5
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     pictures: {
       north: {
         filename: 'graphics/entity/pipe-to-ground/pipe-to-ground-up.png',
@@ -15922,12 +15607,6 @@ module.exports = {
     max_health: 300,
     corpse: 'big_remnants',
     dying_explosion: 'medium_explosion',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 70
-      }
-    ],
     collision_box: [
       [
         -1.2,
@@ -16030,10 +15709,6 @@ module.exports = {
       filename: 'sound/machine-close.ogg',
       volume: 0.75
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       sound: [
         {
@@ -16077,12 +15752,6 @@ module.exports = {
     alert_icon_shift: [
       -0.09375,
       -0.375
-    ],
-    resistances: [
-      {
-        type: 'fire',
-        percent: 70
-      }
     ],
     fluid_boxes: [
       {
@@ -16637,10 +16306,6 @@ module.exports = {
       filename: 'sound/machine-close.ogg',
       volume: 0.75
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       sound: [
         {
@@ -16712,12 +16377,6 @@ module.exports = {
     alert_icon_shift: [
       -0.09375,
       -0.375
-    ],
-    resistances: [
-      {
-        type: 'fire',
-        percent: 70
-      }
     ],
     fluid_boxes: [
       {
@@ -17194,10 +16853,6 @@ module.exports = {
     close_sound: {
       filename: 'sound/machine-close.ogg',
       volume: 0.75
-    },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
     },
     working_sound: {
       sound: [
@@ -17692,10 +17347,6 @@ module.exports = {
         }
       }
     ],
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       sound: {
         filename: 'sound/oil-refinery.ogg'
@@ -19011,10 +18662,6 @@ module.exports = {
         }
       }
     ],
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       sound: [
         {
@@ -19642,12 +19289,6 @@ module.exports = {
     max_health: 350,
     corpse: 'big_remnants',
     dying_explosion: 'medium_explosion',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 70
-      }
-    ],
     collision_box: [
       [
         -1.2,
@@ -20087,10 +19728,6 @@ module.exports = {
       filename: 'sound/machine-close.ogg',
       volume: 0.75
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       sound: [
         {
@@ -20170,15 +19807,8 @@ module.exports = {
     max_health: 350,
     repair_speed_modifier: 2,
     corpse: 'wall_remnants',
-    repair_sound: {
-      filename: 'sound/manual-repair-simple.ogg'
-    },
     mined_sound: {
       filename: 'sound/deconstruct-bricks.ogg'
-    },
-    vehicle_impact_sound: {
-      filename: 'sound/car-stone-impact.ogg',
-      volume: 1
     },
     connected_gate_visualization: {
       filename: 'graphics/arrows/underground-lines.png',
@@ -20187,31 +19817,6 @@ module.exports = {
       height: 64,
       scale: 0.5
     },
-    resistances: [
-      {
-        type: 'physical',
-        decrease: 3,
-        percent: 20
-      },
-      {
-        type: 'impact',
-        decrease: 45,
-        percent: 60
-      },
-      {
-        type: 'explosion',
-        decrease: 10,
-        percent: 30
-      },
-      {
-        type: 'fire',
-        percent: 100
-      },
-      {
-        type: 'laser',
-        percent: 70
-      }
-    ],
     pictures: {
       single: {
         layers: [
@@ -21009,10 +20614,6 @@ module.exports = {
         volume: 0.75
       },
       apparent_volume: 1.5
-    },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
     },
     animations: {
       north: {
@@ -22698,10 +22299,6 @@ module.exports = {
         volume: 0.8
       }
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     energy_source: {
       type: 'burner',
       fuel_category: 'chemical',
@@ -23915,10 +23512,6 @@ module.exports = {
         ]
       }
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       sound: {
         filename: 'sound/pumpjack.ogg'
@@ -24887,52 +24480,6 @@ module.exports = {
         }
       ]
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
-    attack_parameters: {
-      type: 'projectile',
-      ammo_category: 'bullet',
-      cooldown: 6,
-      projectile_creation_distance: 1.39375,
-      projectile_center: [
-        0,
-        -0.0875
-      ],
-      shell_particle: {
-        name: 'shell_particle',
-        direction_deviation: 0.1,
-        speed: 0.1,
-        speed_deviation: 0.03,
-        center: [
-          -0.0625,
-          0
-        ],
-        creation_distance: -1.925,
-        starting_frame_speed: 0.2,
-        starting_frame_speed_deviation: 0.1
-      },
-      range: 18,
-      sound: [
-        {
-          filename: 'sound/fight/heavy-gunshot-1.ogg',
-          volume: 0.45
-        },
-        {
-          filename: 'sound/fight/heavy-gunshot-2.ogg',
-          volume: 0.45
-        },
-        {
-          filename: 'sound/fight/heavy-gunshot-3.ogg',
-          volume: 0.45
-        },
-        {
-          filename: 'sound/fight/heavy-gunshot-4.ogg',
-          volume: 0.45
-        }
-      ]
-    },
     call_for_help_radius: 40,
     size: {
       width: 2,
@@ -24978,16 +24525,6 @@ module.exports = {
       x: 64,
       scale: 0.5
     },
-    resistances: [
-      {
-        type: 'fire',
-        percent: 60
-      },
-      {
-        type: 'impact',
-        percent: 30
-      }
-    ],
     collision_box: [
       [
         -0.4,
@@ -25254,16 +24791,6 @@ module.exports = {
       x: 64,
       scale: 0.5
     },
-    resistances: [
-      {
-        type: 'fire',
-        percent: 60
-      },
-      {
-        type: 'impact',
-        percent: 30
-      }
-    ],
     collision_box: [
       [
         -0.4,
@@ -25538,16 +25065,6 @@ module.exports = {
       x: 64,
       scale: 0.5
     },
-    resistances: [
-      {
-        type: 'fire',
-        percent: 60
-      },
-      {
-        type: 'impact',
-        percent: 30
-      }
-    ],
     collision_box: [
       [
         -0.4,
@@ -25807,12 +25324,6 @@ module.exports = {
     max_health: 170,
     filter_count: 5,
     corpse: 'small_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 60
-      }
-    ],
     collision_box: [
       [
         -0.4,
@@ -26027,12 +25538,6 @@ module.exports = {
     max_health: 170,
     filter_count: 5,
     corpse: 'small_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 60
-      }
-    ],
     collision_box: [
       [
         -0.4,
@@ -26255,12 +25760,6 @@ module.exports = {
     max_health: 170,
     filter_count: 5,
     corpse: 'small_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 60
-      }
-    ],
     collision_box: [
       [
         -0.4,
@@ -26481,12 +25980,6 @@ module.exports = {
     },
     max_health: 170,
     corpse: 'medium_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 60
-      }
-    ],
     collision_box: [
       [
         -0.9,
@@ -26790,12 +26283,6 @@ module.exports = {
     },
     max_health: 180,
     corpse: 'medium_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 60
-      }
-    ],
     collision_box: [
       [
         -0.9,
@@ -27107,12 +26594,6 @@ module.exports = {
     },
     max_health: 190,
     corpse: 'medium_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 60
-      }
-    ],
     collision_box: [
       [
         -0.9,
@@ -27521,10 +27002,6 @@ module.exports = {
         }
       ]
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     production: '60kW',
     size: {
       width: 3,
@@ -27572,31 +27049,6 @@ module.exports = {
     opening_speed: 0.0666666,
     activation_distance: 3,
     timeout_to_close: 5,
-    resistances: [
-      {
-        type: 'physical',
-        decrease: 3,
-        percent: 20
-      },
-      {
-        type: 'impact',
-        decrease: 45,
-        percent: 60
-      },
-      {
-        type: 'explosion',
-        decrease: 10,
-        percent: 30
-      },
-      {
-        type: 'fire',
-        percent: 100
-      },
-      {
-        type: 'laser',
-        percent: 70
-      }
-    ],
     vertical_animation: {
       layers: [
         {
@@ -27933,10 +27385,6 @@ module.exports = {
         ]
       }
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     open_sound: {
       variations: {
         filename: 'sound/gate1.ogg',
@@ -28027,12 +27475,6 @@ module.exports = {
     },
     max_health: 100,
     corpse: 'straight_rail_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 100
-      }
-    ],
     collision_box: [
       [
         -0.7,
@@ -32212,12 +31654,6 @@ module.exports = {
     },
     max_health: 200,
     corpse: 'curved_rail_remnants',
-    resistances: [
-      {
-        type: 'fire',
-        percent: 100
-      }
-    ],
     collision_box: [
       [
         -0.75,
@@ -36452,50 +35888,6 @@ module.exports = {
     },
     trigger_radius: 2.5,
     ammo_category: 'landmine',
-    action: {
-      type: 'direct',
-      action_delivery: {
-        type: 'instant',
-        source_effects: [
-          {
-            type: 'nested_result',
-            affects_target: true,
-            action: {
-              type: 'area',
-              radius: 6,
-              force: 'enemy',
-              action_delivery: {
-                type: 'instant',
-                target_effects: [
-                  {
-                    type: 'damage',
-                    damage: {
-                      amount: 300,
-                      type: 'explosion'
-                    }
-                  },
-                  {
-                    type: 'create_sticker',
-                    sticker: 'stun_sticker'
-                  }
-                ]
-              }
-            }
-          },
-          {
-            type: 'create_entity',
-            entity_name: 'explosion'
-          },
-          {
-            type: 'damage',
-            damage: {
-              amount: 1000,
-              type: 'explosion'
-            }
-          }
-        ]
-      }
-    },
     size: {
       width: 1,
       height: 1
@@ -37567,10 +36959,6 @@ module.exports = {
       g: 0,
       b: 0,
       a: 0.5
-    },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
     },
     working_sound: {
       sound: {
@@ -40954,10 +40342,6 @@ module.exports = {
       },
       apparent_volume: 1
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input'
@@ -41023,16 +40407,6 @@ module.exports = {
         0.5
       ]
     ],
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      },
-      {
-        type: 'impact',
-        percent: 60
-      }
-    ],
     fast_replaceable_group: 'container',
     inventory_size: 48,
     logistic_mode: 'passive_provider',
@@ -41043,10 +40417,6 @@ module.exports = {
     close_sound: {
       filename: 'sound/metallic-chest-close.ogg',
       volume: 0.7
-    },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
     },
     picture: {
       filename: 'graphics/entity/logistic-chest/logistic-chest-passive-provider.png',
@@ -41242,16 +40612,6 @@ module.exports = {
         0.5
       ]
     ],
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      },
-      {
-        type: 'impact',
-        percent: 60
-      }
-    ],
     fast_replaceable_group: 'container',
     inventory_size: 48,
     logistic_mode: 'active_provider',
@@ -41262,10 +40622,6 @@ module.exports = {
     close_sound: {
       filename: 'sound/metallic-chest-close.ogg',
       volume: 0.7
-    },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
     },
     picture: {
       filename: 'graphics/entity/logistic-chest/logistic-chest-active-provider.png',
@@ -41462,16 +40818,6 @@ module.exports = {
         0.5
       ]
     ],
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      },
-      {
-        type: 'impact',
-        percent: 60
-      }
-    ],
     fast_replaceable_group: 'container',
     inventory_size: 48,
     logistic_mode: 'storage',
@@ -41482,10 +40828,6 @@ module.exports = {
     close_sound: {
       filename: 'sound/metallic-chest-close.ogg',
       volume: 0.7
-    },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
     },
     picture: {
       filename: 'graphics/entity/logistic-chest/logistic-chest-storage.png',
@@ -41681,16 +41023,6 @@ module.exports = {
         0.5
       ]
     ],
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      },
-      {
-        type: 'impact',
-        percent: 60
-      }
-    ],
     fast_replaceable_group: 'container',
     inventory_size: 48,
     logistic_mode: 'buffer',
@@ -41702,10 +41034,6 @@ module.exports = {
     close_sound: {
       filename: 'sound/metallic-chest-close.ogg',
       volume: 0.7
-    },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
     },
     picture: {
       filename: 'graphics/entity/logistic-chest/logistic-chest-buffer.png',
@@ -41901,16 +41229,6 @@ module.exports = {
         0.5
       ]
     ],
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      },
-      {
-        type: 'impact',
-        percent: 60
-      }
-    ],
     fast_replaceable_group: 'container',
     inventory_size: 48,
     logistic_mode: 'requester',
@@ -41922,10 +41240,6 @@ module.exports = {
     close_sound: {
       filename: 'sound/metallic-chest-close.ogg',
       volume: 0.7
-    },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
     },
     picture: {
       filename: 'graphics/entity/logistic-chest/logistic-chest-requester.png',
@@ -42143,20 +41457,6 @@ module.exports = {
         5
       ]
     ],
-    resistances: [
-      {
-        type: 'fire',
-        percent: 60
-      },
-      {
-        type: 'impact',
-        percent: 60
-      }
-    ],
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     energy_source: {
       type: 'electric',
       usage_priority: 'primary_input'
@@ -42611,16 +41911,6 @@ module.exports = {
         2
       ]
     ],
-    resistances: [
-      {
-        type: 'fire',
-        percent: 60
-      },
-      {
-        type: 'impact',
-        percent: 30
-      }
-    ],
     dying_explosion: 'medium_explosion',
     energy_source: {
       type: 'electric',
@@ -42804,10 +42094,6 @@ module.exports = {
       frame_count: 16,
       scale: 1.5,
       animation_speed: 0.5
-    },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
     },
     working_sound: {
       sound: {
@@ -43314,10 +42600,6 @@ module.exports = {
       }
     },
     flow_length_in_ticks: 360,
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       sound: {
         filename: 'sound/storage-tank.ogg',
@@ -43889,16 +43171,6 @@ module.exports = {
         1
       ]
     ],
-    resistances: [
-      {
-        type: 'fire',
-        percent: 80
-      },
-      {
-        type: 'impact',
-        percent: 30
-      }
-    ],
     fluid_box: {
       base_area: 1,
       height: 2,
@@ -44056,10 +43328,6 @@ module.exports = {
     },
     energy_usage: '30kW',
     pumping_speed: 200,
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     animations: {
       north: {
         filename: 'graphics/entity/pump/pump-north.png',
@@ -44163,3589 +43431,6 @@ module.exports = {
       }
     },
     fluid_wagon_connector_frame_count: 35,
-    fluid_wagon_connector_graphics: {
-      load_animations: {
-        west: [
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-R-135-load-standup-base.png',
-              width: 55,
-              height: 63,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.734375,
-                -0.421875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-135-load-standup-base.png',
-                width: 110,
-                height: 126,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.734375,
-                  -0.421875
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-1-load-standup-base-shadow.png',
-              width: 79,
-              height: 69,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.265625,
-                0.265625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-1-load-standup-base-shadow.png',
-                width: 157,
-                height: 136,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.2734375,
-                  0.265625
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-R-246-load-standup-base.png',
-              width: 55,
-              height: 74,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.734375,
-                -0.6875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-246-load-standup-base.png',
-                width: 110,
-                height: 148,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.734375,
-                  -0.671875
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-2-load-standup-shadow.png',
-              width: 78,
-              height: 81,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -0.21875,
-                -0.421875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-2-load-standup-shadow.png',
-                width: 155,
-                height: 162,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -0.2109375,
-                  -0.421875
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-2-load-connect-shadow.png',
-              width: 85,
-              height: 80,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -0.859375,
-                -0.3125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-2-load-connect-shadow.png',
-                width: 169,
-                height: 160,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -0.8671875,
-                  -0.3125
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-R-135-load-standup-base.png',
-              width: 55,
-              height: 63,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.734375,
-                -0.421875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-135-load-standup-base.png',
-                width: 110,
-                height: 126,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.734375,
-                  -0.421875
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-3-load-connect-shadow.png',
-              width: 86,
-              height: 88,
-              line_length: 1,
-              frame_count: 17,
-              shift: [
-                -0.875,
-                0.40625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-3-load-connect-shadow.png',
-                width: 171,
-                height: 175,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 17,
-                shift: [
-                  -0.8671875,
-                  0.3984375
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-R-246-load-standup-base.png',
-              width: 55,
-              height: 74,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.734375,
-                -0.6875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-246-load-standup-base.png',
-                width: 110,
-                height: 148,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.734375,
-                  -0.671875
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-4-load-standup-shadow.png',
-              width: 85,
-              height: 81,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.203125,
-                -0.421875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-4-load-standup-shadow.png',
-                width: 168,
-                height: 162,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.203125,
-                  -0.421875
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-4-load-connect-shadow.png',
-              width: 85,
-              height: 72,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -0.859375,
-                -0.4375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-4-load-connect-shadow.png',
-                width: 168,
-                height: 144,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -0.859375,
-                  -0.4375
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-R-135-load-standup-base.png',
-              width: 55,
-              height: 63,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.734375,
-                -0.421875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-135-load-standup-base.png',
-                width: 110,
-                height: 126,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.734375,
-                  -0.421875
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-5-load-standup-shadow.png',
-              width: 85,
-              height: 79,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.203125,
-                0.109375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-5-load-standup-shadow.png',
-                width: 168,
-                height: 157,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.203125,
-                  0.1171875
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-5-load-connect-shadow.png',
-              width: 86,
-              height: 80,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -0.84375,
-                0.28125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-5-load-connect-shadow.png',
-                width: 172,
-                height: 158,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -0.859375,
-                  0.28125
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-R-246-load-standup-base.png',
-              width: 55,
-              height: 74,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.734375,
-                -0.6875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-246-load-standup-base.png',
-                width: 110,
-                height: 148,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.734375,
-                  -0.671875
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-6-load-standup-shadow.png',
-              width: 85,
-              height: 81,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.203125,
-                -0.421875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-6-load-standup-shadow.png',
-                width: 170,
-                height: 162,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.21875,
-                  -0.421875
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-6-load-connect-shadow.png',
-              width: 88,
-              height: 66,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -0.84375,
-                -0.53125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-6-load-connect-shadow.png',
-                width: 174,
-                height: 131,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -0.84375,
-                  -0.5234375
-                ]
-              }
-            }
-          }
-        ],
-        north: [
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-load-standup-base.png',
-              width: 46,
-              height: 80,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                -1.9375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-load-standup-base.png',
-                width: 91,
-                height: 160,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  -1.9375
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-1-load-standup-shadow.png',
-              width: 64,
-              height: 80,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.5625,
-                -1.625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-1-load-standup-shadow.png',
-                width: 126,
-                height: 158,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.5625,
-                  -1.625
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-1-load-connect-shadow.png',
-              width: 65,
-              height: 90,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.828125,
-                -2.0625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-1-load-connect-shadow.png',
-                width: 129,
-                height: 181,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.8359375,
-                  -2.0703125
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-load-standup-base.png',
-              width: 46,
-              height: 80,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                -1.9375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-load-standup-base.png',
-                width: 91,
-                height: 160,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  -1.9375
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-2-load-standup-shadow.png',
-              width: 67,
-              height: 90,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.515625,
-                -1.5
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-2-load-standup-shadow.png',
-                width: 133,
-                height: 180,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.5234375,
-                  -1.484375
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-2-load-connect-shadow.png',
-              width: 72,
-              height: 90,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.5,
-                -2.03125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-2-load-connect-shadow.png',
-                width: 143,
-                height: 178,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.5078125,
-                  -2.03125
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-load-standup-base.png',
-              width: 46,
-              height: 80,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                -1.9375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-load-standup-base.png',
-                width: 91,
-                height: 160,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  -1.9375
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-3-load-standup-shadow.png',
-              width: 67,
-              height: 90,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.515625,
-                -1.5
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-3-load-standup-shadow.png',
-                width: 133,
-                height: 180,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.5234375,
-                  -1.484375
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-3-load-connect-shadow.png',
-              width: 52,
-              height: 91,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.625,
-                -2.078125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-3-load-connect-shadow.png',
-                width: 103,
-                height: 181,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.6328125,
-                  -2.0703125
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-load-standup-base.png',
-              width: 46,
-              height: 80,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                -1.9375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-load-standup-base.png',
-                width: 91,
-                height: 160,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  -1.9375
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-load-standup-base.png',
-              width: 46,
-              height: 80,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                -1.9375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-load-standup-base.png',
-                width: 91,
-                height: 160,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  -1.9375
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-5-load-standup-shadow.png',
-              width: 67,
-              height: 90,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.515625,
-                -1.5
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-5-load-standup-shadow.png',
-                width: 133,
-                height: 181,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.5234375,
-                  -1.4921875
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-5-load-connect-shadow.png',
-              width: 52,
-              height: 89,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.625,
-                -2.109375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-5-load-connect-shadow.png',
-                width: 103,
-                height: 177,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.6328125,
-                  -2.1015625
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-load-standup-base.png',
-              width: 46,
-              height: 80,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                -1.9375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-load-standup-base.png',
-                width: 91,
-                height: 160,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  -1.9375
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-6-load-standup-shadow.png',
-              width: 67,
-              height: 91,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.515625,
-                -1.515625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-6-load-standup-shadow.png',
-                width: 133,
-                height: 182,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.5234375,
-                  -1.5
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-6-load-connect-shadow.png',
-              width: 72,
-              height: 90,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.5,
-                -2.03125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-6-load-connect-shadow.png',
-                width: 143,
-                height: 178,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.5078125,
-                  -2.03125
-                ]
-              }
-            }
-          }
-        ],
-        east: [
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-L-135-load-standup-base.png',
-              width: 55,
-              height: 63,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.734375,
-                -0.515625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-135-load-standup-base.png',
-                width: 110,
-                height: 127,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.734375,
-                  -0.5078125
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-L-2-load-standup-base.png',
-              width: 55,
-              height: 73,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.734375,
-                -0.765625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-2-load-standup-base.png',
-                width: 110,
-                height: 148,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.734375,
-                  -0.765625
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-L-135-load-standup-base.png',
-              width: 55,
-              height: 63,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.734375,
-                -0.515625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-135-load-standup-base.png',
-                width: 110,
-                height: 127,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.734375,
-                  -0.5078125
-                ]
-              }
-            }
-          },
-          {},
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-L-135-load-standup-base.png',
-              width: 55,
-              height: 63,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.734375,
-                -0.515625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-135-load-standup-base.png',
-                width: 110,
-                height: 127,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.734375,
-                  -0.5078125
-                ]
-              }
-            }
-          },
-          {}
-        ],
-        south: [
-          {},
-          {},
-          {},
-          {},
-          {},
-          {}
-        ]
-      },
-      unload_animations: {
-        west: [
-          {
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/V-L-135-unload-standup-top.png',
-              width: 61,
-              height: 35,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0.578125,
-                -0.984375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-135-unload-standup-top.png',
-                width: 123,
-                height: 70,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0.5703125,
-                  -0.984375
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/V-L-1-unload-standup-shadow.png',
-              width: 53,
-              height: 63,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                1.046875,
-                0.140625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-1-unload-standup-shadow.png',
-                width: 106,
-                height: 126,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  1.046875,
-                  0.140625
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/V-L-1-unload-connect.png',
-              width: 54,
-              height: 60,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                1.4375,
-                -0.6875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-1-unload-connect.png',
-                width: 106,
-                height: 119,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  1.4375,
-                  -0.6953125
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/V-L-1-unload-connect-shadow.png',
-              width: 46,
-              height: 46,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                1.90625,
-                -0.0625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-1-unload-connect-shadow.png',
-                width: 92,
-                height: 90,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  1.90625,
-                  -0.0625
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-L-246-unload-standup-base.png',
-              width: 55,
-              height: 73,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.734375,
-                -0.765625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-246-unload-standup-base.png',
-                width: 110,
-                height: 148,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.734375,
-                  -0.765625
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/V-L-246-unload-standup-top.png',
-              width: 60,
-              height: 55,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0.59375,
-                -1.296875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-246-unload-standup-top.png',
-                width: 121,
-                height: 110,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0.5859375,
-                  -1.296875
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/V-L-2-unload-standup-shadow.png',
-              width: 48,
-              height: 81,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.96875,
-                -0.515625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-2-unload-standup-shadow.png',
-                width: 96,
-                height: 163,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.96875,
-                  -0.5234375
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/V-L-2-unload-connect.png',
-              width: 54,
-              height: 51,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                1.40625,
-                -1.546875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-2-unload-connect.png',
-                width: 107,
-                height: 102,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  1.4140625,
-                  -1.546875
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/V-L-2-unload-connect-shadow.png',
-              width: 44,
-              height: 35,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                1.78125,
-                -1.265625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-2-unload-connect-shadow.png',
-                width: 88,
-                height: 70,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  1.78125,
-                  -1.265625
-                ]
-              }
-            }
-          },
-          {
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/V-L-135-unload-standup-top.png',
-              width: 61,
-              height: 35,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0.578125,
-                -0.984375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-135-unload-standup-top.png',
-                width: 123,
-                height: 70,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0.5703125,
-                  -0.984375
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/V-L-3-unload-standup-shadow.png',
-              width: 48,
-              height: 71,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.96875,
-                -0.046875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-3-unload-standup-shadow.png',
-                width: 96,
-                height: 142,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.96875,
-                  -0.046875
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/V-L-3-unload-connect.png',
-              width: 53,
-              height: 53,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                1.421875,
-                -0.796875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-3-unload-connect.png',
-                width: 106,
-                height: 105,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  1.40625,
-                  -0.8046875
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/V-L-3-unload-connect-shadow.png',
-              width: 40,
-              height: 39,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                1.78125,
-                -0.578125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-3-unload-connect-shadow.png',
-                width: 80,
-                height: 78,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  1.765625,
-                  -0.578125
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-L-246-unload-standup-base.png',
-              width: 55,
-              height: 73,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.734375,
-                -0.765625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-246-unload-standup-base.png',
-                width: 110,
-                height: 148,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.734375,
-                  -0.765625
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/V-L-246-unload-standup-top.png',
-              width: 60,
-              height: 55,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0.59375,
-                -1.296875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-246-unload-standup-top.png',
-                width: 121,
-                height: 110,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0.5859375,
-                  -1.296875
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/V-L-4-unload-standup-shadow.png',
-              width: 48,
-              height: 82,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.96875,
-                -0.5
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-4-unload-standup-shadow.png',
-                width: 95,
-                height: 163,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.9609375,
-                  -0.4921875
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/V-L-4-unload-connect.png',
-              width: 55,
-              height: 43,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                1.421875,
-                -1.609375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-4-unload-connect.png',
-                width: 109,
-                height: 87,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  1.4296875,
-                  -1.6171875
-                ]
-              }
-            }
-          },
-          {
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/V-L-135-unload-standup-top.png',
-              width: 61,
-              height: 35,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0.578125,
-                -0.984375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-135-unload-standup-top.png',
-                width: 123,
-                height: 70,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0.5703125,
-                  -0.984375
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/V-L-5-unload-standup-shadow.png',
-              width: 50,
-              height: 79,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                1,
-                0.015625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-5-unload-standup-shadow.png',
-                width: 100,
-                height: 158,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  1,
-                  0.015625
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/V-L-5-unload-connect.png',
-              width: 54,
-              height: 45,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                1.4375,
-                -0.921875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-5-unload-connect.png',
-                width: 108,
-                height: 90,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  1.4375,
-                  -0.921875
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/V-L-5-unload-connect-shadow.png',
-              width: 44,
-              height: 42,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                1.6875,
-                -0.53125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-5-unload-connect-shadow.png',
-                width: 86,
-                height: 84,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  1.6875,
-                  -0.53125
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-L-246-unload-standup-base.png',
-              width: 55,
-              height: 73,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.734375,
-                -0.765625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-246-unload-standup-base.png',
-                width: 110,
-                height: 148,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.734375,
-                  -0.765625
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/V-L-246-unload-standup-top.png',
-              width: 60,
-              height: 55,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0.59375,
-                -1.296875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-246-unload-standup-top.png',
-                width: 121,
-                height: 110,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0.5859375,
-                  -1.296875
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/V-L-6-unload-standup-shadow.png',
-              width: 72,
-              height: 81,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                1.34375,
-                -0.515625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-6-unload-standup-shadow.png',
-                width: 145,
-                height: 161,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  1.3515625,
-                  -0.5078125
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/V-L-6-unload-connect.png',
-              width: 54,
-              height: 35,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                1.40625,
-                -1.703125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-6-unload-connect.png',
-                width: 107,
-                height: 70,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  1.4140625,
-                  -1.71875
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/V-L-6-unload-connect-shadow.png',
-              width: 43,
-              height: 67,
-              line_length: 1,
-              frame_count: 18,
-              shift: [
-                1.734375,
-                -0.546875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-L-6-unload-connect-shadow.png',
-                width: 86,
-                height: 132,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 18,
-                shift: [
-                  1.734375,
-                  -0.546875
-                ]
-              }
-            }
-          }
-        ],
-        north: [
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-T-123456-unload-standup-base.png',
-              width: 46,
-              height: 54,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                0.5
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-123456-unload-standup-base.png',
-                width: 91,
-                height: 107,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  0.4921875
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/H-T-123456-unload-standup-top.png',
-              width: 22,
-              height: 55,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0,
-                0.015625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-123456-unload-standup-top.png',
-                width: 46,
-                height: 109,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0,
-                  0.0234375
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-T-1-unload-standup-shadow.png',
-              width: 39,
-              height: 31,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.078125,
-                0.578125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-1-unload-standup-shadow.png',
-                width: 76,
-                height: 61,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.078125,
-                  0.5859375
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/H-T-135-unload-connect.png',
-              width: 45,
-              height: 50,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.109375,
-                0.03125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-135-unload-connect.png',
-                width: 89,
-                height: 99,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.1171875,
-                  0.0234375
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-T-1-unload-connect-shadow.png',
-              width: 50,
-              height: 27,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.3125,
-                0.515625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-1-unload-connect-shadow.png',
-                width: 101,
-                height: 53,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.3046875,
-                  0.5234375
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-T-123456-unload-standup-base.png',
-              width: 46,
-              height: 54,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                0.5
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-123456-unload-standup-base.png',
-                width: 91,
-                height: 107,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  0.4921875
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/H-T-123456-unload-standup-top.png',
-              width: 22,
-              height: 55,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0,
-                0.015625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-123456-unload-standup-top.png',
-                width: 46,
-                height: 109,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0,
-                  0.0234375
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-T-2-unload-standup-shadow.png',
-              width: 43,
-              height: 31,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.140625,
-                0.578125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-2-unload-standup-shadow.png',
-                width: 86,
-                height: 60,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.140625,
-                  0.578125
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/H-T-246-unload-connect.png',
-              width: 38,
-              height: 49,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -0.03125,
-                0.015625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-246-unload-connect.png',
-                width: 76,
-                height: 99,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -0.046875,
-                  0.0234375
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-T-2-unload-connect-shadow.png',
-              width: 49,
-              height: 34,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.171875,
-                0.625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-2-unload-connect-shadow.png',
-                width: 97,
-                height: 66,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.1640625,
-                  0.625
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-T-123456-unload-standup-base.png',
-              width: 46,
-              height: 54,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                0.5
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-123456-unload-standup-base.png',
-                width: 91,
-                height: 107,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  0.4921875
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/H-T-123456-unload-standup-top.png',
-              width: 22,
-              height: 55,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0,
-                0.015625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-123456-unload-standup-top.png',
-                width: 46,
-                height: 109,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0,
-                  0.0234375
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-T-3-unload-standup-shadow.png',
-              width: 39,
-              height: 21,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.078125,
-                0.421875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-3-unload-standup-shadow.png',
-                width: 78,
-                height: 40,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.078125,
-                  0.421875
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/H-T-135-unload-connect.png',
-              width: 45,
-              height: 50,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.109375,
-                0.03125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-135-unload-connect.png',
-                width: 89,
-                height: 99,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.1171875,
-                  0.0234375
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-T-3-unload-connect-shadow.png',
-              width: 51,
-              height: 27,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.296875,
-                0.515625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-3-unload-connect-shadow.png',
-                width: 102,
-                height: 54,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.296875,
-                  0.53125
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-T-123456-unload-standup-base.png',
-              width: 46,
-              height: 54,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                0.5
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-123456-unload-standup-base.png',
-                width: 91,
-                height: 107,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  0.4921875
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/H-T-123456-unload-standup-top.png',
-              width: 22,
-              height: 55,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0,
-                0.015625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-123456-unload-standup-top.png',
-                width: 46,
-                height: 109,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0,
-                  0.0234375
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-T-4-unload-standup-shadow.png',
-              width: 43,
-              height: 31,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.140625,
-                0.578125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-4-unload-standup-shadow.png',
-                width: 86,
-                height: 61,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.140625,
-                  0.5859375
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/H-T-246-unload-connect.png',
-              width: 38,
-              height: 49,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -0.03125,
-                0.015625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-246-unload-connect.png',
-                width: 76,
-                height: 99,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -0.046875,
-                  0.0234375
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-T-4-unload-connect-shadow.png',
-              width: 49,
-              height: 41,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.171875,
-                0.734375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-4-unload-connect-shadow.png',
-                width: 97,
-                height: 80,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.1640625,
-                  0.734375
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-T-123456-unload-standup-base.png',
-              width: 46,
-              height: 54,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                0.5
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-123456-unload-standup-base.png',
-                width: 91,
-                height: 107,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  0.4921875
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/H-T-123456-unload-standup-top.png',
-              width: 22,
-              height: 55,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0,
-                0.015625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-123456-unload-standup-top.png',
-                width: 46,
-                height: 109,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0,
-                  0.0234375
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-T-5-unload-standup-shadow.png',
-              width: 39,
-              height: 21,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.078125,
-                0.421875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-5-unload-standup-shadow.png',
-                width: 78,
-                height: 40,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.078125,
-                  0.421875
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/H-T-135-unload-connect.png',
-              width: 45,
-              height: 50,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.109375,
-                0.03125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-135-unload-connect.png',
-                width: 89,
-                height: 99,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.1171875,
-                  0.0234375
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-T-5-unload-connect-shadow.png',
-              width: 50,
-              height: 27,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.3125,
-                0.515625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-5-unload-connect-shadow.png',
-                width: 99,
-                height: 54,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.3203125,
-                  0.53125
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-T-123456-unload-standup-base.png',
-              width: 46,
-              height: 54,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                0.5
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-123456-unload-standup-base.png',
-                width: 91,
-                height: 107,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  0.4921875
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/H-T-123456-unload-standup-top.png',
-              width: 22,
-              height: 55,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0,
-                0.015625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-123456-unload-standup-top.png',
-                width: 46,
-                height: 109,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0,
-                  0.0234375
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-T-6-unload-standup-shadow.png',
-              width: 67,
-              height: 58,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.515625,
-                0
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-6-unload-standup-shadow.png',
-                width: 134,
-                height: 115,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.515625,
-                  0.0078125
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/H-T-246-unload-connect.png',
-              width: 38,
-              height: 49,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -0.03125,
-                0.015625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-246-unload-connect.png',
-                width: 76,
-                height: 99,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -0.046875,
-                  0.0234375
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-T-6-unload-connect-shadow.png',
-              width: 41,
-              height: 34,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.046875,
-                -0.375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-T-6-unload-connect-shadow.png',
-                width: 81,
-                height: 66,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.0390625,
-                  -0.375
-                ]
-              }
-            }
-          }
-        ],
-        east: [
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-R-135-unload-standup-base.png',
-              width: 55,
-              height: 63,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.734375,
-                -0.421875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-135-unload-standup-base.png',
-                width: 110,
-                height: 126,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.734375,
-                  -0.421875
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/V-R-135-unload-standup-top.png',
-              width: 60,
-              height: 35,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                -0.59375,
-                -0.890625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-135-unload-standup-top.png',
-                width: 121,
-                height: 70,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  -0.5859375,
-                  -0.90625
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/V-R-1-unload-connect.png',
-              width: 53,
-              height: 56,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -1.359375,
-                -0.65625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-1-unload-connect.png',
-                width: 107,
-                height: 115,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -1.3515625,
-                  -0.6484375
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-1-unload-connect-shadow.png',
-              width: 84,
-              height: 77,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -0.84375,
-                0.546875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-1-unload-connect-shadow.png',
-                width: 168,
-                height: 153,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -0.84375,
-                  0.5546875
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-R-246-unload-standup-base.png',
-              width: 55,
-              height: 74,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.734375,
-                -0.6875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-246-unload-standup-base.png',
-                width: 110,
-                height: 148,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.734375,
-                  -0.671875
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/V-R-246-unload-standup-top.png',
-              width: 60,
-              height: 55,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                -0.59375,
-                -1.203125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-246-unload-standup-top.png',
-                width: 121,
-                height: 110,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  -0.5859375,
-                  -1.21875
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-2-unload-standup-shadow.png',
-              width: 82,
-              height: 81,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.25,
-                -0.421875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-2-unload-standup-shadow.png',
-                width: 163,
-                height: 162,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.2421875,
-                  -0.421875
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/V-R-2-unload-connect.png',
-              width: 54,
-              height: 47,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -1.34375,
-                -1.484375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-2-unload-connect.png',
-                width: 107,
-                height: 96,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -1.3359375,
-                  -1.46875
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-2-unload-connect-shadow.png',
-              width: 85,
-              height: 80,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -0.859375,
-                -0.3125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-2-unload-connect-shadow.png',
-                width: 169,
-                height: 160,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -0.8671875,
-                  -0.3125
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-R-135-unload-standup-base.png',
-              width: 55,
-              height: 63,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.734375,
-                -0.421875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-135-unload-standup-base.png',
-                width: 110,
-                height: 126,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.734375,
-                  -0.421875
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/V-R-135-unload-standup-top.png',
-              width: 60,
-              height: 35,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                -0.59375,
-                -0.890625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-135-unload-standup-top.png',
-                width: 121,
-                height: 70,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  -0.5859375,
-                  -0.90625
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-3-unload-standup-shadow.png',
-              width: 80,
-              height: 79,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.21875,
-                0.109375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-3-unload-standup-shadow.png',
-                width: 160,
-                height: 157,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.21875,
-                  0.1171875
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/V-R-3-unload-connect.png',
-              width: 53,
-              height: 50,
-              line_length: 1,
-              frame_count: 17,
-              shift: [
-                -1.359375,
-                -0.78125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-3-unload-connect.png',
-                width: 106,
-                height: 99,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 17,
-                shift: [
-                  -1.375,
-                  -0.7734375
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-3-unload-connect-shadow.png',
-              width: 86,
-              height: 88,
-              line_length: 1,
-              frame_count: 17,
-              shift: [
-                -0.875,
-                0.40625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-3-unload-connect-shadow.png',
-                width: 171,
-                height: 175,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 17,
-                shift: [
-                  -0.8671875,
-                  0.3984375
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-R-246-unload-standup-base.png',
-              width: 55,
-              height: 74,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.734375,
-                -0.6875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-246-unload-standup-base.png',
-                width: 110,
-                height: 148,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.734375,
-                  -0.671875
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/V-R-246-unload-standup-top.png',
-              width: 60,
-              height: 55,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                -0.59375,
-                -1.203125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-246-unload-standup-top.png',
-                width: 121,
-                height: 110,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  -0.5859375,
-                  -1.21875
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-4-unload-standup-shadow.png',
-              width: 82,
-              height: 81,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.25,
-                -0.421875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-4-unload-standup-shadow.png',
-                width: 163,
-                height: 162,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.2421875,
-                  -0.421875
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/V-R-4-unload-connect.png',
-              width: 53,
-              height: 40,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -1.359375,
-                -1.5625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-4-unload-connect.png',
-                width: 105,
-                height: 80,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -1.3671875,
-                  -1.5625
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-4-unload-connect-shadow.png',
-              width: 85,
-              height: 72,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -0.859375,
-                -0.4375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-4-unload-connect-shadow.png',
-                width: 168,
-                height: 144,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -0.859375,
-                  -0.4375
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-R-135-unload-standup-base.png',
-              width: 55,
-              height: 63,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.734375,
-                -0.421875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-135-unload-standup-base.png',
-                width: 110,
-                height: 126,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.734375,
-                  -0.421875
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/V-R-135-unload-standup-top.png',
-              width: 60,
-              height: 35,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                -0.59375,
-                -0.890625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-135-unload-standup-top.png',
-                width: 121,
-                height: 70,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  -0.5859375,
-                  -0.90625
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-5-unload-standup-shadow.png',
-              width: 82,
-              height: 79,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.25,
-                0.109375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-5-unload-standup-shadow.png',
-                width: 163,
-                height: 157,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.2421875,
-                  0.1171875
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/V-R-5-unload-connect.png',
-              width: 54,
-              height: 41,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -1.375,
-                -0.859375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-5-unload-connect.png',
-                width: 106,
-                height: 82,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -1.375,
-                  -0.859375
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-5-unload-connect-shadow.png',
-              width: 86,
-              height: 80,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -0.84375,
-                0.28125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-5-unload-connect-shadow.png',
-                width: 172,
-                height: 158,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -0.859375,
-                  0.28125
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/V-R-246-unload-standup-base.png',
-              width: 55,
-              height: 74,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.734375,
-                -0.6875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-246-unload-standup-base.png',
-                width: 110,
-                height: 148,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.734375,
-                  -0.671875
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/V-R-246-unload-standup-top.png',
-              width: 60,
-              height: 55,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                -0.59375,
-                -1.203125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-246-unload-standup-top.png',
-                width: 121,
-                height: 110,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  -0.5859375,
-                  -1.21875
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-6-unload-standup-shadow.png',
-              width: 82,
-              height: 81,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                -0.25,
-                -0.421875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-6-unload-standup-shadow.png',
-                width: 165,
-                height: 162,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.2578125,
-                  -0.421875
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/V-R-6-unload-connect.png',
-              width: 54,
-              height: 32,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -1.375,
-                -1.6875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-6-unload-connect.png',
-                width: 106,
-                height: 63,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -1.375,
-                  -1.6796875
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/V-R-6-unload-connect-shadow.png',
-              width: 88,
-              height: 67,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -0.84375,
-                -0.515625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-V-R-6-unload-connect-shadow.png',
-                width: 174,
-                height: 133,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -0.84375,
-                  -0.5078125
-                ]
-              }
-            }
-          }
-        ],
-        south: [
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-unload-standup-base.png',
-              width: 46,
-              height: 80,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                -1.9375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-unload-standup-base.png',
-                width: 91,
-                height: 160,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  -1.9375
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-unload-standup-top.png',
-              width: 22,
-              height: 73,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0,
-                -2.265625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-unload-standup-top.png',
-                width: 46,
-                height: 146,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0,
-                  -2.265625
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-1-unload-standup-shadow.png',
-              width: 67,
-              height: 86,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.515625,
-                -1.5625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-1-unload-standup-shadow.png',
-                width: 133,
-                height: 172,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.5234375,
-                  -1.546875
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/H-B-135-unload-connect.png',
-              width: 39,
-              height: 50,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.140625,
-                -3.21875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-135-unload-connect.png',
-                width: 78,
-                height: 100,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.140625,
-                  -3.21875
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-1-unload-connect-shadow.png',
-              width: 41,
-              height: 59,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.453125,
-                -2.546875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-1-unload-connect-shadow.png',
-                width: 81,
-                height: 118,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.4609375,
-                  -2.5625
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-unload-standup-base.png',
-              width: 46,
-              height: 80,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                -1.9375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-unload-standup-base.png',
-                width: 91,
-                height: 160,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  -1.9375
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-unload-standup-top.png',
-              width: 22,
-              height: 73,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0,
-                -2.265625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-unload-standup-top.png',
-                width: 46,
-                height: 146,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0,
-                  -2.265625
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-2-unload-standup-shadow.png',
-              width: 63,
-              height: 86,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.578125,
-                -1.5625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-2-unload-standup-shadow.png',
-                width: 125,
-                height: 173,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.5859375,
-                  -1.5546875
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/H-B-246-unload-connect.png',
-              width: 37,
-              height: 47,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -0.109375,
-                -3.234375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-246-unload-connect.png',
-                width: 74,
-                height: 95,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -0.109375,
-                  -3.2265625
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-2-unload-connect-shadow.png',
-              width: 72,
-              height: 90,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.5,
-                -2.03125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-2-unload-connect-shadow.png',
-                width: 143,
-                height: 178,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.5078125,
-                  -2.03125
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-unload-standup-base.png',
-              width: 46,
-              height: 80,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                -1.9375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-unload-standup-base.png',
-                width: 91,
-                height: 160,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  -1.9375
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-unload-standup-top.png',
-              width: 22,
-              height: 73,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0,
-                -2.265625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-unload-standup-top.png',
-                width: 46,
-                height: 146,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0,
-                  -2.265625
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-3-unload-standup-shadow.png',
-              width: 67,
-              height: 86,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.515625,
-                -1.5625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-3-unload-standup-shadow.png',
-                width: 133,
-                height: 172,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.5234375,
-                  -1.546875
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/H-B-135-unload-connect.png',
-              width: 39,
-              height: 50,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.140625,
-                -3.21875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-135-unload-connect.png',
-                width: 78,
-                height: 100,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.140625,
-                  -3.21875
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-3-unload-connect-shadow.png',
-              width: 66,
-              height: 89,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.84375,
-                -2.109375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-3-unload-connect-shadow.png',
-                width: 130,
-                height: 177,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.84375,
-                  -2.1015625
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-unload-standup-base.png',
-              width: 46,
-              height: 80,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                -1.9375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-unload-standup-base.png',
-                width: 91,
-                height: 160,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  -1.9375
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-unload-standup-top.png',
-              width: 22,
-              height: 73,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0,
-                -2.265625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-unload-standup-top.png',
-                width: 46,
-                height: 146,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0,
-                  -2.265625
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-4-unload-standup-shadow.png',
-              width: 67,
-              height: 86,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.515625,
-                -1.5625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-4-unload-standup-shadow.png',
-                width: 133,
-                height: 172,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.5234375,
-                  -1.546875
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/H-B-246-unload-connect.png',
-              width: 37,
-              height: 47,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -0.109375,
-                -3.234375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-246-unload-connect.png',
-                width: 74,
-                height: 95,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -0.109375,
-                  -3.2265625
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-4-unload-connect-shadow.png',
-              width: 72,
-              height: 90,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.5,
-                -2.03125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-4-unload-connect-shadow.png',
-                width: 143,
-                height: 178,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.5078125,
-                  -2.03125
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-unload-standup-base.png',
-              width: 46,
-              height: 80,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                -1.9375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-unload-standup-base.png',
-                width: 91,
-                height: 160,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  -1.9375
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-unload-standup-top.png',
-              width: 22,
-              height: 73,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0,
-                -2.265625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-unload-standup-top.png',
-                width: 46,
-                height: 146,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0,
-                  -2.265625
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-5-unload-standup-shadow.png',
-              width: 67,
-              height: 86,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.515625,
-                -1.5625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-5-unload-standup-shadow.png',
-                width: 133,
-                height: 173,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.5234375,
-                  -1.5546875
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/H-B-135-unload-connect.png',
-              width: 39,
-              height: 50,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.140625,
-                -3.21875
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-135-unload-connect.png',
-                width: 78,
-                height: 100,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.140625,
-                  -3.21875
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-5-unload-connect-shadow.png',
-              width: 52,
-              height: 89,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.625,
-                -2.109375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-5-unload-connect-shadow.png',
-                width: 103,
-                height: 177,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.6328125,
-                  -2.1015625
-                ]
-              }
-            }
-          },
-          {
-            standup_base: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-unload-standup-base.png',
-              width: 46,
-              height: 80,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0,
-                -1.9375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-unload-standup-base.png',
-                width: 91,
-                height: 160,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  -0.0078125,
-                  -1.9375
-                ]
-              }
-            },
-            standup_top: {
-              filename: 'graphics/entity/pump/connector/H-B-123456-unload-standup-top.png',
-              width: 22,
-              height: 73,
-              line_length: 1,
-              frame_count: 19,
-              shift: [
-                0,
-                -2.265625
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-123456-unload-standup-top.png',
-                width: 46,
-                height: 146,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 19,
-                shift: [
-                  0,
-                  -2.265625
-                ]
-              }
-            },
-            standup_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-6-unload-standup-shadow.png',
-              width: 67,
-              height: 87,
-              line_length: 1,
-              frame_count: 20,
-              shift: [
-                0.515625,
-                -1.578125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-6-unload-standup-shadow.png',
-                width: 134,
-                height: 174,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 20,
-                shift: [
-                  0.53125,
-                  -1.5625
-                ]
-              }
-            },
-            connector: {
-              filename: 'graphics/entity/pump/connector/H-B-246-unload-connect.png',
-              width: 37,
-              height: 47,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                -0.109375,
-                -3.234375
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-246-unload-connect.png',
-                width: 74,
-                height: 95,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  -0.109375,
-                  -3.2265625
-                ]
-              }
-            },
-            connector_shadow: {
-              filename: 'graphics/entity/pump/connector/H-B-6-unload-connect-shadow.png',
-              width: 71,
-              height: 90,
-              line_length: 1,
-              frame_count: 16,
-              shift: [
-                0.515625,
-                -2.03125
-              ],
-              hr_version: {
-                filename: 'graphics/entity/pump/connector/hr-H-B-6-unload-connect-shadow.png',
-                width: 144,
-                height: 178,
-                scale: 0.5,
-                line_length: 1,
-                frame_count: 16,
-                shift: [
-                  0.515625,
-                  -2.03125
-                ]
-              }
-            }
-          }
-        ]
-      }
-    },
     fluid_animation: {
       north: {
         filename: 'graphics/entity/pump/pump-north-liquid.png',
@@ -48563,10 +44248,6 @@ module.exports = {
         b: 1
       }
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       sound: {
         filename: 'sound/accumulator-working.ogg',
@@ -48825,10 +44506,6 @@ module.exports = {
       type: 'electric',
       usage_priority: 'secondary_input'
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     energy_usage: '480kW',
     distribution_effectivity: 0.5,
     module_specification: {
@@ -48892,10 +44569,6 @@ module.exports = {
       },
       max_sounds_per_type: 2,
       match_speed_to_activity: true
-    },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
     },
     activity_led_light: {
       intensity: 0.8,
@@ -51697,10 +47370,6 @@ module.exports = {
       ]
     ],
     item_slot_count: 18,
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     activity_led_light: {
       intensity: 0.8,
       size: 1,
@@ -52200,10 +47869,6 @@ module.exports = {
         0.1875
       ]
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     overlay_start_delay: 3,
     overlay_start: {
       filename: 'graphics/entity/power-switch/power-switch-electricity-start.png',
@@ -52358,10 +48023,6 @@ module.exports = {
         0.3
       ]
     ],
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input'
@@ -54948,10 +50609,6 @@ module.exports = {
         a: 1
       }
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     working_sound: {
       sound: {
         filename: 'sound/accumulator-working.ogg',
@@ -55269,70 +50926,6 @@ module.exports = {
         ]
       }
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
-    meltdown_action: {
-      type: 'direct',
-      action_delivery: {
-        type: 'instant',
-        target_effects: [
-          {
-            repeat_count: 100,
-            type: 'create_trivial_smoke',
-            smoke_name: 'nuclear_smoke',
-            offset_deviation: [
-              [
-                -1,
-                -1
-              ],
-              [
-                1,
-                1
-              ]
-            ],
-            slow_down_factor: 1,
-            starting_frame: 3,
-            starting_frame_deviation: 5,
-            starting_frame_speed: 0,
-            starting_frame_speed_deviation: 5,
-            speed_from_center: 0.5,
-            speed_deviation: 0.2
-          },
-          {
-            type: 'create_entity',
-            entity_name: 'explosion'
-          },
-          {
-            type: 'damage',
-            damage: {
-              amount: 400,
-              type: 'explosion'
-            }
-          },
-          {
-            type: 'create_entity',
-            entity_name: 'small_scorchmark',
-            check_buildability: true
-          },
-          {
-            type: 'nested_result',
-            action: {
-              type: 'area',
-              target_entities: false,
-              repeat_count: 2000,
-              radius: 35,
-              action_delivery: {
-                type: 'projectile',
-                projectile: 'atomic_bomb_wave',
-                starting_speed: 0.5
-              }
-            }
-          }
-        ]
-      }
-    },
     size: {
       width: 5,
       height: 5
@@ -55354,24 +50947,6 @@ module.exports = {
     },
     max_health: 200,
     corpse: 'small_remnants',
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
-    resistances: [
-      {
-        type: 'fire',
-        percent: 90
-      },
-      {
-        type: 'explosion',
-        percent: 30
-      },
-      {
-        type: 'impact',
-        percent: 30
-      }
-    ],
     collision_box: [
       [
         -0.3,
@@ -56855,24 +52430,6 @@ module.exports = {
         0.5
       ]
     ],
-    resistances: [
-      {
-        type: 'fire',
-        percent: 100
-      },
-      {
-        type: 'impact',
-        percent: 100
-      },
-      {
-        type: 'physical',
-        percent: 100
-      },
-      {
-        type: 'explosion',
-        percent: 100
-      }
-    ],
     fast_replaceable_group: 'container',
     inventory_size: 48,
     open_sound: {
@@ -56882,10 +52439,6 @@ module.exports = {
     close_sound: {
       filename: 'sound/metallic-chest-close.ogg',
       volume: 0.7
-    },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
     },
     picture: {
       filename: 'graphics/entity/infinity-chest/infinity-chest.png',
@@ -57101,33 +52654,6 @@ module.exports = {
     cannon_parking_frame_count: 8,
     cannon_parking_speed: 0.25,
     manual_range_modifier: 2.5,
-    resistances: [
-      {
-        type: 'fire',
-        decrease: 15,
-        percent: 50
-      },
-      {
-        type: 'physical',
-        decrease: 15,
-        percent: 30
-      },
-      {
-        type: 'impact',
-        decrease: 50,
-        percent: 50
-      },
-      {
-        type: 'explosion',
-        decrease: 15,
-        percent: 30
-      },
-      {
-        type: 'acid',
-        decrease: 10,
-        percent: 20
-      }
-    ],
     base_shift: [
       0,
       -0.6875
@@ -58657,10 +54183,6 @@ module.exports = {
         0.25
       ]
     ],
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     size: {
       width: 3,
       height: 3
@@ -58957,53 +54479,6 @@ module.exports = {
         }
       ]
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
-    attack_parameters: {
-      type: 'projectile',
-      ammo_category: 'electric',
-      cooldown: 20,
-      projectile_center: [
-        -0.09375,
-        -0.2
-      ],
-      projectile_creation_distance: 1.4,
-      range: 24,
-      damage_modifier: 4,
-      ammo_type: {
-        type: 'projectile',
-        category: 'laser_turret',
-        energy_consumption: '800kJ',
-        action: [
-          {
-            type: 'direct',
-            action_delivery: [
-              {
-                type: 'projectile',
-                projectile: 'laser',
-                starting_speed: 0.35
-              }
-            ]
-          }
-        ]
-      },
-      sound: [
-        {
-          filename: 'sound/fight/laser-1.ogg',
-          volume: 0.5
-        },
-        {
-          filename: 'sound/fight/laser-2.ogg',
-          volume: 0.5
-        },
-        {
-          filename: 'sound/fight/laser-3.ogg',
-          volume: 0.5
-        }
-      ]
-    },
     call_for_help_radius: 40,
     size: {
       width: 2,
@@ -59061,12 +54536,6 @@ module.exports = {
     automated_ammo_count: 10,
     attacking_animation_fade_out: 10,
     turret_base_has_direction: true,
-    resistances: [
-      {
-        type: 'fire',
-        percent: 100
-      }
-    ],
     fluid_box: {
       secondary_draw_order: 0,
       render_layer: 'lower_object',
@@ -63317,89 +58786,8 @@ module.exports = {
         ]
       }
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-metal-impact.ogg',
-      volume: 0.65
-    },
     prepare_range: 35,
     shoot_in_prepare_state: false,
-    attack_parameters: {
-      type: 'stream',
-      ammo_category: 'flamethrower',
-      cooldown: 4,
-      range: 30,
-      min_range: 6,
-      turn_range: 0.3333333333333333,
-      fire_penalty: 15,
-      fluids: [
-        {
-          type: 'crude_oil'
-        },
-        {
-          type: 'heavy_oil',
-          damage_modifier: 1.05
-        },
-        {
-          type: 'light_oil',
-          damage_modifier: 1.1
-        }
-      ],
-      fluid_consumption: 0.2,
-      gun_center_shift: {
-        north: [
-          0,
-          -1.6625
-        ],
-        east: [
-          0.625,
-          -1.0375
-        ],
-        south: [
-          0,
-          -0.7250000000000001
-        ],
-        west: [
-          -0.46875,
-          -1.0375
-        ]
-      },
-      gun_barrel_length: 0.4,
-      ammo_type: {
-        category: 'flamethrower',
-        action: {
-          type: 'direct',
-          action_delivery: {
-            type: 'stream',
-            stream: 'flamethrower_fire_stream',
-            duration: 160,
-            source_offset: [
-              0.15,
-              -0.5
-            ]
-          }
-        }
-      },
-      cyclic_sound: {
-        begin_sound: [
-          {
-            filename: 'sound/fight/flamethrower-start.ogg',
-            volume: 0.7
-          }
-        ],
-        middle_sound: [
-          {
-            filename: 'sound/fight/flamethrower-mid.ogg',
-            volume: 0.7
-          }
-        ],
-        end_sound: [
-          {
-            filename: 'sound/fight/flamethrower-end.ogg',
-            volume: 0.7
-          }
-        ]
-      }
-    },
     call_for_help_radius: 40,
     size: {
       width: 2,
