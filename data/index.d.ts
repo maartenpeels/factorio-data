@@ -652,7 +652,13 @@ declare module FD {
     }
     interface Minable {
         mining_time: number
-        result: string
+        result?: string
+        results?: {
+            name: string
+            amount_min: number
+            amount_max: number
+        }
+        mining_particle?: string
         hardness?: number
         count?: number
     }
@@ -1051,6 +1057,58 @@ declare module FD {
         west: number[]
     }
 
+    const treesAndRocks: {
+        [name: string]: TreeOrRock
+    }
+
+    interface TreeOrRock {
+        name: string
+        type: string
+        flags: string[]
+        icon: string
+        icon_size: number
+        subgroup: string
+        order: string
+        collision_box: any[]
+        selection_box: any[]
+        minable: Minable
+        loot?: LootItem[]
+        count_as_rock_for_filtered_deconstruction?: boolean
+        mined_sound?: Sound
+        render_layer?: string
+        max_health: number
+        pictures?: SpriteData[]
+        size: Size
+        corpse?: string
+        remains_when_mined?: string
+        emissions_per_tick?: number
+        drawing_box?: any[]
+        variations?: VariationsItem[]
+        colors?: Color[]
+        darkness_of_burnt_tree?: number
+    }
+    interface LootItem {
+        item: string
+        probability: number
+        count_min: number
+        count_max: number
+    }
+    interface VariationsItem {
+        trunk: SpriteData
+        leaves: SpriteData
+        leaf_generation: Generation
+        branch_generation: Generation
+    }
+    interface Generation {
+        type: string
+        entity_name: string
+        offset_deviation: any[]
+        initial_height: number
+        initial_height_deviation: number
+        speed_from_center: number
+        frame_speed?: number
+        repeat_count?: number
+    }
 }
 
 export = FD
