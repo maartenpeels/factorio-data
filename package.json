@@ -26,6 +26,7 @@
     "javascript-stringify": "^1.6.0",
     "jimp": "^0.6.0",
     "lua-in-js": "^1.0.0",
-    "node-sprite-generator": "^0.10.2"
+    "node-sprite-generator": "^0.10.2",
+    "pngquant-bin": "^5.0.2"
   }
 }

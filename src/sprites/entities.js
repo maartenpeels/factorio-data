@@ -2,6 +2,8 @@ const fse = require('fs-extra')
 const nsg = require('node-sprite-generator')
 const Jimp = require('jimp')
 const utils = require('../utils')
+const execFile = require('child_process').execFile
+const pngquant = require('pngquant-bin')
 const entities = require('../../data/prototypes/entities')
 
 const factorioDataDirectory = process.argv[2]
@@ -156,6 +158,18 @@ function cropAndGenSpritesheet(paths, spritesheetName, tempDir) {
             } else {
                 fse.remove(tempDir)
                 console.log(spritesheetName, 'sprite atlas generated!')
+
+                execFile(pngquant, [
+                    '-o',
+                    spritesheetsOutDir + spritesheetName + 'Compressed.png',
+                    spritesheetsOutDir + spritesheetName + '.png'
+                ], err => {
+                    if (err) {
+                        console.log(err)
+                    } else {
+                        console.log(spritesheetName, 'sprite atlas compressed!')
+                    }
+                })
             }
         })
     )
