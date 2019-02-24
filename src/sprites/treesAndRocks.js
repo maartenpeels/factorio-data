@@ -1,6 +1,6 @@
 const fse = require('fs-extra')
 const nsg = require('node-sprite-generator')
-const treesAndRocks = require('../data/prototypes/treesAndRocks')
+const treesAndRocks = require('../../data/prototypes/treesAndRocks')
 
 const factorioDataDirectory = process.argv[2]
 const spritesheetsOutDir = process.argv[3]

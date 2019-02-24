@@ -59,18 +59,8 @@ module.exports = {
     mined_sound: {
       filename: 'sound/deconstruct-bricks.ogg'
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-stone-impact.ogg',
-      volume: 1
-    },
     render_layer: 'object',
     max_health: 2000,
-    resistances: [
-      {
-        type: 'fire',
-        percent: 100
-      }
-    ],
     pictures: [
       {
         filename: 'graphics/decorative/rock-huge/rock-huge-05.png',
@@ -432,18 +422,8 @@ module.exports = {
     mined_sound: {
       filename: 'sound/deconstruct-bricks.ogg'
     },
-    vehicle_impact_sound: {
-      filename: 'sound/car-stone-impact.ogg',
-      volume: 1
-    },
     render_layer: 'object',
     max_health: 500,
-    resistances: [
-      {
-        type: 'fire',
-        percent: 100
-      }
-    ],
     pictures: [
       {
         filename: 'graphics/decorative/rock-big/rock-big-01.png',
@@ -884,19 +864,9 @@ module.exports = {
         count_max: 15
       }
     ],
-    resistances: [
-      {
-        type: 'fire',
-        percent: 100
-      }
-    ],
     count_as_rock_for_filtered_deconstruction: true,
     mined_sound: {
       filename: 'sound/deconstruct-bricks.ogg'
-    },
-    vehicle_impact_sound: {
-      filename: 'sound/car-stone-impact.ogg',
-      volume: 1
     },
     pictures: [
       {
@@ -1261,10 +1231,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_a[regular]_a[tree_01]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     variations: [
       {
         trunk: {
@@ -2287,10 +2253,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_a[regular]_b[tree_02]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     variations: [
       {
         trunk: {
@@ -2863,10 +2825,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_a[regular]_c[tree_03]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     variations: [
       {
         trunk: {
@@ -3633,10 +3591,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_a[regular]_d[tree_04]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     variations: [
       {
         trunk: {
@@ -4495,10 +4449,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_a[regular]_e[tree_05]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     variations: [
       {
         trunk: {
@@ -5454,10 +5404,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_a[regular]_f[tree_09]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     variations: [
       {
         trunk: {
@@ -6010,10 +5956,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_a[regular]_g[tree_02_red]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     variations: [
       {
         trunk: {
@@ -6616,10 +6558,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_a[regular]_h[tree_07]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     variations: [
       {
         trunk: {
@@ -7570,10 +7508,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_a[regular]_i[tree_06]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     variations: [
       {
         trunk: {
@@ -8611,10 +8545,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_a[regular]_j[tree_06_brown]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     variations: [
       {
         trunk: {
@@ -9632,10 +9562,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_a[regular]_k[tree_09_brown]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     variations: [
       {
         trunk: {
@@ -10193,10 +10119,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_a[regular]_l[tree_09_red]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     variations: [
       {
         trunk: {
@@ -10754,10 +10676,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_a[regular]_m[tree_08]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     variations: [
       {
         trunk: {
@@ -11355,10 +11273,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_a[regular]_n[tree_08_brown]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     variations: [
       {
         trunk: {
@@ -11901,10 +11815,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_a[regular]_o[tree_08_red]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     variations: [
       {
         trunk: {
@@ -12445,10 +12355,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_c[dry_tree]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     pictures: [
       {
         filename: 'graphics/entity/tree/dry-tree/dry-tree-00.png',
@@ -12667,10 +12573,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_b[dead_tree]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     pictures: [
       {
         filename: 'graphics/entity/tree/dead-tree-desert/dead-tree-desert-00.png',
@@ -12908,10 +12810,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_b[dead_tree]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     pictures: [
       {
         filename: 'graphics/entity/tree/dead-grey-trunk/dead-grey-trunk-00.png',
@@ -13149,10 +13047,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_b[dead_tree]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     pictures: [
       {
         filename: 'graphics/entity/tree/dead-dry-hairy-tree/dead-dry-hairy-tree-00.png',
@@ -13428,10 +13322,6 @@ module.exports = {
     ],
     subgroup: 'trees',
     order: 'a[tree]_b[dead_tree]',
-    vehicle_impact_sound: {
-      filename: 'sound/car-wood-impact.ogg',
-      volume: 1
-    },
     pictures: [
       {
         filename: 'graphics/entity/tree/dry-hairy-tree/dry-hairy-tree-00.png',

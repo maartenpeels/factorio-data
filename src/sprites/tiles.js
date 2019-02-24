@@ -1,7 +1,7 @@
 const fse = require('fs-extra')
 const nsg = require('node-sprite-generator')
 const Jimp = require('jimp')
-const tiles = require('../data/prototypes/tiles')
+const tiles = require('../../data/prototypes/tiles')
 
 const factorioDataDirectory = process.argv[2]
 const spritesheetsOutDir = process.argv[3]

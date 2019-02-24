@@ -1,7 +1,7 @@
 const execSync = require('child_process').execSync
 const glob = require('glob')
 
-const factorioDataDirectory = 'B:/SteamLibrary/steamapps/common/Factorio/data/'
+const factorioDataDirectory = 'E:/SteamLibrary/steamapps/common/Factorio/data/'
 
 const rawData = '../data/raw.json'
 const outputDirectory = '../data/'
@@ -18,11 +18,11 @@ execSync(`node treesAndRocks.js ${rawData} ${outputDirectory}prototypes/treesAnd
 execSync(`node items.js ${rawData} ${outputDirectory}prototypes/items.js`, options)
 execSync(`node inventoryLayout.js ${rawData} ${outputDirectory}prototypes/inventoryLayout.js`, options)
 
-execSync(`node entitySprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
-execSync(`node treesAndRocksSprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
-execSync(`node itemSprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
-execSync(`node tileSprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
-execSync(`node utilitySprites.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
+execSync(`node sprites/entities.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
+execSync(`node sprites/treesAndRocks.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
+execSync(`node sprites/items.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
+execSync(`node sprites/tiles.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
+execSync(`node sprites/utility.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
 
 glob('../data/graphics/*.png', (_, files) => {
     files.forEach(f => execSync(`..\\lib\\cwebp -lossless ${f} -o ${f.replace('png', 'webp')}`, options))
