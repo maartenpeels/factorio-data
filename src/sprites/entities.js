@@ -1,6 +1,7 @@
 const fse = require('fs-extra')
 const nsg = require('node-sprite-generator')
 const Jimp = require('jimp')
+const utils = require('../utils')
 const entities = require('../../data/prototypes/entities')
 
 const factorioDataDirectory = process.argv[2]

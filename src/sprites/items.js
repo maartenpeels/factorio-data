@@ -1,5 +1,6 @@
 const nsg = require('node-sprite-generator')
 const inventory = require('../../data/prototypes/inventoryLayout')
+const utils = require('../utils')
 
 const factorioDataDirectory = process.argv[2]
 const spritesheetsOutDir = process.argv[3]
