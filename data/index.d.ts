@@ -25,6 +25,8 @@ declare module FD {
 
     interface Recipe {
         name: string
+        ui_name: string
+        description?: string
         category: string
         hidden?: boolean
         time: number
@@ -84,6 +86,8 @@ declare module FD {
     interface Item {
         type: string
         name: string
+        ui_name: string
+        description?: string
         subgroup: string
         order: string
 
@@ -243,6 +247,8 @@ declare module FD {
     interface Entity {
         type: string
         name: string
+        ui_name: string
+        description?: string
         icon: string
         icon_size: number
         flags?: string[]
