@@ -195,7 +195,8 @@ module.exports = {
     size: {
       width: 2,
       height: 2
-    }
+    },
+    ui_name: 'Stone furnace'
   },
   steel_furnace: {
     type: 'furnace',
@@ -459,7 +460,8 @@ module.exports = {
     size: {
       width: 2,
       height: 2
-    }
+    },
+    ui_name: 'Steel furnace'
   },
   electric_furnace: {
     type: 'furnace',
@@ -682,7 +684,8 @@ module.exports = {
     size: {
       width: 3,
       height: 3
-    }
+    },
+    ui_name: 'Electric furnace'
   },
   transport_belt: {
     type: 'transport_belt',
@@ -2012,7 +2015,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Transport belt'
   },
   fast_transport_belt: {
     type: 'transport_belt',
@@ -3351,7 +3355,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Fast transport belt'
   },
   express_transport_belt: {
     type: 'transport_belt',
@@ -4690,7 +4695,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Express transport belt'
   },
   boiler: {
     type: 'boiler',
@@ -5508,7 +5514,9 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Boiler',
+    description: 'Burns fuel to heat fluids.'
   },
   heat_exchanger: {
     type: 'boiler',
@@ -6158,7 +6166,9 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Heat exchanger',
+    description: 'Exchanges heat between a heat source and a fluid.'
   },
   wooden_chest: {
     type: 'container',
@@ -6359,7 +6369,8 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Wooden chest'
   },
   iron_chest: {
     type: 'container',
@@ -6562,7 +6573,8 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Iron chest'
   },
   steel_chest: {
     type: 'container',
@@ -6765,7 +6777,8 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Steel chest'
   },
   small_electric_pole: {
     type: 'electric_pole',
@@ -6960,7 +6973,8 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Small electric pole'
   },
   big_electric_pole: {
     type: 'electric_pole',
@@ -7153,7 +7167,8 @@ module.exports = {
     size: {
       width: 2,
       height: 2
-    }
+    },
+    ui_name: 'Big electric pole'
   },
   medium_electric_pole: {
     type: 'electric_pole',
@@ -7348,7 +7363,8 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Medium electric pole'
   },
   substation: {
     type: 'electric_pole',
@@ -7549,7 +7565,8 @@ module.exports = {
     size: {
       width: 2,
       height: 2
-    }
+    },
+    ui_name: 'Substation'
   },
   steam_engine: {
     type: 'generator',
@@ -7890,7 +7907,9 @@ module.exports = {
     possible_rotations: [
       0,
       2
-    ]
+    ],
+    ui_name: 'Steam engine',
+    description: 'Consumes steam to create electric energy.'
   },
   steam_turbine: {
     type: 'generator',
@@ -8236,7 +8255,9 @@ module.exports = {
     possible_rotations: [
       0,
       2
-    ]
+    ],
+    ui_name: 'Steam turbine',
+    description: 'Consumes steam to create electric energy.'
   },
   offshore_pump: {
     type: 'offshore_pump',
@@ -9011,7 +9032,9 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Offshore pump',
+    description: 'Pumps fluid from a body of water.'
   },
   inserter: {
     type: 'inserter',
@@ -9780,7 +9803,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Inserter'
   },
   burner_inserter: {
     type: 'inserter',
@@ -10560,7 +10584,9 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Burner inserter',
+    description: 'Burns fuel for energy.'
   },
   long_handed_inserter: {
     type: 'inserter',
@@ -11330,7 +11356,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Long handed inserter'
   },
   fast_inserter: {
     type: 'inserter',
@@ -12099,7 +12126,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Fast inserter'
   },
   stack_inserter: {
     type: 'inserter',
@@ -12869,7 +12897,9 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Stack inserter',
+    description: 'Stack inserters can move multiple items at the same time.'
   },
   stack_filter_inserter: {
     type: 'inserter',
@@ -13640,7 +13670,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Stack filter inserter'
   },
   filter_inserter: {
     type: 'inserter',
@@ -14410,7 +14441,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Filter inserter'
   },
   pipe: {
     type: 'pipe',
@@ -14824,7 +14856,8 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Pipe'
   },
   radar: {
     type: 'radar',
@@ -14977,7 +15010,9 @@ module.exports = {
     size: {
       width: 3,
       height: 3
-    }
+    },
+    ui_name: 'Radar',
+    description: 'Scans the nearby sectors, and actively reveals an area around it.'
   },
   small_lamp: {
     type: 'lamp',
@@ -15331,7 +15366,8 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Lamp'
   },
   pipe_to_ground: {
     type: 'pipe_to_ground',
@@ -15587,7 +15623,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Pipe to ground'
   },
   assembling_machine_1: {
     type: 'assembling_machine',
@@ -15729,7 +15766,9 @@ module.exports = {
     size: {
       width: 3,
       height: 3
-    }
+    },
+    ui_name: 'Assembling machine 1',
+    description: 'Crafts items that require up to 2 ingredients.'
   },
   assembling_machine_2: {
     type: 'assembling_machine',
@@ -16354,7 +16393,9 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Assembling machine 2',
+    description: 'Crafts items that require up to 4 ingredients.'
   },
   assembling_machine_3: {
     type: 'assembling_machine',
@@ -16989,7 +17030,9 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Assembling machine 3',
+    description: 'Crafts items that require up to 6 ingredients.'
   },
   oil_refinery: {
     type: 'assembling_machine',
@@ -18212,7 +18255,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Oil refinery'
   },
   chemical_plant: {
     type: 'assembling_machine',
@@ -19269,7 +19313,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Chemical plant'
   },
   centrifuge: {
     type: 'assembling_machine',
@@ -19768,7 +19813,9 @@ module.exports = {
     size: {
       width: 3,
       height: 3
-    }
+    },
+    ui_name: 'Centrifuge',
+    description: 'Processes uranium ore and splits it into uranium 235 and uranium 238.'
   },
   stone_wall: {
     type: 'wall',
@@ -20326,7 +20373,8 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Stone wall'
   },
   electric_mining_drill: {
     type: 'mining_drill',
@@ -22252,7 +22300,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Electric mining drill'
   },
   burner_mining_drill: {
     type: 'mining_drill',
@@ -23169,7 +23218,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Burner mining drill'
   },
   pumpjack: {
     type: 'mining_drill',
@@ -24101,7 +24151,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Pumpjack'
   },
   gun_turret: {
     type: 'ammo_turret',
@@ -24490,7 +24541,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Gun turret'
   },
   underground_belt: {
     type: 'underground_belt',
@@ -24756,7 +24808,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Underground belt'
   },
   fast_underground_belt: {
     type: 'underground_belt',
@@ -25030,7 +25083,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Fast underground belt'
   },
   express_underground_belt: {
     type: 'underground_belt',
@@ -25304,7 +25358,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Express underground belt'
   },
   loader: {
     type: 'loader',
@@ -25518,7 +25573,8 @@ module.exports = {
     size: {
       width: 1,
       height: 2
-    }
+    },
+    ui_name: 'Loader'
   },
   fast_loader: {
     type: 'loader',
@@ -25740,7 +25796,8 @@ module.exports = {
     size: {
       width: 1,
       height: 2
-    }
+    },
+    ui_name: 'Fast loader'
   },
   express_loader: {
     type: 'loader',
@@ -25962,7 +26019,8 @@ module.exports = {
     size: {
       width: 1,
       height: 2
-    }
+    },
+    ui_name: 'Express loader'
   },
   splitter: {
     type: 'splitter',
@@ -26265,7 +26323,9 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Splitter',
+    description: 'Splits incoming transport belts\' cargo 1:1'
   },
   fast_splitter: {
     type: 'splitter',
@@ -26576,7 +26636,9 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Fast splitter',
+    description: 'Splits incoming transport belts\' cargo 1:1'
   },
   express_splitter: {
     type: 'splitter',
@@ -26887,7 +26949,9 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Express splitter',
+    description: 'Splits incoming transport belts\' cargo 1:1'
   },
   solar_panel: {
     type: 'solar_panel',
@@ -27006,7 +27070,8 @@ module.exports = {
     size: {
       width: 3,
       height: 3
-    }
+    },
+    ui_name: 'Solar panel'
   },
   gate: {
     type: 'gate',
@@ -27412,7 +27477,8 @@ module.exports = {
     possible_rotations: [
       0,
       2
-    ]
+    ],
+    ui_name: 'Gate'
   },
   player_port: {
     type: 'player_port',
@@ -27457,7 +27523,8 @@ module.exports = {
     size: {
       width: 2,
       height: 2
-    }
+    },
+    ui_name: 'Player port'
   },
   straight_rail: {
     type: 'straight_rail',
@@ -31635,7 +31702,8 @@ module.exports = {
     possible_rotations: [
       0,
       2
-    ]
+    ],
+    ui_name: 'Straight rail'
   },
   curved_rail: {
     type: 'curved_rail',
@@ -35824,7 +35892,8 @@ module.exports = {
     size: {
       width: 4,
       height: 2
-    }
+    },
+    ui_name: 'Curved rail'
   },
   land_mine: {
     type: 'land_mine',
@@ -35891,7 +35960,9 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Land mine',
+    description: 'Explodes when enemies are nearby, damaging and stunning them.'
   },
   train_stop: {
     type: 'train_stop',
@@ -37552,7 +37623,9 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Train stop',
+    description: 'Destinations for automated trains.'
   },
   rail_signal: {
     type: 'rail_signal',
@@ -38815,7 +38888,9 @@ module.exports = {
       5,
       6,
       7
-    ]
+    ],
+    ui_name: 'Rail signal',
+    description: 'Defines the rail system into blocks, allowing multiple trains to run on the same network.'
   },
   rail_chain_signal: {
     type: 'rail_chain_signal',
@@ -40134,7 +40209,9 @@ module.exports = {
       5,
       6,
       7
-    ]
+    ],
+    ui_name: 'Rail chain signal',
+    description: 'Reads the next signals in the path to allow better control of the trains.'
   },
   lab: {
     type: 'lab',
@@ -40369,7 +40446,8 @@ module.exports = {
     size: {
       width: 3,
       height: 3
-    }
+    },
+    ui_name: 'Lab'
   },
   logistic_chest_passive_provider: {
     type: 'logistic_container',
@@ -40574,7 +40652,9 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Passive provider chest',
+    description: 'Makes its content available for the logistic network.'
   },
   logistic_chest_active_provider: {
     type: 'logistic_container',
@@ -40779,7 +40859,9 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Active provider chest',
+    description: 'Sends its content to the logistic network.'
   },
   logistic_chest_storage: {
     type: 'logistic_container',
@@ -40985,7 +41067,9 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Storage chest',
+    description: 'Long-term storage for the logistic network.'
   },
   logistic_chest_buffer: {
     type: 'logistic_container',
@@ -41191,7 +41275,9 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Buffer chest',
+    description: 'Requests specified items to be available for personal logistics and automated construction.'
   },
   logistic_chest_requester: {
     type: 'logistic_container',
@@ -41397,7 +41483,9 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Requester chest',
+    description: 'Requests specified items from the logistic network.'
   },
   rocket_silo: {
     type: 'rocket_silo',
@@ -41873,7 +41961,9 @@ module.exports = {
     size: {
       width: 9,
       height: 10
-    }
+    },
+    ui_name: 'Rocket silo',
+    description: 'Used to build and launch a rocket to win the game.'
   },
   roboport: {
     type: 'roboport',
@@ -42283,7 +42373,8 @@ module.exports = {
     size: {
       width: 4,
       height: 4
-    }
+    },
+    ui_name: 'Roboport'
   },
   storage_tank: {
     type: 'storage_tank',
@@ -43133,7 +43224,8 @@ module.exports = {
     possible_rotations: [
       0,
       2
-    ]
+    ],
+    ui_name: 'Storage tank'
   },
   pump: {
     type: 'pump',
@@ -44139,7 +44231,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Pump'
   },
   accumulator: {
     type: 'accumulator',
@@ -44409,7 +44502,9 @@ module.exports = {
     size: {
       width: 2,
       height: 2
-    }
+    },
+    ui_name: 'Accumulator',
+    description: 'Connects to the electric network and stores electric energy.'
   },
   beacon: {
     type: 'beacon',
@@ -44519,7 +44614,9 @@ module.exports = {
     size: {
       width: 3,
       height: 3
-    }
+    },
+    ui_name: 'Beacon',
+    description: 'Transmits the effect of modules to nearby friendly entities.'
   },
   arithmetic_combinator: {
     type: 'arithmetic_combinator',
@@ -46140,7 +46237,9 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Arithmetic combinator',
+    description: 'Performs arithmetic operations on circuit network signals.'
   },
   decider_combinator: {
     type: 'decider_combinator',
@@ -47331,7 +47430,9 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Decider combinator',
+    description: 'Compares circuit network signals.'
   },
   constant_combinator: {
     type: 'constant_combinator',
@@ -47817,7 +47918,9 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Constant combinator',
+    description: 'Outputs constant circuit network signals.'
   },
   power_switch: {
     type: 'power_switch',
@@ -47975,7 +48078,9 @@ module.exports = {
     size: {
       width: 2,
       height: 2
-    }
+    },
+    ui_name: 'Power switch',
+    description: 'Used to control the connections of the electric network. Can also be controlled by the circuit network.'
   },
   programmable_speaker: {
     type: 'programmable_speaker',
@@ -50544,7 +50649,8 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Programmable Speaker'
   },
   electric_energy_interface: {
     type: 'electric_energy_interface',
@@ -50623,7 +50729,8 @@ module.exports = {
     size: {
       width: 2,
       height: 2
-    }
+    },
+    ui_name: 'Electric energy interface'
   },
   nuclear_reactor: {
     type: 'reactor',
@@ -50929,7 +51036,8 @@ module.exports = {
     size: {
       width: 5,
       height: 5
-    }
+    },
+    ui_name: 'Nuclear reactor'
   },
   heat_pipe: {
     type: 'heat_pipe',
@@ -52272,7 +52380,8 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Heat pipe'
   },
   simple_entity_with_force: {
     type: 'simple_entity_with_force',
@@ -52324,7 +52433,8 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Simple entity with force'
   },
   simple_entity_with_owner: {
     type: 'simple_entity_with_owner',
@@ -52392,7 +52502,8 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Simple entity with owner'
   },
   infinity_chest: {
     type: 'infinity_container',
@@ -52594,7 +52705,8 @@ module.exports = {
     size: {
       width: 1,
       height: 1
-    }
+    },
+    ui_name: 'Infinity chest'
   },
   artillery_turret: {
     type: 'artillery_turret',
@@ -54192,7 +54304,9 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Artillery turret',
+    description: 'Long range cannon targeting enemy bases.'
   },
   laser_turret: {
     type: 'electric_turret',
@@ -54489,7 +54603,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Laser turret'
   },
   flamethrower_turret: {
     type: 'fluid_turret',
@@ -58798,6 +58913,8 @@ module.exports = {
       2,
       4,
       6
-    ]
+    ],
+    ui_name: 'Flamethrower turret',
+    description: 'Fires a stream of burning liquid at enemies.'
   }
 }

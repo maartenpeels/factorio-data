@@ -7,7 +7,8 @@ module.exports = {
     magazine_size: 10,
     subgroup: 'ammo',
     order: 'a[basic_clips]_a[firearm_magazine]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Firearm magazine'
   },
   piercing_rounds_magazine: {
     type: 'ammo',
@@ -17,7 +18,8 @@ module.exports = {
     magazine_size: 10,
     subgroup: 'ammo',
     order: 'a[basic_clips]_b[piercing_rounds_magazine]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Piercing rounds magazine'
   },
   uranium_rounds_magazine: {
     type: 'ammo',
@@ -27,7 +29,8 @@ module.exports = {
     magazine_size: 10,
     subgroup: 'ammo',
     order: 'a[basic_clips]_c[uranium_rounds_magazine]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Uranium rounds magazine'
   },
   flamethrower_ammo: {
     type: 'ammo',
@@ -37,7 +40,8 @@ module.exports = {
     magazine_size: 100,
     subgroup: 'ammo',
     order: 'e[flamethrower]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Flamethrower ammo'
   },
   rocket: {
     type: 'ammo',
@@ -46,7 +50,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'ammo',
     order: 'd[rocket_launcher]_a[basic]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Rocket'
   },
   explosive_rocket: {
     type: 'ammo',
@@ -55,7 +60,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'ammo',
     order: 'd[rocket_launcher]_b[explosive]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Explosive rocket'
   },
   atomic_bomb: {
     type: 'ammo',
@@ -64,7 +70,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'ammo',
     order: 'd[rocket_launcher]_c[atomic_bomb]',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Atomic bomb'
   },
   shotgun_shell: {
     type: 'ammo',
@@ -74,7 +81,8 @@ module.exports = {
     magazine_size: 10,
     subgroup: 'ammo',
     order: 'b[shotgun]_a[basic]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Shotgun shells'
   },
   piercing_shotgun_shell: {
     type: 'ammo',
@@ -84,7 +92,8 @@ module.exports = {
     magazine_size: 10,
     subgroup: 'ammo',
     order: 'b[shotgun]_b[piercing]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Piercing shotgun shells'
   },
   cannon_shell: {
     type: 'ammo',
@@ -93,7 +102,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'ammo',
     order: 'd[cannon_shell]_a[basic]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Cannon shell'
   },
   explosive_cannon_shell: {
     type: 'ammo',
@@ -102,7 +112,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'ammo',
     order: 'd[cannon_shell]_c[explosive]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Explosive cannon shell'
   },
   uranium_cannon_shell: {
     type: 'ammo',
@@ -111,7 +122,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'ammo',
     order: 'd[cannon_shell]_c[uranium]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Uranium cannon shell'
   },
   explosive_uranium_cannon_shell: {
     type: 'ammo',
@@ -120,7 +132,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'ammo',
     order: 'd[explosive_cannon_shell]_c[uranium]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Explosive uranium cannon shell'
   },
   artillery_shell: {
     type: 'ammo',
@@ -129,7 +142,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'ammo',
     order: 'd[explosive_cannon_shell]_d[artillery]',
-    stack_size: 1
+    stack_size: 1,
+    ui_name: 'Artillery shell'
   },
   light_armor: {
     type: 'armor',
@@ -139,7 +153,8 @@ module.exports = {
     durability: 1000,
     subgroup: 'armor',
     order: 'a[light_armor]',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Light armor'
   },
   heavy_armor: {
     type: 'armor',
@@ -149,7 +164,9 @@ module.exports = {
     durability: 5000,
     subgroup: 'armor',
     order: 'b[heavy_armor]',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Heavy armor',
+    description: 'Heavy armor for more protection.'
   },
   modular_armor: {
     type: 'armor',
@@ -161,7 +178,9 @@ module.exports = {
     order: 'c[modular_armor]',
     stack_size: 1,
     equipment_grid: 'small_equipment_grid',
-    inventory_size_bonus: 10
+    inventory_size_bonus: 10,
+    ui_name: 'Modular armor',
+    description: 'Armor with a small grid for equipment modules that give you unique bonuses. Wearing it also increases your inventory size.'
   },
   power_armor: {
     type: 'armor',
@@ -173,7 +192,9 @@ module.exports = {
     order: 'd[power_armor]',
     stack_size: 1,
     equipment_grid: 'medium_equipment_grid',
-    inventory_size_bonus: 20
+    inventory_size_bonus: 20,
+    ui_name: 'Power armor',
+    description: 'Armor with a large equipment grid and inventory size bonus.'
   },
   power_armor_mk2: {
     type: 'armor',
@@ -185,7 +206,8 @@ module.exports = {
     order: 'e[power_armor_mk2]',
     stack_size: 1,
     equipment_grid: 'large_equipment_grid',
-    inventory_size_bonus: 30
+    inventory_size_bonus: 30,
+    ui_name: 'Power armor MK2'
   },
   pistol: {
     type: 'gun',
@@ -194,7 +216,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'gun',
     order: 'a[basic_clips]_a[pistol]',
-    stack_size: 5
+    stack_size: 5,
+    ui_name: 'Pistol'
   },
   submachine_gun: {
     type: 'gun',
@@ -203,7 +226,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'gun',
     order: 'a[basic_clips]_b[submachine_gun]',
-    stack_size: 5
+    stack_size: 5,
+    ui_name: 'Submachine gun'
   },
   flamethrower: {
     type: 'gun',
@@ -212,7 +236,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'gun',
     order: 'e[flamethrower]',
-    stack_size: 5
+    stack_size: 5,
+    ui_name: 'Flamethrower'
   },
   rocket_launcher: {
     type: 'gun',
@@ -221,7 +246,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'gun',
     order: 'd[rocket_launcher]',
-    stack_size: 5
+    stack_size: 5,
+    ui_name: 'Rocket launcher'
   },
   shotgun: {
     type: 'gun',
@@ -230,7 +256,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'gun',
     order: 'b[shotgun]_a[basic]',
-    stack_size: 5
+    stack_size: 5,
+    ui_name: 'Shotgun'
   },
   combat_shotgun: {
     type: 'gun',
@@ -239,7 +266,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'gun',
     order: 'b[shotgun]_a[combat]',
-    stack_size: 5
+    stack_size: 5,
+    ui_name: 'Combat shotgun'
   },
   stone_brick: {
     type: 'item',
@@ -255,7 +283,8 @@ module.exports = {
       condition: [
         'water_tile'
       ]
-    }
+    },
+    ui_name: 'Stone brick'
   },
   raw_wood: {
     type: 'item',
@@ -266,7 +295,8 @@ module.exports = {
     fuel_category: 'chemical',
     subgroup: 'raw_resource',
     order: 'a[raw_wood]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Raw wood'
   },
   coal: {
     type: 'item',
@@ -277,7 +307,8 @@ module.exports = {
     fuel_value: '8MJ',
     subgroup: 'raw_resource',
     order: 'b[coal]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Coal'
   },
   stone: {
     type: 'item',
@@ -286,7 +317,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'raw_resource',
     order: 'd[stone]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Stone'
   },
   iron_ore: {
     type: 'item',
@@ -295,7 +327,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'raw_resource',
     order: 'e[iron_ore]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Iron ore'
   },
   copper_ore: {
     type: 'item',
@@ -304,7 +337,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'raw_resource',
     order: 'f[copper_ore]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Copper ore'
   },
   wood: {
     type: 'item',
@@ -315,7 +349,8 @@ module.exports = {
     fuel_value: '2MJ',
     subgroup: 'raw_material',
     order: 'a[wood]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Wood'
   },
   iron_plate: {
     type: 'item',
@@ -324,7 +359,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'raw_material',
     order: 'b[iron_plate]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Iron plate'
   },
   copper_plate: {
     type: 'item',
@@ -333,7 +369,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'raw_material',
     order: 'c[copper_plate]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Copper plate'
   },
   copper_cable: {
     type: 'item',
@@ -342,7 +379,9 @@ module.exports = {
     icon_size: 32,
     subgroup: 'intermediate_product',
     order: 'a[copper_cable]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Copper cable',
+    description: 'Can be used to connect and disconnect electric poles and power switches with __CONTROL__build__.'
   },
   iron_stick: {
     type: 'item',
@@ -351,7 +390,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'intermediate_product',
     order: 'b[iron_stick]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Iron stick'
   },
   iron_gear_wheel: {
     type: 'item',
@@ -360,7 +400,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'intermediate_product',
     order: 'c[iron_gear_wheel]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Iron gear wheel'
   },
   electronic_circuit: {
     type: 'item',
@@ -369,7 +410,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'intermediate_product',
     order: 'e[electronic_circuit]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Electronic circuit'
   },
   wooden_chest: {
     type: 'item',
@@ -381,7 +423,8 @@ module.exports = {
     subgroup: 'storage',
     order: 'a[items]_a[wooden_chest]',
     place_result: 'wooden_chest',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Wooden chest'
   },
   stone_furnace: {
     type: 'item',
@@ -391,7 +434,8 @@ module.exports = {
     subgroup: 'smelting_machine',
     order: 'a[stone_furnace]',
     place_result: 'stone_furnace',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Stone furnace'
   },
   burner_mining_drill: {
     type: 'item',
@@ -401,7 +445,8 @@ module.exports = {
     subgroup: 'extraction_machine',
     order: 'a[items]_a[burner_mining_drill]',
     place_result: 'burner_mining_drill',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Burner mining drill'
   },
   electric_mining_drill: {
     type: 'item',
@@ -411,7 +456,8 @@ module.exports = {
     subgroup: 'extraction_machine',
     order: 'a[items]_b[electric_mining_drill]',
     place_result: 'electric_mining_drill',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Electric mining drill'
   },
   transport_belt: {
     type: 'item',
@@ -421,7 +467,8 @@ module.exports = {
     subgroup: 'belt',
     order: 'a[transport_belt]_a[transport_belt]',
     place_result: 'transport_belt',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Transport belt'
   },
   burner_inserter: {
     type: 'item',
@@ -431,7 +478,9 @@ module.exports = {
     subgroup: 'inserter',
     order: 'a[burner_inserter]',
     place_result: 'burner_inserter',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Burner inserter',
+    description: 'Burns fuel for energy.'
   },
   inserter: {
     type: 'item',
@@ -441,7 +490,8 @@ module.exports = {
     subgroup: 'inserter',
     order: 'b[inserter]',
     place_result: 'inserter',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Inserter'
   },
   offshore_pump: {
     type: 'item',
@@ -451,7 +501,9 @@ module.exports = {
     subgroup: 'extraction_machine',
     order: 'b[fluids]_a[offshore_pump]',
     place_result: 'offshore_pump',
-    stack_size: 20
+    stack_size: 20,
+    ui_name: 'Offshore pump',
+    description: 'Pumps fluid from a body of water.'
   },
   pipe: {
     type: 'item',
@@ -461,7 +513,8 @@ module.exports = {
     subgroup: 'energy_pipe_distribution',
     order: 'a[pipe]_a[pipe]',
     place_result: 'pipe',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Pipe'
   },
   boiler: {
     type: 'item',
@@ -471,7 +524,9 @@ module.exports = {
     subgroup: 'energy',
     order: 'b[steam_power]_a[boiler]',
     place_result: 'boiler',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Boiler',
+    description: 'Burns fuel to heat fluids.'
   },
   steam_engine: {
     type: 'item',
@@ -481,7 +536,9 @@ module.exports = {
     subgroup: 'energy',
     order: 'b[steam_power]_b[steam_engine]',
     place_result: 'steam_engine',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Steam engine',
+    description: 'Consumes steam to create electric energy.'
   },
   small_electric_pole: {
     type: 'item',
@@ -493,7 +550,8 @@ module.exports = {
     place_result: 'small_electric_pole',
     fuel_category: 'chemical',
     fuel_value: '4MJ',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Small electric pole'
   },
   radar: {
     type: 'item',
@@ -503,7 +561,9 @@ module.exports = {
     subgroup: 'defensive_structure',
     order: 'd[radar]_a[radar]',
     place_result: 'radar',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Radar',
+    description: 'Scans the nearby sectors, and actively reveals an area around it.'
   },
   small_lamp: {
     type: 'item',
@@ -513,7 +573,8 @@ module.exports = {
     subgroup: 'circuit_network',
     order: 'a[light]_a[small_lamp]',
     place_result: 'small_lamp',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Lamp'
   },
   pipe_to_ground: {
     type: 'item',
@@ -523,7 +584,8 @@ module.exports = {
     subgroup: 'energy_pipe_distribution',
     order: 'a[pipe]_b[pipe_to_ground]',
     place_result: 'pipe_to_ground',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Pipe to ground'
   },
   assembling_machine_1: {
     type: 'item',
@@ -533,7 +595,9 @@ module.exports = {
     subgroup: 'production_machine',
     order: 'a[assembling_machine_1]',
     place_result: 'assembling_machine_1',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Assembling machine 1',
+    description: 'Crafts items that require up to 2 ingredients.'
   },
   red_wire: {
     type: 'item',
@@ -542,7 +606,9 @@ module.exports = {
     icon_size: 32,
     subgroup: 'circuit_network',
     order: 'b[wires]_a[red_wire]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Red wire',
+    description: 'Used to connect machines to the circuit network using __CONTROL__build__.'
   },
   green_wire: {
     type: 'item',
@@ -551,7 +617,9 @@ module.exports = {
     icon_size: 32,
     subgroup: 'circuit_network',
     order: 'b[wires]_b[green_wire]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Green wire',
+    description: 'Used to connect machines to the circuit network using __CONTROL__build__.'
   },
   stone_wall: {
     type: 'item',
@@ -561,7 +629,8 @@ module.exports = {
     subgroup: 'defensive_structure',
     order: 'a[stone_wall]_a[stone_wall]',
     place_result: 'stone_wall',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Stone wall'
   },
   gun_turret: {
     type: 'item',
@@ -571,7 +640,8 @@ module.exports = {
     subgroup: 'defensive_structure',
     order: 'b[turret]_a[gun_turret]',
     place_result: 'gun_turret',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Gun turret'
   },
   solar_panel_equipment: {
     type: 'item',
@@ -580,7 +650,9 @@ module.exports = {
     icon_size: 32,
     subgroup: 'equipment',
     order: 'a[energy_source]_a[solar_panel]',
-    stack_size: 20
+    stack_size: 20,
+    ui_name: 'Portable solar panel',
+    description: 'Provides power for equipment modules.'
   },
   fusion_reactor_equipment: {
     type: 'item',
@@ -589,7 +661,9 @@ module.exports = {
     icon_size: 32,
     subgroup: 'equipment',
     order: 'a[energy_source]_b[fusion_reactor]',
-    stack_size: 20
+    stack_size: 20,
+    ui_name: 'Portable fusion reactor',
+    description: 'Provides power for equipment modules.'
   },
   energy_shield_equipment: {
     type: 'item',
@@ -599,7 +673,9 @@ module.exports = {
     subgroup: 'equipment',
     order: 'b[shield]_a[energy_shield_equipment]',
     stack_size: 50,
-    default_request_amount: 10
+    default_request_amount: 10,
+    ui_name: 'Energy shield',
+    description: 'Provides an energy shield to protect the player.'
   },
   energy_shield_mk2_equipment: {
     type: 'item',
@@ -609,7 +685,9 @@ module.exports = {
     subgroup: 'equipment',
     order: 'b[shield]_b[energy_shield_equipment_mk2]',
     stack_size: 50,
-    default_request_amount: 10
+    default_request_amount: 10,
+    ui_name: 'Energy shield MK2',
+    description: 'Inserted into armor to absorb a large amount of damage.'
   },
   battery_equipment: {
     type: 'item',
@@ -619,7 +697,9 @@ module.exports = {
     subgroup: 'equipment',
     order: 'c[battery]_a[battery_equipment]',
     stack_size: 50,
-    default_request_amount: 10
+    default_request_amount: 10,
+    ui_name: 'Battery',
+    description: 'Stores electric energy for equipment modules.'
   },
   battery_mk2_equipment: {
     type: 'item',
@@ -629,7 +709,9 @@ module.exports = {
     subgroup: 'equipment',
     order: 'c[battery]_b[battery_equipment_mk2]',
     stack_size: 50,
-    default_request_amount: 10
+    default_request_amount: 10,
+    ui_name: 'Battery MK2',
+    description: 'Inserted into armor to store a lot of energy for later.'
   },
   personal_laser_defense_equipment: {
     type: 'item',
@@ -638,7 +720,9 @@ module.exports = {
     icon_size: 32,
     subgroup: 'equipment',
     order: 'd[active_defense]_a[personal_laser_defense_equipment]',
-    stack_size: 20
+    stack_size: 20,
+    ui_name: 'Personal laser defense',
+    description: 'Inserted into armor to automatically fire at nearby enemies.'
   },
   discharge_defense_equipment: {
     type: 'item',
@@ -647,7 +731,9 @@ module.exports = {
     icon_size: 32,
     subgroup: 'equipment',
     order: 'd[active_defense]_b[discharge_defense_equipment]',
-    stack_size: 20
+    stack_size: 20,
+    ui_name: 'Discharge defense',
+    description: 'Damages, pushes back and stuns nearby enemies when activated using the remote.'
   },
   exoskeleton_equipment: {
     type: 'item',
@@ -656,7 +742,9 @@ module.exports = {
     icon_size: 32,
     subgroup: 'equipment',
     order: 'e[exoskeleton]_a[exoskeleton_equipment]',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Exoskeleton',
+    description: 'Increases your movement speed.'
   },
   personal_roboport_equipment: {
     type: 'item',
@@ -665,7 +753,9 @@ module.exports = {
     icon_size: 32,
     subgroup: 'equipment',
     order: 'e[robotics]_a[personal_roboport_equipment]',
-    stack_size: 5
+    stack_size: 5,
+    ui_name: 'Personal roboport',
+    description: 'Allows construction bots to work from your inventory.'
   },
   personal_roboport_mk2_equipment: {
     type: 'item',
@@ -674,7 +764,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'equipment',
     order: 'e[robotics]_b[personal_roboport_mk2_equipment]',
-    stack_size: 5
+    stack_size: 5,
+    ui_name: 'Personal roboport MK2'
   },
   night_vision_equipment: {
     type: 'item',
@@ -683,7 +774,9 @@ module.exports = {
     icon_size: 32,
     subgroup: 'equipment',
     order: 'f[night_vision]_a[night_vision_equipment]',
-    stack_size: 20
+    stack_size: 20,
+    ui_name: 'Nightvision',
+    description: 'Allows you to see more clearly in darkness.'
   },
   land_mine: {
     type: 'item',
@@ -693,7 +786,9 @@ module.exports = {
     subgroup: 'gun',
     order: 'f[land_mine]',
     place_result: 'land_mine',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Land mine',
+    description: 'Explodes when enemies are nearby, damaging and stunning them.'
   },
   iron_chest: {
     type: 'item',
@@ -703,7 +798,8 @@ module.exports = {
     subgroup: 'storage',
     order: 'a[items]_b[iron_chest]',
     place_result: 'iron_chest',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Iron chest'
   },
   steel_chest: {
     type: 'item',
@@ -713,7 +809,8 @@ module.exports = {
     subgroup: 'storage',
     order: 'a[items]_c[steel_chest]',
     place_result: 'steel_chest',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Steel chest'
   },
   fast_transport_belt: {
     type: 'item',
@@ -723,7 +820,8 @@ module.exports = {
     subgroup: 'belt',
     order: 'a[transport_belt]_b[fast_transport_belt]',
     place_result: 'fast_transport_belt',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Fast transport belt'
   },
   express_transport_belt: {
     type: 'item',
@@ -733,7 +831,8 @@ module.exports = {
     subgroup: 'belt',
     order: 'a[transport_belt]_c[express_transport_belt]',
     place_result: 'express_transport_belt',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Express transport belt'
   },
   long_handed_inserter: {
     type: 'item',
@@ -743,7 +842,8 @@ module.exports = {
     subgroup: 'inserter',
     order: 'c[long_handed_inserter]',
     place_result: 'long_handed_inserter',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Long handed inserter'
   },
   fast_inserter: {
     type: 'item',
@@ -753,7 +853,8 @@ module.exports = {
     subgroup: 'inserter',
     order: 'd[fast_inserter]',
     place_result: 'fast_inserter',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Fast inserter'
   },
   filter_inserter: {
     type: 'item',
@@ -763,7 +864,8 @@ module.exports = {
     subgroup: 'inserter',
     order: 'e[filter_inserter]',
     place_result: 'filter_inserter',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Filter inserter'
   },
   stack_inserter: {
     type: 'item',
@@ -773,7 +875,9 @@ module.exports = {
     subgroup: 'inserter',
     order: 'f[stack_inserter]',
     place_result: 'stack_inserter',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Stack inserter',
+    description: 'Stack inserters can move multiple items at the same time.'
   },
   stack_filter_inserter: {
     type: 'item',
@@ -783,7 +887,8 @@ module.exports = {
     subgroup: 'inserter',
     order: 'g[stack_filter_inserter]',
     place_result: 'stack_filter_inserter',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Stack filter inserter'
   },
   assembling_machine_2: {
     type: 'item',
@@ -793,7 +898,9 @@ module.exports = {
     subgroup: 'production_machine',
     order: 'b[assembling_machine_2]',
     place_result: 'assembling_machine_2',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Assembling machine 2',
+    description: 'Crafts items that require up to 4 ingredients.'
   },
   assembling_machine_3: {
     type: 'item',
@@ -803,7 +910,9 @@ module.exports = {
     subgroup: 'production_machine',
     order: 'c[assembling_machine_3]',
     place_result: 'assembling_machine_3',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Assembling machine 3',
+    description: 'Crafts items that require up to 6 ingredients.'
   },
   solar_panel: {
     type: 'item',
@@ -813,7 +922,8 @@ module.exports = {
     subgroup: 'energy',
     order: 'd[solar_panel]_a[solar_panel]',
     place_result: 'solar_panel',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Solar panel'
   },
   gate: {
     type: 'item',
@@ -823,7 +933,8 @@ module.exports = {
     subgroup: 'defensive_structure',
     order: 'a[wall]_b[gate]',
     place_result: 'gate',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Gate'
   },
   lab: {
     type: 'item',
@@ -833,7 +944,8 @@ module.exports = {
     subgroup: 'production_machine',
     order: 'g[lab]',
     place_result: 'lab',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Lab'
   },
   train_stop: {
     type: 'item',
@@ -843,7 +955,9 @@ module.exports = {
     subgroup: 'transport',
     order: 'a[train_system]_c[train_stop]',
     place_result: 'train_stop',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Train stop',
+    description: 'Destinations for automated trains.'
   },
   rail_signal: {
     type: 'item',
@@ -853,7 +967,9 @@ module.exports = {
     subgroup: 'transport',
     order: 'a[train_system]_d[rail_signal]',
     place_result: 'rail_signal',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Rail signal',
+    description: 'Defines the rail system into blocks, allowing multiple trains to run on the same network.'
   },
   rail_chain_signal: {
     type: 'item',
@@ -863,7 +979,9 @@ module.exports = {
     subgroup: 'transport',
     order: 'a[train_system]_e[rail_signal_chain]',
     place_result: 'rail_chain_signal',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Rail chain signal',
+    description: 'Reads the next signals in the path to allow better control of the trains.'
   },
   steel_plate: {
     type: 'item',
@@ -872,7 +990,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'raw_material',
     order: 'd[steel_plate]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Steel plate'
   },
   underground_belt: {
     type: 'item',
@@ -882,7 +1001,8 @@ module.exports = {
     subgroup: 'belt',
     order: 'b[underground_belt]_a[underground_belt]',
     place_result: 'underground_belt',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Underground belt'
   },
   fast_underground_belt: {
     type: 'item',
@@ -892,7 +1012,8 @@ module.exports = {
     subgroup: 'belt',
     order: 'b[underground_belt]_b[fast_underground_belt]',
     place_result: 'fast_underground_belt',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Fast underground belt'
   },
   express_underground_belt: {
     type: 'item',
@@ -902,7 +1023,8 @@ module.exports = {
     subgroup: 'belt',
     order: 'b[underground_belt]_c[express_underground_belt]',
     place_result: 'express_underground_belt',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Express underground belt'
   },
   splitter: {
     type: 'item',
@@ -912,7 +1034,9 @@ module.exports = {
     subgroup: 'belt',
     order: 'c[splitter]_a[splitter]',
     place_result: 'splitter',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Splitter',
+    description: 'Splits incoming transport belts\' cargo 1:1'
   },
   fast_splitter: {
     type: 'item',
@@ -922,7 +1046,9 @@ module.exports = {
     subgroup: 'belt',
     order: 'c[splitter]_b[fast_splitter]',
     place_result: 'fast_splitter',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Fast splitter',
+    description: 'Splits incoming transport belts\' cargo 1:1'
   },
   express_splitter: {
     type: 'item',
@@ -932,7 +1058,9 @@ module.exports = {
     subgroup: 'belt',
     order: 'c[splitter]_c[express_splitter]',
     place_result: 'express_splitter',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Express splitter',
+    description: 'Splits incoming transport belts\' cargo 1:1'
   },
   advanced_circuit: {
     type: 'item',
@@ -941,7 +1069,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'intermediate_product',
     order: 'f[advanced_circuit]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Advanced circuit'
   },
   processing_unit: {
     type: 'item',
@@ -950,7 +1079,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'intermediate_product',
     order: 'g[processing_unit]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Processing unit'
   },
   logistic_robot: {
     type: 'item',
@@ -960,7 +1090,9 @@ module.exports = {
     subgroup: 'logistic_network',
     order: 'a[robot]_a[logistic_robot]',
     place_result: 'logistic_robot',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Logistic robot',
+    description: 'Transports items between logistic chests.'
   },
   construction_robot: {
     type: 'item',
@@ -970,7 +1102,9 @@ module.exports = {
     subgroup: 'logistic_network',
     order: 'a[robot]_b[construction_robot]',
     place_result: 'construction_robot',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Construction robot',
+    description: 'Automatically build and repair friendly entities.'
   },
   logistic_chest_passive_provider: {
     type: 'item',
@@ -980,7 +1114,9 @@ module.exports = {
     subgroup: 'logistic_network',
     order: 'b[storage]_c[logistic_chest_passive_provider]',
     place_result: 'logistic_chest_passive_provider',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Passive provider chest',
+    description: 'Makes its content available for the logistic network.'
   },
   logistic_chest_active_provider: {
     type: 'item',
@@ -990,7 +1126,9 @@ module.exports = {
     subgroup: 'logistic_network',
     order: 'b[storage]_c[logistic_chest_active_provider]',
     place_result: 'logistic_chest_active_provider',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Active provider chest',
+    description: 'Sends its content to the logistic network.'
   },
   logistic_chest_storage: {
     type: 'item',
@@ -1000,7 +1138,9 @@ module.exports = {
     subgroup: 'logistic_network',
     order: 'b[storage]_c[logistic_chest_storage]',
     place_result: 'logistic_chest_storage',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Storage chest',
+    description: 'Long-term storage for the logistic network.'
   },
   logistic_chest_buffer: {
     type: 'item',
@@ -1010,7 +1150,9 @@ module.exports = {
     subgroup: 'logistic_network',
     order: 'b[storage]_d[logistic_chest_buffer]',
     place_result: 'logistic_chest_buffer',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Buffer chest',
+    description: 'Requests specified items to be available for personal logistics and automated construction.'
   },
   logistic_chest_requester: {
     type: 'item',
@@ -1020,7 +1162,9 @@ module.exports = {
     subgroup: 'logistic_network',
     order: 'b[storage]_e[logistic_chest_requester]',
     place_result: 'logistic_chest_requester',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Requester chest',
+    description: 'Requests specified items from the logistic network.'
   },
   rocket_silo: {
     type: 'item',
@@ -1030,7 +1174,9 @@ module.exports = {
     subgroup: 'defensive_structure',
     order: 'e[rocket_silo]',
     place_result: 'rocket_silo',
-    stack_size: 1
+    stack_size: 1,
+    ui_name: 'Rocket silo',
+    description: 'Used to build and launch a rocket to win the game.'
   },
   roboport: {
     type: 'item',
@@ -1040,7 +1186,8 @@ module.exports = {
     subgroup: 'logistic_network',
     order: 'c[signal]_a[roboport]',
     place_result: 'roboport',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Roboport'
   },
   big_electric_pole: {
     type: 'item',
@@ -1050,7 +1197,8 @@ module.exports = {
     subgroup: 'energy_pipe_distribution',
     order: 'a[energy]_c[big_electric_pole]',
     place_result: 'big_electric_pole',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Big electric pole'
   },
   medium_electric_pole: {
     type: 'item',
@@ -1060,7 +1208,8 @@ module.exports = {
     subgroup: 'energy_pipe_distribution',
     order: 'a[energy]_b[medium_electric_pole]',
     place_result: 'medium_electric_pole',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Medium electric pole'
   },
   substation: {
     type: 'item',
@@ -1070,7 +1219,8 @@ module.exports = {
     subgroup: 'energy_pipe_distribution',
     order: 'a[energy]_d[substation]',
     place_result: 'substation',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Substation'
   },
   accumulator: {
     type: 'item',
@@ -1080,7 +1230,9 @@ module.exports = {
     subgroup: 'energy',
     order: 'e[accumulator]_a[accumulator]',
     place_result: 'accumulator',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Accumulator',
+    description: 'Connects to the electric network and stores electric energy.'
   },
   steel_furnace: {
     type: 'item',
@@ -1090,7 +1242,8 @@ module.exports = {
     subgroup: 'smelting_machine',
     order: 'b[steel_furnace]',
     place_result: 'steel_furnace',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Steel furnace'
   },
   electric_furnace: {
     type: 'item',
@@ -1100,7 +1253,8 @@ module.exports = {
     subgroup: 'smelting_machine',
     order: 'c[electric_furnace]',
     place_result: 'electric_furnace',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Electric furnace'
   },
   beacon: {
     type: 'item',
@@ -1110,7 +1264,9 @@ module.exports = {
     subgroup: 'module',
     order: 'a[beacon]',
     place_result: 'beacon',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Beacon',
+    description: 'Transmits the effect of modules to nearby friendly entities.'
   },
   storage_tank: {
     type: 'item',
@@ -1120,7 +1276,8 @@ module.exports = {
     subgroup: 'storage',
     order: 'b[fluid]_a[storage_tank]',
     place_result: 'storage_tank',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Storage tank'
   },
   pump: {
     type: 'item',
@@ -1130,7 +1287,8 @@ module.exports = {
     subgroup: 'energy_pipe_distribution',
     order: 'b[pipe]_c[pump]',
     place_result: 'pump',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Pump'
   },
   pumpjack: {
     type: 'item',
@@ -1140,7 +1298,8 @@ module.exports = {
     subgroup: 'extraction_machine',
     order: 'b[fluids]_b[pumpjack]',
     place_result: 'pumpjack',
-    stack_size: 20
+    stack_size: 20,
+    ui_name: 'Pumpjack'
   },
   oil_refinery: {
     type: 'item',
@@ -1150,7 +1309,8 @@ module.exports = {
     subgroup: 'production_machine',
     order: 'd[refinery]',
     place_result: 'oil_refinery',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Oil refinery'
   },
   chemical_plant: {
     type: 'item',
@@ -1160,7 +1320,8 @@ module.exports = {
     subgroup: 'production_machine',
     order: 'e[chemical_plant]',
     place_result: 'chemical_plant',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Chemical plant'
   },
   sulfur: {
     type: 'item',
@@ -1169,7 +1330,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'raw_material',
     order: 'g[sulfur]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Sulfur'
   },
   empty_barrel: {
     type: 'item',
@@ -1178,7 +1340,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'intermediate_product',
     order: 'd[empty_barrel]',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Empty barrel'
   },
   solid_fuel: {
     type: 'item',
@@ -1191,7 +1354,8 @@ module.exports = {
     fuel_top_speed_multiplier: 1.05,
     subgroup: 'raw_material',
     order: 'c[solid_fuel]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Solid fuel'
   },
   plastic_bar: {
     type: 'item',
@@ -1200,7 +1364,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'raw_material',
     order: 'f[plastic_bar]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Plastic bar'
   },
   engine_unit: {
     type: 'item',
@@ -1209,7 +1374,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'intermediate_product',
     order: 'h[engine_unit]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Engine unit'
   },
   electric_engine_unit: {
     type: 'item',
@@ -1218,7 +1384,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'intermediate_product',
     order: 'i[electric_engine_unit]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Electric engine unit'
   },
   explosives: {
     type: 'item',
@@ -1227,7 +1394,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'raw_material',
     order: 'j[explosives]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Explosives'
   },
   battery: {
     type: 'item',
@@ -1236,7 +1404,9 @@ module.exports = {
     icon_size: 32,
     subgroup: 'raw_material',
     order: 'h[battery]',
-    stack_size: 200
+    stack_size: 200,
+    ui_name: 'Battery',
+    description: 'Electrochemical cell that stores and provides energy to electrical devices.'
   },
   flying_robot_frame: {
     type: 'item',
@@ -1245,7 +1415,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'intermediate_product',
     order: 'l[flying_robot_frame]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Flying robot frame'
   },
   arithmetic_combinator: {
     type: 'item',
@@ -1255,7 +1426,9 @@ module.exports = {
     subgroup: 'circuit_network',
     place_result: 'arithmetic_combinator',
     order: 'c[combinators]_a[arithmetic_combinator]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Arithmetic combinator',
+    description: 'Performs arithmetic operations on circuit network signals.'
   },
   decider_combinator: {
     type: 'item',
@@ -1265,7 +1438,9 @@ module.exports = {
     subgroup: 'circuit_network',
     place_result: 'decider_combinator',
     order: 'c[combinators]_b[decider_combinator]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Decider combinator',
+    description: 'Compares circuit network signals.'
   },
   constant_combinator: {
     type: 'item',
@@ -1275,7 +1450,9 @@ module.exports = {
     subgroup: 'circuit_network',
     place_result: 'constant_combinator',
     order: 'c[combinators]_c[constant_combinator]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Constant combinator',
+    description: 'Outputs constant circuit network signals.'
   },
   power_switch: {
     type: 'item',
@@ -1285,7 +1462,9 @@ module.exports = {
     subgroup: 'circuit_network',
     place_result: 'power_switch',
     order: 'd[other]_a[power_switch]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Power switch',
+    description: 'Used to control the connections of the electric network. Can also be controlled by the circuit network.'
   },
   programmable_speaker: {
     type: 'item',
@@ -1295,7 +1474,8 @@ module.exports = {
     subgroup: 'circuit_network',
     order: 'd[other]_b[programmable_speaker]',
     place_result: 'programmable_speaker',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Programmable Speaker'
   },
   low_density_structure: {
     type: 'item',
@@ -1304,7 +1484,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'intermediate_product',
     order: 'o[rocket_structure]',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Low density structure'
   },
   rocket_fuel: {
     type: 'item',
@@ -1317,7 +1498,8 @@ module.exports = {
     fuel_top_speed_multiplier: 1.15,
     subgroup: 'intermediate_product',
     order: 'p[rocket_fuel]',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Rocket fuel'
   },
   nuclear_fuel: {
     type: 'item',
@@ -1330,7 +1512,8 @@ module.exports = {
     fuel_top_speed_multiplier: 1.15,
     subgroup: 'intermediate_product',
     order: 'q[uranium_rocket_fuel]',
-    stack_size: 1
+    stack_size: 1,
+    ui_name: 'Nuclear fuel'
   },
   rocket_control_unit: {
     type: 'item',
@@ -1339,7 +1522,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'intermediate_product',
     order: 'n[rocket_control_unit]',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Rocket control unit'
   },
   satellite: {
     type: 'item',
@@ -1352,7 +1536,9 @@ module.exports = {
     rocket_launch_product: [
       'space_science_pack',
       1000
-    ]
+    ],
+    ui_name: 'Satellite',
+    description: 'The satellite should be put into the rocket.'
   },
   concrete: {
     type: 'item',
@@ -1368,7 +1554,8 @@ module.exports = {
       condition: [
         'water_tile'
       ]
-    }
+    },
+    ui_name: 'Concrete'
   },
   refined_concrete: {
     type: 'item',
@@ -1384,7 +1571,8 @@ module.exports = {
       condition: [
         'water_tile'
       ]
-    }
+    },
+    ui_name: 'Refined concrete'
   },
   hazard_concrete: {
     type: 'item',
@@ -1400,7 +1588,8 @@ module.exports = {
       condition: [
         'water_tile'
       ]
-    }
+    },
+    ui_name: 'Hazard concrete'
   },
   refined_hazard_concrete: {
     type: 'item',
@@ -1416,7 +1605,8 @@ module.exports = {
       condition: [
         'water_tile'
       ]
-    }
+    },
+    ui_name: 'Refined hazard concrete'
   },
   landfill: {
     type: 'item',
@@ -1432,7 +1622,9 @@ module.exports = {
       condition: [
         'ground_tile'
       ]
-    }
+    },
+    ui_name: 'Landfill',
+    description: 'Used to fill in water that\'s in the way.'
   },
   uranium_ore: {
     type: 'item',
@@ -1441,7 +1633,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'raw_resource',
     order: 'g[uranium_ore]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Uranium ore'
   },
   nuclear_reactor: {
     type: 'item',
@@ -1451,7 +1644,8 @@ module.exports = {
     subgroup: 'energy',
     order: 'f[nuclear_energy]_a[reactor]',
     place_result: 'nuclear_reactor',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Nuclear reactor'
   },
   uranium_235: {
     type: 'item',
@@ -1460,7 +1654,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'intermediate_product',
     order: 'r[uranium_235]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Uranium-235'
   },
   uranium_238: {
     type: 'item',
@@ -1469,7 +1664,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'intermediate_product',
     order: 'r[uranium_238]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Uranium-238'
   },
   centrifuge: {
     type: 'item',
@@ -1479,7 +1675,9 @@ module.exports = {
     subgroup: 'production_machine',
     order: 'g[centrifuge]',
     place_result: 'centrifuge',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Centrifuge',
+    description: 'Processes uranium ore and splits it into uranium 235 and uranium 238.'
   },
   uranium_fuel_cell: {
     type: 'item',
@@ -1491,7 +1689,8 @@ module.exports = {
     fuel_category: 'nuclear',
     burnt_result: 'used_up_uranium_fuel_cell',
     fuel_value: '8GJ',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Uranium fuel cell'
   },
   used_up_uranium_fuel_cell: {
     type: 'item',
@@ -1500,7 +1699,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'intermediate_product',
     order: 'r[used_up_uranium_fuel_cell]',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Used up uranium fuel cell'
   },
   heat_exchanger: {
     type: 'item',
@@ -1510,7 +1710,9 @@ module.exports = {
     subgroup: 'energy',
     order: 'f[nuclear_energy]_b[heat_exchanger]',
     place_result: 'heat_exchanger',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Heat exchanger',
+    description: 'Exchanges heat between a heat source and a fluid.'
   },
   steam_turbine: {
     type: 'item',
@@ -1520,7 +1722,9 @@ module.exports = {
     subgroup: 'energy',
     order: 'b[steam_power]_c[steam_turbine]',
     place_result: 'steam_turbine',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Steam turbine',
+    description: 'Consumes steam to create electric energy.'
   },
   heat_pipe: {
     type: 'item',
@@ -1530,7 +1734,8 @@ module.exports = {
     subgroup: 'energy',
     order: 'f[nuclear_energy]_c[heat_pipe]',
     place_result: 'heat_pipe',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Heat pipe'
   },
   laser_turret: {
     type: 'item',
@@ -1540,7 +1745,8 @@ module.exports = {
     subgroup: 'defensive_structure',
     order: 'b[turret]_b[laser_turret]',
     place_result: 'laser_turret',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Laser turret'
   },
   flamethrower_turret: {
     type: 'item',
@@ -1550,7 +1756,9 @@ module.exports = {
     subgroup: 'defensive_structure',
     order: 'b[turret]_c[flamethrower_turret]',
     place_result: 'flamethrower_turret',
-    stack_size: 50
+    stack_size: 50,
+    ui_name: 'Flamethrower turret',
+    description: 'Fires a stream of burning liquid at enemies.'
   },
   artillery_turret: {
     type: 'item',
@@ -1560,7 +1768,9 @@ module.exports = {
     subgroup: 'defensive_structure',
     order: 'b[turret]_d[artillery_turret]',
     place_result: 'artillery_turret',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Artillery turret',
+    description: 'Long range cannon targeting enemy bases.'
   },
   water_barrel: {
     type: 'item',
@@ -1591,7 +1801,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'fill_barrel',
     order: 'b[water_barrel]',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Water barrel'
   },
   crude_oil_barrel: {
     type: 'item',
@@ -1622,7 +1833,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'fill_barrel',
     order: 'b[crude_oil_barrel]',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Crude oil barrel'
   },
   heavy_oil_barrel: {
     type: 'item',
@@ -1653,7 +1865,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'fill_barrel',
     order: 'b[heavy_oil_barrel]',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Heavy oil barrel'
   },
   light_oil_barrel: {
     type: 'item',
@@ -1684,7 +1897,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'fill_barrel',
     order: 'b[light_oil_barrel]',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Light oil barrel'
   },
   petroleum_gas_barrel: {
     type: 'item',
@@ -1715,7 +1929,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'fill_barrel',
     order: 'b[petroleum_gas_barrel]',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Petroleum gas barrel'
   },
   lubricant_barrel: {
     type: 'item',
@@ -1746,7 +1961,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'fill_barrel',
     order: 'b[lubricant_barrel]',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Lubricant barrel'
   },
   sulfuric_acid_barrel: {
     type: 'item',
@@ -1777,7 +1993,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'fill_barrel',
     order: 'b[sulfuric_acid_barrel]',
-    stack_size: 10
+    stack_size: 10,
+    ui_name: 'Sulfuric acid barrel'
   },
   raw_fish: {
     type: 'capsule',
@@ -1786,7 +2003,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'raw_resource',
     order: 'h[raw_fish]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Raw fish'
   },
   grenade: {
     type: 'capsule',
@@ -1795,7 +2013,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'capsule',
     order: 'a[grenade]_a[normal]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Grenade'
   },
   cluster_grenade: {
     type: 'capsule',
@@ -1804,7 +2023,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'capsule',
     order: 'a[grenade]_b[cluster]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Cluster grenade'
   },
   poison_capsule: {
     type: 'capsule',
@@ -1813,7 +2033,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'capsule',
     order: 'b[poison_capsule]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Poison capsule'
   },
   slowdown_capsule: {
     type: 'capsule',
@@ -1822,7 +2043,9 @@ module.exports = {
     icon_size: 32,
     subgroup: 'capsule',
     order: 'c[slowdown_capsule]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Slowdown capsule',
+    description: 'Reduces the movement speed of affected units.'
   },
   defender_capsule: {
     type: 'capsule',
@@ -1831,7 +2054,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'capsule',
     order: 'd[defender_capsule]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Defender capsule'
   },
   distractor_capsule: {
     type: 'capsule',
@@ -1840,7 +2064,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'capsule',
     order: 'e[defender_capsule]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Distractor capsule'
   },
   destroyer_capsule: {
     type: 'capsule',
@@ -1849,7 +2074,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'capsule',
     order: 'f[destroyer_capsule]',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Destroyer capsule'
   },
   discharge_defense_remote: {
     type: 'capsule',
@@ -1858,7 +2084,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'capsule',
     order: 'z',
-    stack_size: 1
+    stack_size: 1,
+    ui_name: 'Discharge defense remote'
   },
   cliff_explosives: {
     type: 'capsule',
@@ -1867,7 +2094,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'terrain',
     order: 'd[cliff_explosives]',
-    stack_size: 20
+    stack_size: 20,
+    ui_name: 'Cliff explosives'
   },
   artillery_targeting_remote: {
     type: 'capsule',
@@ -1876,7 +2104,9 @@ module.exports = {
     icon_size: 32,
     subgroup: 'capsule',
     order: 'zz',
-    stack_size: 1
+    stack_size: 1,
+    ui_name: 'Artillery targeting remote',
+    description: 'Allows firing artillery manually from the map or the world.'
   },
   repair_pack: {
     type: 'repair_tool',
@@ -1887,7 +2117,9 @@ module.exports = {
     order: 'b[repair]_a[repair_pack]',
     speed: 2,
     durability: 300,
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Repair pack',
+    description: 'Used to repair friendly entities by using __CONTROL__build__ with it in hand.'
   },
   iron_axe: {
     type: 'mining_tool',
@@ -1898,7 +2130,8 @@ module.exports = {
     subgroup: 'tool',
     order: 'a[mining]_a[iron_axe]',
     speed: 2.5,
-    stack_size: 20
+    stack_size: 20,
+    ui_name: 'Iron axe'
   },
   steel_axe: {
     type: 'mining_tool',
@@ -1909,7 +2142,8 @@ module.exports = {
     subgroup: 'tool',
     order: 'a[mining]_b[steel_axe]',
     speed: 4,
-    stack_size: 20
+    stack_size: 20,
+    ui_name: 'Steel axe'
   },
   basic_oil_processing: {
     type: 'recipe',
@@ -1917,7 +2151,8 @@ module.exports = {
     icon: 'graphics/icons/fluid/basic-oil-processing.png',
     icon_size: 32,
     subgroup: 'fluid_recipes',
-    order: 'a[oil_processing]_a[basic_oil_processing]'
+    order: 'a[oil_processing]_a[basic_oil_processing]',
+    ui_name: 'Basic oil processing'
   },
   advanced_oil_processing: {
     type: 'recipe',
@@ -1925,7 +2160,9 @@ module.exports = {
     icon: 'graphics/icons/fluid/advanced-oil-processing.png',
     icon_size: 32,
     subgroup: 'fluid_recipes',
-    order: 'a[oil_processing]_b[advanced_oil_processing]'
+    order: 'a[oil_processing]_b[advanced_oil_processing]',
+    ui_name: 'Advanced oil processing',
+    description: 'Allows you to crack heavier crude oil fractions into lighter, more useful products.'
   },
   coal_liquefaction: {
     type: 'recipe',
@@ -1933,7 +2170,9 @@ module.exports = {
     icon: 'graphics/icons/fluid/coal-liquefaction.png',
     icon_size: 32,
     subgroup: 'fluid_recipes',
-    order: 'a[oil_processing]_c[coal_liquefaction]'
+    order: 'a[oil_processing]_c[coal_liquefaction]',
+    ui_name: 'Coal liquefaction',
+    description: 'Unlocks a processing technique to turn coal into oil products with the use of steam and heavy oil.'
   },
   heavy_oil_cracking: {
     type: 'recipe',
@@ -1961,7 +2200,8 @@ module.exports = {
         b: 0,
         a: 0
       }
-    }
+    },
+    ui_name: 'Heavy oil cracking to light oil'
   },
   light_oil_cracking: {
     type: 'recipe',
@@ -1989,7 +2229,8 @@ module.exports = {
         b: 0,
         a: 0
       }
-    }
+    },
+    ui_name: 'Light oil cracking to petroleum gas'
   },
   solid_fuel_from_light_oil: {
     type: 'recipe',
@@ -2017,7 +2258,8 @@ module.exports = {
         b: 0,
         a: 0
       }
-    }
+    },
+    ui_name: 'Solid fuel from light oil'
   },
   solid_fuel_from_petroleum_gas: {
     type: 'recipe',
@@ -2045,7 +2287,8 @@ module.exports = {
         b: 0.695,
         a: 0
       }
-    }
+    },
+    ui_name: 'Solid fuel from petroleum gas'
   },
   solid_fuel_from_heavy_oil: {
     type: 'recipe',
@@ -2073,7 +2316,8 @@ module.exports = {
         b: 0.135,
         a: 0
       }
-    }
+    },
+    ui_name: 'Solid fuel from heavy oil'
   },
   uranium_processing: {
     type: 'recipe',
@@ -2081,7 +2325,8 @@ module.exports = {
     icon: 'graphics/icons/uranium-processing.png',
     icon_size: 32,
     subgroup: 'raw_material',
-    order: 'k[uranium_processing]'
+    order: 'k[uranium_processing]',
+    ui_name: 'Uranium processing'
   },
   kovarex_enrichment_process: {
     type: 'recipe',
@@ -2089,7 +2334,9 @@ module.exports = {
     icon: 'graphics/icons/kovarex-enrichment-process.png',
     icon_size: 32,
     subgroup: 'intermediate_product',
-    order: 'r[uranium_processing]_c[kovarex_enrichment_process]'
+    order: 'r[uranium_processing]_c[kovarex_enrichment_process]',
+    ui_name: 'Kovarex enrichment process',
+    description: 'The process to create uranium-235 from uranium-238. It requires a large amount of uranium-235 as a catalyst.'
   },
   nuclear_fuel_reprocessing: {
     type: 'recipe',
@@ -2097,7 +2344,9 @@ module.exports = {
     icon: 'graphics/icons/nuclear-fuel-reprocessing.png',
     icon_size: 32,
     subgroup: 'intermediate_product',
-    order: 'r[uranium_processing]_b[nuclear_fuel_reprocessing]'
+    order: 'r[uranium_processing]_b[nuclear_fuel_reprocessing]',
+    ui_name: 'Nuclear fuel reprocessing',
+    description: 'The process of reprocessing used nuclear fuel to create uranium-238.'
   },
   fill_water_barrel: {
     type: 'recipe',
@@ -2135,7 +2384,8 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32
+    icon_size: 32,
+    ui_name: 'Fill water barrel'
   },
   empty_water_barrel: {
     type: 'recipe',
@@ -2173,7 +2423,8 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32
+    icon_size: 32,
+    ui_name: 'Empty water barrel'
   },
   fill_crude_oil_barrel: {
     type: 'recipe',
@@ -2211,7 +2462,8 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32
+    icon_size: 32,
+    ui_name: 'Fill crude oil barrel'
   },
   empty_crude_oil_barrel: {
     type: 'recipe',
@@ -2249,7 +2501,8 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32
+    icon_size: 32,
+    ui_name: 'Empty crude oil barrel'
   },
   fill_heavy_oil_barrel: {
     type: 'recipe',
@@ -2287,7 +2540,8 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32
+    icon_size: 32,
+    ui_name: 'Fill heavy oil barrel'
   },
   empty_heavy_oil_barrel: {
     type: 'recipe',
@@ -2325,7 +2579,8 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32
+    icon_size: 32,
+    ui_name: 'Empty heavy oil barrel'
   },
   fill_light_oil_barrel: {
     type: 'recipe',
@@ -2363,7 +2618,8 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32
+    icon_size: 32,
+    ui_name: 'Fill light oil barrel'
   },
   empty_light_oil_barrel: {
     type: 'recipe',
@@ -2401,7 +2657,8 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32
+    icon_size: 32,
+    ui_name: 'Empty light oil barrel'
   },
   fill_petroleum_gas_barrel: {
     type: 'recipe',
@@ -2439,7 +2696,8 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32
+    icon_size: 32,
+    ui_name: 'Fill petroleum gas barrel'
   },
   empty_petroleum_gas_barrel: {
     type: 'recipe',
@@ -2477,7 +2735,8 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32
+    icon_size: 32,
+    ui_name: 'Empty petroleum gas barrel'
   },
   fill_lubricant_barrel: {
     type: 'recipe',
@@ -2515,7 +2774,8 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32
+    icon_size: 32,
+    ui_name: 'Fill lubricant barrel'
   },
   empty_lubricant_barrel: {
     type: 'recipe',
@@ -2553,7 +2813,8 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32
+    icon_size: 32,
+    ui_name: 'Empty lubricant barrel'
   },
   fill_sulfuric_acid_barrel: {
     type: 'recipe',
@@ -2591,7 +2852,8 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32
+    icon_size: 32,
+    ui_name: 'Fill sulfuric acid barrel'
   },
   empty_sulfuric_acid_barrel: {
     type: 'recipe',
@@ -2629,7 +2891,8 @@ module.exports = {
         ]
       }
     ],
-    icon_size: 32
+    icon_size: 32,
+    ui_name: 'Empty sulfuric acid barrel'
   },
   signal_everything: {
     type: 'virtual_signal',
@@ -2638,7 +2901,9 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_everything.png',
     icon_size: 32,
     subgroup: 'virtual_signal_special',
-    order: 'a[special]_[1everything]'
+    order: 'a[special]_[1everything]',
+    ui_name: 'Everything',
+    description: 'If all input signals meet the condition, it will output true.\\nIt is true when there are no inputs.'
   },
   signal_anything: {
     type: 'virtual_signal',
@@ -2647,7 +2912,9 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_anything.png',
     icon_size: 32,
     subgroup: 'virtual_signal_special',
-    order: 'a[special]_[2anything]'
+    order: 'a[special]_[2anything]',
+    ui_name: 'Anything',
+    description: 'If any of the input signals meet the condition, it will output true.\\nIt is false when there are no inputs.'
   },
   signal_each: {
     type: 'virtual_signal',
@@ -2656,7 +2923,9 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_each.png',
     icon_size: 32,
     subgroup: 'virtual_signal_special',
-    order: 'a[special]_[3each]'
+    order: 'a[special]_[3each]',
+    ui_name: 'Each',
+    description: 'Evaluates the condition or performs the operation on all input signals.'
   },
   signal_red: {
     type: 'virtual_signal',
@@ -2664,7 +2933,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_red.png',
     icon_size: 32,
     subgroup: 'virtual_signal_color',
-    order: 'd[colors]_[1red]'
+    order: 'd[colors]_[1red]',
+    ui_name: 'Red signal'
   },
   signal_green: {
     type: 'virtual_signal',
@@ -2672,7 +2942,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_green.png',
     icon_size: 32,
     subgroup: 'virtual_signal_color',
-    order: 'd[colors]_[2green]'
+    order: 'd[colors]_[2green]',
+    ui_name: 'Green signal'
   },
   signal_blue: {
     type: 'virtual_signal',
@@ -2680,7 +2951,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_blue.png',
     icon_size: 32,
     subgroup: 'virtual_signal_color',
-    order: 'd[colors]_[3blue]'
+    order: 'd[colors]_[3blue]',
+    ui_name: 'Blue signal'
   },
   signal_yellow: {
     type: 'virtual_signal',
@@ -2688,7 +2960,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_yellow.png',
     icon_size: 32,
     subgroup: 'virtual_signal_color',
-    order: 'd[colors]_[4yellow]'
+    order: 'd[colors]_[4yellow]',
+    ui_name: 'Yellow signal'
   },
   signal_pink: {
     type: 'virtual_signal',
@@ -2696,7 +2969,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_pink.png',
     icon_size: 32,
     subgroup: 'virtual_signal_color',
-    order: 'd[colors]_[5pink]'
+    order: 'd[colors]_[5pink]',
+    ui_name: 'Pink signal'
   },
   signal_cyan: {
     type: 'virtual_signal',
@@ -2704,7 +2978,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_cyan.png',
     icon_size: 32,
     subgroup: 'virtual_signal_color',
-    order: 'd[colors]_[6cyan]'
+    order: 'd[colors]_[6cyan]',
+    ui_name: 'Cyan signal'
   },
   signal_white: {
     type: 'virtual_signal',
@@ -2712,7 +2987,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_white.png',
     icon_size: 32,
     subgroup: 'virtual_signal_color',
-    order: 'd[colors]_[7white]'
+    order: 'd[colors]_[7white]',
+    ui_name: 'White signal'
   },
   signal_grey: {
     type: 'virtual_signal',
@@ -2720,7 +2996,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_grey.png',
     icon_size: 32,
     subgroup: 'virtual_signal_color',
-    order: 'd[colors]_[8grey]'
+    order: 'd[colors]_[8grey]',
+    ui_name: 'Grey signal'
   },
   signal_black: {
     type: 'virtual_signal',
@@ -2728,7 +3005,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_black.png',
     icon_size: 32,
     subgroup: 'virtual_signal_color',
-    order: 'd[colors]_[9black]'
+    order: 'd[colors]_[9black]',
+    ui_name: 'Black signal'
   },
   signal_1: {
     type: 'virtual_signal',
@@ -2736,7 +3014,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_1.png',
     icon_size: 32,
     subgroup: 'virtual_signal_number',
-    order: 'b[numbers]_[1]'
+    order: 'b[numbers]_[1]',
+    ui_name: 'Signal 1'
   },
   signal_2: {
     type: 'virtual_signal',
@@ -2744,7 +3023,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_2.png',
     icon_size: 32,
     subgroup: 'virtual_signal_number',
-    order: 'b[numbers]_[2]'
+    order: 'b[numbers]_[2]',
+    ui_name: 'Signal 2'
   },
   signal_3: {
     type: 'virtual_signal',
@@ -2752,7 +3032,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_3.png',
     icon_size: 32,
     subgroup: 'virtual_signal_number',
-    order: 'b[numbers]_[3]'
+    order: 'b[numbers]_[3]',
+    ui_name: 'Signal 3'
   },
   signal_4: {
     type: 'virtual_signal',
@@ -2760,7 +3041,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_4.png',
     icon_size: 32,
     subgroup: 'virtual_signal_number',
-    order: 'b[numbers]_[4]'
+    order: 'b[numbers]_[4]',
+    ui_name: 'Signal 4'
   },
   signal_5: {
     type: 'virtual_signal',
@@ -2768,7 +3050,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_5.png',
     icon_size: 32,
     subgroup: 'virtual_signal_number',
-    order: 'b[numbers]_[5]'
+    order: 'b[numbers]_[5]',
+    ui_name: 'Signal 5'
   },
   signal_6: {
     type: 'virtual_signal',
@@ -2776,7 +3059,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_6.png',
     icon_size: 32,
     subgroup: 'virtual_signal_number',
-    order: 'b[numbers]_[6]'
+    order: 'b[numbers]_[6]',
+    ui_name: 'Signal 6'
   },
   signal_7: {
     type: 'virtual_signal',
@@ -2784,7 +3068,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_7.png',
     icon_size: 32,
     subgroup: 'virtual_signal_number',
-    order: 'b[numbers]_[7]'
+    order: 'b[numbers]_[7]',
+    ui_name: 'Signal 7'
   },
   signal_8: {
     type: 'virtual_signal',
@@ -2792,7 +3077,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_8.png',
     icon_size: 32,
     subgroup: 'virtual_signal_number',
-    order: 'b[numbers]_[8]'
+    order: 'b[numbers]_[8]',
+    ui_name: 'Signal 8'
   },
   signal_9: {
     type: 'virtual_signal',
@@ -2800,7 +3086,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_9.png',
     icon_size: 32,
     subgroup: 'virtual_signal_number',
-    order: 'b[numbers]_[9]'
+    order: 'b[numbers]_[9]',
+    ui_name: 'Signal 9'
   },
   signal_0: {
     type: 'virtual_signal',
@@ -2808,7 +3095,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_0.png',
     icon_size: 32,
     subgroup: 'virtual_signal_number',
-    order: 'b[numbers]_[0]'
+    order: 'b[numbers]_[0]',
+    ui_name: 'Signal 0'
   },
   signal_A: {
     type: 'virtual_signal',
@@ -2816,7 +3104,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_A.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[A]'
+    order: 'c[letters]_[A]',
+    ui_name: 'Signal A'
   },
   signal_B: {
     type: 'virtual_signal',
@@ -2824,7 +3113,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_B.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[B]'
+    order: 'c[letters]_[B]',
+    ui_name: 'Signal B'
   },
   signal_C: {
     type: 'virtual_signal',
@@ -2832,7 +3122,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_C.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[C]'
+    order: 'c[letters]_[C]',
+    ui_name: 'Signal C'
   },
   signal_D: {
     type: 'virtual_signal',
@@ -2840,7 +3131,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_D.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[D]'
+    order: 'c[letters]_[D]',
+    ui_name: 'Signal D'
   },
   signal_E: {
     type: 'virtual_signal',
@@ -2848,7 +3140,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_E.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[E]'
+    order: 'c[letters]_[E]',
+    ui_name: 'Signal E'
   },
   signal_F: {
     type: 'virtual_signal',
@@ -2856,7 +3149,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_F.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[F]'
+    order: 'c[letters]_[F]',
+    ui_name: 'Signal F'
   },
   signal_G: {
     type: 'virtual_signal',
@@ -2864,7 +3158,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_G.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[G]'
+    order: 'c[letters]_[G]',
+    ui_name: 'Signal G'
   },
   signal_H: {
     type: 'virtual_signal',
@@ -2872,7 +3167,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_H.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[H]'
+    order: 'c[letters]_[H]',
+    ui_name: 'Signal H'
   },
   signal_I: {
     type: 'virtual_signal',
@@ -2880,7 +3176,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_I.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[I]'
+    order: 'c[letters]_[I]',
+    ui_name: 'Signal I'
   },
   signal_J: {
     type: 'virtual_signal',
@@ -2888,7 +3185,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_J.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[J]'
+    order: 'c[letters]_[J]',
+    ui_name: 'Signal J'
   },
   signal_K: {
     type: 'virtual_signal',
@@ -2896,7 +3194,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_K.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[K]'
+    order: 'c[letters]_[K]',
+    ui_name: 'Signal K'
   },
   signal_L: {
     type: 'virtual_signal',
@@ -2904,7 +3203,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_L.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[L]'
+    order: 'c[letters]_[L]',
+    ui_name: 'Signal L'
   },
   signal_M: {
     type: 'virtual_signal',
@@ -2912,7 +3212,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_M.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[M]'
+    order: 'c[letters]_[M]',
+    ui_name: 'Signal M'
   },
   signal_N: {
     type: 'virtual_signal',
@@ -2920,7 +3221,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_N.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[N]'
+    order: 'c[letters]_[N]',
+    ui_name: 'Signal N'
   },
   signal_O: {
     type: 'virtual_signal',
@@ -2928,7 +3230,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_O.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[O]'
+    order: 'c[letters]_[O]',
+    ui_name: 'Signal O'
   },
   signal_P: {
     type: 'virtual_signal',
@@ -2936,7 +3239,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_P.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[P]'
+    order: 'c[letters]_[P]',
+    ui_name: 'Signal P'
   },
   signal_Q: {
     type: 'virtual_signal',
@@ -2944,7 +3248,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_Q.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[Q]'
+    order: 'c[letters]_[Q]',
+    ui_name: 'Signal Q'
   },
   signal_R: {
     type: 'virtual_signal',
@@ -2952,7 +3257,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_R.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[R]'
+    order: 'c[letters]_[R]',
+    ui_name: 'Signal R'
   },
   signal_S: {
     type: 'virtual_signal',
@@ -2960,7 +3266,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_S.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[S]'
+    order: 'c[letters]_[S]',
+    ui_name: 'Signal S'
   },
   signal_T: {
     type: 'virtual_signal',
@@ -2968,7 +3275,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_T.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[T]'
+    order: 'c[letters]_[T]',
+    ui_name: 'Signal T'
   },
   signal_U: {
     type: 'virtual_signal',
@@ -2976,7 +3284,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_U.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[U]'
+    order: 'c[letters]_[U]',
+    ui_name: 'Signal U'
   },
   signal_V: {
     type: 'virtual_signal',
@@ -2984,7 +3293,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_V.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[V]'
+    order: 'c[letters]_[V]',
+    ui_name: 'Signal V'
   },
   signal_W: {
     type: 'virtual_signal',
@@ -2992,7 +3302,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_W.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[W]'
+    order: 'c[letters]_[W]',
+    ui_name: 'Signal W'
   },
   signal_X: {
     type: 'virtual_signal',
@@ -3000,7 +3311,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_X.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[X]'
+    order: 'c[letters]_[X]',
+    ui_name: 'Signal X'
   },
   signal_Y: {
     type: 'virtual_signal',
@@ -3008,7 +3320,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_Y.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[Y]'
+    order: 'c[letters]_[Y]',
+    ui_name: 'Signal Y'
   },
   signal_Z: {
     type: 'virtual_signal',
@@ -3016,7 +3329,8 @@ module.exports = {
     icon: 'graphics/icons/signal/signal_Z.png',
     icon_size: 32,
     subgroup: 'virtual_signal_letter',
-    order: 'c[letters]_[Z]'
+    order: 'c[letters]_[Z]',
+    ui_name: 'Signal Z'
   },
   locomotive: {
     type: 'item_with_entity_data',
@@ -3026,7 +3340,9 @@ module.exports = {
     subgroup: 'transport',
     order: 'a[train_system]_f[diesel_locomotive]',
     place_result: 'locomotive',
-    stack_size: 5
+    stack_size: 5,
+    ui_name: 'Locomotive',
+    description: 'Runs automated schedules and pulls cargo wagons. Enter the train with __CONTROL__toggle-driving__, and open the train menu with __CONTROL__build__.'
   },
   cargo_wagon: {
     type: 'item_with_entity_data',
@@ -3036,7 +3352,8 @@ module.exports = {
     subgroup: 'transport',
     order: 'a[train_system]_g[cargo_wagon]',
     place_result: 'cargo_wagon',
-    stack_size: 5
+    stack_size: 5,
+    ui_name: 'Cargo wagon'
   },
   fluid_wagon: {
     type: 'item_with_entity_data',
@@ -3046,7 +3363,8 @@ module.exports = {
     subgroup: 'transport',
     order: 'a[train_system]_h[fluid_wagon]',
     place_result: 'fluid_wagon',
-    stack_size: 5
+    stack_size: 5,
+    ui_name: 'Fluid wagon'
   },
   artillery_wagon: {
     type: 'item_with_entity_data',
@@ -3056,7 +3374,8 @@ module.exports = {
     subgroup: 'transport',
     order: 'a[train_system]_i[artillery_wagon]',
     place_result: 'artillery_wagon',
-    stack_size: 5
+    stack_size: 5,
+    ui_name: 'Artillery wagon'
   },
   car: {
     type: 'item_with_entity_data',
@@ -3066,7 +3385,9 @@ module.exports = {
     subgroup: 'transport',
     order: 'b[personal_transport]_a[car]',
     place_result: 'car',
-    stack_size: 1
+    stack_size: 1,
+    ui_name: 'Car',
+    description: 'Enter the car using __CONTROL__toggle-driving__.'
   },
   tank: {
     type: 'item_with_entity_data',
@@ -3076,7 +3397,9 @@ module.exports = {
     subgroup: 'transport',
     order: 'b[personal_transport]_b[tank]',
     place_result: 'tank',
-    stack_size: 1
+    stack_size: 1,
+    ui_name: 'Tank',
+    description: 'Enter the tank using __CONTROL__toggle-driving__.'
   },
   rail: {
     type: 'rail_planner',
@@ -3086,7 +3409,9 @@ module.exports = {
     subgroup: 'transport',
     order: 'a[train_system]_a[rail]',
     place_result: 'straight_rail',
-    stack_size: 100
+    stack_size: 100,
+    ui_name: 'Rail',
+    description: 'Use to build straight rails manually or through the rail planner.\\nThe rail planner can build short paths directly using __CONTROL__build__ or long ghost paths using __CONTROL__build-ghost__.'
   },
   science_pack_1: {
     type: 'tool',
@@ -3096,7 +3421,8 @@ module.exports = {
     subgroup: 'science_pack',
     order: 'a[science_pack_1]',
     stack_size: 200,
-    durability: 1
+    durability: 1,
+    ui_name: 'Science pack 1'
   },
   science_pack_2: {
     type: 'tool',
@@ -3106,7 +3432,8 @@ module.exports = {
     subgroup: 'science_pack',
     order: 'b[science_pack_2]',
     stack_size: 200,
-    durability: 1
+    durability: 1,
+    ui_name: 'Science pack 2'
   },
   science_pack_3: {
     type: 'tool',
@@ -3116,7 +3443,8 @@ module.exports = {
     subgroup: 'science_pack',
     order: 'c[science_pack_3]',
     stack_size: 200,
-    durability: 1
+    durability: 1,
+    ui_name: 'Science pack 3'
   },
   military_science_pack: {
     type: 'tool',
@@ -3126,7 +3454,8 @@ module.exports = {
     subgroup: 'science_pack',
     order: 'd[military_science_pack]',
     stack_size: 200,
-    durability: 1
+    durability: 1,
+    ui_name: 'Military science pack'
   },
   production_science_pack: {
     type: 'tool',
@@ -3136,7 +3465,8 @@ module.exports = {
     subgroup: 'science_pack',
     order: 'e[production_science_pack]',
     stack_size: 200,
-    durability: 1
+    durability: 1,
+    ui_name: 'Production science pack'
   },
   high_tech_science_pack: {
     type: 'tool',
@@ -3146,7 +3476,8 @@ module.exports = {
     subgroup: 'science_pack',
     order: 'f[high_tech_science_pack]',
     stack_size: 200,
-    durability: 1
+    durability: 1,
+    ui_name: 'High tech science pack'
   },
   space_science_pack: {
     type: 'tool',
@@ -3156,7 +3487,9 @@ module.exports = {
     subgroup: 'science_pack',
     order: 'g[space_science_pack]',
     stack_size: 2000,
-    durability: 1
+    durability: 1,
+    ui_name: 'Space science pack',
+    description: 'Used by labs for research. Obtained by launching a rocket with a satellite.'
   },
   blueprint: {
     type: 'blueprint',
@@ -3184,7 +3517,9 @@ module.exports = {
       'blueprint'
     ],
     selection_cursor_box_type: 'copy',
-    alt_selection_cursor_box_type: 'copy'
+    alt_selection_cursor_box_type: 'copy',
+    ui_name: 'Blueprint',
+    description: 'Save designs for automated construction.'
   },
   deconstruction_planner: {
     type: 'deconstruction_item',
@@ -3211,7 +3546,9 @@ module.exports = {
       'cancel_deconstruct'
     ],
     selection_cursor_box_type: 'not_allowed',
-    alt_selection_cursor_box_type: 'not_allowed'
+    alt_selection_cursor_box_type: 'not_allowed',
+    ui_name: 'Deconstruction planner',
+    description: 'Marks items for deconstruction by construction robots.'
   },
   blueprint_book: {
     type: 'blueprint_book',
@@ -3221,7 +3558,8 @@ module.exports = {
     subgroup: 'tool',
     order: 'c[automated_construction]_c[blueprint_book]',
     stack_size: 1,
-    inventory_size: 1000
+    inventory_size: 1000,
+    ui_name: 'Blueprint book'
   },
   speed_module: {
     type: 'module',
@@ -3240,7 +3578,9 @@ module.exports = {
       consumption: {
         bonus: 0.5
       }
-    }
+    },
+    ui_name: 'Speed module',
+    description: 'Increases machine speed at a cost of increased energy consumption.'
   },
   speed_module_2: {
     type: 'module',
@@ -3259,7 +3599,8 @@ module.exports = {
       consumption: {
         bonus: 0.6
       }
-    }
+    },
+    ui_name: 'Speed module 2'
   },
   speed_module_3: {
     type: 'module',
@@ -3278,7 +3619,8 @@ module.exports = {
       consumption: {
         bonus: 0.7
       }
-    }
+    },
+    ui_name: 'Speed module 3'
   },
   effectivity_module: {
     type: 'module',
@@ -3294,7 +3636,9 @@ module.exports = {
       consumption: {
         bonus: -0.3
       }
-    }
+    },
+    ui_name: 'Efficiency module',
+    description: 'Decreases machine energy consumption. Minimum energy consumption is 20%.'
   },
   effectivity_module_2: {
     type: 'module',
@@ -3310,7 +3654,8 @@ module.exports = {
       consumption: {
         bonus: -0.4
       }
-    }
+    },
+    ui_name: 'Efficiency module 2'
   },
   effectivity_module_3: {
     type: 'module',
@@ -3326,7 +3671,8 @@ module.exports = {
       consumption: {
         bonus: -0.5
       }
-    }
+    },
+    ui_name: 'Efficiency module 3'
   },
   productivity_module: {
     type: 'module',
@@ -3394,7 +3740,9 @@ module.exports = {
       'military_science_pack',
       'production_science_pack',
       'high_tech_science_pack'
-    ]
+    ],
+    ui_name: 'Productivity module',
+    description: 'Machine will create extra products at a cost of increased energy consumption and reduced speed.'
   },
   productivity_module_2: {
     type: 'module',
@@ -3462,7 +3810,8 @@ module.exports = {
       'military_science_pack',
       'production_science_pack',
       'high_tech_science_pack'
-    ]
+    ],
+    ui_name: 'Productivity module 2'
   },
   productivity_module_3: {
     type: 'module',
@@ -3530,7 +3879,8 @@ module.exports = {
       'military_science_pack',
       'production_science_pack',
       'high_tech_science_pack'
-    ]
+    ],
+    ui_name: 'Productivity module 3'
   },
   water: {
     type: 'fluid',
@@ -3553,7 +3903,8 @@ module.exports = {
     order: 'a[fluid]_a[water]',
     pressure_to_speed_ratio: 0.4,
     flow_to_energy_ratio: 0.59,
-    subgroup: 'fluid'
+    subgroup: 'fluid',
+    ui_name: 'Water'
   },
   steam: {
     type: 'fluid',
@@ -3577,7 +3928,8 @@ module.exports = {
     pressure_to_speed_ratio: 0.4,
     flow_to_energy_ratio: 0.59,
     gas_temperature: 15,
-    subgroup: 'fluid'
+    subgroup: 'fluid',
+    ui_name: 'Steam'
   },
   crude_oil: {
     type: 'fluid',
@@ -3600,7 +3952,8 @@ module.exports = {
     pressure_to_speed_ratio: 0.4,
     flow_to_energy_ratio: 0.59,
     order: 'a[fluid]_b[crude_oil]',
-    subgroup: 'fluid'
+    subgroup: 'fluid',
+    ui_name: 'Crude oil'
   },
   heavy_oil: {
     type: 'fluid',
@@ -3623,7 +3976,8 @@ module.exports = {
     pressure_to_speed_ratio: 0.4,
     flow_to_energy_ratio: 0.59,
     order: 'a[fluid]_c[heavy_oil]',
-    subgroup: 'fluid'
+    subgroup: 'fluid',
+    ui_name: 'Heavy oil'
   },
   light_oil: {
     type: 'fluid',
@@ -3646,7 +4000,8 @@ module.exports = {
     pressure_to_speed_ratio: 0.4,
     flow_to_energy_ratio: 0.59,
     order: 'a[fluid]_d[light_oil]',
-    subgroup: 'fluid'
+    subgroup: 'fluid',
+    ui_name: 'Light oil'
   },
   petroleum_gas: {
     type: 'fluid',
@@ -3669,7 +4024,8 @@ module.exports = {
     pressure_to_speed_ratio: 0.4,
     flow_to_energy_ratio: 0.59,
     order: 'a[fluid]_e[petroleum_gas]',
-    subgroup: 'fluid'
+    subgroup: 'fluid',
+    ui_name: 'Petroleum gas'
   },
   lubricant: {
     type: 'fluid',
@@ -3692,7 +4048,8 @@ module.exports = {
     pressure_to_speed_ratio: 0.4,
     flow_to_energy_ratio: 0.59,
     order: 'e[lubricant]',
-    subgroup: 'fluid'
+    subgroup: 'fluid',
+    ui_name: 'Lubricant'
   },
   sulfuric_acid: {
     type: 'fluid',
@@ -3715,6 +4072,7 @@ module.exports = {
     pressure_to_speed_ratio: 0.4,
     flow_to_energy_ratio: 0.59,
     order: 'a[fluid]_f[sulfuric_acid]',
-    subgroup: 'fluid'
+    subgroup: 'fluid',
+    ui_name: 'Sulfuric acid'
   }
 }

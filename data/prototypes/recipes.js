@@ -14,7 +14,8 @@ module.exports = {
         name: 'copper_plate',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Copper plate'
   },
   iron_plate: {
     name: 'iron_plate',
@@ -31,7 +32,8 @@ module.exports = {
         name: 'iron_plate',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Iron plate'
   },
   stone_brick: {
     name: 'stone_brick',
@@ -48,7 +50,8 @@ module.exports = {
         name: 'stone_brick',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Stone brick'
   },
   wood: {
     name: 'wood',
@@ -65,7 +68,8 @@ module.exports = {
         name: 'wood',
         amount: 2
       }
-    ]
+    ],
+    ui_name: 'Wood'
   },
   wooden_chest: {
     name: 'wooden_chest',
@@ -82,7 +86,8 @@ module.exports = {
         name: 'wooden_chest',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Wooden chest'
   },
   iron_stick: {
     name: 'iron_stick',
@@ -99,7 +104,8 @@ module.exports = {
         name: 'iron_stick',
         amount: 2
       }
-    ]
+    ],
+    ui_name: 'Iron stick'
   },
   iron_axe: {
     name: 'iron_axe',
@@ -120,7 +126,8 @@ module.exports = {
         name: 'iron_axe',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Iron axe'
   },
   stone_furnace: {
     name: 'stone_furnace',
@@ -137,7 +144,8 @@ module.exports = {
         name: 'stone_furnace',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Stone furnace'
   },
   boiler: {
     name: 'boiler',
@@ -158,7 +166,9 @@ module.exports = {
         name: 'boiler',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Boiler',
+    description: 'Burns fuel to heat fluids.'
   },
   steam_engine: {
     name: 'steam_engine',
@@ -183,7 +193,9 @@ module.exports = {
         name: 'steam_engine',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Steam engine',
+    description: 'Consumes steam to create electric energy.'
   },
   iron_gear_wheel: {
     name: 'iron_gear_wheel',
@@ -200,7 +212,8 @@ module.exports = {
         name: 'iron_gear_wheel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Iron gear wheel'
   },
   electronic_circuit: {
     name: 'electronic_circuit',
@@ -221,7 +234,8 @@ module.exports = {
         name: 'electronic_circuit',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Electronic circuit'
   },
   transport_belt: {
     name: 'transport_belt',
@@ -242,7 +256,8 @@ module.exports = {
         name: 'transport_belt',
         amount: 2
       }
-    ]
+    ],
+    ui_name: 'Transport belt'
   },
   electric_mining_drill: {
     name: 'electric_mining_drill',
@@ -267,7 +282,8 @@ module.exports = {
         name: 'electric_mining_drill',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Electric mining drill'
   },
   burner_mining_drill: {
     name: 'burner_mining_drill',
@@ -292,7 +308,8 @@ module.exports = {
         name: 'burner_mining_drill',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Burner mining drill'
   },
   inserter: {
     name: 'inserter',
@@ -317,7 +334,8 @@ module.exports = {
         name: 'inserter',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Inserter'
   },
   burner_inserter: {
     name: 'burner_inserter',
@@ -338,7 +356,9 @@ module.exports = {
         name: 'burner_inserter',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Burner inserter',
+    description: 'Burns fuel for energy.'
   },
   pipe: {
     name: 'pipe',
@@ -355,7 +375,8 @@ module.exports = {
         name: 'pipe',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Pipe'
   },
   offshore_pump: {
     name: 'offshore_pump',
@@ -380,7 +401,9 @@ module.exports = {
         name: 'offshore_pump',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Offshore pump',
+    description: 'Pumps fluid from a body of water.'
   },
   copper_cable: {
     name: 'copper_cable',
@@ -397,7 +420,9 @@ module.exports = {
         name: 'copper_cable',
         amount: 2
       }
-    ]
+    ],
+    ui_name: 'Copper cable',
+    description: 'Can be used to connect and disconnect electric poles and power switches with __CONTROL__build__.'
   },
   small_electric_pole: {
     name: 'small_electric_pole',
@@ -418,7 +443,8 @@ module.exports = {
         name: 'small_electric_pole',
         amount: 2
       }
-    ]
+    ],
+    ui_name: 'Small electric pole'
   },
   pistol: {
     name: 'pistol',
@@ -439,7 +465,8 @@ module.exports = {
         name: 'pistol',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Pistol'
   },
   submachine_gun: {
     name: 'submachine_gun',
@@ -464,7 +491,8 @@ module.exports = {
         name: 'submachine_gun',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Submachine gun'
   },
   firearm_magazine: {
     name: 'firearm_magazine',
@@ -481,7 +509,8 @@ module.exports = {
         name: 'firearm_magazine',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Firearm magazine'
   },
   light_armor: {
     name: 'light_armor',
@@ -498,7 +527,8 @@ module.exports = {
         name: 'light_armor',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Light armor'
   },
   radar: {
     name: 'radar',
@@ -523,7 +553,9 @@ module.exports = {
         name: 'radar',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Radar',
+    description: 'Scans the nearby sectors, and actively reveals an area around it.'
   },
   small_lamp: {
     name: 'small_lamp',
@@ -548,7 +580,8 @@ module.exports = {
         name: 'small_lamp',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Lamp'
   },
   pipe_to_ground: {
     name: 'pipe_to_ground',
@@ -569,7 +602,8 @@ module.exports = {
         name: 'pipe_to_ground',
         amount: 2
       }
-    ]
+    ],
+    ui_name: 'Pipe to ground'
   },
   assembling_machine_1: {
     name: 'assembling_machine_1',
@@ -594,7 +628,9 @@ module.exports = {
         name: 'assembling_machine_1',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Assembling machine 1',
+    description: 'Crafts items that require up to 2 ingredients.'
   },
   repair_pack: {
     name: 'repair_pack',
@@ -615,7 +651,9 @@ module.exports = {
         name: 'repair_pack',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Repair pack',
+    description: 'Used to repair friendly entities by using __CONTROL__build__ with it in hand.'
   },
   gun_turret: {
     name: 'gun_turret',
@@ -640,7 +678,8 @@ module.exports = {
         name: 'gun_turret',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Gun turret'
   },
   piercing_rounds_magazine: {
     name: 'piercing_rounds_magazine',
@@ -665,7 +704,8 @@ module.exports = {
         name: 'piercing_rounds_magazine',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Piercing rounds magazine'
   },
   uranium_rounds_magazine: {
     name: 'uranium_rounds_magazine',
@@ -686,7 +726,8 @@ module.exports = {
         name: 'uranium_rounds_magazine',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Uranium rounds magazine'
   },
   rocket: {
     name: 'rocket',
@@ -711,7 +752,8 @@ module.exports = {
         name: 'rocket',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Rocket'
   },
   explosive_rocket: {
     name: 'explosive_rocket',
@@ -732,7 +774,8 @@ module.exports = {
         name: 'explosive_rocket',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Explosive rocket'
   },
   atomic_bomb: {
     name: 'atomic_bomb',
@@ -757,7 +800,8 @@ module.exports = {
         name: 'atomic_bomb',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Atomic bomb'
   },
   shotgun_shell: {
     name: 'shotgun_shell',
@@ -778,7 +822,8 @@ module.exports = {
         name: 'shotgun_shell',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Shotgun shells'
   },
   piercing_shotgun_shell: {
     name: 'piercing_shotgun_shell',
@@ -803,7 +848,8 @@ module.exports = {
         name: 'piercing_shotgun_shell',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Piercing shotgun shells'
   },
   railgun_dart: {
     name: 'railgun_dart',
@@ -824,7 +870,8 @@ module.exports = {
         name: 'railgun_dart',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Railgun darts'
   },
   cannon_shell: {
     name: 'cannon_shell',
@@ -849,7 +896,8 @@ module.exports = {
         name: 'cannon_shell',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Cannon shell'
   },
   explosive_cannon_shell: {
     name: 'explosive_cannon_shell',
@@ -874,7 +922,8 @@ module.exports = {
         name: 'explosive_cannon_shell',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Explosive cannon shell'
   },
   uranium_cannon_shell: {
     name: 'uranium_cannon_shell',
@@ -895,7 +944,8 @@ module.exports = {
         name: 'uranium_cannon_shell',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Uranium cannon shell'
   },
   explosive_uranium_cannon_shell: {
     name: 'explosive_uranium_cannon_shell',
@@ -916,7 +966,8 @@ module.exports = {
         name: 'explosive_uranium_cannon_shell',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Explosive uranium cannon shell'
   },
   artillery_shell: {
     name: 'artillery_shell',
@@ -941,7 +992,8 @@ module.exports = {
         name: 'artillery_shell',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Artillery shell'
   },
   flamethrower_ammo: {
     name: 'flamethrower_ammo',
@@ -989,7 +1041,8 @@ module.exports = {
         b: 0,
         a: 0
       }
-    }
+    },
+    ui_name: 'Flamethrower ammo'
   },
   poison_capsule: {
     name: 'poison_capsule',
@@ -1014,7 +1067,8 @@ module.exports = {
         name: 'poison_capsule',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Poison capsule'
   },
   slowdown_capsule: {
     name: 'slowdown_capsule',
@@ -1039,7 +1093,9 @@ module.exports = {
         name: 'slowdown_capsule',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Slowdown capsule',
+    description: 'Reduces the movement speed of affected units.'
   },
   grenade: {
     name: 'grenade',
@@ -1060,7 +1116,8 @@ module.exports = {
         name: 'grenade',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Grenade'
   },
   cluster_grenade: {
     name: 'cluster_grenade',
@@ -1085,7 +1142,8 @@ module.exports = {
         name: 'cluster_grenade',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Cluster grenade'
   },
   defender_capsule: {
     name: 'defender_capsule',
@@ -1110,7 +1168,8 @@ module.exports = {
         name: 'defender_capsule',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Defender capsule'
   },
   distractor_capsule: {
     name: 'distractor_capsule',
@@ -1131,7 +1190,8 @@ module.exports = {
         name: 'distractor_capsule',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Distractor capsule'
   },
   destroyer_capsule: {
     name: 'destroyer_capsule',
@@ -1152,7 +1212,8 @@ module.exports = {
         name: 'destroyer_capsule',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Destroyer capsule'
   },
   discharge_defense_remote: {
     name: 'discharge_defense_remote',
@@ -1169,7 +1230,8 @@ module.exports = {
         name: 'discharge_defense_remote',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Discharge defense remote'
   },
   cliff_explosives: {
     name: 'cliff_explosives',
@@ -1194,7 +1256,8 @@ module.exports = {
         name: 'cliff_explosives',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Cliff explosives'
   },
   artillery_targeting_remote: {
     name: 'artillery_targeting_remote',
@@ -1215,7 +1278,9 @@ module.exports = {
         name: 'artillery_targeting_remote',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Artillery targeting remote',
+    description: 'Allows firing artillery manually from the map or the world.'
   },
   night_vision_equipment: {
     name: 'night_vision_equipment',
@@ -1236,7 +1301,9 @@ module.exports = {
         name: 'night_vision_equipment',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Nightvision',
+    description: 'Allows you to see more clearly in darkness.'
   },
   energy_shield_equipment: {
     name: 'energy_shield_equipment',
@@ -1257,7 +1324,9 @@ module.exports = {
         name: 'energy_shield_equipment',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Energy shield',
+    description: 'Provides an energy shield to protect the player.'
   },
   energy_shield_mk2_equipment: {
     name: 'energy_shield_mk2_equipment',
@@ -1278,7 +1347,9 @@ module.exports = {
         name: 'energy_shield_mk2_equipment',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Energy shield MK2',
+    description: 'Inserted into armor to absorb a large amount of damage.'
   },
   battery_equipment: {
     name: 'battery_equipment',
@@ -1299,7 +1370,9 @@ module.exports = {
         name: 'battery_equipment',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Battery',
+    description: 'Stores electric energy for equipment modules.'
   },
   battery_mk2_equipment: {
     name: 'battery_mk2_equipment',
@@ -1320,7 +1393,9 @@ module.exports = {
         name: 'battery_mk2_equipment',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Battery MK2',
+    description: 'Inserted into armor to store a lot of energy for later.'
   },
   solar_panel_equipment: {
     name: 'solar_panel_equipment',
@@ -1345,7 +1420,9 @@ module.exports = {
         name: 'solar_panel_equipment',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Portable solar panel',
+    description: 'Provides power for equipment modules.'
   },
   fusion_reactor_equipment: {
     name: 'fusion_reactor_equipment',
@@ -1362,7 +1439,9 @@ module.exports = {
         name: 'fusion_reactor_equipment',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Portable fusion reactor',
+    description: 'Provides power for equipment modules.'
   },
   personal_laser_defense_equipment: {
     name: 'personal_laser_defense_equipment',
@@ -1387,7 +1466,9 @@ module.exports = {
         name: 'personal_laser_defense_equipment',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Personal laser defense',
+    description: 'Inserted into armor to automatically fire at nearby enemies.'
   },
   discharge_defense_equipment: {
     name: 'discharge_defense_equipment',
@@ -1412,7 +1493,9 @@ module.exports = {
         name: 'discharge_defense_equipment',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Discharge defense',
+    description: 'Damages, pushes back and stuns nearby enemies when activated using the remote.'
   },
   exoskeleton_equipment: {
     name: 'exoskeleton_equipment',
@@ -1437,7 +1520,9 @@ module.exports = {
         name: 'exoskeleton_equipment',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Exoskeleton',
+    description: 'Increases your movement speed.'
   },
   personal_roboport_equipment: {
     name: 'personal_roboport_equipment',
@@ -1466,7 +1551,9 @@ module.exports = {
         name: 'personal_roboport_equipment',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Personal roboport',
+    description: 'Allows construction bots to work from your inventory.'
   },
   personal_roboport_mk2_equipment: {
     name: 'personal_roboport_mk2_equipment',
@@ -1487,7 +1574,8 @@ module.exports = {
         name: 'personal_roboport_mk2_equipment',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Personal roboport MK2'
   },
   steel_plate: {
     name: 'steel_plate',
@@ -1504,7 +1592,8 @@ module.exports = {
         name: 'steel_plate',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Steel plate'
   },
   basic_oil_processing: {
     name: 'basic_oil_processing',
@@ -1533,7 +1622,8 @@ module.exports = {
         name: 'petroleum_gas',
         amount: 40
       }
-    ]
+    ],
+    ui_name: 'Basic oil processing'
   },
   advanced_oil_processing: {
     name: 'advanced_oil_processing',
@@ -1567,7 +1657,9 @@ module.exports = {
         name: 'petroleum_gas',
         amount: 55
       }
-    ]
+    ],
+    ui_name: 'Advanced oil processing',
+    description: 'Allows you to crack heavier crude oil fractions into lighter, more useful products.'
   },
   coal_liquefaction: {
     name: 'coal_liquefaction',
@@ -1606,7 +1698,9 @@ module.exports = {
         name: 'petroleum_gas',
         amount: 20
       }
-    ]
+    ],
+    ui_name: 'Coal liquefaction',
+    description: 'Unlocks a processing technique to turn coal into oil products with the use of steam and heavy oil.'
   },
   heavy_oil_cracking: {
     name: 'heavy_oil_cracking',
@@ -1650,7 +1744,8 @@ module.exports = {
         b: 0,
         a: 0
       }
-    }
+    },
+    ui_name: 'Heavy oil cracking to light oil'
   },
   light_oil_cracking: {
     name: 'light_oil_cracking',
@@ -1694,7 +1789,8 @@ module.exports = {
         b: 0,
         a: 0
       }
-    }
+    },
+    ui_name: 'Light oil cracking to petroleum gas'
   },
   sulfuric_acid: {
     name: 'sulfuric_acid',
@@ -1743,7 +1839,8 @@ module.exports = {
         b: 0,
         a: 0
       }
-    }
+    },
+    ui_name: 'Sulfuric acid'
   },
   plastic_bar: {
     name: 'plastic_bar',
@@ -1787,7 +1884,8 @@ module.exports = {
         b: 0.305,
         a: 0
       }
-    }
+    },
+    ui_name: 'Plastic bar'
   },
   solid_fuel_from_light_oil: {
     name: 'solid_fuel_from_light_oil',
@@ -1826,7 +1924,8 @@ module.exports = {
         b: 0,
         a: 0
       }
-    }
+    },
+    ui_name: 'Solid fuel from light oil'
   },
   solid_fuel_from_petroleum_gas: {
     name: 'solid_fuel_from_petroleum_gas',
@@ -1865,7 +1964,8 @@ module.exports = {
         b: 0.695,
         a: 0
       }
-    }
+    },
+    ui_name: 'Solid fuel from petroleum gas'
   },
   solid_fuel_from_heavy_oil: {
     name: 'solid_fuel_from_heavy_oil',
@@ -1904,7 +2004,8 @@ module.exports = {
         b: 0.135,
         a: 0
       }
-    }
+    },
+    ui_name: 'Solid fuel from heavy oil'
   },
   sulfur: {
     name: 'sulfur',
@@ -1948,7 +2049,8 @@ module.exports = {
         b: 0,
         a: 0
       }
-    }
+    },
+    ui_name: 'Sulfur'
   },
   lubricant: {
     name: 'lubricant',
@@ -1987,7 +2089,8 @@ module.exports = {
         b: 0,
         a: 0
       }
-    }
+    },
+    ui_name: 'Lubricant'
   },
   empty_barrel: {
     name: 'empty_barrel',
@@ -2006,7 +2109,8 @@ module.exports = {
         name: 'empty_barrel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Empty barrel'
   },
   long_handed_inserter: {
     name: 'long_handed_inserter',
@@ -2031,7 +2135,8 @@ module.exports = {
         name: 'long_handed_inserter',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Long handed inserter'
   },
   fast_inserter: {
     name: 'fast_inserter',
@@ -2056,7 +2161,8 @@ module.exports = {
         name: 'fast_inserter',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Fast inserter'
   },
   filter_inserter: {
     name: 'filter_inserter',
@@ -2077,7 +2183,8 @@ module.exports = {
         name: 'filter_inserter',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Filter inserter'
   },
   stack_inserter: {
     name: 'stack_inserter',
@@ -2106,7 +2213,9 @@ module.exports = {
         name: 'stack_inserter',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Stack inserter',
+    description: 'Stack inserters can move multiple items at the same time.'
   },
   stack_filter_inserter: {
     name: 'stack_filter_inserter',
@@ -2127,7 +2236,8 @@ module.exports = {
         name: 'stack_filter_inserter',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Stack filter inserter'
   },
   speed_module: {
     name: 'speed_module',
@@ -2148,7 +2258,9 @@ module.exports = {
         name: 'speed_module',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Speed module',
+    description: 'Increases machine speed at a cost of increased energy consumption.'
   },
   speed_module_2: {
     name: 'speed_module_2',
@@ -2173,7 +2285,8 @@ module.exports = {
         name: 'speed_module_2',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Speed module 2'
   },
   speed_module_3: {
     name: 'speed_module_3',
@@ -2198,7 +2311,8 @@ module.exports = {
         name: 'speed_module_3',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Speed module 3'
   },
   productivity_module: {
     name: 'productivity_module',
@@ -2219,7 +2333,9 @@ module.exports = {
         name: 'productivity_module',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Productivity module',
+    description: 'Machine will create extra products at a cost of increased energy consumption and reduced speed.'
   },
   productivity_module_2: {
     name: 'productivity_module_2',
@@ -2244,7 +2360,8 @@ module.exports = {
         name: 'productivity_module_2',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Productivity module 2'
   },
   productivity_module_3: {
     name: 'productivity_module_3',
@@ -2269,7 +2386,8 @@ module.exports = {
         name: 'productivity_module_3',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Productivity module 3'
   },
   effectivity_module: {
     name: 'effectivity_module',
@@ -2290,7 +2408,9 @@ module.exports = {
         name: 'effectivity_module',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Efficiency module',
+    description: 'Decreases machine energy consumption. Minimum energy consumption is 20%.'
   },
   effectivity_module_2: {
     name: 'effectivity_module_2',
@@ -2315,7 +2435,8 @@ module.exports = {
         name: 'effectivity_module_2',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Efficiency module 2'
   },
   effectivity_module_3: {
     name: 'effectivity_module_3',
@@ -2340,7 +2461,8 @@ module.exports = {
         name: 'effectivity_module_3',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Efficiency module 3'
   },
   player_port: {
     name: 'player_port',
@@ -2365,7 +2487,8 @@ module.exports = {
         name: 'player_port',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Player port'
   },
   fast_transport_belt: {
     name: 'fast_transport_belt',
@@ -2386,7 +2509,8 @@ module.exports = {
         name: 'fast_transport_belt',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Fast transport belt'
   },
   express_transport_belt: {
     name: 'express_transport_belt',
@@ -2412,7 +2536,8 @@ module.exports = {
         name: 'express_transport_belt',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Express transport belt'
   },
   solar_panel: {
     name: 'solar_panel',
@@ -2437,7 +2562,8 @@ module.exports = {
         name: 'solar_panel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Solar panel'
   },
   assembling_machine_2: {
     name: 'assembling_machine_2',
@@ -2466,7 +2592,9 @@ module.exports = {
         name: 'assembling_machine_2',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Assembling machine 2',
+    description: 'Crafts items that require up to 4 ingredients.'
   },
   assembling_machine_3: {
     name: 'assembling_machine_3',
@@ -2487,7 +2615,9 @@ module.exports = {
         name: 'assembling_machine_3',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Assembling machine 3',
+    description: 'Crafts items that require up to 6 ingredients.'
   },
   car: {
     name: 'car',
@@ -2512,7 +2642,9 @@ module.exports = {
         name: 'car',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Car',
+    description: 'Enter the car using __CONTROL__toggle-driving__.'
   },
   tank: {
     name: 'tank',
@@ -2541,7 +2673,9 @@ module.exports = {
         name: 'tank',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Tank',
+    description: 'Enter the tank using __CONTROL__toggle-driving__.'
   },
   rail: {
     name: 'rail',
@@ -2566,7 +2700,9 @@ module.exports = {
         name: 'rail',
         amount: 2
       }
-    ]
+    ],
+    ui_name: 'Rail',
+    description: 'Use to build straight rails manually or through the rail planner.\\nThe rail planner can build short paths directly using __CONTROL__build__ or long ghost paths using __CONTROL__build-ghost__.'
   },
   locomotive: {
     name: 'locomotive',
@@ -2591,7 +2727,9 @@ module.exports = {
         name: 'locomotive',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Locomotive',
+    description: 'Runs automated schedules and pulls cargo wagons. Enter the train with __CONTROL__toggle-driving__, and open the train menu with __CONTROL__build__.'
   },
   cargo_wagon: {
     name: 'cargo_wagon',
@@ -2616,7 +2754,8 @@ module.exports = {
         name: 'cargo_wagon',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Cargo wagon'
   },
   fluid_wagon: {
     name: 'fluid_wagon',
@@ -2645,7 +2784,8 @@ module.exports = {
         name: 'fluid_wagon',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Fluid wagon'
   },
   artillery_wagon: {
     name: 'artillery_wagon',
@@ -2678,7 +2818,8 @@ module.exports = {
         name: 'artillery_wagon',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Artillery wagon'
   },
   train_stop: {
     name: 'train_stop',
@@ -2703,7 +2844,9 @@ module.exports = {
         name: 'train_stop',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Train stop',
+    description: 'Destinations for automated trains.'
   },
   rail_signal: {
     name: 'rail_signal',
@@ -2724,7 +2867,9 @@ module.exports = {
         name: 'rail_signal',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Rail signal',
+    description: 'Defines the rail system into blocks, allowing multiple trains to run on the same network.'
   },
   rail_chain_signal: {
     name: 'rail_chain_signal',
@@ -2745,7 +2890,9 @@ module.exports = {
         name: 'rail_chain_signal',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Rail chain signal',
+    description: 'Reads the next signals in the path to allow better control of the trains.'
   },
   heavy_armor: {
     name: 'heavy_armor',
@@ -2766,7 +2913,9 @@ module.exports = {
         name: 'heavy_armor',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Heavy armor',
+    description: 'Heavy armor for more protection.'
   },
   modular_armor: {
     name: 'modular_armor',
@@ -2787,7 +2936,9 @@ module.exports = {
         name: 'modular_armor',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Modular armor',
+    description: 'Armor with a small grid for equipment modules that give you unique bonuses. Wearing it also increases your inventory size.'
   },
   power_armor: {
     name: 'power_armor',
@@ -2813,7 +2964,9 @@ module.exports = {
         amount: 1
       }
     ],
-    requester_paste_multiplier: 1
+    requester_paste_multiplier: 1,
+    ui_name: 'Power armor',
+    description: 'Armor with a large equipment grid and inventory size bonus.'
   },
   power_armor_mk2: {
     name: 'power_armor_mk2',
@@ -2843,7 +2996,8 @@ module.exports = {
         amount: 1
       }
     ],
-    requester_paste_multiplier: 1
+    requester_paste_multiplier: 1,
+    ui_name: 'Power armor MK2'
   },
   iron_chest: {
     name: 'iron_chest',
@@ -2860,7 +3014,8 @@ module.exports = {
         name: 'iron_chest',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Iron chest'
   },
   steel_chest: {
     name: 'steel_chest',
@@ -2877,7 +3032,8 @@ module.exports = {
         name: 'steel_chest',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Steel chest'
   },
   stone_wall: {
     name: 'stone_wall',
@@ -2894,7 +3050,8 @@ module.exports = {
         name: 'stone_wall',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Stone wall'
   },
   gate: {
     name: 'gate',
@@ -2919,7 +3076,8 @@ module.exports = {
         name: 'gate',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Gate'
   },
   flamethrower: {
     name: 'flamethrower',
@@ -2940,7 +3098,8 @@ module.exports = {
         name: 'flamethrower',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Flamethrower'
   },
   land_mine: {
     name: 'land_mine',
@@ -2961,7 +3120,9 @@ module.exports = {
         name: 'land_mine',
         amount: 4
       }
-    ]
+    ],
+    ui_name: 'Land mine',
+    description: 'Explodes when enemies are nearby, damaging and stunning them.'
   },
   rocket_launcher: {
     name: 'rocket_launcher',
@@ -2986,7 +3147,8 @@ module.exports = {
         name: 'rocket_launcher',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Rocket launcher'
   },
   shotgun: {
     name: 'shotgun',
@@ -3015,7 +3177,8 @@ module.exports = {
         name: 'shotgun',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Shotgun'
   },
   combat_shotgun: {
     name: 'combat_shotgun',
@@ -3044,7 +3207,8 @@ module.exports = {
         name: 'combat_shotgun',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Combat shotgun'
   },
   railgun: {
     name: 'railgun',
@@ -3073,7 +3237,8 @@ module.exports = {
         name: 'railgun',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Railgun'
   },
   science_pack_1: {
     name: 'science_pack_1',
@@ -3094,7 +3259,8 @@ module.exports = {
         name: 'science_pack_1',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Science pack 1'
   },
   science_pack_2: {
     name: 'science_pack_2',
@@ -3115,7 +3281,8 @@ module.exports = {
         name: 'science_pack_2',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Science pack 2'
   },
   science_pack_3: {
     name: 'science_pack_3',
@@ -3140,7 +3307,8 @@ module.exports = {
         name: 'science_pack_3',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Science pack 3'
   },
   military_science_pack: {
     name: 'military_science_pack',
@@ -3165,7 +3333,8 @@ module.exports = {
         name: 'military_science_pack',
         amount: 2
       }
-    ]
+    ],
+    ui_name: 'Military science pack'
   },
   production_science_pack: {
     name: 'production_science_pack',
@@ -3186,7 +3355,8 @@ module.exports = {
         name: 'production_science_pack',
         amount: 2
       }
-    ]
+    ],
+    ui_name: 'Production science pack'
   },
   high_tech_science_pack: {
     name: 'high_tech_science_pack',
@@ -3215,7 +3385,8 @@ module.exports = {
         name: 'high_tech_science_pack',
         amount: 2
       }
-    ]
+    ],
+    ui_name: 'High tech science pack'
   },
   lab: {
     name: 'lab',
@@ -3240,7 +3411,8 @@ module.exports = {
         name: 'lab',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Lab'
   },
   red_wire: {
     name: 'red_wire',
@@ -3261,7 +3433,9 @@ module.exports = {
         name: 'red_wire',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Red wire',
+    description: 'Used to connect machines to the circuit network using __CONTROL__build__.'
   },
   green_wire: {
     name: 'green_wire',
@@ -3282,7 +3456,9 @@ module.exports = {
         name: 'green_wire',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Green wire',
+    description: 'Used to connect machines to the circuit network using __CONTROL__build__.'
   },
   underground_belt: {
     name: 'underground_belt',
@@ -3303,7 +3479,8 @@ module.exports = {
         name: 'underground_belt',
         amount: 2
       }
-    ]
+    ],
+    ui_name: 'Underground belt'
   },
   fast_underground_belt: {
     name: 'fast_underground_belt',
@@ -3324,7 +3501,8 @@ module.exports = {
         name: 'fast_underground_belt',
         amount: 2
       }
-    ]
+    ],
+    ui_name: 'Fast underground belt'
   },
   express_underground_belt: {
     name: 'express_underground_belt',
@@ -3350,7 +3528,8 @@ module.exports = {
         name: 'express_underground_belt',
         amount: 2
       }
-    ]
+    ],
+    ui_name: 'Express underground belt'
   },
   loader: {
     name: 'loader',
@@ -3383,7 +3562,8 @@ module.exports = {
         name: 'loader',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Loader'
   },
   fast_loader: {
     name: 'fast_loader',
@@ -3404,7 +3584,8 @@ module.exports = {
         name: 'fast_loader',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Fast loader'
   },
   express_loader: {
     name: 'express_loader',
@@ -3425,7 +3606,8 @@ module.exports = {
         name: 'express_loader',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Express loader'
   },
   splitter: {
     name: 'splitter',
@@ -3450,7 +3632,9 @@ module.exports = {
         name: 'splitter',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Splitter',
+    description: 'Splits incoming transport belts\' cargo 1:1'
   },
   fast_splitter: {
     name: 'fast_splitter',
@@ -3475,7 +3659,9 @@ module.exports = {
         name: 'fast_splitter',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Fast splitter',
+    description: 'Splits incoming transport belts\' cargo 1:1'
   },
   express_splitter: {
     name: 'express_splitter',
@@ -3505,7 +3691,9 @@ module.exports = {
         name: 'express_splitter',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Express splitter',
+    description: 'Splits incoming transport belts\' cargo 1:1'
   },
   advanced_circuit: {
     name: 'advanced_circuit',
@@ -3530,7 +3718,8 @@ module.exports = {
         name: 'advanced_circuit',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Advanced circuit'
   },
   processing_unit: {
     name: 'processing_unit',
@@ -3556,7 +3745,8 @@ module.exports = {
         name: 'processing_unit',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Processing unit'
   },
   logistic_robot: {
     name: 'logistic_robot',
@@ -3577,7 +3767,9 @@ module.exports = {
         name: 'logistic_robot',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Logistic robot',
+    description: 'Transports items between logistic chests.'
   },
   construction_robot: {
     name: 'construction_robot',
@@ -3598,7 +3790,9 @@ module.exports = {
         name: 'construction_robot',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Construction robot',
+    description: 'Automatically build and repair friendly entities.'
   },
   logistic_chest_passive_provider: {
     name: 'logistic_chest_passive_provider',
@@ -3623,7 +3817,9 @@ module.exports = {
         name: 'logistic_chest_passive_provider',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Passive provider chest',
+    description: 'Makes its content available for the logistic network.'
   },
   logistic_chest_active_provider: {
     name: 'logistic_chest_active_provider',
@@ -3648,7 +3844,9 @@ module.exports = {
         name: 'logistic_chest_active_provider',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Active provider chest',
+    description: 'Sends its content to the logistic network.'
   },
   logistic_chest_storage: {
     name: 'logistic_chest_storage',
@@ -3673,7 +3871,9 @@ module.exports = {
         name: 'logistic_chest_storage',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Storage chest',
+    description: 'Long-term storage for the logistic network.'
   },
   logistic_chest_buffer: {
     name: 'logistic_chest_buffer',
@@ -3698,7 +3898,9 @@ module.exports = {
         name: 'logistic_chest_buffer',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Buffer chest',
+    description: 'Requests specified items to be available for personal logistics and automated construction.'
   },
   logistic_chest_requester: {
     name: 'logistic_chest_requester',
@@ -3723,7 +3925,9 @@ module.exports = {
         name: 'logistic_chest_requester',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Requester chest',
+    description: 'Requests specified items from the logistic network.'
   },
   rocket_silo: {
     name: 'rocket_silo',
@@ -3757,7 +3961,9 @@ module.exports = {
         amount: 1
       }
     ],
-    requester_paste_multiplier: 1
+    requester_paste_multiplier: 1,
+    ui_name: 'Rocket silo',
+    description: 'Used to build and launch a rocket to win the game.'
   },
   roboport: {
     name: 'roboport',
@@ -3782,7 +3988,8 @@ module.exports = {
         name: 'roboport',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Roboport'
   },
   steel_axe: {
     name: 'steel_axe',
@@ -3803,7 +4010,8 @@ module.exports = {
         name: 'steel_axe',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Steel axe'
   },
   big_electric_pole: {
     name: 'big_electric_pole',
@@ -3824,7 +4032,8 @@ module.exports = {
         name: 'big_electric_pole',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Big electric pole'
   },
   substation: {
     name: 'substation',
@@ -3849,7 +4058,8 @@ module.exports = {
         name: 'substation',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Substation'
   },
   medium_electric_pole: {
     name: 'medium_electric_pole',
@@ -3870,7 +4080,8 @@ module.exports = {
         name: 'medium_electric_pole',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Medium electric pole'
   },
   accumulator: {
     name: 'accumulator',
@@ -3891,7 +4102,9 @@ module.exports = {
         name: 'accumulator',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Accumulator',
+    description: 'Connects to the electric network and stores electric energy.'
   },
   steel_furnace: {
     name: 'steel_furnace',
@@ -3912,7 +4125,8 @@ module.exports = {
         name: 'steel_furnace',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Steel furnace'
   },
   electric_furnace: {
     name: 'electric_furnace',
@@ -3937,7 +4151,8 @@ module.exports = {
         name: 'electric_furnace',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Electric furnace'
   },
   beacon: {
     name: 'beacon',
@@ -3966,7 +4181,9 @@ module.exports = {
         name: 'beacon',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Beacon',
+    description: 'Transmits the effect of modules to nearby friendly entities.'
   },
   pumpjack: {
     name: 'pumpjack',
@@ -3995,7 +4212,8 @@ module.exports = {
         name: 'pumpjack',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Pumpjack'
   },
   oil_refinery: {
     name: 'oil_refinery',
@@ -4028,7 +4246,8 @@ module.exports = {
         name: 'oil_refinery',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Oil refinery'
   },
   engine_unit: {
     name: 'engine_unit',
@@ -4053,7 +4272,8 @@ module.exports = {
         name: 'engine_unit',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Engine unit'
   },
   electric_engine_unit: {
     name: 'electric_engine_unit',
@@ -4079,7 +4299,8 @@ module.exports = {
         name: 'electric_engine_unit',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Electric engine unit'
   },
   flying_robot_frame: {
     name: 'flying_robot_frame',
@@ -4108,7 +4329,8 @@ module.exports = {
         name: 'flying_robot_frame',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Flying robot frame'
   },
   explosives: {
     name: 'explosives',
@@ -4156,7 +4378,8 @@ module.exports = {
         b: 0.365,
         a: 0
       }
-    }
+    },
+    ui_name: 'Explosives'
   },
   battery: {
     name: 'battery',
@@ -4202,7 +4425,9 @@ module.exports = {
         b: 0.726,
         a: 0
       }
-    }
+    },
+    ui_name: 'Battery',
+    description: 'Electrochemical cell that stores and provides energy to electrical devices.'
   },
   storage_tank: {
     name: 'storage_tank',
@@ -4223,7 +4448,8 @@ module.exports = {
         name: 'storage_tank',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Storage tank'
   },
   pump: {
     name: 'pump',
@@ -4248,7 +4474,8 @@ module.exports = {
         name: 'pump',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Pump'
   },
   chemical_plant: {
     name: 'chemical_plant',
@@ -4277,7 +4504,8 @@ module.exports = {
         name: 'chemical_plant',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Chemical plant'
   },
   small_plane: {
     name: 'small_plane',
@@ -4306,7 +4534,8 @@ module.exports = {
         name: 'small_plane',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Small plane'
   },
   arithmetic_combinator: {
     name: 'arithmetic_combinator',
@@ -4327,7 +4556,9 @@ module.exports = {
         name: 'arithmetic_combinator',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Arithmetic combinator',
+    description: 'Performs arithmetic operations on circuit network signals.'
   },
   decider_combinator: {
     name: 'decider_combinator',
@@ -4348,7 +4579,9 @@ module.exports = {
         name: 'decider_combinator',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Decider combinator',
+    description: 'Compares circuit network signals.'
   },
   constant_combinator: {
     name: 'constant_combinator',
@@ -4369,7 +4602,9 @@ module.exports = {
         name: 'constant_combinator',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Constant combinator',
+    description: 'Outputs constant circuit network signals.'
   },
   power_switch: {
     name: 'power_switch',
@@ -4394,7 +4629,9 @@ module.exports = {
         name: 'power_switch',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Power switch',
+    description: 'Used to control the connections of the electric network. Can also be controlled by the circuit network.'
   },
   programmable_speaker: {
     name: 'programmable_speaker',
@@ -4419,7 +4656,8 @@ module.exports = {
         name: 'programmable_speaker',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Programmable Speaker'
   },
   low_density_structure: {
     name: 'low_density_structure',
@@ -4444,7 +4682,8 @@ module.exports = {
         name: 'low_density_structure',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Low density structure'
   },
   rocket_fuel: {
     name: 'rocket_fuel',
@@ -4461,7 +4700,8 @@ module.exports = {
         name: 'rocket_fuel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Rocket fuel'
   },
   rocket_control_unit: {
     name: 'rocket_control_unit',
@@ -4482,7 +4722,8 @@ module.exports = {
         name: 'rocket_control_unit',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Rocket control unit'
   },
   rocket_part: {
     name: 'rocket_part',
@@ -4508,7 +4749,8 @@ module.exports = {
         name: 'rocket_part',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Rocket part'
   },
   satellite: {
     name: 'satellite',
@@ -4546,7 +4788,9 @@ module.exports = {
         amount: 1
       }
     ],
-    requester_paste_multiplier: 1
+    requester_paste_multiplier: 1,
+    ui_name: 'Satellite',
+    description: 'The satellite should be put into the rocket.'
   },
   concrete: {
     name: 'concrete',
@@ -4572,7 +4816,8 @@ module.exports = {
         name: 'concrete',
         amount: 10
       }
-    ]
+    ],
+    ui_name: 'Concrete'
   },
   hazard_concrete: {
     name: 'hazard_concrete',
@@ -4589,7 +4834,8 @@ module.exports = {
         name: 'hazard_concrete',
         amount: 10
       }
-    ]
+    ],
+    ui_name: 'Hazard concrete'
   },
   refined_concrete: {
     name: 'refined_concrete',
@@ -4619,7 +4865,8 @@ module.exports = {
         name: 'refined_concrete',
         amount: 10
       }
-    ]
+    ],
+    ui_name: 'Refined concrete'
   },
   refined_hazard_concrete: {
     name: 'refined_hazard_concrete',
@@ -4636,7 +4883,8 @@ module.exports = {
         name: 'refined_hazard_concrete',
         amount: 10
       }
-    ]
+    ],
+    ui_name: 'Refined hazard concrete'
   },
   landfill: {
     name: 'landfill',
@@ -4653,7 +4901,9 @@ module.exports = {
         name: 'landfill',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Landfill',
+    description: 'Used to fill in water that\'s in the way.'
   },
   electric_energy_interface: {
     name: 'electric_energy_interface',
@@ -4674,7 +4924,8 @@ module.exports = {
         name: 'electric_energy_interface',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Electric energy interface'
   },
   nuclear_reactor: {
     name: 'nuclear_reactor',
@@ -4704,7 +4955,8 @@ module.exports = {
         amount: 1
       }
     ],
-    requester_paste_multiplier: 1
+    requester_paste_multiplier: 1,
+    ui_name: 'Nuclear reactor'
   },
   centrifuge: {
     name: 'centrifuge',
@@ -4734,7 +4986,9 @@ module.exports = {
         amount: 1
       }
     ],
-    requester_paste_multiplier: 10
+    requester_paste_multiplier: 10,
+    ui_name: 'Centrifuge',
+    description: 'Processes uranium ore and splits it into uranium 235 and uranium 238.'
   },
   uranium_processing: {
     name: 'uranium_processing',
@@ -4757,7 +5011,8 @@ module.exports = {
         probability: 0.993,
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Uranium processing'
   },
   kovarex_enrichment_process: {
     name: 'kovarex_enrichment_process',
@@ -4782,7 +5037,9 @@ module.exports = {
         name: 'uranium_238',
         amount: 2
       }
-    ]
+    ],
+    ui_name: 'Kovarex enrichment process',
+    description: 'The process to create uranium-235 from uranium-238. It requires a large amount of uranium-235 as a catalyst.'
   },
   nuclear_fuel: {
     name: 'nuclear_fuel',
@@ -4803,7 +5060,8 @@ module.exports = {
         name: 'nuclear_fuel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Nuclear fuel'
   },
   nuclear_fuel_reprocessing: {
     name: 'nuclear_fuel_reprocessing',
@@ -4820,7 +5078,9 @@ module.exports = {
         name: 'uranium_238',
         amount: 3
       }
-    ]
+    ],
+    ui_name: 'Nuclear fuel reprocessing',
+    description: 'The process of reprocessing used nuclear fuel to create uranium-238.'
   },
   uranium_fuel_cell: {
     name: 'uranium_fuel_cell',
@@ -4845,7 +5105,8 @@ module.exports = {
         name: 'uranium_fuel_cell',
         amount: 10
       }
-    ]
+    ],
+    ui_name: 'Uranium fuel cell'
   },
   heat_exchanger: {
     name: 'heat_exchanger',
@@ -4870,7 +5131,9 @@ module.exports = {
         name: 'heat_exchanger',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Heat exchanger',
+    description: 'Exchanges heat between a heat source and a fluid.'
   },
   heat_pipe: {
     name: 'heat_pipe',
@@ -4891,7 +5154,8 @@ module.exports = {
         name: 'heat_pipe',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Heat pipe'
   },
   steam_turbine: {
     name: 'steam_turbine',
@@ -4916,7 +5180,9 @@ module.exports = {
         name: 'steam_turbine',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Steam turbine',
+    description: 'Consumes steam to create electric energy.'
   },
   laser_turret: {
     name: 'laser_turret',
@@ -4941,7 +5207,8 @@ module.exports = {
         name: 'laser_turret',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Laser turret'
   },
   flamethrower_turret: {
     name: 'flamethrower_turret',
@@ -4970,7 +5237,9 @@ module.exports = {
         name: 'flamethrower_turret',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Flamethrower turret',
+    description: 'Fires a stream of burning liquid at enemies.'
   },
   artillery_turret: {
     name: 'artillery_turret',
@@ -4999,7 +5268,9 @@ module.exports = {
         name: 'artillery_turret',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Artillery turret',
+    description: 'Long range cannon targeting enemy bases.'
   },
   fill_water_barrel: {
     name: 'fill_water_barrel',
@@ -5023,7 +5294,8 @@ module.exports = {
         name: 'water_barrel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Fill water barrel'
   },
   empty_water_barrel: {
     name: 'empty_water_barrel',
@@ -5047,7 +5319,8 @@ module.exports = {
         name: 'empty_barrel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Empty water barrel'
   },
   fill_crude_oil_barrel: {
     name: 'fill_crude_oil_barrel',
@@ -5071,7 +5344,8 @@ module.exports = {
         name: 'crude_oil_barrel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Fill crude oil barrel'
   },
   empty_crude_oil_barrel: {
     name: 'empty_crude_oil_barrel',
@@ -5095,7 +5369,8 @@ module.exports = {
         name: 'empty_barrel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Empty crude oil barrel'
   },
   fill_heavy_oil_barrel: {
     name: 'fill_heavy_oil_barrel',
@@ -5119,7 +5394,8 @@ module.exports = {
         name: 'heavy_oil_barrel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Fill heavy oil barrel'
   },
   empty_heavy_oil_barrel: {
     name: 'empty_heavy_oil_barrel',
@@ -5143,7 +5419,8 @@ module.exports = {
         name: 'empty_barrel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Empty heavy oil barrel'
   },
   fill_light_oil_barrel: {
     name: 'fill_light_oil_barrel',
@@ -5167,7 +5444,8 @@ module.exports = {
         name: 'light_oil_barrel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Fill light oil barrel'
   },
   empty_light_oil_barrel: {
     name: 'empty_light_oil_barrel',
@@ -5191,7 +5469,8 @@ module.exports = {
         name: 'empty_barrel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Empty light oil barrel'
   },
   fill_petroleum_gas_barrel: {
     name: 'fill_petroleum_gas_barrel',
@@ -5215,7 +5494,8 @@ module.exports = {
         name: 'petroleum_gas_barrel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Fill petroleum gas barrel'
   },
   empty_petroleum_gas_barrel: {
     name: 'empty_petroleum_gas_barrel',
@@ -5239,7 +5519,8 @@ module.exports = {
         name: 'empty_barrel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Empty petroleum gas barrel'
   },
   fill_lubricant_barrel: {
     name: 'fill_lubricant_barrel',
@@ -5263,7 +5544,8 @@ module.exports = {
         name: 'lubricant_barrel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Fill lubricant barrel'
   },
   empty_lubricant_barrel: {
     name: 'empty_lubricant_barrel',
@@ -5287,7 +5569,8 @@ module.exports = {
         name: 'empty_barrel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Empty lubricant barrel'
   },
   fill_sulfuric_acid_barrel: {
     name: 'fill_sulfuric_acid_barrel',
@@ -5311,7 +5594,8 @@ module.exports = {
         name: 'sulfuric_acid_barrel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Fill sulfuric acid barrel'
   },
   empty_sulfuric_acid_barrel: {
     name: 'empty_sulfuric_acid_barrel',
@@ -5335,6 +5619,7 @@ module.exports = {
         name: 'empty_barrel',
         amount: 1
       }
-    ]
+    ],
+    ui_name: 'Empty sulfuric acid barrel'
   }
 }

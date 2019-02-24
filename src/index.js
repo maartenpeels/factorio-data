@@ -18,6 +18,11 @@ execSync(`node treesAndRocks.js ${rawData} ${outputDirectory}prototypes/treesAnd
 execSync(`node items.js ${rawData} ${outputDirectory}prototypes/items.js`, options)
 execSync(`node inventoryLayout.js ${rawData} ${outputDirectory}prototypes/inventoryLayout.js`, options)
 
+;['entities', 'items', 'recipes'].forEach(f => {
+    const file = '../data/prototypes/' + f
+    execSync(`node translations.js ${factorioDataDirectory} ${file}`, options)
+})
+
 execSync(`node sprites/entities.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
 execSync(`node sprites/treesAndRocks.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
 execSync(`node sprites/items.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
