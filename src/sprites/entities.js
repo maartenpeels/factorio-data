@@ -6,16 +6,6 @@ const entities = require('../../data/prototypes/entities')
 const factorioDataDirectory = process.argv[2]
 const spritesheetsOutDir = process.argv[3]
 
-function stringMatchAll(string, regex) {
-    const res = []
-    let match = regex.exec(string)
-    while (match !== null) {
-        res.push(match[1])
-        match = regex.exec(string)
-    }
-    return res
-}
-
 Array.prototype.unique = function () {
     return Array.from(new Set(this).values())
 }
@@ -24,7 +14,7 @@ Array.prototype.diff = function(a) {
     return this.filter(i => a.indexOf(i) < 0)
 }
 
-const spritePaths = stringMatchAll(JSON.stringify(entities), /"((__base__\/)?graphics\/entity\/.+?)"/g)
+const spritePaths = utils.stringMatchAll(JSON.stringify(entities), /"((__base__\/)?graphics\/entity\/.+?)"/g)
     .map(p => p.replace(/__base__\//g, ''))
     .unique()
     .map(p => factorioDataDirectory + 'base/' + p)

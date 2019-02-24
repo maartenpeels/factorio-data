@@ -1,10 +1,6 @@
-const fse = require('fs-extra')
-const javascriptStringify = require('javascript-stringify')
+const utils = require('./utils')
 
-const rawDataString = fse.readFileSync(process.argv[2]).toString()
-    .replace(/("(?!__base__|__core__)[^"\n]+?-[^"\n]+?")/g, (_, capture) => capture.replace(/-/g, '_'))
-
-const rawData = JSON.parse(rawDataString)
+const rawData = utils.loadRawData(process.argv[2])
 const outputFile = process.argv[3]
 
 const RECIPES = {}
@@ -31,7 +27,4 @@ for (const k in rawData.recipe) {
 }
 
 console.log('Recipes: ' + Object.keys(rawData.recipe).length)
-
-fse.writeFileSync(outputFile, 'module.exports = ' + javascriptStringify(JSON.parse(JSON.stringify(RECIPES)
-    .replace(/"(__base__|__core__)\/(.+?)"/g, '"$2"')
-), null, 2))
+utils.writeJSObject(outputFile, RECIPES)

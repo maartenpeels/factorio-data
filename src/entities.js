@@ -1,29 +1,10 @@
-const fse = require('fs-extra')
-const javascriptStringify = require('javascript-stringify')
+const utils = require('./utils')
 
-const rawDataString = fse.readFileSync(process.argv[2]).toString()
-    // pipe_to_ground uses up, right, down, left
-    .replace(/"up"/g, '"north"')
-    .replace(/"right"/g, '"east"')
-    .replace(/"down"/g, '"south"')
-    .replace(/"left"/g, '"west"')
-    .replace(/("(?!__base__|__core__)[^"\n]+?-[^"\n]+?")/g, (_, capture) => capture.replace(/-/g, '_'))
-
-const rawData = JSON.parse(rawDataString)
+const rawData = utils.loadRawData(process.argv[2])
 const outputFile = process.argv[3]
 
-function stringMatchAll(string, regex) {
-    const res = []
-    let match = regex.exec(string)
-    while (match !== null) {
-        res.push(match[1])
-        match = regex.exec(string)
-    }
-    return res
-}
-
 let entities = {}
-const placeableEntities = stringMatchAll(rawDataString, /"place_result": "(.+?)"/g).concat(['curved_rail'])
+const placeableEntities = utils.stringMatchAll(JSON.stringify(rawData), /"place_result":"(.+?)"/g).concat(['curved_rail'])
 function findAllEntities(data) {
     if (data.constructor === Object) {
         if (placeableEntities.includes(data.name) && data.hasOwnProperty('collision_box') && (!data.flags.includes('placeable_off_grid') || data.name === 'land_mine')) {
@@ -127,7 +108,4 @@ Object.keys(entities).forEach(entK =>
 )
 
 console.log('Entities: ' + Object.keys(entities).length)
-
-fse.writeFileSync(outputFile, 'module.exports = ' + javascriptStringify(JSON.parse(JSON.stringify(entities)
-    .replace(/"(__base__|__core__)\/(.+?)"/g, '"$2"')
-), null, 2))
+utils.writeJSObject(outputFile, entities)
