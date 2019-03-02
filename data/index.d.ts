@@ -269,11 +269,11 @@ declare module FD {
         drawing_box?: number[][]
         drawing_boxes?: DrawingBoxes
 
-        animation?: SpriteData | SpriteLayers | DirectionalSpriteData
+        animation?: SpriteData | SpriteLayers | DirectionalSpriteData | DirectionalSpriteLayers
         animations?: SpriteData | DirectionalSpriteData | DirectionalSpriteLayers
         picture?: SpriteData | SpriteLayers | DirectionalSpriteData
         pictures?: SpriteData | SpriteLayers | DirectionalSpriteData | PipePictures | WallPictures | RailPictures | StorageTankPictures
-        base_picture?: SpriteData | SpriteLayers | DirectionalSpriteData | SpriteSheets
+        base_picture?: SpriteData | SpriteLayers | DirectionalSpriteData | SpriteSheets | DirectionalSpriteLayers
         structure?: DirectionalSpriteData | DirectionalSpriteLayers | UndergroundBeltStructure
 
         belt_horizontal?: SpriteData
