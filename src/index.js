@@ -29,6 +29,6 @@ execSync(`node sprites/items.js ${factorioDataDirectory} ${outputDirectory}graph
 execSync(`node sprites/tiles.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
 execSync(`node sprites/utility.js ${factorioDataDirectory} ${outputDirectory}graphics/`, options)
 
-glob('../data/graphics/*.png', (_, files) => {
-    files.forEach(f => execSync(`..\\lib\\cwebp -lossless ${f} -o ${f.replace('png', 'webp')}`, options))
-})
+// glob('../data/graphics/*.png', (_, files) => {
+//     files.forEach(f => execSync(`..\\lib\\cwebp -lossless ${f} -o ${f.replace('png', 'webp')}`, options))
+// })
