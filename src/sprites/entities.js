@@ -43,9 +43,6 @@ const HRCompleteSpritePaths = HRSpritePaths.concat(LROnlySpritePaths)
 
 console.log('Entity sprites:', LRCompleteSpritePaths.length)
 
-LRCompleteSpritePaths.forEach(p => fse.copySync(p, p.replace(factorioDataDirectory + 'base/graphics/entity/', spritesheetsOutDir + 'entity/LR/')))
-HRCompleteSpritePaths.forEach(p => fse.copySync(p, p.replace(factorioDataDirectory + 'base/graphics/entity/', spritesheetsOutDir + 'entity/HR/')))
-
 cropAndGenSpritesheet(LRCompleteSpritePaths, 'LREntitySpritesheet', 'LR_temp/')
 cropAndGenSpritesheet(HRCompleteSpritePaths, 'HREntitySpritesheet', 'HR_temp/')
 
