@@ -1,87 +1,90 @@
-const fs = require('fs')
+const fse = require('fs-extra')
+const glob = require('glob')
 const luainjs = require('lua-in-js')
 const execSync = require('child_process').execSync
 
 const factorioDirectory = process.argv[2]
 const outputFile = process.argv[3]
 
-const reqLualibRegex = /.*?require\s*\(*['"]([^.]+?)['"]\)*/g
-const reqRegex = /require\s*\(*['"](.+?)['"]\)*/g
-
-const loadedModules = []
-
-function searchLoadRemoveDependencies(contents, regex, baseFolder) {
-    const newModules = []
-    let match = regex.exec(contents)
-    while (match !== null) {
-        const dep = match[1]
-        if (!loadedModules.includes(dep)) {
-            //load module
-            loadedModules.push(dep)
-            newModules.push({
-                index: match.index,
-                name: dep
-            })
-        }
-        match = regex.exec(contents)
-    }
-
-    let offset = 0
-    for (let i = 0; i < newModules.length; i++) {
-        const startPart = contents.slice(0, newModules[i].index + offset)
-        const endPart = contents.slice(newModules[i].index + offset)
-        const depData = readRequireOfFile(baseFolder, newModules[i].name.replace(/\./g, '/') + '.lua') + '\n'
-        contents = startPart + depData + endPart
-        offset += depData.length
-    }
-
-    // remove all requires
-    contents = contents.replace(regex, '')
-
-    return contents
-}
-
-function readRequireOfFile(baseFolder, pathCon) {
-    let contents = fs.readFileSync(factorioDirectory + baseFolder + pathCon).toString()
-
-    contents = searchLoadRemoveDependencies(contents, reqLualibRegex, 'core/lualib/')
-    contents = searchLoadRemoveDependencies(contents, reqRegex, baseFolder)
-
-    contents = contents
-        // remove last return
-        .replace(/return\s*\b.+?\b\s*$/g, '')
-
-        // if a return is an obj, convert the return with the filename
-        .replace(/return\s(\{(.|\n)+?\})\s*$/g, (_, capture) =>
-            [...pathCon.split('/')].pop().replace('.lua', '') + ' = ' + capture
-        )
-
-    if (pathCon.includes('autoplace_utils')) {
-        contents = contents.replace(/M/g, 'autoplace_utils')
-    }
-
-    return contents
-}
-
-const fileOrder = [
-    'core/lualib/dataloader.lua',
-    'core/data.lua',
-    'base/data.lua',
-    'base/data-updates.lua'
+const baseModules = [
+    '__core__.lualib.dataloader',
+    '__core__.data',
+    '__base__.data',
+    '__base__.data-updates'
 ]
 
-const luaFileData =
-    'defines = ' + fs.readFileSync('./defines.lua').toString() +
-    fileOrder
-        .map(path => readRequireOfFile(path.split('/')[0] + '/', path.split('/').slice(1).join('/')))
-        .reduce((acc, data) => acc + data + '\n')
-        // var = require(...) results in var = var = {}
-        .replace(/\b[a-zA-Z_-]+?\b\s*(=\s*\b[a-zA-Z_-]+?\b\s*)=\s*\{/g, (match, capture) => match.replace(capture, ''))
+const lualibFolder = factorioDirectory + 'core/lualib/'
+const lualibModules = glob
+    .sync(lualibFolder + '**/*.lua')
+    .map(path => path
+        .replace(lualibFolder, '')
+        .replace(/\.lua/g, '')
+        .replace(/\//g, '.'))
 
-// fs.writeFileSync('./temp.lua', luaFileData)
+const loadedModules = []
+const modulesContent = []
+
+const getModuleName = (moduleName) =>
+    '__' + moduleName.replace(/__/g, '').replace(/\.|-/g, '_') + '__'
+
+function addModuleFrom(moduleName) {
+    const modName = moduleName.split('.')[0]
+
+    const originalModuleContent = fse.readFileSync(
+        factorioDirectory +
+        moduleName
+            .replace('__base__', 'base')
+            .replace('__core__', 'core')
+            .replace(/\./g, '/') +
+        '.lua'
+    ).toString()
+
+    let moduleContent = originalModuleContent
+        .replace(/require\s*\(*['"](.+?)['"]\)*/g, (_, capture) => {
+            const mod = lualibModules.includes(capture)
+                ? ('__core__.lualib.' + capture)
+                : (modName + '.' + capture)
+
+            if (!loadedModules.includes(mod)) {
+                addModuleFrom(mod)
+                loadedModules.push(mod)
+            }
+
+            return getModuleName(mod) + '()'
+        })
+
+    const mN = getModuleName(moduleName)
+    moduleContent =
+        '\nfunction ' + mN + '()\n' +
+        '\tlocal function wrapper()\n' +
+        '\n' + moduleContent.split('\n').map(line => '\t\t' + line).join('\n') + '\n' +
+        '\tend\n' +
+        '\tif LOADED_MODULES.' + mN + ' == nil then\n' +
+        '\t\tlocal ret = wrapper()\n' +
+        '\t\tif ret == nil then\n' +
+        '\t\t\tret = true\n' +
+        '\t\tend\n' +
+        '\t\tLOADED_MODULES.' + mN + ' = ret\n' +
+        '\tend\n' +
+        '\treturn LOADED_MODULES.' + mN + '\n' +
+        'end\n'
+
+    modulesContent.push(moduleContent)
+}
+
+baseModules.forEach(addModuleFrom)
+
+const luaFileData =
+    'LOADED_MODULES = {}\n' +
+    'defines = ' + fse.readFileSync('./defines.lua').toString() + '\n' +
+    modulesContent.join('\n') + '\n' +
+    // call base modules
+    baseModules.map(m => getModuleName(m) + '()').join('\n')
+
+// fse.writeFileSync('./temp.lua', luaFileData)
 
 const data = luainjs.parser.parse(luaFileData)
-fs.writeFileSync('./temp.js', `
+fse.writeFileSync('./temp.js', `
 const fs = require("fs");
 require("lua-in-js").runtime;
 ${data}
