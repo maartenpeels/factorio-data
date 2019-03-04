@@ -103,7 +103,7 @@ function cropAndGenSpritesheet(paths, spritesheetName, tempDir) {
         ['^(hr-)*(fast|express)-transport-belt', 32, 1],
         ['beacon-antenna.png', 8, 4],
         ['roboport-door-', 16, 1],
-        ['gate', 8, 2],
+        ['^(hr-)*gate-', 8, 2],
         ['rocket-silo-arms', 32, 1],
         ['rocket-silo-turbine', 8, 4],
         ['rail-signal\.png', 3, 1],
