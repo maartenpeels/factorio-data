@@ -825,8 +825,8 @@ declare module FD {
     }
     interface WallPictures {
         single: SpriteLayers
-        straight_vertical: SpriteLayers[]
-        straight_horizontal: SpriteLayers[]
+        straight_vertical: SpriteLayers
+        straight_horizontal: SpriteLayers
         corner_right_down: SpriteLayers
         corner_left_down: SpriteLayers
         t_up: SpriteLayers
