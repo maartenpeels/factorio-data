@@ -33,7 +33,7 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'stone_particle',
-      mining_time: 8,
+      mining_time: 3,
       results: [
         {
           name: 'stone',
@@ -406,7 +406,7 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'stone_particle',
-      mining_time: 5,
+      mining_time: 2,
       result: 'stone',
       count: 20
     },
@@ -847,7 +847,7 @@ module.exports = {
     max_health: 500,
     minable: {
       mining_particle: 'stone_particle',
-      mining_time: 5,
+      mining_time: 2,
       results: [
         {
           name: 'stone',
@@ -966,7 +966,7 @@ module.exports = {
       },
       {
         filename: 'graphics/decorative/sand-rock/sand-rock-big-06.png',
-        width: 78,
+        width: 77,
         height: 66,
         shift: [
           0.16875,
@@ -1042,7 +1042,7 @@ module.exports = {
       },
       {
         filename: 'graphics/decorative/sand-rock/sand-rock-big-10.png',
-        width: 100,
+        width: 99,
         height: 77,
         shift: [
           0.325,
@@ -1191,8 +1191,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 2,
-      result: 'raw_wood',
+      mining_time: 0.55,
+      result: 'wood',
       count: 4
     },
     corpse: 'tree_01_stump',
@@ -1238,23 +1238,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 177,
-          height: 150,
-          frame_count: 4,
+          width: 73,
+          height: 171,
+          frame_count: 1,
           shift: [
-            0.921875,
-            -1.1875
+            0,
+            -2.1875
           ],
           hr_version: {
-            width: 354,
-            height: 298,
+            width: 140,
+            height: 340,
             shift: [
-              0.953125,
-              -1.171875
+              0.0625,
+              -2.15625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-a-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -1265,19 +1265,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 102,
-          height: 115,
+          width: 93,
+          height: 151,
           frame_count: 3,
           shift: [
-            -0.34375,
-            -2.046875
+            -0.0625,
+            -2.3125
           ],
           hr_version: {
-            width: 204,
-            height: 231,
+            width: 184,
+            height: 306,
             shift: [
-              -0.328125,
-              -2.0234375
+              -0.03125,
+              -2.3125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-a-leaves.png',
@@ -1322,6 +1322,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/01/tree-01-a-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 163,
+          height: 67,
+          frame_count: 4,
+          shift: [
+            1.875,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 324,
+            height: 134,
+            shift: [
+              1.90625,
+              -0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/01/hr-tree-01-a-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -1330,23 +1361,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 179,
-          height: 149,
-          frame_count: 4,
+          width: 65,
+          height: 165,
+          frame_count: 1,
           shift: [
-            1.546875,
-            -1.265625
+            0.125,
+            -2.125
           ],
           hr_version: {
-            width: 358,
-            height: 298,
+            width: 132,
+            height: 326,
             shift: [
-              1.5625,
-              -1.25
+              0.125,
+              -2.0625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-b-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -1357,19 +1388,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 89,
-          height: 107,
+          width: 91,
+          height: 157,
           frame_count: 3,
           shift: [
-            0.109375,
-            -2.171875
+            0,
+            -2.25
           ],
           hr_version: {
-            width: 178,
-            height: 215,
+            width: 182,
+            height: 316,
             shift: [
-              0.125,
-              -2.1640625
+              0.03125,
+              -2.25
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-b-leaves.png',
@@ -1414,6 +1445,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/01/tree-01-b-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 159,
+          height: 67,
+          frame_count: 4,
+          shift: [
+            1.9375,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 312,
+            height: 126,
+            shift: [
+              2,
+              0
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/01/hr-tree-01-b-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -1422,23 +1484,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 156,
-          height: 146,
-          frame_count: 4,
+          width: 71,
+          height: 167,
+          frame_count: 1,
           shift: [
-            1.625,
-            -1.0625
+            -0.1875,
+            -2.1875
           ],
           hr_version: {
-            width: 313,
-            height: 291,
+            width: 136,
+            height: 330,
             shift: [
-              1.6328125,
-              -1.0546875
+              -0.125,
+              -2.125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-c-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -1449,19 +1511,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 94,
-          height: 104,
+          width: 93,
+          height: 157,
           frame_count: 3,
           shift: [
-            0.1875,
-            -2
+            -0.0625,
+            -2.3125
           ],
           hr_version: {
-            width: 190,
-            height: 210,
+            width: 180,
+            height: 308,
             shift: [
-              0.203125,
-              -1.984375
+              0,
+              -2.25
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-c-leaves.png',
@@ -1506,6 +1568,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/01/tree-01-c-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 155,
+          height: 65,
+          frame_count: 4,
+          shift: [
+            1.8125,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 306,
+            height: 132,
+            shift: [
+              1.84375,
+              0
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/01/hr-tree-01-c-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -1514,23 +1607,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 176,
-          height: 152,
-          frame_count: 4,
+          width: 57,
+          height: 163,
+          frame_count: 1,
           shift: [
-            1.71875,
-            -1.09375
+            0,
+            -2.125
           ],
           hr_version: {
-            width: 351,
-            height: 302,
+            width: 108,
+            height: 324,
             shift: [
-              1.7265625,
-              -1.078125
+              0.0625,
+              -2.09375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-d-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -1541,19 +1634,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 102,
-          height: 106,
+          width: 95,
+          height: 153,
           frame_count: 3,
           shift: [
-            0.375,
-            -1.96875
+            0,
+            -2.25
           ],
           hr_version: {
-            width: 205,
-            height: 212,
+            width: 188,
+            height: 310,
             shift: [
-              0.3828125,
-              -1.9375
+              0.03125,
+              -2.25
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-d-leaves.png',
@@ -1598,6 +1691,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/01/tree-01-d-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 145,
+          height: 67,
+          frame_count: 4,
+          shift: [
+            1.8125,
+            -0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 288,
+            height: 130,
+            shift: [
+              1.84375,
+              -0.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/01/hr-tree-01-d-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -1606,23 +1730,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 174,
-          height: 141,
-          frame_count: 4,
+          width: 69,
+          height: 165,
+          frame_count: 1,
           shift: [
-            1.75,
-            -1.109375
+            0.0625,
+            -2.125
           ],
           hr_version: {
-            width: 346,
-            height: 281,
+            width: 138,
+            height: 324,
             shift: [
-              1.765625,
-              -1.0859375
+              0.0625,
+              -2.0625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-e-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -1633,19 +1757,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 105,
-          height: 110,
+          width: 97,
+          height: 143,
           frame_count: 3,
           shift: [
-            0.515625,
-            -1.71875
+            0.0625,
+            -2.125
           ],
           hr_version: {
-            width: 212,
-            height: 221,
+            width: 190,
+            height: 300,
             shift: [
-              0.53125,
-              -1.7109375
+              0.09375,
+              -2.21875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-e-leaves.png',
@@ -1690,6 +1814,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/01/tree-01-e-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 159,
+          height: 69,
+          frame_count: 4,
+          shift: [
+            2.0625,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 314,
+            height: 136,
+            shift: [
+              2.09375,
+              0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/01/hr-tree-01-e-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -1698,23 +1853,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 176,
-          height: 141,
-          frame_count: 4,
+          width: 63,
+          height: 165,
+          frame_count: 1,
           shift: [
-            1.3125,
-            -0.703125
+            -0.1875,
+            -2.0625
           ],
           hr_version: {
-            width: 350,
-            height: 280,
+            width: 118,
+            height: 326,
             shift: [
-              1.328125,
-              -0.6875
+              -0.125,
+              -2.03125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-f-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -1725,19 +1880,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 95,
-          height: 101,
+          width: 97,
+          height: 153,
           frame_count: 3,
           shift: [
-            0.015625,
-            -1.453125
+            -0.125,
+            -2.125
           ],
           hr_version: {
-            width: 191,
-            height: 203,
+            width: 190,
+            height: 304,
             shift: [
-              0.0234375,
-              -1.4296875
+              -0.09375,
+              -2.09375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-f-leaves.png',
@@ -1782,6 +1937,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/01/tree-01-f-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 151,
+          height: 71,
+          frame_count: 4,
+          shift: [
+            1.75,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 304,
+            height: 140,
+            shift: [
+              1.75,
+              0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/01/hr-tree-01-f-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -1790,23 +1976,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 164,
-          height: 150,
-          frame_count: 4,
+          width: 71,
+          height: 147,
+          frame_count: 1,
           shift: [
-            0.625,
-            -0.75
+            -0.0625,
+            -1.875
           ],
           hr_version: {
-            width: 328,
-            height: 301,
+            width: 142,
+            height: 294,
             shift: [
-              0.640625,
-              -0.7421875
+              -0.0625,
+              -1.84375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-g-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -1817,19 +2003,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 96,
-          height: 119,
+          width: 93,
+          height: 139,
           frame_count: 3,
           shift: [
-            -0.5625,
-            -1.578125
+            -0.125,
+            -1.9375
           ],
           hr_version: {
-            width: 193,
-            height: 239,
+            width: 184,
+            height: 274,
             shift: [
-              -0.5546875,
-              -1.5546875
+              -0.09375,
+              -1.90625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-g-leaves.png',
@@ -1874,6 +2060,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/01/tree-01-g-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 127,
+          height: 69,
+          frame_count: 4,
+          shift: [
+            1.25,
+            -0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 252,
+            height: 130,
+            shift: [
+              1.28125,
+              -0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/01/hr-tree-01-g-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -1882,23 +2099,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 181,
-          height: 144,
-          frame_count: 4,
+          width: 57,
+          height: 151,
+          frame_count: 1,
           shift: [
-            0.828125,
-            -1.03125
+            0.125,
+            -1.9375
           ],
           hr_version: {
-            width: 360,
-            height: 288,
+            width: 116,
+            height: 296,
             shift: [
-              0.84375,
-              -1.015625
+              0.125,
+              -1.875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-h-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -1909,19 +2126,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 108,
-          height: 108,
+          width: 91,
+          height: 141,
           frame_count: 3,
           shift: [
-            -0.625,
-            -1.84375
+            0,
+            -2
           ],
           hr_version: {
-            width: 216,
-            height: 216,
+            width: 180,
+            height: 282,
             shift: [
-              -0.625,
-              -1.84375
+              0.03125,
+              -1.96875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-h-leaves.png',
@@ -1966,6 +2183,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/01/tree-01-h-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 135,
+          height: 67,
+          frame_count: 4,
+          shift: [
+            1.6875,
+            -0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 266,
+            height: 130,
+            shift: [
+              1.71875,
+              -0.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/01/hr-tree-01-h-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -1974,23 +2222,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 165,
-          height: 162,
-          frame_count: 4,
+          width: 63,
+          height: 123,
+          frame_count: 1,
           shift: [
-            1.296875,
-            -0.6875
+            -0.0625,
+            -1.5625
           ],
           hr_version: {
-            width: 329,
-            height: 323,
+            width: 120,
+            height: 244,
             shift: [
-              1.3046875,
-              -0.6640625
+              0,
+              -1.53125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-i-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -2001,19 +2249,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 88,
-          height: 121,
+          width: 79,
+          height: 115,
           frame_count: 3,
           shift: [
-            0,
-            -1.484375
+            -0.125,
+            -1.625
           ],
           hr_version: {
-            width: 177,
-            height: 244,
+            width: 152,
+            height: 234,
             shift: [
-              0.0234375,
-              -1.46875
+              -0.0625,
+              -1.625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-i-leaves.png',
@@ -2058,6 +2306,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/01/tree-01-i-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 113,
+          height: 61,
+          frame_count: 4,
+          shift: [
+            1.5625,
+            0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 228,
+            height: 118,
+            shift: [
+              1.5625,
+              0.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/01/hr-tree-01-i-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -2066,23 +2345,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 132,
-          height: 115,
-          frame_count: 4,
+          width: 55,
+          height: 127,
+          frame_count: 1,
           shift: [
-            1.09375,
-            -0.921875
+            0,
+            -1.625
           ],
           hr_version: {
-            width: 264,
-            height: 229,
+            width: 110,
+            height: 250,
             shift: [
-              1.109375,
-              -0.9140625
+              0,
+              -1.5625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-j-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -2093,19 +2372,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 89,
-          height: 90,
+          width: 67,
+          height: 115,
           frame_count: 3,
           shift: [
-            0.140625,
-            -1.65625
+            0,
+            -1.625
           ],
           hr_version: {
-            width: 180,
-            height: 179,
+            width: 134,
+            height: 228,
             shift: [
-              0.15625,
-              -1.6328125
+              0,
+              -1.59375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/01/hr-tree-01-j-leaves.png',
@@ -2150,8 +2429,299 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/01/tree-01-j-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 109,
+          height: 53,
+          frame_count: 4,
+          shift: [
+            1.5,
+            -0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 212,
+            height: 104,
+            shift: [
+              1.5625,
+              -0.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/01/hr-tree-01-j-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/01/tree-01-k-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 129,
+          height: 111,
+          frame_count: 1,
+          shift: [
+            0.3125,
+            -0.4375
+          ],
+          hr_version: {
+            width: 258,
+            height: 224,
+            shift: [
+              0.3125,
+              -0.40625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/01/hr-tree-01-k-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/01/tree-01-k-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 123,
+          height: 95,
+          frame_count: 3,
+          shift: [
+            0.3125,
+            -0.5
+          ],
+          hr_version: {
+            width: 250,
+            height: 206,
+            shift: [
+              0.3125,
+              -0.375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/01/hr-tree-01-k-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/01/tree-01-k-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 129,
+          height: 107,
+          frame_count: 4,
+          shift: [
+            0.375,
+            -0.4375
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 256,
+            height: 212,
+            shift: [
+              0.40625,
+              -0.40625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/01/hr-tree-01-k-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/01/tree-01-l-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 309,
+          height: 59,
+          frame_count: 1,
+          shift: [
+            1,
+            0.1875
+          ],
+          hr_version: {
+            width: 620,
+            height: 116,
+            shift: [
+              1,
+              0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/01/hr-tree-01-l-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/01/tree-01-l-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 171,
+          height: 57,
+          frame_count: 3,
+          shift: [
+            -1.0625,
+            0
+          ],
+          hr_version: {
+            width: 354,
+            height: 114,
+            shift: [
+              -0.96875,
+              0
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/01/hr-tree-01-l-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/01/tree-01-l-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 185,
+          height: 49,
+          frame_count: 4,
+          shift: [
+            -0.9375,
+            0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 366,
+            height: 94,
+            shift: [
+              -0.90625,
+              0.15625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/01/hr-tree-01-l-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       }
+    ],
+    variation_weights: [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0.3,
+      0.3,
+      0.05,
+      0.05
     ],
     colors: [
       {
@@ -2213,8 +2783,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 2,
-      result: 'raw_wood',
+      mining_time: 0.55,
+      result: 'wood',
       count: 4
     },
     corpse: 'tree_02_stump',
@@ -2260,23 +2830,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 225,
-          height: 169,
-          frame_count: 4,
+          width: 82,
+          height: 162,
+          frame_count: 1,
           shift: [
-            1.921875,
-            -1.453125
+            0,
+            -2.0625
           ],
           hr_version: {
-            width: 448,
-            height: 340,
+            width: 162,
+            height: 324,
             shift: [
-              1.921875,
-              -1.484375
+              0.03125,
+              -2.03125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-a-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -2287,19 +2857,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 95,
-          height: 131,
+          width: 96,
+          height: 154,
           frame_count: 3,
           shift: [
-            -0.140625,
-            -2.203125
+            -0.0625,
+            -2.3125
           ],
           hr_version: {
-            width: 190,
-            height: 261,
+            width: 184,
+            height: 310,
             shift: [
-              -0.140625,
-              -2.2109375
+              0,
+              -2.3125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-a-leaves.png',
@@ -2344,6 +2914,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-a-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 196,
+          height: 64,
+          frame_count: 4,
+          shift: [
+            2.8125,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 384,
+            height: 130,
+            shift: [
+              2.875,
+              -0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-a-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -2352,23 +2953,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 279,
-          height: 193,
-          frame_count: 4,
+          width: 76,
+          height: 142,
+          frame_count: 1,
           shift: [
-            0.984375,
-            -1.359375
+            -0.125,
+            -1.875
           ],
           hr_version: {
-            width: 558,
-            height: 385,
+            width: 150,
+            height: 286,
             shift: [
-              1,
-              -1.3515625
+              -0.09375,
+              -1.84375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-b-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -2379,19 +2980,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 98,
-          height: 143,
+          width: 92,
+          height: 136,
           frame_count: 3,
           shift: [
-            -0.1875,
-            -2.203125
+            -0.0625,
+            -1.9375
           ],
           hr_version: {
-            width: 194,
-            height: 285,
+            width: 184,
+            height: 274,
             shift: [
-              -0.1875,
-              -2.1953125
+              -0.0625,
+              -1.9375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-b-leaves.png',
@@ -2436,6 +3037,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-b-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 186,
+          height: 68,
+          frame_count: 4,
+          shift: [
+            2.6875,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 372,
+            height: 134,
+            shift: [
+              2.6875,
+              0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-b-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -2444,23 +3076,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 249,
-          height: 188,
-          frame_count: 4,
+          width: 72,
+          height: 140,
+          frame_count: 1,
           shift: [
-            2.171875,
-            -1.59375
+            -0.125,
+            -1.8125
           ],
           hr_version: {
-            width: 499,
-            height: 377,
+            width: 144,
+            height: 280,
             shift: [
-              2.1640625,
-              -1.5859375
+              -0.125,
+              -1.78125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-c-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -2471,19 +3103,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 106,
-          height: 154,
+          width: 90,
+          height: 130,
           frame_count: 3,
           shift: [
-            -0.09375,
-            -2.59375
+            -0.0625,
+            -1.9375
           ],
           hr_version: {
-            width: 213,
-            height: 309,
+            width: 178,
+            height: 264,
             shift: [
-              -0.1015625,
-              -2.6015625
+              -0.03125,
+              -1.9375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-c-leaves.png',
@@ -2528,6 +3160,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-c-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 176,
+          height: 64,
+          frame_count: 4,
+          shift: [
+            2.375,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 352,
+            height: 128,
+            shift: [
+              2.40625,
+              -0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-c-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -2536,23 +3199,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 271,
-          height: 187,
-          frame_count: 4,
+          width: 72,
+          height: 168,
+          frame_count: 1,
           shift: [
-            2.828125,
-            -1.578125
+            0.1875,
+            -2.1875
           ],
           hr_version: {
-            width: 541,
-            height: 374,
+            width: 142,
+            height: 336,
             shift: [
-              2.8203125,
-              -1.59375
+              0.21875,
+              -2.1875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-d-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -2563,19 +3226,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 119,
-          height: 154,
+          width: 90,
+          height: 166,
           frame_count: 3,
           shift: [
-            0.421875,
-            -2.1875
+            0.1875,
+            -2.375
           ],
           hr_version: {
-            width: 238,
-            height: 309,
+            width: 180,
+            height: 330,
             shift: [
-              0.4375,
-              -2.1953125
+              0.1875,
+              -2.34375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-d-leaves.png',
@@ -2620,6 +3283,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-d-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 200,
+          height: 66,
+          frame_count: 4,
+          shift: [
+            2.9375,
+            -0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 402,
+            height: 134,
+            shift: [
+              2.9375,
+              -0.125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-d-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -2628,23 +3322,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 256,
-          height: 191,
-          frame_count: 4,
+          width: 86,
+          height: 144,
+          frame_count: 1,
           shift: [
-            2.28125,
-            -1.453125
+            0.0625,
+            -1.8125
           ],
           hr_version: {
-            width: 512,
-            height: 381,
+            width: 168,
+            height: 286,
             shift: [
-              2.296875,
-              -1.4453125
+              0.09375,
+              -1.78125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-e-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -2655,19 +3349,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 104,
-          height: 144,
+          width: 98,
+          height: 140,
           frame_count: 3,
           shift: [
-            -0.09375,
-            -2.28125
+            0,
+            -2
           ],
           hr_version: {
-            width: 207,
-            height: 286,
+            width: 194,
+            height: 276,
             shift: [
-              -0.0859375,
-              -2.28125
+              0.03125,
+              -1.96875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-e-leaves.png',
@@ -2712,59 +3406,965 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-e-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 204,
+          height: 70,
+          frame_count: 4,
+          shift: [
+            3,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 410,
+            height: 144,
+            shift: [
+              3,
+              0.1875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-e-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/02/tree-02-f-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 74,
+          height: 156,
+          frame_count: 1,
+          shift: [
+            -0.375,
+            -2
+          ],
+          hr_version: {
+            width: 144,
+            height: 310,
+            shift: [
+              -0.3125,
+              -1.96875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-f-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/02/tree-02-f-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 92,
+          height: 150,
+          frame_count: 3,
+          shift: [
+            -0.3125,
+            -2.125
+          ],
+          hr_version: {
+            width: 184,
+            height: 302,
+            shift: [
+              -0.3125,
+              -2.125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-f-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-f-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 170,
+          height: 64,
+          frame_count: 4,
+          shift: [
+            2.375,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 344,
+            height: 130,
+            shift: [
+              2.34375,
+              0
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-f-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/02/tree-02-g-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 86,
+          height: 140,
+          frame_count: 1,
+          shift: [
+            0.125,
+            -1.75
+          ],
+          hr_version: {
+            width: 168,
+            height: 282,
+            shift: [
+              0.1875,
+              -1.75
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-g-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/02/tree-02-g-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 100,
+          height: 136,
+          frame_count: 3,
+          shift: [
+            0.125,
+            -2.125
+          ],
+          hr_version: {
+            width: 198,
+            height: 270,
+            shift: [
+              0.15625,
+              -2.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-g-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-g-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 188,
+          height: 64,
+          frame_count: 4,
+          shift: [
+            2.6875,
+            -0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 384,
+            height: 122,
+            shift: [
+              2.625,
+              -0.125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-g-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/02/tree-02-h-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 92,
+          height: 124,
+          frame_count: 1,
+          shift: [
+            -0.3125,
+            -1.5
+          ],
+          hr_version: {
+            width: 182,
+            height: 244,
+            shift: [
+              -0.25,
+              -1.46875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-h-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/02/tree-02-h-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 96,
+          height: 116,
+          frame_count: 3,
+          shift: [
+            -0.25,
+            -1.8125
+          ],
+          hr_version: {
+            width: 192,
+            height: 234,
+            shift: [
+              -0.21875,
+              -1.8125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-h-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-h-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 154,
+          height: 60,
+          frame_count: 4,
+          shift: [
+            2.125,
+            0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 306,
+            height: 118,
+            shift: [
+              2.15625,
+              0.15625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-h-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/02/tree-02-i-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 62,
+          height: 102,
+          frame_count: 1,
+          shift: [
+            0.125,
+            -1.1875
+          ],
+          hr_version: {
+            width: 126,
+            height: 206,
+            shift: [
+              0.125,
+              -1.1875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-i-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/02/tree-02-i-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 78,
+          height: 96,
+          frame_count: 3,
+          shift: [
+            0.0625,
+            -1.5
+          ],
+          hr_version: {
+            width: 152,
+            height: 194,
+            shift: [
+              0.125,
+              -1.5
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-i-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-i-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 132,
+          height: 54,
+          frame_count: 4,
+          shift: [
+            1.875,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 262,
+            height: 110,
+            shift: [
+              1.90625,
+              0
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-i-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/02/tree-02-j-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 64,
+          height: 96,
+          frame_count: 1,
+          shift: [
+            -0.25,
+            -1.125
+          ],
+          hr_version: {
+            width: 128,
+            height: 194,
+            shift: [
+              -0.25,
+              -1.125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-j-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/02/tree-02-j-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 78,
+          height: 100,
+          frame_count: 3,
+          shift: [
+            -0.25,
+            -1.5
+          ],
+          hr_version: {
+            width: 152,
+            height: 198,
+            shift: [
+              -0.21875,
+              -1.46875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-j-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-j-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 124,
+          height: 56,
+          frame_count: 4,
+          shift: [
+            1.6875,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 248,
+            height: 108,
+            shift: [
+              1.71875,
+              -0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-j-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/02/tree-02-k-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 120,
+          height: 124,
+          frame_count: 1,
+          shift: [
+            0.125,
+            -0.625
+          ],
+          hr_version: {
+            width: 234,
+            height: 244,
+            shift: [
+              0.1875,
+              -0.59375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-k-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/02/tree-02-k-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 106,
+          height: 132,
+          frame_count: 3,
+          shift: [
+            0.4375,
+            -1
+          ],
+          hr_version: {
+            width: 216,
+            height: 264,
+            shift: [
+              0.40625,
+              -0.9375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-k-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-k-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 124,
+          height: 132,
+          frame_count: 4,
+          shift: [
+            0.375,
+            -0.625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 248,
+            height: 262,
+            shift: [
+              0.375,
+              -0.59375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-k-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/02/tree-02-l-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 202,
+          height: 62,
+          frame_count: 1,
+          shift: [
+            -0.25,
+            -0.25
+          ],
+          hr_version: {
+            width: 410,
+            height: 122,
+            shift: [
+              -0.28125,
+              -0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-l-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/02/tree-02-l-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 202,
+          height: 80,
+          frame_count: 3,
+          shift: [
+            -0.375,
+            -0.25
+          ],
+          hr_version: {
+            width: 404,
+            height: 156,
+            shift: [
+              -0.34375,
+              -0.1875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-l-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-l-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 208,
+          height: 70,
+          frame_count: 4,
+          shift: [
+            -0.0625,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 418,
+            height: 138,
+            shift: [
+              -0.0625,
+              0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-l-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       }
     ],
+    variation_weights: [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0.3,
+      0.3,
+      0.05,
+      0.05
+    ],
     colors: [
       {
-        r: 81,
-        g: 126,
-        b: 85
+        r: 136,
+        g: 167,
+        b: 97
       },
       {
-        r: 81,
-        g: 166,
-        b: 89
-      },
-      {
-        r: 101,
-        g: 191,
-        b: 110
-      },
-      {
-        r: 147,
-        g: 192,
-        b: 39
-      },
-      {
-        r: 162,
-        g: 222,
-        b: 19
-      },
-      {
-        r: 201,
-        g: 236,
-        b: 116
-      },
-      {
-        r: 179,
-        g: 199,
-        b: 12
+        r: 111,
+        g: 172,
+        b: 97
       },
       {
         r: 181,
-        g: 189,
-        b: 114
+        g: 183,
+        b: 99
       },
       {
-        r: 179,
-        g: 199,
-        b: 12
+        r: 142,
+        g: 164,
+        b: 87
       },
       {
-        r: 200,
+        r: 185,
         g: 214,
-        b: 83
+        b: 116
+      },
+      {
+        r: 145,
+        g: 172,
+        b: 88
+      },
+      {
+        r: 164,
+        g: 175,
+        b: 73
+      },
+      {
+        r: 171,
+        g: 180,
+        b: 103
+      },
+      {
+        r: 160,
+        g: 204,
+        b: 89
+      },
+      {
+        r: 135,
+        g: 180,
+        b: 101
       }
     ],
     darkness_of_burnt_tree: 0.5,
@@ -2785,8 +4385,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 2,
-      result: 'raw_wood',
+      mining_time: 0.55,
+      result: 'wood',
       count: 4
     },
     corpse: 'tree_03_stump',
@@ -2832,23 +4432,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 243,
-          height: 156,
-          frame_count: 4,
+          width: 113,
+          height: 142,
+          frame_count: 1,
           shift: [
-            2.265625,
-            -1.40625
+            0.234375,
+            -1.625
           ],
           hr_version: {
-            width: 487,
-            height: 312,
+            width: 227,
+            height: 283,
             shift: [
-              2.2734375,
-              -1.40625
+              0.2421875,
+              -1.6328125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/03/hr-tree-03-a-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -2863,15 +4463,15 @@ module.exports = {
           height: 98,
           frame_count: 3,
           shift: [
-            0.390625,
-            -2.375
+            0.140625,
+            -2.28125
           ],
           hr_version: {
-            width: 237,
+            width: 238,
             height: 195,
             shift: [
-              0.4140625,
-              -2.3671875
+              0.140625,
+              -2.2890625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/03/hr-tree-03-a-leaves.png',
@@ -2916,6 +4516,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/03/tree-03-a-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 196,
+          height: 64,
+          frame_count: 4,
+          shift: [
+            2.875,
+            0.03125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 396,
+            height: 128,
+            shift: [
+              2.828125,
+              0.015625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/03/hr-tree-03-a-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -2924,23 +4555,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 162,
-          height: 124,
-          frame_count: 4,
+          width: 74,
+          height: 114,
+          frame_count: 1,
           shift: [
-            1.5625,
-            -1.21875
+            0.1875,
+            -1.375
           ],
           hr_version: {
-            width: 324,
-            height: 246,
+            width: 148,
+            height: 226,
             shift: [
-              1.5625,
-              -1.21875
+              0.1875,
+              -1.375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/03/hr-tree-03-b-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -2952,18 +4583,18 @@ module.exports = {
             'mipmap'
           ],
           width: 78,
-          height: 72,
+          height: 71,
           frame_count: 3,
           shift: [
-            0.375,
-            -2.03125
+            0.15625,
+            -2.078125
           ],
           hr_version: {
             width: 157,
-            height: 144,
+            height: 145,
             shift: [
-              0.3984375,
-              -2.03125
+              0.1640625,
+              -2.0703125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/03/hr-tree-03-b-leaves.png',
@@ -3008,6 +4639,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/03/tree-03-b-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 141,
+          height: 55,
+          frame_count: 4,
+          shift: [
+            1.921875,
+            -0.171875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 283,
+            height: 110,
+            shift: [
+              1.9140625,
+              -0.171875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/03/hr-tree-03-b-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -3016,23 +4678,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 193,
-          height: 169,
-          frame_count: 4,
+          width: 88,
+          height: 150,
+          frame_count: 1,
           shift: [
-            1.859375,
-            -1.609375
+            0.21875,
+            -1.90625
           ],
           hr_version: {
-            width: 387,
-            height: 337,
+            width: 175,
+            height: 298,
             shift: [
-              1.8671875,
-              -1.6015625
+              0.2109375,
+              -1.90625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/03/hr-tree-03-c-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -3043,19 +4705,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 94,
-          height: 88,
+          width: 93,
+          height: 89,
           frame_count: 3,
           shift: [
-            0.40625,
-            -2.875
+            0.265625,
+            -2.921875
           ],
           hr_version: {
-            width: 187,
-            height: 178,
+            width: 188,
+            height: 179,
             shift: [
-              0.4140625,
-              -2.859375
+              0.265625,
+              -2.9296875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/03/hr-tree-03-c-leaves.png',
@@ -3100,6 +4762,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/03/tree-03-c-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 197,
+          height: 86,
+          frame_count: 4,
+          shift: [
+            2.765625,
+            -0.3125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 395,
+            height: 170,
+            shift: [
+              2.7578125,
+              -0.3125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/03/hr-tree-03-c-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -3108,23 +4801,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 236,
-          height: 169,
-          frame_count: 4,
+          width: 95,
+          height: 151,
+          frame_count: 1,
           shift: [
-            2.03125,
-            -1.671875
+            -0.171875,
+            -1.953125
           ],
           hr_version: {
-            width: 473,
-            height: 337,
+            width: 190,
+            height: 302,
             shift: [
-              2.0234375,
-              -1.6796875
+              -0.1875,
+              -1.953125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/03/hr-tree-03-d-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -3135,19 +4828,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 100,
+          width: 101,
           height: 83,
           frame_count: 3,
           shift: [
-            0,
-            -3.078125
+            -0.171875,
+            -3.171875
           ],
           hr_version: {
-            width: 204,
+            width: 203,
             height: 167,
             shift: [
-              0.015625,
-              -3.0546875
+              -0.1484375,
+              -3.1796875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/03/hr-tree-03-d-leaves.png',
@@ -3192,6 +4885,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/03/tree-03-d-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 195,
+          height: 83,
+          frame_count: 4,
+          shift: [
+            2.703125,
+            -0.359375
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 389,
+            height: 166,
+            shift: [
+              2.7109375,
+              -0.359375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/03/hr-tree-03-d-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -3200,23 +4924,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 258,
-          height: 143,
-          frame_count: 4,
+          width: 112,
+          height: 131,
+          frame_count: 1,
           shift: [
-            1.84375,
-            -1.515625
+            -0.4375,
+            -1.703125
           ],
           hr_version: {
-            width: 516,
-            height: 285,
+            width: 223,
+            height: 262,
             shift: [
-              1.84375,
-              -1.5234375
+              -0.4453125,
+              -1.703125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/03/hr-tree-03-e-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -3227,19 +4951,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 117,
-          height: 83,
+          width: 118,
+          height: 84,
           frame_count: 3,
           shift: [
-            -0.234375,
-            -2.515625
+            -0.4375,
+            -2.53125
           ],
           hr_version: {
             width: 235,
             height: 167,
             shift: [
-              -0.2109375,
-              -2.4921875
+              -0.4453125,
+              -2.5234375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/03/hr-tree-03-e-leaves.png',
@@ -3284,6 +5008,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/03/tree-03-e-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 195,
+          height: 60,
+          frame_count: 4,
+          shift: [
+            2.484375,
+            -0.25
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 389,
+            height: 120,
+            shift: [
+              2.4921875,
+              -0.25
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/03/hr-tree-03-e-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -3292,23 +5047,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 213,
-          height: 158,
-          frame_count: 4,
+          width: 88,
+          height: 136,
+          frame_count: 1,
           shift: [
-            1.515625,
-            -1.375
+            -0.4375,
+            -1.71875
           ],
           hr_version: {
-            width: 427,
-            height: 315,
+            width: 175,
+            height: 270,
             shift: [
-              1.5234375,
-              -1.3671875
+              -0.4453125,
+              -1.71875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/03/hr-tree-03-f-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -3320,18 +5075,18 @@ module.exports = {
             'mipmap'
           ],
           width: 93,
-          height: 100,
+          height: 99,
           frame_count: 3,
           shift: [
-            -0.265625,
-            -2.09375
+            -0.453125,
+            -2.078125
           ],
           hr_version: {
             width: 186,
-            height: 201,
+            height: 200,
             shift: [
-              -0.25,
-              -2.0703125
+              -0.453125,
+              -2.078125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/03/hr-tree-03-f-leaves.png',
@@ -3376,6 +5131,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/03/tree-03-f-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 174,
+          height: 67,
+          frame_count: 4,
+          shift: [
+            2.15625,
+            0.046875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 348,
+            height: 132,
+            shift: [
+              2.171875,
+              0.046875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/03/hr-tree-03-f-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -3384,23 +5170,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 176,
-          height: 149,
-          frame_count: 4,
+          width: 72,
+          height: 123,
+          frame_count: 1,
           shift: [
-            1.25,
-            -1.078125
+            -0.375,
+            -1.484375
           ],
           hr_version: {
-            width: 352,
-            height: 299,
+            width: 145,
+            height: 247,
             shift: [
-              1.25,
-              -1.1015625
+              -0.3671875,
+              -1.5078125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/03/hr-tree-03-g-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -3411,19 +5197,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 76,
+          width: 77,
           height: 105,
           frame_count: 3,
           shift: [
-            -0.1875,
-            -1.859375
+            -0.390625,
+            -1.828125
           ],
           hr_version: {
             width: 155,
             height: 212,
             shift: [
-              -0.1640625,
-              -1.84375
+              -0.3828125,
+              -1.828125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/03/hr-tree-03-g-leaves.png',
@@ -3468,69 +5254,70 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/03/tree-03-g-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 174,
+          height: 67,
+          frame_count: 4,
+          shift: [
+            2.15625,
+            0.046875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 348,
+            height: 132,
+            shift: [
+              2.171875,
+              0.046875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/03/hr-tree-03-g-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       }
     ],
     colors: [
       {
-        r: 186,
-        g: 191,
-        b: 124
+        r: 151,
+        g: 159,
+        b: 71
       },
       {
-        r: 158,
-        g: 191,
-        b: 124
+        r: 151,
+        g: 136,
+        b: 71
       },
       {
-        r: 191,
-        g: 178,
-        b: 124
+        r: 136,
+        g: 146,
+        b: 78
       },
       {
-        r: 191,
-        g: 171,
-        b: 88
+        r: 122,
+        g: 133,
+        b: 78
       },
       {
-        r: 171,
-        g: 171,
-        b: 96
+        r: 122,
+        g: 150,
+        b: 81
       },
       {
         r: 145,
         g: 151,
         b: 89
-      },
-      {
-        r: 197,
-        g: 144,
-        b: 136
-      },
-      {
-        r: 235,
-        g: 157,
-        b: 141
-      },
-      {
-        r: 212,
-        g: 171,
-        b: 89
-      },
-      {
-        r: 176,
-        g: 124,
-        b: 86
-      },
-      {
-        r: 209,
-        g: 120,
-        b: 102
-      },
-      {
-        r: 209,
-        g: 134,
-        b: 88
       }
     ],
     darkness_of_burnt_tree: 0.5,
@@ -3551,8 +5338,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 2,
-      result: 'raw_wood',
+      mining_time: 0.55,
+      result: 'wood',
       count: 4
     },
     corpse: 'tree_04_stump',
@@ -3598,23 +5385,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 255,
-          height: 170,
-          frame_count: 4,
+          width: 86,
+          height: 160,
+          frame_count: 1,
           shift: [
-            2.453125,
-            -1.5625
+            -0.125,
+            -1.875
           ],
           hr_version: {
-            width: 509,
-            height: 340,
+            width: 174,
+            height: 316,
             shift: [
-              2.4609375,
-              -1.546875
+              -0.125,
+              -1.8125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/04/hr-tree-04-a-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -3625,19 +5412,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 98,
-          height: 127,
+          width: 108,
+          height: 154,
           frame_count: 3,
           shift: [
-            0,
-            -2.390625
+            -0.125,
+            -2.125
           ],
           hr_version: {
-            width: 197,
-            height: 254,
+            width: 216,
+            height: 314,
             shift: [
-              0.0078125,
-              -2.359375
+              -0.09375,
+              -2.09375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/04/hr-tree-04-a-leaves.png',
@@ -3682,6 +5469,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/04/tree-04-a-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 160,
+          height: 66,
+          frame_count: 4,
+          shift: [
+            2,
+            -0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 318,
+            height: 130,
+            shift: [
+              2.03125,
+              -0.15625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-a-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -3690,23 +5508,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 231,
-          height: 168,
-          frame_count: 4,
+          width: 72,
+          height: 166,
+          frame_count: 1,
           shift: [
-            2.171875,
-            -1.4375
+            0.125,
+            -1.875
           ],
           hr_version: {
-            width: 463,
-            height: 336,
+            width: 142,
+            height: 334,
             shift: [
-              2.1953125,
-              -1.421875
+              0.15625,
+              -1.875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/04/hr-tree-04-b-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -3717,19 +5535,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 105,
-          height: 140,
+          width: 92,
+          height: 146,
           frame_count: 3,
           shift: [
-            0.109375,
-            -2.125
+            0.125,
+            -2.3125
           ],
           hr_version: {
-            width: 212,
-            height: 280,
+            width: 184,
+            height: 302,
             shift: [
               0.125,
-              -2.109375
+              -2.25
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/04/hr-tree-04-b-leaves.png',
@@ -3774,6 +5592,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/04/tree-04-b-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 154,
+          height: 78,
+          frame_count: 4,
+          shift: [
+            2.125,
+            -0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 308,
+            height: 154,
+            shift: [
+              2.125,
+              -0.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-b-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -3782,23 +5631,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 265,
-          height: 176,
-          frame_count: 4,
+          width: 88,
+          height: 162,
+          frame_count: 1,
           shift: [
-            2.890625,
-            -1.46875
+            0.125,
+            -1.875
           ],
           hr_version: {
-            width: 530,
-            height: 353,
+            width: 176,
+            height: 328,
             shift: [
-              2.890625,
-              -1.4765625
+              0.125,
+              -1.875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/04/hr-tree-04-c-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -3809,19 +5658,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 99,
-          height: 125,
+          width: 104,
+          height: 164,
           frame_count: 3,
           shift: [
-            0.046875,
-            -2.328125
+            0.0625,
+            -2.0625
           ],
           hr_version: {
-            width: 197,
-            height: 250,
+            width: 208,
+            height: 324,
             shift: [
-              0.0703125,
-              -2.328125
+              0.0625,
+              -2
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/04/hr-tree-04-c-leaves.png',
@@ -3866,6 +5715,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/04/tree-04-c-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 158,
+          height: 70,
+          frame_count: 4,
+          shift: [
+            2.0625,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 312,
+            height: 134,
+            shift: [
+              2.09375,
+              0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-c-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -3874,23 +5754,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 273,
-          height: 173,
-          frame_count: 4,
+          width: 108,
+          height: 132,
+          frame_count: 1,
           shift: [
-            2.765625,
-            -1.453125
+            0.0625,
+            -1.5
           ],
           hr_version: {
-            width: 545,
-            height: 348,
+            width: 216,
+            height: 266,
             shift: [
-              2.7734375,
-              -1.453125
+              0.0625,
+              -1.5
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/04/hr-tree-04-d-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -3901,19 +5781,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 99,
-          height: 125,
+          width: 114,
+          height: 148,
           frame_count: 3,
           shift: [
-            -0.203125,
-            -2.359375
+            -0.1875,
+            -2.0625
           ],
           hr_version: {
-            width: 198,
-            height: 248,
+            width: 230,
+            height: 290,
             shift: [
               -0.1875,
-              -2.34375
+              -2
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/04/hr-tree-04-d-leaves.png',
@@ -3958,6 +5838,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/04/tree-04-d-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 158,
+          height: 78,
+          frame_count: 4,
+          shift: [
+            2.1875,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 320,
+            height: 158,
+            shift: [
+              2.15625,
+              0
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-d-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -3966,23 +5877,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 246,
-          height: 183,
-          frame_count: 4,
+          width: 80,
+          height: 164,
+          frame_count: 1,
           shift: [
-            1.96875,
-            -1.609375
+            -0.3125,
+            -2
           ],
           hr_version: {
-            width: 492,
-            height: 365,
+            width: 158,
+            height: 324,
             shift: [
-              1.984375,
-              -1.5859375
+              -0.28125,
+              -1.9375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/04/hr-tree-04-e-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -3993,19 +5904,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 108,
-          height: 136,
+          width: 110,
+          height: 138,
           frame_count: 3,
           shift: [
-            -0.25,
-            -2.40625
+            -0.125,
+            -2.625
           ],
           hr_version: {
-            width: 217,
-            height: 273,
+            width: 222,
+            height: 280,
             shift: [
-              -0.2421875,
-              -2.3828125
+              -0.125,
+              -2.625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/04/hr-tree-04-e-leaves.png',
@@ -4050,6 +5961,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/04/tree-04-e-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 138,
+          height: 88,
+          frame_count: 4,
+          shift: [
+            1.875,
+            -0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 274,
+            height: 170,
+            shift: [
+              1.90625,
+              -0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-e-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -4058,23 +6000,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 260,
-          height: 190,
-          frame_count: 4,
+          width: 96,
+          height: 164,
+          frame_count: 1,
           shift: [
-            2.6875,
-            -1.59375
+            0.125,
+            -1.9375
           ],
           hr_version: {
-            width: 520,
-            height: 380,
+            width: 194,
+            height: 332,
             shift: [
-              2.703125,
-              -1.59375
+              0.125,
+              -1.9375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/04/hr-tree-04-f-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -4085,19 +6027,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 100,
-          height: 122,
+          width: 112,
+          height: 134,
           frame_count: 3,
           shift: [
-            0.125,
-            -2.71875
+            0.3125,
+            -2.5625
           ],
           hr_version: {
-            width: 200,
-            height: 246,
+            width: 224,
+            height: 272,
             shift: [
-              0.125,
-              -2.71875
+              0.34375,
+              -2.5625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/04/hr-tree-04-f-leaves.png',
@@ -4142,6 +6084,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/04/tree-04-f-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 168,
+          height: 78,
+          frame_count: 4,
+          shift: [
+            2.1875,
+            -0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 332,
+            height: 156,
+            shift: [
+              2.25,
+              -0.125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-f-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -4150,23 +6123,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 260,
-          height: 177,
-          frame_count: 4,
+          width: 92,
+          height: 142,
+          frame_count: 1,
           shift: [
-            2.5625,
-            -1.140625
+            -0.4375,
+            -1.6875
           ],
           hr_version: {
-            width: 522,
-            height: 353,
+            width: 178,
+            height: 282,
             shift: [
-              2.578125,
-              -1.1328125
+              -0.375,
+              -1.65625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/04/hr-tree-04-g-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -4177,19 +6150,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 98,
-          height: 116,
+          width: 112,
+          height: 130,
           frame_count: 3,
           shift: [
-            -0.03125,
-            -2.1875
+            -0.375,
+            -2.375
           ],
           hr_version: {
-            width: 199,
-            height: 231,
+            width: 222,
+            height: 258,
             shift: [
-              -0.0234375,
-              -2.1796875
+              -0.34375,
+              -2.34375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/04/hr-tree-04-g-leaves.png',
@@ -4234,6 +6207,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/04/tree-04-g-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 148,
+          height: 72,
+          frame_count: 4,
+          shift: [
+            1.75,
+            -0.25
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 296,
+            height: 144,
+            shift: [
+              1.75,
+              -0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-g-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -4242,23 +6246,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 253,
-          height: 169,
-          frame_count: 4,
+          width: 64,
+          height: 144,
+          frame_count: 1,
           shift: [
-            2.390625,
-            -1.109375
+            -0.0625,
+            -1.6875
           ],
           hr_version: {
-            width: 505,
-            height: 340,
+            width: 128,
+            height: 284,
             shift: [
-              2.4140625,
-              -1.109375
+              -0.0625,
+              -1.65625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/04/hr-tree-04-h-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -4269,19 +6273,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 103,
-          height: 122,
+          width: 100,
+          height: 142,
           frame_count: 3,
           shift: [
-            -0.015625,
-            -1.9375
+            0.25,
+            -1.875
           ],
           hr_version: {
-            width: 206,
-            height: 245,
+            width: 202,
+            height: 280,
             shift: [
-              0,
-              -1.9140625
+              0.25,
+              -1.78125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/04/hr-tree-04-h-leaves.png',
@@ -4326,69 +6330,606 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/04/tree-04-h-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 148,
+          height: 74,
+          frame_count: 4,
+          shift: [
+            2.0625,
+            -0.25
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 292,
+            height: 152,
+            shift: [
+              2.09375,
+              -0.25
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-h-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/04/tree-04-i-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 48,
+          height: 122,
+          frame_count: 1,
+          shift: [
+            0.1875,
+            -1.4375
+          ],
+          hr_version: {
+            width: 92,
+            height: 246,
+            shift: [
+              0.21875,
+              -1.4375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-i-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/04/tree-04-i-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 70,
+          height: 122,
+          frame_count: 3,
+          shift: [
+            0.1875,
+            -1.625
+          ],
+          hr_version: {
+            width: 140,
+            height: 240,
+            shift: [
+              0.1875,
+              -1.5625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-i-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/04/tree-04-i-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 124,
+          height: 66,
+          frame_count: 4,
+          shift: [
+            1.75,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 244,
+            height: 128,
+            shift: [
+              1.78125,
+              0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-i-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/04/tree-04-j-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 48,
+          height: 120,
+          frame_count: 1,
+          shift: [
+            -0.25,
+            -1.5
+          ],
+          hr_version: {
+            width: 98,
+            height: 238,
+            shift: [
+              -0.25,
+              -1.46875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-j-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/04/tree-04-j-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 70,
+          height: 128,
+          frame_count: 3,
+          shift: [
+            -0.25,
+            -1.75
+          ],
+          hr_version: {
+            width: 140,
+            height: 254,
+            shift: [
+              -0.25,
+              -1.71875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-j-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/04/tree-04-j-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 116,
+          height: 64,
+          frame_count: 4,
+          shift: [
+            1.4375,
+            -0.25
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 228,
+            height: 122,
+            shift: [
+              1.46875,
+              -0.1875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-j-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/04/tree-04-k-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 204,
+          height: 80,
+          frame_count: 1,
+          shift: [
+            -0.5,
+            -0.375
+          ],
+          hr_version: {
+            width: 406,
+            height: 158,
+            shift: [
+              -0.46875,
+              -0.34375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-k-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/04/tree-04-k-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 208,
+          height: 80,
+          frame_count: 3,
+          shift: [
+            -0.625,
+            -0.6875
+          ],
+          hr_version: {
+            width: 414,
+            height: 164,
+            shift: [
+              -0.59375,
+              -0.59375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-k-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/04/tree-04-k-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 208,
+          height: 62,
+          frame_count: 4,
+          shift: [
+            -0.25,
+            -0.25
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 410,
+            height: 124,
+            shift: [
+              -0.1875,
+              -0.25
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-k-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/04/tree-04-l-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 156,
+          height: 126,
+          frame_count: 1,
+          shift: [
+            0.125,
+            -0.125
+          ],
+          hr_version: {
+            width: 312,
+            height: 250,
+            shift: [
+              0.125,
+              -0.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-l-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/04/tree-04-l-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 156,
+          height: 118,
+          frame_count: 3,
+          shift: [
+            0.3125,
+            0.0625
+          ],
+          hr_version: {
+            width: 314,
+            height: 240,
+            shift: [
+              0.3125,
+              0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-l-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/04/tree-04-l-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 180,
+          height: 126,
+          frame_count: 4,
+          shift: [
+            0.8125,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 366,
+            height: 250,
+            shift: [
+              0.78125,
+              0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/04/hr-tree-04-l-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       }
     ],
+    variation_weights: [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0.3,
+      0.3,
+      0.05,
+      0.05
+    ],
     colors: [
       {
-        r: 125,
-        g: 154,
-        b: 84
+        r: 173,
+        g: 209,
+        b: 123
       },
       {
-        r: 109,
-        g: 134,
-        b: 73
+        r: 151,
+        g: 188,
+        b: 100
       },
       {
-        r: 95,
-        g: 125,
-        b: 51
+        r: 165,
+        g: 198,
+        b: 117
       },
       {
-        r: 96,
-        g: 132,
-        b: 46
+        r: 180,
+        g: 211,
+        b: 140
       },
       {
-        r: 88,
-        g: 141,
-        b: 71
+        r: 145,
+        g: 207,
+        b: 125
       },
       {
-        r: 115,
-        g: 142,
-        b: 106
+        r: 129,
+        g: 181,
+        b: 111
       },
       {
-        r: 87,
-        g: 109,
-        b: 81
+        r: 130,
+        g: 185,
+        b: 115
       },
       {
-        r: 88,
-        g: 112,
-        b: 81
+        r: 151,
+        g: 189,
+        b: 140
       },
       {
-        r: 92,
-        g: 126,
-        b: 82
+        r: 179,
+        g: 207,
+        b: 118
       },
       {
-        r: 91,
-        g: 111,
-        b: 85
+        r: 139,
+        g: 214,
+        b: 151
       },
       {
-        r: 105,
-        g: 127,
-        b: 99
+        r: 156,
+        g: 198,
+        b: 166
       },
       {
-        r: 89,
-        g: 124,
-        b: 78
+        r: 157,
+        g: 177,
+        b: 121
       }
     ],
     darkness_of_burnt_tree: 0.5,
@@ -4409,8 +6950,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 2,
-      result: 'raw_wood',
+      mining_time: 0.55,
+      result: 'wood',
       count: 4
     },
     corpse: 'tree_05_stump',
@@ -4456,23 +6997,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 210,
-          height: 142,
-          frame_count: 4,
+          width: 72,
+          height: 120,
+          frame_count: 1,
           shift: [
-            1.71875,
-            -1.03125
+            0.375,
+            -1.4375
           ],
           hr_version: {
-            width: 419,
-            height: 284,
+            width: 142,
+            height: 240,
             shift: [
-              1.7265625,
-              -1.03125
+              0.40625,
+              -1.40625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-a-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -4483,19 +7024,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 116,
-          height: 118,
+          width: 118,
+          height: 130,
           frame_count: 3,
           shift: [
-            -0.09375,
-            -1.75
+            0.125,
+            -1.9375
           ],
           hr_version: {
-            width: 233,
-            height: 236,
+            width: 232,
+            height: 260,
             shift: [
-              -0.0859375,
-              -1.75
+              0.15625,
+              -1.90625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-a-leaves.png',
@@ -4540,6 +7081,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/05/tree-05-a-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 160,
+          height: 74,
+          frame_count: 4,
+          shift: [
+            1.9375,
+            -0.25
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 320,
+            height: 148,
+            shift: [
+              1.9375,
+              -0.25
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-a-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -4548,23 +7120,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 198,
-          height: 129,
-          frame_count: 4,
+          width: 58,
+          height: 114,
+          frame_count: 1,
           shift: [
-            1.84375,
-            -0.921875
+            0,
+            -1.3125
           ],
           hr_version: {
-            width: 394,
-            height: 259,
+            width: 112,
+            height: 228,
             shift: [
-              1.859375,
-              -0.9140625
+              0.03125,
+              -1.28125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-b-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -4575,19 +7147,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 104,
-          height: 115,
+          width: 110,
+          height: 122,
           frame_count: 3,
           shift: [
-            -0.0625,
-            -1.546875
+            0.1875,
+            -1.9375
           ],
           hr_version: {
-            width: 210,
-            height: 230,
+            width: 220,
+            height: 244,
             shift: [
-              -0.046875,
-              -1.546875
+              0.1875,
+              -1.90625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-b-leaves.png',
@@ -4632,6 +7204,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/05/tree-05-b-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 144,
+          height: 84,
+          frame_count: 4,
+          shift: [
+            1.8125,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 288,
+            height: 164,
+            shift: [
+              1.8125,
+              0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-b-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -4640,23 +7243,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 187,
-          height: 138,
-          frame_count: 4,
+          width: 64,
+          height: 140,
+          frame_count: 1,
           shift: [
-            1.765625,
-            -1.03125
+            -0.375,
+            -1.75
           ],
           hr_version: {
-            width: 375,
-            height: 276,
+            width: 124,
+            height: 274,
             shift: [
-              1.7734375,
-              -1.03125
+              -0.34375,
+              -1.6875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-c-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -4667,19 +7270,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 116,
-          height: 135,
+          width: 114,
+          height: 148,
           frame_count: 3,
           shift: [
-            0.21875,
-            -1.609375
+            -0.125,
+            -2.125
           ],
           hr_version: {
-            width: 232,
-            height: 270,
+            width: 222,
+            height: 292,
             shift: [
-              0.234375,
-              -1.59375
+              -0.0625,
+              -2.0625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-c-leaves.png',
@@ -4724,6 +7327,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/05/tree-05-c-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 134,
+          height: 82,
+          frame_count: 4,
+          shift: [
+            1.625,
+            0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 270,
+            height: 160,
+            shift: [
+              1.625,
+              0.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-c-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -4732,23 +7366,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 206,
-          height: 138,
-          frame_count: 4,
+          width: 62,
+          height: 124,
+          frame_count: 1,
           shift: [
-            1.78125,
-            -0.71875
+            0.0625,
+            -1.4375
           ],
           hr_version: {
-            width: 412,
-            height: 275,
+            width: 118,
+            height: 246,
             shift: [
-              1.78125,
-              -0.7109375
+              0.125,
+              -1.40625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-d-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -4759,19 +7393,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 133,
-          height: 131,
+          width: 102,
+          height: 122,
           frame_count: 3,
           shift: [
-            0.078125,
-            -1.109375
+            0.125,
+            -1.875
           ],
           hr_version: {
-            width: 264,
-            height: 260,
+            width: 200,
+            height: 242,
             shift: [
-              0.09375,
-              -1.109375
+              0.15625,
+              -1.84375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-d-leaves.png',
@@ -4816,6 +7450,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/05/tree-05-d-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 138,
+          height: 86,
+          frame_count: 4,
+          shift: [
+            1.6875,
+            -0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 276,
+            height: 170,
+            shift: [
+              1.6875,
+              -0.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-d-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -4824,23 +7489,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 185,
-          height: 129,
-          frame_count: 4,
+          width: 52,
+          height: 116,
+          frame_count: 1,
           shift: [
-            1.265625,
-            -0.609375
+            0,
+            -1.375
           ],
           hr_version: {
-            width: 369,
-            height: 258,
+            width: 104,
+            height: 234,
             shift: [
-              1.2890625,
-              -0.609375
+              0,
+              -1.375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-e-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -4852,18 +7517,18 @@ module.exports = {
             'mipmap'
           ],
           width: 120,
-          height: 109,
+          height: 124,
           frame_count: 3,
           shift: [
-            -0.1875,
-            -1.234375
+            -0.125,
+            -1.8125
           ],
           hr_version: {
-            width: 240,
-            height: 216,
+            width: 238,
+            height: 248,
             shift: [
-              -0.1875,
-              -1.234375
+              -0.09375,
+              -1.78125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-e-leaves.png',
@@ -4908,6 +7573,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/05/tree-05-e-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 134,
+          height: 70,
+          frame_count: 4,
+          shift: [
+            1.625,
+            0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 266,
+            height: 142,
+            shift: [
+              1.65625,
+              0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-e-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -4916,23 +7612,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 188,
-          height: 145,
-          frame_count: 4,
+          width: 56,
+          height: 118,
+          frame_count: 1,
           shift: [
-            1.34375,
-            -1.140625
+            -0.3125,
+            -1.375
           ],
           hr_version: {
-            width: 375,
-            height: 291,
+            width: 110,
+            height: 234,
             shift: [
-              1.3671875,
-              -1.1328125
+              -0.28125,
+              -1.34375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-f-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -4943,19 +7639,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 125,
-          height: 140,
+          width: 96,
+          height: 126,
           frame_count: 3,
           shift: [
-            -0.015625,
-            -1.59375
+            -0.125,
+            -1.75
           ],
           hr_version: {
-            width: 250,
-            height: 281,
+            width: 192,
+            height: 254,
             shift: [
-              0.015625,
-              -1.6015625
+              -0.125,
+              -1.71875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-f-leaves.png',
@@ -5000,6 +7696,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/05/tree-05-f-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 138,
+          height: 84,
+          frame_count: 4,
+          shift: [
+            1.5625,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 270,
+            height: 170,
+            shift: [
+              1.625,
+              -0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-f-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -5008,23 +7735,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 182,
-          height: 108,
-          frame_count: 4,
+          width: 46,
+          height: 104,
+          frame_count: 1,
           shift: [
-            1.6875,
-            -0.53125
+            -0.0625,
+            -1.25
           ],
           hr_version: {
-            width: 362,
-            height: 216,
+            width: 88,
+            height: 212,
             shift: [
-              1.703125,
-              -0.515625
+              -0.03125,
+              -1.25
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-g-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -5035,19 +7762,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 117,
-          height: 100,
+          width: 88,
+          height: 110,
           frame_count: 3,
           shift: [
-            0.046875,
-            -1.03125
+            0,
+            -1.625
           ],
           hr_version: {
-            width: 232,
-            height: 201,
+            width: 176,
+            height: 218,
             shift: [
-              0.0625,
-              -1.0390625
+              0,
+              -1.59375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-g-leaves.png',
@@ -5092,6 +7819,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/05/tree-05-g-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 120,
+          height: 82,
+          frame_count: 4,
+          shift: [
+            1.25,
+            -0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 236,
+            height: 162,
+            shift: [
+              1.3125,
+              -0.15625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-g-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -5100,23 +7858,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 164,
-          height: 119,
-          frame_count: 4,
+          width: 72,
+          height: 106,
+          frame_count: 1,
           shift: [
-            1.40625,
-            -0.546875
+            0.1875,
+            -1.25
           ],
           hr_version: {
-            width: 330,
-            height: 240,
+            width: 142,
+            height: 210,
             shift: [
-              1.421875,
-              -0.546875
+              0.21875,
+              -1.21875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-h-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -5127,19 +7885,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 111,
-          height: 112,
+          width: 112,
+          height: 98,
           frame_count: 3,
           shift: [
-            0.234375,
-            -1.125
+            0.1875,
+            -1.5
           ],
           hr_version: {
-            width: 221,
-            height: 224,
+            width: 226,
+            height: 194,
             shift: [
-              0.2421875,
-              -1.125
+              0.1875,
+              -1.46875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-h-leaves.png',
@@ -5184,6 +7942,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/05/tree-05-h-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 136,
+          height: 64,
+          frame_count: 4,
+          shift: [
+            1.5,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 268,
+            height: 124,
+            shift: [
+              1.53125,
+              -0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-h-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -5192,23 +7981,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 175,
-          height: 111,
-          frame_count: 4,
+          width: 36,
+          height: 90,
+          frame_count: 1,
           shift: [
-            1.203125,
-            -0.296875
+            -0.125,
+            -1.0625
           ],
           hr_version: {
-            width: 352,
-            height: 221,
+            width: 68,
+            height: 182,
             shift: [
-              1.21875,
-              -0.2890625
+              -0.09375,
+              -1.0625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-i-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -5219,19 +8008,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 119,
-          height: 110,
+          width: 82,
+          height: 100,
           frame_count: 3,
           shift: [
-            -0.046875,
-            -0.84375
+            -0.1875,
+            -1.4375
           ],
           hr_version: {
-            width: 238,
-            height: 220,
+            width: 168,
+            height: 198,
             shift: [
-              -0.03125,
-              -0.828125
+              -0.1875,
+              -1.40625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/05/hr-tree-05-i-leaves.png',
@@ -5276,74 +8065,488 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/05/tree-05-i-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 106,
+          height: 60,
+          frame_count: 4,
+          shift: [
+            1.25,
+            -0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 212,
+            height: 116,
+            shift: [
+              1.25,
+              -0.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-i-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/05/tree-05-j-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 34,
+          height: 80,
+          frame_count: 1,
+          shift: [
+            0.0625,
+            -0.9375
+          ],
+          hr_version: {
+            width: 64,
+            height: 160,
+            shift: [
+              0.09375,
+              -0.90625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-j-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/05/tree-05-j-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 72,
+          height: 92,
+          frame_count: 3,
+          shift: [
+            0,
+            -1.3125
+          ],
+          hr_version: {
+            width: 140,
+            height: 182,
+            shift: [
+              0.03125,
+              -1.28125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-j-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/05/tree-05-j-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 96,
+          height: 62,
+          frame_count: 4,
+          shift: [
+            1.25,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 190,
+            height: 128,
+            shift: [
+              1.28125,
+              0
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-j-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/05/tree-05-k-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 138,
+          height: 88,
+          frame_count: 1,
+          shift: [
+            -0.5625,
+            0.25
+          ],
+          hr_version: {
+            width: 276,
+            height: 174,
+            shift: [
+              -0.5625,
+              0.28125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-k-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/05/tree-05-k-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 116,
+          height: 78,
+          frame_count: 3,
+          shift: [
+            -0.9375,
+            0.25
+          ],
+          hr_version: {
+            width: 232,
+            height: 160,
+            shift: [
+              -0.90625,
+              0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-k-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/05/tree-05-k-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 138,
+          height: 82,
+          frame_count: 4,
+          shift: [
+            -0.4375,
+            0.3125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 278,
+            height: 158,
+            shift: [
+              -0.4375,
+              0.375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-k-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/05/tree-05-l-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 126,
+          height: 94,
+          frame_count: 1,
+          shift: [
+            0.4375,
+            -0.75
+          ],
+          hr_version: {
+            width: 250,
+            height: 188,
+            shift: [
+              0.46875,
+              -0.71875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-l-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/05/tree-05-l-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 118,
+          height: 74,
+          frame_count: 3,
+          shift: [
+            0.5625,
+            -1.125
+          ],
+          hr_version: {
+            width: 250,
+            height: 162,
+            shift: [
+              0.46875,
+              -0.9375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-l-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/05/tree-05-l-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 128,
+          height: 92,
+          frame_count: 4,
+          shift: [
+            0.625,
+            -0.5625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 256,
+            height: 188,
+            shift: [
+              0.65625,
+              -0.59375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/05/hr-tree-05-l-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       }
     ],
+    variation_weights: [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0.3,
+      0.3,
+      0.05,
+      0.05
+    ],
     colors: [
       {
-        r: 115,
-        g: 142,
-        b: 51
+        r: 143,
+        g: 166,
+        b: 91
       },
       {
-        r: 112,
-        g: 144,
-        b: 34
+        r: 137,
+        g: 163,
+        b: 74
       },
       {
-        r: 133,
-        g: 162,
-        b: 64
+        r: 155,
+        g: 184,
+        b: 86
       },
       {
-        r: 116,
-        g: 138,
-        b: 62
-      },
-      {
-        r: 110,
-        g: 147,
-        b: 58
+        r: 147,
+        g: 168,
+        b: 94
       },
       {
         r: 127,
-        g: 147,
-        b: 58
+        g: 163,
+        b: 76
       },
       {
-        r: 121,
-        g: 145,
-        b: 39
+        r: 146,
+        g: 166,
+        b: 79
       },
       {
-        r: 109,
-        g: 130,
-        b: 38
+        r: 151,
+        g: 173,
+        b: 74
       },
       {
-        r: 129,
-        g: 130,
-        b: 38
+        r: 145,
+        g: 166,
+        b: 77
       },
       {
-        r: 148,
-        g: 149,
-        b: 46
+        r: 178,
+        g: 179,
+        b: 79
       },
       {
-        r: 150,
-        g: 151,
-        b: 56
+        r: 173,
+        g: 173,
+        b: 82
       },
       {
-        r: 154,
-        g: 155,
-        b: 69
+        r: 172,
+        g: 173,
+        b: 81
       },
       {
-        r: 156,
-        g: 157,
-        b: 65
+        r: 167,
+        g: 168,
+        b: 96
+      },
+      {
+        r: 201,
+        g: 202,
+        b: 117
       }
     ],
     darkness_of_burnt_tree: 0.5,
@@ -5364,8 +8567,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 2,
-      result: 'raw_wood',
+      mining_time: 0.55,
+      result: 'wood',
       count: 4
     },
     corpse: 'tree_09_stump',
@@ -5411,23 +8614,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 243,
-          height: 170,
-          frame_count: 4,
+          width: 154,
+          height: 194,
+          frame_count: 1,
           shift: [
-            2.046875,
-            -1.15625
+            0,
+            -2.125
           ],
           hr_version: {
-            width: 487,
-            height: 340,
+            width: 308,
+            height: 392,
             shift: [
-              2.0703125,
-              -1.140625
+              0,
+              -2.125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-a-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -5438,19 +8641,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 123,
-          height: 102,
+          width: 174,
+          height: 196,
           frame_count: 3,
           shift: [
-            0.140625,
-            -2.28125
+            0,
+            -2.5
           ],
           hr_version: {
-            width: 244,
-            height: 204,
+            width: 350,
+            height: 390,
             shift: [
-              0.15625,
-              -2.265625
+              0,
+              -2.4375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-a-leaves.png',
@@ -5495,6 +8698,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-a-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 232,
+          height: 106,
+          frame_count: 4,
+          shift: [
+            2.625,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 458,
+            height: 214,
+            shift: [
+              2.6875,
+              0
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-a-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -5503,23 +8737,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 208,
-          height: 150,
-          frame_count: 4,
+          width: 146,
+          height: 196,
+          frame_count: 1,
           shift: [
-            1.65625,
-            -1.125
+            0.25,
+            -2.1875
           ],
           hr_version: {
-            width: 415,
-            height: 300,
+            width: 294,
+            height: 390,
             shift: [
-              1.6640625,
-              -1.109375
+              0.25,
+              -2.15625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-b-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -5530,19 +8764,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 99,
-          height: 86,
+          width: 168,
+          height: 182,
           frame_count: 3,
           shift: [
-            -0.078125,
-            -2.15625
+            0.1875,
+            -2.75
           ],
           hr_version: {
-            width: 197,
-            height: 172,
+            width: 334,
+            height: 368,
             shift: [
-              -0.0703125,
-              -2.140625
+              0.21875,
+              -2.75
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-b-leaves.png',
@@ -5587,6 +8821,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-b-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 186,
+          height: 114,
+          frame_count: 4,
+          shift: [
+            2.5625,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 374,
+            height: 226,
+            shift: [
+              2.5625,
+              0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-b-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -5595,23 +8860,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 238,
-          height: 167,
-          frame_count: 4,
+          width: 130,
+          height: 196,
+          frame_count: 1,
           shift: [
-            1.75,
-            -1.171875
+            -0.125,
+            -2.0625
           ],
           hr_version: {
-            width: 476,
-            height: 333,
+            width: 258,
+            height: 392,
             shift: [
-              1.765625,
-              -1.1640625
+              -0.09375,
+              -2.03125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-c-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -5622,19 +8887,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 113,
-          height: 95,
+          width: 134,
+          height: 202,
           frame_count: 3,
           shift: [
-            -0.265625,
-            -2.328125
+            0.0625,
+            -2.4375
           ],
           hr_version: {
-            width: 225,
-            height: 189,
+            width: 266,
+            height: 408,
             shift: [
-              -0.2578125,
-              -2.3046875
+              0.09375,
+              -2.4375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-c-leaves.png',
@@ -5679,6 +8944,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-c-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 184,
+          height: 110,
+          frame_count: 4,
+          shift: [
+            2.25,
+            -0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 364,
+            height: 222,
+            shift: [
+              2.28125,
+              -0.125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-c-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -5687,23 +8983,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 169,
-          height: 116,
-          frame_count: 4,
+          width: 132,
+          height: 172,
+          frame_count: 1,
           shift: [
-            1.421875,
-            -1
+            0.125,
+            -1.75
           ],
           hr_version: {
-            width: 338,
-            height: 233,
+            width: 264,
+            height: 348,
             shift: [
-              1.4375,
-              -0.9921875
+              0.125,
+              -1.75
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-d-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -5714,19 +9010,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 90,
-          height: 64,
+          width: 144,
+          height: 152,
           frame_count: 3,
           shift: [
-            0.125,
-            -1.875
+            -0.0625,
+            -2.375
           ],
           hr_version: {
-            width: 179,
-            height: 126,
+            width: 284,
+            height: 308,
             shift: [
-              0.1484375,
-              -1.859375
+              -0.03125,
+              -2.375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-d-leaves.png',
@@ -5771,6 +9067,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-d-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 172,
+          height: 118,
+          frame_count: 4,
+          shift: [
+            2.5,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 344,
+            height: 232,
+            shift: [
+              2.5,
+              -0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-d-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -5779,23 +9106,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 202,
-          height: 157,
-          frame_count: 4,
+          width: 126,
+          height: 138,
+          frame_count: 1,
           shift: [
-            1.96875,
-            -1.203125
+            0.3125,
+            -1.4375
           ],
           hr_version: {
-            width: 403,
-            height: 315,
+            width: 252,
+            height: 272,
             shift: [
-              1.9765625,
-              -1.1953125
+              0.3125,
+              -1.375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-e-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -5806,19 +9133,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 103,
-          height: 103,
+          width: 138,
+          height: 130,
           frame_count: 3,
           shift: [
-            0.359375,
-            -2.109375
+            0.375,
+            -1.75
           ],
           hr_version: {
-            width: 205,
-            height: 206,
+            width: 280,
+            height: 264,
             shift: [
-              0.3828125,
-              -2.09375
+              0.375,
+              -1.75
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-e-leaves.png',
@@ -5863,39 +9190,439 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-e-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 154,
+          height: 96,
+          frame_count: 4,
+          shift: [
+            2.25,
+            0.375
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 306,
+            height: 190,
+            shift: [
+              2.28125,
+              0.40625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-e-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/09/tree-09-f-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 124,
+          height: 144,
+          frame_count: 1,
+          shift: [
+            -0.625,
+            -1.5
+          ],
+          hr_version: {
+            width: 246,
+            height: 286,
+            shift: [
+              -0.59375,
+              -1.46875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-f-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/09/tree-09-f-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 128,
+          height: 146,
+          frame_count: 3,
+          shift: [
+            -0.3125,
+            -1.875
+          ],
+          hr_version: {
+            width: 260,
+            height: 288,
+            shift: [
+              -0.34375,
+              -1.8125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-f-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-f-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 142,
+          height: 96,
+          frame_count: 4,
+          shift: [
+            1.6875,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 282,
+            height: 184,
+            shift: [
+              1.71875,
+              0.25
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-f-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/09/tree-09-g-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 122,
+          height: 156,
+          frame_count: 1,
+          shift: [
+            -0.375,
+            -1.625
+          ],
+          hr_version: {
+            width: 240,
+            height: 312,
+            shift: [
+              -0.34375,
+              -1.625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-g-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/09/tree-09-g-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 134,
+          height: 148,
+          frame_count: 3,
+          shift: [
+            -0.4375,
+            -2.125
+          ],
+          hr_version: {
+            width: 266,
+            height: 296,
+            shift: [
+              -0.40625,
+              -2.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-g-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-g-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 156,
+          height: 90,
+          frame_count: 4,
+          shift: [
+            1.6875,
+            -0.4375
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 310,
+            height: 182,
+            shift: [
+              1.71875,
+              -0.4375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-g-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/09/tree-09-h-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 128,
+          height: 156,
+          frame_count: 1,
+          shift: [
+            0.5625,
+            -1.625
+          ],
+          hr_version: {
+            width: 256,
+            height: 312,
+            shift: [
+              0.5625,
+              -1.625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-h-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/09/tree-09-h-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 122,
+          height: 148,
+          frame_count: 3,
+          shift: [
+            0.5625,
+            -2.0625
+          ],
+          hr_version: {
+            width: 250,
+            height: 292,
+            shift: [
+              0.5625,
+              -2
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-h-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-h-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 150,
+          height: 96,
+          frame_count: 4,
+          shift: [
+            2.3125,
+            -0.3125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 296,
+            height: 192,
+            shift: [
+              2.34375,
+              -0.3125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-h-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       }
     ],
     colors: [
       {
-        r: 105,
-        g: 121,
-        b: 92
+        r: 163,
+        g: 188,
+        b: 111
       },
       {
-        r: 109,
-        g: 146,
-        b: 80
+        r: 153,
+        g: 175,
+        b: 90
       },
       {
-        r: 124,
-        g: 138,
-        b: 57
+        r: 156,
+        g: 172,
+        b: 78
       },
       {
-        r: 138,
-        g: 128,
-        b: 62
+        r: 177,
+        g: 165,
+        b: 82
       },
       {
-        r: 122,
-        g: 108,
-        b: 51
+        r: 167,
+        g: 150,
+        b: 83
       },
       {
-        r: 148,
-        g: 126,
-        b: 67
+        r: 158,
+        g: 183,
+        b: 87
       }
     ],
     darkness_of_burnt_tree: 0.5,
@@ -5916,8 +9643,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 2,
-      result: 'raw_wood',
+      mining_time: 0.55,
+      result: 'wood',
       count: 4
     },
     corpse: 'tree_02_stump',
@@ -5963,23 +9690,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 225,
-          height: 169,
-          frame_count: 4,
+          width: 82,
+          height: 162,
+          frame_count: 1,
           shift: [
-            1.921875,
-            -1.453125
+            0,
+            -2.0625
           ],
           hr_version: {
-            width: 448,
-            height: 340,
+            width: 162,
+            height: 324,
             shift: [
-              1.921875,
-              -1.484375
+              0.03125,
+              -2.03125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-a-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -5990,19 +9717,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 95,
-          height: 131,
+          width: 96,
+          height: 154,
           frame_count: 3,
           shift: [
-            -0.140625,
-            -2.203125
+            -0.0625,
+            -2.3125
           ],
           hr_version: {
-            width: 190,
-            height: 261,
+            width: 184,
+            height: 310,
             shift: [
-              -0.140625,
-              -2.2109375
+              0,
+              -2.3125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-a-leaves.png',
@@ -6047,6 +9774,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-a-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 196,
+          height: 64,
+          frame_count: 4,
+          shift: [
+            2.8125,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 384,
+            height: 130,
+            shift: [
+              2.875,
+              -0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-a-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -6055,23 +9813,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 279,
-          height: 193,
-          frame_count: 4,
+          width: 76,
+          height: 142,
+          frame_count: 1,
           shift: [
-            0.984375,
-            -1.359375
+            -0.125,
+            -1.875
           ],
           hr_version: {
-            width: 558,
-            height: 385,
+            width: 150,
+            height: 286,
             shift: [
-              1,
-              -1.3515625
+              -0.09375,
+              -1.84375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-b-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -6082,19 +9840,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 98,
-          height: 143,
+          width: 92,
+          height: 136,
           frame_count: 3,
           shift: [
-            -0.1875,
-            -2.203125
+            -0.0625,
+            -1.9375
           ],
           hr_version: {
-            width: 194,
-            height: 285,
+            width: 184,
+            height: 274,
             shift: [
-              -0.1875,
-              -2.1953125
+              -0.0625,
+              -1.9375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-b-leaves.png',
@@ -6139,6 +9897,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-b-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 186,
+          height: 68,
+          frame_count: 4,
+          shift: [
+            2.6875,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 372,
+            height: 134,
+            shift: [
+              2.6875,
+              0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-b-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -6147,23 +9936,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 249,
-          height: 188,
-          frame_count: 4,
+          width: 72,
+          height: 140,
+          frame_count: 1,
           shift: [
-            2.171875,
-            -1.59375
+            -0.125,
+            -1.8125
           ],
           hr_version: {
-            width: 499,
-            height: 377,
+            width: 144,
+            height: 280,
             shift: [
-              2.1640625,
-              -1.5859375
+              -0.125,
+              -1.78125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-c-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -6174,19 +9963,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 106,
-          height: 154,
+          width: 90,
+          height: 130,
           frame_count: 3,
           shift: [
-            -0.09375,
-            -2.59375
+            -0.0625,
+            -1.9375
           ],
           hr_version: {
-            width: 213,
-            height: 309,
+            width: 178,
+            height: 264,
             shift: [
-              -0.1015625,
-              -2.6015625
+              -0.03125,
+              -1.9375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-c-leaves.png',
@@ -6231,6 +10020,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-c-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 176,
+          height: 64,
+          frame_count: 4,
+          shift: [
+            2.375,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 352,
+            height: 128,
+            shift: [
+              2.40625,
+              -0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-c-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -6239,23 +10059,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 271,
-          height: 187,
-          frame_count: 4,
+          width: 72,
+          height: 168,
+          frame_count: 1,
           shift: [
-            2.828125,
-            -1.578125
+            0.1875,
+            -2.1875
           ],
           hr_version: {
-            width: 541,
-            height: 374,
+            width: 142,
+            height: 336,
             shift: [
-              2.8203125,
-              -1.59375
+              0.21875,
+              -2.1875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-d-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -6266,19 +10086,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 119,
-          height: 154,
+          width: 90,
+          height: 166,
           frame_count: 3,
           shift: [
-            0.421875,
-            -2.1875
+            0.1875,
+            -2.375
           ],
           hr_version: {
-            width: 238,
-            height: 309,
+            width: 180,
+            height: 330,
             shift: [
-              0.4375,
-              -2.1953125
+              0.1875,
+              -2.34375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-d-leaves.png',
@@ -6323,6 +10143,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-d-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 200,
+          height: 66,
+          frame_count: 4,
+          shift: [
+            2.9375,
+            -0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 402,
+            height: 134,
+            shift: [
+              2.9375,
+              -0.125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-d-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -6331,23 +10182,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 256,
-          height: 191,
-          frame_count: 4,
+          width: 86,
+          height: 144,
+          frame_count: 1,
           shift: [
-            2.28125,
-            -1.453125
+            0.0625,
+            -1.8125
           ],
           hr_version: {
-            width: 512,
-            height: 381,
+            width: 168,
+            height: 286,
             shift: [
-              2.296875,
-              -1.4453125
+              0.09375,
+              -1.78125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-e-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -6358,19 +10209,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 104,
-          height: 144,
+          width: 98,
+          height: 140,
           frame_count: 3,
           shift: [
-            -0.09375,
-            -2.28125
+            0,
+            -2
           ],
           hr_version: {
-            width: 207,
-            height: 286,
+            width: 194,
+            height: 276,
             shift: [
-              -0.0859375,
-              -2.28125
+              0.03125,
+              -1.96875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/02/hr-tree-02-e-leaves.png',
@@ -6415,89 +10266,995 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-e-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 204,
+          height: 70,
+          frame_count: 4,
+          shift: [
+            3,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 410,
+            height: 144,
+            shift: [
+              3,
+              0.1875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-e-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/02/tree-02-f-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 74,
+          height: 156,
+          frame_count: 1,
+          shift: [
+            -0.375,
+            -2
+          ],
+          hr_version: {
+            width: 144,
+            height: 310,
+            shift: [
+              -0.3125,
+              -1.96875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-f-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/02/tree-02-f-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 92,
+          height: 150,
+          frame_count: 3,
+          shift: [
+            -0.3125,
+            -2.125
+          ],
+          hr_version: {
+            width: 184,
+            height: 302,
+            shift: [
+              -0.3125,
+              -2.125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-f-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-f-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 170,
+          height: 64,
+          frame_count: 4,
+          shift: [
+            2.375,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 344,
+            height: 130,
+            shift: [
+              2.34375,
+              0
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-f-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/02/tree-02-g-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 86,
+          height: 140,
+          frame_count: 1,
+          shift: [
+            0.125,
+            -1.75
+          ],
+          hr_version: {
+            width: 168,
+            height: 282,
+            shift: [
+              0.1875,
+              -1.75
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-g-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/02/tree-02-g-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 100,
+          height: 136,
+          frame_count: 3,
+          shift: [
+            0.125,
+            -2.125
+          ],
+          hr_version: {
+            width: 198,
+            height: 270,
+            shift: [
+              0.15625,
+              -2.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-g-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-g-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 188,
+          height: 64,
+          frame_count: 4,
+          shift: [
+            2.6875,
+            -0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 384,
+            height: 122,
+            shift: [
+              2.625,
+              -0.125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-g-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/02/tree-02-h-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 92,
+          height: 124,
+          frame_count: 1,
+          shift: [
+            -0.3125,
+            -1.5
+          ],
+          hr_version: {
+            width: 182,
+            height: 244,
+            shift: [
+              -0.25,
+              -1.46875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-h-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/02/tree-02-h-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 96,
+          height: 116,
+          frame_count: 3,
+          shift: [
+            -0.25,
+            -1.8125
+          ],
+          hr_version: {
+            width: 192,
+            height: 234,
+            shift: [
+              -0.21875,
+              -1.8125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-h-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-h-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 154,
+          height: 60,
+          frame_count: 4,
+          shift: [
+            2.125,
+            0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 306,
+            height: 118,
+            shift: [
+              2.15625,
+              0.15625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-h-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/02/tree-02-i-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 62,
+          height: 102,
+          frame_count: 1,
+          shift: [
+            0.125,
+            -1.1875
+          ],
+          hr_version: {
+            width: 126,
+            height: 206,
+            shift: [
+              0.125,
+              -1.1875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-i-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/02/tree-02-i-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 78,
+          height: 96,
+          frame_count: 3,
+          shift: [
+            0.0625,
+            -1.5
+          ],
+          hr_version: {
+            width: 152,
+            height: 194,
+            shift: [
+              0.125,
+              -1.5
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-i-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-i-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 132,
+          height: 54,
+          frame_count: 4,
+          shift: [
+            1.875,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 262,
+            height: 110,
+            shift: [
+              1.90625,
+              0
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-i-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/02/tree-02-j-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 64,
+          height: 96,
+          frame_count: 1,
+          shift: [
+            -0.25,
+            -1.125
+          ],
+          hr_version: {
+            width: 128,
+            height: 194,
+            shift: [
+              -0.25,
+              -1.125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-j-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/02/tree-02-j-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 78,
+          height: 100,
+          frame_count: 3,
+          shift: [
+            -0.25,
+            -1.5
+          ],
+          hr_version: {
+            width: 152,
+            height: 198,
+            shift: [
+              -0.21875,
+              -1.46875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-j-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-j-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 124,
+          height: 56,
+          frame_count: 4,
+          shift: [
+            1.6875,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 248,
+            height: 108,
+            shift: [
+              1.71875,
+              -0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-j-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/02/tree-02-k-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 120,
+          height: 124,
+          frame_count: 1,
+          shift: [
+            0.125,
+            -0.625
+          ],
+          hr_version: {
+            width: 234,
+            height: 244,
+            shift: [
+              0.1875,
+              -0.59375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-k-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/02/tree-02-k-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 106,
+          height: 132,
+          frame_count: 3,
+          shift: [
+            0.4375,
+            -1
+          ],
+          hr_version: {
+            width: 216,
+            height: 264,
+            shift: [
+              0.40625,
+              -0.9375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-k-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-k-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 124,
+          height: 132,
+          frame_count: 4,
+          shift: [
+            0.375,
+            -0.625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 248,
+            height: 262,
+            shift: [
+              0.375,
+              -0.59375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-k-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/02/tree-02-l-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 202,
+          height: 62,
+          frame_count: 1,
+          shift: [
+            -0.25,
+            -0.25
+          ],
+          hr_version: {
+            width: 410,
+            height: 122,
+            shift: [
+              -0.28125,
+              -0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-l-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/02/tree-02-l-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 202,
+          height: 80,
+          frame_count: 3,
+          shift: [
+            -0.375,
+            -0.25
+          ],
+          hr_version: {
+            width: 404,
+            height: 156,
+            shift: [
+              -0.34375,
+              -0.1875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-l-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/02/tree-02-l-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 208,
+          height: 70,
+          frame_count: 4,
+          shift: [
+            -0.0625,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 418,
+            height: 138,
+            shift: [
+              -0.0625,
+              0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/02/hr-tree-02-l-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       }
     ],
+    variation_weights: [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0.3,
+      0.3,
+      0.05,
+      0.05
+    ],
     colors: [
       {
-        r: 239,
-        g: 218,
-        b: 43
+        r: 227,
+        g: 143,
+        b: 88
       },
       {
-        r: 232,
-        g: 216,
-        b: 85
-      },
-      {
-        r: 242,
-        g: 224,
-        b: 28
-      },
-      {
-        r: 217,
-        g: 210,
-        b: 29
-      },
-      {
-        r: 252,
-        g: 182,
-        b: 72
-      },
-      {
-        r: 196,
-        g: 113,
-        b: 76
-      },
-      {
-        r: 213,
-        g: 111,
-        b: 66
-      },
-      {
-        r: 197,
-        g: 73,
-        b: 73
-      },
-      {
-        r: 229,
-        g: 92,
-        b: 78
+        r: 226,
+        g: 196,
+        b: 94
       },
       {
         r: 204,
-        g: 86,
-        b: 83
+        g: 138,
+        b: 65
       },
       {
-        r: 224,
-        g: 82,
-        b: 63
+        r: 221,
+        g: 189,
+        b: 103
       },
       {
-        r: 231,
-        g: 94,
-        b: 75
+        r: 225,
+        g: 140,
+        b: 68
       },
       {
-        r: 175,
-        g: 227,
-        b: 85
+        r: 221,
+        g: 135,
+        b: 57
       },
       {
-        r: 182,
-        g: 219,
-        b: 119
+        r: 236,
+        g: 159,
+        b: 72
       },
       {
-        r: 152,
-        g: 192,
+        r: 200,
+        g: 115,
+        b: 72
+      },
+      {
+        r: 209,
+        g: 113,
         b: 81
       },
       {
-        r: 173,
-        g: 211,
-        b: 113
+        r: 207,
+        g: 118,
+        b: 60
+      },
+      {
+        r: 206,
+        g: 120,
+        b: 75
+      },
+      {
+        r: 219,
+        g: 152,
+        b: 57
+      },
+      {
+        r: 202,
+        g: 107,
+        b: 80
+      },
+      {
+        r: 212,
+        g: 128,
+        b: 90
+      },
+      {
+        r: 219,
+        g: 178,
+        b: 79
+      },
+      {
+        r: 228,
+        g: 156,
+        b: 53
       }
     ],
     darkness_of_burnt_tree: 0.5,
@@ -6518,8 +11275,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 2,
-      result: 'raw_wood',
+      mining_time: 0.55,
+      result: 'wood',
       count: 4
     },
     corpse: 'tree_07_stump',
@@ -6565,23 +11322,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 181,
-          height: 122,
-          frame_count: 4,
+          width: 86,
+          height: 160,
+          frame_count: 1,
           shift: [
-            1.953125,
-            -0.65625
+            -0.0625,
+            -1.875
           ],
           hr_version: {
-            width: 362,
-            height: 244,
+            width: 174,
+            height: 320,
             shift: [
-              1.96875,
-              -0.640625
+              -0.0625,
+              -1.875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-a-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -6592,19 +11349,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 50,
-          height: 83,
+          width: 122,
+          height: 166,
           frame_count: 3,
           shift: [
-            -0.0625,
-            -1.328125
+            0.0625,
+            -2.1875
           ],
           hr_version: {
-            width: 101,
-            height: 164,
+            width: 244,
+            height: 336,
             shift: [
-              -0.0703125,
-              -1.3125
+              0.0625,
+              -2.09375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-a-leaves.png',
@@ -6649,6 +11406,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/07/tree-07-a-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 174,
+          height: 98,
+          frame_count: 4,
+          shift: [
+            2,
+            -0.375
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 350,
+            height: 190,
+            shift: [
+              2,
+              -0.3125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-a-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -6657,23 +11445,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 167,
-          height: 120,
-          frame_count: 4,
+          width: 88,
+          height: 152,
+          frame_count: 1,
           shift: [
-            1.203125,
-            -1.125
+            0.3125,
+            -1.8125
           ],
           hr_version: {
-            width: 335,
-            height: 239,
+            width: 178,
+            height: 306,
             shift: [
-              1.2109375,
-              -1.1171875
+              0.3125,
+              -1.8125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-b-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -6684,19 +11472,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 58,
-          height: 91,
+          width: 142,
+          height: 148,
           frame_count: 3,
           shift: [
-            -0.53125,
-            -1.578125
+            0.25,
+            -1.9375
           ],
           hr_version: {
-            width: 116,
-            height: 184,
+            width: 280,
+            height: 296,
             shift: [
-              -0.53125,
-              -1.578125
+              0.28125,
+              -1.9375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-b-leaves.png',
@@ -6741,6 +11529,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/07/tree-07-b-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 184,
+          height: 90,
+          frame_count: 4,
+          shift: [
+            2.1875,
+            -0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 368,
+            height: 178,
+            shift: [
+              2.21875,
+              -0.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-b-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -6749,23 +11568,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 167,
-          height: 128,
-          frame_count: 4,
+          width: 90,
+          height: 152,
+          frame_count: 1,
           shift: [
-            1.015625,
-            -1.46875
+            -0.3125,
+            -1.8125
           ],
           hr_version: {
-            width: 334,
-            height: 256,
+            width: 180,
+            height: 300,
             shift: [
-              1.03125,
-              -1.453125
+              -0.3125,
+              -1.78125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-c-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -6776,19 +11595,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 67,
-          height: 110,
+          width: 136,
+          height: 162,
           frame_count: 3,
           shift: [
-            -0.578125,
-            -1.78125
+            -0.5,
+            -2.125
           ],
           hr_version: {
-            width: 136,
-            height: 220,
+            width: 270,
+            height: 324,
             shift: [
-              -0.578125,
-              -1.765625
+              -0.46875,
+              -2.125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-c-leaves.png',
@@ -6833,6 +11652,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/07/tree-07-c-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 144,
+          height: 86,
+          frame_count: 4,
+          shift: [
+            1.4375,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 284,
+            height: 174,
+            shift: [
+              1.46875,
+              -0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-c-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -6841,23 +11691,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 184,
-          height: 158,
-          frame_count: 4,
+          width: 86,
+          height: 134,
+          frame_count: 1,
           shift: [
-            1.53125,
-            -1.5
+            -0.0625,
+            -1.5625
           ],
           hr_version: {
-            width: 368,
-            height: 314,
+            width: 172,
+            height: 268,
             shift: [
-              1.546875,
-              -1.484375
+              -0.0625,
+              -1.53125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-d-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -6868,19 +11718,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 47,
-          height: 126,
+          width: 114,
+          height: 142,
           frame_count: 3,
           shift: [
-            -0.140625,
-            -2.03125
+            0,
+            -2.125
           ],
           hr_version: {
-            width: 95,
-            height: 252,
+            width: 230,
+            height: 290,
             shift: [
-              -0.1484375,
-              -2.015625
+              0,
+              -2.0625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-d-leaves.png',
@@ -6925,6 +11775,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/07/tree-07-d-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 148,
+          height: 88,
+          frame_count: 4,
+          shift: [
+            2.0625,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 290,
+            height: 172,
+            shift: [
+              2.125,
+              0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-d-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -6933,23 +11814,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 202,
-          height: 143,
-          frame_count: 4,
+          width: 102,
+          height: 144,
+          frame_count: 1,
           shift: [
-            2.25,
-            -1.734375
+            0,
+            -1.6875
           ],
           hr_version: {
-            width: 405,
+            width: 204,
             height: 286,
             shift: [
-              2.2578125,
-              -1.703125
+              0,
+              -1.65625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-e-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -6960,19 +11841,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 47,
-          height: 132,
+          width: 122,
+          height: 146,
           frame_count: 3,
           shift: [
-            0.234375,
-            -1.9375
+            0.0625,
+            -2
           ],
           hr_version: {
-            width: 93,
-            height: 264,
+            width: 244,
+            height: 292,
             shift: [
-              0.2265625,
-              -1.90625
+              0.09375,
+              -1.96875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-e-leaves.png',
@@ -7017,6 +11898,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/07/tree-07-e-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 160,
+          height: 84,
+          frame_count: 4,
+          shift: [
+            2.125,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 318,
+            height: 166,
+            shift: [
+              2.15625,
+              -0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-e-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -7025,23 +11937,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 218,
-          height: 135,
-          frame_count: 4,
+          width: 100,
+          height: 140,
+          frame_count: 1,
           shift: [
-            2.53125,
-            -1.546875
+            -0.125,
+            -1.6875
           ],
           hr_version: {
-            width: 435,
-            height: 270,
+            width: 196,
+            height: 280,
             shift: [
-              2.5234375,
-              -1.53125
+              -0.09375,
+              -1.65625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-f-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -7052,19 +11964,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 62,
-          height: 119,
+          width: 128,
+          height: 140,
           frame_count: 3,
           shift: [
-            0.65625,
-            -1.796875
+            -0.1875,
+            -2.3125
           ],
           hr_version: {
-            width: 126,
-            height: 240,
+            width: 256,
+            height: 282,
             shift: [
-              0.65625,
-              -1.796875
+              -0.15625,
+              -2.3125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-f-leaves.png',
@@ -7109,6 +12021,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/07/tree-07-f-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 136,
+          height: 96,
+          frame_count: 4,
+          shift: [
+            1.75,
+            -0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 270,
+            height: 188,
+            shift: [
+              1.78125,
+              -0.15625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-f-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -7117,23 +12060,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 213,
-          height: 121,
-          frame_count: 4,
+          width: 90,
+          height: 110,
+          frame_count: 1,
           shift: [
-            2.484375,
-            -1.140625
+            0.25,
+            -1.25
           ],
           hr_version: {
-            width: 426,
-            height: 240,
+            width: 180,
+            height: 218,
             shift: [
-              2.484375,
-              -1.125
+              0.25,
+              -1.21875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-g-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -7144,19 +12087,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 61,
-          height: 100,
+          width: 110,
+          height: 128,
           frame_count: 3,
           shift: [
-            0.453125,
-            -1.46875
+            0.3125,
+            -1.6875
           ],
           hr_version: {
-            width: 123,
-            height: 199,
+            width: 222,
+            height: 258,
             shift: [
-              0.4453125,
-              -1.4609375
+              0.3125,
+              -1.6875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-g-leaves.png',
@@ -7201,6 +12144,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/07/tree-07-g-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 136,
+          height: 76,
+          frame_count: 4,
+          shift: [
+            1.8125,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 266,
+            height: 154,
+            shift: [
+              1.875,
+              -0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-g-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -7209,23 +12183,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 198,
-          height: 121,
-          frame_count: 4,
+          width: 86,
+          height: 126,
+          frame_count: 1,
           shift: [
-            2.3125,
-            -0.671875
+            -0.375,
+            -1.375
           ],
           hr_version: {
-            width: 397,
-            height: 243,
+            width: 166,
+            height: 246,
             shift: [
-              2.3203125,
-              -0.6640625
+              -0.3125,
+              -1.3125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-h-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -7236,19 +12210,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 48,
-          height: 85,
+          width: 114,
+          height: 116,
           frame_count: 3,
           shift: [
-            0.125,
-            -1.265625
+            -0.3125,
+            -1.75
           ],
           hr_version: {
-            width: 94,
-            height: 170,
+            width: 228,
+            height: 242,
             shift: [
-              0.125,
-              -1.25
+              -0.3125,
+              -1.65625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-h-leaves.png',
@@ -7293,6 +12267,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/07/tree-07-h-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 146,
+          height: 74,
+          frame_count: 4,
+          shift: [
+            1.4375,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 288,
+            height: 146,
+            shift: [
+              1.46875,
+              0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-h-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -7301,23 +12306,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 169,
-          height: 120,
-          frame_count: 4,
+          width: 72,
+          height: 102,
+          frame_count: 1,
           shift: [
-            1.359375,
-            -1.0625
+            0,
+            -1.125
           ],
           hr_version: {
-            width: 337,
-            height: 238,
+            width: 142,
+            height: 204,
             shift: [
-              1.3515625,
-              -1.046875
+              0.03125,
+              -1.09375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-i-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -7328,19 +12333,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 55,
-          height: 87,
+          width: 92,
+          height: 110,
           frame_count: 3,
           shift: [
-            -0.453125,
-            -1.546875
+            -0.0625,
+            -1.75
           ],
           hr_version: {
-            width: 109,
-            height: 177,
+            width: 182,
+            height: 218,
             shift: [
-              -0.4453125,
-              -1.5546875
+              -0.03125,
+              -1.6875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/07/hr-tree-07-i-leaves.png',
@@ -7385,8 +12390,422 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/07/tree-07-i-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 114,
+          height: 72,
+          frame_count: 4,
+          shift: [
+            1.4375,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 222,
+            height: 140,
+            shift: [
+              1.5,
+              -0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-i-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/07/tree-07-j-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 76,
+          height: 98,
+          frame_count: 1,
+          shift: [
+            -0.0625,
+            -1.0625
+          ],
+          hr_version: {
+            width: 154,
+            height: 198,
+            shift: [
+              -0.0625,
+              -1.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-j-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/07/tree-07-j-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 100,
+          height: 98,
+          frame_count: 3,
+          shift: [
+            0.0625,
+            -1.375
+          ],
+          hr_version: {
+            width: 200,
+            height: 200,
+            shift: [
+              0.0625,
+              -1.375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-j-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/07/tree-07-j-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 130,
+          height: 62,
+          frame_count: 4,
+          shift: [
+            1.625,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 258,
+            height: 126,
+            shift: [
+              1.65625,
+              0
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-j-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/07/tree-07-k-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 114,
+          height: 136,
+          frame_count: 1,
+          shift: [
+            0.0625,
+            -0.6875
+          ],
+          hr_version: {
+            width: 226,
+            height: 274,
+            shift: [
+              0.09375,
+              -0.6875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-k-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/07/tree-07-k-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 100,
+          height: 100,
+          frame_count: 3,
+          shift: [
+            0.5,
+            -1.375
+          ],
+          hr_version: {
+            width: 204,
+            height: 198,
+            shift: [
+              0.46875,
+              -1.34375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-k-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/07/tree-07-k-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 132,
+          height: 114,
+          frame_count: 4,
+          shift: [
+            0.625,
+            -0.4375
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 264,
+            height: 230,
+            shift: [
+              0.625,
+              -0.4375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-k-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/07/tree-07-l-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 160,
+          height: 62,
+          frame_count: 1,
+          shift: [
+            -0.875,
+            0.125
+          ],
+          hr_version: {
+            width: 314,
+            height: 124,
+            shift: [
+              -0.8125,
+              0.125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-l-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/07/tree-07-l-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 164,
+          height: 72,
+          frame_count: 3,
+          shift: [
+            -1,
+            0.0625
+          ],
+          hr_version: {
+            width: 328,
+            height: 144,
+            shift: [
+              -0.96875,
+              0.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-l-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/07/tree-07-l-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 176,
+          height: 80,
+          frame_count: 4,
+          shift: [
+            -0.75,
+            0.4375
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 354,
+            height: 156,
+            shift: [
+              -0.75,
+              0.46875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/07/hr-tree-07-l-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       }
+    ],
+    variation_weights: [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0.3,
+      0.3,
+      0.05,
+      0.05
     ],
     colors: [
       {
@@ -7468,8 +12887,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 2,
-      result: 'raw_wood',
+      mining_time: 0.55,
+      result: 'wood',
       count: 4
     },
     corpse: 'tree_06_stump',
@@ -7515,23 +12934,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 178,
-          height: 144,
-          frame_count: 4,
+          width: 71,
+          height: 134,
+          frame_count: 1,
           shift: [
-            1.875,
-            -1.0625
+            0.203125,
+            -1.21875
           ],
           hr_version: {
-            width: 356,
-            height: 289,
+            width: 142,
+            height: 269,
             shift: [
-              1.859375,
-              -1.0546875
+              0.203125,
+              -1.2109375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-a-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -7546,15 +12965,15 @@ module.exports = {
           height: 97,
           frame_count: 3,
           shift: [
-            0.59375,
-            -1.453125
+            0.34375,
+            -1.546875
           ],
           hr_version: {
             width: 133,
-            height: 195,
+            height: 194,
             shift: [
-              0.6015625,
-              -1.4609375
+              0.3515625,
+              -1.546875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-a-leaves.png',
@@ -7599,6 +13018,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-a-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 168,
+          height: 74,
+          frame_count: 4,
+          shift: [
+            2.03125,
+            0.03125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 336,
+            height: 149,
+            shift: [
+              2.015625,
+              0.0390625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-a-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -7607,23 +13057,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 188,
-          height: 129,
-          frame_count: 4,
+          width: 83,
+          height: 125,
+          frame_count: 1,
           shift: [
-            1.90625,
-            -0.734375
+            0.265625,
+            -0.765625
           ],
           hr_version: {
-            width: 375,
-            height: 258,
+            width: 165,
+            height: 251,
             shift: [
-              1.9140625,
-              -0.71875
+              0.2734375,
+              -0.7734375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-b-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -7634,19 +13084,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 85,
-          height: 92,
+          width: 86,
+          height: 93,
           frame_count: 3,
           shift: [
-            0.546875,
-            -1.15625
+            0.3125,
+            -1.234375
           ],
           hr_version: {
             width: 170,
             height: 186,
             shift: [
-              0.5625,
-              -1.15625
+              0.3125,
+              -1.25
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-b-leaves.png',
@@ -7691,6 +13141,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-b-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 175,
+          height: 57,
+          frame_count: 4,
+          shift: [
+            2.109375,
+            0.390625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 350,
+            height: 115,
+            shift: [
+              2.109375,
+              0.3984375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-b-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -7699,23 +13180,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 202,
-          height: 107,
-          frame_count: 4,
+          width: 99,
+          height: 104,
+          frame_count: 1,
           shift: [
-            1.625,
-            -0.390625
+            0.015625,
+            -0.4375
           ],
           hr_version: {
-            width: 403,
-            height: 214,
+            width: 196,
+            height: 209,
             shift: [
-              1.6328125,
-              -0.390625
+              0.015625,
+              -0.4296875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-c-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -7727,18 +13208,18 @@ module.exports = {
             'mipmap'
           ],
           width: 89,
-          height: 79,
+          height: 80,
           frame_count: 3,
           shift: [
-            0.359375,
-            -0.796875
+            0.109375,
+            -0.875
           ],
           hr_version: {
-            width: 178,
-            height: 158,
+            width: 179,
+            height: 159,
             shift: [
-              0.34375,
-              -0.796875
+              0.1015625,
+              -0.8828125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-c-leaves.png',
@@ -7783,6 +13264,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-c-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 174,
+          height: 48,
+          frame_count: 4,
+          shift: [
+            2.0625,
+            0.53125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 349,
+            height: 95,
+            shift: [
+              2.0546875,
+              0.5390625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-c-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -7791,23 +13303,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 172,
-          height: 130,
-          frame_count: 4,
+          width: 74,
+          height: 124,
+          frame_count: 1,
           shift: [
-            1.0625,
-            -0.53125
+            -0.46875,
+            -0.625
           ],
           hr_version: {
-            width: 343,
-            height: 259,
+            width: 147,
+            height: 247,
             shift: [
-              1.0703125,
-              -0.5234375
+              -0.4609375,
+              -0.6171875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-d-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -7819,18 +13331,18 @@ module.exports = {
             'mipmap'
           ],
           width: 75,
-          height: 90,
+          height: 89,
           frame_count: 3,
           shift: [
-            -0.203125,
-            -1.125
+            -0.453125,
+            -1.203125
           ],
           hr_version: {
             width: 150,
-            height: 178,
+            height: 179,
             shift: [
-              -0.203125,
-              -1.125
+              -0.453125,
+              -1.2109375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-d-leaves.png',
@@ -7875,6 +13387,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-d-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 153,
+          height: 65,
+          frame_count: 4,
+          shift: [
+            1.359375,
+            0.484375
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 306,
+            height: 130,
+            shift: [
+              1.359375,
+              0.484375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-d-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -7883,23 +13426,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 140,
-          height: 144,
-          frame_count: 4,
+          width: 77,
+          height: 136,
+          frame_count: 1,
           shift: [
-            0.5625,
-            -0.875
+            -0.421875,
+            -1
           ],
           hr_version: {
-            width: 280,
-            height: 287,
+            width: 154,
+            height: 273,
             shift: [
-              0.5625,
-              -0.8828125
+              -0.421875,
+              -0.9921875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-e-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -7914,15 +13457,15 @@ module.exports = {
           height: 112,
           frame_count: 3,
           shift: [
-            -0.3125,
-            -1.375
+            -0.5625,
+            -1.46875
           ],
           hr_version: {
-            width: 137,
-            height: 224,
+            width: 136,
+            height: 225,
             shift: [
-              -0.3203125,
-              -1.390625
+              -0.5625,
+              -1.4765625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-e-leaves.png',
@@ -7967,6 +13510,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-e-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 123,
+          height: 74,
+          frame_count: 4,
+          shift: [
+            0.828125,
+            0.21875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 247,
+            height: 146,
+            shift: [
+              0.8203125,
+              0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-e-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -7975,23 +13549,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 186,
-          height: 136,
-          frame_count: 4,
+          width: 91,
+          height: 135,
+          frame_count: 1,
           shift: [
-            0.96875,
-            -1.125
+            -0.515625,
+            -1.140625
           ],
           hr_version: {
-            width: 371,
-            height: 272,
+            width: 181,
+            height: 271,
             shift: [
-              0.9609375,
-              -1.125
+              -0.5078125,
+              -1.1328125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-f-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -8003,18 +13577,18 @@ module.exports = {
             'mipmap'
           ],
           width: 89,
-          height: 114,
+          height: 115,
           frame_count: 3,
           shift: [
-            -0.328125,
-            -1.4375
+            -0.578125,
+            -1.515625
           ],
           hr_version: {
             width: 177,
-            height: 228,
+            height: 229,
             shift: [
-              -0.3203125,
-              -1.421875
+              -0.5703125,
+              -1.5234375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-f-leaves.png',
@@ -8059,6 +13633,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-f-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 163,
+          height: 55,
+          frame_count: 4,
+          shift: [
+            1.328125,
+            -0.140625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 324,
+            height: 109,
+            shift: [
+              1.328125,
+              -0.1328125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-f-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -8067,23 +13672,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 202,
-          height: 133,
-          frame_count: 4,
+          width: 97,
+          height: 132,
+          frame_count: 1,
           shift: [
-            1.34375,
-            -1.078125
+            -0.265625,
+            -1.09375
           ],
           hr_version: {
-            width: 402,
+            width: 194,
             height: 268,
             shift: [
-              1.34375,
+              -0.28125,
               -1.09375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-g-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -8098,15 +13703,15 @@ module.exports = {
           height: 114,
           frame_count: 3,
           shift: [
-            -0.015625,
-            -1.375
+            -0.265625,
+            -1.46875
           ],
           hr_version: {
             width: 177,
             height: 228,
             shift: [
-              -0.0234375,
-              -1.375
+              -0.2578125,
+              -1.453125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-g-leaves.png',
@@ -8151,6 +13756,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-g-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 177,
+          height: 50,
+          frame_count: 4,
+          shift: [
+            1.734375,
+            -0.21875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 352,
+            height: 101,
+            shift: [
+              1.734375,
+              -0.2109375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-g-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -8159,23 +13795,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 173,
+          width: 84,
           height: 129,
-          frame_count: 4,
+          frame_count: 1,
           shift: [
-            1.546875,
+            0.15625,
             -1.078125
           ],
           hr_version: {
-            width: 347,
+            width: 169,
             height: 258,
             shift: [
-              1.5390625,
+              0.1484375,
               -1.078125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-h-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -8190,15 +13826,15 @@ module.exports = {
           height: 95,
           frame_count: 3,
           shift: [
-            0.671875,
-            -1.359375
+            0.421875,
+            -1.421875
           ],
           hr_version: {
             width: 143,
-            height: 190,
+            height: 191,
             shift: [
-              0.6640625,
-              -1.34375
+              0.4140625,
+              -1.4296875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-h-leaves.png',
@@ -8243,6 +13879,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-h-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 159,
+          height: 74,
+          frame_count: 4,
+          shift: [
+            1.765625,
+            -0.21875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 318,
+            height: 147,
+            shift: [
+              1.765625,
+              -0.2109375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-h-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -8251,23 +13918,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 127,
-          height: 129,
-          frame_count: 4,
+          width: 76,
+          height: 118,
+          frame_count: 1,
           shift: [
-            0.390625,
-            -0.453125
+            -0.40625,
+            -0.625
           ],
           hr_version: {
-            width: 253,
-            height: 259,
+            width: 151,
+            height: 239,
             shift: [
-              0.3984375,
-              -0.4609375
+              -0.3984375,
+              -0.6171875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-i-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -8282,15 +13949,15 @@ module.exports = {
           height: 93,
           frame_count: 3,
           shift: [
-            -0.328125,
-            -1.046875
+            -0.578125,
+            -1.140625
           ],
           hr_version: {
             width: 129,
-            height: 185,
+            height: 187,
             shift: [
-              -0.3203125,
-              -1.0546875
+              -0.5703125,
+              -1.1484375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-i-leaves.png',
@@ -8335,6 +14002,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-i-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 113,
+          height: 74,
+          frame_count: 4,
+          shift: [
+            0.609375,
+            0.40625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 226,
+            height: 148,
+            shift: [
+              0.609375,
+              0.40625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-i-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -8343,23 +14041,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 136,
-          height: 126,
-          frame_count: 4,
+          width: 71,
+          height: 118,
+          frame_count: 1,
           shift: [
-            0.6875,
-            -0.53125
+            -0.328125,
+            -0.65625
           ],
           hr_version: {
-            width: 272,
-            height: 253,
+            width: 142,
+            height: 237,
             shift: [
-              0.6875,
-              -0.5234375
+              -0.328125,
+              -0.6484375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-j-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -8374,15 +14072,15 @@ module.exports = {
           height: 92,
           frame_count: 3,
           shift: [
-            -0.203125,
-            -1.09375
+            -0.453125,
+            -1.1875
           ],
           hr_version: {
             width: 133,
             height: 182,
             shift: [
-              -0.1953125,
-              -1.09375
+              -0.4453125,
+              -1.1875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-j-leaves.png',
@@ -8427,64 +14125,75 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-j-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 127,
+          height: 73,
+          frame_count: 4,
+          shift: [
+            0.828125,
+            0.296875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 254,
+            height: 146,
+            shift: [
+              0.828125,
+              0.3125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-j-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       }
     ],
     colors: [
       {
-        r: 122,
-        g: 113,
-        b: 52
+        r: 216,
+        g: 238,
+        b: 142
       },
       {
-        r: 143,
-        g: 135,
-        b: 78
+        r: 206,
+        g: 230,
+        b: 126
       },
       {
-        r: 147,
-        g: 138,
-        b: 78
+        r: 203,
+        g: 222,
+        b: 140
       },
       {
-        r: 132,
-        g: 120,
-        b: 39
+        r: 211,
+        g: 219,
+        b: 111
       },
       {
-        r: 177,
-        g: 135,
-        b: 55
-      },
-      {
-        r: 186,
-        g: 148,
-        b: 74
-      },
-      {
-        r: 205,
-        g: 159,
-        b: 70
+        r: 238,
+        g: 236,
+        b: 113
       },
       {
         r: 245,
-        g: 169,
-        b: 79
+        g: 240,
+        b: 117
       },
       {
-        r: 157,
-        g: 108,
-        b: 56
-      },
-      {
-        r: 152,
-        g: 97,
-        b: 56
-      },
-      {
-        r: 154,
-        g: 95,
-        b: 75
+        r: 208,
+        g: 238,
+        b: 118
       }
     ],
     darkness_of_burnt_tree: 0.5,
@@ -8505,8 +14214,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 2,
-      result: 'raw_wood',
+      mining_time: 0.55,
+      result: 'wood',
       count: 4
     },
     corpse: 'tree_06_stump',
@@ -8552,23 +14261,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 178,
-          height: 144,
-          frame_count: 4,
+          width: 71,
+          height: 134,
+          frame_count: 1,
           shift: [
-            1.875,
-            -1.0625
+            0.203125,
+            -1.21875
           ],
           hr_version: {
-            width: 356,
-            height: 289,
+            width: 142,
+            height: 269,
             shift: [
-              1.859375,
-              -1.0546875
+              0.203125,
+              -1.2109375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-a-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -8583,15 +14292,15 @@ module.exports = {
           height: 97,
           frame_count: 3,
           shift: [
-            0.59375,
-            -1.453125
+            0.34375,
+            -1.546875
           ],
           hr_version: {
             width: 133,
-            height: 195,
+            height: 194,
             shift: [
-              0.6015625,
-              -1.4609375
+              0.3515625,
+              -1.546875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-a-leaves.png',
@@ -8636,6 +14345,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-a-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 168,
+          height: 74,
+          frame_count: 4,
+          shift: [
+            2.03125,
+            0.03125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 336,
+            height: 149,
+            shift: [
+              2.015625,
+              0.0390625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-a-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -8644,23 +14384,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 188,
-          height: 129,
-          frame_count: 4,
+          width: 83,
+          height: 125,
+          frame_count: 1,
           shift: [
-            1.90625,
-            -0.734375
+            0.265625,
+            -0.765625
           ],
           hr_version: {
-            width: 375,
-            height: 258,
+            width: 165,
+            height: 251,
             shift: [
-              1.9140625,
-              -0.71875
+              0.2734375,
+              -0.7734375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-b-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -8671,19 +14411,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 85,
-          height: 92,
+          width: 86,
+          height: 93,
           frame_count: 3,
           shift: [
-            0.546875,
-            -1.15625
+            0.3125,
+            -1.234375
           ],
           hr_version: {
             width: 170,
             height: 186,
             shift: [
-              0.5625,
-              -1.15625
+              0.3125,
+              -1.25
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-b-leaves.png',
@@ -8728,6 +14468,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-b-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 175,
+          height: 57,
+          frame_count: 4,
+          shift: [
+            2.109375,
+            0.390625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 350,
+            height: 115,
+            shift: [
+              2.109375,
+              0.3984375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-b-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -8736,23 +14507,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 202,
-          height: 107,
-          frame_count: 4,
+          width: 99,
+          height: 104,
+          frame_count: 1,
           shift: [
-            1.625,
-            -0.390625
+            0.015625,
+            -0.4375
           ],
           hr_version: {
-            width: 403,
-            height: 214,
+            width: 196,
+            height: 209,
             shift: [
-              1.6328125,
-              -0.390625
+              0.015625,
+              -0.4296875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-c-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -8764,18 +14535,18 @@ module.exports = {
             'mipmap'
           ],
           width: 89,
-          height: 79,
+          height: 80,
           frame_count: 3,
           shift: [
-            0.359375,
-            -0.796875
+            0.109375,
+            -0.875
           ],
           hr_version: {
-            width: 178,
-            height: 158,
+            width: 179,
+            height: 159,
             shift: [
-              0.34375,
-              -0.796875
+              0.1015625,
+              -0.8828125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-c-leaves.png',
@@ -8820,6 +14591,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-c-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 174,
+          height: 48,
+          frame_count: 4,
+          shift: [
+            2.0625,
+            0.53125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 349,
+            height: 95,
+            shift: [
+              2.0546875,
+              0.5390625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-c-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -8828,23 +14630,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 172,
-          height: 130,
-          frame_count: 4,
+          width: 74,
+          height: 124,
+          frame_count: 1,
           shift: [
-            1.0625,
-            -0.53125
+            -0.46875,
+            -0.625
           ],
           hr_version: {
-            width: 343,
-            height: 259,
+            width: 147,
+            height: 247,
             shift: [
-              1.0703125,
-              -0.5234375
+              -0.4609375,
+              -0.6171875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-d-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -8856,18 +14658,18 @@ module.exports = {
             'mipmap'
           ],
           width: 75,
-          height: 90,
+          height: 89,
           frame_count: 3,
           shift: [
-            -0.203125,
-            -1.125
+            -0.453125,
+            -1.203125
           ],
           hr_version: {
             width: 150,
-            height: 178,
+            height: 179,
             shift: [
-              -0.203125,
-              -1.125
+              -0.453125,
+              -1.2109375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-d-leaves.png',
@@ -8912,6 +14714,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-d-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 153,
+          height: 65,
+          frame_count: 4,
+          shift: [
+            1.359375,
+            0.484375
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 306,
+            height: 130,
+            shift: [
+              1.359375,
+              0.484375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-d-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -8920,23 +14753,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 140,
-          height: 144,
-          frame_count: 4,
+          width: 77,
+          height: 136,
+          frame_count: 1,
           shift: [
-            0.5625,
-            -0.875
+            -0.421875,
+            -1
           ],
           hr_version: {
-            width: 280,
-            height: 287,
+            width: 154,
+            height: 273,
             shift: [
-              0.5625,
-              -0.8828125
+              -0.421875,
+              -0.9921875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-e-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -8951,15 +14784,15 @@ module.exports = {
           height: 112,
           frame_count: 3,
           shift: [
-            -0.3125,
-            -1.375
+            -0.5625,
+            -1.46875
           ],
           hr_version: {
-            width: 137,
-            height: 224,
+            width: 136,
+            height: 225,
             shift: [
-              -0.3203125,
-              -1.390625
+              -0.5625,
+              -1.4765625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-e-leaves.png',
@@ -9004,6 +14837,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-e-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 123,
+          height: 74,
+          frame_count: 4,
+          shift: [
+            0.828125,
+            0.21875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 247,
+            height: 146,
+            shift: [
+              0.8203125,
+              0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-e-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -9012,23 +14876,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 186,
-          height: 136,
-          frame_count: 4,
+          width: 91,
+          height: 135,
+          frame_count: 1,
           shift: [
-            0.96875,
-            -1.125
+            -0.515625,
+            -1.140625
           ],
           hr_version: {
-            width: 371,
-            height: 272,
+            width: 181,
+            height: 271,
             shift: [
-              0.9609375,
-              -1.125
+              -0.5078125,
+              -1.1328125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-f-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -9040,18 +14904,18 @@ module.exports = {
             'mipmap'
           ],
           width: 89,
-          height: 114,
+          height: 115,
           frame_count: 3,
           shift: [
-            -0.328125,
-            -1.4375
+            -0.578125,
+            -1.515625
           ],
           hr_version: {
             width: 177,
-            height: 228,
+            height: 229,
             shift: [
-              -0.3203125,
-              -1.421875
+              -0.5703125,
+              -1.5234375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-f-leaves.png',
@@ -9096,6 +14960,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-f-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 163,
+          height: 55,
+          frame_count: 4,
+          shift: [
+            1.328125,
+            -0.140625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 324,
+            height: 109,
+            shift: [
+              1.328125,
+              -0.1328125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-f-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -9104,23 +14999,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 202,
-          height: 133,
-          frame_count: 4,
+          width: 97,
+          height: 132,
+          frame_count: 1,
           shift: [
-            1.34375,
-            -1.078125
+            -0.265625,
+            -1.09375
           ],
           hr_version: {
-            width: 402,
+            width: 194,
             height: 268,
             shift: [
-              1.34375,
+              -0.28125,
               -1.09375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-g-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -9135,15 +15030,15 @@ module.exports = {
           height: 114,
           frame_count: 3,
           shift: [
-            -0.015625,
-            -1.375
+            -0.265625,
+            -1.46875
           ],
           hr_version: {
             width: 177,
             height: 228,
             shift: [
-              -0.0234375,
-              -1.375
+              -0.2578125,
+              -1.453125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-g-leaves.png',
@@ -9188,6 +15083,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-g-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 177,
+          height: 50,
+          frame_count: 4,
+          shift: [
+            1.734375,
+            -0.21875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 352,
+            height: 101,
+            shift: [
+              1.734375,
+              -0.2109375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-g-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -9196,23 +15122,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 173,
+          width: 84,
           height: 129,
-          frame_count: 4,
+          frame_count: 1,
           shift: [
-            1.546875,
+            0.15625,
             -1.078125
           ],
           hr_version: {
-            width: 347,
+            width: 169,
             height: 258,
             shift: [
-              1.5390625,
+              0.1484375,
               -1.078125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-h-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -9227,15 +15153,15 @@ module.exports = {
           height: 95,
           frame_count: 3,
           shift: [
-            0.671875,
-            -1.359375
+            0.421875,
+            -1.421875
           ],
           hr_version: {
             width: 143,
-            height: 190,
+            height: 191,
             shift: [
-              0.6640625,
-              -1.34375
+              0.4140625,
+              -1.4296875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-h-leaves.png',
@@ -9280,6 +15206,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-h-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 159,
+          height: 74,
+          frame_count: 4,
+          shift: [
+            1.765625,
+            -0.21875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 318,
+            height: 147,
+            shift: [
+              1.765625,
+              -0.2109375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-h-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -9288,23 +15245,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 127,
-          height: 129,
-          frame_count: 4,
+          width: 76,
+          height: 118,
+          frame_count: 1,
           shift: [
-            0.390625,
-            -0.453125
+            -0.40625,
+            -0.625
           ],
           hr_version: {
-            width: 253,
-            height: 259,
+            width: 151,
+            height: 239,
             shift: [
-              0.3984375,
-              -0.4609375
+              -0.3984375,
+              -0.6171875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-i-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -9319,15 +15276,15 @@ module.exports = {
           height: 93,
           frame_count: 3,
           shift: [
-            -0.328125,
-            -1.046875
+            -0.578125,
+            -1.140625
           ],
           hr_version: {
             width: 129,
-            height: 185,
+            height: 187,
             shift: [
-              -0.3203125,
-              -1.0546875
+              -0.5703125,
+              -1.1484375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-i-leaves.png',
@@ -9372,6 +15329,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-i-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 113,
+          height: 74,
+          frame_count: 4,
+          shift: [
+            0.609375,
+            0.40625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 226,
+            height: 148,
+            shift: [
+              0.609375,
+              0.40625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-i-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -9380,23 +15368,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 136,
-          height: 126,
-          frame_count: 4,
+          width: 71,
+          height: 118,
+          frame_count: 1,
           shift: [
-            0.6875,
-            -0.53125
+            -0.328125,
+            -0.65625
           ],
           hr_version: {
-            width: 272,
-            height: 253,
+            width: 142,
+            height: 237,
             shift: [
-              0.6875,
-              -0.5234375
+              -0.328125,
+              -0.6484375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-j-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -9411,15 +15399,15 @@ module.exports = {
           height: 92,
           frame_count: 3,
           shift: [
-            -0.203125,
-            -1.09375
+            -0.453125,
+            -1.1875
           ],
           hr_version: {
             width: 133,
             height: 182,
             shift: [
-              -0.1953125,
-              -1.09375
+              -0.4453125,
+              -1.1875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/06/hr-tree-06-j-leaves.png',
@@ -9464,6 +15452,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/06/tree-06-j-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 127,
+          height: 73,
+          frame_count: 4,
+          shift: [
+            0.828125,
+            0.296875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 254,
+            height: 146,
+            shift: [
+              0.828125,
+              0.3125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/06/hr-tree-06-j-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       }
     ],
@@ -9522,8 +15541,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 2,
-      result: 'raw_wood',
+      mining_time: 0.55,
+      result: 'wood',
       count: 4
     },
     corpse: 'tree_09_stump',
@@ -9569,23 +15588,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 243,
-          height: 170,
-          frame_count: 4,
+          width: 154,
+          height: 194,
+          frame_count: 1,
           shift: [
-            2.046875,
-            -1.15625
+            0,
+            -2.125
           ],
           hr_version: {
-            width: 487,
-            height: 340,
+            width: 308,
+            height: 392,
             shift: [
-              2.0703125,
-              -1.140625
+              0,
+              -2.125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-a-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -9596,19 +15615,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 123,
-          height: 102,
+          width: 174,
+          height: 196,
           frame_count: 3,
           shift: [
-            0.140625,
-            -2.28125
+            0,
+            -2.5
           ],
           hr_version: {
-            width: 244,
-            height: 204,
+            width: 350,
+            height: 390,
             shift: [
-              0.15625,
-              -2.265625
+              0,
+              -2.4375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-a-leaves.png',
@@ -9653,6 +15672,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-a-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 232,
+          height: 106,
+          frame_count: 4,
+          shift: [
+            2.625,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 458,
+            height: 214,
+            shift: [
+              2.6875,
+              0
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-a-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -9661,23 +15711,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 208,
-          height: 150,
-          frame_count: 4,
+          width: 146,
+          height: 196,
+          frame_count: 1,
           shift: [
-            1.65625,
-            -1.125
+            0.25,
+            -2.1875
           ],
           hr_version: {
-            width: 415,
-            height: 300,
+            width: 294,
+            height: 390,
             shift: [
-              1.6640625,
-              -1.109375
+              0.25,
+              -2.15625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-b-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -9688,19 +15738,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 99,
-          height: 86,
+          width: 168,
+          height: 182,
           frame_count: 3,
           shift: [
-            -0.078125,
-            -2.15625
+            0.1875,
+            -2.75
           ],
           hr_version: {
-            width: 197,
-            height: 172,
+            width: 334,
+            height: 368,
             shift: [
-              -0.0703125,
-              -2.140625
+              0.21875,
+              -2.75
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-b-leaves.png',
@@ -9745,6 +15795,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-b-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 186,
+          height: 114,
+          frame_count: 4,
+          shift: [
+            2.5625,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 374,
+            height: 226,
+            shift: [
+              2.5625,
+              0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-b-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -9753,23 +15834,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 238,
-          height: 167,
-          frame_count: 4,
+          width: 130,
+          height: 196,
+          frame_count: 1,
           shift: [
-            1.75,
-            -1.171875
+            -0.125,
+            -2.0625
           ],
           hr_version: {
-            width: 476,
-            height: 333,
+            width: 258,
+            height: 392,
             shift: [
-              1.765625,
-              -1.1640625
+              -0.09375,
+              -2.03125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-c-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -9780,19 +15861,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 113,
-          height: 95,
+          width: 134,
+          height: 202,
           frame_count: 3,
           shift: [
-            -0.265625,
-            -2.328125
+            0.0625,
+            -2.4375
           ],
           hr_version: {
-            width: 225,
-            height: 189,
+            width: 266,
+            height: 408,
             shift: [
-              -0.2578125,
-              -2.3046875
+              0.09375,
+              -2.4375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-c-leaves.png',
@@ -9837,6 +15918,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-c-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 184,
+          height: 110,
+          frame_count: 4,
+          shift: [
+            2.25,
+            -0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 364,
+            height: 222,
+            shift: [
+              2.28125,
+              -0.125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-c-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -9845,23 +15957,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 169,
-          height: 116,
-          frame_count: 4,
+          width: 132,
+          height: 172,
+          frame_count: 1,
           shift: [
-            1.421875,
-            -1
+            0.125,
+            -1.75
           ],
           hr_version: {
-            width: 338,
-            height: 233,
+            width: 264,
+            height: 348,
             shift: [
-              1.4375,
-              -0.9921875
+              0.125,
+              -1.75
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-d-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -9872,19 +15984,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 90,
-          height: 64,
+          width: 144,
+          height: 152,
           frame_count: 3,
           shift: [
-            0.125,
-            -1.875
+            -0.0625,
+            -2.375
           ],
           hr_version: {
-            width: 179,
-            height: 126,
+            width: 284,
+            height: 308,
             shift: [
-              0.1484375,
-              -1.859375
+              -0.03125,
+              -2.375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-d-leaves.png',
@@ -9929,6 +16041,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-d-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 172,
+          height: 118,
+          frame_count: 4,
+          shift: [
+            2.5,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 344,
+            height: 232,
+            shift: [
+              2.5,
+              -0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-d-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -9937,23 +16080,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 202,
-          height: 157,
-          frame_count: 4,
+          width: 126,
+          height: 138,
+          frame_count: 1,
           shift: [
-            1.96875,
-            -1.203125
+            0.3125,
+            -1.4375
           ],
           hr_version: {
-            width: 403,
-            height: 315,
+            width: 252,
+            height: 272,
             shift: [
-              1.9765625,
-              -1.1953125
+              0.3125,
+              -1.375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-e-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -9964,19 +16107,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 103,
-          height: 103,
+          width: 138,
+          height: 130,
           frame_count: 3,
           shift: [
-            0.359375,
-            -2.109375
+            0.375,
+            -1.75
           ],
           hr_version: {
-            width: 205,
-            height: 206,
+            width: 280,
+            height: 264,
             shift: [
-              0.3828125,
-              -2.09375
+              0.375,
+              -1.75
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-e-leaves.png',
@@ -10021,44 +16164,444 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-e-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 154,
+          height: 96,
+          frame_count: 4,
+          shift: [
+            2.25,
+            0.375
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 306,
+            height: 190,
+            shift: [
+              2.28125,
+              0.40625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-e-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/09/tree-09-f-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 124,
+          height: 144,
+          frame_count: 1,
+          shift: [
+            -0.625,
+            -1.5
+          ],
+          hr_version: {
+            width: 246,
+            height: 286,
+            shift: [
+              -0.59375,
+              -1.46875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-f-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/09/tree-09-f-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 128,
+          height: 146,
+          frame_count: 3,
+          shift: [
+            -0.3125,
+            -1.875
+          ],
+          hr_version: {
+            width: 260,
+            height: 288,
+            shift: [
+              -0.34375,
+              -1.8125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-f-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-f-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 142,
+          height: 96,
+          frame_count: 4,
+          shift: [
+            1.6875,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 282,
+            height: 184,
+            shift: [
+              1.71875,
+              0.25
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-f-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/09/tree-09-g-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 122,
+          height: 156,
+          frame_count: 1,
+          shift: [
+            -0.375,
+            -1.625
+          ],
+          hr_version: {
+            width: 240,
+            height: 312,
+            shift: [
+              -0.34375,
+              -1.625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-g-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/09/tree-09-g-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 134,
+          height: 148,
+          frame_count: 3,
+          shift: [
+            -0.4375,
+            -2.125
+          ],
+          hr_version: {
+            width: 266,
+            height: 296,
+            shift: [
+              -0.40625,
+              -2.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-g-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-g-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 156,
+          height: 90,
+          frame_count: 4,
+          shift: [
+            1.6875,
+            -0.4375
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 310,
+            height: 182,
+            shift: [
+              1.71875,
+              -0.4375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-g-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/09/tree-09-h-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 128,
+          height: 156,
+          frame_count: 1,
+          shift: [
+            0.5625,
+            -1.625
+          ],
+          hr_version: {
+            width: 256,
+            height: 312,
+            shift: [
+              0.5625,
+              -1.625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-h-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/09/tree-09-h-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 122,
+          height: 148,
+          frame_count: 3,
+          shift: [
+            0.5625,
+            -2.0625
+          ],
+          hr_version: {
+            width: 250,
+            height: 292,
+            shift: [
+              0.5625,
+              -2
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-h-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-h-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 150,
+          height: 96,
+          frame_count: 4,
+          shift: [
+            2.3125,
+            -0.3125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 296,
+            height: 192,
+            shift: [
+              2.34375,
+              -0.3125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-h-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       }
     ],
     colors: [
       {
-        r: 194,
-        g: 162,
-        b: 76
+        r: 212,
+        g: 173,
+        b: 67
       },
       {
-        r: 219,
-        g: 179,
-        b: 70
+        r: 190,
+        g: 134,
+        b: 60
       },
       {
-        r: 178,
-        g: 156,
-        b: 95
+        r: 210,
+        g: 174,
+        b: 73
       },
       {
-        r: 194,
-        g: 164,
+        r: 196,
+        g: 165,
         b: 84
       },
       {
-        r: 159,
-        g: 133,
-        b: 62
+        r: 212,
+        g: 165,
+        b: 72
       },
       {
-        r: 177,
-        g: 140,
-        b: 87
+        r: 202,
+        g: 154,
+        b: 86
       },
       {
-        r: 217,
-        g: 129,
-        b: 99
+        r: 228,
+        g: 162,
+        b: 88
       }
     ],
     darkness_of_burnt_tree: 0.5,
@@ -10079,8 +16622,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 2,
-      result: 'raw_wood',
+      mining_time: 0.55,
+      result: 'wood',
       count: 4
     },
     corpse: 'tree_09_stump',
@@ -10126,23 +16669,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 243,
-          height: 170,
-          frame_count: 4,
+          width: 154,
+          height: 194,
+          frame_count: 1,
           shift: [
-            2.046875,
-            -1.15625
+            0,
+            -2.125
           ],
           hr_version: {
-            width: 487,
-            height: 340,
+            width: 308,
+            height: 392,
             shift: [
-              2.0703125,
-              -1.140625
+              0,
+              -2.125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-a-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -10153,19 +16696,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 123,
-          height: 102,
+          width: 174,
+          height: 196,
           frame_count: 3,
           shift: [
-            0.140625,
-            -2.28125
+            0,
+            -2.5
           ],
           hr_version: {
-            width: 244,
-            height: 204,
+            width: 350,
+            height: 390,
             shift: [
-              0.15625,
-              -2.265625
+              0,
+              -2.4375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-a-leaves.png',
@@ -10210,6 +16753,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-a-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 232,
+          height: 106,
+          frame_count: 4,
+          shift: [
+            2.625,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 458,
+            height: 214,
+            shift: [
+              2.6875,
+              0
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-a-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -10218,23 +16792,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 208,
-          height: 150,
-          frame_count: 4,
+          width: 146,
+          height: 196,
+          frame_count: 1,
           shift: [
-            1.65625,
-            -1.125
+            0.25,
+            -2.1875
           ],
           hr_version: {
-            width: 415,
-            height: 300,
+            width: 294,
+            height: 390,
             shift: [
-              1.6640625,
-              -1.109375
+              0.25,
+              -2.15625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-b-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -10245,19 +16819,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 99,
-          height: 86,
+          width: 168,
+          height: 182,
           frame_count: 3,
           shift: [
-            -0.078125,
-            -2.15625
+            0.1875,
+            -2.75
           ],
           hr_version: {
-            width: 197,
-            height: 172,
+            width: 334,
+            height: 368,
             shift: [
-              -0.0703125,
-              -2.140625
+              0.21875,
+              -2.75
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-b-leaves.png',
@@ -10302,6 +16876,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-b-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 186,
+          height: 114,
+          frame_count: 4,
+          shift: [
+            2.5625,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 374,
+            height: 226,
+            shift: [
+              2.5625,
+              0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-b-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -10310,23 +16915,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 238,
-          height: 167,
-          frame_count: 4,
+          width: 130,
+          height: 196,
+          frame_count: 1,
           shift: [
-            1.75,
-            -1.171875
+            -0.125,
+            -2.0625
           ],
           hr_version: {
-            width: 476,
-            height: 333,
+            width: 258,
+            height: 392,
             shift: [
-              1.765625,
-              -1.1640625
+              -0.09375,
+              -2.03125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-c-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -10337,19 +16942,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 113,
-          height: 95,
+          width: 134,
+          height: 202,
           frame_count: 3,
           shift: [
-            -0.265625,
-            -2.328125
+            0.0625,
+            -2.4375
           ],
           hr_version: {
-            width: 225,
-            height: 189,
+            width: 266,
+            height: 408,
             shift: [
-              -0.2578125,
-              -2.3046875
+              0.09375,
+              -2.4375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-c-leaves.png',
@@ -10394,6 +16999,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-c-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 184,
+          height: 110,
+          frame_count: 4,
+          shift: [
+            2.25,
+            -0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 364,
+            height: 222,
+            shift: [
+              2.28125,
+              -0.125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-c-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -10402,23 +17038,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 169,
-          height: 116,
-          frame_count: 4,
+          width: 132,
+          height: 172,
+          frame_count: 1,
           shift: [
-            1.421875,
-            -1
+            0.125,
+            -1.75
           ],
           hr_version: {
-            width: 338,
-            height: 233,
+            width: 264,
+            height: 348,
             shift: [
-              1.4375,
-              -0.9921875
+              0.125,
+              -1.75
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-d-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -10429,19 +17065,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 90,
-          height: 64,
+          width: 144,
+          height: 152,
           frame_count: 3,
           shift: [
-            0.125,
-            -1.875
+            -0.0625,
+            -2.375
           ],
           hr_version: {
-            width: 179,
-            height: 126,
+            width: 284,
+            height: 308,
             shift: [
-              0.1484375,
-              -1.859375
+              -0.03125,
+              -2.375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-d-leaves.png',
@@ -10486,6 +17122,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-d-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 172,
+          height: 118,
+          frame_count: 4,
+          shift: [
+            2.5,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 344,
+            height: 232,
+            shift: [
+              2.5,
+              -0.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-d-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -10494,23 +17161,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 202,
-          height: 157,
-          frame_count: 4,
+          width: 126,
+          height: 138,
+          frame_count: 1,
           shift: [
-            1.96875,
-            -1.203125
+            0.3125,
+            -1.4375
           ],
           hr_version: {
-            width: 403,
-            height: 315,
+            width: 252,
+            height: 272,
             shift: [
-              1.9765625,
-              -1.1953125
+              0.3125,
+              -1.375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-e-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -10521,19 +17188,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 103,
-          height: 103,
+          width: 138,
+          height: 130,
           frame_count: 3,
           shift: [
-            0.359375,
-            -2.109375
+            0.375,
+            -1.75
           ],
           hr_version: {
-            width: 205,
-            height: 206,
+            width: 280,
+            height: 264,
             shift: [
-              0.3828125,
-              -2.09375
+              0.375,
+              -1.75
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/09/hr-tree-09-e-leaves.png',
@@ -10578,44 +17245,444 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-e-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 154,
+          height: 96,
+          frame_count: 4,
+          shift: [
+            2.25,
+            0.375
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 306,
+            height: 190,
+            shift: [
+              2.28125,
+              0.40625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-e-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/09/tree-09-f-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 124,
+          height: 144,
+          frame_count: 1,
+          shift: [
+            -0.625,
+            -1.5
+          ],
+          hr_version: {
+            width: 246,
+            height: 286,
+            shift: [
+              -0.59375,
+              -1.46875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-f-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/09/tree-09-f-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 128,
+          height: 146,
+          frame_count: 3,
+          shift: [
+            -0.3125,
+            -1.875
+          ],
+          hr_version: {
+            width: 260,
+            height: 288,
+            shift: [
+              -0.34375,
+              -1.8125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-f-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-f-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 142,
+          height: 96,
+          frame_count: 4,
+          shift: [
+            1.6875,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 282,
+            height: 184,
+            shift: [
+              1.71875,
+              0.25
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-f-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/09/tree-09-g-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 122,
+          height: 156,
+          frame_count: 1,
+          shift: [
+            -0.375,
+            -1.625
+          ],
+          hr_version: {
+            width: 240,
+            height: 312,
+            shift: [
+              -0.34375,
+              -1.625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-g-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/09/tree-09-g-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 134,
+          height: 148,
+          frame_count: 3,
+          shift: [
+            -0.4375,
+            -2.125
+          ],
+          hr_version: {
+            width: 266,
+            height: 296,
+            shift: [
+              -0.40625,
+              -2.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-g-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-g-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 156,
+          height: 90,
+          frame_count: 4,
+          shift: [
+            1.6875,
+            -0.4375
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 310,
+            height: 182,
+            shift: [
+              1.71875,
+              -0.4375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-g-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/09/tree-09-h-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 128,
+          height: 156,
+          frame_count: 1,
+          shift: [
+            0.5625,
+            -1.625
+          ],
+          hr_version: {
+            width: 256,
+            height: 312,
+            shift: [
+              0.5625,
+              -1.625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-h-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/09/tree-09-h-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 122,
+          height: 148,
+          frame_count: 3,
+          shift: [
+            0.5625,
+            -2.0625
+          ],
+          hr_version: {
+            width: 250,
+            height: 292,
+            shift: [
+              0.5625,
+              -2
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-h-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/09/tree-09-h-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 150,
+          height: 96,
+          frame_count: 4,
+          shift: [
+            2.3125,
+            -0.3125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 296,
+            height: 192,
+            shift: [
+              2.34375,
+              -0.3125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/09/hr-tree-09-h-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       }
     ],
     colors: [
       {
-        r: 196,
-        g: 91,
-        b: 91
+        r: 208,
+        g: 110,
+        b: 110
       },
       {
-        r: 207,
+        r: 238,
+        g: 148,
+        b: 111
+      },
+      {
+        r: 230,
+        g: 124,
+        b: 124
+      },
+      {
+        r: 206,
         g: 95,
         b: 95
       },
       {
-        r: 250,
-        g: 108,
-        b: 108
+        r: 218,
+        g: 114,
+        b: 90
       },
       {
-        r: 222,
-        g: 100,
-        b: 100
+        r: 226,
+        g: 119,
+        b: 95
       },
       {
-        r: 223,
-        g: 110,
-        b: 84
-      },
-      {
-        r: 234,
-        g: 107,
-        b: 78
-      },
-      {
-        r: 217,
-        g: 131,
-        b: 111
+        r: 228,
+        g: 134,
+        b: 112
       }
     ],
     darkness_of_burnt_tree: 0.5,
@@ -10636,8 +17703,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 2,
-      result: 'raw_wood',
+      mining_time: 0.55,
+      result: 'wood',
       count: 4
     },
     corpse: 'tree_08_stump',
@@ -10683,23 +17750,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 200,
-          height: 140,
-          frame_count: 4,
+          width: 106,
+          height: 142,
+          frame_count: 1,
           shift: [
-            1.71875,
-            -1.0625
+            -0.1875,
+            -1.8125
           ],
           hr_version: {
-            width: 399,
-            height: 279,
+            width: 210,
+            height: 286,
             shift: [
-              1.7421875,
-              -1.0546875
+              -0.15625,
+              -1.8125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-a-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -10710,19 +17777,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 94,
-          height: 70,
+          width: 130,
+          height: 142,
           frame_count: 3,
           shift: [
-            0,
-            -2.21875
+            -0.1875,
+            -2.4375
           ],
           hr_version: {
-            width: 188,
-            height: 141,
+            width: 262,
+            height: 282,
             shift: [
-              0.015625,
-              -2.2109375
+              -0.1875,
+              -2.40625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-a-leaves.png',
@@ -10767,6 +17834,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-a-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 156,
+          height: 110,
+          frame_count: 4,
+          shift: [
+            2.1875,
+            0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 310,
+            height: 222,
+            shift: [
+              2.21875,
+              0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-a-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -10775,23 +17873,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 213,
-          height: 139,
-          frame_count: 4,
+          width: 120,
+          height: 138,
+          frame_count: 1,
           shift: [
-            1.796875,
-            -0.953125
+            -0.125,
+            -1.75
           ],
           hr_version: {
-            width: 426,
-            height: 277,
+            width: 238,
+            height: 276,
             shift: [
-              1.796875,
-              -0.9453125
+              -0.09375,
+              -1.71875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-b-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -10802,19 +17900,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 102,
-          height: 70,
+          width: 162,
+          height: 154,
           frame_count: 3,
           shift: [
-            0.0625,
-            -2.15625
+            -0.125,
+            -2.25
           ],
           hr_version: {
-            width: 205,
-            height: 142,
+            width: 322,
+            height: 306,
             shift: [
-              0.0703125,
-              -2.140625
+              -0.09375,
+              -2.1875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-b-leaves.png',
@@ -10859,6 +17957,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-b-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 162,
+          height: 90,
+          frame_count: 4,
+          shift: [
+            2.375,
+            -0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 322,
+            height: 178,
+            shift: [
+              2.40625,
+              -0.15625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-b-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -10867,23 +17996,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 188,
-          height: 136,
-          frame_count: 4,
+          width: 106,
+          height: 152,
+          frame_count: 1,
           shift: [
-            2.03125,
-            -1.125
+            0.0625,
+            -2
           ],
           hr_version: {
-            width: 377,
-            height: 271,
+            width: 210,
+            height: 300,
             shift: [
-              2.0546875,
-              -1.1171875
+              0.09375,
+              -1.96875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-c-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -10894,19 +18023,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 76,
-          height: 76,
+          width: 126,
+          height: 146,
           frame_count: 3,
           shift: [
             0.1875,
-            -2.125
+            -2.625
           ],
           hr_version: {
-            width: 152,
-            height: 152,
+            width: 252,
+            height: 294,
             shift: [
-              0.203125,
-              -2.125
+              0.1875,
+              -2.59375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-c-leaves.png',
@@ -10951,6 +18080,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-c-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 166,
+          height: 114,
+          frame_count: 4,
+          shift: [
+            2.1875,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 326,
+            height: 228,
+            shift: [
+              2.25,
+              -0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-c-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -10959,23 +18119,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 212,
-          height: 134,
-          frame_count: 4,
+          width: 84,
+          height: 114,
+          frame_count: 1,
           shift: [
-            1.9375,
-            -1.21875
+            0,
+            -1.4375
           ],
           hr_version: {
-            width: 424,
-            height: 267,
+            width: 166,
+            height: 228,
             shift: [
-              1.953125,
-              -1.2109375
+              0.03125,
+              -1.40625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-d-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -10986,19 +18146,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 93,
-          height: 81,
+          width: 110,
+          height: 110,
           frame_count: 3,
           shift: [
-            -0.015625,
-            -2.171875
+            -0.0625,
+            -2.3125
           ],
           hr_version: {
-            width: 187,
-            height: 162,
+            width: 214,
+            height: 220,
             shift: [
-              0.0078125,
-              -2.140625
+              0,
+              -2.28125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-d-leaves.png',
@@ -11043,6 +18203,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-d-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 138,
+          height: 86,
+          frame_count: 4,
+          shift: [
+            2.1875,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 274,
+            height: 170,
+            shift: [
+              2.21875,
+              0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-d-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -11051,23 +18242,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 208,
-          height: 147,
-          frame_count: 4,
+          width: 86,
+          height: 122,
+          frame_count: 1,
           shift: [
-            1.71875,
-            -1.046875
+            -0.25,
+            -1.5625
           ],
           hr_version: {
-            width: 416,
-            height: 295,
+            width: 172,
+            height: 242,
             shift: [
-              1.71875,
-              -1.0390625
+              -0.21875,
+              -1.53125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-e-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -11078,19 +18269,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 95,
-          height: 83,
+          width: 118,
+          height: 106,
           frame_count: 3,
           shift: [
-            -0.203125,
-            -2.203125
+            0,
+            -2.25
           ],
           hr_version: {
-            width: 189,
-            height: 166,
+            width: 228,
+            height: 210,
             shift: [
-              -0.1796875,
-              -2.1875
+              0.0625,
+              -2.21875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-e-leaves.png',
@@ -11135,84 +18326,950 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-e-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 150,
+          height: 76,
+          frame_count: 4,
+          shift: [
+            2,
+            0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 296,
+            height: 150,
+            shift: [
+              2.03125,
+              0.15625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-e-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-f-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 84,
+          height: 138,
+          frame_count: 1,
+          shift: [
+            -0.125,
+            -1.75
+          ],
+          hr_version: {
+            width: 166,
+            height: 272,
+            shift: [
+              -0.09375,
+              -1.71875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-f-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-f-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 108,
+          height: 148,
+          frame_count: 3,
+          shift: [
+            -0.0625,
+            -2.125
+          ],
+          hr_version: {
+            width: 218,
+            height: 294,
+            shift: [
+              -0.0625,
+              -2.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-f-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-f-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 138,
+          height: 86,
+          frame_count: 4,
+          shift: [
+            1.9375,
+            -0.25
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 274,
+            height: 170,
+            shift: [
+              1.96875,
+              -0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-f-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-g-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 72,
+          height: 112,
+          frame_count: 1,
+          shift: [
+            0.4375,
+            -1.375
+          ],
+          hr_version: {
+            width: 146,
+            height: 222,
+            shift: [
+              0.4375,
+              -1.34375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-g-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-g-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 94,
+          height: 96,
+          frame_count: 3,
+          shift: [
+            0.375,
+            -2.25
+          ],
+          hr_version: {
+            width: 190,
+            height: 192,
+            shift: [
+              0.375,
+              -2.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-g-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-g-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 136,
+          height: 72,
+          frame_count: 4,
+          shift: [
+            2,
+            -0.3125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 272,
+            height: 138,
+            shift: [
+              2,
+              -0.25
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-g-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-h-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 80,
+          height: 94,
+          frame_count: 1,
+          shift: [
+            -0.3125,
+            -1.0625
+          ],
+          hr_version: {
+            width: 160,
+            height: 190,
+            shift: [
+              -0.3125,
+              -1.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-h-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-h-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 110,
+          height: 86,
+          frame_count: 3,
+          shift: [
+            -0.3125,
+            -1.6875
+          ],
+          hr_version: {
+            width: 218,
+            height: 174,
+            shift: [
+              -0.28125,
+              -1.6875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-h-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-h-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 114,
+          height: 66,
+          frame_count: 4,
+          shift: [
+            1.625,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 224,
+            height: 128,
+            shift: [
+              1.65625,
+              0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-h-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-i-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 38,
+          height: 90,
+          frame_count: 1,
+          shift: [
+            -0.0625,
+            -1.0625
+          ],
+          hr_version: {
+            width: 78,
+            height: 176,
+            shift: [
+              -0.0625,
+              -1.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-i-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-i-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 66,
+          height: 84,
+          frame_count: 3,
+          shift: [
+            0.0625,
+            -1.875
+          ],
+          hr_version: {
+            width: 130,
+            height: 168,
+            shift: [
+              0.09375,
+              -1.875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-i-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-i-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 94,
+          height: 52,
+          frame_count: 4,
+          shift: [
+            1.375,
+            -0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 186,
+            height: 102,
+            shift: [
+              1.40625,
+              -0.15625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-i-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-j-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 46,
+          height: 90,
+          frame_count: 1,
+          shift: [
+            0.0625,
+            -1.0625
+          ],
+          hr_version: {
+            width: 88,
+            height: 180,
+            shift: [
+              0.09375,
+              -1.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-j-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-j-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 82,
+          height: 78,
+          frame_count: 3,
+          shift: [
+            0.0625,
+            -1.75
+          ],
+          hr_version: {
+            width: 162,
+            height: 160,
+            shift: [
+              0.09375,
+              -1.75
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-j-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-j-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 104,
+          height: 50,
+          frame_count: 4,
+          shift: [
+            1.4375,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 208,
+            height: 100,
+            shift: [
+              1.4375,
+              -0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-j-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-k-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 150,
+          height: 108,
+          frame_count: 1,
+          shift: [
+            -0.6875,
+            -0.75
+          ],
+          hr_version: {
+            width: 300,
+            height: 218,
+            shift: [
+              -0.6875,
+              -0.75
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-k-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-k-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 150,
+          height: 120,
+          frame_count: 3,
+          shift: [
+            -1.1875,
+            -1.125
+          ],
+          hr_version: {
+            width: 308,
+            height: 240,
+            shift: [
+              -1.0625,
+              -1.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-k-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-k-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 160,
+          height: 90,
+          frame_count: 4,
+          shift: [
+            -0.5625,
+            -0.5
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 320,
+            height: 180,
+            shift: [
+              -0.5625,
+              -0.5
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-k-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-l-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 138,
+          height: 102,
+          frame_count: 1,
+          shift: [
+            0.75,
+            0.3125
+          ],
+          hr_version: {
+            width: 274,
+            height: 204,
+            shift: [
+              0.78125,
+              0.3125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-l-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-l-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 122,
+          height: 98,
+          frame_count: 3,
+          shift: [
+            1.5,
+            0.25
+          ],
+          hr_version: {
+            width: 246,
+            height: 198,
+            shift: [
+              1.5,
+              0.28125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-l-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-l-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 162,
+          height: 108,
+          frame_count: 4,
+          shift: [
+            1.3125,
+            0.75
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 324,
+            height: 216,
+            shift: [
+              1.3125,
+              0.75
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-l-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       }
+    ],
+    variation_weights: [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0.3,
+      0.3,
+      0.05,
+      0.05
     ],
     colors: [
       {
         r: 216,
-        g: 234,
-        b: 153
+        g: 238,
+        b: 142
+      },
+      {
+        r: 206,
+        g: 230,
+        b: 126
       },
       {
         r: 203,
-        g: 229,
+        g: 222,
+        b: 140
+      },
+      {
+        r: 211,
+        g: 219,
+        b: 111
+      },
+      {
+        r: 238,
+        g: 236,
         b: 113
       },
       {
-        r: 195,
-        g: 228,
-        b: 82
+        r: 245,
+        g: 240,
+        b: 117
       },
       {
-        r: 241,
-        g: 247,
-        b: 150
-      },
-      {
-        r: 251,
-        g: 249,
-        b: 88
-      },
-      {
-        r: 237,
-        g: 232,
-        b: 109
-      },
-      {
-        r: 219,
-        g: 251,
-        b: 120
-      },
-      {
-        r: 225,
-        g: 197,
-        b: 131
-      },
-      {
-        r: 220,
-        g: 189,
-        b: 116
-      },
-      {
-        r: 246,
-        g: 189,
-        b: 122
-      },
-      {
-        r: 237,
-        g: 153,
-        b: 98
-      },
-      {
-        r: 205,
-        g: 89,
-        b: 12
-      },
-      {
-        r: 251,
-        g: 120,
-        b: 120
-      },
-      {
-        r: 250,
-        g: 115,
-        b: 115
-      },
-      {
-        r: 213,
-        g: 116,
-        b: 121
+        r: 208,
+        g: 238,
+        b: 118
       }
     ],
     darkness_of_burnt_tree: 0.5,
@@ -11233,8 +19290,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 2,
-      result: 'raw_wood',
+      mining_time: 0.55,
+      result: 'wood',
       count: 4
     },
     corpse: 'tree_08_stump',
@@ -11280,23 +19337,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 200,
-          height: 140,
-          frame_count: 4,
+          width: 106,
+          height: 142,
+          frame_count: 1,
           shift: [
-            1.71875,
-            -1.0625
+            -0.1875,
+            -1.8125
           ],
           hr_version: {
-            width: 399,
-            height: 279,
+            width: 210,
+            height: 286,
             shift: [
-              1.7421875,
-              -1.0546875
+              -0.15625,
+              -1.8125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-a-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -11307,19 +19364,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 94,
-          height: 70,
+          width: 130,
+          height: 142,
           frame_count: 3,
           shift: [
-            0,
-            -2.21875
+            -0.1875,
+            -2.4375
           ],
           hr_version: {
-            width: 188,
-            height: 141,
+            width: 262,
+            height: 282,
             shift: [
-              0.015625,
-              -2.2109375
+              -0.1875,
+              -2.40625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-a-leaves.png',
@@ -11364,6 +19421,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-a-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 156,
+          height: 110,
+          frame_count: 4,
+          shift: [
+            2.1875,
+            0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 310,
+            height: 222,
+            shift: [
+              2.21875,
+              0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-a-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -11372,23 +19460,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 213,
-          height: 139,
-          frame_count: 4,
+          width: 120,
+          height: 138,
+          frame_count: 1,
           shift: [
-            1.796875,
-            -0.953125
+            -0.125,
+            -1.75
           ],
           hr_version: {
-            width: 426,
-            height: 277,
+            width: 238,
+            height: 276,
             shift: [
-              1.796875,
-              -0.9453125
+              -0.09375,
+              -1.71875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-b-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -11399,19 +19487,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 102,
-          height: 70,
+          width: 162,
+          height: 154,
           frame_count: 3,
           shift: [
-            0.0625,
-            -2.15625
+            -0.125,
+            -2.25
           ],
           hr_version: {
-            width: 205,
-            height: 142,
+            width: 322,
+            height: 306,
             shift: [
-              0.0703125,
-              -2.140625
+              -0.09375,
+              -2.1875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-b-leaves.png',
@@ -11456,6 +19544,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-b-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 162,
+          height: 90,
+          frame_count: 4,
+          shift: [
+            2.375,
+            -0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 322,
+            height: 178,
+            shift: [
+              2.40625,
+              -0.15625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-b-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -11464,23 +19583,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 188,
-          height: 136,
-          frame_count: 4,
+          width: 106,
+          height: 152,
+          frame_count: 1,
           shift: [
-            2.03125,
-            -1.125
+            0.0625,
+            -2
           ],
           hr_version: {
-            width: 377,
-            height: 271,
+            width: 210,
+            height: 300,
             shift: [
-              2.0546875,
-              -1.1171875
+              0.09375,
+              -1.96875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-c-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -11491,19 +19610,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 76,
-          height: 76,
+          width: 126,
+          height: 146,
           frame_count: 3,
           shift: [
             0.1875,
-            -2.125
+            -2.625
           ],
           hr_version: {
-            width: 152,
-            height: 152,
+            width: 252,
+            height: 294,
             shift: [
-              0.203125,
-              -2.125
+              0.1875,
+              -2.59375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-c-leaves.png',
@@ -11548,6 +19667,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-c-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 166,
+          height: 114,
+          frame_count: 4,
+          shift: [
+            2.1875,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 326,
+            height: 228,
+            shift: [
+              2.25,
+              -0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-c-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -11556,23 +19706,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 212,
-          height: 134,
-          frame_count: 4,
+          width: 84,
+          height: 114,
+          frame_count: 1,
           shift: [
-            1.9375,
-            -1.21875
+            0,
+            -1.4375
           ],
           hr_version: {
-            width: 424,
-            height: 267,
+            width: 166,
+            height: 228,
             shift: [
-              1.953125,
-              -1.2109375
+              0.03125,
+              -1.40625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-d-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -11583,19 +19733,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 93,
-          height: 81,
+          width: 110,
+          height: 110,
           frame_count: 3,
           shift: [
-            -0.015625,
-            -2.171875
+            -0.0625,
+            -2.3125
           ],
           hr_version: {
-            width: 187,
-            height: 162,
+            width: 214,
+            height: 220,
             shift: [
-              0.0078125,
-              -2.140625
+              0,
+              -2.28125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-d-leaves.png',
@@ -11640,6 +19790,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-d-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 138,
+          height: 86,
+          frame_count: 4,
+          shift: [
+            2.1875,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 274,
+            height: 170,
+            shift: [
+              2.21875,
+              0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-d-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -11648,23 +19829,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 208,
-          height: 147,
-          frame_count: 4,
+          width: 86,
+          height: 122,
+          frame_count: 1,
           shift: [
-            1.71875,
-            -1.046875
+            -0.25,
+            -1.5625
           ],
           hr_version: {
-            width: 416,
-            height: 295,
+            width: 172,
+            height: 242,
             shift: [
-              1.71875,
-              -1.0390625
+              -0.21875,
+              -1.53125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-e-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -11675,19 +19856,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 95,
-          height: 83,
+          width: 118,
+          height: 106,
           frame_count: 3,
           shift: [
-            -0.203125,
-            -2.203125
+            0,
+            -2.25
           ],
           hr_version: {
-            width: 189,
-            height: 166,
+            width: 228,
+            height: 210,
             shift: [
-              -0.1796875,
-              -2.1875
+              0.0625,
+              -2.21875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-e-leaves.png',
@@ -11732,29 +19913,935 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-e-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 150,
+          height: 76,
+          frame_count: 4,
+          shift: [
+            2,
+            0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 296,
+            height: 150,
+            shift: [
+              2.03125,
+              0.15625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-e-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-f-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 84,
+          height: 138,
+          frame_count: 1,
+          shift: [
+            -0.125,
+            -1.75
+          ],
+          hr_version: {
+            width: 166,
+            height: 272,
+            shift: [
+              -0.09375,
+              -1.71875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-f-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-f-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 108,
+          height: 148,
+          frame_count: 3,
+          shift: [
+            -0.0625,
+            -2.125
+          ],
+          hr_version: {
+            width: 218,
+            height: 294,
+            shift: [
+              -0.0625,
+              -2.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-f-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-f-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 138,
+          height: 86,
+          frame_count: 4,
+          shift: [
+            1.9375,
+            -0.25
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 274,
+            height: 170,
+            shift: [
+              1.96875,
+              -0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-f-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-g-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 72,
+          height: 112,
+          frame_count: 1,
+          shift: [
+            0.4375,
+            -1.375
+          ],
+          hr_version: {
+            width: 146,
+            height: 222,
+            shift: [
+              0.4375,
+              -1.34375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-g-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-g-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 94,
+          height: 96,
+          frame_count: 3,
+          shift: [
+            0.375,
+            -2.25
+          ],
+          hr_version: {
+            width: 190,
+            height: 192,
+            shift: [
+              0.375,
+              -2.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-g-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-g-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 136,
+          height: 72,
+          frame_count: 4,
+          shift: [
+            2,
+            -0.3125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 272,
+            height: 138,
+            shift: [
+              2,
+              -0.25
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-g-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-h-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 80,
+          height: 94,
+          frame_count: 1,
+          shift: [
+            -0.3125,
+            -1.0625
+          ],
+          hr_version: {
+            width: 160,
+            height: 190,
+            shift: [
+              -0.3125,
+              -1.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-h-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-h-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 110,
+          height: 86,
+          frame_count: 3,
+          shift: [
+            -0.3125,
+            -1.6875
+          ],
+          hr_version: {
+            width: 218,
+            height: 174,
+            shift: [
+              -0.28125,
+              -1.6875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-h-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-h-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 114,
+          height: 66,
+          frame_count: 4,
+          shift: [
+            1.625,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 224,
+            height: 128,
+            shift: [
+              1.65625,
+              0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-h-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-i-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 38,
+          height: 90,
+          frame_count: 1,
+          shift: [
+            -0.0625,
+            -1.0625
+          ],
+          hr_version: {
+            width: 78,
+            height: 176,
+            shift: [
+              -0.0625,
+              -1.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-i-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-i-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 66,
+          height: 84,
+          frame_count: 3,
+          shift: [
+            0.0625,
+            -1.875
+          ],
+          hr_version: {
+            width: 130,
+            height: 168,
+            shift: [
+              0.09375,
+              -1.875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-i-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-i-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 94,
+          height: 52,
+          frame_count: 4,
+          shift: [
+            1.375,
+            -0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 186,
+            height: 102,
+            shift: [
+              1.40625,
+              -0.15625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-i-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-j-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 46,
+          height: 90,
+          frame_count: 1,
+          shift: [
+            0.0625,
+            -1.0625
+          ],
+          hr_version: {
+            width: 88,
+            height: 180,
+            shift: [
+              0.09375,
+              -1.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-j-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-j-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 82,
+          height: 78,
+          frame_count: 3,
+          shift: [
+            0.0625,
+            -1.75
+          ],
+          hr_version: {
+            width: 162,
+            height: 160,
+            shift: [
+              0.09375,
+              -1.75
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-j-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-j-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 104,
+          height: 50,
+          frame_count: 4,
+          shift: [
+            1.4375,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 208,
+            height: 100,
+            shift: [
+              1.4375,
+              -0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-j-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-k-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 150,
+          height: 108,
+          frame_count: 1,
+          shift: [
+            -0.6875,
+            -0.75
+          ],
+          hr_version: {
+            width: 300,
+            height: 218,
+            shift: [
+              -0.6875,
+              -0.75
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-k-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-k-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 150,
+          height: 120,
+          frame_count: 3,
+          shift: [
+            -1.1875,
+            -1.125
+          ],
+          hr_version: {
+            width: 308,
+            height: 240,
+            shift: [
+              -1.0625,
+              -1.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-k-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-k-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 160,
+          height: 90,
+          frame_count: 4,
+          shift: [
+            -0.5625,
+            -0.5
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 320,
+            height: 180,
+            shift: [
+              -0.5625,
+              -0.5
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-k-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-l-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 138,
+          height: 102,
+          frame_count: 1,
+          shift: [
+            0.75,
+            0.3125
+          ],
+          hr_version: {
+            width: 274,
+            height: 204,
+            shift: [
+              0.78125,
+              0.3125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-l-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-l-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 122,
+          height: 98,
+          frame_count: 3,
+          shift: [
+            1.5,
+            0.25
+          ],
+          hr_version: {
+            width: 246,
+            height: 198,
+            shift: [
+              1.5,
+              0.28125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-l-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-l-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 162,
+          height: 108,
+          frame_count: 4,
+          shift: [
+            1.3125,
+            0.75
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 324,
+            height: 216,
+            shift: [
+              1.3125,
+              0.75
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-l-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       }
     ],
+    variation_weights: [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0.3,
+      0.3,
+      0.05,
+      0.05
+    ],
     colors: [
       {
-        r: 225,
-        g: 197,
-        b: 131
+        r: 218,
+        g: 154,
+        b: 85
       },
       {
-        r: 220,
-        g: 189,
-        b: 116
+        r: 190,
+        g: 159,
+        b: 87
       },
       {
-        r: 246,
-        g: 189,
-        b: 122
+        r: 240,
+        g: 194,
+        b: 139
       },
       {
-        r: 237,
-        g: 153,
-        b: 98
+        r: 234,
+        g: 158,
+        b: 108
       }
     ],
     darkness_of_burnt_tree: 0.5,
@@ -11775,8 +20862,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 2,
-      result: 'raw_wood',
+      mining_time: 0.55,
+      result: 'wood',
       count: 4
     },
     corpse: 'tree_08_stump',
@@ -11822,23 +20909,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 200,
-          height: 140,
-          frame_count: 4,
+          width: 106,
+          height: 142,
+          frame_count: 1,
           shift: [
-            1.71875,
-            -1.0625
+            -0.1875,
+            -1.8125
           ],
           hr_version: {
-            width: 399,
-            height: 279,
+            width: 210,
+            height: 286,
             shift: [
-              1.7421875,
-              -1.0546875
+              -0.15625,
+              -1.8125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-a-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -11849,19 +20936,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 94,
-          height: 70,
+          width: 130,
+          height: 142,
           frame_count: 3,
           shift: [
-            0,
-            -2.21875
+            -0.1875,
+            -2.4375
           ],
           hr_version: {
-            width: 188,
-            height: 141,
+            width: 262,
+            height: 282,
             shift: [
-              0.015625,
-              -2.2109375
+              -0.1875,
+              -2.40625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-a-leaves.png',
@@ -11906,6 +20993,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-a-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 156,
+          height: 110,
+          frame_count: 4,
+          shift: [
+            2.1875,
+            0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 310,
+            height: 222,
+            shift: [
+              2.21875,
+              0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-a-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -11914,23 +21032,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 213,
-          height: 139,
-          frame_count: 4,
+          width: 120,
+          height: 138,
+          frame_count: 1,
           shift: [
-            1.796875,
-            -0.953125
+            -0.125,
+            -1.75
           ],
           hr_version: {
-            width: 426,
-            height: 277,
+            width: 238,
+            height: 276,
             shift: [
-              1.796875,
-              -0.9453125
+              -0.09375,
+              -1.71875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-b-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -11941,19 +21059,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 102,
-          height: 70,
+          width: 162,
+          height: 154,
           frame_count: 3,
           shift: [
-            0.0625,
-            -2.15625
+            -0.125,
+            -2.25
           ],
           hr_version: {
-            width: 205,
-            height: 142,
+            width: 322,
+            height: 306,
             shift: [
-              0.0703125,
-              -2.140625
+              -0.09375,
+              -2.1875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-b-leaves.png',
@@ -11998,6 +21116,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-b-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 162,
+          height: 90,
+          frame_count: 4,
+          shift: [
+            2.375,
+            -0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 322,
+            height: 178,
+            shift: [
+              2.40625,
+              -0.15625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-b-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -12006,23 +21155,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 188,
-          height: 136,
-          frame_count: 4,
+          width: 106,
+          height: 152,
+          frame_count: 1,
           shift: [
-            2.03125,
-            -1.125
+            0.0625,
+            -2
           ],
           hr_version: {
-            width: 377,
-            height: 271,
+            width: 210,
+            height: 300,
             shift: [
-              2.0546875,
-              -1.1171875
+              0.09375,
+              -1.96875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-c-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -12033,19 +21182,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 76,
-          height: 76,
+          width: 126,
+          height: 146,
           frame_count: 3,
           shift: [
             0.1875,
-            -2.125
+            -2.625
           ],
           hr_version: {
-            width: 152,
-            height: 152,
+            width: 252,
+            height: 294,
             shift: [
-              0.203125,
-              -2.125
+              0.1875,
+              -2.59375
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-c-leaves.png',
@@ -12090,6 +21239,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-c-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 166,
+          height: 114,
+          frame_count: 4,
+          shift: [
+            2.1875,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 326,
+            height: 228,
+            shift: [
+              2.25,
+              -0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-c-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -12098,23 +21278,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 212,
-          height: 134,
-          frame_count: 4,
+          width: 84,
+          height: 114,
+          frame_count: 1,
           shift: [
-            1.9375,
-            -1.21875
+            0,
+            -1.4375
           ],
           hr_version: {
-            width: 424,
-            height: 267,
+            width: 166,
+            height: 228,
             shift: [
-              1.953125,
-              -1.2109375
+              0.03125,
+              -1.40625
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-d-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -12125,19 +21305,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 93,
-          height: 81,
+          width: 110,
+          height: 110,
           frame_count: 3,
           shift: [
-            -0.015625,
-            -2.171875
+            -0.0625,
+            -2.3125
           ],
           hr_version: {
-            width: 187,
-            height: 162,
+            width: 214,
+            height: 220,
             shift: [
-              0.0078125,
-              -2.140625
+              0,
+              -2.28125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-d-leaves.png',
@@ -12182,6 +21362,37 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-d-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 138,
+          height: 86,
+          frame_count: 4,
+          shift: [
+            2.1875,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 274,
+            height: 170,
+            shift: [
+              2.21875,
+              0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-d-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       },
       {
@@ -12190,23 +21401,23 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 208,
-          height: 147,
-          frame_count: 4,
+          width: 86,
+          height: 122,
+          frame_count: 1,
           shift: [
-            1.71875,
-            -1.046875
+            -0.25,
+            -1.5625
           ],
           hr_version: {
-            width: 416,
-            height: 295,
+            width: 172,
+            height: 242,
             shift: [
-              1.71875,
-              -1.0390625
+              -0.21875,
+              -1.53125
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-e-trunk.png',
-            frame_count: 4,
+            frame_count: 1,
             flags: [
               'mipmap'
             ]
@@ -12217,19 +21428,19 @@ module.exports = {
           flags: [
             'mipmap'
           ],
-          width: 95,
-          height: 83,
+          width: 118,
+          height: 106,
           frame_count: 3,
           shift: [
-            -0.203125,
-            -2.203125
+            0,
+            -2.25
           ],
           hr_version: {
-            width: 189,
-            height: 166,
+            width: 228,
+            height: 210,
             shift: [
-              -0.1796875,
-              -2.1875
+              0.0625,
+              -2.21875
             ],
             scale: 0.5,
             filename: 'graphics/entity/tree/08/hr-tree-08-e-leaves.png',
@@ -12274,29 +21485,935 @@ module.exports = {
           speed_from_center: 0.01,
           frame_speed: 0.1,
           repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-e-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 150,
+          height: 76,
+          frame_count: 4,
+          shift: [
+            2,
+            0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 296,
+            height: 150,
+            shift: [
+              2.03125,
+              0.15625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-e-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-f-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 84,
+          height: 138,
+          frame_count: 1,
+          shift: [
+            -0.125,
+            -1.75
+          ],
+          hr_version: {
+            width: 166,
+            height: 272,
+            shift: [
+              -0.09375,
+              -1.71875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-f-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-f-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 108,
+          height: 148,
+          frame_count: 3,
+          shift: [
+            -0.0625,
+            -2.125
+          ],
+          hr_version: {
+            width: 218,
+            height: 294,
+            shift: [
+              -0.0625,
+              -2.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-f-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-f-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 138,
+          height: 86,
+          frame_count: 4,
+          shift: [
+            1.9375,
+            -0.25
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 274,
+            height: 170,
+            shift: [
+              1.96875,
+              -0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-f-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-g-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 72,
+          height: 112,
+          frame_count: 1,
+          shift: [
+            0.4375,
+            -1.375
+          ],
+          hr_version: {
+            width: 146,
+            height: 222,
+            shift: [
+              0.4375,
+              -1.34375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-g-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-g-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 94,
+          height: 96,
+          frame_count: 3,
+          shift: [
+            0.375,
+            -2.25
+          ],
+          hr_version: {
+            width: 190,
+            height: 192,
+            shift: [
+              0.375,
+              -2.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-g-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-g-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 136,
+          height: 72,
+          frame_count: 4,
+          shift: [
+            2,
+            -0.3125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 272,
+            height: 138,
+            shift: [
+              2,
+              -0.25
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-g-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-h-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 80,
+          height: 94,
+          frame_count: 1,
+          shift: [
+            -0.3125,
+            -1.0625
+          ],
+          hr_version: {
+            width: 160,
+            height: 190,
+            shift: [
+              -0.3125,
+              -1.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-h-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-h-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 110,
+          height: 86,
+          frame_count: 3,
+          shift: [
+            -0.3125,
+            -1.6875
+          ],
+          hr_version: {
+            width: 218,
+            height: 174,
+            shift: [
+              -0.28125,
+              -1.6875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-h-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-h-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 114,
+          height: 66,
+          frame_count: 4,
+          shift: [
+            1.625,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 224,
+            height: 128,
+            shift: [
+              1.65625,
+              0.21875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-h-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-i-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 38,
+          height: 90,
+          frame_count: 1,
+          shift: [
+            -0.0625,
+            -1.0625
+          ],
+          hr_version: {
+            width: 78,
+            height: 176,
+            shift: [
+              -0.0625,
+              -1.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-i-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-i-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 66,
+          height: 84,
+          frame_count: 3,
+          shift: [
+            0.0625,
+            -1.875
+          ],
+          hr_version: {
+            width: 130,
+            height: 168,
+            shift: [
+              0.09375,
+              -1.875
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-i-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-i-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 94,
+          height: 52,
+          frame_count: 4,
+          shift: [
+            1.375,
+            -0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 186,
+            height: 102,
+            shift: [
+              1.40625,
+              -0.15625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-i-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-j-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 46,
+          height: 90,
+          frame_count: 1,
+          shift: [
+            0.0625,
+            -1.0625
+          ],
+          hr_version: {
+            width: 88,
+            height: 180,
+            shift: [
+              0.09375,
+              -1.03125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-j-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-j-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 82,
+          height: 78,
+          frame_count: 3,
+          shift: [
+            0.0625,
+            -1.75
+          ],
+          hr_version: {
+            width: 162,
+            height: 160,
+            shift: [
+              0.09375,
+              -1.75
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-j-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-j-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 104,
+          height: 50,
+          frame_count: 4,
+          shift: [
+            1.4375,
+            -0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 208,
+            height: 100,
+            shift: [
+              1.4375,
+              -0.0625
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-j-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-k-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 150,
+          height: 108,
+          frame_count: 1,
+          shift: [
+            -0.6875,
+            -0.75
+          ],
+          hr_version: {
+            width: 300,
+            height: 218,
+            shift: [
+              -0.6875,
+              -0.75
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-k-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-k-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 150,
+          height: 120,
+          frame_count: 3,
+          shift: [
+            -1.1875,
+            -1.125
+          ],
+          hr_version: {
+            width: 308,
+            height: 240,
+            shift: [
+              -1.0625,
+              -1.09375
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-k-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-k-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 160,
+          height: 90,
+          frame_count: 4,
+          shift: [
+            -0.5625,
+            -0.5
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 320,
+            height: 180,
+            shift: [
+              -0.5625,
+              -0.5
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-k-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
+        }
+      },
+      {
+        trunk: {
+          filename: 'graphics/entity/tree/08/tree-08-l-trunk.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 138,
+          height: 102,
+          frame_count: 1,
+          shift: [
+            0.75,
+            0.3125
+          ],
+          hr_version: {
+            width: 274,
+            height: 204,
+            shift: [
+              0.78125,
+              0.3125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-l-trunk.png',
+            frame_count: 1,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaves: {
+          filename: 'graphics/entity/tree/08/tree-08-l-leaves.png',
+          flags: [
+            'mipmap'
+          ],
+          width: 122,
+          height: 98,
+          frame_count: 3,
+          shift: [
+            1.5,
+            0.25
+          ],
+          hr_version: {
+            width: 246,
+            height: 198,
+            shift: [
+              1.5,
+              0.28125
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-l-leaves.png',
+            frame_count: 3,
+            flags: [
+              'mipmap'
+            ]
+          }
+        },
+        leaf_generation: {
+          type: 'create_particle',
+          entity_name: 'leaf_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 1,
+          speed_from_center: 0.01
+        },
+        branch_generation: {
+          type: 'create_particle',
+          entity_name: 'branch_particle',
+          offset_deviation: [
+            [
+              -0.5,
+              -0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          initial_height: 2,
+          initial_height_deviation: 2,
+          speed_from_center: 0.01,
+          frame_speed: 0.1,
+          repeat_count: 15
+        },
+        shadow: {
+          filename: 'graphics/entity/tree/08/tree-08-l-shadow.png',
+          flags: [
+            'mipmap',
+            'shadow'
+          ],
+          width: 162,
+          height: 108,
+          frame_count: 4,
+          shift: [
+            1.3125,
+            0.75
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            width: 324,
+            height: 216,
+            shift: [
+              1.3125,
+              0.75
+            ],
+            scale: 0.5,
+            filename: 'graphics/entity/tree/08/hr-tree-08-l-shadow.png',
+            frame_count: 4,
+            draw_as_shadow: true,
+            flags: [
+              'mipmap',
+              'shadow'
+            ]
+          }
         }
       }
     ],
+    variation_weights: [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0.3,
+      0.3,
+      0.05,
+      0.05
+    ],
     colors: [
       {
-        r: 205,
-        g: 89,
-        b: 12
+        r: 224,
+        g: 109,
+        b: 82
       },
       {
-        r: 251,
-        g: 120,
-        b: 120
+        r: 228,
+        g: 107,
+        b: 107
       },
       {
-        r: 250,
-        g: 115,
-        b: 115
+        r: 226,
+        g: 136,
+        b: 107
       },
       {
-        r: 213,
-        g: 116,
-        b: 121
+        r: 222,
+        g: 125,
+        b: 114
       }
     ],
     darkness_of_burnt_tree: 0.5,
@@ -12318,8 +22435,8 @@ module.exports = {
     minable: {
       count: 4,
       mining_particle: 'wooden_particle',
-      mining_time: 1,
-      result: 'raw_wood'
+      mining_time: 0.5,
+      result: 'wood'
     },
     emissions_per_tick: -0.0001,
     max_health: 20,
@@ -12545,8 +22662,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 1,
-      result: 'raw_wood',
+      mining_time: 0.5,
+      result: 'wood',
       count: 2
     },
     emissions_per_tick: -0.0001,
@@ -12782,8 +22899,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 1,
-      result: 'raw_wood',
+      mining_time: 0.5,
+      result: 'wood',
       count: 2
     },
     emissions_per_tick: -0.0001,
@@ -13019,8 +23136,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 1,
-      result: 'raw_wood',
+      mining_time: 0.5,
+      result: 'wood',
       count: 2
     },
     emissions_per_tick: -0.0001,
@@ -13050,11 +23167,11 @@ module.exports = {
     pictures: [
       {
         filename: 'graphics/entity/tree/dead-dry-hairy-tree/dead-dry-hairy-tree-00.png',
-        width: 222,
-        height: 178,
+        width: 195,
+        height: 95,
         shift: [
-          -0.46875,
-          1.40625
+          -0.625,
+          0.0625
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dead-dry-hairy-tree/hr-dead-dry-hairy-tree-00.png',
@@ -13069,11 +23186,11 @@ module.exports = {
       },
       {
         filename: 'graphics/entity/tree/dead-dry-hairy-tree/dead-dry-hairy-tree-01.png',
-        width: 253,
-        height: 147,
+        width: 186,
+        height: 151,
         shift: [
-          0.3125,
-          -0.9375
+          -0.46875,
+          -0.6171875
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dead-dry-hairy-tree/hr-dead-dry-hairy-tree-01.png',
@@ -13088,11 +23205,11 @@ module.exports = {
       },
       {
         filename: 'graphics/entity/tree/dead-dry-hairy-tree/dead-dry-hairy-tree-02.png',
-        width: 247,
-        height: 155,
+        width: 163,
+        height: 125,
         shift: [
-          0.78125,
-          0
+          -0.265625,
+          -0.453125
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dead-dry-hairy-tree/hr-dead-dry-hairy-tree-02.png',
@@ -13107,11 +23224,11 @@ module.exports = {
       },
       {
         filename: 'graphics/entity/tree/dead-dry-hairy-tree/dead-dry-hairy-tree-03.png',
-        width: 242,
-        height: 152,
+        width: 179,
+        height: 155,
         shift: [
-          2.5,
-          -0.78125
+          1.3125,
+          -0.46875
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dead-dry-hairy-tree/hr-dead-dry-hairy-tree-03.png',
@@ -13126,11 +23243,11 @@ module.exports = {
       },
       {
         filename: 'graphics/entity/tree/dead-dry-hairy-tree/dead-dry-hairy-tree-04.png',
-        width: 229,
-        height: 143,
+        width: 193,
+        height: 158,
         shift: [
-          1.953125,
-          -1.015625
+          1.25,
+          -0.46875
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dead-dry-hairy-tree/hr-dead-dry-hairy-tree-04.png',
@@ -13145,11 +23262,11 @@ module.exports = {
       },
       {
         filename: 'graphics/entity/tree/dead-dry-hairy-tree/dead-dry-hairy-tree-05.png',
-        width: 229,
-        height: 195,
+        width: 212,
+        height: 143,
         shift: [
-          1.71875,
-          0
+          1.09375,
+          -0.5625
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dead-dry-hairy-tree/hr-dead-dry-hairy-tree-05.png',
@@ -13164,11 +23281,11 @@ module.exports = {
       },
       {
         filename: 'graphics/entity/tree/dead-dry-hairy-tree/dead-dry-hairy-tree-06.png',
-        width: 215,
-        height: 136,
+        width: 212,
+        height: 147,
         shift: [
-          1.453125,
-          -0.78125
+          1.3125,
+          -0.765625
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dead-dry-hairy-tree/hr-dead-dry-hairy-tree-06.png',
@@ -13183,11 +23300,11 @@ module.exports = {
       },
       {
         filename: 'graphics/entity/tree/dead-dry-hairy-tree/dead-dry-hairy-tree-07.png',
-        width: 184,
-        height: 154,
+        width: 193,
+        height: 111,
         shift: [
-          1.09375,
-          0
+          0.78125,
+          -0.609375
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dead-dry-hairy-tree/hr-dead-dry-hairy-tree-07.png',
@@ -13202,11 +23319,11 @@ module.exports = {
       },
       {
         filename: 'graphics/entity/tree/dead-dry-hairy-tree/dead-dry-hairy-tree-08.png',
-        width: 215,
-        height: 136,
+        width: 171,
+        height: 83,
         shift: [
-          1.5625,
-          1.25
+          0.625,
+          0.3125
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dead-dry-hairy-tree/hr-dead-dry-hairy-tree-08.png',
@@ -13224,8 +23341,8 @@ module.exports = {
         width: 154,
         height: 137,
         shift: [
-          0.9375,
-          0.625
+          0.8984375,
+          0.40625
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dead-dry-hairy-tree/hr-dead-dry-hairy-tree-09.png',
@@ -13243,8 +23360,8 @@ module.exports = {
         width: 159,
         height: 123,
         shift: [
-          -0.3125,
-          0.46875
+          -0.21875,
+          0.34375
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dead-dry-hairy-tree/hr-dead-dry-hairy-tree-10.png',
@@ -13262,8 +23379,8 @@ module.exports = {
         width: 167,
         height: 120,
         shift: [
-          -0.625,
-          0.46875
+          -0.28125,
+          0.3125
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dead-dry-hairy-tree/hr-dead-dry-hairy-tree-11.png',
@@ -13294,8 +23411,8 @@ module.exports = {
     ],
     minable: {
       mining_particle: 'wooden_particle',
-      mining_time: 1,
-      result: 'raw_wood',
+      mining_time: 0.5,
+      result: 'wood',
       count: 2
     },
     emissions_per_tick: -0.0001,
@@ -13325,11 +23442,11 @@ module.exports = {
     pictures: [
       {
         filename: 'graphics/entity/tree/dry-hairy-tree/dry-hairy-tree-00.png',
-        width: 252,
-        height: 160,
+        width: 222,
+        height: 178,
         shift: [
-          1.90625,
-          -1.09375
+          1.421875,
+          -0.8984375
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dry-hairy-tree/hr-dry-hairy-tree-00.png',
@@ -13344,11 +23461,11 @@ module.exports = {
       },
       {
         filename: 'graphics/entity/tree/dry-hairy-tree/dry-hairy-tree-01.png',
-        width: 244,
-        height: 160,
+        width: 253,
+        height: 147,
         shift: [
-          1.25,
-          -1
+          1.40625,
+          -1.3359375
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dry-hairy-tree/hr-dry-hairy-tree-01.png',
@@ -13363,11 +23480,11 @@ module.exports = {
       },
       {
         filename: 'graphics/entity/tree/dry-hairy-tree/dry-hairy-tree-02.png',
-        width: 222,
-        height: 179,
+        width: 247,
+        height: 155,
         shift: [
-          1.40625,
-          -0.53125
+          1.7578125,
+          -0.9921875
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dry-hairy-tree/hr-dry-hairy-tree-02.png',
@@ -13382,11 +23499,11 @@ module.exports = {
       },
       {
         filename: 'graphics/entity/tree/dry-hairy-tree/dry-hairy-tree-03.png',
-        width: 223,
-        height: 134,
+        width: 242,
+        height: 152,
         shift: [
-          1.84375,
-          -1.53125
+          2.140625,
+          -1.3046875
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dry-hairy-tree/hr-dry-hairy-tree-03.png',
@@ -13401,11 +23518,11 @@ module.exports = {
       },
       {
         filename: 'graphics/entity/tree/dry-hairy-tree/dry-hairy-tree-04.png',
-        width: 227,
-        height: 197,
+        width: 229,
+        height: 143,
         shift: [
-          1.9375,
-          -0.09375
+          1.9609375,
+          -1.0234375
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dry-hairy-tree/hr-dry-hairy-tree-04.png',
@@ -13420,11 +23537,11 @@ module.exports = {
       },
       {
         filename: 'graphics/entity/tree/dry-hairy-tree/dry-hairy-tree-05.png',
-        width: 270,
-        height: 161,
+        width: 229,
+        height: 195,
         shift: [
-          1.375,
-          -1.53125
+          0.6953125,
+          -1.046875
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dry-hairy-tree/hr-dry-hairy-tree-05.png',
@@ -13439,11 +23556,11 @@ module.exports = {
       },
       {
         filename: 'graphics/entity/tree/dry-hairy-tree/dry-hairy-tree-06.png',
-        width: 176,
-        height: 156,
+        width: 215,
+        height: 136,
         shift: [
-          0.84375,
-          -0.15625
+          1.4375,
+          -0.59375
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dry-hairy-tree/hr-dry-hairy-tree-06.png',
@@ -13458,11 +23575,11 @@ module.exports = {
       },
       {
         filename: 'graphics/entity/tree/dry-hairy-tree/dry-hairy-tree-07.png',
-        width: 212,
-        height: 138,
+        width: 184,
+        height: 154,
         shift: [
-          1.375,
-          -1.03125
+          0.875,
+          -0.859375
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dry-hairy-tree/hr-dry-hairy-tree-07.png',
@@ -13477,11 +23594,11 @@ module.exports = {
       },
       {
         filename: 'graphics/entity/tree/dry-hairy-tree/dry-hairy-tree-08.png',
-        width: 232,
-        height: 120,
+        width: 215,
+        height: 136,
         shift: [
-          1.75,
-          -1.6875
+          1.4609375,
+          -1.640625
         ],
         hr_version: {
           filename: 'graphics/entity/tree/dry-hairy-tree/hr-dry-hairy-tree-08.png',

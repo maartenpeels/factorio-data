@@ -31,12 +31,23 @@ function objToArr(obj) {
     return Object.keys(obj).map(k => obj[k])
 }
 
-const inventory = objToArr(rawData.item_group)
+const creativeGroup = {
+    name: 'creative',
+    icon: 'graphics/icons/infinity-chest.png'
+}
+
+const creativeSubGroup = {
+    name: 'creative',
+    group: 'creative',
+    order: 'z'
+}
+
+const inventory = objToArr(rawData.item_group).concat(creativeGroup)
     .filter(g => !blacklistedGroups.includes(g.name))
     .sort(sortByOrder)
     .each(removeExtraInfo)
     .each(g => g.subgroups =
-        objToArr(rawData.item_subgroup)
+        objToArr(rawData.item_subgroup).concat(creativeSubGroup)
         .filter(sg => sg.group === g.name)
         .sort(sortByOrder)
         .each(removeExtraInfo)

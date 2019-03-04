@@ -1,5 +1,5 @@
 const execSync = require('child_process').execSync
-const glob = require('glob')
+// const glob = require('glob')
 
 const factorioDataDirectory = 'E:/SteamLibrary/steamapps/common/Factorio/data/'
 

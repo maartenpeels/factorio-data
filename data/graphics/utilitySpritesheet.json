@@ -52,27 +52,27 @@
       "frame": { "x": 323, "y": 199, "w": 48, "h": 48 },
       "sourceSize": { "w": 48, "h": 48 }
     },
-    "graphics/clock-icon.png": {
+    "graphics/too-far.png": {
       "frame": { "x": 373, "y": 199, "w": 32, "h": 32 },
       "sourceSize": { "w": 32, "h": 32 }
     },
-    "graphics/clone-icon.png": {
+    "graphics/slot-icon-module.png": {
       "frame": { "x": 407, "y": 199, "w": 32, "h": 32 },
       "sourceSize": { "w": 32, "h": 32 }
     },
-    "graphics/slot-icon-module.png": {
+    "graphics/slot-icon-blueprint.png": {
       "frame": { "x": 441, "y": 199, "w": 32, "h": 32 },
       "sourceSize": { "w": 32, "h": 32 }
     },
-    "graphics/slot-icon-blueprint.png": {
+    "graphics/clock-icon.png": {
       "frame": { "x": 475, "y": 199, "w": 32, "h": 32 },
       "sourceSize": { "w": 32, "h": 32 }
     },
-    "graphics/rename-normal.png": {
+    "graphics/clone-icon.png": {
       "frame": { "x": 509, "y": 199, "w": 32, "h": 32 },
       "sourceSize": { "w": 32, "h": 32 }
     },
-    "graphics/too-far.png": {
+    "graphics/rename-normal.png": {
       "frame": { "x": 543, "y": 199, "w": 32, "h": 32 },
       "sourceSize": { "w": 32, "h": 32 }
     },

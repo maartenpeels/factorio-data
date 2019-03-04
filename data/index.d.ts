@@ -20,6 +20,8 @@ declare module FD {
         type?: string
         name: string
         amount: number
+        /** Seems to be the same as amount, only present on fluid recipes */
+        catalyst_amount?: number
         probability?: number
     }
 
@@ -101,7 +103,6 @@ declare module FD {
         durability?: number
         place_result?: string
         place_as_tile?: PlaceAsTile
-        default_request_amount?: number
         rocket_launch_product?: string | number[]
 
         /** Virtual signal only property (type: 'virtual_signal') */
@@ -124,6 +125,11 @@ declare module FD {
         /** Fluid recipe only property */
         crafting_machine_tint?: CraftingMachineTint
 
+        /** Wire only property */
+        wire_count?: number
+
+        /** Armor only property */
+        infinite?: boolean
         /** Armor only property */
         equipment_grid?: string
         /** Armor only property */
@@ -161,10 +167,6 @@ declare module FD {
         base_color?: Color
         /** Fluids only property (type: 'fluid') */
         flow_color?: Color
-        /** Fluids only property (type: 'fluid') */
-        pressure_to_speed_ratio?: number
-        /** Fluids only property (type: 'fluid') */
-        flow_to_energy_ratio?: number
         /** Fluids only property (type: 'fluid') */
         gas_temperature?: number
     }
@@ -204,6 +206,12 @@ declare module FD {
     }
     interface Transition extends TileSpriteLayers {
         to_tiles: string[]
+        transition_group?: 0 | 1 | 2
+        transition_group1?: 0 | 1 | 2
+        transition_group2?: 0 | 1 | 2
+        background_layer_offset?: number
+        background_layer_group?: string
+        offset_background_layer_by_tile_layer?: boolean
     }
     interface TileSpriteLayers {
         inner_corner?: TileSpriteData
@@ -237,6 +245,7 @@ declare module FD {
         scale?: number
         probability?: number
         hr_version?: TileSpriteData
+        weights?: number[]
     }
 
     const entities: {
@@ -255,6 +264,7 @@ declare module FD {
         minable: Minable
         max_health: number
         corpse?: string
+        next_upgrade?: string
 
         mined_sound?: Sound
         open_sound?: OpenCloseSound
@@ -265,6 +275,7 @@ declare module FD {
         selection_box?: number[][]
         selection_box_offsets?: number[][]
         collision_box?: number[][]
+        hole_clipping_box?: number[][]
         secondary_collision_box?: number[][]
         drawing_box?: number[][]
         drawing_boxes?: DrawingBoxes
@@ -272,19 +283,11 @@ declare module FD {
         animation?: SpriteData | SpriteLayers | DirectionalSpriteData | DirectionalSpriteLayers
         animations?: SpriteData | DirectionalSpriteData | DirectionalSpriteLayers
         picture?: SpriteData | SpriteLayers | DirectionalSpriteData
-        pictures?: SpriteData | SpriteLayers | DirectionalSpriteData | PipePictures | WallPictures | RailPictures | StorageTankPictures
+        pictures?: SpriteLayers | DirectionalSpriteData | PipePictures | WallPictures | RailPictures | StorageTankPictures
         base_picture?: SpriteData | SpriteLayers | DirectionalSpriteData | SpriteSheets | DirectionalSpriteLayers
         structure?: DirectionalSpriteData | DirectionalSpriteLayers | UndergroundBeltStructure
 
-        belt_horizontal?: SpriteData
-        belt_vertical?: SpriteData
-        ending_top?: SpriteData
-        ending_bottom?: SpriteData
-        ending_side?: SpriteData
-        starting_top?: SpriteData
-        starting_bottom?: SpriteData
-        starting_side?: SpriteData
-        ending_patch?: SpriteSheet
+        belt_animation_set?: BeltAnimationSet
 
         hand_base_picture?: SpriteData
         hand_closed_picture?: SpriteData
@@ -304,30 +307,26 @@ declare module FD {
         input_fluid_patch_window_flow_sprites?: DirectionalSpriteData[]
         input_fluid_patch_window_base_sprites?: DirectionalSpriteData[]
 
+        energy_glow_animation?: SpriteData
         folded_animation?: SpriteLayers | DirectionalSpriteLayers
         preparing_animation?: SpriteLayers | DirectionalSpriteLayers
         prepared_animation?: SpriteLayers | DirectionalSpriteLayers
         attacking_animation?: SpriteLayers | DirectionalSpriteLayers
         folding_animation?: SpriteLayers | DirectionalSpriteLayers
 
-        vertical_base?: SpriteLayers
         horizontal_rail_animation_left?: SpriteLayers
         horizontal_rail_animation_right?: SpriteLayers
         vertical_rail_animation_left?: SpriteLayers
         vertical_rail_animation_right?: SpriteLayers
         vertical_rail_base?: SpriteData
         horizontal_rail_base?: SpriteData
-        vertical_rail_base_mask?: SpriteData
-        horizontal_rail_base_mask?: SpriteData
-        horizontal_base?: SpriteLayers
-        wall_patch?: DirectionalSpriteLayers
+        wall_patch?: SpriteLayers
 
         picture_safe?: SpriteData
         picture_set?: SpriteData
         picture_set_enemy?: SpriteData
 
         shadow_sprite?: SpriteData
-        satellite_shadow_animation?: SpriteData
         hole_sprite?: SpriteData
         hole_light_sprite?: SpriteData
         rocket_shadow_overlay_sprite?: SpriteData
@@ -426,8 +425,8 @@ declare module FD {
         tile_width?: number
         tile_height?: number
         placeable_position_visualization?: SpriteData
-        energy_per_movement?: number
-        energy_per_rotation?: number
+        energy_per_movement?: string
+        energy_per_rotation?: string
         extension_speed?: number
         rotation_speed?: number
         pickup_position?: number[]
@@ -454,20 +453,26 @@ declare module FD {
         glow_color_intensity?: number
         signal_to_color_mapping?: SignalToColorMapping[]
         underground_sprite?: SpriteData
-        ingredient_count?: number
+        underground_remove_pipes_sprite?: SpriteData
         scale_entity_info_icon?: boolean
         has_backer_name?: boolean
-        pipe_covers?: DirectionalSpriteLayers
         always_draw_idle_animation?: boolean
         idle_animation?: SpriteLayers
         working_visualisations?: WorkingVisualisation[]
-        working_visualisations_disabled?: WorkingVisualisation[]
         repair_speed_modifier?: number
         connected_gate_visualization?: SpriteData
-        wall_diode_green?: SpriteData
-        wall_diode_green_light?: Light
-        wall_diode_red?: SpriteData
-        wall_diode_red_light?: Light
+
+        wall_diode_green?: SpriteSheet
+        wall_diode_green_light_top?: Light
+        wall_diode_green_light_right?: Light
+        wall_diode_green_light_bottom?: Light
+        wall_diode_green_light_left?: Light
+        wall_diode_red?: SpriteSheet
+        wall_diode_red_light_top?: Light
+        wall_diode_red_light_right?: Light
+        wall_diode_red_light_bottom?: Light
+
+        opened_duration?: number
         default_output_signal?: Signal
         resource_categories?: string[]
         fluid_box?: FluidBox
@@ -475,7 +480,6 @@ declare module FD {
         input_fluid_box?: FluidBox
         output_fluid_box?: FluidBox
         mining_speed?: number
-        mining_power?: number
         resource_searching_radius?: number
         vector_to_place_result?: number[]
         monitor_visualization_tint?: Color
@@ -495,6 +499,7 @@ declare module FD {
         opening_speed?: number
         activation_distance?: number
         timeout_to_close?: number
+        fadeout_interval?: number
         rail_category?: string
         placeable_by?: PlaceableBy
         trigger_radius?: number
@@ -524,6 +529,7 @@ declare module FD {
         rocket_parts_required?: number
         rocket_result_inventory_size?: number
         fixed_recipe?: string
+        show_recipe_icon?: boolean
         idle_energy_usage?: string
         lamp_energy_usage?: string
         active_energy_usage?: string
@@ -531,7 +537,6 @@ declare module FD {
         times_to_blink?: number
         light_blinking_speed?: number
         door_opening_speed?: number
-        base_light?: BaseLight[]
         base_engine_light?: Light
         silo_fade_out_start_distance?: number
         silo_fade_out_end_distance?: number
@@ -566,10 +571,10 @@ declare module FD {
         fluid_wagon_connector_frame_count?: number
         fluid_animation?: DirectionalSpriteData
         glass_pictures?: DirectionalSpriteData
-        charge_animation?: SpriteData
+        charge_animation?: SpriteLayers
         charge_cooldown?: number
         charge_light?: Light
-        discharge_animation?: SpriteData
+        discharge_animation?: SpriteLayers
         discharge_cooldown?: number
         discharge_light?: Light
         animation_shadow?: SpriteData
@@ -601,7 +606,6 @@ declare module FD {
         energy_production?: string
         consumption?: string
         neighbour_bonus?: number
-        burner?: Burner
         lower_layer_picture?: SpriteData
         working_light_picture?: SpriteData
         heat_buffer?: HeatBuffer
@@ -628,12 +632,11 @@ declare module FD {
         base_picture_render_layer?: string
         cannon_barrel_pictures?: SpriteLayers
         cannon_base_pictures?: SpriteLayers
-        cannon_base_shiftings?: number[][]
-        cannon_barrel_recoil_shiftings?: CannonBarrelRecoilShiftings[]
+        // cannon_base_shiftings?: number[][]
+        // cannon_barrel_recoil_shiftings?: CannonBarrelRecoilShiftings[]
         cannon_barrel_light_direction?: number[]
         cannon_barrel_recoil_shiftings_load_correction_matrix?: number[][]
         ending_attack_speed?: number
-        attacking_animation_fade_out?: number
         turret_base_has_direction?: boolean
         fluid_buffer_size?: number
         fluid_buffer_input_flow?: number
@@ -647,12 +650,12 @@ declare module FD {
         base_picture_secondary_draw_order?: number
         muzzle_animation?: SpriteData
         muzzle_light?: Light
-        folded_muzzle_animation_shift?: MuzzleAnimationShift
-        preparing_muzzle_animation_shift?: MuzzleAnimationShift
-        prepared_muzzle_animation_shift?: MuzzleAnimationShift
-        attacking_muzzle_animation_shift?: MuzzleAnimationShift
-        ending_attack_muzzle_animation_shift?: MuzzleAnimationShift
-        folding_muzzle_animation_shift?: MuzzleAnimationShift
+        // folded_muzzle_animation_shift?: MuzzleAnimationShift
+        // preparing_muzzle_animation_shift?: MuzzleAnimationShift
+        // prepared_muzzle_animation_shift?: MuzzleAnimationShift
+        // attacking_muzzle_animation_shift?: MuzzleAnimationShift
+        // ending_attack_muzzle_animation_shift?: MuzzleAnimationShift
+        // folding_muzzle_animation_shift?: MuzzleAnimationShift
         prepare_range?: number
         shoot_in_prepare_state?: boolean
     }
@@ -665,7 +668,6 @@ declare module FD {
             amount_max: number
         }
         mining_particle?: string
-        hardness?: number
         count?: number
     }
     interface OpenCloseSound {
@@ -692,12 +694,14 @@ declare module FD {
         match_progress_to_activity?: boolean
         match_volume_to_activity?: boolean
         idle_sound?: Sound
+        persistent?: boolean
     }
     interface EnergySource {
         type: string
         fuel_category?: string
         effectivity?: number
         fuel_inventory_size?: number
+        burnt_inventory_size?: number
         emissions?: number
         smoke?: Smoke[]
         usage_priority?: string
@@ -710,6 +714,7 @@ declare module FD {
         input_flow_limit?: string
         buffer_capacity?: string
         output_flow_limit?: string
+        min_working_temperature?: number
     }
     interface Smoke {
         name: string
@@ -827,7 +832,9 @@ declare module FD {
         t_up: SpriteLayers
         ending_right: SpriteLayers
         ending_left: SpriteLayers
+        filling: SpriteData
         water_connection_patch: SpriteSheets
+        gate_connection_patch: SpriteSheets
     }
     interface StorageTankPictures {
         picture: SpriteSheets
@@ -865,9 +872,36 @@ declare module FD {
         segment_visualisation_continuing_front: SpriteData
         segment_visualisation_continuing_back: SpriteData
     }
+    interface BeltAnimationSet {
+        animation_set: SpriteData
+        east_index: 1
+        west_index: 2
+        north_index: 3
+        south_index: 4
+        east_to_north_index: 5
+        north_to_east_index: 6
+        west_to_north_index: 7
+        north_to_west_index: 8
+        south_to_east_index: 9
+        east_to_south_index: 10
+        south_to_west_index: 11
+        west_to_south_index: 12
+        starting_south_index: 13
+        ending_south_index: 14
+        starting_west_index: 15
+        ending_west_index: 16
+        starting_north_index: 17
+        ending_north_index: 18
+        starting_east_index: 19
+        ending_east_index: 20
+    }
     interface UndergroundBeltStructure {
         direction_in: SpriteSheet
         direction_out: SpriteSheet
+        direction_in_side_loading: SpriteSheet
+        direction_out_side_loading: SpriteSheet
+        back_patch: SpriteSheet
+        front_patch: SpriteSheet
     }
     interface Size {
         width: number
@@ -883,6 +917,7 @@ declare module FD {
     interface ConnectorFrameSprites {
         frame_main: SpriteSheet
         frame_shadow: SpriteSheet
+        frame_back_patch: SpriteSheet
         frame_main_scanner: SpriteData
         frame_main_scanner_movement_speed: number
         frame_main_scanner_horizontal_start_shift?: number[]
@@ -960,11 +995,6 @@ declare module FD {
         color?: Color | ColorWithAlpha
         minimum_darkness?: number
     }
-    interface BaseLight extends Light {
-        type: string
-        picture: SpriteData
-        rotation_shift: number
-    }
     interface WorkingVisualisation {
         north_position?: number[]
         east_position?: number[]
@@ -1012,12 +1042,6 @@ declare module FD {
     interface NoteSound {
         filename: string
         preload?: boolean
-    }
-    interface Burner {
-        fuel_category: string
-        effectivity: number
-        fuel_inventory_size: number
-        burnt_inventory_size: number
     }
     interface HeatBuffer {
         max_temperature: number
@@ -1092,6 +1116,8 @@ declare module FD {
         variations?: VariationsItem[]
         colors?: Color[]
         darkness_of_burnt_tree?: number
+        variation_weights?: number[]
+        colors?: Color[]
     }
     interface LootItem {
         item: string
@@ -1102,6 +1128,7 @@ declare module FD {
     interface VariationsItem {
         trunk: SpriteData
         leaves: SpriteData
+        shadow: SpriteData
         leaf_generation: Generation
         branch_generation: Generation
     }

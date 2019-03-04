@@ -293,14 +293,6 @@ module.exports = [
         name: 'tool',
         items: [
           {
-            name: 'iron_axe',
-            icon: 'graphics/icons/iron-axe.png'
-          },
-          {
-            name: 'steel_axe',
-            icon: 'graphics/icons/steel-axe.png'
-          },
-          {
             name: 'repair_pack',
             icon: 'graphics/icons/repair-pack.png'
           },
@@ -311,6 +303,10 @@ module.exports = [
           {
             name: 'deconstruction_planner',
             icon: 'graphics/icons/deconstruction-planner.png'
+          },
+          {
+            name: 'upgrade_planner',
+            icon: 'graphics/icons/upgrade-planner.png'
           },
           {
             name: 'blueprint_book',
@@ -518,8 +514,8 @@ module.exports = [
         name: 'raw_resource',
         items: [
           {
-            name: 'raw_wood',
-            icon: 'graphics/icons/raw-wood.png'
+            name: 'wood',
+            icon: 'graphics/icons/wood.png'
           },
           {
             name: 'coal',
@@ -550,10 +546,6 @@ module.exports = [
       {
         name: 'raw_material',
         items: [
-          {
-            name: 'wood',
-            icon: 'graphics/icons/wood.png'
-          },
           {
             name: 'iron_plate',
             icon: 'graphics/icons/iron-plate.png'
@@ -1353,28 +1345,28 @@ module.exports = [
         name: 'science_pack',
         items: [
           {
-            name: 'science_pack_1',
-            icon: 'graphics/icons/science-pack-1.png'
+            name: 'automation_science_pack',
+            icon: 'graphics/icons/automation-science-pack.png'
           },
           {
-            name: 'science_pack_2',
-            icon: 'graphics/icons/science-pack-2.png'
-          },
-          {
-            name: 'science_pack_3',
-            icon: 'graphics/icons/science-pack-3.png'
+            name: 'logistic_science_pack',
+            icon: 'graphics/icons/logistic-science-pack.png'
           },
           {
             name: 'military_science_pack',
             icon: 'graphics/icons/military-science-pack.png'
           },
           {
+            name: 'chemical_science_pack',
+            icon: 'graphics/icons/chemical-science-pack.png'
+          },
+          {
             name: 'production_science_pack',
             icon: 'graphics/icons/production-science-pack.png'
           },
           {
-            name: 'high_tech_science_pack',
-            icon: 'graphics/icons/high-tech-science-pack.png'
+            name: 'utility_science_pack',
+            icon: 'graphics/icons/utility-science-pack.png'
           },
           {
             name: 'space_science_pack',
@@ -1584,6 +1576,10 @@ module.exports = [
             icon: 'graphics/icons/discharge-defense-equipment.png'
           },
           {
+            name: 'belt_immunity_equipment',
+            icon: 'graphics/icons/belt-immunity-equipment.png'
+          },
+          {
             name: 'exoskeleton_equipment',
             icon: 'graphics/icons/exoskeleton-equipment.png'
           },
@@ -1606,7 +1602,7 @@ module.exports = [
         items: [
           {
             name: 'stone_wall',
-            icon: 'graphics/icons/stone-wall.png'
+            icon: 'graphics/icons/wall.png'
           },
           {
             name: 'gate',
@@ -1896,6 +1892,76 @@ module.exports = [
           {
             name: 'signal_black',
             icon: 'graphics/icons/signal/signal_black.png'
+          },
+          {
+            name: 'signal_check',
+            icon: 'graphics/icons/checked-green.png'
+          },
+          {
+            name: 'signal_dot',
+            icon: 'graphics/icons/list-dot.png'
+          },
+          {
+            name: 'signal_info',
+            icon: 'graphics/icons/info.png'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    name: 'creative',
+    icon: 'graphics/icons/infinity-chest.png',
+    subgroups: [
+      {
+        name: 'creative',
+        items: [
+          {
+            name: 'loader',
+            icon: 'graphics/icons/loader.png'
+          },
+          {
+            name: 'fast_loader',
+            icon: 'graphics/icons/fast-loader.png'
+          },
+          {
+            name: 'express_loader',
+            icon: 'graphics/icons/express-loader.png'
+          },
+          {
+            name: 'infinity_chest',
+            icon: 'graphics/icons/infinity-chest.png'
+          },
+          {
+            name: 'heat_interface',
+            icon: 'graphics/entity/heat-interface/heat-interface.png'
+          },
+          {
+            name: 'infinity_pipe',
+            icons: [
+              {
+                icon: 'graphics/icons/pipe.png',
+                tint: {
+                  r: 0.5,
+                  g: 0.5,
+                  b: 1
+                }
+              }
+            ]
+          },
+          {
+            name: 'electric_energy_interface',
+            icons: [
+              {
+                icon: 'graphics/icons/accumulator.png',
+                tint: {
+                  r: 1,
+                  g: 0.8,
+                  b: 1,
+                  a: 1
+                }
+              }
+            ]
           }
         ]
       }

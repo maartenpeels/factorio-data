@@ -2,7 +2,7 @@ module.exports = {
   copper_plate: {
     name: 'copper_plate',
     category: 'smelting',
-    time: 3.5,
+    time: 3.2,
     ingredients: [
       {
         name: 'copper_ore',
@@ -20,7 +20,7 @@ module.exports = {
   iron_plate: {
     name: 'iron_plate',
     category: 'smelting',
-    time: 3.5,
+    time: 3.2,
     ingredients: [
       {
         name: 'iron_ore',
@@ -38,7 +38,7 @@ module.exports = {
   stone_brick: {
     name: 'stone_brick',
     category: 'smelting',
-    time: 3.5,
+    time: 3.2,
     ingredients: [
       {
         name: 'stone',
@@ -53,24 +53,6 @@ module.exports = {
     ],
     ui_name: 'Stone brick'
   },
-  wood: {
-    name: 'wood',
-    category: 'crafting',
-    time: 0.5,
-    ingredients: [
-      {
-        name: 'raw_wood',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        name: 'wood',
-        amount: 2
-      }
-    ],
-    ui_name: 'Wood'
-  },
   wooden_chest: {
     name: 'wooden_chest',
     category: 'crafting',
@@ -78,7 +60,7 @@ module.exports = {
     ingredients: [
       {
         name: 'wood',
-        amount: 4
+        amount: 2
       }
     ],
     results: [
@@ -106,28 +88,6 @@ module.exports = {
       }
     ],
     ui_name: 'Iron stick'
-  },
-  iron_axe: {
-    name: 'iron_axe',
-    category: 'crafting',
-    time: 0.5,
-    ingredients: [
-      {
-        name: 'iron_stick',
-        amount: 2
-      },
-      {
-        name: 'iron_plate',
-        amount: 3
-      }
-    ],
-    results: [
-      {
-        name: 'iron_axe',
-        amount: 1
-      }
-    ],
-    ui_name: 'Iron axe'
   },
   stone_furnace: {
     name: 'stone_furnace',
@@ -431,7 +391,7 @@ module.exports = {
     ingredients: [
       {
         name: 'wood',
-        amount: 2
+        amount: 1
       },
       {
         name: 'copper_cable',
@@ -567,7 +527,7 @@ module.exports = {
         amount: 1
       },
       {
-        name: 'iron_stick',
+        name: 'copper_cable',
         amount: 3
       },
       {
@@ -629,8 +589,7 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Assembling machine 1',
-    description: 'Crafts items that require up to 2 ingredients.'
+    ui_name: 'Assembling machine 1'
   },
   repair_pack: {
     name: 'repair_pack',
@@ -783,8 +742,8 @@ module.exports = {
     time: 50,
     ingredients: [
       {
-        name: 'processing_unit',
-        amount: 20
+        name: 'rocket_control_unit',
+        amount: 10
       },
       {
         name: 'explosives',
@@ -801,7 +760,8 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Atomic bomb'
+    ui_name: 'Atomic bomb',
+    description: 'Devastating form of rockets used to eradicate anything in huge areas at a time.'
   },
   shotgun_shell: {
     name: 'shotgun_shell',
@@ -1155,8 +1115,8 @@ module.exports = {
         amount: 1
       },
       {
-        name: 'electronic_circuit',
-        amount: 2
+        name: 'flying_robot_frame',
+        amount: 1
       },
       {
         name: 'iron_gear_wheel',
@@ -1257,7 +1217,8 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Cliff explosives'
+    ui_name: 'Cliff explosives',
+    description: 'Barrels filled with enough explosives to tear down cliffs.'
   },
   artillery_targeting_remote: {
     name: 'artillery_targeting_remote',
@@ -1305,6 +1266,29 @@ module.exports = {
     ui_name: 'Nightvision',
     description: 'Allows you to see more clearly in darkness.'
   },
+  belt_immunity_equipment: {
+    name: 'belt_immunity_equipment',
+    category: 'crafting',
+    time: 10,
+    ingredients: [
+      {
+        name: 'advanced_circuit',
+        amount: 5
+      },
+      {
+        name: 'steel_plate',
+        amount: 10
+      }
+    ],
+    results: [
+      {
+        name: 'belt_immunity_equipment',
+        amount: 1
+      }
+    ],
+    ui_name: 'Belt immunity equipment',
+    description: 'Prevents belts from moving you while it has power.'
+  },
   energy_shield_equipment: {
     name: 'energy_shield_equipment',
     category: 'crafting',
@@ -1339,7 +1323,11 @@ module.exports = {
       },
       {
         name: 'processing_unit',
-        amount: 10
+        amount: 5
+      },
+      {
+        name: 'low_density_structure',
+        amount: 5
       }
     ],
     results: [
@@ -1371,7 +1359,7 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Battery',
+    ui_name: 'Personal battery',
     description: 'Stores electric energy for equipment modules.'
   },
   battery_mk2_equipment: {
@@ -1385,7 +1373,11 @@ module.exports = {
       },
       {
         name: 'processing_unit',
-        amount: 20
+        amount: 15
+      },
+      {
+        name: 'low_density_structure',
+        amount: 5
       }
     ],
     results: [
@@ -1394,7 +1386,7 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Battery MK2',
+    ui_name: 'Personal battery MK2',
     description: 'Inserted into armor to store a lot of energy for later.'
   },
   solar_panel_equipment: {
@@ -1404,11 +1396,11 @@ module.exports = {
     ingredients: [
       {
         name: 'solar_panel',
-        amount: 5
+        amount: 1
       },
       {
         name: 'advanced_circuit',
-        amount: 1
+        amount: 2
       },
       {
         name: 'steel_plate',
@@ -1431,7 +1423,11 @@ module.exports = {
     ingredients: [
       {
         name: 'processing_unit',
-        amount: 250
+        amount: 200
+      },
+      {
+        name: 'low_density_structure',
+        amount: 50
       }
     ],
     results: [
@@ -1450,10 +1446,10 @@ module.exports = {
     ingredients: [
       {
         name: 'processing_unit',
-        amount: 1
+        amount: 20
       },
       {
-        name: 'steel_plate',
+        name: 'low_density_structure',
         amount: 5
       },
       {
@@ -1567,6 +1563,10 @@ module.exports = {
       {
         name: 'processing_unit',
         amount: 100
+      },
+      {
+        name: 'low_density_structure',
+        amount: 20
       }
     ],
     results: [
@@ -1580,7 +1580,7 @@ module.exports = {
   steel_plate: {
     name: 'steel_plate',
     category: 'smelting',
-    time: 17.5,
+    time: 16,
     ingredients: [
       {
         name: 'iron_plate',
@@ -1686,26 +1686,26 @@ module.exports = {
       {
         type: 'fluid',
         name: 'heavy_oil',
-        amount: 35
+        amount: 90
       },
       {
         type: 'fluid',
         name: 'light_oil',
-        amount: 15
+        amount: 20
       },
       {
         type: 'fluid',
         name: 'petroleum_gas',
-        amount: 20
+        amount: 10
       }
     ],
     ui_name: 'Coal liquefaction',
-    description: 'Unlocks a processing technique to turn coal into oil products with the use of steam and heavy oil.'
+    description: 'A processing technique to turn coal into oil products with the use of steam and heavy oil.'
   },
   heavy_oil_cracking: {
     name: 'heavy_oil_cracking',
     category: 'chemistry',
-    time: 3,
+    time: 2,
     ingredients: [
       {
         type: 'fluid',
@@ -1750,7 +1750,7 @@ module.exports = {
   light_oil_cracking: {
     name: 'light_oil_cracking',
     category: 'chemistry',
-    time: 3,
+    time: 2,
     ingredients: [
       {
         type: 'fluid',
@@ -1890,7 +1890,7 @@ module.exports = {
   solid_fuel_from_light_oil: {
     name: 'solid_fuel_from_light_oil',
     category: 'chemistry',
-    time: 3,
+    time: 2,
     ingredients: [
       {
         type: 'fluid',
@@ -1930,7 +1930,7 @@ module.exports = {
   solid_fuel_from_petroleum_gas: {
     name: 'solid_fuel_from_petroleum_gas',
     category: 'chemistry',
-    time: 3,
+    time: 2,
     ingredients: [
       {
         type: 'fluid',
@@ -1970,7 +1970,7 @@ module.exports = {
   solid_fuel_from_heavy_oil: {
     name: 'solid_fuel_from_heavy_oil',
     category: 'chemistry',
-    time: 3,
+    time: 2,
     ingredients: [
       {
         type: 'fluid',
@@ -2090,7 +2090,8 @@ module.exports = {
         a: 0
       }
     },
-    ui_name: 'Lubricant'
+    ui_name: 'Lubricant',
+    description: 'Converting heavy oils into lubricant, used to reduce friction in high speed machines.'
   },
   empty_barrel: {
     name: 'empty_barrel',
@@ -2162,7 +2163,8 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Fast inserter'
+    ui_name: 'Fast inserter',
+    description: 'Inserters capable of faster motion and item filtering through improved electronics.'
   },
   filter_inserter: {
     name: 'filter_inserter',
@@ -2571,8 +2573,8 @@ module.exports = {
     time: 0.5,
     ingredients: [
       {
-        name: 'iron_plate',
-        amount: 9
+        name: 'steel_plate',
+        amount: 2
       },
       {
         name: 'electronic_circuit',
@@ -2593,8 +2595,7 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Assembling machine 2',
-    description: 'Crafts items that require up to 4 ingredients.'
+    ui_name: 'Assembling machine 2'
   },
   assembling_machine_3: {
     name: 'assembling_machine_3',
@@ -2616,8 +2617,7 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Assembling machine 3',
-    description: 'Crafts items that require up to 6 ingredients.'
+    ui_name: 'Assembling machine 3'
   },
   car: {
     name: 'car',
@@ -2785,7 +2785,8 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Fluid wagon'
+    ui_name: 'Fluid wagon',
+    description: 'Ability to transport fluids on rails. Fluid wagons are filled and emptied by pumps adjacent to straight rail segments.'
   },
   artillery_wagon: {
     name: 'artillery_wagon',
@@ -2832,7 +2833,11 @@ module.exports = {
       },
       {
         name: 'iron_plate',
-        amount: 10
+        amount: 6
+      },
+      {
+        name: 'iron_stick',
+        amount: 6
       },
       {
         name: 'steel_plate',
@@ -2974,20 +2979,24 @@ module.exports = {
     time: 25,
     ingredients: [
       {
-        name: 'effectivity_module_3',
-        amount: 5
+        name: 'effectivity_module_2',
+        amount: 25
       },
       {
-        name: 'speed_module_3',
-        amount: 5
+        name: 'speed_module_2',
+        amount: 25
       },
       {
         name: 'processing_unit',
+        amount: 60
+      },
+      {
+        name: 'electric_engine_unit',
         amount: 40
       },
       {
-        name: 'steel_plate',
-        amount: 40
+        name: 'low_density_structure',
+        amount: 30
       }
     ],
     results: [
@@ -3051,7 +3060,7 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Stone wall'
+    ui_name: 'Wall'
   },
   gate: {
     name: 'gate',
@@ -3099,7 +3108,8 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Flamethrower'
+    ui_name: 'Flamethrower',
+    description: 'Powerful hand-held and turret flamethrowers firing aggressive liquids at enemies, setting them on fire.'
   },
   land_mine: {
     name: 'land_mine',
@@ -3240,8 +3250,8 @@ module.exports = {
     ],
     ui_name: 'Railgun'
   },
-  science_pack_1: {
-    name: 'science_pack_1',
+  automation_science_pack: {
+    name: 'automation_science_pack',
     category: 'crafting',
     time: 5,
     ingredients: [
@@ -3256,14 +3266,14 @@ module.exports = {
     ],
     results: [
       {
-        name: 'science_pack_1',
+        name: 'automation_science_pack',
         amount: 1
       }
     ],
-    ui_name: 'Science pack 1'
+    ui_name: 'Automation science pack'
   },
-  science_pack_2: {
-    name: 'science_pack_2',
+  logistic_science_pack: {
+    name: 'logistic_science_pack',
     category: 'crafting',
     time: 6,
     ingredients: [
@@ -3278,37 +3288,39 @@ module.exports = {
     ],
     results: [
       {
-        name: 'science_pack_2',
+        name: 'logistic_science_pack',
         amount: 1
       }
     ],
-    ui_name: 'Science pack 2'
+    ui_name: 'Logistic science pack',
+    description: 'Allows research of improved logistics, automation and simple military.'
   },
-  science_pack_3: {
-    name: 'science_pack_3',
+  chemical_science_pack: {
+    name: 'chemical_science_pack',
     category: 'crafting',
-    time: 12,
+    time: 24,
     ingredients: [
       {
-        name: 'advanced_circuit',
-        amount: 1
-      },
-      {
         name: 'engine_unit',
-        amount: 1
+        amount: 2
       },
       {
-        name: 'electric_mining_drill',
+        name: 'advanced_circuit',
+        amount: 3
+      },
+      {
+        name: 'solid_fuel',
         amount: 1
       }
     ],
     results: [
       {
-        name: 'science_pack_3',
-        amount: 1
+        name: 'chemical_science_pack',
+        amount: 2
       }
     ],
-    ui_name: 'Science pack 3'
+    ui_name: 'Chemical science pack',
+    description: 'Allows research of advanced items, making use of oil products.'
   },
   military_science_pack: {
     name: 'military_science_pack',
@@ -3324,8 +3336,8 @@ module.exports = {
         amount: 1
       },
       {
-        name: 'gun_turret',
-        amount: 1
+        name: 'stone_wall',
+        amount: 2
       }
     ],
     results: [
@@ -3334,59 +3346,62 @@ module.exports = {
         amount: 2
       }
     ],
-    ui_name: 'Military science pack'
+    ui_name: 'Military science pack',
+    description: 'Allows research of further military options.'
   },
   production_science_pack: {
     name: 'production_science_pack',
     category: 'crafting',
-    time: 14,
+    time: 21,
     ingredients: [
-      {
-        name: 'electric_engine_unit',
-        amount: 1
-      },
       {
         name: 'electric_furnace',
         amount: 1
-      }
-    ],
-    results: [
+      },
       {
-        name: 'production_science_pack',
-        amount: 2
-      }
-    ],
-    ui_name: 'Production science pack'
-  },
-  high_tech_science_pack: {
-    name: 'high_tech_science_pack',
-    category: 'crafting',
-    time: 14,
-    ingredients: [
-      {
-        name: 'battery',
+        name: 'productivity_module',
         amount: 1
       },
       {
-        name: 'processing_unit',
-        amount: 3
-      },
-      {
-        name: 'speed_module',
-        amount: 1
-      },
-      {
-        name: 'copper_cable',
+        name: 'rail',
         amount: 30
       }
     ],
     results: [
       {
-        name: 'high_tech_science_pack',
-        amount: 2
+        name: 'production_science_pack',
+        amount: 3
       }
     ],
-    ui_name: 'High tech science pack'
+    ui_name: 'Production science pack',
+    description: 'Allows research of most efficient machines, modules and processes.'
+  },
+  utility_science_pack: {
+    name: 'utility_science_pack',
+    category: 'crafting',
+    time: 21,
+    ingredients: [
+      {
+        name: 'low_density_structure',
+        amount: 3
+      },
+      {
+        name: 'processing_unit',
+        amount: 2
+      },
+      {
+        name: 'flying_robot_frame',
+        amount: 1
+      }
+    ],
+    results: [
+      {
+        name: 'utility_science_pack',
+        amount: 3
+      }
+    ],
+    ui_name: 'Utility science pack',
+    description: 'Allows research of most powerful weaponry, personal equipment and robot coordination.'
   },
   lab: {
     name: 'lab',
@@ -3991,33 +4006,15 @@ module.exports = {
     ],
     ui_name: 'Roboport'
   },
-  steel_axe: {
-    name: 'steel_axe',
-    category: 'crafting',
-    time: 0.5,
-    ingredients: [
-      {
-        name: 'steel_plate',
-        amount: 5
-      },
-      {
-        name: 'iron_stick',
-        amount: 2
-      }
-    ],
-    results: [
-      {
-        name: 'steel_axe',
-        amount: 1
-      }
-    ],
-    ui_name: 'Steel axe'
-  },
   big_electric_pole: {
     name: 'big_electric_pole',
     category: 'crafting',
     time: 0.5,
     ingredients: [
+      {
+        name: 'iron_stick',
+        amount: 8
+      },
       {
         name: 'steel_plate',
         amount: 5
@@ -4066,6 +4063,10 @@ module.exports = {
     category: 'crafting',
     time: 0.5,
     ingredients: [
+      {
+        name: 'iron_stick',
+        amount: 4
+      },
       {
         name: 'steel_plate',
         amount: 2
@@ -4335,7 +4336,7 @@ module.exports = {
   explosives: {
     name: 'explosives',
     category: 'chemistry',
-    time: 5,
+    time: 4,
     ingredients: [
       {
         type: 'item',
@@ -4379,12 +4380,13 @@ module.exports = {
         a: 0
       }
     },
-    ui_name: 'Explosives'
+    ui_name: 'Explosives',
+    description: 'Developing dangerous yet controllable explosives.'
   },
   battery: {
     name: 'battery',
     category: 'chemistry',
-    time: 5,
+    time: 4,
     ingredients: [
       {
         type: 'fluid',
@@ -4640,7 +4642,11 @@ module.exports = {
     ingredients: [
       {
         name: 'iron_plate',
-        amount: 5
+        amount: 3
+      },
+      {
+        name: 'iron_stick',
+        amount: 4
       },
       {
         name: 'copper_cable',
@@ -4657,20 +4663,20 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Programmable Speaker'
+    ui_name: 'Programmable speaker'
   },
   low_density_structure: {
     name: 'low_density_structure',
     category: 'crafting',
-    time: 30,
+    time: 20,
     ingredients: [
       {
         name: 'steel_plate',
-        amount: 10
+        amount: 2
       },
       {
         name: 'copper_plate',
-        amount: 5
+        amount: 20
       },
       {
         name: 'plastic_bar',
@@ -4683,7 +4689,8 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Low density structure'
+    ui_name: 'Low density structure',
+    description: 'Light yet sturdy material, very useful for space ships and personal equipment.'
   },
   rocket_fuel: {
     name: 'rocket_fuel',
@@ -4701,7 +4708,8 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Rocket fuel'
+    ui_name: 'Rocket fuel',
+    description: 'Sophisticated multipurpose fuel.'
   },
   rocket_control_unit: {
     name: 'rocket_control_unit',
@@ -4723,7 +4731,8 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Rocket control unit'
+    ui_name: 'Rocket control unit',
+    description: 'Advanced computing unit capable of controlling rocket systems.'
   },
   rocket_part: {
     name: 'rocket_part',
@@ -4817,7 +4826,8 @@ module.exports = {
         amount: 10
       }
     ],
-    ui_name: 'Concrete'
+    ui_name: 'Concrete',
+    description: 'Advanced building material also used for flooring.'
   },
   hazard_concrete: {
     name: 'hazard_concrete',
@@ -4993,7 +5003,7 @@ module.exports = {
   uranium_processing: {
     name: 'uranium_processing',
     category: 'centrifuging',
-    time: 10,
+    time: 12,
     ingredients: [
       {
         name: 'uranium_ore',
@@ -5012,12 +5022,13 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Uranium processing'
+    ui_name: 'Uranium processing',
+    description: 'Uranium ore is processed in centrifuges into uranium-238, with a chance to result in a richer uranium-235. Both are needed to create uranium fuel cells.'
   },
   kovarex_enrichment_process: {
     name: 'kovarex_enrichment_process',
     category: 'centrifuging',
-    time: 50,
+    time: 60,
     ingredients: [
       {
         name: 'uranium_235',
@@ -5029,14 +5040,14 @@ module.exports = {
       }
     ],
     results: [
-      {
-        name: 'uranium_235',
-        amount: 41
-      },
-      {
-        name: 'uranium_238',
-        amount: 2
-      }
+      [
+        'uranium_235',
+        41
+      ],
+      [
+        'uranium_238',
+        2
+      ]
     ],
     ui_name: 'Kovarex enrichment process',
     description: 'The process to create uranium-235 from uranium-238. It requires a large amount of uranium-235 as a catalyst.'
@@ -5044,7 +5055,7 @@ module.exports = {
   nuclear_fuel: {
     name: 'nuclear_fuel',
     category: 'centrifuging',
-    time: 60,
+    time: 90,
     ingredients: [
       {
         name: 'uranium_235',
@@ -5066,7 +5077,7 @@ module.exports = {
   nuclear_fuel_reprocessing: {
     name: 'nuclear_fuel_reprocessing',
     category: 'centrifuging',
-    time: 50,
+    time: 60,
     ingredients: [
       {
         name: 'used_up_uranium_fuel_cell',
@@ -5074,10 +5085,10 @@ module.exports = {
       }
     ],
     results: [
-      {
-        name: 'uranium_238',
-        amount: 3
-      }
+      [
+        'uranium_238',
+        3
+      ]
     ],
     ui_name: 'Nuclear fuel reprocessing',
     description: 'The process of reprocessing used nuclear fuel to create uranium-238.'
@@ -5280,19 +5291,22 @@ module.exports = {
       {
         type: 'fluid',
         name: 'water',
-        amount: 50
+        amount: 50,
+        catalyst_amount: 50
       },
       {
         type: 'item',
         name: 'empty_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     results: [
       {
         type: 'item',
         name: 'water_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     ui_name: 'Fill water barrel'
@@ -5305,19 +5319,22 @@ module.exports = {
       {
         type: 'item',
         name: 'water_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     results: [
       {
         type: 'fluid',
         name: 'water',
-        amount: 50
+        amount: 50,
+        catalyst_amount: 50
       },
       {
         type: 'item',
         name: 'empty_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     ui_name: 'Empty water barrel'
@@ -5330,19 +5347,22 @@ module.exports = {
       {
         type: 'fluid',
         name: 'crude_oil',
-        amount: 50
+        amount: 50,
+        catalyst_amount: 50
       },
       {
         type: 'item',
         name: 'empty_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     results: [
       {
         type: 'item',
         name: 'crude_oil_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     ui_name: 'Fill crude oil barrel'
@@ -5355,19 +5375,22 @@ module.exports = {
       {
         type: 'item',
         name: 'crude_oil_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     results: [
       {
         type: 'fluid',
         name: 'crude_oil',
-        amount: 50
+        amount: 50,
+        catalyst_amount: 50
       },
       {
         type: 'item',
         name: 'empty_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     ui_name: 'Empty crude oil barrel'
@@ -5380,19 +5403,22 @@ module.exports = {
       {
         type: 'fluid',
         name: 'heavy_oil',
-        amount: 50
+        amount: 50,
+        catalyst_amount: 50
       },
       {
         type: 'item',
         name: 'empty_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     results: [
       {
         type: 'item',
         name: 'heavy_oil_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     ui_name: 'Fill heavy oil barrel'
@@ -5405,19 +5431,22 @@ module.exports = {
       {
         type: 'item',
         name: 'heavy_oil_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     results: [
       {
         type: 'fluid',
         name: 'heavy_oil',
-        amount: 50
+        amount: 50,
+        catalyst_amount: 50
       },
       {
         type: 'item',
         name: 'empty_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     ui_name: 'Empty heavy oil barrel'
@@ -5430,19 +5459,22 @@ module.exports = {
       {
         type: 'fluid',
         name: 'light_oil',
-        amount: 50
+        amount: 50,
+        catalyst_amount: 50
       },
       {
         type: 'item',
         name: 'empty_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     results: [
       {
         type: 'item',
         name: 'light_oil_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     ui_name: 'Fill light oil barrel'
@@ -5455,19 +5487,22 @@ module.exports = {
       {
         type: 'item',
         name: 'light_oil_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     results: [
       {
         type: 'fluid',
         name: 'light_oil',
-        amount: 50
+        amount: 50,
+        catalyst_amount: 50
       },
       {
         type: 'item',
         name: 'empty_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     ui_name: 'Empty light oil barrel'
@@ -5480,19 +5515,22 @@ module.exports = {
       {
         type: 'fluid',
         name: 'petroleum_gas',
-        amount: 50
+        amount: 50,
+        catalyst_amount: 50
       },
       {
         type: 'item',
         name: 'empty_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     results: [
       {
         type: 'item',
         name: 'petroleum_gas_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     ui_name: 'Fill petroleum gas barrel'
@@ -5505,19 +5543,22 @@ module.exports = {
       {
         type: 'item',
         name: 'petroleum_gas_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     results: [
       {
         type: 'fluid',
         name: 'petroleum_gas',
-        amount: 50
+        amount: 50,
+        catalyst_amount: 50
       },
       {
         type: 'item',
         name: 'empty_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     ui_name: 'Empty petroleum gas barrel'
@@ -5530,19 +5571,22 @@ module.exports = {
       {
         type: 'fluid',
         name: 'lubricant',
-        amount: 50
+        amount: 50,
+        catalyst_amount: 50
       },
       {
         type: 'item',
         name: 'empty_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     results: [
       {
         type: 'item',
         name: 'lubricant_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     ui_name: 'Fill lubricant barrel'
@@ -5555,19 +5599,22 @@ module.exports = {
       {
         type: 'item',
         name: 'lubricant_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     results: [
       {
         type: 'fluid',
         name: 'lubricant',
-        amount: 50
+        amount: 50,
+        catalyst_amount: 50
       },
       {
         type: 'item',
         name: 'empty_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     ui_name: 'Empty lubricant barrel'
@@ -5580,19 +5627,22 @@ module.exports = {
       {
         type: 'fluid',
         name: 'sulfuric_acid',
-        amount: 50
+        amount: 50,
+        catalyst_amount: 50
       },
       {
         type: 'item',
         name: 'empty_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     results: [
       {
         type: 'item',
         name: 'sulfuric_acid_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     ui_name: 'Fill sulfuric acid barrel'
@@ -5605,19 +5655,22 @@ module.exports = {
       {
         type: 'item',
         name: 'sulfuric_acid_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     results: [
       {
         type: 'fluid',
         name: 'sulfuric_acid',
-        amount: 50
+        amount: 50,
+        catalyst_amount: 50
       },
       {
         type: 'item',
         name: 'empty_barrel',
-        amount: 1
+        amount: 1,
+        catalyst_amount: 1
       }
     ],
     ui_name: 'Empty sulfuric acid barrel'

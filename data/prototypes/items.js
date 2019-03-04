@@ -71,7 +71,8 @@ module.exports = {
     subgroup: 'ammo',
     order: 'd[rocket_launcher]_c[atomic_bomb]',
     stack_size: 10,
-    ui_name: 'Atomic bomb'
+    ui_name: 'Atomic bomb',
+    description: 'Devastating form of rockets used to eradicate anything in huge areas at a time.'
   },
   shotgun_shell: {
     type: 'ammo',
@@ -150,10 +151,10 @@ module.exports = {
     name: 'light_armor',
     icon: 'graphics/icons/light-armor.png',
     icon_size: 32,
-    durability: 1000,
     subgroup: 'armor',
     order: 'a[light_armor]',
-    stack_size: 10,
+    stack_size: 1,
+    infinite: true,
     ui_name: 'Light armor'
   },
   heavy_armor: {
@@ -161,10 +162,10 @@ module.exports = {
     name: 'heavy_armor',
     icon: 'graphics/icons/heavy-armor.png',
     icon_size: 32,
-    durability: 5000,
     subgroup: 'armor',
     order: 'b[heavy_armor]',
-    stack_size: 10,
+    stack_size: 1,
+    infinite: true,
     ui_name: 'Heavy armor',
     description: 'Heavy armor for more protection.'
   },
@@ -173,10 +174,10 @@ module.exports = {
     name: 'modular_armor',
     icon: 'graphics/icons/modular-armor.png',
     icon_size: 32,
-    durability: 10000,
     subgroup: 'armor',
     order: 'c[modular_armor]',
     stack_size: 1,
+    infinite: true,
     equipment_grid: 'small_equipment_grid',
     inventory_size_bonus: 10,
     ui_name: 'Modular armor',
@@ -187,10 +188,10 @@ module.exports = {
     name: 'power_armor',
     icon: 'graphics/icons/power-armor.png',
     icon_size: 32,
-    durability: 15000,
     subgroup: 'armor',
     order: 'd[power_armor]',
     stack_size: 1,
+    infinite: true,
     equipment_grid: 'medium_equipment_grid',
     inventory_size_bonus: 20,
     ui_name: 'Power armor',
@@ -201,10 +202,10 @@ module.exports = {
     name: 'power_armor_mk2',
     icon: 'graphics/icons/power-armor-mk2.png',
     icon_size: 32,
-    durability: 20000,
     subgroup: 'armor',
     order: 'e[power_armor_mk2]',
     stack_size: 1,
+    infinite: true,
     equipment_grid: 'large_equipment_grid',
     inventory_size_bonus: 30,
     ui_name: 'Power armor MK2'
@@ -237,7 +238,8 @@ module.exports = {
     subgroup: 'gun',
     order: 'e[flamethrower]',
     stack_size: 5,
-    ui_name: 'Flamethrower'
+    ui_name: 'Flamethrower',
+    description: 'Powerful hand-held and turret flamethrowers firing aggressive liquids at enemies, setting them on fire.'
   },
   rocket_launcher: {
     type: 'gun',
@@ -286,17 +288,17 @@ module.exports = {
     },
     ui_name: 'Stone brick'
   },
-  raw_wood: {
+  wood: {
     type: 'item',
-    name: 'raw_wood',
-    icon: 'graphics/icons/raw-wood.png',
+    name: 'wood',
+    icon: 'graphics/icons/wood.png',
     icon_size: 32,
-    fuel_value: '4MJ',
+    fuel_value: '2MJ',
     fuel_category: 'chemical',
     subgroup: 'raw_resource',
-    order: 'a[raw_wood]',
+    order: 'a[wood]',
     stack_size: 100,
-    ui_name: 'Raw wood'
+    ui_name: 'Wood'
   },
   coal: {
     type: 'item',
@@ -304,7 +306,7 @@ module.exports = {
     icon: 'graphics/icons/coal.png',
     icon_size: 32,
     fuel_category: 'chemical',
-    fuel_value: '8MJ',
+    fuel_value: '4MJ',
     subgroup: 'raw_resource',
     order: 'b[coal]',
     stack_size: 50,
@@ -340,18 +342,6 @@ module.exports = {
     stack_size: 50,
     ui_name: 'Copper ore'
   },
-  wood: {
-    type: 'item',
-    name: 'wood',
-    icon: 'graphics/icons/wood.png',
-    icon_size: 32,
-    fuel_category: 'chemical',
-    fuel_value: '2MJ',
-    subgroup: 'raw_material',
-    order: 'a[wood]',
-    stack_size: 50,
-    ui_name: 'Wood'
-  },
   iron_plate: {
     type: 'item',
     name: 'iron_plate',
@@ -380,6 +370,7 @@ module.exports = {
     subgroup: 'intermediate_product',
     order: 'a[copper_cable]',
     stack_size: 200,
+    wire_count: 1,
     ui_name: 'Copper cable',
     description: 'Can be used to connect and disconnect electric poles and power switches with __CONTROL__build__.'
   },
@@ -418,8 +409,6 @@ module.exports = {
     name: 'wooden_chest',
     icon: 'graphics/icons/wooden-chest.png',
     icon_size: 32,
-    fuel_category: 'chemical',
-    fuel_value: '4MJ',
     subgroup: 'storage',
     order: 'a[items]_a[wooden_chest]',
     place_result: 'wooden_chest',
@@ -548,8 +537,6 @@ module.exports = {
     subgroup: 'energy_pipe_distribution',
     order: 'a[energy]_a[small_electric_pole]',
     place_result: 'small_electric_pole',
-    fuel_category: 'chemical',
-    fuel_value: '4MJ',
     stack_size: 50,
     ui_name: 'Small electric pole'
   },
@@ -596,8 +583,7 @@ module.exports = {
     order: 'a[assembling_machine_1]',
     place_result: 'assembling_machine_1',
     stack_size: 50,
-    ui_name: 'Assembling machine 1',
-    description: 'Crafts items that require up to 2 ingredients.'
+    ui_name: 'Assembling machine 1'
   },
   red_wire: {
     type: 'item',
@@ -607,6 +593,7 @@ module.exports = {
     subgroup: 'circuit_network',
     order: 'b[wires]_a[red_wire]',
     stack_size: 200,
+    wire_count: 1,
     ui_name: 'Red wire',
     description: 'Used to connect machines to the circuit network using __CONTROL__build__.'
   },
@@ -618,19 +605,31 @@ module.exports = {
     subgroup: 'circuit_network',
     order: 'b[wires]_b[green_wire]',
     stack_size: 200,
+    wire_count: 1,
     ui_name: 'Green wire',
     description: 'Used to connect machines to the circuit network using __CONTROL__build__.'
   },
   stone_wall: {
     type: 'item',
     name: 'stone_wall',
-    icon: 'graphics/icons/stone-wall.png',
+    icon: 'graphics/icons/wall.png',
     icon_size: 32,
     subgroup: 'defensive_structure',
     order: 'a[stone_wall]_a[stone_wall]',
     place_result: 'stone_wall',
     stack_size: 100,
-    ui_name: 'Stone wall'
+    ui_name: 'Wall'
+  },
+  lab: {
+    type: 'item',
+    name: 'lab',
+    icon: 'graphics/icons/lab.png',
+    icon_size: 32,
+    subgroup: 'production_machine',
+    order: 'g[lab]',
+    place_result: 'lab',
+    stack_size: 10,
+    ui_name: 'Lab'
   },
   gun_turret: {
     type: 'item',
@@ -672,8 +671,7 @@ module.exports = {
     icon_size: 32,
     subgroup: 'equipment',
     order: 'b[shield]_a[energy_shield_equipment]',
-    stack_size: 50,
-    default_request_amount: 10,
+    stack_size: 20,
     ui_name: 'Energy shield',
     description: 'Provides an energy shield to protect the player.'
   },
@@ -684,8 +682,7 @@ module.exports = {
     icon_size: 32,
     subgroup: 'equipment',
     order: 'b[shield]_b[energy_shield_equipment_mk2]',
-    stack_size: 50,
-    default_request_amount: 10,
+    stack_size: 20,
     ui_name: 'Energy shield MK2',
     description: 'Inserted into armor to absorb a large amount of damage.'
   },
@@ -696,9 +693,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'equipment',
     order: 'c[battery]_a[battery_equipment]',
-    stack_size: 50,
-    default_request_amount: 10,
-    ui_name: 'Battery',
+    stack_size: 20,
+    ui_name: 'Personal battery',
     description: 'Stores electric energy for equipment modules.'
   },
   battery_mk2_equipment: {
@@ -708,9 +704,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'equipment',
     order: 'c[battery]_b[battery_equipment_mk2]',
-    stack_size: 50,
-    default_request_amount: 10,
-    ui_name: 'Battery MK2',
+    stack_size: 20,
+    ui_name: 'Personal battery MK2',
     description: 'Inserted into armor to store a lot of energy for later.'
   },
   personal_laser_defense_equipment: {
@@ -735,6 +730,17 @@ module.exports = {
     ui_name: 'Discharge defense',
     description: 'Damages, pushes back and stuns nearby enemies when activated using the remote.'
   },
+  belt_immunity_equipment: {
+    type: 'item',
+    name: 'belt_immunity_equipment',
+    icon: 'graphics/icons/belt-immunity-equipment.png',
+    icon_size: 32,
+    subgroup: 'equipment',
+    order: 'e[belt_immunity]_a[belt_immunity]',
+    stack_size: 20,
+    ui_name: 'Belt immunity equipment',
+    description: 'Prevents belts from moving you while it has power.'
+  },
   exoskeleton_equipment: {
     type: 'item',
     name: 'exoskeleton_equipment',
@@ -742,7 +748,7 @@ module.exports = {
     icon_size: 32,
     subgroup: 'equipment',
     order: 'e[exoskeleton]_a[exoskeleton_equipment]',
-    stack_size: 10,
+    stack_size: 20,
     ui_name: 'Exoskeleton',
     description: 'Increases your movement speed.'
   },
@@ -753,7 +759,7 @@ module.exports = {
     icon_size: 32,
     subgroup: 'equipment',
     order: 'e[robotics]_a[personal_roboport_equipment]',
-    stack_size: 5,
+    stack_size: 20,
     ui_name: 'Personal roboport',
     description: 'Allows construction bots to work from your inventory.'
   },
@@ -764,7 +770,7 @@ module.exports = {
     icon_size: 32,
     subgroup: 'equipment',
     order: 'e[robotics]_b[personal_roboport_mk2_equipment]',
-    stack_size: 5,
+    stack_size: 20,
     ui_name: 'Personal roboport MK2'
   },
   night_vision_equipment: {
@@ -854,7 +860,8 @@ module.exports = {
     order: 'd[fast_inserter]',
     place_result: 'fast_inserter',
     stack_size: 50,
-    ui_name: 'Fast inserter'
+    ui_name: 'Fast inserter',
+    description: 'Inserters capable of faster motion and item filtering through improved electronics.'
   },
   filter_inserter: {
     type: 'item',
@@ -899,8 +906,7 @@ module.exports = {
     order: 'b[assembling_machine_2]',
     place_result: 'assembling_machine_2',
     stack_size: 50,
-    ui_name: 'Assembling machine 2',
-    description: 'Crafts items that require up to 4 ingredients.'
+    ui_name: 'Assembling machine 2'
   },
   assembling_machine_3: {
     type: 'item',
@@ -911,8 +917,7 @@ module.exports = {
     order: 'c[assembling_machine_3]',
     place_result: 'assembling_machine_3',
     stack_size: 50,
-    ui_name: 'Assembling machine 3',
-    description: 'Crafts items that require up to 6 ingredients.'
+    ui_name: 'Assembling machine 3'
   },
   solar_panel: {
     type: 'item',
@@ -935,17 +940,6 @@ module.exports = {
     place_result: 'gate',
     stack_size: 50,
     ui_name: 'Gate'
-  },
-  lab: {
-    type: 'item',
-    name: 'lab',
-    icon: 'graphics/icons/lab.png',
-    icon_size: 32,
-    subgroup: 'production_machine',
-    order: 'g[lab]',
-    place_result: 'lab',
-    stack_size: 10,
-    ui_name: 'Lab'
   },
   train_stop: {
     type: 'item',
@@ -1061,6 +1055,39 @@ module.exports = {
     stack_size: 50,
     ui_name: 'Express splitter',
     description: 'Splits incoming transport belts\' cargo 1:1'
+  },
+  loader: {
+    type: 'item',
+    name: 'loader',
+    icon: 'graphics/icons/loader.png',
+    icon_size: 32,
+    subgroup: 'creative',
+    order: '^',
+    place_result: 'loader',
+    stack_size: 50,
+    ui_name: 'Loader'
+  },
+  fast_loader: {
+    type: 'item',
+    name: 'fast_loader',
+    icon: 'graphics/icons/fast-loader.png',
+    icon_size: 32,
+    subgroup: 'creative',
+    order: '_',
+    place_result: 'fast_loader',
+    stack_size: 50,
+    ui_name: 'Fast loader'
+  },
+  express_loader: {
+    type: 'item',
+    name: 'express_loader',
+    icon: 'graphics/icons/express-loader.png',
+    icon_size: 32,
+    subgroup: 'creative',
+    order: '`',
+    place_result: 'express_loader',
+    stack_size: 50,
+    ui_name: 'Express loader'
   },
   advanced_circuit: {
     type: 'item',
@@ -1349,7 +1376,7 @@ module.exports = {
     icon: 'graphics/icons/solid-fuel.png',
     icon_size: 32,
     fuel_category: 'chemical',
-    fuel_value: '25MJ',
+    fuel_value: '12MJ',
     fuel_acceleration_multiplier: 1.2,
     fuel_top_speed_multiplier: 1.05,
     subgroup: 'raw_material',
@@ -1395,7 +1422,8 @@ module.exports = {
     subgroup: 'raw_material',
     order: 'j[explosives]',
     stack_size: 50,
-    ui_name: 'Explosives'
+    ui_name: 'Explosives',
+    description: 'Developing dangerous yet controllable explosives.'
   },
   battery: {
     type: 'item',
@@ -1475,7 +1503,7 @@ module.exports = {
     order: 'd[other]_b[programmable_speaker]',
     place_result: 'programmable_speaker',
     stack_size: 50,
-    ui_name: 'Programmable Speaker'
+    ui_name: 'Programmable speaker'
   },
   low_density_structure: {
     type: 'item',
@@ -1485,7 +1513,8 @@ module.exports = {
     subgroup: 'intermediate_product',
     order: 'o[rocket_structure]',
     stack_size: 10,
-    ui_name: 'Low density structure'
+    ui_name: 'Low density structure',
+    description: 'Light yet sturdy material, very useful for space ships and personal equipment.'
   },
   rocket_fuel: {
     type: 'item',
@@ -1493,13 +1522,14 @@ module.exports = {
     icon: 'graphics/icons/rocket-fuel.png',
     icon_size: 32,
     fuel_category: 'chemical',
-    fuel_value: '225MJ',
+    fuel_value: '100MJ',
     fuel_acceleration_multiplier: 1.8,
     fuel_top_speed_multiplier: 1.15,
     subgroup: 'intermediate_product',
     order: 'p[rocket_fuel]',
     stack_size: 10,
-    ui_name: 'Rocket fuel'
+    ui_name: 'Rocket fuel',
+    description: 'Sophisticated multipurpose fuel.'
   },
   nuclear_fuel: {
     type: 'item',
@@ -1523,7 +1553,8 @@ module.exports = {
     subgroup: 'intermediate_product',
     order: 'n[rocket_control_unit]',
     stack_size: 10,
-    ui_name: 'Rocket control unit'
+    ui_name: 'Rocket control unit',
+    description: 'Advanced computing unit capable of controlling rocket systems.'
   },
   satellite: {
     type: 'item',
@@ -1555,7 +1586,8 @@ module.exports = {
         'water_tile'
       ]
     },
-    ui_name: 'Concrete'
+    ui_name: 'Concrete',
+    description: 'Advanced building material also used for flooring.'
   },
   refined_concrete: {
     type: 'item',
@@ -1625,6 +1657,38 @@ module.exports = {
     },
     ui_name: 'Landfill',
     description: 'Used to fill in water that\'s in the way.'
+  },
+  electric_energy_interface: {
+    type: 'item',
+    name: 'electric_energy_interface',
+    icons: [
+      {
+        icon: 'graphics/icons/accumulator.png',
+        tint: {
+          r: 1,
+          g: 0.8,
+          b: 1,
+          a: 1
+        }
+      }
+    ],
+    icon_size: 32,
+    subgroup: 'creative',
+    order: 'd',
+    place_result: 'electric_energy_interface',
+    stack_size: 50,
+    ui_name: 'Electric energy interface'
+  },
+  heat_interface: {
+    type: 'item',
+    name: 'heat_interface',
+    icon: 'graphics/entity/heat-interface/heat-interface.png',
+    icon_size: 32,
+    subgroup: 'creative',
+    order: 'b',
+    place_result: 'heat_interface',
+    stack_size: 20,
+    ui_name: 'Heat interface'
   },
   uranium_ore: {
     type: 'item',
@@ -1736,6 +1800,37 @@ module.exports = {
     place_result: 'heat_pipe',
     stack_size: 50,
     ui_name: 'Heat pipe'
+  },
+  infinity_chest: {
+    type: 'item',
+    name: 'infinity_chest',
+    icon: 'graphics/icons/infinity-chest.png',
+    icon_size: 32,
+    subgroup: 'creative',
+    order: 'a',
+    stack_size: 10,
+    place_result: 'infinity_chest',
+    ui_name: 'Infinity chest'
+  },
+  infinity_pipe: {
+    type: 'item',
+    name: 'infinity_pipe',
+    icons: [
+      {
+        icon: 'graphics/icons/pipe.png',
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      }
+    ],
+    icon_size: 32,
+    subgroup: 'creative',
+    order: 'c',
+    stack_size: 10,
+    place_result: 'infinity_pipe',
+    ui_name: 'Infinity pipe'
   },
   laser_turret: {
     type: 'item',
@@ -2095,7 +2190,8 @@ module.exports = {
     subgroup: 'terrain',
     order: 'd[cliff_explosives]',
     stack_size: 20,
-    ui_name: 'Cliff explosives'
+    ui_name: 'Cliff explosives',
+    description: 'Barrels filled with enough explosives to tear down cliffs.'
   },
   artillery_targeting_remote: {
     type: 'capsule',
@@ -2121,29 +2217,35 @@ module.exports = {
     ui_name: 'Repair pack',
     description: 'Used to repair friendly entities by using __CONTROL__build__ with it in hand.'
   },
-  iron_axe: {
-    type: 'mining_tool',
-    name: 'iron_axe',
-    icon: 'graphics/icons/iron-axe.png',
+  blueprint: {
+    type: 'blueprint',
+    name: 'blueprint',
+    icon: 'graphics/icons/blueprint.png',
     icon_size: 32,
-    durability: 4000,
     subgroup: 'tool',
-    order: 'a[mining]_a[iron_axe]',
-    speed: 2.5,
-    stack_size: 20,
-    ui_name: 'Iron axe'
-  },
-  steel_axe: {
-    type: 'mining_tool',
-    name: 'steel_axe',
-    icon: 'graphics/icons/steel-axe.png',
-    icon_size: 32,
-    durability: 5000,
-    subgroup: 'tool',
-    order: 'a[mining]_b[steel_axe]',
-    speed: 4,
-    stack_size: 20,
-    ui_name: 'Steel axe'
+    order: 'c[automated_construction]_a[blueprint]',
+    stack_size: 1,
+    stackable: false,
+    selection_color: [
+      0,
+      1,
+      0
+    ],
+    alt_selection_color: [
+      0,
+      1,
+      0
+    ],
+    selection_mode: [
+      'blueprint'
+    ],
+    alt_selection_mode: [
+      'blueprint'
+    ],
+    selection_cursor_box_type: 'copy',
+    alt_selection_cursor_box_type: 'copy',
+    ui_name: 'Blueprint',
+    description: 'Save designs for automated construction.'
   },
   basic_oil_processing: {
     type: 'recipe',
@@ -2172,7 +2274,7 @@ module.exports = {
     subgroup: 'fluid_recipes',
     order: 'a[oil_processing]_c[coal_liquefaction]',
     ui_name: 'Coal liquefaction',
-    description: 'Unlocks a processing technique to turn coal into oil products with the use of steam and heavy oil.'
+    description: 'A processing technique to turn coal into oil products with the use of steam and heavy oil.'
   },
   heavy_oil_cracking: {
     type: 'recipe',
@@ -2326,7 +2428,8 @@ module.exports = {
     icon_size: 32,
     subgroup: 'raw_material',
     order: 'k[uranium_processing]',
-    ui_name: 'Uranium processing'
+    ui_name: 'Uranium processing',
+    description: 'Uranium ore is processed in centrifuges into uranium-238, with a chance to result in a richer uranium-235. Both are needed to create uranium fuel cells.'
   },
   kovarex_enrichment_process: {
     type: 'recipe',
@@ -3008,6 +3111,33 @@ module.exports = {
     order: 'd[colors]_[9black]',
     ui_name: 'Black signal'
   },
+  signal_check: {
+    type: 'virtual_signal',
+    name: 'signal_check',
+    icon: 'graphics/icons/checked-green.png',
+    icon_size: 32,
+    subgroup: 'virtual_signal_color',
+    order: 'd[colors]_[9checked]',
+    ui_name: 'Check signal'
+  },
+  signal_info: {
+    type: 'virtual_signal',
+    name: 'signal_info',
+    icon: 'graphics/icons/info.png',
+    icon_size: 32,
+    subgroup: 'virtual_signal_color',
+    order: 'd[colors]_[9info]',
+    ui_name: 'Info signal'
+  },
+  signal_dot: {
+    type: 'virtual_signal',
+    name: 'signal_dot',
+    icon: 'graphics/icons/list-dot.png',
+    icon_size: 32,
+    subgroup: 'virtual_signal_color',
+    order: 'd[colors]_[9dot]',
+    ui_name: 'Dot signal'
+  },
   signal_1: {
     type: 'virtual_signal',
     name: 'signal_1',
@@ -3364,7 +3494,8 @@ module.exports = {
     order: 'a[train_system]_h[fluid_wagon]',
     place_result: 'fluid_wagon',
     stack_size: 5,
-    ui_name: 'Fluid wagon'
+    ui_name: 'Fluid wagon',
+    description: 'Ability to transport fluids on rails. Fluid wagons are filled and emptied by pumps adjacent to straight rail segments.'
   },
   artillery_wagon: {
     type: 'item_with_entity_data',
@@ -3413,38 +3544,40 @@ module.exports = {
     ui_name: 'Rail',
     description: 'Use to build straight rails manually or through the rail planner.\\nThe rail planner can build short paths directly using __CONTROL__build__ or long ghost paths using __CONTROL__build-ghost__.'
   },
-  science_pack_1: {
+  automation_science_pack: {
     type: 'tool',
-    name: 'science_pack_1',
-    icon: 'graphics/icons/science-pack-1.png',
+    name: 'automation_science_pack',
+    icon: 'graphics/icons/automation-science-pack.png',
     icon_size: 32,
     subgroup: 'science_pack',
-    order: 'a[science_pack_1]',
+    order: 'a[automation_science_pack]',
     stack_size: 200,
     durability: 1,
-    ui_name: 'Science pack 1'
+    ui_name: 'Automation science pack'
   },
-  science_pack_2: {
+  logistic_science_pack: {
     type: 'tool',
-    name: 'science_pack_2',
-    icon: 'graphics/icons/science-pack-2.png',
+    name: 'logistic_science_pack',
+    icon: 'graphics/icons/logistic-science-pack.png',
     icon_size: 32,
     subgroup: 'science_pack',
-    order: 'b[science_pack_2]',
+    order: 'b[logistic_science_pack]',
     stack_size: 200,
     durability: 1,
-    ui_name: 'Science pack 2'
+    ui_name: 'Logistic science pack',
+    description: 'Allows research of improved logistics, automation and simple military.'
   },
-  science_pack_3: {
+  chemical_science_pack: {
     type: 'tool',
-    name: 'science_pack_3',
-    icon: 'graphics/icons/science-pack-3.png',
+    name: 'chemical_science_pack',
+    icon: 'graphics/icons/chemical-science-pack.png',
     icon_size: 32,
     subgroup: 'science_pack',
-    order: 'c[science_pack_3]',
+    order: 'd[chemical_science_pack]',
     stack_size: 200,
     durability: 1,
-    ui_name: 'Science pack 3'
+    ui_name: 'Chemical science pack',
+    description: 'Allows research of advanced items, making use of oil products.'
   },
   military_science_pack: {
     type: 'tool',
@@ -3452,10 +3585,11 @@ module.exports = {
     icon: 'graphics/icons/military-science-pack.png',
     icon_size: 32,
     subgroup: 'science_pack',
-    order: 'd[military_science_pack]',
+    order: 'c[military_science_pack]',
     stack_size: 200,
     durability: 1,
-    ui_name: 'Military science pack'
+    ui_name: 'Military science pack',
+    description: 'Allows research of further military options.'
   },
   production_science_pack: {
     type: 'tool',
@@ -3466,18 +3600,20 @@ module.exports = {
     order: 'e[production_science_pack]',
     stack_size: 200,
     durability: 1,
-    ui_name: 'Production science pack'
+    ui_name: 'Production science pack',
+    description: 'Allows research of most efficient machines, modules and processes.'
   },
-  high_tech_science_pack: {
+  utility_science_pack: {
     type: 'tool',
-    name: 'high_tech_science_pack',
-    icon: 'graphics/icons/high-tech-science-pack.png',
+    name: 'utility_science_pack',
+    icon: 'graphics/icons/utility-science-pack.png',
     icon_size: 32,
     subgroup: 'science_pack',
-    order: 'f[high_tech_science_pack]',
+    order: 'f[utility_science_pack]',
     stack_size: 200,
     durability: 1,
-    ui_name: 'High tech science pack'
+    ui_name: 'Utility science pack',
+    description: 'Allows research of most powerful weaponry, personal equipment and robot coordination.'
   },
   space_science_pack: {
     type: 'tool',
@@ -3491,35 +3627,35 @@ module.exports = {
     ui_name: 'Space science pack',
     description: 'Used by labs for research. Obtained by launching a rocket with a satellite.'
   },
-  blueprint: {
-    type: 'blueprint',
-    name: 'blueprint',
-    icon: 'graphics/icons/blueprint.png',
+  upgrade_planner: {
+    type: 'upgrade_item',
+    name: 'upgrade_planner',
+    icon: 'graphics/icons/upgrade-planner.png',
     icon_size: 32,
     subgroup: 'tool',
-    order: 'c[automated_construction]_a[blueprint]',
+    order: 'c[automated_construction]_c[upgrade_planner]',
     stack_size: 1,
-    stackable: false,
-    selection_color: {
-      r: 0,
-      g: 1,
-      b: 0
-    },
-    alt_selection_color: {
-      r: 0,
-      g: 1,
-      b: 0
-    },
+    mapper_count: 24,
+    selection_color: [
+      1,
+      0,
+      0
+    ],
+    alt_selection_color: [
+      0,
+      0,
+      1
+    ],
     selection_mode: [
-      'blueprint'
+      'upgrade'
     ],
     alt_selection_mode: [
-      'blueprint'
+      'cancel_upgrade'
     ],
-    selection_cursor_box_type: 'copy',
-    alt_selection_cursor_box_type: 'copy',
-    ui_name: 'Blueprint',
-    description: 'Save designs for automated construction.'
+    selection_cursor_box_type: 'not_allowed',
+    alt_selection_cursor_box_type: 'not_allowed',
+    ui_name: 'Upgrade planner',
+    description: 'Marks items for upgrade by construction robots.'
   },
   deconstruction_planner: {
     type: 'deconstruction_item',
@@ -3529,16 +3665,16 @@ module.exports = {
     subgroup: 'tool',
     order: 'c[automated_construction]_b[deconstruction_planner]',
     stack_size: 1,
-    selection_color: {
-      r: 1,
-      g: 0,
-      b: 0
-    },
-    alt_selection_color: {
-      r: 0,
-      g: 0,
-      b: 1
-    },
+    selection_color: [
+      1,
+      0,
+      0
+    ],
+    alt_selection_color: [
+      0,
+      0,
+      1
+    ],
     selection_mode: [
       'deconstruct'
     ],
@@ -3556,7 +3692,7 @@ module.exports = {
     icon: 'graphics/icons/blueprint-book.png',
     icon_size: 32,
     subgroup: 'tool',
-    order: 'c[automated_construction]_c[blueprint_book]',
+    order: 'c[automated_construction]_d[blueprint_book]',
     stack_size: 1,
     inventory_size: 1000,
     ui_name: 'Blueprint book'
@@ -3570,7 +3706,6 @@ module.exports = {
     tier: 1,
     order: 'a[speed]_a[speed_module_1]',
     stack_size: 50,
-    default_request_amount: 10,
     effect: {
       speed: {
         bonus: 0.2
@@ -3591,7 +3726,6 @@ module.exports = {
     tier: 2,
     order: 'a[speed]_b[speed_module_2]',
     stack_size: 50,
-    default_request_amount: 10,
     effect: {
       speed: {
         bonus: 0.3
@@ -3611,7 +3745,6 @@ module.exports = {
     tier: 3,
     order: 'a[speed]_c[speed_module_3]',
     stack_size: 50,
-    default_request_amount: 10,
     effect: {
       speed: {
         bonus: 0.5
@@ -3631,7 +3764,6 @@ module.exports = {
     tier: 1,
     order: 'c[effectivity]_a[effectivity_module_1]',
     stack_size: 50,
-    default_request_amount: 10,
     effect: {
       consumption: {
         bonus: -0.3
@@ -3649,7 +3781,6 @@ module.exports = {
     tier: 2,
     order: 'c[effectivity]_b[effectivity_module_2]',
     stack_size: 50,
-    default_request_amount: 10,
     effect: {
       consumption: {
         bonus: -0.4
@@ -3666,7 +3797,6 @@ module.exports = {
     tier: 3,
     order: 'c[effectivity]_c[effectivity_module_3]',
     stack_size: 50,
-    default_request_amount: 10,
     effect: {
       consumption: {
         bonus: -0.5
@@ -3683,7 +3813,6 @@ module.exports = {
     tier: 1,
     order: 'c[productivity]_a[productivity_module_1]',
     stack_size: 50,
-    default_request_amount: 10,
     effect: {
       productivity: {
         bonus: 0.04
@@ -3709,7 +3838,6 @@ module.exports = {
       'solid_fuel_from_heavy_oil',
       'solid_fuel_from_petroleum_gas',
       'lubricant',
-      'wood',
       'iron_plate',
       'copper_plate',
       'steel_plate',
@@ -3734,12 +3862,13 @@ module.exports = {
       'rocket_fuel',
       'rocket_control_unit',
       'rocket_part',
-      'science_pack_1',
-      'science_pack_2',
-      'science_pack_3',
+      'automation_science_pack',
+      'logistic_science_pack',
+      'chemical_science_pack',
       'military_science_pack',
       'production_science_pack',
-      'high_tech_science_pack'
+      'utility_science_pack',
+      'kovarex_enrichment_process'
     ],
     ui_name: 'Productivity module',
     description: 'Machine will create extra products at a cost of increased energy consumption and reduced speed.'
@@ -3753,7 +3882,6 @@ module.exports = {
     tier: 2,
     order: 'c[productivity]_b[productivity_module_2]',
     stack_size: 50,
-    default_request_amount: 10,
     effect: {
       productivity: {
         bonus: 0.06
@@ -3779,7 +3907,6 @@ module.exports = {
       'solid_fuel_from_heavy_oil',
       'solid_fuel_from_petroleum_gas',
       'lubricant',
-      'wood',
       'iron_plate',
       'copper_plate',
       'steel_plate',
@@ -3804,12 +3931,13 @@ module.exports = {
       'rocket_fuel',
       'rocket_control_unit',
       'rocket_part',
-      'science_pack_1',
-      'science_pack_2',
-      'science_pack_3',
+      'automation_science_pack',
+      'logistic_science_pack',
+      'chemical_science_pack',
       'military_science_pack',
       'production_science_pack',
-      'high_tech_science_pack'
+      'utility_science_pack',
+      'kovarex_enrichment_process'
     ],
     ui_name: 'Productivity module 2'
   },
@@ -3822,7 +3950,6 @@ module.exports = {
     tier: 3,
     order: 'c[productivity]_c[productivity_module_3]',
     stack_size: 50,
-    default_request_amount: 10,
     effect: {
       productivity: {
         bonus: 0.1
@@ -3848,7 +3975,6 @@ module.exports = {
       'solid_fuel_from_heavy_oil',
       'solid_fuel_from_petroleum_gas',
       'lubricant',
-      'wood',
       'iron_plate',
       'copper_plate',
       'steel_plate',
@@ -3873,12 +3999,13 @@ module.exports = {
       'rocket_fuel',
       'rocket_control_unit',
       'rocket_part',
-      'science_pack_1',
-      'science_pack_2',
-      'science_pack_3',
+      'automation_science_pack',
+      'logistic_science_pack',
+      'chemical_science_pack',
       'military_science_pack',
       'production_science_pack',
-      'high_tech_science_pack'
+      'utility_science_pack',
+      'kovarex_enrichment_process'
     ],
     ui_name: 'Productivity module 3'
   },
@@ -3901,8 +4028,6 @@ module.exports = {
     icon: 'graphics/icons/fluid/water.png',
     icon_size: 32,
     order: 'a[fluid]_a[water]',
-    pressure_to_speed_ratio: 0.4,
-    flow_to_energy_ratio: 0.59,
     subgroup: 'fluid',
     ui_name: 'Water'
   },
@@ -3925,8 +4050,6 @@ module.exports = {
       b: 1
     },
     order: 'a[fluid]_b[steam]',
-    pressure_to_speed_ratio: 0.4,
-    flow_to_energy_ratio: 0.59,
     gas_temperature: 15,
     subgroup: 'fluid',
     ui_name: 'Steam'
@@ -3949,8 +4072,6 @@ module.exports = {
     max_temperature: 100,
     icon: 'graphics/icons/fluid/crude-oil.png',
     icon_size: 32,
-    pressure_to_speed_ratio: 0.4,
-    flow_to_energy_ratio: 0.59,
     order: 'a[fluid]_b[crude_oil]',
     subgroup: 'fluid',
     ui_name: 'Crude oil'
@@ -3973,8 +4094,6 @@ module.exports = {
     max_temperature: 100,
     icon: 'graphics/icons/fluid/heavy-oil.png',
     icon_size: 32,
-    pressure_to_speed_ratio: 0.4,
-    flow_to_energy_ratio: 0.59,
     order: 'a[fluid]_c[heavy_oil]',
     subgroup: 'fluid',
     ui_name: 'Heavy oil'
@@ -3997,8 +4116,6 @@ module.exports = {
     max_temperature: 100,
     icon: 'graphics/icons/fluid/light-oil.png',
     icon_size: 32,
-    pressure_to_speed_ratio: 0.4,
-    flow_to_energy_ratio: 0.59,
     order: 'a[fluid]_d[light_oil]',
     subgroup: 'fluid',
     ui_name: 'Light oil'
@@ -4021,8 +4138,6 @@ module.exports = {
     max_temperature: 100,
     icon: 'graphics/icons/fluid/petroleum-gas.png',
     icon_size: 32,
-    pressure_to_speed_ratio: 0.4,
-    flow_to_energy_ratio: 0.59,
     order: 'a[fluid]_e[petroleum_gas]',
     subgroup: 'fluid',
     ui_name: 'Petroleum gas'
@@ -4045,11 +4160,10 @@ module.exports = {
     max_temperature: 100,
     icon: 'graphics/icons/fluid/lubricant.png',
     icon_size: 32,
-    pressure_to_speed_ratio: 0.4,
-    flow_to_energy_ratio: 0.59,
     order: 'e[lubricant]',
     subgroup: 'fluid',
-    ui_name: 'Lubricant'
+    ui_name: 'Lubricant',
+    description: 'Converting heavy oils into lubricant, used to reduce friction in high speed machines.'
   },
   sulfuric_acid: {
     type: 'fluid',
@@ -4069,8 +4183,6 @@ module.exports = {
     max_temperature: 100,
     icon: 'graphics/icons/fluid/sulfuric-acid.png',
     icon_size: 32,
-    pressure_to_speed_ratio: 0.4,
-    flow_to_energy_ratio: 0.59,
     order: 'a[fluid]_f[sulfuric_acid]',
     subgroup: 'fluid',
     ui_name: 'Sulfuric acid'

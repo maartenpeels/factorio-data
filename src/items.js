@@ -3,6 +3,16 @@ const utils = require('./utils')
 const rawData = utils.loadRawData(process.argv[2])
 const outputFile = process.argv[3]
 
+const whitelistedCreativeItems = [
+    'loader',
+    'fast_loader',
+    'express_loader',
+    'infinity_chest',
+    'heat_interface',
+    'infinity_pipe',
+    'electric_energy_interface'
+]
+
 const keysToDelete = [
     // Needed for inventoryLayout
     // 'order',
@@ -19,6 +29,7 @@ const keysToDelete = [
     'durability_description_key',
     'durability_description_value',
     'action',
+    'robot_action',
     'damage_radius',
     'trigger_radius',
     'localised_name',
@@ -62,8 +73,18 @@ for (const k in rawData['fluid']) {
 }
 
 function addItem(item) {
-    if ((item.flags && (item.flags.includes('hidden') || item.flags.includes('not_on_map'))) ||
-    !(item.icon || item.icons) || !item.order || item.collision_box) return
+    if (whitelistedCreativeItems.includes(item.name)) {
+        item.subgroup = 'creative'
+        item.order = String.fromCharCode(94 + whitelistedCreativeItems.indexOf(item.name))
+        delete item.flags
+    }
+
+    if (
+        (item.flags && (item.flags.includes('hidden') || item.flags.includes('not_on_map'))) ||
+        !(item.icon || item.icons) ||
+        !item.order ||
+        item.collision_box
+    ) return
 
     Object.keys(item)
         .filter(k => keysToDelete.includes(k))

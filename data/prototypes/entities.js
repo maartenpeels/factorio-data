@@ -10,7 +10,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.2,
       result: 'stone_furnace'
     },
     max_health: 200,
@@ -55,7 +55,7 @@ module.exports = {
       'smelting'
     ],
     result_inventory_size: 1,
-    energy_usage: '180kW',
+    energy_usage: '90kW',
     crafting_speed: 1,
     source_inventory_size: 1,
     energy_source: {
@@ -90,7 +90,7 @@ module.exports = {
           height: 64,
           frame_count: 1,
           shift: [
-            0.515625,
+            0.453125,
             0.0625
           ],
           hr_version: {
@@ -114,7 +114,7 @@ module.exports = {
           frame_count: 1,
           draw_as_shadow: true,
           shift: [
-            0.515625,
+            0.453125,
             0.0625
           ],
           hr_version: {
@@ -161,7 +161,7 @@ module.exports = {
           axially_symmetrical: false,
           direction_count: 1,
           shift: [
-            0.0625,
+            -0.015625,
             0.171875
           ],
           hr_version: {
@@ -192,6 +192,7 @@ module.exports = {
       }
     ],
     fast_replaceable_group: 'furnace',
+    next_upgrade: 'steel_furnace',
     size: {
       width: 2,
       height: 2
@@ -209,7 +210,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.2,
       result: 'steel_furnace'
     },
     max_health: 300,
@@ -243,7 +244,7 @@ module.exports = {
       'smelting'
     ],
     result_inventory_size: 1,
-    energy_usage: '180kW',
+    energy_usage: '90kW',
     crafting_speed: 2,
     source_inventory_size: 1,
     energy_source: {
@@ -342,7 +343,6 @@ module.exports = {
           width: 29,
           height: 40,
           frame_count: 48,
-          axially_symmetrical: false,
           direction_count: 1,
           shift: [
             -0.015625,
@@ -355,7 +355,6 @@ module.exports = {
             width: 57,
             height: 81,
             frame_count: 48,
-            axially_symmetrical: false,
             direction_count: 1,
             shift: [
               -0.0234375,
@@ -430,7 +429,6 @@ module.exports = {
           width: 64,
           height: 75,
           frame_count: 1,
-          axially_symmetrical: false,
           direction_count: 1,
           shift: [
             0,
@@ -444,7 +442,6 @@ module.exports = {
             width: 130,
             height: 149,
             frame_count: 1,
-            axially_symmetrical: false,
             direction_count: 1,
             shift: [
               0,
@@ -474,7 +471,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.2,
       result: 'electric_furnace'
     },
     max_health: 350,
@@ -697,8 +694,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.3,
+      mining_time: 0.1,
       result: 'transport_belt'
     },
     max_health: 150,
@@ -728,189 +724,63 @@ module.exports = {
         filename: 'sound/transport-belt.ogg',
         volume: 0.4
       },
-      max_sounds_per_type: 3
+      persistent: true
     },
     animation_speed_coefficient: 32,
-    animations: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      direction_count: 12,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
+    belt_animation_set: {
+      animation_set: {
+        filename: 'graphics/entity/transport-belt/transport-belt.png',
         priority: 'extra_high',
-        width: 80,
-        height: 80,
-        scale: 0.5,
+        width: 64,
+        height: 64,
         frame_count: 16,
-        direction_count: 12
-      }
-    },
-    belt_horizontal: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        scale: 0.5,
-        frame_count: 16
-      }
-    },
-    belt_vertical: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 40,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        scale: 0.5,
-        y: 80
-      }
-    },
-    ending_top: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 80,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 160,
-        scale: 0.5
-      }
-    },
-    ending_bottom: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 120,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 240,
-        scale: 0.5
-      }
-    },
-    ending_side: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 160,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 320,
-        scale: 0.5
-      }
-    },
-    starting_top: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 200,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 400,
-        scale: 0.5
-      }
-    },
-    starting_bottom: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 240,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 480,
-        scale: 0.5
-      }
-    },
-    starting_side: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 280,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 560,
-        scale: 0.5
-      }
-    },
-    ending_patch: {
-      sheet: {
-        filename: 'graphics/entity/transport-belt/start-end-integration-patches.png',
-        width: 40,
-        height: 40,
-        priority: 'extra_high',
+        direction_count: 20,
         hr_version: {
-          filename: 'graphics/entity/transport-belt/hr-start-end-integration-patches.png',
-          width: 80,
-          height: 80,
+          filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
           priority: 'extra_high',
-          scale: 0.5
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          frame_count: 16,
+          direction_count: 20
         }
-      }
+      },
+      east_index: 1,
+      west_index: 2,
+      north_index: 3,
+      south_index: 4,
+      east_to_north_index: 5,
+      north_to_east_index: 6,
+      west_to_north_index: 7,
+      north_to_west_index: 8,
+      south_to_east_index: 9,
+      east_to_south_index: 10,
+      south_to_west_index: 11,
+      west_to_south_index: 12,
+      starting_south_index: 13,
+      ending_south_index: 14,
+      starting_west_index: 15,
+      ending_west_index: 16,
+      starting_north_index: 17,
+      ending_north_index: 18,
+      starting_east_index: 19,
+      ending_east_index: 20
     },
     fast_replaceable_group: 'transport_belt',
+    next_upgrade: 'fast_transport_belt',
     speed: 0.03125,
     connector_frame_sprites: {
       frame_main: {
         sheet: {
           filename: 'graphics/entity/transport-belt/connector/hr-ccm-belt-04a-sequence.png',
           frame_count: 4,
-          height: 90,
+          height: 94,
           line_length: 4,
           priority: 'low',
           scale: 0.5,
           shift: [
-            0.09375,
-            -0.1875
+            0.109375,
+            -0.15625
           ],
           variation_count: 7,
           width: 80
@@ -921,16 +791,32 @@ module.exports = {
           draw_as_shadow: true,
           filename: 'graphics/entity/transport-belt/connector/hr-ccm-belt-04b-sequence-shadow.png',
           frame_count: 4,
-          height: 74,
+          height: 112,
           line_length: 4,
           priority: 'low',
           scale: 0.5,
           shift: [
-            0.390625,
-            -0.015625
+            0.0625,
+            0.09375
           ],
           variation_count: 7,
-          width: 116
+          width: 160
+        }
+      },
+      frame_back_patch: {
+        sheet: {
+          filename: 'graphics/entity/transport-belt/connector/hr-ccm-belt-04a-sequence-back-patch.png',
+          frame_count: 1,
+          height: 72,
+          line_length: 3,
+          priority: 'low',
+          scale: 0.5,
+          shift: [
+            0,
+            -0.0625
+          ],
+          variation_count: 3,
+          width: 66
         }
       },
       frame_main_scanner: {
@@ -1370,88 +1256,88 @@ module.exports = {
       {
         wire: {
           red: [
-            0.390625,
-            -0.59375
+            0.34375,
+            -0.53125
           ],
           green: [
-            0.65625,
-            -0.4375
+            0.578125,
+            -0.359375
           ]
         },
         shadow: {
           red: [
-            0.921875,
-            -0.28125
+            0.859375,
+            -0.21875
           ],
           green: [
-            1.21875,
-            -0.109375
+            1.125,
+            -0.03125
           ]
         }
       },
       {
         wire: {
           red: [
-            0.390625,
-            -0.59375
+            0.34375,
+            -0.53125
           ],
           green: [
-            0.65625,
-            -0.4375
+            0.578125,
+            -0.359375
           ]
         },
         shadow: {
           red: [
-            0.921875,
-            -0.28125
+            0.859375,
+            -0.21875
           ],
           green: [
-            1.21875,
-            -0.109375
+            1.125,
+            -0.03125
           ]
         }
       },
       {
         wire: {
           red: [
-            0.390625,
-            -0.59375
+            0.34375,
+            -0.53125
           ],
           green: [
-            0.65625,
-            -0.4375
+            0.578125,
+            -0.359375
           ]
         },
         shadow: {
           red: [
-            0.921875,
-            -0.28125
+            0.859375,
+            -0.21875
           ],
           green: [
-            1.21875,
-            -0.109375
+            1.125,
+            -0.03125
           ]
         }
       },
       {
         wire: {
           red: [
-            0.390625,
-            -0.59375
+            0.34375,
+            -0.53125
           ],
           green: [
-            0.65625,
-            -0.4375
+            0.578125,
+            -0.359375
           ]
         },
         shadow: {
           red: [
-            0.921875,
-            -0.28125
+            0.859375,
+            -0.21875
           ],
           green: [
-            1.21875,
-            -0.109375
+            1.125,
+            -0.03125
           ]
         }
       },
@@ -2028,8 +1914,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.3,
+      mining_time: 0.1,
       result: 'fast_transport_belt'
     },
     max_health: 160,
@@ -2056,201 +1941,84 @@ module.exports = {
     ],
     working_sound: {
       sound: {
-        filename: 'sound/fast-transport-belt.ogg',
+        filename: 'sound/transport-belt.ogg',
         volume: 0.4
       },
-      max_sounds_per_type: 3
+      persistent: true
     },
     animation_speed_coefficient: 32,
     animations: {
       filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
       priority: 'extra_high',
-      width: 40,
-      height: 40,
+      width: 64,
+      height: 64,
       frame_count: 32,
       direction_count: 12,
       hr_version: {
         filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
         priority: 'extra_high',
-        width: 80,
-        height: 80,
+        width: 128,
+        height: 128,
         frame_count: 32,
-        line_length: 16,
+        line_length: 32,
         direction_count: 12,
         scale: 0.5
       }
     },
-    belt_horizontal: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
+    belt_animation_set: {
+      animation_set: {
+        filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
         priority: 'extra_high',
-        width: 80,
-        height: 80,
+        width: 64,
+        height: 64,
         frame_count: 32,
-        line_length: 16,
-        scale: 0.5
-      }
-    },
-    belt_vertical: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 40,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 160,
-        scale: 0.5
-      }
-    },
-    ending_top: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 80,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 320,
-        scale: 0.5
-      }
-    },
-    ending_bottom: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 120,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 480,
-        scale: 0.5
-      }
-    },
-    ending_side: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 160,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 640,
-        scale: 0.5
-      }
-    },
-    starting_top: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 200,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 800,
-        scale: 0.5
-      }
-    },
-    starting_bottom: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 240,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 960,
-        scale: 0.5
-      }
-    },
-    starting_side: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 280,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 1120,
-        scale: 0.5
-      }
-    },
-    ending_patch: {
-      sheet: {
-        filename: 'graphics/entity/transport-belt/start-end-integration-patches.png',
-        width: 40,
-        height: 40,
-        priority: 'extra_high',
+        direction_count: 20,
         hr_version: {
-          filename: 'graphics/entity/transport-belt/hr-start-end-integration-patches.png',
-          width: 80,
-          height: 80,
+          filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
           priority: 'extra_high',
-          scale: 0.5
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          frame_count: 32,
+          direction_count: 20
         }
-      }
+      },
+      east_index: 1,
+      west_index: 2,
+      north_index: 3,
+      south_index: 4,
+      east_to_north_index: 5,
+      north_to_east_index: 6,
+      west_to_north_index: 7,
+      north_to_west_index: 8,
+      south_to_east_index: 9,
+      east_to_south_index: 10,
+      south_to_west_index: 11,
+      west_to_south_index: 12,
+      starting_south_index: 13,
+      ending_south_index: 14,
+      starting_west_index: 15,
+      ending_west_index: 16,
+      starting_north_index: 17,
+      ending_north_index: 18,
+      starting_east_index: 19,
+      ending_east_index: 20
     },
     fast_replaceable_group: 'transport_belt',
+    next_upgrade: 'express_transport_belt',
     speed: 0.0625,
     connector_frame_sprites: {
       frame_main: {
         sheet: {
           filename: 'graphics/entity/transport-belt/connector/hr-ccm-belt-04a-sequence.png',
           frame_count: 4,
-          height: 90,
+          height: 94,
           line_length: 4,
           priority: 'low',
           scale: 0.5,
           shift: [
-            0.09375,
-            -0.1875
+            0.109375,
+            -0.15625
           ],
           variation_count: 7,
           width: 80
@@ -2261,16 +2029,32 @@ module.exports = {
           draw_as_shadow: true,
           filename: 'graphics/entity/transport-belt/connector/hr-ccm-belt-04b-sequence-shadow.png',
           frame_count: 4,
-          height: 74,
+          height: 112,
           line_length: 4,
           priority: 'low',
           scale: 0.5,
           shift: [
-            0.390625,
-            -0.015625
+            0.0625,
+            0.09375
           ],
           variation_count: 7,
-          width: 116
+          width: 160
+        }
+      },
+      frame_back_patch: {
+        sheet: {
+          filename: 'graphics/entity/transport-belt/connector/hr-ccm-belt-04a-sequence-back-patch.png',
+          frame_count: 1,
+          height: 72,
+          line_length: 3,
+          priority: 'low',
+          scale: 0.5,
+          shift: [
+            0,
+            -0.0625
+          ],
+          variation_count: 3,
+          width: 66
         }
       },
       frame_main_scanner: {
@@ -2710,88 +2494,88 @@ module.exports = {
       {
         wire: {
           red: [
-            0.390625,
-            -0.59375
+            0.34375,
+            -0.53125
           ],
           green: [
-            0.65625,
-            -0.4375
+            0.578125,
+            -0.359375
           ]
         },
         shadow: {
           red: [
-            0.921875,
-            -0.28125
+            0.859375,
+            -0.21875
           ],
           green: [
-            1.21875,
-            -0.109375
+            1.125,
+            -0.03125
           ]
         }
       },
       {
         wire: {
           red: [
-            0.390625,
-            -0.59375
+            0.34375,
+            -0.53125
           ],
           green: [
-            0.65625,
-            -0.4375
+            0.578125,
+            -0.359375
           ]
         },
         shadow: {
           red: [
-            0.921875,
-            -0.28125
+            0.859375,
+            -0.21875
           ],
           green: [
-            1.21875,
-            -0.109375
+            1.125,
+            -0.03125
           ]
         }
       },
       {
         wire: {
           red: [
-            0.390625,
-            -0.59375
+            0.34375,
+            -0.53125
           ],
           green: [
-            0.65625,
-            -0.4375
+            0.578125,
+            -0.359375
           ]
         },
         shadow: {
           red: [
-            0.921875,
-            -0.28125
+            0.859375,
+            -0.21875
           ],
           green: [
-            1.21875,
-            -0.109375
+            1.125,
+            -0.03125
           ]
         }
       },
       {
         wire: {
           red: [
-            0.390625,
-            -0.59375
+            0.34375,
+            -0.53125
           ],
           green: [
-            0.65625,
-            -0.4375
+            0.578125,
+            -0.359375
           ]
         },
         shadow: {
           red: [
-            0.921875,
-            -0.28125
+            0.859375,
+            -0.21875
           ],
           green: [
-            1.21875,
-            -0.109375
+            1.125,
+            -0.03125
           ]
         }
       },
@@ -3368,8 +3152,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.3,
+      mining_time: 0.1,
       result: 'express_transport_belt'
     },
     max_health: 170,
@@ -3396,10 +3179,10 @@ module.exports = {
     ],
     working_sound: {
       sound: {
-        filename: 'sound/express-transport-belt.ogg',
+        filename: 'sound/transport-belt.ogg',
         volume: 0.4
       },
-      max_sounds_per_type: 3
+      persistent: true
     },
     animation_speed_coefficient: 32,
     animations: {
@@ -3412,170 +3195,51 @@ module.exports = {
       hr_version: {
         filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
         priority: 'extra_high',
-        width: 80,
-        height: 80,
+        width: 128,
+        height: 128,
         frame_count: 32,
-        line_length: 16,
         direction_count: 12,
         scale: 0.5
       }
     },
-    belt_horizontal: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
+    belt_animation_set: {
+      animation_set: {
+        filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
         priority: 'extra_high',
-        width: 80,
-        height: 80,
+        width: 64,
+        height: 64,
         frame_count: 32,
-        line_length: 16,
-        scale: 0.5
-      }
-    },
-    belt_vertical: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 40,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 160,
-        scale: 0.5
-      }
-    },
-    ending_top: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 80,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 320,
-        scale: 0.5
-      }
-    },
-    ending_bottom: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 120,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 480,
-        scale: 0.5
-      }
-    },
-    ending_side: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 160,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 640,
-        scale: 0.5
-      }
-    },
-    starting_top: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 200,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 800,
-        scale: 0.5
-      }
-    },
-    starting_bottom: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 240,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 960,
-        scale: 0.5
-      }
-    },
-    starting_side: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 280,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 1120,
-        scale: 0.5
-      }
-    },
-    ending_patch: {
-      sheet: {
-        filename: 'graphics/entity/transport-belt/start-end-integration-patches.png',
-        width: 40,
-        height: 40,
-        priority: 'extra_high',
+        direction_count: 20,
         hr_version: {
-          filename: 'graphics/entity/transport-belt/hr-start-end-integration-patches.png',
-          width: 80,
-          height: 80,
+          filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
           priority: 'extra_high',
-          scale: 0.5
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          frame_count: 32,
+          direction_count: 20
         }
-      }
+      },
+      east_index: 1,
+      west_index: 2,
+      north_index: 3,
+      south_index: 4,
+      east_to_north_index: 5,
+      north_to_east_index: 6,
+      west_to_north_index: 7,
+      north_to_west_index: 8,
+      south_to_east_index: 9,
+      east_to_south_index: 10,
+      south_to_west_index: 11,
+      west_to_south_index: 12,
+      starting_south_index: 13,
+      ending_south_index: 14,
+      starting_west_index: 15,
+      ending_west_index: 16,
+      starting_north_index: 17,
+      ending_north_index: 18,
+      starting_east_index: 19,
+      ending_east_index: 20
     },
     fast_replaceable_group: 'transport_belt',
     speed: 0.09375,
@@ -3584,13 +3248,13 @@ module.exports = {
         sheet: {
           filename: 'graphics/entity/transport-belt/connector/hr-ccm-belt-04a-sequence.png',
           frame_count: 4,
-          height: 90,
+          height: 94,
           line_length: 4,
           priority: 'low',
           scale: 0.5,
           shift: [
-            0.09375,
-            -0.1875
+            0.109375,
+            -0.15625
           ],
           variation_count: 7,
           width: 80
@@ -3601,16 +3265,32 @@ module.exports = {
           draw_as_shadow: true,
           filename: 'graphics/entity/transport-belt/connector/hr-ccm-belt-04b-sequence-shadow.png',
           frame_count: 4,
-          height: 74,
+          height: 112,
           line_length: 4,
           priority: 'low',
           scale: 0.5,
           shift: [
-            0.390625,
-            -0.015625
+            0.0625,
+            0.09375
           ],
           variation_count: 7,
-          width: 116
+          width: 160
+        }
+      },
+      frame_back_patch: {
+        sheet: {
+          filename: 'graphics/entity/transport-belt/connector/hr-ccm-belt-04a-sequence-back-patch.png',
+          frame_count: 1,
+          height: 72,
+          line_length: 3,
+          priority: 'low',
+          scale: 0.5,
+          shift: [
+            0,
+            -0.0625
+          ],
+          variation_count: 3,
+          width: 66
         }
       },
       frame_main_scanner: {
@@ -4050,88 +3730,88 @@ module.exports = {
       {
         wire: {
           red: [
-            0.390625,
-            -0.59375
+            0.34375,
+            -0.53125
           ],
           green: [
-            0.65625,
-            -0.4375
+            0.578125,
+            -0.359375
           ]
         },
         shadow: {
           red: [
-            0.921875,
-            -0.28125
+            0.859375,
+            -0.21875
           ],
           green: [
-            1.21875,
-            -0.109375
+            1.125,
+            -0.03125
           ]
         }
       },
       {
         wire: {
           red: [
-            0.390625,
-            -0.59375
+            0.34375,
+            -0.53125
           ],
           green: [
-            0.65625,
-            -0.4375
+            0.578125,
+            -0.359375
           ]
         },
         shadow: {
           red: [
-            0.921875,
-            -0.28125
+            0.859375,
+            -0.21875
           ],
           green: [
-            1.21875,
-            -0.109375
+            1.125,
+            -0.03125
           ]
         }
       },
       {
         wire: {
           red: [
-            0.390625,
-            -0.59375
+            0.34375,
+            -0.53125
           ],
           green: [
-            0.65625,
-            -0.4375
+            0.578125,
+            -0.359375
           ]
         },
         shadow: {
           red: [
-            0.921875,
-            -0.28125
+            0.859375,
+            -0.21875
           ],
           green: [
-            1.21875,
-            -0.109375
+            1.125,
+            -0.03125
           ]
         }
       },
       {
         wire: {
           red: [
-            0.390625,
-            -0.59375
+            0.34375,
+            -0.53125
           ],
           green: [
-            0.65625,
-            -0.4375
+            0.578125,
+            -0.359375
           ]
         },
         shadow: {
           red: [
-            0.921875,
-            -0.28125
+            0.859375,
+            -0.21875
           ],
           green: [
-            1.21875,
-            -0.109375
+            1.125,
+            -0.03125
           ]
         }
       },
@@ -4708,8 +4388,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.2,
       result: 'boiler'
     },
     max_health: 200,
@@ -5039,7 +4718,7 @@ module.exports = {
     energy_source: {
       type: 'burner',
       fuel_category: 'chemical',
-      effectivity: 0.5,
+      effectivity: 1,
       fuel_inventory_size: 1,
       emissions: 0.015384615384615385,
       smoke: [
@@ -5528,8 +5207,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'heat_exchanger'
     },
     max_health: 200,
@@ -5861,6 +5539,7 @@ module.exports = {
       max_temperature: 1000,
       specific_heat: '1MJ',
       max_transfer: '2GW',
+      min_working_temperature: 500,
       connections: [
         {
           position: [
@@ -6180,7 +5859,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.1,
       result: 'wooden_chest'
     },
     max_health: 100,
@@ -6214,13 +5893,51 @@ module.exports = {
       filename: 'sound/wooden-chest-close.ogg'
     },
     picture: {
-      filename: 'graphics/entity/wooden-chest/wooden-chest.png',
-      priority: 'extra_high',
-      width: 46,
-      height: 33,
-      shift: [
-        0.25,
-        0.015625
+      layers: [
+        {
+          filename: 'graphics/entity/wooden-chest/wooden-chest.png',
+          priority: 'extra_high',
+          width: 32,
+          height: 36,
+          shift: [
+            0.015625,
+            -0.0625
+          ],
+          hr_version: {
+            filename: 'graphics/entity/wooden-chest/hr-wooden-chest.png',
+            priority: 'extra_high',
+            width: 62,
+            height: 72,
+            shift: [
+              0.015625,
+              -0.0625
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/wooden-chest/wooden-chest-shadow.png',
+          priority: 'extra_high',
+          width: 52,
+          height: 20,
+          shift: [
+            0.3125,
+            0.203125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/wooden-chest/hr-wooden-chest-shadow.png',
+            priority: 'extra_high',
+            width: 104,
+            height: 40,
+            shift: [
+              0.3125,
+              0.203125
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
+        }
       ]
     },
     circuit_wire_connection_point: {
@@ -6291,10 +6008,10 @@ module.exports = {
         priority: 'low',
         draw_as_shadow: true,
         width: 70,
-        height: 56,
+        height: 54,
         scale: 0.5,
         x: 140,
-        y: 168,
+        y: 162,
         shift: [
           0.25,
           0.296875
@@ -6382,7 +6099,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.2,
       result: 'iron_chest'
     },
     max_health: 200,
@@ -6418,13 +6135,51 @@ module.exports = {
     fast_replaceable_group: 'container',
     inventory_size: 32,
     picture: {
-      filename: 'graphics/entity/iron-chest/iron-chest.png',
-      priority: 'extra_high',
-      width: 48,
-      height: 34,
-      shift: [
-        0.1875,
-        0
+      layers: [
+        {
+          filename: 'graphics/entity/iron-chest/iron-chest.png',
+          priority: 'extra_high',
+          width: 34,
+          height: 38,
+          shift: [
+            0,
+            -0.015625
+          ],
+          hr_version: {
+            filename: 'graphics/entity/iron-chest/hr-iron-chest.png',
+            priority: 'extra_high',
+            width: 66,
+            height: 76,
+            shift: [
+              -0.015625,
+              -0.015625
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/iron-chest/iron-chest-shadow.png',
+          priority: 'extra_high',
+          width: 56,
+          height: 26,
+          shift: [
+            0.3125,
+            0.203125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/iron-chest/hr-iron-chest-shadow.png',
+            priority: 'extra_high',
+            width: 110,
+            height: 50,
+            shift: [
+              0.328125,
+              0.1875
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
+        }
       ]
     },
     circuit_wire_connection_point: {
@@ -6495,10 +6250,10 @@ module.exports = {
         priority: 'low',
         draw_as_shadow: true,
         width: 70,
-        height: 56,
+        height: 54,
         scale: 0.5,
         x: 140,
-        y: 168,
+        y: 162,
         shift: [
           0.25,
           0.296875
@@ -6586,7 +6341,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.2,
       result: 'steel_chest'
     },
     max_health: 350,
@@ -6622,13 +6377,51 @@ module.exports = {
     fast_replaceable_group: 'container',
     inventory_size: 48,
     picture: {
-      filename: 'graphics/entity/steel-chest/steel-chest.png',
-      priority: 'extra_high',
-      width: 48,
-      height: 34,
-      shift: [
-        0.1875,
-        0
+      layers: [
+        {
+          filename: 'graphics/entity/steel-chest/steel-chest.png',
+          priority: 'extra_high',
+          width: 32,
+          height: 40,
+          shift: [
+            0,
+            -0.015625
+          ],
+          hr_version: {
+            filename: 'graphics/entity/steel-chest/hr-steel-chest.png',
+            priority: 'extra_high',
+            width: 64,
+            height: 80,
+            shift: [
+              -0.0078125,
+              -0.015625
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/steel-chest/steel-chest-shadow.png',
+          priority: 'extra_high',
+          width: 56,
+          height: 22,
+          shift: [
+            0.375,
+            0.234375
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/steel-chest/hr-steel-chest-shadow.png',
+            priority: 'extra_high',
+            width: 110,
+            height: 46,
+            shift: [
+              0.3828125,
+              0.25
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
+        }
       ]
     },
     circuit_wire_connection_point: {
@@ -6699,10 +6492,10 @@ module.exports = {
         priority: 'low',
         draw_as_shadow: true,
         width: 70,
-        height: 56,
+        height: 54,
         scale: 0.5,
         x: 140,
-        y: 168,
+        y: 162,
         shift: [
           0.25,
           0.296875
@@ -6791,8 +6584,7 @@ module.exports = {
       'fast_replaceable_no_build_while_moving'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'small_electric_pole'
     },
     max_health: 100,
@@ -6832,134 +6624,175 @@ module.exports = {
     track_coverage_during_build_by_moving: true,
     fast_replaceable_group: 'electric_pole',
     pictures: {
-      filename: 'graphics/entity/small-electric-pole/small-electric-pole.png',
-      priority: 'extra_high',
-      width: 123,
-      height: 124,
-      direction_count: 4,
-      shift: [
-        1.4,
-        -1.1
+      layers: [
+        {
+          filename: 'graphics/entity/small-electric-pole/small-electric-pole.png',
+          priority: 'extra_high',
+          width: 38,
+          height: 108,
+          direction_count: 4,
+          shift: [
+            0,
+            -1.3125
+          ],
+          hr_version: {
+            filename: 'graphics/entity/small-electric-pole/hr-small-electric-pole.png',
+            priority: 'extra_high',
+            width: 70,
+            height: 220,
+            direction_count: 4,
+            shift: [
+              0.03125,
+              -1.34375
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/small-electric-pole/small-electric-pole-shadow.png',
+          priority: 'extra_high',
+          width: 130,
+          height: 28,
+          direction_count: 4,
+          shift: [
+            1.5625,
+            0.0625
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/small-electric-pole/hr-small-electric-pole-shadow.png',
+            priority: 'extra_high',
+            width: 256,
+            height: 52,
+            direction_count: 4,
+            shift: [
+              1.59375,
+              0.09375
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
+        }
       ]
     },
     connection_points: [
       {
         shadow: {
           copper: [
-            2.7,
-            0
+            3.078125,
+            0.078125
           ],
           red: [
-            2.3,
-            0
+            3.46875,
+            0.140625
           ],
           green: [
-            3.1,
-            0
+            2.671875,
+            0.125
           ]
         },
         wire: {
           copper: [
             0,
-            -2.7
+            -2.578125
           ],
           red: [
-            -0.375,
-            -2.625
-          ],
-          green: [
             0.40625,
-            -2.625
+            -2.53125
+          ],
+          green: [
+            -0.390625,
+            -2.53125
           ]
         }
       },
       {
         shadow: {
           copper: [
-            2.7,
-            -0.05
+            3.109375,
+            0.125
           ],
           red: [
-            2.2,
-            -0.35
+            3.4375,
+            0.28125
           ],
           green: [
-            3,
-            0.12
+            2.890625,
+            -0.125
           ]
         },
         wire: {
           copper: [
-            -0.04,
-            -2.8
+            0.046875,
+            -2.53125
           ],
           red: [
-            -0.375,
-            -2.9375
+            0.375,
+            -2.375
           ],
           green: [
-            0.1875,
-            -2.5625
+            -0.1875,
+            -2.796875
           ]
         }
       },
       {
         shadow: {
           copper: [
-            2.5,
-            -0.1
+            3.140625,
+            0.171875
           ],
           red: [
-            2.55,
-            -0.45
+            3.203125,
+            0.453125
           ],
           green: [
-            2.5,
-            0.25
+            3.234375,
+            -0.109375
           ]
         },
         wire: {
           copper: [
-            -0.15625,
-            -2.6875
+            0.078125,
+            -2.484375
           ],
           red: [
-            -0.0625,
-            -2.96875
+            0.125,
+            -2.21875
           ],
           green: [
-            -0.03125,
-            -2.40625
+            0.15625,
+            -2.796875
           ]
         }
       },
       {
         shadow: {
           copper: [
-            2.3,
-            -0.1
+            3.078125,
+            -0.046875
           ],
           red: [
-            2.65,
-            -0.4
+            2.75,
+            0.109375
           ],
           green: [
-            1.75,
-            0.2
+            3.3125,
+            -0.28125
           ]
         },
         wire: {
           copper: [
-            -0.03125,
-            -2.71875
+            0.015625,
+            -2.703125
           ],
           red: [
-            0.3125,
-            -2.875
+            -0.328125,
+            -2.546875
           ],
           green: [
-            -0.25,
-            -2.5
+            0.25,
+            -2.921875
           ]
         }
       }
@@ -6987,8 +6820,7 @@ module.exports = {
       'fast_replaceable_no_build_while_moving'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'big_electric_pole'
     },
     max_health: 150,
@@ -7026,134 +6858,175 @@ module.exports = {
     maximum_wire_distance: 30,
     supply_area_distance: 2,
     pictures: {
-      filename: 'graphics/entity/big-electric-pole/big-electric-pole.png',
-      priority: 'high',
-      width: 168,
-      height: 165,
-      direction_count: 4,
-      shift: [
-        1.6,
-        -1.1
+      layers: [
+        {
+          filename: 'graphics/entity/big-electric-pole/big-electric-pole.png',
+          priority: 'extra_high',
+          width: 74,
+          height: 158,
+          direction_count: 4,
+          shift: [
+            0,
+            -1.625
+          ],
+          hr_version: {
+            filename: 'graphics/entity/big-electric-pole/hr-big-electric-pole.png',
+            priority: 'extra_high',
+            width: 148,
+            height: 314,
+            direction_count: 4,
+            shift: [
+              0,
+              -1.625
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/big-electric-pole/big-electric-pole-shadow.png',
+          priority: 'extra_high',
+          width: 188,
+          height: 48,
+          direction_count: 4,
+          shift: [
+            1.875,
+            0
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/big-electric-pole/hr-big-electric-pole-shadow.png',
+            priority: 'extra_high',
+            width: 374,
+            height: 94,
+            direction_count: 4,
+            shift: [
+              1.875,
+              0
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
+        }
       ]
     },
     connection_points: [
       {
         shadow: {
           copper: [
-            2.7,
+            3.828125,
+            -0.53125
+          ],
+          red: [
+            4.703125,
             0
           ],
           green: [
-            1.8,
-            0
-          ],
-          red: [
-            3.6,
+            3.21875,
             0
           ]
         },
         wire: {
           copper: [
             0,
-            -3.125
-          ],
-          green: [
-            -0.59375,
-            -3.125
+            -3.84375
           ],
           red: [
-            0.625,
-            -3.125
+            0.90625,
+            -3.296875
+          ],
+          green: [
+            -0.90625,
+            -3.296875
           ]
         }
       },
       {
         shadow: {
           copper: [
-            3.1,
-            0.2
-          ],
-          green: [
-            2.3,
-            -0.3
+            4.359375,
+            -0.375
           ],
           red: [
-            3.8,
-            0.6
+            4.4375,
+            0.4375
+          ],
+          green: [
+            3.1875,
+            -0.484375
           ]
         },
         wire: {
           copper: [
-            -0.0625,
-            -3.125
-          ],
-          green: [
-            -0.5,
-            -3.4375
+            0.53125,
+            -3.671875
           ],
           red: [
-            0.34375,
-            -2.8125
+            0.640625,
+            -2.859375
+          ],
+          green: [
+            -0.625,
+            -3.75
           ]
         }
       },
       {
         shadow: {
           copper: [
-            2.9,
-            0.06
-          ],
-          green: [
-            3,
-            -0.6
+            4.5625,
+            0
           ],
           red: [
-            3,
-            0.8
+            3.8125,
+            0.640625
+          ],
+          green: [
+            3.8125,
+            -0.640625
           ]
         },
         wire: {
           copper: [
-            -0.09375,
-            -3.09375
-          ],
-          green: [
-            -0.09375,
-            -3.53125
+            0.734375,
+            -3.3125
           ],
           red: [
-            -0.09375,
+            0.015625,
             -2.65625
+          ],
+          green: [
+            0.015625,
+            -3.921875
           ]
         }
       },
       {
         shadow: {
           copper: [
-            3.1,
-            0.2
-          ],
-          green: [
-            3.8,
-            -0.3
+            4.328125,
+            0.359375
           ],
           red: [
-            2.35,
-            0.6
+            3.1875,
+            0.46875
+          ],
+          green: [
+            4.46875,
+            -0.453125
           ]
         },
         wire: {
           copper: [
-            -0.0625,
-            -3.1875
-          ],
-          green: [
-            0.375,
-            -3.5
+            0.515625,
+            -2.9375
           ],
           red: [
-            -0.46875,
-            -2.90625
+            -0.640625,
+            -2.8515625
+          ],
+          green: [
+            0.640625,
+            -3.734375
           ]
         }
       }
@@ -7181,8 +7054,7 @@ module.exports = {
       'fast_replaceable_no_build_while_moving'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'medium_electric_pole'
     },
     max_health: 100,
@@ -7222,134 +7094,175 @@ module.exports = {
     maximum_wire_distance: 9,
     supply_area_distance: 3.5,
     pictures: {
-      filename: 'graphics/entity/medium-electric-pole/medium-electric-pole.png',
-      priority: 'high',
-      width: 136,
-      height: 122,
-      direction_count: 4,
-      shift: [
-        1.4,
-        -1
+      layers: [
+        {
+          filename: 'graphics/entity/medium-electric-pole/medium-electric-pole.png',
+          priority: 'extra_high',
+          width: 48,
+          height: 120,
+          direction_count: 4,
+          shift: [
+            0,
+            -1.3125
+          ],
+          hr_version: {
+            filename: 'graphics/entity/medium-electric-pole/hr-medium-electric-pole.png',
+            priority: 'extra_high',
+            width: 92,
+            height: 244,
+            direction_count: 4,
+            shift: [
+              0.03125,
+              -1.34375
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/medium-electric-pole/medium-electric-pole-shadow.png',
+          priority: 'extra_high',
+          width: 140,
+          height: 32,
+          direction_count: 4,
+          shift: [
+            1.75,
+            0.125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/medium-electric-pole/hr-medium-electric-pole-shadow.png',
+            priority: 'extra_high',
+            width: 280,
+            height: 60,
+            direction_count: 4,
+            shift: [
+              1.75,
+              0.15625
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
+        }
       ]
     },
     connection_points: [
       {
         shadow: {
           copper: [
-            2.55,
-            0.4
-          ],
-          green: [
-            2,
-            0.4
+            3.5625,
+            -0.21875
           ],
           red: [
-            3.05,
-            0.4
+            3.84375,
+            -0.046875
+          ],
+          green: [
+            3.203125,
+            -0.203125
           ]
         },
         wire: {
           copper: [
-            -0.03125,
-            -2.46875
+            0.21875,
+            -3.125
+          ],
+          red: [
+            0.65625,
+            -2.8125
           ],
           green: [
+            -0.234375,
+            -2.921875
+          ]
+        }
+      },
+      {
+        shadow: {
+          copper: [
+            2.984375,
+            0.390625
+          ],
+          red: [
+            3.21875,
+            0.5625
+          ],
+          green: [
+            2.671875,
+            0.046875
+          ]
+        },
+        wire: {
+          copper: [
             -0.34375,
-            -2.46875
+            -2.515625
           ],
           red: [
-            0.25,
-            -2.46875
+            0.046875,
+            -2.1875
+          ],
+          green: [
+            -0.515625,
+            -2.71875
           ]
         }
       },
       {
         shadow: {
           copper: [
-            2.9,
-            0.1
-          ],
-          green: [
-            2.6,
-            -0.15
+            2.921875,
+            0.078125
           ],
           red: [
-            3.25,
-            0.35
+            2.828125,
+            0.390625
+          ],
+          green: [
+            2.9375,
+            -0.234375
           ]
         },
         wire: {
           copper: [
-            0.0625,
-            -2.65625
-          ],
-          green: [
-            -0.15625,
-            -2.84375
+            -0.4375,
+            -2.828125
           ],
           red: [
-            0.28125,
-            -2.5
+            -0.34375,
+            -2.359375
+          ],
+          green: [
+            -0.21875,
+            -3
           ]
         }
       },
       {
         shadow: {
           copper: [
-            1.5,
-            -0.2
-          ],
-          green: [
-            1.5,
-            -0.55
+            2.828125,
+            -0.046875
           ],
           red: [
-            1.5,
-            0.1
+            2.5625,
+            0.125
+          ],
+          green: [
+            3.28125,
+            -0.265625
           ]
         },
         wire: {
           copper: [
-            -0.4375,
-            -2.28125
-          ],
-          green: [
-            -0.4375,
-            -2.5625
+            -0.359375,
+            -3.046875
           ],
           red: [
-            -0.4375,
-            -2.0625
-          ]
-        }
-      },
-      {
-        shadow: {
-          copper: [
-            2.88,
-            0.2
+            -0.609375,
+            -2.625
           ],
           green: [
-            3.2,
-            -0.1
-          ],
-          red: [
-            2.45,
-            0.4
-          ]
-        },
-        wire: {
-          copper: [
-            -0.0625,
-            -2.5625
-          ],
-          green: [
-            0.15625,
-            -2.75
-          ],
-          red: [
-            -0.28125,
-            -2.4375
+            0.125,
+            -3.015625
           ]
         }
       }
@@ -7376,8 +7289,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'substation'
     },
     max_health: 200,
@@ -7416,14 +7328,55 @@ module.exports = {
     maximum_wire_distance: 18,
     supply_area_distance: 9,
     pictures: {
-      filename: 'graphics/entity/substation/substation.png',
-      priority: 'high',
-      width: 132,
-      height: 144,
-      direction_count: 4,
-      shift: [
-        0.9,
-        -1
+      layers: [
+        {
+          filename: 'graphics/entity/substation/substation.png',
+          priority: 'high',
+          width: 70,
+          height: 136,
+          direction_count: 4,
+          shift: [
+            0,
+            -0.96875
+          ],
+          hr_version: {
+            filename: 'graphics/entity/substation/hr-substation.png',
+            priority: 'high',
+            width: 138,
+            height: 270,
+            direction_count: 4,
+            shift: [
+              0,
+              -0.96875
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/substation/substation-shadow.png',
+          priority: 'high',
+          width: 186,
+          height: 52,
+          direction_count: 4,
+          shift: [
+            1.9375,
+            0.3125
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/substation/hr-substation-shadow.png',
+            priority: 'high',
+            width: 370,
+            height: 104,
+            direction_count: 4,
+            shift: [
+              1.9375,
+              0.3125
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
+        }
       ]
     },
     working_sound: {
@@ -7438,120 +7391,120 @@ module.exports = {
       {
         shadow: {
           copper: [
-            1.9,
-            -0.6
+            4.25,
+            0.25
           ],
           green: [
-            1.3,
-            -0.6
+            3.875,
+            0.25
           ],
           red: [
-            2.65,
-            -0.6
+            4.71875,
+            0.28125
           ]
         },
         wire: {
           copper: [
-            -0.25,
-            -2.71875
-          ],
-          green: [
-            -0.84375,
-            -2.71875
-          ],
-          red: [
-            0.34375,
-            -2.71875
-          ]
-        }
-      },
-      {
-        shadow: {
-          copper: [
-            1.9,
-            -0.6
-          ],
-          green: [
-            1.2,
-            -0.8
-          ],
-          red: [
-            2.5,
-            -0.35
-          ]
-        },
-        wire: {
-          copper: [
-            -0.21875,
-            -2.71875
+            0,
+            -2.6875
           ],
           green: [
             -0.65625,
-            -3.03125
+            -2.5625
           ],
           red: [
-            0.1875,
-            -2.4375
+            0.6875,
+            -2.53125
           ]
         }
       },
       {
         shadow: {
           copper: [
-            1.9,
-            -0.6
+            4.15625,
+            0.28125
           ],
           green: [
-            1.9,
-            -0.9
+            4.5,
+            0.65625
           ],
           red: [
-            1.9,
-            -0.3
+            3.4375,
+            -0.09375
           ]
         },
         wire: {
           copper: [
-            -0.21875,
-            -2.71875
+            0,
+            -2.65625
           ],
           green: [
-            -0.21875,
-            -3.15625
+            0.46875,
+            -2.1875
           ],
           red: [
-            -0.21875,
-            -2.34375
+            -0.46875,
+            -2.875
           ]
         }
       },
       {
         shadow: {
           copper: [
-            1.8,
-            -0.7
+            4.15625,
+            0.28125
           ],
           green: [
-            1.3,
-            -0.6
+            3.96875,
+            0.8125
           ],
           red: [
-            2.4,
-            -1.15
+            3.96875,
+            -0.25
           ]
         },
         wire: {
           copper: [
-            -0.21875,
-            -2.75
+            0,
+            -2.65625
           ],
           green: [
-            -0.65625,
-            -2.4375
+            0,
+            -2.0625
           ],
           red: [
-            0.1875,
+            0,
             -3.03125
+          ]
+        }
+      },
+      {
+        shadow: {
+          copper: [
+            4.15625,
+            0.28125
+          ],
+          green: [
+            3.46875,
+            0.625
+          ],
+          red: [
+            4.5,
+            -0.09375
+          ]
+        },
+        wire: {
+          copper: [
+            0,
+            -2.6875
+          ],
+          green: [
+            -0.46875,
+            -2.21875
+          ],
+          red: [
+            0.46875,
+            -2.875
           ]
         }
       }
@@ -7578,7 +7531,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.3,
       result: 'steam_engine'
     },
     max_health: 400,
@@ -7921,7 +7874,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.3,
       result: 'steam_turbine'
     },
     max_health: 300,
@@ -8280,7 +8233,7 @@ module.exports = {
       'water_tile'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.1,
       result: 'offshore_pump'
     },
     max_health: 150,
@@ -8440,6 +8393,7 @@ module.exports = {
         }
       },
       production_type: 'output',
+      filter: 'water',
       pipe_connections: [
         {
           position: [
@@ -8629,10 +8583,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 0,
-          y: 56,
+          y: 54,
           shift: [
             -0.15625,
             -0.171875
@@ -8735,10 +8689,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 140,
-          y: 56,
+          y: 54,
           shift: [
             0,
             -0.109375
@@ -8841,10 +8795,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 280,
-          y: 56,
+          y: 54,
           shift: [
             0.515625,
             -0.09375
@@ -8947,10 +8901,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 140,
-          y: 112,
+          y: 108,
           shift: [
             0.25,
             0.109375
@@ -9047,8 +9001,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'inserter'
     },
     max_health: 150,
@@ -9073,8 +9026,8 @@ module.exports = {
         0.45
       ]
     ],
-    energy_per_movement: 5000,
-    energy_per_rotation: 5000,
+    energy_per_movement: '5kJ',
+    energy_per_rotation: '5kJ',
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input',
@@ -9083,6 +9036,7 @@ module.exports = {
     extension_speed: 0.03,
     rotation_speed: 0.014,
     fast_replaceable_group: 'inserter',
+    next_upgrade: 'fast_inserter',
     working_sound: {
       match_progress_to_activity: true,
       sound: [
@@ -9817,8 +9771,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'burner_inserter'
     },
     max_health: 100,
@@ -9843,8 +9796,8 @@ module.exports = {
         0.45
       ]
     ],
-    energy_per_movement: 100000,
-    energy_per_rotation: 100000,
+    energy_per_movement: '50KJ',
+    energy_per_rotation: '50KJ',
     energy_source: {
       type: 'burner',
       fuel_category: 'chemical',
@@ -10599,8 +10552,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'long_handed_inserter'
     },
     max_health: 160,
@@ -10633,8 +10585,8 @@ module.exports = {
       0,
       2.2
     ],
-    energy_per_movement: 5000,
-    energy_per_rotation: 5000,
+    energy_per_movement: '5KJ',
+    energy_per_rotation: '5KJ',
     rotation_speed: 0.02,
     extension_speed: 0.0457,
     hand_size: 1.5,
@@ -11370,8 +11322,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'fast_inserter'
     },
     max_health: 150,
@@ -11404,8 +11355,8 @@ module.exports = {
       0,
       1.2
     ],
-    energy_per_movement: 7000,
-    energy_per_rotation: 7000,
+    energy_per_movement: '7KJ',
+    energy_per_rotation: '7KJ',
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input',
@@ -11414,6 +11365,7 @@ module.exports = {
     extension_speed: 0.07,
     rotation_speed: 0.04,
     fast_replaceable_group: 'inserter',
+    next_upgrade: 'stack_inserter',
     working_sound: {
       match_progress_to_activity: true,
       sound: [
@@ -12127,7 +12079,8 @@ module.exports = {
       4,
       6
     ],
-    ui_name: 'Fast inserter'
+    ui_name: 'Fast inserter',
+    description: 'Inserters capable of faster motion and item filtering through improved electronics.'
   },
   stack_inserter: {
     type: 'inserter',
@@ -12141,8 +12094,7 @@ module.exports = {
     ],
     stack: true,
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'stack_inserter'
     },
     max_health: 160,
@@ -12175,8 +12127,8 @@ module.exports = {
       0,
       1.2
     ],
-    energy_per_movement: 20000,
-    energy_per_rotation: 20000,
+    energy_per_movement: '20KJ',
+    energy_per_rotation: '20KJ',
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input',
@@ -12914,8 +12866,7 @@ module.exports = {
     stack: true,
     filter_count: 1,
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'stack_filter_inserter'
     },
     max_health: 160,
@@ -12948,8 +12899,8 @@ module.exports = {
       0,
       1.2
     ],
-    energy_per_movement: 20000,
-    energy_per_rotation: 20000,
+    energy_per_movement: '20KJ',
+    energy_per_rotation: '20KJ',
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input',
@@ -13684,8 +13635,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'filter_inserter'
     },
     max_health: 150,
@@ -13743,8 +13693,8 @@ module.exports = {
       0,
       1.2
     ],
-    energy_per_movement: 8000,
-    energy_per_rotation: 8000,
+    energy_per_movement: '8KJ',
+    energy_per_rotation: '8KJ',
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input',
@@ -14451,11 +14401,11 @@ module.exports = {
     icon_size: 32,
     flags: [
       'placeable_neutral',
-      'player_creation'
+      'player_creation',
+      'fast_replaceable_no_build_while_moving'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'pipe'
     },
     max_health: 100,
@@ -14869,8 +14819,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'radar'
     },
     max_health: 250,
@@ -14909,10 +14858,7 @@ module.exports = {
       priority: 'low',
       width: 119,
       height: 108,
-      apply_projection: false,
       direction_count: 1,
-      repeat_count: 64,
-      line_length: 1,
       shift: [
         0.046875,
         0.125
@@ -14922,10 +14868,7 @@ module.exports = {
         priority: 'low',
         width: 238,
         height: 216,
-        apply_projection: false,
         direction_count: 1,
-        repeat_count: 64,
-        line_length: 1,
         shift: [
           0.046875,
           0.125
@@ -15007,6 +14950,7 @@ module.exports = {
       b: 0.235,
       a: 0.275
     },
+    rotation_speed: 0.01,
     size: {
       width: 3,
       height: 3
@@ -15024,8 +14968,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'small_lamp'
     },
     max_health: 100,
@@ -15288,10 +15231,10 @@ module.exports = {
         priority: 'low',
         draw_as_shadow: true,
         width: 70,
-        height: 56,
+        height: 54,
         scale: 0.5,
         x: 140,
-        y: 168,
+        y: 162,
         shift: [
           0.296875,
           0.359375
@@ -15379,12 +15322,12 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'pipe_to_ground'
     },
     max_health: 150,
     corpse: 'small_remnants',
+    fast_replaceable_group: 'pipe',
     collision_box: [
       [
         -0.29,
@@ -15560,6 +15503,14 @@ module.exports = {
       height: 64,
       scale: 0.5
     },
+    underground_remove_pipes_sprite: {
+      filename: 'graphics/arrows/underground-lines-remove.png',
+      priority: 'high',
+      width: 64,
+      height: 64,
+      x: 0,
+      scale: 0.5
+    },
     pictures: {
       north: {
         filename: 'graphics/entity/pipe-to-ground/pipe-to-ground-up.png',
@@ -15637,8 +15588,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.2,
       result: 'assembling_machine_1'
     },
     max_health: 300,
@@ -15665,6 +15615,7 @@ module.exports = {
       ]
     ],
     fast_replaceable_group: 'assembling_machine',
+    next_upgrade: 'assembling_machine_2',
     alert_icon_shift: [
       -0.09375,
       -0.375
@@ -15728,16 +15679,17 @@ module.exports = {
       ]
     },
     crafting_categories: [
-      'crafting'
+      'crafting',
+      'basic_crafting',
+      'advanced_crafting'
     ],
     crafting_speed: 0.5,
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input',
-      emissions: 0.03333333333333333
+      emissions: 0.04
     },
-    energy_usage: '90kW',
-    ingredient_count: 2,
+    energy_usage: '75kW',
     open_sound: {
       filename: 'sound/machine-open.ogg',
       volume: 0.85
@@ -15767,8 +15719,7 @@ module.exports = {
       width: 3,
       height: 3
     },
-    ui_name: 'Assembling machine 1',
-    description: 'Crafts items that require up to 2 ingredients.'
+    ui_name: 'Assembling machine 1'
   },
   assembling_machine_2: {
     type: 'assembling_machine',
@@ -15781,8 +15732,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.2,
       result: 'assembling_machine_2'
     },
     max_health: 350,
@@ -16281,6 +16231,7 @@ module.exports = {
       ]
     ],
     fast_replaceable_group: 'assembling_machine',
+    next_upgrade: 'assembling_machine_3',
     animation: {
       layers: [
         {
@@ -16363,6 +16314,7 @@ module.exports = {
       apparent_volume: 1.5
     },
     crafting_categories: [
+      'basic_crafting',
       'crafting',
       'advanced_crafting',
       'crafting_with_fluid'
@@ -16371,10 +16323,9 @@ module.exports = {
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input',
-      emissions: 0.016
+      emissions: 0.015
     },
     energy_usage: '150kW',
-    ingredient_count: 4,
     module_specification: {
       module_slots: 2
     },
@@ -16394,8 +16345,7 @@ module.exports = {
       4,
       6
     ],
-    ui_name: 'Assembling machine 2',
-    description: 'Crafts items that require up to 4 ingredients.'
+    ui_name: 'Assembling machine 2'
   },
   assembling_machine_3: {
     type: 'assembling_machine',
@@ -16408,8 +16358,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.2,
       result: 'assembling_machine_3'
     },
     max_health: 400,
@@ -17000,6 +16949,7 @@ module.exports = {
       ]
     },
     crafting_categories: [
+      'basic_crafting',
       'crafting',
       'advanced_crafting',
       'crafting_with_fluid'
@@ -17008,10 +16958,9 @@ module.exports = {
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input',
-      emissions: 0.008571428571428572
+      emissions: 0.005
     },
-    energy_usage: '210kW',
-    ingredient_count: 6,
+    energy_usage: '375kW',
     module_specification: {
       module_slots: 4
     },
@@ -17031,8 +16980,7 @@ module.exports = {
       4,
       6
     ],
-    ui_name: 'Assembling machine 3',
-    description: 'Crafts items that require up to 6 ingredients.'
+    ui_name: 'Assembling machine 3'
   },
   oil_refinery: {
     type: 'assembling_machine',
@@ -17044,7 +16992,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.2,
       result: 'oil_refinery'
     },
     max_health: 350,
@@ -17101,7 +17049,6 @@ module.exports = {
       emissions: 0.008571428571428572
     },
     energy_usage: '420kW',
-    ingredient_count: 4,
     animation: {
       north: {
         layers: [
@@ -18116,136 +18063,6 @@ module.exports = {
         ]
       }
     ],
-    pipe_covers: {
-      north: {
-        layers: [
-          {
-            filename: 'graphics/entity/pipe-covers/pipe-cover-north.png',
-            priority: 'extra_high',
-            width: 64,
-            height: 64,
-            hr_version: {
-              filename: 'graphics/entity/pipe-covers/hr-pipe-cover-north.png',
-              priority: 'extra_high',
-              width: 128,
-              height: 128,
-              scale: 0.5
-            }
-          },
-          {
-            filename: 'graphics/entity/pipe-covers/pipe-cover-north-shadow.png',
-            priority: 'extra_high',
-            width: 64,
-            height: 64,
-            draw_as_shadow: true,
-            hr_version: {
-              filename: 'graphics/entity/pipe-covers/hr-pipe-cover-north-shadow.png',
-              priority: 'extra_high',
-              width: 128,
-              height: 128,
-              scale: 0.5,
-              draw_as_shadow: true
-            }
-          }
-        ]
-      },
-      east: {
-        layers: [
-          {
-            filename: 'graphics/entity/pipe-covers/pipe-cover-east.png',
-            priority: 'extra_high',
-            width: 64,
-            height: 64,
-            hr_version: {
-              filename: 'graphics/entity/pipe-covers/hr-pipe-cover-east.png',
-              priority: 'extra_high',
-              width: 128,
-              height: 128,
-              scale: 0.5
-            }
-          },
-          {
-            filename: 'graphics/entity/pipe-covers/pipe-cover-east-shadow.png',
-            priority: 'extra_high',
-            width: 64,
-            height: 64,
-            draw_as_shadow: true,
-            hr_version: {
-              filename: 'graphics/entity/pipe-covers/hr-pipe-cover-east-shadow.png',
-              priority: 'extra_high',
-              width: 128,
-              height: 128,
-              scale: 0.5,
-              draw_as_shadow: true
-            }
-          }
-        ]
-      },
-      south: {
-        layers: [
-          {
-            filename: 'graphics/entity/pipe-covers/pipe-cover-south.png',
-            priority: 'extra_high',
-            width: 64,
-            height: 64,
-            hr_version: {
-              filename: 'graphics/entity/pipe-covers/hr-pipe-cover-south.png',
-              priority: 'extra_high',
-              width: 128,
-              height: 128,
-              scale: 0.5
-            }
-          },
-          {
-            filename: 'graphics/entity/pipe-covers/pipe-cover-south-shadow.png',
-            priority: 'extra_high',
-            width: 64,
-            height: 64,
-            draw_as_shadow: true,
-            hr_version: {
-              filename: 'graphics/entity/pipe-covers/hr-pipe-cover-south-shadow.png',
-              priority: 'extra_high',
-              width: 128,
-              height: 128,
-              scale: 0.5,
-              draw_as_shadow: true
-            }
-          }
-        ]
-      },
-      west: {
-        layers: [
-          {
-            filename: 'graphics/entity/pipe-covers/pipe-cover-west.png',
-            priority: 'extra_high',
-            width: 64,
-            height: 64,
-            hr_version: {
-              filename: 'graphics/entity/pipe-covers/hr-pipe-cover-west.png',
-              priority: 'extra_high',
-              width: 128,
-              height: 128,
-              scale: 0.5
-            }
-          },
-          {
-            filename: 'graphics/entity/pipe-covers/pipe-cover-west-shadow.png',
-            priority: 'extra_high',
-            width: 64,
-            height: 64,
-            draw_as_shadow: true,
-            hr_version: {
-              filename: 'graphics/entity/pipe-covers/hr-pipe-cover-west-shadow.png',
-              priority: 'extra_high',
-              width: 128,
-              height: 128,
-              scale: 0.5,
-              draw_as_shadow: true
-            }
-          }
-        ]
-      }
-    },
     size: {
       width: 5,
       height: 5
@@ -18269,8 +18086,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'chemical_plant'
     },
     max_health: 300,
@@ -18349,7 +18165,7 @@ module.exports = {
             priority: 'high',
             x: 0,
             width: 175,
-            height: 110,
+            height: 141,
             frame_count: 1,
             shift: [
               0.984375,
@@ -18407,7 +18223,7 @@ module.exports = {
             priority: 'high',
             x: 175,
             width: 175,
-            height: 110,
+            height: 141,
             frame_count: 1,
             shift: [
               0.984375,
@@ -18465,7 +18281,7 @@ module.exports = {
             priority: 'high',
             x: 350,
             width: 175,
-            height: 110,
+            height: 141,
             frame_count: 1,
             shift: [
               0.984375,
@@ -18523,7 +18339,7 @@ module.exports = {
             priority: 'high',
             x: 525,
             width: 175,
-            height: 110,
+            height: 141,
             frame_count: 1,
             shift: [
               0.984375,
@@ -18719,14 +18535,13 @@ module.exports = {
       },
       apparent_volume: 1.5
     },
-    crafting_speed: 1.25,
+    crafting_speed: 1,
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input',
       emissions: 0.008571428571428572
     },
     energy_usage: '210kW',
-    ingredient_count: 4,
     crafting_categories: [
       'chemistry'
     ],
@@ -19327,8 +19142,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'centrifuge'
     },
     max_health: 350,
@@ -19628,143 +19442,6 @@ module.exports = {
         }
       }
     ],
-    working_visualisations_disabled: [
-      {
-        north_position: [
-          0,
-          0
-        ],
-        east_position: [
-          0,
-          0
-        ],
-        south_position: [
-          0,
-          0
-        ],
-        west_position: [
-          0,
-          0
-        ],
-        animation: {
-          filename: 'graphics/entity/centrifuge/centrifuge-C-light.png',
-          priority: 'high',
-          blend_mode: 'additive',
-          line_length: 8,
-          width: 96,
-          height: 104,
-          frame_count: 64,
-          shift: [
-            0,
-            -0.84375
-          ],
-          hr_version: {
-            filename: 'graphics/entity/centrifuge/hr-centrifuge-C-light.png',
-            priority: 'high',
-            scale: 0.5,
-            blend_mode: 'additive',
-            line_length: 8,
-            width: 190,
-            height: 207,
-            frame_count: 64,
-            shift: [
-              0,
-              -0.8515625
-            ]
-          }
-        }
-      },
-      {
-        north_position: [
-          0,
-          0
-        ],
-        east_position: [
-          0,
-          0
-        ],
-        south_position: [
-          0,
-          0
-        ],
-        west_position: [
-          0,
-          0
-        ],
-        animation: {
-          filename: 'graphics/entity/centrifuge/centrifuge-B-light.png',
-          priority: 'high',
-          blend_mode: 'additive',
-          line_length: 8,
-          width: 65,
-          height: 103,
-          frame_count: 64,
-          shift: [
-            0.515625,
-            0.015625
-          ],
-          hr_version: {
-            filename: 'graphics/entity/centrifuge/hr-centrifuge-B-light.png',
-            priority: 'high',
-            scale: 0.5,
-            blend_mode: 'additive',
-            line_length: 8,
-            width: 131,
-            height: 206,
-            frame_count: 64,
-            shift: [
-              0.5234375,
-              0.015625
-            ]
-          }
-        }
-      },
-      {
-        north_position: [
-          0,
-          0
-        ],
-        east_position: [
-          0,
-          0
-        ],
-        south_position: [
-          0,
-          0
-        ],
-        west_position: [
-          0,
-          0
-        ],
-        animation: {
-          filename: 'graphics/entity/centrifuge/centrifuge-A-light.png',
-          priority: 'high',
-          blend_mode: 'additive',
-          line_length: 8,
-          width: 55,
-          height: 98,
-          frame_count: 64,
-          shift: [
-            -0.734375,
-            -0.0625
-          ],
-          hr_version: {
-            filename: 'graphics/entity/centrifuge/hr-centrifuge-A-light.png',
-            priority: 'high',
-            scale: 0.5,
-            blend_mode: 'additive',
-            line_length: 8,
-            width: 108,
-            height: 197,
-            frame_count: 64,
-            shift: [
-              -0.734375,
-              -0.0546875
-            ]
-          }
-        }
-      }
-    ],
     open_sound: {
       filename: 'sound/machine-open.ogg',
       volume: 0.85
@@ -19790,7 +19467,7 @@ module.exports = {
       },
       apparent_volume: 1.5
     },
-    crafting_speed: 0.75,
+    crafting_speed: 1,
     crafting_categories: [
       'centrifuging'
     ],
@@ -19800,7 +19477,6 @@ module.exports = {
       emissions: 0.016
     },
     energy_usage: '350kW',
-    ingredient_count: 2,
     module_specification: {
       module_slots: 2
     },
@@ -19820,7 +19496,7 @@ module.exports = {
   stone_wall: {
     type: 'wall',
     name: 'stone_wall',
-    icon: 'graphics/icons/stone-wall.png',
+    icon: 'graphics/icons/wall.png',
     icon_size: 32,
     flags: [
       'placeable_neutral',
@@ -19847,7 +19523,7 @@ module.exports = {
       ]
     ],
     minable: {
-      mining_time: 0.5,
+      mining_time: 0.2,
       result: 'stone_wall'
     },
     fast_replaceable_group: 'wall',
@@ -19868,371 +19544,695 @@ module.exports = {
       single: {
         layers: [
           {
-            filename: 'graphics/entity/stone-wall/wall-single.png',
+            filename: 'graphics/entity/wall/wall-single.png',
             priority: 'extra_high',
-            width: 22,
-            height: 42,
+            width: 32,
+            height: 46,
+            variation_count: 2,
+            line_length: 2,
             shift: [
               0,
-              -0.15625
-            ]
+              -0.1875
+            ],
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-single.png',
+              priority: 'extra_high',
+              width: 64,
+              height: 86,
+              variation_count: 2,
+              line_length: 2,
+              shift: [
+                0,
+                -0.15625
+              ],
+              scale: 0.5
+            }
           },
           {
-            filename: 'graphics/entity/stone-wall/wall-single-shadow.png',
+            filename: 'graphics/entity/wall/wall-single-shadow.png',
             priority: 'extra_high',
-            width: 47,
+            width: 50,
             height: 32,
+            repeat_count: 2,
             shift: [
-              0.359375,
+              0.3125,
               0.5
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-single-shadow.png',
+              priority: 'extra_high',
+              width: 98,
+              height: 60,
+              repeat_count: 2,
+              shift: [
+                0.3125,
+                0.53125
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       },
-      straight_vertical: [
-        {
-          layers: [
-            {
-              filename: 'graphics/entity/stone-wall/wall-straight-vertical-1.png',
+      straight_vertical: {
+        layers: [
+          {
+            filename: 'graphics/entity/wall/wall-vertical.png',
+            priority: 'extra_high',
+            width: 32,
+            height: 68,
+            variation_count: 5,
+            line_length: 5,
+            shift: [
+              0,
+              0.25
+            ],
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-vertical.png',
               priority: 'extra_high',
-              width: 22,
-              height: 42,
+              width: 64,
+              height: 134,
+              variation_count: 5,
+              line_length: 5,
               shift: [
                 0,
-                -0.15625
-              ]
-            },
-            {
-              filename: 'graphics/entity/stone-wall/wall-straight-vertical-shadow.png',
-              priority: 'extra_high',
-              width: 47,
-              height: 60,
-              shift: [
-                0.390625,
-                0.625
+                0.25
               ],
-              draw_as_shadow: true
+              scale: 0.5
             }
-          ]
-        },
-        {
-          layers: [
-            {
-              filename: 'graphics/entity/stone-wall/wall-straight-vertical-2.png',
+          },
+          {
+            filename: 'graphics/entity/wall/wall-vertical-shadow.png',
+            priority: 'extra_high',
+            width: 50,
+            height: 58,
+            repeat_count: 5,
+            shift: [
+              0.3125,
+              0.875
+            ],
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-vertical-shadow.png',
               priority: 'extra_high',
-              width: 22,
-              height: 42,
+              width: 98,
+              height: 110,
+              repeat_count: 5,
+              shift: [
+                0.3125,
+                0.90625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
+          }
+        ]
+      },
+      straight_horizontal: {
+        layers: [
+          {
+            filename: 'graphics/entity/wall/wall-horizontal.png',
+            priority: 'extra_high',
+            width: 32,
+            height: 50,
+            variation_count: 6,
+            line_length: 6,
+            shift: [
+              0,
+              -0.125
+            ],
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-horizontal.png',
+              priority: 'extra_high',
+              width: 64,
+              height: 92,
+              variation_count: 6,
+              line_length: 6,
               shift: [
                 0,
-                -0.15625
-              ]
-            },
-            {
-              filename: 'graphics/entity/stone-wall/wall-straight-vertical-shadow.png',
-              priority: 'extra_high',
-              width: 47,
-              height: 60,
-              shift: [
-                0.390625,
-                0.625
+                -0.0625
               ],
-              draw_as_shadow: true
+              scale: 0.5
             }
-          ]
-        },
-        {
-          layers: [
-            {
-              filename: 'graphics/entity/stone-wall/wall-straight-vertical-3.png',
+          },
+          {
+            filename: 'graphics/entity/wall/wall-horizontal-shadow.png',
+            priority: 'extra_high',
+            width: 62,
+            height: 36,
+            repeat_count: 6,
+            shift: [
+              0.4375,
+              0.4375
+            ],
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-horizontal-shadow.png',
               priority: 'extra_high',
-              width: 22,
-              height: 42,
+              width: 124,
+              height: 68,
+              repeat_count: 6,
               shift: [
-                0,
-                -0.15625
-              ]
-            },
-            {
-              filename: 'graphics/entity/stone-wall/wall-straight-vertical-shadow.png',
-              priority: 'extra_high',
-              width: 47,
-              height: 60,
-              shift: [
-                0.390625,
-                0.625
+                0.4375,
+                0.46875
               ],
-              draw_as_shadow: true
+              draw_as_shadow: true,
+              scale: 0.5
             }
-          ]
-        }
-      ],
-      straight_horizontal: [
-        {
-          layers: [
-            {
-              filename: 'graphics/entity/stone-wall/wall-straight-horizontal-1.png',
-              priority: 'extra_high',
-              width: 32,
-              height: 42,
-              shift: [
-                0,
-                -0.15625
-              ]
-            },
-            {
-              filename: 'graphics/entity/stone-wall/wall-straight-horizontal-shadow.png',
-              priority: 'extra_high',
-              width: 59,
-              height: 32,
-              shift: [
-                0.421875,
-                0.5
-              ],
-              draw_as_shadow: true
-            }
-          ]
-        },
-        {
-          layers: [
-            {
-              filename: 'graphics/entity/stone-wall/wall-straight-horizontal-2.png',
-              priority: 'extra_high',
-              width: 32,
-              height: 42,
-              shift: [
-                0,
-                -0.15625
-              ]
-            },
-            {
-              filename: 'graphics/entity/stone-wall/wall-straight-horizontal-shadow.png',
-              priority: 'extra_high',
-              width: 59,
-              height: 32,
-              shift: [
-                0.421875,
-                0.5
-              ],
-              draw_as_shadow: true
-            }
-          ]
-        },
-        {
-          layers: [
-            {
-              filename: 'graphics/entity/stone-wall/wall-straight-horizontal-3.png',
-              priority: 'extra_high',
-              width: 32,
-              height: 42,
-              shift: [
-                0,
-                -0.15625
-              ]
-            },
-            {
-              filename: 'graphics/entity/stone-wall/wall-straight-horizontal-shadow.png',
-              priority: 'extra_high',
-              width: 59,
-              height: 32,
-              shift: [
-                0.421875,
-                0.5
-              ],
-              draw_as_shadow: true
-            }
-          ]
-        }
-      ],
+          }
+        ]
+      },
       corner_right_down: {
         layers: [
           {
-            filename: 'graphics/entity/stone-wall/wall-corner-right-down.png',
+            filename: 'graphics/entity/wall/wall-corner-right.png',
             priority: 'extra_high',
-            width: 27,
-            height: 42,
+            width: 32,
+            height: 64,
+            variation_count: 2,
+            line_length: 2,
             shift: [
-              0.078125,
-              -0.15625
-            ]
+              0,
+              0.1875
+            ],
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-corner-right.png',
+              priority: 'extra_high',
+              width: 64,
+              height: 128,
+              variation_count: 2,
+              line_length: 2,
+              shift: [
+                0,
+                0.21875
+              ],
+              scale: 0.5
+            }
           },
           {
-            filename: 'graphics/entity/stone-wall/wall-corner-right-down-shadow.png',
+            filename: 'graphics/entity/wall/wall-corner-right-shadow.png',
             priority: 'extra_high',
-            width: 53,
-            height: 61,
+            width: 62,
+            height: 60,
+            repeat_count: 2,
             shift: [
-              0.484375,
-              0.640625
+              0.4375,
+              0.875
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-corner-right-shadow.png',
+              priority: 'extra_high',
+              width: 124,
+              height: 120,
+              repeat_count: 2,
+              shift: [
+                0.53125,
+                0.875
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       },
       corner_left_down: {
         layers: [
           {
-            filename: 'graphics/entity/stone-wall/wall-corner-left-down.png',
+            filename: 'graphics/entity/wall/wall-corner-left.png',
             priority: 'extra_high',
-            width: 27,
-            height: 42,
+            width: 32,
+            height: 68,
+            variation_count: 2,
+            line_length: 2,
             shift: [
-              -0.078125,
-              -0.15625
-            ]
+              0,
+              0.1875
+            ],
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-corner-left.png',
+              priority: 'extra_high',
+              width: 64,
+              height: 134,
+              variation_count: 2,
+              line_length: 2,
+              shift: [
+                0,
+                0.21875
+              ],
+              scale: 0.5
+            }
           },
           {
-            filename: 'graphics/entity/stone-wall/wall-corner-left-down-shadow.png',
+            filename: 'graphics/entity/wall/wall-corner-left-shadow.png',
             priority: 'extra_high',
-            width: 53,
+            width: 54,
             height: 60,
+            repeat_count: 2,
             shift: [
-              0.328125,
-              0.640625
+              0.25,
+              0.875
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-corner-left-shadow.png',
+              priority: 'extra_high',
+              width: 102,
+              height: 120,
+              repeat_count: 2,
+              shift: [
+                0.28125,
+                0.875
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       },
       t_up: {
         layers: [
           {
-            filename: 'graphics/entity/stone-wall/wall-t-down.png',
+            filename: 'graphics/entity/wall/wall-t.png',
             priority: 'extra_high',
             width: 32,
-            height: 42,
+            height: 68,
+            variation_count: 4,
+            line_length: 4,
             shift: [
               0,
-              -0.15625
-            ]
+              0.1875
+            ],
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-t.png',
+              priority: 'extra_high',
+              width: 64,
+              height: 134,
+              variation_count: 4,
+              line_length: 4,
+              shift: [
+                0,
+                0.21875
+              ],
+              scale: 0.5
+            }
           },
           {
-            filename: 'graphics/entity/stone-wall/wall-t-down-shadow.png',
+            filename: 'graphics/entity/wall/wall-t-shadow.png',
             priority: 'extra_high',
-            width: 71,
-            height: 61,
+            width: 62,
+            height: 60,
+            repeat_count: 4,
             shift: [
-              0.546875,
-              0.640625
+              0.4375,
+              0.875
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-t-shadow.png',
+              priority: 'extra_high',
+              width: 124,
+              height: 120,
+              repeat_count: 4,
+              shift: [
+                0.4375,
+                0.875
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       },
       ending_right: {
         layers: [
           {
-            filename: 'graphics/entity/stone-wall/wall-ending-right.png',
+            filename: 'graphics/entity/wall/wall-ending-right.png',
             priority: 'extra_high',
-            width: 27,
-            height: 42,
+            width: 32,
+            height: 48,
+            variation_count: 2,
+            line_length: 2,
             shift: [
-              0.078125,
-              -0.15625
-            ]
+              0,
+              -0.125
+            ],
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-ending-right.png',
+              priority: 'extra_high',
+              width: 64,
+              height: 92,
+              variation_count: 2,
+              line_length: 2,
+              shift: [
+                0,
+                -0.09375
+              ],
+              scale: 0.5
+            }
           },
           {
-            filename: 'graphics/entity/stone-wall/wall-ending-right-shadow.png',
+            filename: 'graphics/entity/wall/wall-ending-right-shadow.png',
             priority: 'extra_high',
-            width: 53,
-            height: 32,
+            width: 62,
+            height: 36,
+            repeat_count: 2,
             shift: [
-              0.484375,
-              0.5
+              0.4375,
+              0.4375
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-ending-right-shadow.png',
+              priority: 'extra_high',
+              width: 124,
+              height: 68,
+              repeat_count: 2,
+              shift: [
+                0.53125,
+                0.46875
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       },
       ending_left: {
         layers: [
           {
-            filename: 'graphics/entity/stone-wall/wall-ending-left.png',
+            filename: 'graphics/entity/wall/wall-ending-left.png',
             priority: 'extra_high',
-            width: 27,
-            height: 42,
+            width: 32,
+            height: 48,
+            variation_count: 2,
+            line_length: 2,
             shift: [
-              -0.078125,
-              -0.15625
-            ]
+              0,
+              -0.125
+            ],
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-ending-left.png',
+              priority: 'extra_high',
+              width: 64,
+              height: 92,
+              variation_count: 2,
+              line_length: 2,
+              shift: [
+                0,
+                -0.09375
+              ],
+              scale: 0.5
+            }
           },
           {
-            filename: 'graphics/entity/stone-wall/wall-ending-left-shadow.png',
+            filename: 'graphics/entity/wall/wall-ending-left-shadow.png',
             priority: 'extra_high',
-            width: 53,
-            height: 32,
+            width: 54,
+            height: 36,
+            repeat_count: 2,
             shift: [
-              0.328125,
-              0.5
+              0.25,
+              0.4375
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-ending-left-shadow.png',
+              priority: 'extra_high',
+              width: 102,
+              height: 68,
+              repeat_count: 2,
+              shift: [
+                0.28125,
+                0.46875
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
+      },
+      filling: {
+        filename: 'graphics/entity/wall/wall-filling.png',
+        priority: 'extra_high',
+        width: 24,
+        height: 30,
+        variation_count: 8,
+        line_length: 8,
+        shift: [
+          0,
+          -0.0625
+        ],
+        hr_version: {
+          filename: 'graphics/entity/wall/hr-wall-filling.png',
+          priority: 'extra_high',
+          width: 48,
+          height: 56,
+          variation_count: 8,
+          line_length: 8,
+          shift: [
+            0,
+            -0.03125
+          ],
+          scale: 0.5
+        }
       },
       water_connection_patch: {
         sheets: [
           {
-            filename: 'graphics/entity/stone-wall/wall-patch.png',
+            filename: 'graphics/entity/wall/wall-patch.png',
             priority: 'extra_high',
-            width: 52,
-            height: 68,
+            width: 58,
+            height: 64,
             shift: [
               0,
               -0.0625
-            ]
+            ],
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-patch.png',
+              priority: 'extra_high',
+              width: 116,
+              height: 128,
+              shift: [
+                0,
+                -0.0625
+              ],
+              scale: 0.5
+            }
           },
           {
-            filename: 'graphics/entity/stone-wall/wall-patch-shadow.png',
+            filename: 'graphics/entity/wall/wall-patch-shadow.png',
             priority: 'extra_high',
-            draw_as_shadow: true,
             width: 74,
-            height: 96,
+            height: 52,
             shift: [
-              0.1875,
-              0.40625
-            ]
+              0.25,
+              0.4375
+            ],
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-patch-shadow.png',
+              priority: 'extra_high',
+              width: 144,
+              height: 100,
+              shift: [
+                0.28125,
+                0.46875
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
+          }
+        ]
+      },
+      gate_connection_patch: {
+        sheets: [
+          {
+            filename: 'graphics/entity/wall/wall-gate.png',
+            priority: 'extra_high',
+            width: 42,
+            height: 56,
+            shift: [
+              0,
+              -0.25
+            ],
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-gate.png',
+              priority: 'extra_high',
+              width: 82,
+              height: 108,
+              shift: [
+                0,
+                -0.21875
+              ],
+              scale: 0.5
+            }
+          },
+          {
+            filename: 'graphics/entity/wall/wall-gate-shadow.png',
+            priority: 'extra_high',
+            width: 66,
+            height: 40,
+            shift: [
+              0.4375,
+              0.5625
+            ],
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/wall/hr-wall-gate-shadow.png',
+              priority: 'extra_high',
+              width: 130,
+              height: 78,
+              shift: [
+                0.4375,
+                0.5625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       }
     },
     wall_diode_green: {
-      filename: 'graphics/entity/gate/wall-diode-green.png',
-      width: 21,
-      height: 22,
-      shift: [
-        0,
-        -0.78125
-      ]
+      sheet: {
+        filename: 'graphics/entity/wall/wall-diode-green.png',
+        priority: 'extra_high',
+        width: 38,
+        height: 24,
+        shift: [
+          -0.0625,
+          -0.75
+        ],
+        hr_version: {
+          filename: 'graphics/entity/wall/hr-wall-diode-green.png',
+          priority: 'extra_high',
+          width: 72,
+          height: 44,
+          shift: [
+            -0.03125,
+            -0.71875
+          ],
+          scale: 0.5
+        }
+      }
     },
-    wall_diode_green_light: {
+    wall_diode_green_light_top: {
       minimum_darkness: 0.3,
       color: {
         g: 1
       },
       shift: [
         0,
-        -0.78125
+        -0.9375
+      ],
+      size: 1,
+      intensity: 0.3
+    },
+    wall_diode_green_light_right: {
+      minimum_darkness: 0.3,
+      color: {
+        g: 1
+      },
+      shift: [
+        0.375,
+        -0.71875
+      ],
+      size: 1,
+      intensity: 0.3
+    },
+    wall_diode_green_light_bottom: {
+      minimum_darkness: 0.3,
+      color: {
+        g: 1
+      },
+      shift: [
+        0,
+        -0.53125
+      ],
+      size: 1,
+      intensity: 0.3
+    },
+    wall_diode_green_light_left: {
+      minimum_darkness: 0.3,
+      color: {
+        g: 1
+      },
+      shift: [
+        -0.375,
+        -0.71875
       ],
       size: 1,
       intensity: 0.3
     },
     wall_diode_red: {
-      filename: 'graphics/entity/gate/wall-diode-red.png',
-      width: 21,
-      height: 22,
-      shift: [
-        0,
-        -0.78125
-      ]
+      sheet: {
+        filename: 'graphics/entity/wall/wall-diode-red.png',
+        priority: 'extra_high',
+        width: 38,
+        height: 24,
+        shift: [
+          -0.0625,
+          -0.75
+        ],
+        hr_version: {
+          filename: 'graphics/entity/wall/hr-wall-diode-red.png',
+          priority: 'extra_high',
+          width: 72,
+          height: 44,
+          shift: [
+            -0.03125,
+            -0.71875
+          ],
+          scale: 0.5
+        }
+      }
     },
-    wall_diode_red_light: {
+    wall_diode_red_light_top: {
       minimum_darkness: 0.3,
       color: {
         r: 1
       },
       shift: [
         0,
-        -0.78125
+        -0.9375
+      ],
+      size: 1,
+      intensity: 0.3
+    },
+    wall_diode_red_light_right: {
+      minimum_darkness: 0.3,
+      color: {
+        r: 1
+      },
+      shift: [
+        0.375,
+        -0.71875
+      ],
+      size: 1,
+      intensity: 0.3
+    },
+    wall_diode_red_light_bottom: {
+      minimum_darkness: 0.3,
+      color: {
+        r: 1
+      },
+      shift: [
+        0,
+        -0.53125
+      ],
+      size: 1,
+      intensity: 0.3
+    },
+    wall_diode_red_light_left: {
+      minimum_darkness: 0.3,
+      color: {
+        r: 1
+      },
+      shift: [
+        -0.375,
+        -0.71875
       ],
       size: 1,
       intensity: 0.3
@@ -20291,7 +20291,7 @@ module.exports = {
         priority: 'low',
         draw_as_shadow: true,
         width: 70,
-        height: 56,
+        height: 54,
         scale: 0.5,
         x: 420,
         y: 0,
@@ -20374,7 +20374,379 @@ module.exports = {
       width: 1,
       height: 1
     },
-    ui_name: 'Stone wall'
+    ui_name: 'Wall'
+  },
+  lab: {
+    type: 'lab',
+    name: 'lab',
+    icon: 'graphics/icons/lab.png',
+    icon_size: 32,
+    flags: [
+      'placeable_player',
+      'player_creation'
+    ],
+    minable: {
+      mining_time: 0.2,
+      result: 'lab'
+    },
+    max_health: 150,
+    corpse: 'big_remnants',
+    dying_explosion: 'medium_explosion',
+    collision_box: [
+      [
+        -1.2,
+        -1.2
+      ],
+      [
+        1.2,
+        1.2
+      ]
+    ],
+    selection_box: [
+      [
+        -1.5,
+        -1.5
+      ],
+      [
+        1.5,
+        1.5
+      ]
+    ],
+    light: {
+      intensity: 0.75,
+      size: 8,
+      color: {
+        r: 1,
+        g: 1,
+        b: 1
+      }
+    },
+    on_animation: {
+      layers: [
+        {
+          filename: 'graphics/entity/lab/lab.png',
+          width: 98,
+          height: 87,
+          frame_count: 33,
+          line_length: 11,
+          animation_speed: 0.3333333333333333,
+          shift: [
+            0,
+            0.046875
+          ],
+          hr_version: {
+            filename: 'graphics/entity/lab/hr-lab.png',
+            width: 194,
+            height: 174,
+            frame_count: 33,
+            line_length: 11,
+            animation_speed: 0.3333333333333333,
+            shift: [
+              0,
+              0.046875
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/lab/lab-integration.png',
+          width: 122,
+          height: 81,
+          frame_count: 1,
+          line_length: 1,
+          repeat_count: 33,
+          animation_speed: 0.3333333333333333,
+          shift: [
+            0,
+            0.484375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/lab/hr-lab-integration.png',
+            width: 242,
+            height: 162,
+            frame_count: 1,
+            line_length: 1,
+            repeat_count: 33,
+            animation_speed: 0.3333333333333333,
+            shift: [
+              0,
+              0.484375
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/lab/lab-shadow.png',
+          width: 122,
+          height: 68,
+          frame_count: 1,
+          line_length: 1,
+          repeat_count: 33,
+          animation_speed: 0.3333333333333333,
+          shift: [
+            0.40625,
+            0.34375
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/lab/hr-lab-shadow.png',
+            width: 242,
+            height: 136,
+            frame_count: 1,
+            line_length: 1,
+            repeat_count: 33,
+            animation_speed: 0.3333333333333333,
+            shift: [
+              0.40625,
+              0.34375
+            ],
+            scale: 0.5,
+            draw_as_shadow: true
+          }
+        }
+      ]
+    },
+    off_animation: {
+      layers: [
+        {
+          filename: 'graphics/entity/lab/lab.png',
+          width: 98,
+          height: 87,
+          frame_count: 1,
+          shift: [
+            0,
+            0.046875
+          ],
+          hr_version: {
+            filename: 'graphics/entity/lab/hr-lab.png',
+            width: 194,
+            height: 174,
+            frame_count: 1,
+            shift: [
+              0,
+              0.046875
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/lab/lab-integration.png',
+          width: 122,
+          height: 81,
+          frame_count: 1,
+          shift: [
+            0,
+            0.484375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/lab/hr-lab-integration.png',
+            width: 242,
+            height: 162,
+            frame_count: 1,
+            shift: [
+              0,
+              0.484375
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/lab/lab-shadow.png',
+          width: 122,
+          height: 68,
+          frame_count: 1,
+          shift: [
+            0.40625,
+            0.34375
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/lab/hr-lab-shadow.png',
+            width: 242,
+            height: 136,
+            frame_count: 1,
+            shift: [
+              0.40625,
+              0.34375
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
+        }
+      ]
+    },
+    working_sound: {
+      sound: {
+        filename: 'sound/lab.ogg',
+        volume: 0.7
+      },
+      apparent_volume: 1
+    },
+    energy_source: {
+      type: 'electric',
+      usage_priority: 'secondary_input'
+    },
+    energy_usage: '60kW',
+    researching_speed: 1,
+    inputs: [
+      'automation_science_pack',
+      'logistic_science_pack',
+      'chemical_science_pack',
+      'military_science_pack',
+      'production_science_pack',
+      'utility_science_pack',
+      'space_science_pack'
+    ],
+    module_specification: {
+      module_slots: 2,
+      max_entity_info_module_icons_per_row: 3,
+      max_entity_info_module_icon_rows: 1,
+      module_info_icon_shift: [
+        0,
+        0.9
+      ]
+    },
+    size: {
+      width: 3,
+      height: 3
+    },
+    ui_name: 'Lab'
+  },
+  electric_energy_interface: {
+    type: 'electric_energy_interface',
+    name: 'electric_energy_interface',
+    icon: 'graphics/icons/accumulator.png',
+    icon_size: 32,
+    flags: [
+      'placeable_neutral',
+      'player_creation'
+    ],
+    minable: {
+      mining_time: 0.1,
+      result: 'electric_energy_interface'
+    },
+    max_health: 150,
+    corpse: 'medium_remnants',
+    subgroup: 'other',
+    collision_box: [
+      [
+        -0.9,
+        -0.9
+      ],
+      [
+        0.9,
+        0.9
+      ]
+    ],
+    selection_box: [
+      [
+        -1,
+        -1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    drawing_box: [
+      [
+        -1,
+        -1.5
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    gui_mode: 'all',
+    allow_copy_paste: true,
+    energy_source: {
+      type: 'electric',
+      buffer_capacity: '10GJ',
+      usage_priority: 'tertiary',
+      input_flow_limit: '0kW',
+      output_flow_limit: '500GW'
+    },
+    energy_production: '500GW',
+    energy_usage: '0kW',
+    picture: {
+      layers: [
+        {
+          filename: 'graphics/entity/accumulator/accumulator.png',
+          priority: 'extra_high',
+          width: 66,
+          height: 94,
+          shift: [
+            0,
+            -0.3125
+          ],
+          tint: {
+            r: 1,
+            g: 0.8,
+            b: 1,
+            a: 1
+          },
+          animation_speed: 0.5,
+          hr_version: {
+            filename: 'graphics/entity/accumulator/hr-accumulator.png',
+            priority: 'extra_high',
+            width: 130,
+            height: 189,
+            shift: [
+              0,
+              -0.34375
+            ],
+            tint: {
+              r: 1,
+              g: 0.8,
+              b: 1,
+              a: 1
+            },
+            animation_speed: 0.5,
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/accumulator/accumulator-shadow.png',
+          priority: 'extra_high',
+          width: 120,
+          height: 54,
+          shift: [
+            0.875,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/accumulator/hr-accumulator-shadow.png',
+            priority: 'extra_high',
+            width: 234,
+            height: 106,
+            shift: [
+              0.90625,
+              0.1875
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
+        }
+      ]
+    },
+    working_sound: {
+      sound: {
+        filename: 'sound/accumulator-working.ogg',
+        volume: 1
+      },
+      idle_sound: {
+        filename: 'sound/accumulator-idle.ogg',
+        volume: 0.4
+      },
+      max_sounds_per_type: 5
+    },
+    size: {
+      width: 2,
+      height: 2
+    },
+    ui_name: 'Electric energy interface'
   },
   electric_mining_drill: {
     type: 'mining_drill',
@@ -20386,7 +20758,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.3,
       result: 'electric_mining_drill'
     },
     max_health: 300,
@@ -20806,6 +21178,7 @@ module.exports = {
           0.046875,
           -0.234375
         ],
+        draw_as_shadow: true,
         run_mode: 'forward_then_backward',
         hr_version: {
           priority: 'high',
@@ -20823,6 +21196,7 @@ module.exports = {
             0.0390625,
             -0.2265625
           ],
+          draw_as_shadow: true,
           run_mode: 'forward_then_backward',
           scale: 0.5
         }
@@ -20843,6 +21217,7 @@ module.exports = {
           0.1875,
           -0.015625
         ],
+        draw_as_shadow: true,
         run_mode: 'forward_then_backward',
         hr_version: {
           priority: 'high',
@@ -20860,6 +21235,7 @@ module.exports = {
             0.1953125,
             -0.0078125
           ],
+          draw_as_shadow: true,
           run_mode: 'forward_then_backward',
           scale: 0.5
         }
@@ -20880,6 +21256,7 @@ module.exports = {
           0.03125,
           0.078125
         ],
+        draw_as_shadow: true,
         run_mode: 'forward_then_backward',
         hr_version: {
           priority: 'high',
@@ -20897,6 +21274,7 @@ module.exports = {
             0.03125,
             0.078125
           ],
+          draw_as_shadow: true,
           run_mode: 'forward_then_backward',
           scale: 0.5
         }
@@ -20917,6 +21295,7 @@ module.exports = {
           0.03125,
           -0.015625
         ],
+        draw_as_shadow: true,
         run_mode: 'forward_then_backward',
         hr_version: {
           priority: 'high',
@@ -20934,6 +21313,7 @@ module.exports = {
             0.0390625,
             -0.0078125
           ],
+          draw_as_shadow: true,
           run_mode: 'forward_then_backward',
           scale: 0.5
         }
@@ -20943,7 +21323,6 @@ module.exports = {
       north: {
         priority: 'extra_high',
         filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-N-patch.png',
-        line_length: 1,
         width: 100,
         height: 111,
         frame_count: 1,
@@ -20955,7 +21334,6 @@ module.exports = {
         hr_version: {
           priority: 'extra_high',
           filename: 'graphics/entity/electric-mining-drill/hr-electric-mining-drill-N-patch.png',
-          line_length: 1,
           width: 200,
           height: 222,
           frame_count: 1,
@@ -20970,7 +21348,6 @@ module.exports = {
       east: {
         priority: 'extra_high',
         filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-E-patch.png',
-        line_length: 1,
         width: 100,
         height: 110,
         frame_count: 1,
@@ -20982,7 +21359,6 @@ module.exports = {
         hr_version: {
           priority: 'extra_high',
           filename: 'graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-patch.png',
-          line_length: 1,
           width: 200,
           height: 219,
           frame_count: 1,
@@ -20997,7 +21373,6 @@ module.exports = {
       south: {
         priority: 'extra_high',
         filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-S-patch.png',
-        line_length: 1,
         width: 100,
         height: 113,
         frame_count: 1,
@@ -21009,7 +21384,6 @@ module.exports = {
         hr_version: {
           priority: 'extra_high',
           filename: 'graphics/entity/electric-mining-drill/hr-electric-mining-drill-S-patch.png',
-          line_length: 1,
           width: 200,
           height: 226,
           frame_count: 1,
@@ -21024,7 +21398,6 @@ module.exports = {
       west: {
         priority: 'extra_high',
         filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-W-patch.png',
-        line_length: 1,
         width: 100,
         height: 108,
         frame_count: 1,
@@ -21036,7 +21409,6 @@ module.exports = {
         hr_version: {
           priority: 'extra_high',
           filename: 'graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-patch.png',
-          line_length: 1,
           width: 200,
           height: 220,
           frame_count: 1,
@@ -21056,7 +21428,6 @@ module.exports = {
         flags: [
           'shadow'
         ],
-        line_length: 1,
         width: 110,
         height: 98,
         frame_count: 1,
@@ -21071,7 +21442,6 @@ module.exports = {
           flags: [
             'shadow'
           ],
-          line_length: 1,
           width: 220,
           height: 197,
           frame_count: 1,
@@ -21089,7 +21459,6 @@ module.exports = {
         flags: [
           'shadow'
         ],
-        line_length: 1,
         width: 112,
         height: 98,
         frame_count: 1,
@@ -21104,7 +21473,6 @@ module.exports = {
           flags: [
             'shadow'
           ],
-          line_length: 1,
           width: 224,
           height: 198,
           frame_count: 1,
@@ -21122,7 +21490,6 @@ module.exports = {
         flags: [
           'shadow'
         ],
-        line_length: 1,
         width: 110,
         height: 98,
         frame_count: 1,
@@ -21137,7 +21504,6 @@ module.exports = {
           flags: [
             'shadow'
           ],
-          line_length: 1,
           width: 220,
           height: 197,
           frame_count: 1,
@@ -21155,7 +21521,6 @@ module.exports = {
         flags: [
           'shadow'
         ],
-        line_length: 1,
         width: 110,
         height: 98,
         frame_count: 1,
@@ -21170,7 +21535,6 @@ module.exports = {
           flags: [
             'shadow'
           ],
-          line_length: 1,
           width: 220,
           height: 197,
           frame_count: 1,
@@ -21361,7 +21725,6 @@ module.exports = {
       north: {
         priority: 'extra_high',
         filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-N-window-background.png',
-        line_length: 1,
         width: 72,
         height: 54,
         frame_count: 1,
@@ -21373,7 +21736,6 @@ module.exports = {
         hr_version: {
           priority: 'extra_high',
           filename: 'graphics/entity/electric-mining-drill/hr-electric-mining-drill-N-window-background.png',
-          line_length: 1,
           width: 142,
           height: 107,
           frame_count: 1,
@@ -21388,7 +21750,6 @@ module.exports = {
       east: {
         priority: 'extra_high',
         filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-E-window-background.png',
-        line_length: 1,
         width: 51,
         height: 74,
         frame_count: 1,
@@ -21400,7 +21761,6 @@ module.exports = {
         hr_version: {
           priority: 'extra_high',
           filename: 'graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-window-background.png',
-          line_length: 1,
           width: 104,
           height: 147,
           frame_count: 1,
@@ -21415,7 +21775,6 @@ module.exports = {
       south: {
         priority: 'extra_high',
         filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-S-window-background.png',
-        line_length: 1,
         width: 71,
         height: 44,
         frame_count: 1,
@@ -21427,7 +21786,6 @@ module.exports = {
         hr_version: {
           priority: 'extra_high',
           filename: 'graphics/entity/electric-mining-drill/hr-electric-mining-drill-S-window-background.png',
-          line_length: 1,
           width: 141,
           height: 86,
           frame_count: 1,
@@ -21442,7 +21800,6 @@ module.exports = {
       west: {
         priority: 'extra_high',
         filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-W-window-background.png',
-        line_length: 1,
         width: 41,
         height: 69,
         frame_count: 1,
@@ -21454,7 +21811,6 @@ module.exports = {
         hr_version: {
           priority: 'extra_high',
           filename: 'graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-window-background.png',
-          line_length: 1,
           width: 80,
           height: 137,
           frame_count: 1,
@@ -21472,7 +21828,6 @@ module.exports = {
         north: {
           priority: 'extra_high',
           filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-N-fluid-flow.png',
-          line_length: 1,
           width: 68,
           height: 50,
           frame_count: 1,
@@ -21484,7 +21839,6 @@ module.exports = {
           hr_version: {
             priority: 'extra_high',
             filename: 'graphics/entity/electric-mining-drill/hr-electric-mining-drill-N-fluid-flow.png',
-            line_length: 1,
             width: 136,
             height: 99,
             frame_count: 1,
@@ -21499,7 +21853,6 @@ module.exports = {
         east: {
           priority: 'extra_high',
           filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-E-fluid-flow.png',
-          line_length: 1,
           width: 41,
           height: 70,
           frame_count: 1,
@@ -21511,7 +21864,6 @@ module.exports = {
           hr_version: {
             priority: 'extra_high',
             filename: 'graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-fluid-flow.png',
-            line_length: 1,
             width: 82,
             height: 139,
             frame_count: 1,
@@ -21526,7 +21878,6 @@ module.exports = {
         south: {
           priority: 'extra_high',
           filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-S-fluid-flow.png',
-          line_length: 1,
           width: 68,
           height: 40,
           frame_count: 1,
@@ -21538,7 +21889,6 @@ module.exports = {
           hr_version: {
             priority: 'extra_high',
             filename: 'graphics/entity/electric-mining-drill/hr-electric-mining-drill-S-fluid-flow.png',
-            line_length: 1,
             width: 136,
             height: 80,
             frame_count: 1,
@@ -21553,7 +21903,6 @@ module.exports = {
         west: {
           priority: 'extra_high',
           filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-W-fluid-flow.png',
-          line_length: 1,
           width: 42,
           height: 70,
           frame_count: 1,
@@ -21565,7 +21914,6 @@ module.exports = {
           hr_version: {
             priority: 'extra_high',
             filename: 'graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-fluid-flow.png',
-            line_length: 1,
             width: 83,
             height: 140,
             frame_count: 1,
@@ -21584,7 +21932,6 @@ module.exports = {
         north: {
           priority: 'extra_high',
           filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-N-fluid-background.png',
-          line_length: 1,
           width: 70,
           height: 48,
           frame_count: 1,
@@ -21596,7 +21943,6 @@ module.exports = {
           hr_version: {
             priority: 'extra_high',
             filename: 'graphics/entity/electric-mining-drill/hr-electric-mining-drill-N-fluid-background.png',
-            line_length: 1,
             width: 138,
             height: 94,
             frame_count: 1,
@@ -21611,7 +21957,6 @@ module.exports = {
         east: {
           priority: 'extra_high',
           filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-E-fluid-background.png',
-          line_length: 1,
           width: 42,
           height: 70,
           frame_count: 1,
@@ -21623,7 +21968,6 @@ module.exports = {
           hr_version: {
             priority: 'extra_high',
             filename: 'graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-fluid-background.png',
-            line_length: 1,
             width: 84,
             height: 138,
             frame_count: 1,
@@ -21638,7 +21982,6 @@ module.exports = {
         south: {
           priority: 'extra_high',
           filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-S-fluid-background.png',
-          line_length: 1,
           width: 70,
           height: 40,
           frame_count: 1,
@@ -21650,7 +21993,6 @@ module.exports = {
           hr_version: {
             priority: 'extra_high',
             filename: 'graphics/entity/electric-mining-drill/hr-electric-mining-drill-S-fluid-background.png',
-            line_length: 1,
             width: 138,
             height: 80,
             frame_count: 1,
@@ -21665,7 +22007,6 @@ module.exports = {
         west: {
           priority: 'extra_high',
           filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-W-fluid-background.png',
-          line_length: 1,
           width: 42,
           height: 69,
           frame_count: 1,
@@ -21677,7 +22018,6 @@ module.exports = {
           hr_version: {
             priority: 'extra_high',
             filename: 'graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-fluid-background.png',
-            line_length: 1,
             width: 83,
             height: 137,
             frame_count: 1,
@@ -21698,7 +22038,6 @@ module.exports = {
       usage_priority: 'secondary_input'
     },
     energy_usage: '90kW',
-    mining_power: 3,
     resource_searching_radius: 2.49,
     vector_to_place_result: [
       0,
@@ -21709,8 +22048,8 @@ module.exports = {
     },
     radius_visualisation_picture: {
       filename: 'graphics/entity/electric-mining-drill/electric-mining-drill-radius-visualization.png',
-      width: 12,
-      height: 12
+      width: 10,
+      height: 10
     },
     monitor_visualization_tint: {
       r: 78,
@@ -21855,7 +22194,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 280,
           y: 0,
@@ -21975,7 +22314,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 140,
           y: 0,
@@ -22095,7 +22434,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 0,
           y: 0,
@@ -22215,7 +22554,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 420,
           y: 0,
@@ -22316,7 +22655,7 @@ module.exports = {
       'basic_solid'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.3,
       result: 'burner_mining_drill'
     },
     max_health: 150,
@@ -22341,13 +22680,14 @@ module.exports = {
         1
       ]
     ],
-    mining_speed: 0.35,
+    mining_speed: 0.25,
     working_sound: {
       sound: {
         filename: 'sound/burner-mining-drill.ogg',
         volume: 0.8
       }
     },
+    allowed_effects: {},
     energy_source: {
       type: 'burner',
       fuel_category: 'chemical',
@@ -22365,8 +22705,7 @@ module.exports = {
         }
       ]
     },
-    energy_usage: '300kW',
-    mining_power: 2.5,
+    energy_usage: '150kW',
     animations: {
       north: {
         layers: [
@@ -22773,10 +23112,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 70,
-          y: 112,
+          y: 108,
           shift: [
             -0.125,
             0.015625
@@ -22893,10 +23232,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 70,
-          y: 112,
+          y: 108,
           shift: [
             -0.1875,
             -0.109375
@@ -23013,10 +23352,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 70,
-          y: 112,
+          y: 108,
           shift: [
             -0.171875,
             -0.046875
@@ -23133,10 +23472,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 70,
-          y: 112,
+          y: 108,
           shift: [
             -0.265625,
             0.03125
@@ -23231,7 +23570,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.5,
       result: 'pumpjack'
     },
     resource_categories: [
@@ -23433,7 +23772,6 @@ module.exports = {
     },
     energy_usage: '90kW',
     mining_speed: 1,
-    mining_power: 2,
     resource_searching_radius: 0.49,
     vector_to_place_result: [
       0,
@@ -23706,10 +24044,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 140,
-          y: 168,
+          y: 162,
           shift: [
             0.25,
             -0.765625
@@ -23826,10 +24164,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 140,
-          y: 168,
+          y: 162,
           shift: [
             0.25,
             -0.765625
@@ -23946,10 +24284,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 140,
-          y: 168,
+          y: 162,
           shift: [
             0.25,
             -0.765625
@@ -24066,10 +24404,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 140,
-          y: 168,
+          y: 162,
           shift: [
             0.25,
             -0.765625
@@ -24208,104 +24546,206 @@ module.exports = {
     folded_animation: {
       layers: [
         {
-          filename: 'graphics/entity/gun-turret/gun-turret-gun-extension.png',
+          filename: 'graphics/entity/gun-turret/gun-turret-raising.png',
           priority: 'medium',
-          width: 65,
-          height: 63,
-          direction_count: 4,
-          frame_count: 1,
-          line_length: 1,
-          run_mode: 'forward',
-          shift: [
-            0.015625,
-            -0.859375
-          ],
-          axially_symmetrical: false
-        },
-        {
-          filename: 'graphics/entity/gun-turret/gun-turret-gun-extension-mask.png',
-          flags: [
-            'mask'
-          ],
-          width: 24,
-          height: 31,
+          width: 66,
+          height: 64,
           direction_count: 4,
           frame_count: 1,
           line_length: 1,
           run_mode: 'forward',
           shift: [
             0,
-            -0.890625
+            -0.8125
           ],
           axially_symmetrical: false,
-          apply_runtime_tint: true
+          hr_version: {
+            filename: 'graphics/entity/gun-turret/hr-gun-turret-raising.png',
+            priority: 'medium',
+            width: 130,
+            height: 126,
+            direction_count: 4,
+            frame_count: 1,
+            line_length: 1,
+            run_mode: 'forward',
+            shift: [
+              0,
+              -0.828125
+            ],
+            axially_symmetrical: false,
+            scale: 0.5
+          }
         },
         {
-          filename: 'graphics/entity/gun-turret/gun-turret-gun-extension-shadow.png',
-          width: 89,
-          height: 49,
+          filename: 'graphics/entity/gun-turret/gun-turret-raising-mask.png',
+          flags: [
+            'mask'
+          ],
+          width: 24,
+          height: 32,
           direction_count: 4,
           frame_count: 1,
           line_length: 1,
           run_mode: 'forward',
           shift: [
-            1.20313,
-            0.015625
+            0,
+            -0.875
           ],
           axially_symmetrical: false,
-          draw_as_shadow: true
+          apply_runtime_tint: true,
+          hr_version: {
+            filename: 'graphics/entity/gun-turret/hr-gun-turret-raising-mask.png',
+            flags: [
+              'mask'
+            ],
+            width: 48,
+            height: 62,
+            direction_count: 4,
+            frame_count: 1,
+            line_length: 1,
+            run_mode: 'forward',
+            shift: [
+              0,
+              -0.875
+            ],
+            axially_symmetrical: false,
+            apply_runtime_tint: true,
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/gun-turret/gun-turret-raising-shadow.png',
+          width: 126,
+          height: 62,
+          direction_count: 4,
+          frame_count: 1,
+          line_length: 1,
+          run_mode: 'forward',
+          shift: [
+            0.59375,
+            0.0625
+          ],
+          axially_symmetrical: false,
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/gun-turret/hr-gun-turret-raising-shadow.png',
+            width: 250,
+            height: 124,
+            direction_count: 4,
+            frame_count: 1,
+            line_length: 1,
+            run_mode: 'forward',
+            shift: [
+              0.59375,
+              0.078125
+            ],
+            axially_symmetrical: false,
+            draw_as_shadow: true,
+            scale: 0.5
+          }
         }
       ]
     },
     preparing_animation: {
       layers: [
         {
-          filename: 'graphics/entity/gun-turret/gun-turret-gun-extension.png',
+          filename: 'graphics/entity/gun-turret/gun-turret-raising.png',
           priority: 'medium',
-          width: 65,
-          height: 63,
-          direction_count: 4,
-          frame_count: 5,
-          line_length: 0,
-          run_mode: 'forward',
-          shift: [
-            0.015625,
-            -0.859375
-          ],
-          axially_symmetrical: false
-        },
-        {
-          filename: 'graphics/entity/gun-turret/gun-turret-gun-extension-mask.png',
-          flags: [
-            'mask'
-          ],
-          width: 24,
-          height: 31,
+          width: 66,
+          height: 64,
           direction_count: 4,
           frame_count: 5,
           line_length: 0,
           run_mode: 'forward',
           shift: [
             0,
-            -0.890625
+            -0.8125
           ],
           axially_symmetrical: false,
-          apply_runtime_tint: true
+          hr_version: {
+            filename: 'graphics/entity/gun-turret/hr-gun-turret-raising.png',
+            priority: 'medium',
+            width: 130,
+            height: 126,
+            direction_count: 4,
+            frame_count: 5,
+            line_length: 0,
+            run_mode: 'forward',
+            shift: [
+              0,
+              -0.828125
+            ],
+            axially_symmetrical: false,
+            scale: 0.5
+          }
         },
         {
-          filename: 'graphics/entity/gun-turret/gun-turret-gun-extension-shadow.png',
-          width: 89,
-          height: 49,
+          filename: 'graphics/entity/gun-turret/gun-turret-raising-mask.png',
+          flags: [
+            'mask'
+          ],
+          width: 24,
+          height: 32,
           direction_count: 4,
           frame_count: 5,
           line_length: 0,
           run_mode: 'forward',
           shift: [
-            1.20313,
-            0.015625
+            0,
+            -0.875
           ],
           axially_symmetrical: false,
-          draw_as_shadow: true
+          apply_runtime_tint: true,
+          hr_version: {
+            filename: 'graphics/entity/gun-turret/hr-gun-turret-raising-mask.png',
+            flags: [
+              'mask'
+            ],
+            width: 48,
+            height: 62,
+            direction_count: 4,
+            frame_count: 5,
+            line_length: 0,
+            run_mode: 'forward',
+            shift: [
+              0,
+              -0.875
+            ],
+            axially_symmetrical: false,
+            apply_runtime_tint: true,
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/gun-turret/gun-turret-raising-shadow.png',
+          width: 126,
+          height: 62,
+          direction_count: 4,
+          frame_count: 5,
+          line_length: 0,
+          run_mode: 'forward',
+          shift: [
+            0.59375,
+            0.0625
+          ],
+          axially_symmetrical: false,
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/gun-turret/hr-gun-turret-raising-shadow.png',
+            width: 250,
+            height: 124,
+            direction_count: 4,
+            frame_count: 5,
+            line_length: 0,
+            run_mode: 'forward',
+            shift: [
+              0.59375,
+              0.078125
+            ],
+            axially_symmetrical: false,
+            draw_as_shadow: true,
+            scale: 0.5
+          }
         }
       ]
     },
@@ -24313,67 +24753,216 @@ module.exports = {
       layers: [
         {
           width: 66,
-          height: 64,
+          height: 66,
           frame_count: 1,
           axially_symmetrical: false,
           direction_count: 64,
           shift: [
             0,
-            -0.875
+            -0.84375
           ],
           stripes: [
             {
-              filename: 'graphics/entity/gun-turret/gun-turret-gun-1.png',
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-1.png',
               width_in_frames: 1,
-              height_in_frames: 32
+              height_in_frames: 16
             },
             {
-              filename: 'graphics/entity/gun-turret/gun-turret-gun-2.png',
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-2.png',
               width_in_frames: 1,
-              height_in_frames: 32
+              height_in_frames: 16
+            },
+            {
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-3.png',
+              width_in_frames: 1,
+              height_in_frames: 16
+            },
+            {
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-4.png',
+              width_in_frames: 1,
+              height_in_frames: 16
             }
-          ]
+          ],
+          hr_version: {
+            width: 132,
+            height: 130,
+            frame_count: 1,
+            axially_symmetrical: false,
+            direction_count: 64,
+            shift: [
+              0,
+              -0.859375
+            ],
+            stripes: [
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-1.png',
+                width_in_frames: 1,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-2.png',
+                width_in_frames: 1,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-3.png',
+                width_in_frames: 1,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-4.png',
+                width_in_frames: 1,
+                height_in_frames: 16
+              }
+            ],
+            scale: 0.5
+          }
         },
         {
-          filename: 'graphics/entity/gun-turret/gun-turret-gun-mask.png',
           flags: [
             'mask'
           ],
           line_length: 1,
-          width: 29,
-          height: 27,
+          width: 30,
+          height: 28,
           frame_count: 1,
           axially_symmetrical: false,
           direction_count: 64,
           shift: [
-            0.015625,
-            -1.01563
+            0,
+            -1
           ],
-          apply_runtime_tint: true
+          apply_runtime_tint: true,
+          stripes: [
+            {
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-mask-1.png',
+              width_in_frames: 1,
+              height_in_frames: 16
+            },
+            {
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-mask-2.png',
+              width_in_frames: 1,
+              height_in_frames: 16
+            },
+            {
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-mask-3.png',
+              width_in_frames: 1,
+              height_in_frames: 16
+            },
+            {
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-mask-4.png',
+              width_in_frames: 1,
+              height_in_frames: 16
+            }
+          ],
+          hr_version: {
+            flags: [
+              'mask'
+            ],
+            line_length: 1,
+            width: 58,
+            height: 54,
+            frame_count: 1,
+            axially_symmetrical: false,
+            direction_count: 64,
+            shift: [
+              0,
+              -1.015625
+            ],
+            apply_runtime_tint: true,
+            stripes: [
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-mask-1.png',
+                width_in_frames: 1,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-mask-2.png',
+                width_in_frames: 1,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-mask-3.png',
+                width_in_frames: 1,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-mask-4.png',
+                width_in_frames: 1,
+                height_in_frames: 16
+              }
+            ],
+            scale: 0.5
+          }
         },
         {
-          width: 91,
-          height: 50,
+          width: 126,
+          height: 62,
           frame_count: 1,
           axially_symmetrical: false,
           direction_count: 64,
           shift: [
-            1.23438,
-            0
+            0.71875,
+            0.0625
           ],
           draw_as_shadow: true,
           stripes: [
             {
-              filename: 'graphics/entity/gun-turret/gun-turret-gun-shadow-1.png',
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-shadow-1.png',
               width_in_frames: 1,
-              height_in_frames: 32
+              height_in_frames: 16
             },
             {
-              filename: 'graphics/entity/gun-turret/gun-turret-gun-shadow-2.png',
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-shadow-2.png',
               width_in_frames: 1,
-              height_in_frames: 32
+              height_in_frames: 16
+            },
+            {
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-shadow-3.png',
+              width_in_frames: 1,
+              height_in_frames: 16
+            },
+            {
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-shadow-4.png',
+              width_in_frames: 1,
+              height_in_frames: 16
             }
-          ]
+          ],
+          hr_version: {
+            width: 250,
+            height: 124,
+            frame_count: 1,
+            axially_symmetrical: false,
+            direction_count: 64,
+            shift: [
+              0.6875,
+              0.078125
+            ],
+            draw_as_shadow: true,
+            stripes: [
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-shadow-1.png',
+                width_in_frames: 1,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-shadow-2.png',
+                width_in_frames: 1,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-shadow-3.png',
+                width_in_frames: 1,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-shadow-4.png',
+                width_in_frames: 1,
+                height_in_frames: 16
+              }
+            ],
+            scale: 0.5
+          }
         }
       ]
     },
@@ -24381,119 +24970,319 @@ module.exports = {
       layers: [
         {
           width: 66,
-          height: 64,
+          height: 66,
           frame_count: 2,
           axially_symmetrical: false,
           direction_count: 64,
           shift: [
             0,
-            -0.875
+            -0.84375
           ],
           stripes: [
             {
-              filename: 'graphics/entity/gun-turret/gun-turret-gun-1.png',
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-1.png',
               width_in_frames: 2,
-              height_in_frames: 32
+              height_in_frames: 16
             },
             {
-              filename: 'graphics/entity/gun-turret/gun-turret-gun-2.png',
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-2.png',
               width_in_frames: 2,
-              height_in_frames: 32
+              height_in_frames: 16
+            },
+            {
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-3.png',
+              width_in_frames: 2,
+              height_in_frames: 16
+            },
+            {
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-4.png',
+              width_in_frames: 2,
+              height_in_frames: 16
             }
-          ]
+          ],
+          hr_version: {
+            width: 132,
+            height: 130,
+            frame_count: 2,
+            axially_symmetrical: false,
+            direction_count: 64,
+            shift: [
+              0,
+              -0.859375
+            ],
+            stripes: [
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-1.png',
+                width_in_frames: 2,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-2.png',
+                width_in_frames: 2,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-3.png',
+                width_in_frames: 2,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-4.png',
+                width_in_frames: 2,
+                height_in_frames: 16
+              }
+            ],
+            scale: 0.5
+          }
         },
         {
-          filename: 'graphics/entity/gun-turret/gun-turret-gun-mask.png',
           flags: [
             'mask'
           ],
           line_length: 2,
-          width: 29,
-          height: 27,
+          width: 30,
+          height: 28,
           frame_count: 2,
           axially_symmetrical: false,
           direction_count: 64,
           shift: [
-            0.015625,
-            -1.01563
+            0,
+            -1
           ],
-          apply_runtime_tint: true
+          apply_runtime_tint: true,
+          stripes: [
+            {
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-mask-1.png',
+              width_in_frames: 2,
+              height_in_frames: 16
+            },
+            {
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-mask-2.png',
+              width_in_frames: 2,
+              height_in_frames: 16
+            },
+            {
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-mask-3.png',
+              width_in_frames: 2,
+              height_in_frames: 16
+            },
+            {
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-mask-4.png',
+              width_in_frames: 2,
+              height_in_frames: 16
+            }
+          ],
+          hr_version: {
+            flags: [
+              'mask'
+            ],
+            line_length: 2,
+            width: 58,
+            height: 54,
+            frame_count: 2,
+            axially_symmetrical: false,
+            direction_count: 64,
+            shift: [
+              0,
+              -1.015625
+            ],
+            apply_runtime_tint: true,
+            stripes: [
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-mask-1.png',
+                width_in_frames: 2,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-mask-2.png',
+                width_in_frames: 2,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-mask-3.png',
+                width_in_frames: 2,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-mask-4.png',
+                width_in_frames: 2,
+                height_in_frames: 16
+              }
+            ],
+            scale: 0.5
+          }
         },
         {
-          width: 91,
-          height: 50,
+          width: 126,
+          height: 62,
           frame_count: 2,
           axially_symmetrical: false,
           direction_count: 64,
           shift: [
-            1.23438,
-            0
+            0.71875,
+            0.0625
           ],
           draw_as_shadow: true,
           stripes: [
             {
-              filename: 'graphics/entity/gun-turret/gun-turret-gun-shadow-1.png',
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-shadow-1.png',
               width_in_frames: 2,
-              height_in_frames: 32
+              height_in_frames: 16
             },
             {
-              filename: 'graphics/entity/gun-turret/gun-turret-gun-shadow-2.png',
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-shadow-2.png',
               width_in_frames: 2,
-              height_in_frames: 32
+              height_in_frames: 16
+            },
+            {
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-shadow-3.png',
+              width_in_frames: 2,
+              height_in_frames: 16
+            },
+            {
+              filename: 'graphics/entity/gun-turret/gun-turret-shooting-shadow-4.png',
+              width_in_frames: 2,
+              height_in_frames: 16
             }
-          ]
+          ],
+          hr_version: {
+            width: 250,
+            height: 124,
+            frame_count: 2,
+            axially_symmetrical: false,
+            direction_count: 64,
+            shift: [
+              0.6875,
+              0.078125
+            ],
+            draw_as_shadow: true,
+            stripes: [
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-shadow-1.png',
+                width_in_frames: 2,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-shadow-2.png',
+                width_in_frames: 2,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-shadow-3.png',
+                width_in_frames: 2,
+                height_in_frames: 16
+              },
+              {
+                filename: 'graphics/entity/gun-turret/hr-gun-turret-shooting-shadow-4.png',
+                width_in_frames: 2,
+                height_in_frames: 16
+              }
+            ],
+            scale: 0.5
+          }
         }
       ]
     },
     folding_animation: {
       layers: [
         {
-          filename: 'graphics/entity/gun-turret/gun-turret-gun-extension.png',
+          filename: 'graphics/entity/gun-turret/gun-turret-raising.png',
           priority: 'medium',
-          width: 65,
-          height: 63,
-          direction_count: 4,
-          frame_count: 5,
-          line_length: 0,
-          run_mode: 'backward',
-          shift: [
-            0.015625,
-            -0.859375
-          ],
-          axially_symmetrical: false
-        },
-        {
-          filename: 'graphics/entity/gun-turret/gun-turret-gun-extension-mask.png',
-          flags: [
-            'mask'
-          ],
-          width: 24,
-          height: 31,
+          width: 66,
+          height: 64,
           direction_count: 4,
           frame_count: 5,
           line_length: 0,
           run_mode: 'backward',
           shift: [
             0,
-            -0.890625
+            -0.8125
           ],
           axially_symmetrical: false,
-          apply_runtime_tint: true
+          hr_version: {
+            filename: 'graphics/entity/gun-turret/hr-gun-turret-raising.png',
+            priority: 'medium',
+            width: 130,
+            height: 126,
+            direction_count: 4,
+            frame_count: 5,
+            line_length: 0,
+            run_mode: 'backward',
+            shift: [
+              0,
+              -0.828125
+            ],
+            axially_symmetrical: false,
+            scale: 0.5
+          }
         },
         {
-          filename: 'graphics/entity/gun-turret/gun-turret-gun-extension-shadow.png',
-          width: 89,
-          height: 49,
+          filename: 'graphics/entity/gun-turret/gun-turret-raising-mask.png',
+          flags: [
+            'mask'
+          ],
+          width: 24,
+          height: 32,
           direction_count: 4,
           frame_count: 5,
           line_length: 0,
           run_mode: 'backward',
           shift: [
-            1.20313,
-            0.015625
+            0,
+            -0.875
           ],
           axially_symmetrical: false,
-          draw_as_shadow: true
+          apply_runtime_tint: true,
+          hr_version: {
+            filename: 'graphics/entity/gun-turret/hr-gun-turret-raising-mask.png',
+            flags: [
+              'mask'
+            ],
+            width: 48,
+            height: 62,
+            direction_count: 4,
+            frame_count: 5,
+            line_length: 0,
+            run_mode: 'backward',
+            shift: [
+              0,
+              -0.875
+            ],
+            axially_symmetrical: false,
+            apply_runtime_tint: true,
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/gun-turret/gun-turret-raising-shadow.png',
+          width: 126,
+          height: 62,
+          direction_count: 4,
+          frame_count: 5,
+          line_length: 0,
+          run_mode: 'backward',
+          shift: [
+            0.59375,
+            0.0625
+          ],
+          axially_symmetrical: false,
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/gun-turret/hr-gun-turret-raising-shadow.png',
+            width: 250,
+            height: 124,
+            direction_count: 4,
+            frame_count: 5,
+            line_length: 0,
+            run_mode: 'backward',
+            shift: [
+              0.59375,
+              0.078125
+            ],
+            axially_symmetrical: false,
+            draw_as_shadow: true,
+            scale: 0.5
+          }
         }
       ]
     },
@@ -24502,15 +25291,29 @@ module.exports = {
         {
           filename: 'graphics/entity/gun-turret/gun-turret-base.png',
           priority: 'high',
-          width: 90,
-          height: 75,
+          width: 76,
+          height: 60,
           axially_symmetrical: false,
           direction_count: 1,
           frame_count: 1,
           shift: [
-            0,
-            -0.046875
-          ]
+            0.03125,
+            -0.03125
+          ],
+          hr_version: {
+            filename: 'graphics/entity/gun-turret/hr-gun-turret-base.png',
+            priority: 'high',
+            width: 150,
+            height: 118,
+            axially_symmetrical: false,
+            direction_count: 1,
+            frame_count: 1,
+            shift: [
+              0.015625,
+              -0.03125
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/gun-turret/gun-turret-base-mask.png',
@@ -24518,16 +25321,34 @@ module.exports = {
             'mask'
           ],
           line_length: 1,
-          width: 52,
-          height: 47,
+          width: 62,
+          height: 52,
           axially_symmetrical: false,
           direction_count: 1,
           frame_count: 1,
           shift: [
             0,
-            -0.234375
+            -0.125
           ],
-          apply_runtime_tint: true
+          apply_runtime_tint: true,
+          hr_version: {
+            filename: 'graphics/entity/gun-turret/hr-gun-turret-base-mask.png',
+            flags: [
+              'mask'
+            ],
+            line_length: 1,
+            width: 122,
+            height: 102,
+            axially_symmetrical: false,
+            direction_count: 1,
+            frame_count: 1,
+            shift: [
+              0,
+              -0.140625
+            ],
+            apply_runtime_tint: true,
+            scale: 0.5
+          }
         }
       ]
     },
@@ -24554,8 +25375,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'underground_belt'
     },
     max_health: 150,
@@ -24598,164 +25418,62 @@ module.exports = {
       ]
     ],
     animation_speed_coefficient: 32,
-    belt_horizontal: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
+    belt_animation_set: {
+      animation_set: {
+        filename: 'graphics/entity/transport-belt/transport-belt.png',
         priority: 'extra_high',
-        width: 80,
-        height: 80,
-        scale: 0.5,
-        frame_count: 16
-      }
-    },
-    belt_vertical: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 40,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
+        width: 64,
+        height: 64,
         frame_count: 16,
-        scale: 0.5,
-        y: 80
-      }
-    },
-    ending_top: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 80,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 160,
-        scale: 0.5
-      }
-    },
-    ending_bottom: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 120,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 240,
-        scale: 0.5
-      }
-    },
-    ending_side: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 160,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 320,
-        scale: 0.5
-      }
-    },
-    starting_top: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 200,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 400,
-        scale: 0.5
-      }
-    },
-    starting_bottom: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 240,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 480,
-        scale: 0.5
-      }
-    },
-    starting_side: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 280,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 560,
-        scale: 0.5
-      }
+        direction_count: 20,
+        hr_version: {
+          filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          frame_count: 16,
+          direction_count: 20
+        }
+      },
+      east_index: 1,
+      west_index: 2,
+      north_index: 3,
+      south_index: 4,
+      east_to_north_index: 5,
+      north_to_east_index: 6,
+      west_to_north_index: 7,
+      north_to_west_index: 8,
+      south_to_east_index: 9,
+      east_to_south_index: 10,
+      south_to_west_index: 11,
+      west_to_south_index: 12,
+      starting_south_index: 13,
+      ending_south_index: 14,
+      starting_west_index: 15,
+      ending_west_index: 16,
+      starting_north_index: 17,
+      ending_north_index: 18,
+      starting_east_index: 19,
+      ending_east_index: 20
     },
     fast_replaceable_group: 'underground_belt',
+    next_upgrade: 'fast_underground_belt',
     speed: 0.03125,
     structure: {
       direction_in: {
         sheet: {
           filename: 'graphics/entity/underground-belt/underground-belt-structure.png',
           priority: 'extra_high',
-          shift: [
-            0.25,
-            0
-          ],
-          width: 57,
-          height: 43,
-          y: 43,
+          width: 96,
+          height: 96,
+          y: 96,
           hr_version: {
             filename: 'graphics/entity/underground-belt/hr-underground-belt-structure.png',
             priority: 'extra_high',
-            shift: [
-              0.15625,
-              0.0703125
-            ],
-            width: 106,
-            height: 85,
-            y: 85,
+            width: 192,
+            height: 192,
+            y: 192,
             scale: 0.5
           }
         }
@@ -24764,38 +25482,79 @@ module.exports = {
         sheet: {
           filename: 'graphics/entity/underground-belt/underground-belt-structure.png',
           priority: 'extra_high',
-          shift: [
-            0.25,
-            0
-          ],
-          width: 57,
-          height: 43,
+          width: 96,
+          height: 96,
           hr_version: {
             filename: 'graphics/entity/underground-belt/hr-underground-belt-structure.png',
             priority: 'extra_high',
-            shift: [
-              0.15625,
-              0.0703125
-            ],
-            width: 106,
-            height: 85,
+            width: 192,
+            height: 192,
             scale: 0.5
           }
         }
-      }
-    },
-    ending_patch: {
-      sheet: {
-        filename: 'graphics/entity/transport-belt/start-end-integration-patches.png',
-        width: 40,
-        height: 40,
-        priority: 'extra_high',
-        hr_version: {
-          filename: 'graphics/entity/transport-belt/hr-start-end-integration-patches.png',
-          width: 80,
-          height: 80,
+      },
+      direction_in_side_loading: {
+        sheet: {
+          filename: 'graphics/entity/underground-belt/underground-belt-structure.png',
           priority: 'extra_high',
-          scale: 0.5
+          width: 96,
+          height: 96,
+          y: 288,
+          hr_version: {
+            filename: 'graphics/entity/underground-belt/hr-underground-belt-structure.png',
+            priority: 'extra_high',
+            width: 192,
+            height: 192,
+            y: 576,
+            scale: 0.5
+          }
+        }
+      },
+      direction_out_side_loading: {
+        sheet: {
+          filename: 'graphics/entity/underground-belt/underground-belt-structure.png',
+          priority: 'extra_high',
+          width: 96,
+          height: 96,
+          y: 192,
+          hr_version: {
+            filename: 'graphics/entity/underground-belt/hr-underground-belt-structure.png',
+            priority: 'extra_high',
+            width: 192,
+            height: 192,
+            y: 384,
+            scale: 0.5
+          }
+        }
+      },
+      back_patch: {
+        sheet: {
+          filename: 'graphics/entity/underground-belt/underground-belt-structure-back-patch.png',
+          priority: 'extra_high',
+          width: 96,
+          height: 96,
+          hr_version: {
+            filename: 'graphics/entity/underground-belt/hr-underground-belt-structure-back-patch.png',
+            priority: 'extra_high',
+            width: 192,
+            height: 192,
+            scale: 0.5
+          }
+        }
+      },
+      front_patch: {
+        sheet: {
+          filename: 'graphics/entity/underground-belt/underground-belt-structure-front-patch.png',
+          priority: 'extra_high',
+          width: 96,
+          height: 96,
+          hr_version: {
+            filename: 'graphics/entity/underground-belt/hr-underground-belt-structure-front-patch.png',
+            priority: 'extra_high',
+            width: 192,
+            height: 192,
+            scale: 0.5
+          }
         }
       }
     },
@@ -24821,8 +25580,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'fast_underground_belt'
     },
     max_health: 160,
@@ -24865,172 +25623,62 @@ module.exports = {
       ]
     ],
     animation_speed_coefficient: 32,
-    belt_horizontal: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
+    belt_animation_set: {
+      animation_set: {
+        filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
         priority: 'extra_high',
-        width: 80,
-        height: 80,
+        width: 64,
+        height: 64,
         frame_count: 32,
-        line_length: 16,
-        scale: 0.5
-      }
-    },
-    belt_vertical: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 40,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 160,
-        scale: 0.5
-      }
-    },
-    ending_top: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 80,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 320,
-        scale: 0.5
-      }
-    },
-    ending_bottom: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 120,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 480,
-        scale: 0.5
-      }
-    },
-    ending_side: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 160,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 640,
-        scale: 0.5
-      }
-    },
-    starting_top: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 200,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 800,
-        scale: 0.5
-      }
-    },
-    starting_bottom: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 240,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 960,
-        scale: 0.5
-      }
-    },
-    starting_side: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 280,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 1120,
-        scale: 0.5
-      }
+        direction_count: 20,
+        hr_version: {
+          filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          frame_count: 32,
+          direction_count: 20
+        }
+      },
+      east_index: 1,
+      west_index: 2,
+      north_index: 3,
+      south_index: 4,
+      east_to_north_index: 5,
+      north_to_east_index: 6,
+      west_to_north_index: 7,
+      north_to_west_index: 8,
+      south_to_east_index: 9,
+      east_to_south_index: 10,
+      south_to_west_index: 11,
+      west_to_south_index: 12,
+      starting_south_index: 13,
+      ending_south_index: 14,
+      starting_west_index: 15,
+      ending_west_index: 16,
+      starting_north_index: 17,
+      ending_north_index: 18,
+      starting_east_index: 19,
+      ending_east_index: 20
     },
     fast_replaceable_group: 'underground_belt',
+    next_upgrade: 'express_underground_belt',
     speed: 0.0625,
     structure: {
       direction_in: {
         sheet: {
           filename: 'graphics/entity/fast-underground-belt/fast-underground-belt-structure.png',
           priority: 'extra_high',
-          shift: [
-            0.26,
-            0
-          ],
-          width: 57,
-          height: 43,
-          y: 43,
+          width: 96,
+          height: 96,
+          y: 96,
           hr_version: {
             filename: 'graphics/entity/fast-underground-belt/hr-fast-underground-belt-structure.png',
             priority: 'extra_high',
-            shift: [
-              0.15625,
-              0.0703125
-            ],
-            width: 106,
-            height: 85,
-            y: 85,
+            width: 192,
+            height: 192,
+            y: 192,
             scale: 0.5
           }
         }
@@ -25039,38 +25687,79 @@ module.exports = {
         sheet: {
           filename: 'graphics/entity/fast-underground-belt/fast-underground-belt-structure.png',
           priority: 'extra_high',
-          shift: [
-            0.26,
-            0
-          ],
-          width: 57,
-          height: 43,
+          width: 96,
+          height: 96,
           hr_version: {
             filename: 'graphics/entity/fast-underground-belt/hr-fast-underground-belt-structure.png',
             priority: 'extra_high',
-            shift: [
-              0.15625,
-              0.0703125
-            ],
-            width: 106,
-            height: 85,
+            width: 192,
+            height: 192,
             scale: 0.5
           }
         }
-      }
-    },
-    ending_patch: {
-      sheet: {
-        filename: 'graphics/entity/transport-belt/start-end-integration-patches.png',
-        width: 40,
-        height: 40,
-        priority: 'extra_high',
-        hr_version: {
-          filename: 'graphics/entity/transport-belt/hr-start-end-integration-patches.png',
-          width: 80,
-          height: 80,
+      },
+      direction_in_side_loading: {
+        sheet: {
+          filename: 'graphics/entity/fast-underground-belt/fast-underground-belt-structure.png',
           priority: 'extra_high',
-          scale: 0.5
+          width: 96,
+          height: 96,
+          y: 288,
+          hr_version: {
+            filename: 'graphics/entity/fast-underground-belt/hr-fast-underground-belt-structure.png',
+            priority: 'extra_high',
+            width: 192,
+            height: 192,
+            y: 576,
+            scale: 0.5
+          }
+        }
+      },
+      direction_out_side_loading: {
+        sheet: {
+          filename: 'graphics/entity/fast-underground-belt/fast-underground-belt-structure.png',
+          priority: 'extra_high',
+          width: 96,
+          height: 96,
+          y: 192,
+          hr_version: {
+            filename: 'graphics/entity/fast-underground-belt/hr-fast-underground-belt-structure.png',
+            priority: 'extra_high',
+            width: 192,
+            height: 192,
+            y: 384,
+            scale: 0.5
+          }
+        }
+      },
+      back_patch: {
+        sheet: {
+          filename: 'graphics/entity/fast-underground-belt/fast-underground-belt-structure-back-patch.png',
+          priority: 'extra_high',
+          width: 96,
+          height: 96,
+          hr_version: {
+            filename: 'graphics/entity/fast-underground-belt/hr-fast-underground-belt-structure-back-patch.png',
+            priority: 'extra_high',
+            width: 192,
+            height: 192,
+            scale: 0.5
+          }
+        }
+      },
+      front_patch: {
+        sheet: {
+          filename: 'graphics/entity/fast-underground-belt/fast-underground-belt-structure-front-patch.png',
+          priority: 'extra_high',
+          width: 96,
+          height: 96,
+          hr_version: {
+            filename: 'graphics/entity/fast-underground-belt/hr-fast-underground-belt-structure-front-patch.png',
+            priority: 'extra_high',
+            width: 192,
+            height: 192,
+            scale: 0.5
+          }
         }
       }
     },
@@ -25096,8 +25785,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'express_underground_belt'
     },
     max_health: 170,
@@ -25140,147 +25828,44 @@ module.exports = {
       ]
     ],
     animation_speed_coefficient: 32,
-    belt_horizontal: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
+    belt_animation_set: {
+      animation_set: {
+        filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
         priority: 'extra_high',
-        width: 80,
-        height: 80,
+        width: 64,
+        height: 64,
         frame_count: 32,
-        line_length: 16,
-        scale: 0.5
-      }
-    },
-    belt_vertical: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 40,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 160,
-        scale: 0.5
-      }
-    },
-    ending_top: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 80,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 320,
-        scale: 0.5
-      }
-    },
-    ending_bottom: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 120,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 480,
-        scale: 0.5
-      }
-    },
-    ending_side: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 160,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 640,
-        scale: 0.5
-      }
-    },
-    starting_top: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 200,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 800,
-        scale: 0.5
-      }
-    },
-    starting_bottom: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 240,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 960,
-        scale: 0.5
-      }
-    },
-    starting_side: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 280,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 1120,
-        scale: 0.5
-      }
+        direction_count: 20,
+        hr_version: {
+          filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          frame_count: 32,
+          direction_count: 20
+        }
+      },
+      east_index: 1,
+      west_index: 2,
+      north_index: 3,
+      south_index: 4,
+      east_to_north_index: 5,
+      north_to_east_index: 6,
+      west_to_north_index: 7,
+      north_to_west_index: 8,
+      south_to_east_index: 9,
+      east_to_south_index: 10,
+      south_to_west_index: 11,
+      west_to_south_index: 12,
+      starting_south_index: 13,
+      ending_south_index: 14,
+      starting_west_index: 15,
+      ending_west_index: 16,
+      starting_north_index: 17,
+      ending_north_index: 18,
+      starting_east_index: 19,
+      ending_east_index: 20
     },
     fast_replaceable_group: 'underground_belt',
     speed: 0.09375,
@@ -25289,23 +25874,15 @@ module.exports = {
         sheet: {
           filename: 'graphics/entity/express-underground-belt/express-underground-belt-structure.png',
           priority: 'extra_high',
-          shift: [
-            0.26,
-            0
-          ],
-          width: 57,
-          height: 43,
-          y: 43,
+          width: 96,
+          height: 96,
+          y: 96,
           hr_version: {
             filename: 'graphics/entity/express-underground-belt/hr-express-underground-belt-structure.png',
             priority: 'extra_high',
-            shift: [
-              0.15625,
-              0.0703125
-            ],
-            width: 106,
-            height: 85,
-            y: 85,
+            width: 192,
+            height: 192,
+            y: 192,
             scale: 0.5
           }
         }
@@ -25314,38 +25891,79 @@ module.exports = {
         sheet: {
           filename: 'graphics/entity/express-underground-belt/express-underground-belt-structure.png',
           priority: 'extra_high',
-          shift: [
-            0.26,
-            0
-          ],
-          width: 57,
-          height: 43,
+          width: 96,
+          height: 96,
           hr_version: {
             filename: 'graphics/entity/express-underground-belt/hr-express-underground-belt-structure.png',
             priority: 'extra_high',
-            shift: [
-              0.15625,
-              0.0703125
-            ],
-            width: 106,
-            height: 85,
+            width: 192,
+            height: 192,
             scale: 0.5
           }
         }
-      }
-    },
-    ending_patch: {
-      sheet: {
-        filename: 'graphics/entity/transport-belt/start-end-integration-patches.png',
-        width: 40,
-        height: 40,
-        priority: 'extra_high',
-        hr_version: {
-          filename: 'graphics/entity/transport-belt/hr-start-end-integration-patches.png',
-          width: 80,
-          height: 80,
+      },
+      direction_in_side_loading: {
+        sheet: {
+          filename: 'graphics/entity/express-underground-belt/express-underground-belt-structure.png',
           priority: 'extra_high',
-          scale: 0.5
+          width: 96,
+          height: 96,
+          y: 288,
+          hr_version: {
+            filename: 'graphics/entity/express-underground-belt/hr-express-underground-belt-structure.png',
+            priority: 'extra_high',
+            width: 192,
+            height: 192,
+            y: 576,
+            scale: 0.5
+          }
+        }
+      },
+      direction_out_side_loading: {
+        sheet: {
+          filename: 'graphics/entity/express-underground-belt/express-underground-belt-structure.png',
+          priority: 'extra_high',
+          width: 96,
+          height: 96,
+          y: 192,
+          hr_version: {
+            filename: 'graphics/entity/express-underground-belt/hr-express-underground-belt-structure.png',
+            priority: 'extra_high',
+            width: 192,
+            height: 192,
+            y: 384,
+            scale: 0.5
+          }
+        }
+      },
+      back_patch: {
+        sheet: {
+          filename: 'graphics/entity/express-underground-belt/express-underground-belt-structure-back-patch.png',
+          priority: 'extra_high',
+          width: 96,
+          height: 96,
+          hr_version: {
+            filename: 'graphics/entity/express-underground-belt/hr-express-underground-belt-structure-back-patch.png',
+            priority: 'extra_high',
+            width: 192,
+            height: 192,
+            scale: 0.5
+          }
+        }
+      },
+      front_patch: {
+        sheet: {
+          filename: 'graphics/entity/express-underground-belt/express-underground-belt-structure-front-patch.png',
+          priority: 'extra_high',
+          width: 96,
+          height: 96,
+          hr_version: {
+            filename: 'graphics/entity/express-underground-belt/hr-express-underground-belt-structure-front-patch.png',
+            priority: 'extra_high',
+            width: 192,
+            height: 192,
+            scale: 0.5
+          }
         }
       }
     },
@@ -25372,8 +25990,7 @@ module.exports = {
       'fast_replaceable_no_build_while_moving'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'loader'
     },
     max_health: 170,
@@ -25400,139 +26017,44 @@ module.exports = {
       ]
     ],
     animation_speed_coefficient: 32,
-    belt_horizontal: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
+    belt_animation_set: {
+      animation_set: {
+        filename: 'graphics/entity/transport-belt/transport-belt.png',
         priority: 'extra_high',
-        width: 80,
-        height: 80,
-        scale: 0.5,
-        frame_count: 16
-      }
-    },
-    belt_vertical: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 40,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
+        width: 64,
+        height: 64,
         frame_count: 16,
-        scale: 0.5,
-        y: 80
-      }
-    },
-    ending_top: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 80,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 160,
-        scale: 0.5
-      }
-    },
-    ending_bottom: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 120,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 240,
-        scale: 0.5
-      }
-    },
-    ending_side: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 160,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 320,
-        scale: 0.5
-      }
-    },
-    starting_top: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 200,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 400,
-        scale: 0.5
-      }
-    },
-    starting_bottom: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 240,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 480,
-        scale: 0.5
-      }
-    },
-    starting_side: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 280,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 560,
-        scale: 0.5
-      }
+        direction_count: 20,
+        hr_version: {
+          filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          frame_count: 16,
+          direction_count: 20
+        }
+      },
+      east_index: 1,
+      west_index: 2,
+      north_index: 3,
+      south_index: 4,
+      east_to_north_index: 5,
+      north_to_east_index: 6,
+      west_to_north_index: 7,
+      north_to_west_index: 8,
+      south_to_east_index: 9,
+      east_to_south_index: 10,
+      south_to_west_index: 11,
+      west_to_south_index: 12,
+      starting_south_index: 13,
+      ending_south_index: 14,
+      starting_west_index: 15,
+      ending_west_index: 16,
+      starting_north_index: 17,
+      ending_north_index: 18,
+      starting_east_index: 19,
+      ending_east_index: 20
     },
     fast_replaceable_group: 'loader',
     speed: 0.03125,
@@ -25555,31 +26077,22 @@ module.exports = {
         }
       }
     },
-    ending_patch: {
-      sheet: {
-        filename: 'graphics/entity/transport-belt/start-end-integration-patches.png',
-        width: 40,
-        height: 40,
-        priority: 'extra_high',
-        hr_version: {
-          filename: 'graphics/entity/transport-belt/hr-start-end-integration-patches.png',
-          width: 80,
-          height: 80,
-          priority: 'extra_high',
-          scale: 0.5
-        }
-      }
-    },
     size: {
       width: 1,
       height: 2
     },
+    possible_rotations: [
+      0,
+      2,
+      4,
+      6
+    ],
     ui_name: 'Loader'
   },
   fast_loader: {
     type: 'loader',
     name: 'fast_loader',
-    icon: 'graphics/icons/loader.png',
+    icon: 'graphics/icons/fast-loader.png',
     icon_size: 32,
     flags: [
       'placeable_neutral',
@@ -25587,8 +26100,7 @@ module.exports = {
       'fast_replaceable_no_build_while_moving'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'fast_loader'
     },
     max_health: 170,
@@ -25615,147 +26127,44 @@ module.exports = {
       ]
     ],
     animation_speed_coefficient: 32,
-    belt_horizontal: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
+    belt_animation_set: {
+      animation_set: {
+        filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
         priority: 'extra_high',
-        width: 80,
-        height: 80,
+        width: 64,
+        height: 64,
         frame_count: 32,
-        line_length: 16,
-        scale: 0.5
-      }
-    },
-    belt_vertical: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 40,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 160,
-        scale: 0.5
-      }
-    },
-    ending_top: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 80,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 320,
-        scale: 0.5
-      }
-    },
-    ending_bottom: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 120,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 480,
-        scale: 0.5
-      }
-    },
-    ending_side: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 160,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 640,
-        scale: 0.5
-      }
-    },
-    starting_top: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 200,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 800,
-        scale: 0.5
-      }
-    },
-    starting_bottom: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 240,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 960,
-        scale: 0.5
-      }
-    },
-    starting_side: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 280,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 1120,
-        scale: 0.5
-      }
+        direction_count: 20,
+        hr_version: {
+          filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          frame_count: 32,
+          direction_count: 20
+        }
+      },
+      east_index: 1,
+      west_index: 2,
+      north_index: 3,
+      south_index: 4,
+      east_to_north_index: 5,
+      north_to_east_index: 6,
+      west_to_north_index: 7,
+      north_to_west_index: 8,
+      south_to_east_index: 9,
+      east_to_south_index: 10,
+      south_to_west_index: 11,
+      west_to_south_index: 12,
+      starting_south_index: 13,
+      ending_south_index: 14,
+      starting_west_index: 15,
+      ending_west_index: 16,
+      starting_north_index: 17,
+      ending_north_index: 18,
+      starting_east_index: 19,
+      ending_east_index: 20
     },
     fast_replaceable_group: 'loader',
     speed: 0.0625,
@@ -25778,31 +26187,22 @@ module.exports = {
         }
       }
     },
-    ending_patch: {
-      sheet: {
-        filename: 'graphics/entity/transport-belt/start-end-integration-patches.png',
-        width: 40,
-        height: 40,
-        priority: 'extra_high',
-        hr_version: {
-          filename: 'graphics/entity/transport-belt/hr-start-end-integration-patches.png',
-          width: 80,
-          height: 80,
-          priority: 'extra_high',
-          scale: 0.5
-        }
-      }
-    },
     size: {
       width: 1,
       height: 2
     },
+    possible_rotations: [
+      0,
+      2,
+      4,
+      6
+    ],
     ui_name: 'Fast loader'
   },
   express_loader: {
     type: 'loader',
     name: 'express_loader',
-    icon: 'graphics/icons/loader.png',
+    icon: 'graphics/icons/express-loader.png',
     icon_size: 32,
     flags: [
       'placeable_neutral',
@@ -25810,8 +26210,7 @@ module.exports = {
       'fast_replaceable_no_build_while_moving'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'express_loader'
     },
     max_health: 170,
@@ -25838,147 +26237,44 @@ module.exports = {
       ]
     ],
     animation_speed_coefficient: 32,
-    belt_horizontal: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
+    belt_animation_set: {
+      animation_set: {
+        filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
         priority: 'extra_high',
-        width: 80,
-        height: 80,
+        width: 64,
+        height: 64,
         frame_count: 32,
-        line_length: 16,
-        scale: 0.5
-      }
-    },
-    belt_vertical: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 40,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 160,
-        scale: 0.5
-      }
-    },
-    ending_top: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 80,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 320,
-        scale: 0.5
-      }
-    },
-    ending_bottom: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 120,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 480,
-        scale: 0.5
-      }
-    },
-    ending_side: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 160,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 640,
-        scale: 0.5
-      }
-    },
-    starting_top: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 200,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 800,
-        scale: 0.5
-      }
-    },
-    starting_bottom: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 240,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 960,
-        scale: 0.5
-      }
-    },
-    starting_side: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 280,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 1120,
-        scale: 0.5
-      }
+        direction_count: 20,
+        hr_version: {
+          filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          frame_count: 32,
+          direction_count: 20
+        }
+      },
+      east_index: 1,
+      west_index: 2,
+      north_index: 3,
+      south_index: 4,
+      east_to_north_index: 5,
+      north_to_east_index: 6,
+      west_to_north_index: 7,
+      north_to_west_index: 8,
+      south_to_east_index: 9,
+      east_to_south_index: 10,
+      south_to_west_index: 11,
+      west_to_south_index: 12,
+      starting_south_index: 13,
+      ending_south_index: 14,
+      starting_west_index: 15,
+      ending_west_index: 16,
+      starting_north_index: 17,
+      ending_north_index: 18,
+      starting_east_index: 19,
+      ending_east_index: 20
     },
     fast_replaceable_group: 'loader',
     speed: 0.09375,
@@ -26001,25 +26297,16 @@ module.exports = {
         }
       }
     },
-    ending_patch: {
-      sheet: {
-        filename: 'graphics/entity/transport-belt/start-end-integration-patches.png',
-        width: 40,
-        height: 40,
-        priority: 'extra_high',
-        hr_version: {
-          filename: 'graphics/entity/transport-belt/hr-start-end-integration-patches.png',
-          width: 80,
-          height: 80,
-          priority: 'extra_high',
-          scale: 0.5
-        }
-      }
-    },
     size: {
       width: 1,
       height: 2
     },
+    possible_rotations: [
+      0,
+      2,
+      4,
+      6
+    ],
     ui_name: 'Express loader'
   },
   splitter: {
@@ -26032,8 +26319,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'splitter'
     },
     max_health: 170,
@@ -26061,167 +26347,58 @@ module.exports = {
     animation_speed_coefficient: 32,
     structure_animation_speed_coefficient: 0.7,
     structure_animation_movement_cooldown: 10,
-    belt_horizontal: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        scale: 0.5,
-        frame_count: 16
-      }
-    },
-    belt_vertical: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 40,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        scale: 0.5,
-        y: 80
-      }
-    },
-    ending_top: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 80,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 160,
-        scale: 0.5
-      }
-    },
-    ending_bottom: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 120,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 240,
-        scale: 0.5
-      }
-    },
-    ending_side: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 160,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 320,
-        scale: 0.5
-      }
-    },
-    starting_top: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 200,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 400,
-        scale: 0.5
-      }
-    },
-    starting_bottom: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 240,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 480,
-        scale: 0.5
-      }
-    },
-    starting_side: {
-      filename: 'graphics/entity/transport-belt/transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 16,
-      y: 280,
-      hr_version: {
-        filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 16,
-        y: 560,
-        scale: 0.5
-      }
-    },
-    ending_patch: {
-      sheet: {
-        filename: 'graphics/entity/transport-belt/start-end-integration-patches.png',
-        width: 40,
-        height: 40,
-        priority: 'extra_high',
-        hr_version: {
-          filename: 'graphics/entity/transport-belt/hr-start-end-integration-patches.png',
-          width: 80,
-          height: 80,
-          priority: 'extra_high',
-          scale: 0.5
-        }
-      }
-    },
     fast_replaceable_group: 'splitter',
+    next_upgrade: 'fast_splitter',
     speed: 0.03125,
+    belt_animation_set: {
+      animation_set: {
+        filename: 'graphics/entity/transport-belt/transport-belt.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        frame_count: 16,
+        direction_count: 20,
+        hr_version: {
+          filename: 'graphics/entity/transport-belt/hr-transport-belt.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          frame_count: 16,
+          direction_count: 20
+        }
+      },
+      east_index: 1,
+      west_index: 2,
+      north_index: 3,
+      south_index: 4,
+      east_to_north_index: 5,
+      north_to_east_index: 6,
+      west_to_north_index: 7,
+      north_to_west_index: 8,
+      south_to_east_index: 9,
+      east_to_south_index: 10,
+      south_to_west_index: 11,
+      west_to_south_index: 12,
+      starting_south_index: 13,
+      ending_south_index: 14,
+      starting_west_index: 15,
+      ending_west_index: 16,
+      starting_north_index: 17,
+      ending_north_index: 18,
+      starting_east_index: 19,
+      ending_east_index: 20
+    },
     structure: {
       north: {
         filename: 'graphics/entity/splitter/splitter-north.png',
         frame_count: 32,
-        line_length: 16,
+        line_length: 8,
         priority: 'extra_high',
-        width: 83,
+        width: 82,
         height: 36,
         shift: [
-          0.265625,
+          0.1875,
           0
         ],
         hr_version: {
@@ -26229,11 +26406,11 @@ module.exports = {
           frame_count: 32,
           line_length: 8,
           priority: 'extra_high',
-          width: 164,
+          width: 160,
           height: 70,
           shift: [
-            0.25,
-            0.046875
+            0.21875,
+            0
           ],
           scale: 0.5
         }
@@ -26241,24 +26418,24 @@ module.exports = {
       east: {
         filename: 'graphics/entity/splitter/splitter-east.png',
         frame_count: 32,
-        line_length: 16,
+        line_length: 8,
         priority: 'extra_high',
-        width: 51,
+        width: 46,
         height: 80,
         shift: [
-          0.109375,
-          -0.03125
+          0.125,
+          -0.1875
         ],
         hr_version: {
           filename: 'graphics/entity/splitter/hr-splitter-east.png',
           frame_count: 32,
           line_length: 8,
           priority: 'extra_high',
-          width: 93,
-          height: 157,
+          width: 90,
+          height: 160,
           shift: [
-            0.148438,
-            -0.179688
+            0.125,
+            -0.1875
           ],
           scale: 0.5
         }
@@ -26266,24 +26443,24 @@ module.exports = {
       south: {
         filename: 'graphics/entity/splitter/splitter-south.png',
         frame_count: 32,
-        line_length: 16,
+        line_length: 8,
         priority: 'extra_high',
-        width: 85,
-        height: 35,
+        width: 82,
+        height: 32,
         shift: [
-          0.140625,
-          -0.015625
+          0.125,
+          0
         ],
         hr_version: {
           filename: 'graphics/entity/splitter/hr-splitter-south.png',
           frame_count: 32,
           line_length: 8,
           priority: 'extra_high',
-          width: 168,
-          height: 67,
+          width: 164,
+          height: 64,
           shift: [
-            0.140625,
-            0.0234375
+            0.125,
+            0
           ],
           scale: 0.5
         }
@@ -26291,24 +26468,24 @@ module.exports = {
       west: {
         filename: 'graphics/entity/splitter/splitter-west.png',
         frame_count: 32,
-        line_length: 16,
+        line_length: 8,
         priority: 'extra_high',
-        width: 51,
-        height: 78,
+        width: 46,
+        height: 76,
         shift: [
-          0.296875,
-          -0.03125
+          0.1875,
+          -0.125
         ],
         hr_version: {
           filename: 'graphics/entity/splitter/hr-splitter-west.png',
           frame_count: 32,
           line_length: 8,
           priority: 'extra_high',
-          width: 94,
-          height: 154,
+          width: 90,
+          height: 150,
           shift: [
-            0.203125,
-            -0.109375
+            0.1875,
+            -0.125
           ],
           scale: 0.5
         }
@@ -26337,8 +26514,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'fast_splitter'
     },
     max_health: 180,
@@ -26366,160 +26542,58 @@ module.exports = {
     animation_speed_coefficient: 32,
     structure_animation_speed_coefficient: 1.2,
     structure_animation_movement_cooldown: 10,
-    belt_horizontal: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
+    belt_animation_set: {
+      animation_set: {
+        filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
         priority: 'extra_high',
-        width: 80,
-        height: 80,
+        width: 64,
+        height: 64,
         frame_count: 32,
-        line_length: 16,
-        scale: 0.5
-      }
-    },
-    belt_vertical: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 40,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 160,
-        scale: 0.5
-      }
-    },
-    ending_top: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 80,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 320,
-        scale: 0.5
-      }
-    },
-    ending_bottom: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 120,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 480,
-        scale: 0.5
-      }
-    },
-    ending_side: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 160,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 640,
-        scale: 0.5
-      }
-    },
-    starting_top: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 200,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 800,
-        scale: 0.5
-      }
-    },
-    starting_bottom: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 240,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 960,
-        scale: 0.5
-      }
-    },
-    starting_side: {
-      filename: 'graphics/entity/fast-transport-belt/fast-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 280,
-      hr_version: {
-        filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 1120,
-        scale: 0.5
-      }
+        direction_count: 20,
+        hr_version: {
+          filename: 'graphics/entity/fast-transport-belt/hr-fast-transport-belt.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          frame_count: 32,
+          direction_count: 20
+        }
+      },
+      east_index: 1,
+      west_index: 2,
+      north_index: 3,
+      south_index: 4,
+      east_to_north_index: 5,
+      north_to_east_index: 6,
+      west_to_north_index: 7,
+      north_to_west_index: 8,
+      south_to_east_index: 9,
+      east_to_south_index: 10,
+      south_to_west_index: 11,
+      west_to_south_index: 12,
+      starting_south_index: 13,
+      ending_south_index: 14,
+      starting_west_index: 15,
+      ending_west_index: 16,
+      starting_north_index: 17,
+      ending_north_index: 18,
+      starting_east_index: 19,
+      ending_east_index: 20
     },
     fast_replaceable_group: 'splitter',
+    next_upgrade: 'express_splitter',
     speed: 0.0625,
     structure: {
       north: {
         filename: 'graphics/entity/fast-splitter/fast-splitter-north.png',
         frame_count: 32,
-        line_length: 16,
+        line_length: 8,
         priority: 'extra_high',
-        width: 83,
+        width: 82,
         height: 36,
         shift: [
-          0.265625,
+          0.1875,
           0
         ],
         hr_version: {
@@ -26527,11 +26601,11 @@ module.exports = {
           frame_count: 32,
           line_length: 8,
           priority: 'extra_high',
-          width: 164,
+          width: 160,
           height: 70,
           shift: [
-            0.25,
-            0.046875
+            0.21875,
+            0
           ],
           scale: 0.5
         }
@@ -26539,24 +26613,24 @@ module.exports = {
       east: {
         filename: 'graphics/entity/fast-splitter/fast-splitter-east.png',
         frame_count: 32,
-        line_length: 16,
+        line_length: 8,
         priority: 'extra_high',
-        width: 51,
+        width: 46,
         height: 80,
         shift: [
-          0.109375,
-          -0.03125
+          0.125,
+          -0.1875
         ],
         hr_version: {
           filename: 'graphics/entity/fast-splitter/hr-fast-splitter-east.png',
           frame_count: 32,
           line_length: 8,
           priority: 'extra_high',
-          width: 93,
-          height: 157,
+          width: 90,
+          height: 160,
           shift: [
-            0.148438,
-            -0.179688
+            0.125,
+            -0.1875
           ],
           scale: 0.5
         }
@@ -26564,24 +26638,24 @@ module.exports = {
       south: {
         filename: 'graphics/entity/fast-splitter/fast-splitter-south.png',
         frame_count: 32,
-        line_length: 16,
+        line_length: 8,
         priority: 'extra_high',
-        width: 85,
-        height: 35,
+        width: 82,
+        height: 32,
         shift: [
-          0.140625,
-          -0.015625
+          0.125,
+          0
         ],
         hr_version: {
           filename: 'graphics/entity/fast-splitter/hr-fast-splitter-south.png',
           frame_count: 32,
           line_length: 8,
           priority: 'extra_high',
-          width: 168,
-          height: 67,
+          width: 164,
+          height: 64,
           shift: [
-            0.140625,
-            0.0234375
+            0.125,
+            0
           ],
           scale: 0.5
         }
@@ -26589,40 +26663,25 @@ module.exports = {
       west: {
         filename: 'graphics/entity/fast-splitter/fast-splitter-west.png',
         frame_count: 32,
-        line_length: 16,
+        line_length: 8,
         priority: 'extra_high',
-        width: 51,
-        height: 78,
+        width: 46,
+        height: 76,
         shift: [
-          0.296875,
-          -0.03125
+          0.1875,
+          -0.125
         ],
         hr_version: {
           filename: 'graphics/entity/fast-splitter/hr-fast-splitter-west.png',
           frame_count: 32,
           line_length: 8,
           priority: 'extra_high',
-          width: 94,
-          height: 154,
+          width: 90,
+          height: 150,
           shift: [
-            0.203125,
-            -0.109375
+            0.1875,
+            -0.125
           ],
-          scale: 0.5
-        }
-      }
-    },
-    ending_patch: {
-      sheet: {
-        filename: 'graphics/entity/transport-belt/start-end-integration-patches.png',
-        width: 40,
-        height: 40,
-        priority: 'extra_high',
-        hr_version: {
-          filename: 'graphics/entity/transport-belt/hr-start-end-integration-patches.png',
-          width: 80,
-          height: 80,
-          priority: 'extra_high',
           scale: 0.5
         }
       }
@@ -26650,8 +26709,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'express_splitter'
     },
     max_health: 190,
@@ -26679,162 +26737,44 @@ module.exports = {
     animation_speed_coefficient: 32,
     structure_animation_speed_coefficient: 1.2,
     structure_animation_movement_cooldown: 10,
-    belt_horizontal: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
+    belt_animation_set: {
+      animation_set: {
+        filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
         priority: 'extra_high',
-        width: 80,
-        height: 80,
+        width: 64,
+        height: 64,
         frame_count: 32,
-        line_length: 16,
-        scale: 0.5
-      }
-    },
-    belt_vertical: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 40,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 160,
-        scale: 0.5
-      }
-    },
-    ending_top: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 80,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 320,
-        scale: 0.5
-      }
-    },
-    ending_bottom: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 120,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 480,
-        scale: 0.5
-      }
-    },
-    ending_side: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 160,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 640,
-        scale: 0.5
-      }
-    },
-    starting_top: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 200,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 800,
-        scale: 0.5
-      }
-    },
-    starting_bottom: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 240,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 960,
-        scale: 0.5
-      }
-    },
-    starting_side: {
-      filename: 'graphics/entity/express-transport-belt/express-transport-belt.png',
-      priority: 'extra_high',
-      width: 40,
-      height: 40,
-      frame_count: 32,
-      y: 280,
-      hr_version: {
-        filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
-        priority: 'extra_high',
-        width: 80,
-        height: 80,
-        frame_count: 32,
-        line_length: 16,
-        y: 1120,
-        scale: 0.5
-      }
-    },
-    ending_patch: {
-      sheet: {
-        filename: 'graphics/entity/transport-belt/start-end-integration-patches.png',
-        width: 40,
-        height: 40,
-        priority: 'extra_high',
+        direction_count: 20,
         hr_version: {
-          filename: 'graphics/entity/transport-belt/hr-start-end-integration-patches.png',
-          width: 80,
-          height: 80,
+          filename: 'graphics/entity/express-transport-belt/hr-express-transport-belt.png',
           priority: 'extra_high',
-          scale: 0.5
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          frame_count: 32,
+          direction_count: 20
         }
-      }
+      },
+      east_index: 1,
+      west_index: 2,
+      north_index: 3,
+      south_index: 4,
+      east_to_north_index: 5,
+      north_to_east_index: 6,
+      west_to_north_index: 7,
+      north_to_west_index: 8,
+      south_to_east_index: 9,
+      east_to_south_index: 10,
+      south_to_west_index: 11,
+      west_to_south_index: 12,
+      starting_south_index: 13,
+      ending_south_index: 14,
+      starting_west_index: 15,
+      ending_west_index: 16,
+      starting_north_index: 17,
+      ending_north_index: 18,
+      starting_east_index: 19,
+      ending_east_index: 20
     },
     fast_replaceable_group: 'splitter',
     speed: 0.09375,
@@ -26842,12 +26782,12 @@ module.exports = {
       north: {
         filename: 'graphics/entity/express-splitter/express-splitter-north.png',
         frame_count: 32,
-        line_length: 16,
+        line_length: 8,
         priority: 'extra_high',
-        width: 83,
+        width: 82,
         height: 36,
         shift: [
-          0.21875,
+          0.1875,
           0
         ],
         hr_version: {
@@ -26855,10 +26795,10 @@ module.exports = {
           frame_count: 32,
           line_length: 8,
           priority: 'extra_high',
-          width: 164,
+          width: 160,
           height: 70,
           shift: [
-            0.265625,
+            0.21875,
             0
           ],
           scale: 0.5
@@ -26867,24 +26807,24 @@ module.exports = {
       east: {
         filename: 'graphics/entity/express-splitter/express-splitter-east.png',
         frame_count: 32,
-        line_length: 16,
+        line_length: 8,
         priority: 'extra_high',
-        width: 51,
+        width: 46,
         height: 80,
         shift: [
-          0.109375,
-          -0.03125
+          0.125,
+          -0.1875
         ],
         hr_version: {
           filename: 'graphics/entity/express-splitter/hr-express-splitter-east.png',
           frame_count: 32,
           line_length: 8,
           priority: 'extra_high',
-          width: 93,
-          height: 157,
+          width: 90,
+          height: 160,
           shift: [
-            0.148438,
-            -0.179688
+            0.125,
+            -0.1875
           ],
           scale: 0.5
         }
@@ -26892,24 +26832,24 @@ module.exports = {
       south: {
         filename: 'graphics/entity/express-splitter/express-splitter-south.png',
         frame_count: 32,
-        line_length: 16,
+        line_length: 8,
         priority: 'extra_high',
-        width: 85,
-        height: 35,
+        width: 82,
+        height: 32,
         shift: [
-          0.140625,
-          -0.015625
+          0.125,
+          0
         ],
         hr_version: {
           filename: 'graphics/entity/express-splitter/hr-express-splitter-south.png',
           frame_count: 32,
           line_length: 8,
           priority: 'extra_high',
-          width: 168,
-          height: 67,
+          width: 164,
+          height: 64,
           shift: [
-            0.140625,
-            0.0234375
+            0.125,
+            0
           ],
           scale: 0.5
         }
@@ -26917,13 +26857,13 @@ module.exports = {
       west: {
         filename: 'graphics/entity/express-splitter/express-splitter-west.png',
         frame_count: 32,
-        line_length: 16,
+        line_length: 8,
         priority: 'extra_high',
-        width: 51,
-        height: 78,
+        width: 46,
+        height: 76,
         shift: [
-          0.296875,
-          -0.03125
+          0.1875,
+          -0.125
         ],
         hr_version: {
           filename: 'graphics/entity/express-splitter/hr-express-splitter-west.png',
@@ -26931,10 +26871,10 @@ module.exports = {
           line_length: 8,
           priority: 'extra_high',
           width: 94,
-          height: 154,
+          height: 150,
           shift: [
-            0.203125,
-            -0.109375
+            0.15625,
+            -0.125
           ],
           scale: 0.5
         }
@@ -26963,8 +26903,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'solar_panel'
     },
     max_health: 200,
@@ -27085,8 +27024,7 @@ module.exports = {
     ],
     fast_replaceable_group: 'wall',
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'gate'
     },
     max_health: 350,
@@ -27114,30 +27052,56 @@ module.exports = {
     opening_speed: 0.0666666,
     activation_distance: 3,
     timeout_to_close: 5,
+    fadeout_interval: 15,
     vertical_animation: {
       layers: [
         {
           filename: 'graphics/entity/gate/gate-vertical.png',
           line_length: 8,
-          width: 21,
-          height: 60,
+          width: 38,
+          height: 62,
           frame_count: 16,
           shift: [
-            0.015625,
-            -0.40625
-          ]
+            0,
+            -0.4375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/gate/hr-gate-vertical.png',
+            line_length: 8,
+            width: 78,
+            height: 120,
+            frame_count: 16,
+            shift: [
+              -0.03125,
+              -0.40625
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/gate/gate-vertical-shadow.png',
           line_length: 8,
-          width: 41,
-          height: 50,
+          width: 40,
+          height: 54,
           frame_count: 16,
           shift: [
-            0.328125,
-            0.3
+            0.3125,
+            0.25
           ],
-          draw_as_shadow: true
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/gate/hr-gate-vertical-shadow.png',
+            line_length: 8,
+            width: 82,
+            height: 104,
+            frame_count: 16,
+            shift: [
+              0.28125,
+              0.28125
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
         }
       ]
     },
@@ -27146,40 +27110,50 @@ module.exports = {
         {
           filename: 'graphics/entity/gate/gate-horizontal.png',
           line_length: 8,
-          width: 32,
-          height: 36,
+          width: 34,
+          height: 48,
           frame_count: 16,
           shift: [
             0,
-            -0.21875
-          ]
+            -0.125
+          ],
+          hr_version: {
+            filename: 'graphics/entity/gate/hr-gate-horizontal.png',
+            line_length: 8,
+            width: 66,
+            height: 90,
+            frame_count: 16,
+            shift: [
+              0,
+              -0.09375
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/gate/gate-horizontal-shadow.png',
           line_length: 8,
           width: 62,
-          height: 28,
+          height: 30,
           frame_count: 16,
           shift: [
-            0.4375,
-            0.46875
+            0.375,
+            0.3125
           ],
-          draw_as_shadow: true
-        }
-      ]
-    },
-    vertical_base: {
-      layers: [
-        {
-          filename: 'graphics/entity/gate/gate-base-vertical.png',
-          width: 32,
-          height: 32
-        },
-        {
-          filename: 'graphics/entity/gate/gate-base-vertical-mask.png',
-          width: 32,
-          height: 32,
-          apply_runtime_tint: true
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/gate/hr-gate-horizontal-shadow.png',
+            line_length: 8,
+            width: 122,
+            height: 60,
+            frame_count: 16,
+            shift: [
+              0.375,
+              0.3125
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
         }
       ]
     },
@@ -27188,25 +27162,50 @@ module.exports = {
         {
           filename: 'graphics/entity/gate/gate-rail-horizontal-left.png',
           line_length: 8,
-          width: 32,
-          height: 47,
+          width: 34,
+          height: 40,
           frame_count: 16,
           shift: [
             0,
-            -0.015625
-          ]
+            -0.25
+          ],
+          hr_version: {
+            filename: 'graphics/entity/gate/hr-gate-rail-horizontal-left.png',
+            line_length: 8,
+            width: 66,
+            height: 74,
+            frame_count: 16,
+            shift: [
+              0,
+              -0.21875
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/gate/gate-rail-horizontal-shadow-left.png',
           line_length: 8,
-          width: 73,
-          height: 27,
+          width: 62,
+          height: 30,
           frame_count: 16,
           shift: [
-            0.078125,
-            0.296875
+            0.375,
+            0.3125
           ],
-          draw_as_shadow: true
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/gate/hr-gate-rail-horizontal-shadow-left.png',
+            line_length: 8,
+            width: 122,
+            height: 60,
+            frame_count: 16,
+            shift: [
+              0.375,
+              0.3125
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
         }
       ]
     },
@@ -27215,25 +27214,50 @@ module.exports = {
         {
           filename: 'graphics/entity/gate/gate-rail-horizontal-right.png',
           line_length: 8,
-          width: 32,
-          height: 43,
+          width: 34,
+          height: 40,
           frame_count: 16,
           shift: [
             0,
-            -0.078125
-          ]
+            -0.25
+          ],
+          hr_version: {
+            filename: 'graphics/entity/gate/hr-gate-rail-horizontal-right.png',
+            line_length: 8,
+            width: 66,
+            height: 74,
+            frame_count: 16,
+            shift: [
+              0,
+              -0.21875
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/gate/gate-rail-horizontal-shadow-right.png',
           line_length: 8,
-          width: 73,
-          height: 28,
+          width: 62,
+          height: 30,
           frame_count: 16,
           shift: [
-            0.60938,
-            0.4125
+            0.375,
+            0.3125
           ],
-          draw_as_shadow: true
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/gate/hr-gate-rail-horizontal-shadow-right.png',
+            line_length: 8,
+            width: 122,
+            height: 58,
+            frame_count: 16,
+            shift: [
+              0.375,
+              0.34375
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
         }
       ]
     },
@@ -27243,24 +27267,49 @@ module.exports = {
           filename: 'graphics/entity/gate/gate-rail-vertical-left.png',
           line_length: 8,
           width: 22,
-          height: 54,
+          height: 62,
           frame_count: 16,
           shift: [
             0,
-            -0.46875
-          ]
+            -0.4375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/gate/hr-gate-rail-vertical-left.png',
+            line_length: 8,
+            width: 42,
+            height: 118,
+            frame_count: 16,
+            shift: [
+              0,
+              -0.40625
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/gate/gate-rail-vertical-shadow-left.png',
           line_length: 8,
-          width: 47,
-          height: 48,
+          width: 44,
+          height: 54,
           frame_count: 16,
           shift: [
-            0.27,
-            0.33875
+            0.25,
+            0.25
           ],
-          draw_as_shadow: true
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/gate/hr-gate-rail-vertical-shadow-left.png',
+            line_length: 8,
+            width: 82,
+            height: 104,
+            frame_count: 16,
+            shift: [
+              0.28125,
+              0.28125
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
         }
       ]
     },
@@ -27270,185 +27319,149 @@ module.exports = {
           filename: 'graphics/entity/gate/gate-rail-vertical-right.png',
           line_length: 8,
           width: 22,
-          height: 55,
+          height: 62,
           frame_count: 16,
           shift: [
             0,
-            -0.453125
-          ]
+            -0.4375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/gate/hr-gate-rail-vertical-right.png',
+            line_length: 8,
+            width: 42,
+            height: 118,
+            frame_count: 16,
+            shift: [
+              0,
+              -0.40625
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/gate/gate-rail-vertical-shadow-right.png',
           line_length: 8,
-          width: 47,
-          height: 47,
+          width: 44,
+          height: 54,
           frame_count: 16,
           shift: [
-            0.27,
-            0.303125
+            0.25,
+            0.25
           ],
-          draw_as_shadow: true
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/gate/hr-gate-rail-vertical-shadow-right.png',
+            line_length: 8,
+            width: 82,
+            height: 104,
+            frame_count: 16,
+            shift: [
+              0.28125,
+              0.28125
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
         }
       ]
     },
     vertical_rail_base: {
       filename: 'graphics/entity/gate/gate-rail-base-vertical.png',
       line_length: 8,
-      width: 64,
-      height: 64,
+      width: 68,
+      height: 66,
       frame_count: 16,
       shift: [
         0,
         0
-      ]
+      ],
+      hr_version: {
+        filename: 'graphics/entity/gate/hr-gate-rail-base-vertical.png',
+        line_length: 8,
+        width: 138,
+        height: 130,
+        frame_count: 16,
+        shift: [
+          -0.03125,
+          0
+        ],
+        scale: 0.5
+      }
     },
     horizontal_rail_base: {
       filename: 'graphics/entity/gate/gate-rail-base-horizontal.png',
       line_length: 8,
-      width: 64,
-      height: 45,
+      width: 66,
+      height: 54,
       frame_count: 16,
       shift: [
         0,
-        0.109375
-      ]
-    },
-    vertical_rail_base_mask: {
-      filename: 'graphics/entity/gate/gate-rail-base-mask-vertical.png',
-      width: 63,
-      height: 39,
-      shift: [
-        0.015625,
-        -0.015625
+        0.0625
       ],
-      apply_runtime_tint: true
-    },
-    horizontal_rail_base_mask: {
-      filename: 'graphics/entity/gate/gate-rail-base-mask-horizontal.png',
-      width: 53,
-      height: 45,
-      shift: [
-        0.015625,
-        0.109375
-      ],
-      apply_runtime_tint: true
-    },
-    horizontal_base: {
-      layers: [
-        {
-          filename: 'graphics/entity/gate/gate-base-horizontal.png',
-          width: 32,
-          height: 23,
-          shift: [
-            0,
-            0.125
-          ]
-        },
-        {
-          filename: 'graphics/entity/gate/gate-base-horizontal-mask.png',
-          width: 32,
-          height: 23,
-          apply_runtime_tint: true,
-          shift: [
-            0,
-            0.125
-          ]
-        }
-      ]
+      hr_version: {
+        filename: 'graphics/entity/gate/hr-gate-rail-base-horizontal.png',
+        line_length: 8,
+        width: 130,
+        height: 104,
+        frame_count: 16,
+        shift: [
+          0,
+          0.09375
+        ],
+        scale: 0.5
+      }
     },
     wall_patch: {
-      north: {
-        layers: [
-          {
-            filename: 'graphics/entity/gate/wall-patch-north.png',
-            width: 22,
-            height: 35,
+      layers: [
+        {
+          filename: 'graphics/entity/gate/gate-wall-patch.png',
+          line_length: 8,
+          width: 34,
+          height: 48,
+          frame_count: 16,
+          shift: [
+            0,
+            0.375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/gate/hr-gate-wall-patch.png',
+            line_length: 8,
+            width: 70,
+            height: 94,
+            frame_count: 16,
             shift: [
-              0,
-              0.38
-            ]
-          },
-          {
-            filename: 'graphics/entity/gate/wall-patch-north-shadow.png',
-            width: 46,
-            height: 31,
-            shift: [
-              0.3,
-              1.2
+              -0.03125,
+              0.40625
             ],
-            draw_as_shadow: true
+            scale: 0.5
           }
-        ]
-      },
-      east: {
-        layers: [
-          {
-            filename: 'graphics/entity/gate/wall-patch-east.png',
-            width: 11,
-            height: 40,
+        },
+        {
+          filename: 'graphics/entity/gate/gate-wall-patch-shadow.png',
+          line_length: 8,
+          width: 44,
+          height: 38,
+          frame_count: 16,
+          shift: [
+            0.25,
+            1
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/gate/hr-gate-wall-patch-shadow.png',
+            line_length: 8,
+            width: 82,
+            height: 72,
+            frame_count: 16,
             shift: [
-              -0.671875,
-              -0.109375
-            ]
-          },
-          {
-            filename: 'graphics/entity/gate/wall-patch-east-shadow.png',
-            width: 38,
-            height: 32,
-            shift: [
-              -0.1875,
-              0.46875
+              0.28125,
+              1.03125
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            scale: 0.5
           }
-        ]
-      },
-      south: {
-        layers: [
-          {
-            filename: 'graphics/entity/gate/wall-patch-south.png',
-            width: 22,
-            height: 40,
-            shift: [
-              0,
-              -1.125
-            ]
-          },
-          {
-            filename: 'graphics/entity/gate/wall-patch-south-shadow.png',
-            width: 48,
-            height: 25,
-            shift: [
-              0.3,
-              0.95
-            ],
-            draw_as_shadow: true
-          }
-        ]
-      },
-      west: {
-        layers: [
-          {
-            filename: 'graphics/entity/gate/wall-patch-west.png',
-            width: 11,
-            height: 40,
-            shift: [
-              0.671875,
-              -0.109375
-            ]
-          },
-          {
-            filename: 'graphics/entity/gate/wall-patch-west-shadow.png',
-            width: 46,
-            height: 32,
-            shift: [
-              1.1875,
-              0.46875
-            ],
-            draw_as_shadow: true
-          }
-        ]
-      }
+        }
+      ]
     },
     open_sound: {
       variations: {
@@ -27480,52 +27493,6 @@ module.exports = {
     ],
     ui_name: 'Gate'
   },
-  player_port: {
-    type: 'player_port',
-    name: 'player_port',
-    icon: 'graphics/icons/player-port.png',
-    icon_size: 32,
-    flags: [
-      'placeable_neutral',
-      'player_creation'
-    ],
-    minable: {
-      mining_time: 1,
-      result: 'player_port'
-    },
-    max_health: 50,
-    collision_box: [
-      [
-        -0.9,
-        -0.9
-      ],
-      [
-        0.9,
-        0.9
-      ]
-    ],
-    selection_box: [
-      [
-        -1,
-        -1
-      ],
-      [
-        1,
-        1
-      ]
-    ],
-    animation: {
-      filename: 'graphics/entity/player-port/player-port-animation.png',
-      width: 64,
-      height: 64,
-      frame_count: 2
-    },
-    size: {
-      width: 2,
-      height: 2
-    },
-    ui_name: 'Player port'
-  },
   straight_rail: {
     type: 'straight_rail',
     name: 'straight_rail',
@@ -27537,7 +27504,7 @@ module.exports = {
       'building_direction_8_way'
     ],
     minable: {
-      mining_time: 0.5,
+      mining_time: 0.2,
       result: 'rail'
     },
     max_health: 100,
@@ -27569,7 +27536,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-horizontal-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 64,
           height: 128,
@@ -27582,7 +27549,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-horizontal-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 128,
             height: 256,
@@ -27598,7 +27565,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-horizontal-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 64,
           height: 128,
@@ -27611,7 +27578,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-horizontal-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 128,
             height: 256,
@@ -27861,7 +27828,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-vertical-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 128,
           height: 64,
@@ -27874,7 +27841,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-vertical-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 256,
             height: 128,
@@ -27890,7 +27857,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-vertical-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 128,
           height: 64,
@@ -27903,7 +27870,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-vertical-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 256,
             height: 128,
@@ -28153,7 +28120,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-diagonal-left-top-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 96,
           height: 96,
@@ -28166,7 +28133,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-diagonal-left-top-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 192,
             height: 192,
@@ -28182,7 +28149,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-diagonal-left-top-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 96,
           height: 96,
@@ -28195,7 +28162,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-diagonal-left-top-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 192,
             height: 192,
@@ -28445,7 +28412,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-diagonal-right-top-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 96,
           height: 96,
@@ -28458,7 +28425,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-diagonal-right-top-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 192,
             height: 192,
@@ -28474,7 +28441,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-diagonal-right-top-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 96,
           height: 96,
@@ -28487,7 +28454,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-diagonal-right-top-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 192,
             height: 192,
@@ -28737,7 +28704,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-diagonal-right-bottom-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 96,
           height: 96,
@@ -28750,7 +28717,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-diagonal-right-bottom-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 192,
             height: 192,
@@ -28766,7 +28733,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-diagonal-right-bottom-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 96,
           height: 96,
@@ -28779,7 +28746,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-diagonal-right-bottom-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 192,
             height: 192,
@@ -29029,7 +28996,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-diagonal-left-bottom-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 96,
           height: 96,
@@ -29042,7 +29009,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-diagonal-left-bottom-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 192,
             height: 192,
@@ -29058,7 +29025,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-diagonal-left-bottom-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 96,
           height: 96,
@@ -29071,7 +29038,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-diagonal-left-bottom-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 192,
             height: 192,
@@ -29321,7 +29288,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-vertical-left-top-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 192,
           height: 288,
@@ -29334,7 +29301,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-vertical-left-top-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 384,
             height: 576,
@@ -29350,7 +29317,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-vertical-left-top-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 192,
           height: 288,
@@ -29363,7 +29330,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-vertical-left-top-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 384,
             height: 576,
@@ -29613,7 +29580,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-vertical-right-top-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 192,
           height: 288,
@@ -29626,7 +29593,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-vertical-right-top-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 384,
             height: 576,
@@ -29642,7 +29609,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-vertical-right-top-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 192,
           height: 288,
@@ -29655,7 +29622,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-vertical-right-top-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 384,
             height: 576,
@@ -29905,7 +29872,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-vertical-right-bottom-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 192,
           height: 288,
@@ -29918,7 +29885,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-vertical-right-bottom-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 384,
             height: 576,
@@ -29934,7 +29901,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-vertical-right-bottom-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 192,
           height: 288,
@@ -29947,7 +29914,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-vertical-right-bottom-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 384,
             height: 576,
@@ -30197,7 +30164,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-vertical-left-bottom-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 192,
           height: 288,
@@ -30210,7 +30177,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-vertical-left-bottom-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 384,
             height: 576,
@@ -30226,7 +30193,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-vertical-left-bottom-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 192,
           height: 288,
@@ -30239,7 +30206,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-vertical-left-bottom-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 384,
             height: 576,
@@ -30489,7 +30456,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-horizontal-left-top-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 288,
           height: 192,
@@ -30502,7 +30469,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-horizontal-left-top-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 576,
             height: 384,
@@ -30518,7 +30485,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-horizontal-left-top-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 288,
           height: 192,
@@ -30531,7 +30498,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-horizontal-left-top-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 576,
             height: 384,
@@ -30781,7 +30748,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-horizontal-right-top-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 288,
           height: 192,
@@ -30794,7 +30761,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-horizontal-right-top-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 576,
             height: 384,
@@ -30810,7 +30777,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-horizontal-right-top-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 288,
           height: 192,
@@ -30823,7 +30790,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-horizontal-right-top-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 576,
             height: 384,
@@ -31073,7 +31040,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-horizontal-right-bottom-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 288,
           height: 192,
@@ -31086,7 +31053,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-horizontal-right-bottom-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 576,
             height: 384,
@@ -31102,7 +31069,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-horizontal-right-bottom-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 288,
           height: 192,
@@ -31115,7 +31082,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-horizontal-right-bottom-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 576,
             height: 384,
@@ -31365,7 +31332,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-horizontal-left-bottom-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 288,
           height: 192,
@@ -31378,7 +31345,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-horizontal-left-bottom-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 576,
             height: 384,
@@ -31394,7 +31361,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-horizontal-left-bottom-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 288,
           height: 192,
@@ -31407,7 +31374,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-horizontal-left-bottom-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 576,
             height: 384,
@@ -31677,7 +31644,7 @@ module.exports = {
             filename: 'graphics/entity/rail-endings/rail-endings-metals.png',
             priority: 'high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 128,
             height: 128,
@@ -31685,7 +31652,7 @@ module.exports = {
               filename: 'graphics/entity/rail-endings/hr-rail-endings-metals.png',
               priority: 'high',
               flags: [
-                'icon'
+                'trilinear_filtering'
               ],
               width: 256,
               height: 256,
@@ -31716,7 +31683,7 @@ module.exports = {
       'building_direction_8_way'
     ],
     minable: {
-      mining_time: 0.5,
+      mining_time: 0.2,
       result: 'rail',
       count: 4
     },
@@ -31759,7 +31726,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-horizontal-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 64,
           height: 128,
@@ -31772,7 +31739,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-horizontal-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 128,
             height: 256,
@@ -31788,7 +31755,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-horizontal-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 64,
           height: 128,
@@ -31801,7 +31768,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-horizontal-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 128,
             height: 256,
@@ -32051,7 +32018,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-vertical-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 128,
           height: 64,
@@ -32064,7 +32031,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-vertical-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 256,
             height: 128,
@@ -32080,7 +32047,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-vertical-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 128,
           height: 64,
@@ -32093,7 +32060,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-vertical-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 256,
             height: 128,
@@ -32343,7 +32310,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-diagonal-left-top-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 96,
           height: 96,
@@ -32356,7 +32323,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-diagonal-left-top-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 192,
             height: 192,
@@ -32372,7 +32339,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-diagonal-left-top-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 96,
           height: 96,
@@ -32385,7 +32352,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-diagonal-left-top-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 192,
             height: 192,
@@ -32635,7 +32602,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-diagonal-right-top-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 96,
           height: 96,
@@ -32648,7 +32615,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-diagonal-right-top-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 192,
             height: 192,
@@ -32664,7 +32631,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-diagonal-right-top-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 96,
           height: 96,
@@ -32677,7 +32644,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-diagonal-right-top-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 192,
             height: 192,
@@ -32927,7 +32894,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-diagonal-right-bottom-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 96,
           height: 96,
@@ -32940,7 +32907,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-diagonal-right-bottom-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 192,
             height: 192,
@@ -32956,7 +32923,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-diagonal-right-bottom-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 96,
           height: 96,
@@ -32969,7 +32936,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-diagonal-right-bottom-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 192,
             height: 192,
@@ -33219,7 +33186,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-diagonal-left-bottom-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 96,
           height: 96,
@@ -33232,7 +33199,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-diagonal-left-bottom-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 192,
             height: 192,
@@ -33248,7 +33215,7 @@ module.exports = {
           filename: 'graphics/entity/straight-rail/straight-rail-diagonal-left-bottom-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 96,
           height: 96,
@@ -33261,7 +33228,7 @@ module.exports = {
             filename: 'graphics/entity/straight-rail/hr-straight-rail-diagonal-left-bottom-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 192,
             height: 192,
@@ -33511,7 +33478,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-vertical-left-top-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 192,
           height: 288,
@@ -33524,7 +33491,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-vertical-left-top-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 384,
             height: 576,
@@ -33540,7 +33507,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-vertical-left-top-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 192,
           height: 288,
@@ -33553,7 +33520,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-vertical-left-top-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 384,
             height: 576,
@@ -33803,7 +33770,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-vertical-right-top-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 192,
           height: 288,
@@ -33816,7 +33783,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-vertical-right-top-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 384,
             height: 576,
@@ -33832,7 +33799,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-vertical-right-top-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 192,
           height: 288,
@@ -33845,7 +33812,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-vertical-right-top-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 384,
             height: 576,
@@ -34095,7 +34062,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-vertical-right-bottom-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 192,
           height: 288,
@@ -34108,7 +34075,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-vertical-right-bottom-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 384,
             height: 576,
@@ -34124,7 +34091,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-vertical-right-bottom-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 192,
           height: 288,
@@ -34137,7 +34104,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-vertical-right-bottom-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 384,
             height: 576,
@@ -34387,7 +34354,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-vertical-left-bottom-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 192,
           height: 288,
@@ -34400,7 +34367,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-vertical-left-bottom-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 384,
             height: 576,
@@ -34416,7 +34383,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-vertical-left-bottom-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 192,
           height: 288,
@@ -34429,7 +34396,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-vertical-left-bottom-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 384,
             height: 576,
@@ -34679,7 +34646,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-horizontal-left-top-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 288,
           height: 192,
@@ -34692,7 +34659,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-horizontal-left-top-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 576,
             height: 384,
@@ -34708,7 +34675,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-horizontal-left-top-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 288,
           height: 192,
@@ -34721,7 +34688,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-horizontal-left-top-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 576,
             height: 384,
@@ -34971,7 +34938,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-horizontal-right-top-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 288,
           height: 192,
@@ -34984,7 +34951,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-horizontal-right-top-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 576,
             height: 384,
@@ -35000,7 +34967,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-horizontal-right-top-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 288,
           height: 192,
@@ -35013,7 +34980,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-horizontal-right-top-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 576,
             height: 384,
@@ -35263,7 +35230,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-horizontal-right-bottom-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 288,
           height: 192,
@@ -35276,7 +35243,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-horizontal-right-bottom-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 576,
             height: 384,
@@ -35292,7 +35259,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-horizontal-right-bottom-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 288,
           height: 192,
@@ -35305,7 +35272,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-horizontal-right-bottom-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 576,
             height: 384,
@@ -35555,7 +35522,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-horizontal-left-bottom-metals.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 288,
           height: 192,
@@ -35568,7 +35535,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-horizontal-left-bottom-metals.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 576,
             height: 384,
@@ -35584,7 +35551,7 @@ module.exports = {
           filename: 'graphics/entity/curved-rail/curved-rail-horizontal-left-bottom-backplates.png',
           priority: 'extra_high',
           flags: [
-            'icon'
+            'trilinear_filtering'
           ],
           width: 288,
           height: 192,
@@ -35597,7 +35564,7 @@ module.exports = {
             filename: 'graphics/entity/curved-rail/hr-curved-rail-horizontal-left-bottom-backplates.png',
             priority: 'extra_high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 576,
             height: 384,
@@ -35867,7 +35834,7 @@ module.exports = {
             filename: 'graphics/entity/rail-endings/rail-endings-metals.png',
             priority: 'high',
             flags: [
-              'icon'
+              'trilinear_filtering'
             ],
             width: 128,
             height: 128,
@@ -35875,7 +35842,7 @@ module.exports = {
               filename: 'graphics/entity/rail-endings/hr-rail-endings-metals.png',
               priority: 'high',
               flags: [
-                'icon'
+                'trilinear_filtering'
               ],
               width: 256,
               height: 256,
@@ -35908,7 +35875,7 @@ module.exports = {
       'not_on_map'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.5,
       result: 'land_mine'
     },
     mined_sound: {
@@ -35975,7 +35942,7 @@ module.exports = {
       'filter_directions'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.2,
       result: 'train_stop'
     },
     max_health: 250,
@@ -37174,10 +37141,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 280,
-          y: 168,
+          y: 162,
           shift: [
             0.296875,
             -1.578125
@@ -37294,10 +37261,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 140,
-          y: 168,
+          y: 162,
           shift: [
             -0.515625,
             -1.640625
@@ -37414,10 +37381,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 0,
-          y: 168,
+          y: 162,
           shift: [
             0,
             -2.65625
@@ -37534,10 +37501,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 350,
-          y: 56,
+          y: 54,
           shift: [
             0.484375,
             -1.0625
@@ -37641,7 +37608,7 @@ module.exports = {
     ],
     fast_replaceable_group: 'rail_signal',
     minable: {
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'rail_signal'
     },
     max_health: 100,
@@ -37947,7 +37914,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 280,
           y: 0,
@@ -38067,7 +38034,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 210,
           y: 0,
@@ -38187,7 +38154,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 140,
           y: 0,
@@ -38307,7 +38274,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 70,
           y: 0,
@@ -38427,7 +38394,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 0,
           y: 0,
@@ -38547,7 +38514,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 490,
           y: 0,
@@ -38667,7 +38634,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 420,
           y: 0,
@@ -38787,7 +38754,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 350,
           y: 0,
@@ -38906,7 +38873,7 @@ module.exports = {
     ],
     fast_replaceable_group: 'rail_signal',
     minable: {
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'rail_chain_signal'
     },
     max_health: 100,
@@ -39264,7 +39231,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 420,
           y: 0,
@@ -39384,7 +39351,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 350,
           y: 0,
@@ -39504,7 +39471,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 280,
           y: 0,
@@ -39624,7 +39591,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 210,
           y: 0,
@@ -39744,7 +39711,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 140,
           y: 0,
@@ -39864,7 +39831,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 70,
           y: 0,
@@ -39984,7 +39951,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 0,
           y: 0,
@@ -40104,7 +40071,7 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 490,
           y: 0,
@@ -40213,242 +40180,6 @@ module.exports = {
     ui_name: 'Rail chain signal',
     description: 'Reads the next signals in the path to allow better control of the trains.'
   },
-  lab: {
-    type: 'lab',
-    name: 'lab',
-    icon: 'graphics/icons/lab.png',
-    icon_size: 32,
-    flags: [
-      'placeable_player',
-      'player_creation'
-    ],
-    minable: {
-      mining_time: 1,
-      result: 'lab'
-    },
-    max_health: 150,
-    corpse: 'big_remnants',
-    dying_explosion: 'medium_explosion',
-    collision_box: [
-      [
-        -1.2,
-        -1.2
-      ],
-      [
-        1.2,
-        1.2
-      ]
-    ],
-    selection_box: [
-      [
-        -1.5,
-        -1.5
-      ],
-      [
-        1.5,
-        1.5
-      ]
-    ],
-    light: {
-      intensity: 0.75,
-      size: 8,
-      color: {
-        r: 1,
-        g: 1,
-        b: 1
-      }
-    },
-    on_animation: {
-      layers: [
-        {
-          filename: 'graphics/entity/lab/lab.png',
-          width: 98,
-          height: 87,
-          frame_count: 33,
-          line_length: 11,
-          animation_speed: 0.3333333333333333,
-          shift: [
-            0,
-            0.046875
-          ],
-          hr_version: {
-            filename: 'graphics/entity/lab/hr-lab.png',
-            width: 194,
-            height: 174,
-            frame_count: 33,
-            line_length: 11,
-            animation_speed: 0.3333333333333333,
-            shift: [
-              0,
-              0.046875
-            ],
-            scale: 0.5
-          }
-        },
-        {
-          filename: 'graphics/entity/lab/lab-integration.png',
-          width: 122,
-          height: 81,
-          frame_count: 1,
-          line_length: 1,
-          repeat_count: 33,
-          animation_speed: 0.3333333333333333,
-          shift: [
-            0,
-            0.484375
-          ],
-          hr_version: {
-            filename: 'graphics/entity/lab/hr-lab-integration.png',
-            width: 242,
-            height: 162,
-            frame_count: 1,
-            line_length: 1,
-            repeat_count: 33,
-            animation_speed: 0.3333333333333333,
-            shift: [
-              0,
-              0.484375
-            ],
-            scale: 0.5
-          }
-        },
-        {
-          filename: 'graphics/entity/lab/lab-shadow.png',
-          width: 122,
-          height: 68,
-          frame_count: 1,
-          line_length: 1,
-          repeat_count: 33,
-          animation_speed: 0.3333333333333333,
-          shift: [
-            0.40625,
-            0.34375
-          ],
-          draw_as_shadow: true,
-          hr_version: {
-            filename: 'graphics/entity/lab/hr-lab-shadow.png',
-            width: 242,
-            height: 136,
-            frame_count: 1,
-            line_length: 1,
-            repeat_count: 33,
-            animation_speed: 0.3333333333333333,
-            shift: [
-              0.40625,
-              0.34375
-            ],
-            scale: 0.5,
-            draw_as_shadow: true
-          }
-        }
-      ]
-    },
-    off_animation: {
-      layers: [
-        {
-          filename: 'graphics/entity/lab/lab.png',
-          width: 98,
-          height: 87,
-          frame_count: 1,
-          shift: [
-            0,
-            0.046875
-          ],
-          hr_version: {
-            filename: 'graphics/entity/lab/hr-lab.png',
-            width: 194,
-            height: 174,
-            frame_count: 1,
-            shift: [
-              0,
-              0.046875
-            ],
-            scale: 0.5
-          }
-        },
-        {
-          filename: 'graphics/entity/lab/lab-integration.png',
-          width: 122,
-          height: 81,
-          frame_count: 1,
-          shift: [
-            0,
-            0.484375
-          ],
-          hr_version: {
-            filename: 'graphics/entity/lab/hr-lab-integration.png',
-            width: 242,
-            height: 162,
-            frame_count: 1,
-            shift: [
-              0,
-              0.484375
-            ],
-            scale: 0.5
-          }
-        },
-        {
-          filename: 'graphics/entity/lab/lab-shadow.png',
-          width: 122,
-          height: 68,
-          frame_count: 1,
-          shift: [
-            0.40625,
-            0.34375
-          ],
-          draw_as_shadow: true,
-          hr_version: {
-            filename: 'graphics/entity/lab/hr-lab-shadow.png',
-            width: 242,
-            height: 136,
-            frame_count: 1,
-            shift: [
-              0.40625,
-              0.34375
-            ],
-            draw_as_shadow: true,
-            scale: 0.5
-          }
-        }
-      ]
-    },
-    working_sound: {
-      sound: {
-        filename: 'sound/lab.ogg',
-        volume: 0.7
-      },
-      apparent_volume: 1
-    },
-    energy_source: {
-      type: 'electric',
-      usage_priority: 'secondary_input'
-    },
-    energy_usage: '60kW',
-    researching_speed: 1,
-    inputs: [
-      'science_pack_1',
-      'science_pack_2',
-      'science_pack_3',
-      'military_science_pack',
-      'production_science_pack',
-      'high_tech_science_pack',
-      'space_science_pack'
-    ],
-    module_specification: {
-      module_slots: 2,
-      max_entity_info_module_icons_per_row: 3,
-      max_entity_info_module_icon_rows: 1,
-      module_info_icon_shift: [
-        0,
-        0.9
-      ]
-    },
-    size: {
-      width: 3,
-      height: 3
-    },
-    ui_name: 'Lab'
-  },
   logistic_chest_passive_provider: {
     type: 'logistic_container',
     name: 'logistic_chest_passive_provider',
@@ -40459,8 +40190,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'logistic_chest_passive_provider'
     },
     max_health: 350,
@@ -40496,14 +40226,57 @@ module.exports = {
       filename: 'sound/metallic-chest-close.ogg',
       volume: 0.7
     },
-    picture: {
-      filename: 'graphics/entity/logistic-chest/logistic-chest-passive-provider.png',
-      priority: 'extra_high',
-      width: 38,
-      height: 32,
-      shift: [
-        0.09375,
-        0
+    opened_duration: 7,
+    animation: {
+      layers: [
+        {
+          filename: 'graphics/entity/logistic-chest/logistic-chest-passive-provider.png',
+          priority: 'extra_high',
+          width: 34,
+          height: 38,
+          frame_count: 7,
+          shift: [
+            0,
+            -0.0625
+          ],
+          hr_version: {
+            filename: 'graphics/entity/logistic-chest/hr-logistic-chest-passive-provider.png',
+            priority: 'extra_high',
+            width: 66,
+            height: 74,
+            frame_count: 7,
+            shift: [
+              0,
+              -0.0625
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/logistic-chest/logistic-chest-shadow.png',
+          priority: 'extra_high',
+          width: 48,
+          height: 24,
+          repeat_count: 7,
+          shift: [
+            0.265625,
+            0.171875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/logistic-chest/hr-logistic-chest-shadow.png',
+            priority: 'extra_high',
+            width: 96,
+            height: 44,
+            repeat_count: 7,
+            shift: [
+              0.265625,
+              0.15625
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
+        }
       ]
     },
     circuit_wire_connection_point: {
@@ -40574,10 +40347,10 @@ module.exports = {
         priority: 'low',
         draw_as_shadow: true,
         width: 70,
-        height: 56,
+        height: 54,
         scale: 0.5,
         x: 140,
-        y: 168,
+        y: 162,
         shift: [
           0.25,
           0.296875
@@ -40666,8 +40439,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'logistic_chest_active_provider'
     },
     max_health: 350,
@@ -40703,14 +40475,57 @@ module.exports = {
       filename: 'sound/metallic-chest-close.ogg',
       volume: 0.7
     },
-    picture: {
-      filename: 'graphics/entity/logistic-chest/logistic-chest-active-provider.png',
-      priority: 'extra_high',
-      width: 38,
-      height: 32,
-      shift: [
-        0.09375,
-        0
+    opened_duration: 7,
+    animation: {
+      layers: [
+        {
+          filename: 'graphics/entity/logistic-chest/logistic-chest-active-provider.png',
+          priority: 'extra_high',
+          width: 34,
+          height: 38,
+          frame_count: 7,
+          shift: [
+            0,
+            -0.0625
+          ],
+          hr_version: {
+            filename: 'graphics/entity/logistic-chest/hr-logistic-chest-active-provider.png',
+            priority: 'extra_high',
+            width: 66,
+            height: 74,
+            frame_count: 7,
+            shift: [
+              0,
+              -0.0625
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/logistic-chest/logistic-chest-shadow.png',
+          priority: 'extra_high',
+          width: 48,
+          height: 24,
+          repeat_count: 7,
+          shift: [
+            0.265625,
+            0.171875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/logistic-chest/hr-logistic-chest-shadow.png',
+            priority: 'extra_high',
+            width: 96,
+            height: 44,
+            repeat_count: 7,
+            shift: [
+              0.265625,
+              0.15625
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
+        }
       ]
     },
     circuit_wire_connection_point: {
@@ -40781,10 +40596,10 @@ module.exports = {
         priority: 'low',
         draw_as_shadow: true,
         width: 70,
-        height: 56,
+        height: 54,
         scale: 0.5,
         x: 140,
-        y: 168,
+        y: 162,
         shift: [
           0.25,
           0.296875
@@ -40873,8 +40688,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'logistic_chest_storage'
     },
     max_health: 350,
@@ -40911,14 +40725,57 @@ module.exports = {
       filename: 'sound/metallic-chest-close.ogg',
       volume: 0.7
     },
-    picture: {
-      filename: 'graphics/entity/logistic-chest/logistic-chest-storage.png',
-      priority: 'extra_high',
-      width: 38,
-      height: 32,
-      shift: [
-        0.09375,
-        0
+    opened_duration: 7,
+    animation: {
+      layers: [
+        {
+          filename: 'graphics/entity/logistic-chest/logistic-chest-storage.png',
+          priority: 'extra_high',
+          width: 34,
+          height: 38,
+          frame_count: 7,
+          shift: [
+            0,
+            -0.0625
+          ],
+          hr_version: {
+            filename: 'graphics/entity/logistic-chest/hr-logistic-chest-storage.png',
+            priority: 'extra_high',
+            width: 66,
+            height: 74,
+            frame_count: 7,
+            shift: [
+              0,
+              -0.0625
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/logistic-chest/logistic-chest-shadow.png',
+          priority: 'extra_high',
+          width: 48,
+          height: 24,
+          repeat_count: 7,
+          shift: [
+            0.265625,
+            0.171875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/logistic-chest/hr-logistic-chest-shadow.png',
+            priority: 'extra_high',
+            width: 96,
+            height: 44,
+            repeat_count: 7,
+            shift: [
+              0.265625,
+              0.15625
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
+        }
       ]
     },
     circuit_wire_connection_point: {
@@ -40989,10 +40846,10 @@ module.exports = {
         priority: 'low',
         draw_as_shadow: true,
         width: 70,
-        height: 56,
+        height: 54,
         scale: 0.5,
         x: 140,
-        y: 168,
+        y: 162,
         shift: [
           0.25,
           0.296875
@@ -41081,8 +40938,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'logistic_chest_buffer'
     },
     max_health: 350,
@@ -41119,14 +40975,57 @@ module.exports = {
       filename: 'sound/metallic-chest-close.ogg',
       volume: 0.7
     },
-    picture: {
-      filename: 'graphics/entity/logistic-chest/logistic-chest-buffer.png',
-      priority: 'extra_high',
-      width: 38,
-      height: 32,
-      shift: [
-        0.09375,
-        0
+    opened_duration: 7,
+    animation: {
+      layers: [
+        {
+          filename: 'graphics/entity/logistic-chest/logistic-chest-buffer.png',
+          priority: 'extra_high',
+          width: 34,
+          height: 38,
+          frame_count: 7,
+          shift: [
+            0,
+            -0.0625
+          ],
+          hr_version: {
+            filename: 'graphics/entity/logistic-chest/hr-logistic-chest-buffer.png',
+            priority: 'extra_high',
+            width: 66,
+            height: 72,
+            frame_count: 7,
+            shift: [
+              0,
+              -0.0625
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/logistic-chest/logistic-chest-shadow.png',
+          priority: 'extra_high',
+          width: 48,
+          height: 24,
+          repeat_count: 7,
+          shift: [
+            0.265625,
+            0.171875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/logistic-chest/hr-logistic-chest-shadow.png',
+            priority: 'extra_high',
+            width: 96,
+            height: 44,
+            repeat_count: 7,
+            shift: [
+              0.265625,
+              0.15625
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
+        }
       ]
     },
     circuit_wire_connection_point: {
@@ -41197,10 +41096,10 @@ module.exports = {
         priority: 'low',
         draw_as_shadow: true,
         width: 70,
-        height: 56,
+        height: 54,
         scale: 0.5,
         x: 140,
-        y: 168,
+        y: 162,
         shift: [
           0.25,
           0.296875
@@ -41289,8 +41188,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'logistic_chest_requester'
     },
     max_health: 350,
@@ -41327,14 +41225,57 @@ module.exports = {
       filename: 'sound/metallic-chest-close.ogg',
       volume: 0.7
     },
-    picture: {
-      filename: 'graphics/entity/logistic-chest/logistic-chest-requester.png',
-      priority: 'extra_high',
-      width: 38,
-      height: 32,
-      shift: [
-        0.09375,
-        0
+    opened_duration: 7,
+    animation: {
+      layers: [
+        {
+          filename: 'graphics/entity/logistic-chest/logistic-chest-requester.png',
+          priority: 'extra_high',
+          width: 34,
+          height: 38,
+          frame_count: 7,
+          shift: [
+            0,
+            -0.0625
+          ],
+          hr_version: {
+            filename: 'graphics/entity/logistic-chest/hr-logistic-chest-requester.png',
+            priority: 'extra_high',
+            width: 66,
+            height: 74,
+            frame_count: 7,
+            shift: [
+              0,
+              -0.0625
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/logistic-chest/logistic-chest-shadow.png',
+          priority: 'extra_high',
+          width: 48,
+          height: 24,
+          repeat_count: 7,
+          shift: [
+            0.265625,
+            0.171875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/logistic-chest/hr-logistic-chest-shadow.png',
+            priority: 'extra_high',
+            width: 96,
+            height: 44,
+            repeat_count: 7,
+            shift: [
+              0.265625,
+              0.15625
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
+        }
       ]
     },
     circuit_wire_connection_point: {
@@ -41405,10 +41346,10 @@ module.exports = {
         priority: 'low',
         draw_as_shadow: true,
         width: 70,
-        height: 56,
+        height: 54,
         scale: 0.5,
         x: 140,
-        y: 168,
+        y: 162,
         shift: [
           0.25,
           0.296875
@@ -41499,7 +41440,6 @@ module.exports = {
     crafting_categories: [
       'rocket_building'
     ],
-    ingredient_count: 3,
     rocket_parts_required: 100,
     crafting_speed: 1,
     rocket_result_inventory_size: 1,
@@ -41511,6 +41451,7 @@ module.exports = {
       ]
     },
     fixed_recipe: 'rocket_part',
+    show_recipe_icon: false,
     allowed_effects: [
       'consumption',
       'speed',
@@ -41518,8 +41459,7 @@ module.exports = {
       'pollution'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 5,
+      mining_time: 1,
       result: 'rocket_silo'
     },
     max_health: 5000,
@@ -41527,22 +41467,32 @@ module.exports = {
     dying_explosion: 'medium_explosion',
     collision_box: [
       [
-        -4.2,
-        -4.7
+        -4.4,
+        -4.4
       ],
       [
-        4.2,
-        4.7
+        4.4,
+        4.4
       ]
     ],
     selection_box: [
       [
         -4.5,
-        -5
+        -4.5
       ],
       [
         4.5,
-        5
+        4.5
+      ]
+    ],
+    hole_clipping_box: [
+      [
+        -2.75,
+        -1.15
+      ],
+      [
+        2.75,
+        2.25
       ]
     ],
     energy_source: {
@@ -41557,58 +41507,6 @@ module.exports = {
     times_to_blink: 3,
     light_blinking_speed: 0.005555555555555556,
     door_opening_speed: 0.00392156862745098,
-    base_light: [
-      {
-        type: 'oriented',
-        picture: {
-          filename: 'graphics/light-cone.png',
-          priority: 'extra_high',
-          flags: [
-            'light'
-          ],
-          scale: 2,
-          width: 200,
-          height: 200
-        },
-        shift: [
-          0.25,
-          1.25
-        ],
-        size: 1,
-        intensity: 1,
-        rotation_shift: 0.6,
-        color: {
-          r: 0.7,
-          g: 0.9,
-          b: 1
-        }
-      },
-      {
-        type: 'oriented',
-        picture: {
-          filename: 'graphics/light-cone.png',
-          priority: 'extra_high',
-          flags: [
-            'light'
-          ],
-          scale: 2,
-          width: 200,
-          height: 200
-        },
-        shift: [
-          -0.25,
-          1
-        ],
-        size: 1,
-        intensity: 1,
-        rotation_shift: 0.5,
-        color: {
-          r: 0.7,
-          g: 0.9,
-          b: 1
-        }
-      }
-    ],
     base_engine_light: {
       intensity: 1,
       size: 25,
@@ -41618,111 +41516,184 @@ module.exports = {
       ]
     },
     shadow_sprite: {
-      filename: 'graphics/entity/rocket-silo/00-shadow/00-silo-shadow.png',
+      filename: 'graphics/entity/rocket-silo/00-rocket-silo-shadow.png',
       priority: 'medium',
-      width: 447,
-      height: 351,
+      width: 304,
+      height: 290,
       draw_as_shadow: true,
       slice: 2,
       shift: [
-        1.5,
-        0.5
-      ]
-    },
-    satellite_shadow_animation: {
-      filename: 'graphics/entity/rocket-silo/00-shadow/00-satellite-shadow.png',
-      priority: 'medium',
-      width: 44,
-      height: 22,
-      frame_count: 12,
-      line_length: 4,
-      animation_speed: 0.25,
-      draw_as_shadow: true,
-      shift: [
-        7.875,
-        -2.1875
-      ]
+        0.25,
+        0.0625
+      ],
+      hr_version: {
+        filename: 'graphics/entity/rocket-silo/hr-00-rocket-silo-shadow.png',
+        priority: 'medium',
+        width: 612,
+        height: 578,
+        draw_as_shadow: true,
+        slice: 2,
+        shift: [
+          0.21875,
+          0.0625
+        ],
+        scale: 0.5
+      }
     },
     hole_sprite: {
-      filename: 'graphics/entity/rocket-silo/01-hole/01-hole.png',
-      width: 224,
-      height: 128,
+      filename: 'graphics/entity/rocket-silo/01-rocket-silo-hole.png',
+      width: 202,
+      height: 136,
       shift: [
-        0,
-        2
-      ]
+        -0.1875,
+        0.5
+      ],
+      hr_version: {
+        filename: 'graphics/entity/rocket-silo/hr-01-rocket-silo-hole.png',
+        width: 400,
+        height: 270,
+        shift: [
+          -0.15625,
+          0.5
+        ],
+        scale: 0.5
+      }
     },
     hole_light_sprite: {
-      filename: 'graphics/entity/rocket-silo/01-hole/01-hole-light.png',
-      width: 224,
-      height: 128,
+      filename: 'graphics/entity/rocket-silo/01-rocket-silo-hole-light.png',
+      width: 202,
+      height: 136,
       shift: [
-        0,
-        2
-      ]
+        -0.1875,
+        0.5
+      ],
+      tint: [
+        1,
+        1,
+        1,
+        0
+      ],
+      hr_version: {
+        filename: 'graphics/entity/rocket-silo/hr-01-rocket-silo-hole-light.png',
+        width: 400,
+        height: 270,
+        shift: [
+          -0.15625,
+          0.5
+        ],
+        tint: [
+          1,
+          1,
+          1,
+          0
+        ],
+        scale: 0.5
+      }
     },
     rocket_shadow_overlay_sprite: {
-      filename: 'graphics/entity/rocket-silo/03-12-rocket-over/03-rocket-over-shadow-over-rocket.png',
-      width: 224,
-      height: 128,
+      filename: 'graphics/entity/rocket-silo/03-rocket-over-shadow-over-rocket.png',
+      width: 212,
+      height: 142,
       shift: [
-        0,
-        2
-      ]
+        -0.0625,
+        0.6875
+      ],
+      hr_version: {
+        filename: 'graphics/entity/rocket-silo/hr-03-rocket-over-shadow-over-rocket.png',
+        width: 426,
+        height: 288,
+        shift: [
+          -0.0625,
+          0.65625
+        ],
+        scale: 0.5
+      }
     },
     rocket_glow_overlay_sprite: {
-      filename: 'graphics/entity/rocket-silo/03-12-rocket-over/03-rocket-over-glow.png',
+      filename: 'graphics/entity/rocket-silo/03-rocket-over-glow.png',
       blend_mode: 'additive',
-      width: 224,
-      height: 128,
+      width: 218,
+      height: 222,
       shift: [
-        0,
-        2
-      ]
+        -0.125,
+        1.125
+      ],
+      hr_version: {
+        filename: 'graphics/entity/rocket-silo/hr-03-rocket-over-glow.png',
+        blend_mode: 'additive',
+        width: 434,
+        height: 446,
+        shift: [
+          -0.09375,
+          1.125
+        ],
+        scale: 0.5
+      }
     },
     door_back_sprite: {
-      filename: 'graphics/entity/rocket-silo/04-05-doors/04-door-back.png',
-      width: 192,
-      height: 108,
+      filename: 'graphics/entity/rocket-silo/04-door-back.png',
+      width: 158,
+      height: 144,
       shift: [
-        0,
-        1.53125
-      ]
+        1.125,
+        0.375
+      ],
+      hr_version: {
+        filename: 'graphics/entity/rocket-silo/hr-04-door-back.png',
+        width: 312,
+        height: 286,
+        shift: [
+          1.15625,
+          0.375
+        ],
+        scale: 0.5
+      }
     },
     door_back_open_offset: [
-      1.75,
-      -1.75
+      1.8,
+      -0.77938605
     ],
     door_front_sprite: {
-      filename: 'graphics/entity/rocket-silo/04-05-doors/05-door-front.png',
-      width: 192,
-      height: 112,
+      filename: 'graphics/entity/rocket-silo/05-door-front.png',
+      width: 166,
+      height: 152,
       shift: [
-        0,
-        2.0625
-      ]
+        -0.875,
+        1
+      ],
+      hr_version: {
+        filename: 'graphics/entity/rocket-silo/hr-05-door-front.png',
+        width: 332,
+        height: 300,
+        shift: [
+          -0.875,
+          1.03125
+        ],
+        scale: 0.5
+      }
     },
     door_front_open_offset: [
-      -1.75,
-      1.75
+      -1.8,
+      0.77938605
     ],
     base_day_sprite: {
-      filename: 'graphics/entity/rocket-silo/06-silo-base/06-silo-base-day.png',
-      width: 352,
-      height: 384,
+      filename: 'graphics/entity/rocket-silo/06-rocket-silo.png',
+      width: 300,
+      height: 300,
       shift: [
-        0,
-        0
-      ]
-    },
-    base_night_sprite: {
-      filename: 'graphics/entity/rocket-silo/06-silo-base/06-silo-base-night.png',
-      width: 352,
-      height: 384,
-      shift: [
-        0,
-        0
-      ]
+        0.0625,
+        -0.0625
+      ],
+      hr_version: {
+        filename: 'graphics/entity/rocket-silo/hr-06-rocket-silo.png',
+        width: 608,
+        height: 596,
+        shift: [
+          0.09375,
+          -0.03125
+        ],
+        scale: 0.5
+      }
     },
     red_lights_back_sprites: {
       layers: [
@@ -41732,8 +41703,18 @@ module.exports = {
           height: 32,
           shift: [
             1.34375,
-            0.28125
-          ]
+            -1.09375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/rocket-silo/07-red-lights-back/hr-red-light.png',
+            width: 32,
+            height: 32,
+            shift: [
+              1.34375,
+              -1.09375
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/rocket-silo/07-red-lights-back/red-light.png',
@@ -41741,8 +41722,18 @@ module.exports = {
           height: 32,
           shift: [
             2.3125,
-            0.9375
-          ]
+            -0.4375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/rocket-silo/07-red-lights-back/hr-red-light.png',
+            width: 32,
+            height: 32,
+            shift: [
+              2.3125,
+              -0.4375
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/rocket-silo/07-red-lights-back/red-light.png',
@@ -41750,8 +41741,18 @@ module.exports = {
           height: 32,
           shift: [
             2.65625,
-            1.90625
-          ]
+            0.53125
+          ],
+          hr_version: {
+            filename: 'graphics/entity/rocket-silo/07-red-lights-back/hr-red-light.png',
+            width: 32,
+            height: 32,
+            shift: [
+              2.65625,
+              0.53125
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/rocket-silo/07-red-lights-back/red-light.png',
@@ -41759,8 +41760,18 @@ module.exports = {
           height: 32,
           shift: [
             -2.65625,
-            1.90625
-          ]
+            0.53125
+          ],
+          hr_version: {
+            filename: 'graphics/entity/rocket-silo/07-red-lights-back/hr-red-light.png',
+            width: 32,
+            height: 32,
+            shift: [
+              -2.65625,
+              0.53125
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/rocket-silo/07-red-lights-back/red-light.png',
@@ -41768,8 +41779,18 @@ module.exports = {
           height: 32,
           shift: [
             -2.3125,
-            0.9375
-          ]
+            -0.4375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/rocket-silo/07-red-lights-back/hr-red-light.png',
+            width: 32,
+            height: 32,
+            shift: [
+              -2.3125,
+              -0.4375
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/rocket-silo/07-red-lights-back/red-light.png',
@@ -41777,8 +41798,18 @@ module.exports = {
           height: 32,
           shift: [
             -1.34375,
-            0.28125
-          ]
+            -1.09375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/rocket-silo/07-red-lights-back/hr-red-light.png',
+            width: 32,
+            height: 32,
+            shift: [
+              -1.34375,
+              -1.09375
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/rocket-silo/07-red-lights-back/red-light.png',
@@ -41786,8 +41817,18 @@ module.exports = {
           height: 32,
           shift: [
             0,
-            0
-          ]
+            -1.375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/rocket-silo/07-red-lights-back/hr-red-light.png',
+            width: 32,
+            height: 32,
+            shift: [
+              0,
+              -1.375
+            ],
+            scale: 0.5
+          }
         }
       ]
     },
@@ -41799,8 +41840,18 @@ module.exports = {
           height: 32,
           shift: [
             2.3125,
-            2.8125
-          ]
+            1.4375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/rocket-silo/07-red-lights-back/hr-red-light.png',
+            width: 32,
+            height: 32,
+            shift: [
+              2.3125,
+              1.4375
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/rocket-silo/07-red-lights-back/red-light.png',
@@ -41808,8 +41859,18 @@ module.exports = {
           height: 32,
           shift: [
             1.34375,
-            3.40625
-          ]
+            2.03125
+          ],
+          hr_version: {
+            filename: 'graphics/entity/rocket-silo/07-red-lights-back/hr-red-light.png',
+            width: 32,
+            height: 32,
+            shift: [
+              1.34375,
+              2.03125
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/rocket-silo/07-red-lights-back/red-light.png',
@@ -41817,8 +41878,18 @@ module.exports = {
           height: 32,
           shift: [
             0,
-            3.75
-          ]
+            2.375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/rocket-silo/07-red-lights-back/hr-red-light.png',
+            width: 32,
+            height: 32,
+            shift: [
+              0,
+              2.375
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/rocket-silo/07-red-lights-back/red-light.png',
@@ -41826,8 +41897,18 @@ module.exports = {
           height: 32,
           shift: [
             -1.34375,
-            3.40625
-          ]
+            2.03125
+          ],
+          hr_version: {
+            filename: 'graphics/entity/rocket-silo/07-red-lights-back/hr-red-light.png',
+            width: 32,
+            height: 32,
+            shift: [
+              0,
+              2.375
+            ],
+            scale: 0.5
+          }
         },
         {
           filename: 'graphics/entity/rocket-silo/07-red-lights-back/red-light.png',
@@ -41835,71 +41916,147 @@ module.exports = {
           height: 32,
           shift: [
             -2.3125,
-            2.8125
-          ]
+            1.4375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/rocket-silo/07-red-lights-back/hr-red-light.png',
+            width: 32,
+            height: 32,
+            shift: [
+              -2.3125,
+              1.4375
+            ],
+            scale: 0.5
+          }
         }
       ]
     },
     satellite_animation: {
-      filename: 'graphics/entity/rocket-silo/08-arms-back-satellite-animation/satellite.png',
+      filename: 'graphics/entity/rocket-silo/15-rocket-silo-turbine.png',
       priority: 'medium',
-      width: 27,
-      height: 28,
-      frame_count: 12,
-      line_length: 4,
-      animation_speed: 0.25,
+      width: 28,
+      height: 46,
+      frame_count: 32,
+      line_length: 8,
+      animation_speed: 0.4,
       shift: [
-        3.3125,
-        -4.82813
-      ]
+        -3.125,
+        3.4375
+      ],
+      hr_version: {
+        filename: 'graphics/entity/rocket-silo/hr-15-rocket-silo-turbine.png',
+        priority: 'medium',
+        width: 54,
+        height: 88,
+        frame_count: 32,
+        line_length: 8,
+        animation_speed: 0.4,
+        shift: [
+          -3.125,
+          3.46875
+        ],
+        scale: 0.5
+      }
     },
     arm_01_back_animation: {
-      filename: 'graphics/entity/rocket-silo/08-arms-back-satellite-animation/arm-01-back.png',
+      filename: 'graphics/entity/rocket-silo/08-rocket-silo-arms-back.png',
       priority: 'medium',
-      width: 54,
-      height: 50,
-      frame_count: 12,
-      line_length: 4,
-      animation_speed: 0.2,
+      width: 66,
+      height: 76,
+      frame_count: 32,
+      line_length: 32,
+      animation_speed: 0.3,
       shift: [
-        -1.34375,
-        -0.875
-      ]
+        -1.6875,
+        -2.625
+      ],
+      hr_version: {
+        filename: 'graphics/entity/rocket-silo/hr-08-rocket-silo-arms-back.png',
+        priority: 'medium',
+        width: 128,
+        height: 150,
+        frame_count: 32,
+        line_length: 32,
+        animation_speed: 0.3,
+        shift: [
+          -1.65625,
+          -2.625
+        ],
+        scale: 0.5
+      }
     },
     arm_02_right_animation: {
-      filename: 'graphics/entity/rocket-silo/08-arms-back-satellite-animation/arm-02-right.png',
+      filename: 'graphics/entity/rocket-silo/08-rocket-silo-arms-right.png',
       priority: 'medium',
-      width: 81,
-      height: 43,
-      frame_count: 12,
-      line_length: 4,
-      animation_speed: 0.2,
+      width: 94,
+      height: 94,
+      frame_count: 32,
+      line_length: 32,
+      animation_speed: 0.3,
       shift: [
-        2.71875,
-        0.96875
-      ]
+        3.125,
+        -1.1875
+      ],
+      hr_version: {
+        filename: 'graphics/entity/rocket-silo/hr-08-rocket-silo-arms-right.png',
+        priority: 'medium',
+        width: 182,
+        height: 188,
+        frame_count: 32,
+        line_length: 32,
+        animation_speed: 0.3,
+        shift: [
+          3.15625,
+          -1.1875
+        ],
+        scale: 0.5
+      }
     },
     arm_03_front_animation: {
-      filename: 'graphics/entity/rocket-silo/13-arm-front-red-lights-front/arm-03-front.png',
+      filename: 'graphics/entity/rocket-silo/13-rocket-silo-arms-front.png',
       priority: 'medium',
-      width: 54,
-      height: 70,
-      frame_count: 12,
-      line_length: 4,
-      animation_speed: 0.2,
+      width: 66,
+      height: 114,
+      frame_count: 32,
+      line_length: 32,
+      animation_speed: 0.3,
       shift: [
-        -1.34375,
-        2.4375
-      ]
+        -1.625,
+        0.5
+      ],
+      hr_version: {
+        filename: 'graphics/entity/rocket-silo/hr-13-rocket-silo-arms-front.png',
+        priority: 'medium',
+        width: 126,
+        height: 228,
+        frame_count: 32,
+        line_length: 32,
+        animation_speed: 0.3,
+        shift: [
+          -1.59375,
+          0.5
+        ],
+        scale: 0.5
+      }
     },
     base_front_sprite: {
-      filename: 'graphics/entity/rocket-silo/14-silo-front/14-silo-front.png',
-      width: 352,
-      height: 96,
+      filename: 'graphics/entity/rocket-silo/14-rocket-silo-front.png',
+      width: 292,
+      height: 132,
       shift: [
-        0,
-        3.5
-      ]
+        -0.0625,
+        2.4375
+      ],
+      hr_version: {
+        filename: 'graphics/entity/rocket-silo/hr-14-rocket-silo-front.png',
+        width: 580,
+        height: 262,
+        shift: [
+          -0.03125,
+          2.4375
+        ],
+        scale: 0.5
+      }
     },
     silo_fade_out_start_distance: 8,
     silo_fade_out_end_distance: 15,
@@ -41960,7 +42117,7 @@ module.exports = {
     ],
     size: {
       width: 9,
-      height: 10
+      height: 9
     },
     ui_name: 'Rocket silo',
     description: 'Used to build and launch a rocket to win the game.'
@@ -41975,8 +42132,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'roboport'
     },
     max_health: 500,
@@ -42062,7 +42218,7 @@ module.exports = {
         {
           filename: 'graphics/entity/roboport/roboport-shadow.png',
           width: 147,
-          height: 102,
+          height: 101,
           draw_as_shadow: true,
           shift: [
             0.890625,
@@ -42279,10 +42435,10 @@ module.exports = {
         priority: 'low',
         draw_as_shadow: true,
         width: 70,
-        height: 56,
+        height: 54,
         scale: 0.5,
         x: 140,
-        y: 168,
+        y: 162,
         shift: [
           0.734375,
           1.40625
@@ -42386,7 +42542,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      mining_time: 1.5,
+      mining_time: 0.5,
       result: 'storage_tank'
     },
     max_health: 500,
@@ -42823,10 +42979,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 210,
-          y: 168,
+          y: 162,
           shift: [
             1.203125,
             0.703125
@@ -42929,10 +43085,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 70,
-          y: 168,
+          y: 162,
           shift: [
             -0.890625,
             0.734375
@@ -43035,10 +43191,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 210,
-          y: 168,
+          y: 162,
           shift: [
             1.203125,
             0.703125
@@ -43141,10 +43297,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 70,
-          y: 168,
+          y: 162,
           shift: [
             -0.890625,
             0.734375
@@ -43237,7 +43393,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.2,
       result: 'pump'
     },
     max_health: 180,
@@ -43800,10 +43956,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 0,
-          y: 168,
+          y: 162,
           shift: [
             -0.3125,
             -0.140625
@@ -43920,10 +44076,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 140,
-          y: 168,
+          y: 162,
           shift: [
             -0.34375,
             0.234375
@@ -44026,10 +44182,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 0,
-          y: 168,
+          y: 162,
           shift: [
             -0.296875,
             -0.140625
@@ -44146,10 +44302,10 @@ module.exports = {
           priority: 'low',
           draw_as_shadow: true,
           width: 70,
-          height: 56,
+          height: 54,
           scale: 0.5,
           x: 140,
-          y: 168,
+          y: 162,
           shift: [
             0.578125,
             0.265625
@@ -44244,8 +44400,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'accumulator'
     },
     max_health: 150,
@@ -44283,31 +44438,154 @@ module.exports = {
     energy_source: {
       type: 'electric',
       buffer_capacity: '5MJ',
-      usage_priority: 'terciary',
+      usage_priority: 'tertiary',
       input_flow_limit: '300kW',
       output_flow_limit: '300kW'
     },
     picture: {
-      filename: 'graphics/entity/accumulator/accumulator.png',
-      priority: 'extra_high',
-      width: 124,
-      height: 103,
-      shift: [
-        0.6875,
-        -0.203125
+      layers: [
+        {
+          filename: 'graphics/entity/accumulator/accumulator.png',
+          priority: 'extra_high',
+          width: 66,
+          height: 94,
+          shift: [
+            0,
+            -0.3125
+          ],
+          animation_speed: 0.5,
+          hr_version: {
+            filename: 'graphics/entity/accumulator/hr-accumulator.png',
+            priority: 'extra_high',
+            width: 130,
+            height: 189,
+            shift: [
+              0,
+              -0.34375
+            ],
+            animation_speed: 0.5,
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/accumulator/accumulator-shadow.png',
+          priority: 'extra_high',
+          width: 120,
+          height: 54,
+          shift: [
+            0.875,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/accumulator/hr-accumulator-shadow.png',
+            priority: 'extra_high',
+            width: 234,
+            height: 106,
+            shift: [
+              0.90625,
+              0.1875
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
+        }
       ]
     },
     charge_animation: {
-      filename: 'graphics/entity/accumulator/accumulator-charge-animation.png',
-      width: 138,
-      height: 135,
-      line_length: 8,
-      frame_count: 24,
-      shift: [
-        0.46875,
-        -0.640625
-      ],
-      animation_speed: 0.5
+      layers: [
+        {
+          layers: [
+            {
+              filename: 'graphics/entity/accumulator/accumulator.png',
+              priority: 'extra_high',
+              width: 66,
+              height: 94,
+              repeat_count: 24,
+              shift: [
+                0,
+                -0.3125
+              ],
+              tint: {
+                r: 1,
+                g: 1,
+                b: 1,
+                a: 1
+              },
+              animation_speed: 0.5,
+              hr_version: {
+                filename: 'graphics/entity/accumulator/hr-accumulator.png',
+                priority: 'extra_high',
+                width: 130,
+                height: 189,
+                repeat_count: 24,
+                shift: [
+                  0,
+                  -0.34375
+                ],
+                tint: {
+                  r: 1,
+                  g: 1,
+                  b: 1,
+                  a: 1
+                },
+                animation_speed: 0.5,
+                scale: 0.5
+              }
+            },
+            {
+              filename: 'graphics/entity/accumulator/accumulator-shadow.png',
+              priority: 'extra_high',
+              width: 120,
+              height: 54,
+              repeat_count: 24,
+              shift: [
+                0.875,
+                0.1875
+              ],
+              draw_as_shadow: true,
+              hr_version: {
+                filename: 'graphics/entity/accumulator/hr-accumulator-shadow.png',
+                priority: 'extra_high',
+                width: 234,
+                height: 106,
+                repeat_count: 24,
+                shift: [
+                  0.90625,
+                  0.1875
+                ],
+                draw_as_shadow: true,
+                scale: 0.5
+              }
+            }
+          ]
+        },
+        {
+          filename: 'graphics/entity/accumulator/accumulator-charge.png',
+          width: 90,
+          height: 100,
+          line_length: 6,
+          frame_count: 24,
+          blend_mode: 'additive',
+          shift: [
+            0,
+            -0.6875
+          ],
+          hr_version: {
+            filename: 'graphics/entity/accumulator/hr-accumulator-charge.png',
+            width: 178,
+            height: 206,
+            line_length: 6,
+            frame_count: 24,
+            blend_mode: 'additive',
+            shift: [
+              0,
+              -0.6875
+            ],
+            scale: 0.5
+          }
+        }
+      ]
     },
     charge_cooldown: 30,
     charge_light: {
@@ -44320,16 +44598,99 @@ module.exports = {
       }
     },
     discharge_animation: {
-      filename: 'graphics/entity/accumulator/accumulator-discharge-animation.png',
-      width: 147,
-      height: 128,
-      line_length: 8,
-      frame_count: 24,
-      shift: [
-        0.390625,
-        -0.53125
-      ],
-      animation_speed: 0.5
+      layers: [
+        {
+          layers: [
+            {
+              filename: 'graphics/entity/accumulator/accumulator.png',
+              priority: 'extra_high',
+              width: 66,
+              height: 94,
+              repeat_count: 24,
+              shift: [
+                0,
+                -0.3125
+              ],
+              tint: {
+                r: 1,
+                g: 1,
+                b: 1,
+                a: 1
+              },
+              animation_speed: 0.5,
+              hr_version: {
+                filename: 'graphics/entity/accumulator/hr-accumulator.png',
+                priority: 'extra_high',
+                width: 130,
+                height: 189,
+                repeat_count: 24,
+                shift: [
+                  0,
+                  -0.34375
+                ],
+                tint: {
+                  r: 1,
+                  g: 1,
+                  b: 1,
+                  a: 1
+                },
+                animation_speed: 0.5,
+                scale: 0.5
+              }
+            },
+            {
+              filename: 'graphics/entity/accumulator/accumulator-shadow.png',
+              priority: 'extra_high',
+              width: 120,
+              height: 54,
+              repeat_count: 24,
+              shift: [
+                0.875,
+                0.1875
+              ],
+              draw_as_shadow: true,
+              hr_version: {
+                filename: 'graphics/entity/accumulator/hr-accumulator-shadow.png',
+                priority: 'extra_high',
+                width: 234,
+                height: 106,
+                repeat_count: 24,
+                shift: [
+                  0.90625,
+                  0.1875
+                ],
+                draw_as_shadow: true,
+                scale: 0.5
+              }
+            }
+          ]
+        },
+        {
+          filename: 'graphics/entity/accumulator/accumulator-discharge.png',
+          width: 88,
+          height: 104,
+          line_length: 6,
+          frame_count: 24,
+          blend_mode: 'additive',
+          shift: [
+            -0.0625,
+            -0.6875
+          ],
+          hr_version: {
+            filename: 'graphics/entity/accumulator/hr-accumulator-discharge.png',
+            width: 170,
+            height: 210,
+            line_length: 6,
+            frame_count: 24,
+            blend_mode: 'additive',
+            shift: [
+              -0.03125,
+              -0.71875
+            ],
+            scale: 0.5
+          }
+        }
+      ]
     },
     discharge_cooldown: 60,
     discharge_light: {
@@ -44420,10 +44781,10 @@ module.exports = {
         priority: 'low',
         draw_as_shadow: true,
         width: 70,
-        height: 56,
+        height: 54,
         scale: 0.5,
         x: 140,
-        y: 168,
+        y: 162,
         shift: [
           0.734375,
           0.71875
@@ -44516,7 +44877,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.2,
       result: 'beacon'
     },
     max_health: 200,
@@ -44628,8 +44989,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'arithmetic_combinator'
     },
     max_health: 150,
@@ -44662,7 +45022,7 @@ module.exports = {
     working_sound: {
       sound: {
         filename: 'sound/combinator.ogg',
-        volume: 0.35
+        volume: 0.45
       },
       max_sounds_per_type: 2,
       match_speed_to_activity: true
@@ -46251,8 +46611,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'decider_combinator'
     },
     max_health: 150,
@@ -46285,7 +46644,7 @@ module.exports = {
     working_sound: {
       sound: {
         filename: 'sound/combinator.ogg',
-        volume: 0.35
+        volume: 0.45
       },
       max_sounds_per_type: 2,
       match_speed_to_activity: true
@@ -47444,8 +47803,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'constant_combinator'
     },
     max_health: 120,
@@ -47932,8 +48290,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 1,
+      mining_time: 0.2,
       result: 'power_switch'
     },
     max_health: 200,
@@ -47965,8 +48322,6 @@ module.exports = {
       width: 117,
       height: 74,
       frame_count: 6,
-      axially_symmetrical: false,
-      direction_count: 1,
       shift: [
         0.453125,
         0.1875
@@ -47981,8 +48336,6 @@ module.exports = {
       width: 38,
       height: 49,
       frame_count: 2,
-      axially_symmetrical: false,
-      direction_count: 1,
       shift: [
         0.15625,
         0.046875
@@ -47996,8 +48349,6 @@ module.exports = {
       width: 53,
       height: 56,
       frame_count: 16,
-      axially_symmetrical: false,
-      direction_count: 1,
       shift: [
         0.046875,
         -0.0625
@@ -48008,7 +48359,6 @@ module.exports = {
       x: 6,
       width: 6,
       height: 9,
-      frame_count: 1,
       shift: [
         0.71875,
         0.140625
@@ -48018,7 +48368,6 @@ module.exports = {
       filename: 'graphics/entity/power-switch/power-switch-led.png',
       width: 6,
       height: 9,
-      frame_count: 1,
       shift: [
         0.71875,
         0.140625
@@ -48092,8 +48441,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'programmable_speaker'
     },
     max_health: 150,
@@ -48243,15 +48591,9 @@ module.exports = {
             }
           },
           {
-            name: 'alert_construction',
+            name: 'alert_destroyed',
             sound: {
-              filename: 'sound/alert-construction.ogg'
-            }
-          },
-          {
-            name: 'alert_damage',
-            sound: {
-              filename: 'sound/alert-damage.ogg'
+              filename: 'sound/alert-destroyed.ogg'
             }
           },
           {
@@ -50571,10 +50913,10 @@ module.exports = {
         priority: 'low',
         draw_as_shadow: true,
         width: 70,
-        height: 56,
+        height: 54,
         scale: 0.5,
         x: 140,
-        y: 112,
+        y: 108,
         shift: [
           0.34375,
           0.296875
@@ -50650,87 +50992,7 @@ module.exports = {
       width: 1,
       height: 1
     },
-    ui_name: 'Programmable Speaker'
-  },
-  electric_energy_interface: {
-    type: 'electric_energy_interface',
-    name: 'electric_energy_interface',
-    icon: 'graphics/icons/accumulator.png',
-    icon_size: 32,
-    flags: [
-      'placeable_neutral',
-      'player_creation'
-    ],
-    minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
-      result: 'electric_energy_interface'
-    },
-    max_health: 150,
-    corpse: 'medium_remnants',
-    collision_box: [
-      [
-        -0.9,
-        -0.9
-      ],
-      [
-        0.9,
-        0.9
-      ]
-    ],
-    selection_box: [
-      [
-        -1,
-        -1
-      ],
-      [
-        1,
-        1
-      ]
-    ],
-    enable_gui: true,
-    allow_copy_paste: true,
-    energy_source: {
-      type: 'electric',
-      buffer_capacity: '10GJ',
-      usage_priority: 'terciary',
-      input_flow_limit: '0kW',
-      output_flow_limit: '500GW'
-    },
-    energy_production: '500GW',
-    energy_usage: '0kW',
-    picture: {
-      filename: 'graphics/entity/accumulator/accumulator.png',
-      priority: 'extra_high',
-      width: 124,
-      height: 103,
-      shift: [
-        0.6875,
-        -0.203125
-      ],
-      tint: {
-        r: 1,
-        g: 0.8,
-        b: 1,
-        a: 1
-      }
-    },
-    working_sound: {
-      sound: {
-        filename: 'sound/accumulator-working.ogg',
-        volume: 1
-      },
-      idle_sound: {
-        filename: 'sound/accumulator-idle.ogg',
-        volume: 0.4
-      },
-      max_sounds_per_type: 5
-    },
-    size: {
-      width: 2,
-      height: 2
-    },
-    ui_name: 'Electric energy interface'
+    ui_name: 'Programmable speaker'
   },
   nuclear_reactor: {
     type: 'reactor',
@@ -50742,14 +51004,15 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      mining_time: 1.5,
+      mining_time: 0.5,
       result: 'nuclear_reactor'
     },
     max_health: 500,
     corpse: 'big_remnants',
     consumption: '40MW',
     neighbour_bonus: 1,
-    burner: {
+    energy_source: {
+      type: 'burner',
       fuel_category: 'nuclear',
       effectivity: 1,
       fuel_inventory_size: 1,
@@ -51049,8 +51312,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      hardness: 0.2,
-      mining_time: 0.5,
+      mining_time: 0.1,
       result: 'heat_pipe'
     },
     max_health: 200,
@@ -52395,7 +52657,7 @@ module.exports = {
     ],
     order: 's_e_w_f',
     minable: {
-      mining_time: 1,
+      mining_time: 0.1,
       result: 'simple_entity_with_force'
     },
     max_health: 100,
@@ -52423,11 +52685,11 @@ module.exports = {
     picture: {
       filename: 'graphics/entity/steel-chest/steel-chest.png',
       priority: 'extra_high',
-      width: 46,
-      height: 33,
+      width: 32,
+      height: 40,
       shift: [
-        0.25,
-        0.015625
+        -0.34375,
+        0.140625
       ]
     },
     size: {
@@ -52448,7 +52710,7 @@ module.exports = {
     ],
     order: 's_e_w_o',
     minable: {
-      mining_time: 1,
+      mining_time: 0.1,
       result: 'simple_entity_with_owner'
     },
     max_health: 100,
@@ -52478,11 +52740,11 @@ module.exports = {
         {
           filename: 'graphics/entity/iron-chest/iron-chest.png',
           priority: 'extra_high',
-          width: 46,
-          height: 33,
+          width: 34,
+          height: 38,
           shift: [
-            0.25,
-            0.015625
+            0,
+            -0.015625
           ]
         },
         {
@@ -52492,8 +52754,8 @@ module.exports = {
           height: 33,
           x: 18,
           shift: [
-            0.25,
-            0.015625
+            0,
+            -0.015625
           ],
           apply_runtime_tint: true
         }
@@ -52515,7 +52777,7 @@ module.exports = {
       'player_creation'
     ],
     minable: {
-      mining_time: 1,
+      mining_time: 0.1,
       result: 'infinity_chest'
     },
     max_health: 350,
@@ -52551,11 +52813,7 @@ module.exports = {
       filename: 'sound/metallic-chest-close.ogg',
       volume: 0.7
     },
-    picture: {
-      filename: 'graphics/entity/infinity-chest/infinity-chest.png',
-      width: 32,
-      height: 32
-    },
+    opened_duration: 7,
     circuit_wire_connection_point: {
       wire: {
         red: [
@@ -52624,10 +52882,10 @@ module.exports = {
         priority: 'low',
         draw_as_shadow: true,
         width: 70,
-        height: 56,
+        height: 54,
         scale: 0.5,
         x: 140,
-        y: 168,
+        y: 162,
         shift: [
           0.25,
           0.296875
@@ -52702,11 +52960,737 @@ module.exports = {
     order: 'infinity_chest',
     gui_mode: 'admins',
     erase_contents_when_mined: true,
+    picture: {
+      filename: 'graphics/entity/infinity-chest/infinity-chest.png',
+      width: 34,
+      height: 42
+    },
     size: {
       width: 1,
       height: 1
     },
     ui_name: 'Infinity chest'
+  },
+  infinity_pipe: {
+    type: 'infinity_pipe',
+    name: 'infinity_pipe',
+    icon_size: 32,
+    flags: [
+      'placeable_neutral',
+      'player_creation',
+      'fast_replaceable_no_build_while_moving'
+    ],
+    minable: {
+      mining_time: 0.1,
+      result: 'infinity_pipe'
+    },
+    max_health: 100,
+    corpse: 'small_remnants',
+    fast_replaceable_group: 'pipe',
+    collision_box: [
+      [
+        -0.29,
+        -0.29
+      ],
+      [
+        0.29,
+        0.29
+      ]
+    ],
+    selection_box: [
+      [
+        -0.5,
+        -0.5
+      ],
+      [
+        0.5,
+        0.5
+      ]
+    ],
+    fluid_box: {
+      base_area: 1,
+      pipe_connections: [
+        {
+          position: [
+            0,
+            -1
+          ]
+        },
+        {
+          position: [
+            1,
+            0
+          ]
+        },
+        {
+          position: [
+            0,
+            1
+          ]
+        },
+        {
+          position: [
+            -1,
+            0
+          ]
+        }
+      ]
+    },
+    pictures: {
+      straight_vertical_single: {
+        filename: 'graphics/entity/pipe/pipe-straight-vertical-single.png',
+        priority: 'extra_high',
+        width: 80,
+        height: 80,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-straight-vertical-single.png',
+          priority: 'extra_high',
+          width: 160,
+          height: 160,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      straight_vertical: {
+        filename: 'graphics/entity/pipe/pipe-straight-vertical.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-straight-vertical.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      straight_vertical_window: {
+        filename: 'graphics/entity/pipe/pipe-straight-vertical-window.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-straight-vertical-window.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      straight_horizontal_window: {
+        filename: 'graphics/entity/pipe/pipe-straight-horizontal-window.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-straight-horizontal-window.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      straight_horizontal: {
+        filename: 'graphics/entity/pipe/pipe-straight-horizontal.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-straight-horizontal.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      corner_up_right: {
+        filename: 'graphics/entity/pipe/pipe-corner-up-right.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-corner-up-right.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      corner_up_left: {
+        filename: 'graphics/entity/pipe/pipe-corner-up-left.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-corner-up-left.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      corner_down_right: {
+        filename: 'graphics/entity/pipe/pipe-corner-down-right.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-corner-down-right.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      corner_down_left: {
+        filename: 'graphics/entity/pipe/pipe-corner-down-left.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-corner-down-left.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      t_up: {
+        filename: 'graphics/entity/pipe/pipe-t-up.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-t-up.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      t_down: {
+        filename: 'graphics/entity/pipe/pipe-t-down.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-t-down.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      t_right: {
+        filename: 'graphics/entity/pipe/pipe-t-right.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-t-right.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      t_left: {
+        filename: 'graphics/entity/pipe/pipe-t-left.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-t-left.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      cross: {
+        filename: 'graphics/entity/pipe/pipe-cross.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-cross.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      ending_up: {
+        filename: 'graphics/entity/pipe/pipe-ending-up.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-ending-up.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      ending_down: {
+        filename: 'graphics/entity/pipe/pipe-ending-down.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-ending-down.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      ending_right: {
+        filename: 'graphics/entity/pipe/pipe-ending-right.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-ending-right.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      ending_left: {
+        filename: 'graphics/entity/pipe/pipe-ending-left.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-ending-left.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      horizontal_window_background: {
+        filename: 'graphics/entity/pipe/pipe-horizontal-window-background.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-horizontal-window-background.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      vertical_window_background: {
+        filename: 'graphics/entity/pipe/pipe-vertical-window-background.png',
+        priority: 'extra_high',
+        width: 64,
+        height: 64,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-pipe-vertical-window-background.png',
+          priority: 'extra_high',
+          width: 128,
+          height: 128,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      fluid_background: {
+        filename: 'graphics/entity/pipe/fluid-background.png',
+        priority: 'extra_high',
+        width: 32,
+        height: 20,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-fluid-background.png',
+          priority: 'extra_high',
+          width: 64,
+          height: 40,
+          scale: 0.5,
+          tint: {
+            r: 0.5,
+            g: 0.5,
+            b: 1
+          }
+        },
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      },
+      low_temperature_flow: {
+        filename: 'graphics/entity/pipe/fluid-flow-low-temperature.png',
+        priority: 'extra_high',
+        width: 160,
+        height: 18
+      },
+      middle_temperature_flow: {
+        filename: 'graphics/entity/pipe/fluid-flow-medium-temperature.png',
+        priority: 'extra_high',
+        width: 160,
+        height: 18
+      },
+      high_temperature_flow: {
+        filename: 'graphics/entity/pipe/fluid-flow-high-temperature.png',
+        priority: 'extra_high',
+        width: 160,
+        height: 18
+      },
+      gas_flow: {
+        filename: 'graphics/entity/pipe/steam.png',
+        priority: 'extra_high',
+        line_length: 10,
+        width: 24,
+        height: 15,
+        frame_count: 60,
+        axially_symmetrical: false,
+        direction_count: 1,
+        hr_version: {
+          filename: 'graphics/entity/pipe/hr-steam.png',
+          priority: 'extra_high',
+          line_length: 10,
+          width: 48,
+          height: 30,
+          frame_count: 60,
+          axially_symmetrical: false,
+          direction_count: 1
+        }
+      }
+    },
+    working_sound: {
+      sound: [
+        {
+          filename: 'sound/pipe.ogg',
+          volume: 0.85
+        }
+      ],
+      match_volume_to_activity: true,
+      max_sounds_per_type: 3
+    },
+    horizontal_window_bounding_box: [
+      [
+        -0.25,
+        -0.28125
+      ],
+      [
+        0.25,
+        0.15625
+      ]
+    ],
+    vertical_window_bounding_box: [
+      [
+        -0.28125,
+        -0.5
+      ],
+      [
+        0.03125,
+        0.125
+      ]
+    ],
+    icons: [
+      {
+        icon: 'graphics/icons/pipe.png',
+        tint: {
+          r: 0.5,
+          g: 0.5,
+          b: 1
+        }
+      }
+    ],
+    gui_mode: 'admins',
+    size: {
+      width: 1,
+      height: 1
+    },
+    ui_name: 'Infinity pipe'
+  },
+  heat_interface: {
+    type: 'heat_interface',
+    name: 'heat_interface',
+    icon: 'graphics/entity/heat-interface/heat-interface.png',
+    icon_size: 32,
+    flags: [
+      'placeable_neutral',
+      'player_creation'
+    ],
+    minable: {
+      mining_time: 0.1,
+      result: 'heat_interface'
+    },
+    max_health: 150,
+    corpse: 'small_remnants',
+    subgroup: 'other',
+    collision_box: [
+      [
+        -0.4,
+        -0.4
+      ],
+      [
+        0.4,
+        0.4
+      ]
+    ],
+    selection_box: [
+      [
+        -0.5,
+        -0.5
+      ],
+      [
+        0.5,
+        0.5
+      ]
+    ],
+    gui_mode: 'admins',
+    heat_buffer: {
+      max_temperature: 1000,
+      specific_heat: '10MJ',
+      max_transfer: '10GW',
+      connections: [
+        {
+          position: [
+            0,
+            0
+          ],
+          direction: 0
+        },
+        {
+          position: [
+            0,
+            0
+          ],
+          direction: 2
+        },
+        {
+          position: [
+            0,
+            0
+          ],
+          direction: 4
+        },
+        {
+          position: [
+            0,
+            0
+          ],
+          direction: 6
+        }
+      ]
+    },
+    picture: {
+      filename: 'graphics/entity/heat-interface/heat-interface.png',
+      height: 32,
+      width: 32,
+      flags: [
+        'no_crop'
+      ]
+    },
+    size: {
+      width: 1,
+      height: 1
+    },
+    ui_name: 'Heat interface'
   },
   artillery_turret: {
     type: 'artillery_turret',
@@ -52723,7 +53707,7 @@ module.exports = {
     automated_ammo_count: 5,
     alert_when_attacking: false,
     minable: {
-      mining_time: 1,
+      mining_time: 0.5,
       result: 'artillery_turret'
     },
     open_sound: {
@@ -53085,1194 +54069,6 @@ module.exports = {
         }
       ]
     },
-    cannon_base_shiftings: [
-      [
-        0,
-        0.609375
-      ],
-      [
-        -0.046875,
-        0.59375
-      ],
-      [
-        -0.109375,
-        0.59375
-      ],
-      [
-        -0.171875,
-        0.578125
-      ],
-      [
-        -0.234375,
-        0.578125
-      ],
-      [
-        -0.28125,
-        0.5625
-      ],
-      [
-        -0.34375,
-        0.546875
-      ],
-      [
-        -0.40625,
-        0.546875
-      ],
-      [
-        -0.46875,
-        0.53125
-      ],
-      [
-        -0.515625,
-        0.515625
-      ],
-      [
-        -0.578125,
-        0.5
-      ],
-      [
-        -0.640625,
-        0.484375
-      ],
-      [
-        -0.6875,
-        0.46875
-      ],
-      [
-        -0.75,
-        0.453125
-      ],
-      [
-        -0.796875,
-        0.4375
-      ],
-      [
-        -0.859375,
-        0.40625
-      ],
-      [
-        -0.90625,
-        0.390625
-      ],
-      [
-        -0.953125,
-        0.375
-      ],
-      [
-        -1,
-        0.34375
-      ],
-      [
-        -1.0625,
-        0.328125
-      ],
-      [
-        -1.109375,
-        0.296875
-      ],
-      [
-        -1.15625,
-        0.28125
-      ],
-      [
-        -1.203125,
-        0.25
-      ],
-      [
-        -1.25,
-        0.234375
-      ],
-      [
-        -1.296875,
-        0.203125
-      ],
-      [
-        -1.328125,
-        0.171875
-      ],
-      [
-        -1.375,
-        0.140625
-      ],
-      [
-        -1.421875,
-        0.125
-      ],
-      [
-        -1.453125,
-        0.09375
-      ],
-      [
-        -1.5,
-        0.0625
-      ],
-      [
-        -1.53125,
-        0.03125
-      ],
-      [
-        -1.578125,
-        0
-      ],
-      [
-        -1.609375,
-        -0.015625
-      ],
-      [
-        -1.640625,
-        -0.046875
-      ],
-      [
-        -1.671875,
-        -0.078125
-      ],
-      [
-        -1.703125,
-        -0.109375
-      ],
-      [
-        -1.734375,
-        -0.15625
-      ],
-      [
-        -1.765625,
-        -0.1875
-      ],
-      [
-        -1.796875,
-        -0.21875
-      ],
-      [
-        -1.8125,
-        -0.25
-      ],
-      [
-        -1.84375,
-        -0.28125
-      ],
-      [
-        -1.875,
-        -0.328125
-      ],
-      [
-        -1.890625,
-        -0.359375
-      ],
-      [
-        -1.90625,
-        -0.390625
-      ],
-      [
-        -1.9375,
-        -0.421875
-      ],
-      [
-        -1.953125,
-        -0.46875
-      ],
-      [
-        -1.96875,
-        -0.5
-      ],
-      [
-        -1.984375,
-        -0.53125
-      ],
-      [
-        -2,
-        -0.578125
-      ],
-      [
-        -2.015625,
-        -0.609375
-      ],
-      [
-        -2.03125,
-        -0.65625
-      ],
-      [
-        -2.03125,
-        -0.6875
-      ],
-      [
-        -2.046875,
-        -0.71875
-      ],
-      [
-        -2.046875,
-        -0.765625
-      ],
-      [
-        -2.0625,
-        -0.796875
-      ],
-      [
-        -2.0625,
-        -0.828125
-      ],
-      [
-        -2.0625,
-        -0.875
-      ],
-      [
-        -2.078125,
-        -0.90625
-      ],
-      [
-        -2.078125,
-        -0.9375
-      ],
-      [
-        -2.078125,
-        -0.984375
-      ],
-      [
-        -2.078125,
-        -1.015625
-      ],
-      [
-        -2.0625,
-        -1.0625
-      ],
-      [
-        -2.0625,
-        -1.09375
-      ],
-      [
-        -2.0625,
-        -1.125
-      ],
-      [
-        -2.046875,
-        -1.15625
-      ],
-      [
-        -2.0625,
-        -1.203125
-      ],
-      [
-        -2.0625,
-        -1.234375
-      ],
-      [
-        -2.078125,
-        -1.265625
-      ],
-      [
-        -2.078125,
-        -1.3125
-      ],
-      [
-        -2.078125,
-        -1.34375
-      ],
-      [
-        -2.078125,
-        -1.375
-      ],
-      [
-        -2.078125,
-        -1.421875
-      ],
-      [
-        -2.078125,
-        -1.453125
-      ],
-      [
-        -2.078125,
-        -1.5
-      ],
-      [
-        -2.0625,
-        -1.53125
-      ],
-      [
-        -2.0625,
-        -1.5625
-      ],
-      [
-        -2.046875,
-        -1.609375
-      ],
-      [
-        -2.046875,
-        -1.640625
-      ],
-      [
-        -2.03125,
-        -1.671875
-      ],
-      [
-        -2.015625,
-        -1.71875
-      ],
-      [
-        -2.015625,
-        -1.75
-      ],
-      [
-        -2,
-        -1.796875
-      ],
-      [
-        -1.984375,
-        -1.828125
-      ],
-      [
-        -1.96875,
-        -1.859375
-      ],
-      [
-        -1.953125,
-        -1.90625
-      ],
-      [
-        -1.921875,
-        -1.9375
-      ],
-      [
-        -1.90625,
-        -1.96875
-      ],
-      [
-        -1.890625,
-        -2
-      ],
-      [
-        -1.859375,
-        -2.046875
-      ],
-      [
-        -1.84375,
-        -2.078125
-      ],
-      [
-        -1.8125,
-        -2.109375
-      ],
-      [
-        -1.78125,
-        -2.140625
-      ],
-      [
-        -1.75,
-        -2.1875
-      ],
-      [
-        -1.71875,
-        -2.21875
-      ],
-      [
-        -1.6875,
-        -2.25
-      ],
-      [
-        -1.65625,
-        -2.28125
-      ],
-      [
-        -1.625,
-        -2.3125
-      ],
-      [
-        -1.59375,
-        -2.34375
-      ],
-      [
-        -1.5625,
-        -2.375
-      ],
-      [
-        -1.515625,
-        -2.40625
-      ],
-      [
-        -1.484375,
-        -2.4375
-      ],
-      [
-        -1.4375,
-        -2.46875
-      ],
-      [
-        -1.40625,
-        -2.5
-      ],
-      [
-        -1.359375,
-        -2.53125
-      ],
-      [
-        -1.3125,
-        -2.546875
-      ],
-      [
-        -1.265625,
-        -2.578125
-      ],
-      [
-        -1.234375,
-        -2.609375
-      ],
-      [
-        -1.1875,
-        -2.625
-      ],
-      [
-        -1.140625,
-        -2.65625
-      ],
-      [
-        -1.078125,
-        -2.671875
-      ],
-      [
-        -1.03125,
-        -2.703125
-      ],
-      [
-        -0.984375,
-        -2.71875
-      ],
-      [
-        -0.9375,
-        -2.75
-      ],
-      [
-        -0.890625,
-        -2.765625
-      ],
-      [
-        -0.828125,
-        -2.78125
-      ],
-      [
-        -0.78125,
-        -2.8125
-      ],
-      [
-        -0.71875,
-        -2.828125
-      ],
-      [
-        -0.671875,
-        -2.84375
-      ],
-      [
-        -0.609375,
-        -2.859375
-      ],
-      [
-        -0.546875,
-        -2.875
-      ],
-      [
-        -0.5,
-        -2.890625
-      ],
-      [
-        -0.4375,
-        -2.90625
-      ],
-      [
-        -0.375,
-        -2.90625
-      ],
-      [
-        -0.328125,
-        -2.921875
-      ],
-      [
-        -0.265625,
-        -2.9375
-      ],
-      [
-        -0.203125,
-        -2.9375
-      ],
-      [
-        -0.140625,
-        -2.953125
-      ],
-      [
-        -0.078125,
-        -2.953125
-      ],
-      [
-        -0.015625,
-        -2.96875
-      ],
-      [
-        0.03125,
-        -2.96875
-      ],
-      [
-        0.09375,
-        -2.953125
-      ],
-      [
-        0.15625,
-        -2.953125
-      ],
-      [
-        0.21875,
-        -2.9375
-      ],
-      [
-        0.265625,
-        -2.9375
-      ],
-      [
-        0.328125,
-        -2.921875
-      ],
-      [
-        0.390625,
-        -2.90625
-      ],
-      [
-        0.453125,
-        -2.890625
-      ],
-      [
-        0.515625,
-        -2.890625
-      ],
-      [
-        0.5625,
-        -2.875
-      ],
-      [
-        0.625,
-        -2.859375
-      ],
-      [
-        0.671875,
-        -2.84375
-      ],
-      [
-        0.734375,
-        -2.828125
-      ],
-      [
-        0.78125,
-        -2.796875
-      ],
-      [
-        0.84375,
-        -2.78125
-      ],
-      [
-        0.890625,
-        -2.765625
-      ],
-      [
-        0.953125,
-        -2.75
-      ],
-      [
-        1,
-        -2.71875
-      ],
-      [
-        1.046875,
-        -2.703125
-      ],
-      [
-        1.09375,
-        -2.671875
-      ],
-      [
-        1.140625,
-        -2.65625
-      ],
-      [
-        1.1875,
-        -2.625
-      ],
-      [
-        1.234375,
-        -2.609375
-      ],
-      [
-        1.28125,
-        -2.578125
-      ],
-      [
-        1.328125,
-        -2.546875
-      ],
-      [
-        1.375,
-        -2.515625
-      ],
-      [
-        1.40625,
-        -2.5
-      ],
-      [
-        1.453125,
-        -2.46875
-      ],
-      [
-        1.484375,
-        -2.4375
-      ],
-      [
-        1.53125,
-        -2.40625
-      ],
-      [
-        1.5625,
-        -2.375
-      ],
-      [
-        1.609375,
-        -2.34375
-      ],
-      [
-        1.640625,
-        -2.3125
-      ],
-      [
-        1.671875,
-        -2.28125
-      ],
-      [
-        1.703125,
-        -2.25
-      ],
-      [
-        1.734375,
-        -2.21875
-      ],
-      [
-        1.765625,
-        -2.1875
-      ],
-      [
-        1.796875,
-        -2.140625
-      ],
-      [
-        1.828125,
-        -2.109375
-      ],
-      [
-        1.84375,
-        -2.078125
-      ],
-      [
-        1.875,
-        -2.046875
-      ],
-      [
-        1.890625,
-        -2
-      ],
-      [
-        1.921875,
-        -1.96875
-      ],
-      [
-        1.9375,
-        -1.9375
-      ],
-      [
-        1.953125,
-        -1.90625
-      ],
-      [
-        1.96875,
-        -1.859375
-      ],
-      [
-        1.984375,
-        -1.828125
-      ],
-      [
-        2,
-        -1.796875
-      ],
-      [
-        2.015625,
-        -1.75
-      ],
-      [
-        2.03125,
-        -1.71875
-      ],
-      [
-        2.046875,
-        -1.671875
-      ],
-      [
-        2.046875,
-        -1.640625
-      ],
-      [
-        2.0625,
-        -1.609375
-      ],
-      [
-        2.078125,
-        -1.5625
-      ],
-      [
-        2.078125,
-        -1.53125
-      ],
-      [
-        2.078125,
-        -1.5
-      ],
-      [
-        2.078125,
-        -1.453125
-      ],
-      [
-        2.09375,
-        -1.421875
-      ],
-      [
-        2.09375,
-        -1.375
-      ],
-      [
-        2.09375,
-        -1.34375
-      ],
-      [
-        2.078125,
-        -1.3125
-      ],
-      [
-        2.078125,
-        -1.265625
-      ],
-      [
-        2.078125,
-        -1.234375
-      ],
-      [
-        2.078125,
-        -1.203125
-      ],
-      [
-        2.078125,
-        -1.171875
-      ],
-      [
-        2.078125,
-        -1.125
-      ],
-      [
-        2.09375,
-        -1.09375
-      ],
-      [
-        2.09375,
-        -1.0625
-      ],
-      [
-        2.09375,
-        -1.015625
-      ],
-      [
-        2.09375,
-        -0.984375
-      ],
-      [
-        2.09375,
-        -0.953125
-      ],
-      [
-        2.09375,
-        -0.90625
-      ],
-      [
-        2.09375,
-        -0.875
-      ],
-      [
-        2.09375,
-        -0.828125
-      ],
-      [
-        2.078125,
-        -0.796875
-      ],
-      [
-        2.078125,
-        -0.765625
-      ],
-      [
-        2.0625,
-        -0.71875
-      ],
-      [
-        2.0625,
-        -0.6875
-      ],
-      [
-        2.046875,
-        -0.640625
-      ],
-      [
-        2.03125,
-        -0.609375
-      ],
-      [
-        2.03125,
-        -0.578125
-      ],
-      [
-        2.015625,
-        -0.53125
-      ],
-      [
-        2,
-        -0.5
-      ],
-      [
-        1.96875,
-        -0.46875
-      ],
-      [
-        1.953125,
-        -0.421875
-      ],
-      [
-        1.9375,
-        -0.390625
-      ],
-      [
-        1.921875,
-        -0.359375
-      ],
-      [
-        1.890625,
-        -0.3125
-      ],
-      [
-        1.875,
-        -0.28125
-      ],
-      [
-        1.84375,
-        -0.25
-      ],
-      [
-        1.8125,
-        -0.21875
-      ],
-      [
-        1.796875,
-        -0.1875
-      ],
-      [
-        1.765625,
-        -0.140625
-      ],
-      [
-        1.734375,
-        -0.109375
-      ],
-      [
-        1.703125,
-        -0.078125
-      ],
-      [
-        1.671875,
-        -0.046875
-      ],
-      [
-        1.625,
-        -0.015625
-      ],
-      [
-        1.59375,
-        0
-      ],
-      [
-        1.5625,
-        0.03125
-      ],
-      [
-        1.515625,
-        0.0625
-      ],
-      [
-        1.484375,
-        0.09375
-      ],
-      [
-        1.4375,
-        0.125
-      ],
-      [
-        1.40625,
-        0.15625
-      ],
-      [
-        1.359375,
-        0.171875
-      ],
-      [
-        1.3125,
-        0.203125
-      ],
-      [
-        1.265625,
-        0.234375
-      ],
-      [
-        1.21875,
-        0.25
-      ],
-      [
-        1.171875,
-        0.28125
-      ],
-      [
-        1.125,
-        0.3125
-      ],
-      [
-        1.078125,
-        0.328125
-      ],
-      [
-        1.03125,
-        0.359375
-      ],
-      [
-        0.984375,
-        0.375
-      ],
-      [
-        0.921875,
-        0.390625
-      ],
-      [
-        0.875,
-        0.421875
-      ],
-      [
-        0.828125,
-        0.4375
-      ],
-      [
-        0.765625,
-        0.453125
-      ],
-      [
-        0.71875,
-        0.46875
-      ],
-      [
-        0.65625,
-        0.484375
-      ],
-      [
-        0.59375,
-        0.5
-      ],
-      [
-        0.546875,
-        0.515625
-      ],
-      [
-        0.484375,
-        0.53125
-      ],
-      [
-        0.421875,
-        0.546875
-      ],
-      [
-        0.359375,
-        0.5625
-      ],
-      [
-        0.3125,
-        0.5625
-      ],
-      [
-        0.25,
-        0.578125
-      ],
-      [
-        0.1875,
-        0.59375
-      ],
-      [
-        0.125,
-        0.59375
-      ]
-    ],
-    cannon_barrel_recoil_shiftings: [
-      {
-        x: 0,
-        y: 0.04,
-        z: 0
-      },
-      {
-        x: -0.789,
-        y: 0.037,
-        z: -0.351
-      },
-      {
-        x: -1.578,
-        y: 0.035,
-        z: -0.702
-      },
-      {
-        x: -2.367,
-        y: 0.033,
-        z: -1.054
-      },
-      {
-        x: -3.155,
-        y: 0.031,
-        z: -1.405
-      },
-      {
-        x: -3.944,
-        y: 0.028,
-        z: -1.756
-      },
-      {
-        x: -3.931,
-        y: 0.028,
-        z: -1.75
-      },
-      {
-        x: -3.901,
-        y: 0.028,
-        z: -1.737
-      },
-      {
-        x: -3.854,
-        y: 0.029,
-        z: -1.716
-      },
-      {
-        x: -3.79,
-        y: 0.029,
-        z: -1.688
-      },
-      {
-        x: -3.711,
-        y: 0.029,
-        z: -1.652
-      },
-      {
-        x: -3.617,
-        y: 0.029,
-        z: -1.61
-      },
-      {
-        x: -3.508,
-        y: 0.03,
-        z: -1.562
-      },
-      {
-        x: -3.385,
-        y: 0.03,
-        z: -1.507
-      },
-      {
-        x: -3.249,
-        y: 0.03,
-        z: -1.447
-      },
-      {
-        x: -3.102,
-        y: 0.031,
-        z: -1.381
-      },
-      {
-        x: -2.944,
-        y: 0.031,
-        z: -1.311
-      },
-      {
-        x: -2.776,
-        y: 0.032,
-        z: -1.236
-      },
-      {
-        x: -2.599,
-        y: 0.032,
-        z: -1.157
-      },
-      {
-        x: -2.416,
-        y: 0.033,
-        z: -1.076
-      },
-      {
-        x: -2.226,
-        y: 0.033,
-        z: -0.991
-      },
-      {
-        x: -2.032,
-        y: 0.034,
-        z: -0.905
-      },
-      {
-        x: -1.835,
-        y: 0.034,
-        z: -0.817
-      },
-      {
-        x: -1.635,
-        y: 0.035,
-        z: -0.728
-      },
-      {
-        x: -1.436,
-        y: 0.035,
-        z: -0.639
-      },
-      {
-        x: -1.238,
-        y: 0.036,
-        z: -0.551
-      },
-      {
-        x: -1.042,
-        y: 0.037,
-        z: -0.464
-      },
-      {
-        x: -0.851,
-        y: 0.037,
-        z: -0.379
-      },
-      {
-        x: -0.665,
-        y: 0.038,
-        z: -0.296
-      },
-      {
-        x: -0.485,
-        y: 0.038,
-        z: -0.216
-      },
-      {
-        x: -0.314,
-        y: 0.039,
-        z: -0.14
-      },
-      {
-        x: -0.152,
-        y: 0.039,
-        z: -0.068
-      }
-    ],
     cannon_barrel_light_direction: [
       0.5976251,
       0.0242053,
@@ -54358,22 +54154,38 @@ module.exports = {
     folded_animation: {
       layers: [
         {
-          filename: 'graphics/entity/laser-turret/laser-turret-gun-start.png',
+          filename: 'graphics/entity/laser-turret/laser-turret-raising.png',
           priority: 'medium',
           width: 66,
-          height: 67,
+          height: 64,
           frame_count: 1,
           line_length: 1,
           run_mode: 'forward',
           axially_symmetrical: false,
           direction_count: 4,
           shift: [
-            -0.03125,
-            -0.984375
-          ]
+            0,
+            -1
+          ],
+          hr_version: {
+            filename: 'graphics/entity/laser-turret/hr-laser-turret-raising.png',
+            priority: 'medium',
+            width: 130,
+            height: 126,
+            frame_count: 1,
+            line_length: 1,
+            run_mode: 'forward',
+            axially_symmetrical: false,
+            direction_count: 4,
+            shift: [
+              0,
+              -1.015625
+            ],
+            scale: 0.5
+          }
         },
         {
-          filename: 'graphics/entity/laser-turret/laser-turret-gun-start-shadow.png',
+          filename: 'graphics/entity/laser-turret/laser-turret-raising-shadow.png',
           width: 92,
           height: 50,
           frame_count: 1,
@@ -54383,17 +54195,33 @@ module.exports = {
           direction_count: 4,
           draw_as_shadow: true,
           shift: [
-            1.375,
-            0
-          ]
+            1.46875,
+            0.09375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/laser-turret/hr-laser-turret-raising-shadow.png',
+            width: 182,
+            height: 96,
+            frame_count: 1,
+            line_length: 1,
+            run_mode: 'forward',
+            axially_symmetrical: false,
+            direction_count: 4,
+            draw_as_shadow: true,
+            shift: [
+              1.46875,
+              0.078125
+            ],
+            scale: 0.5
+          }
         },
         {
-          filename: 'graphics/entity/laser-turret/laser-turret-gun-start-mask.png',
+          filename: 'graphics/entity/laser-turret/laser-turret-raising-mask.png',
           flags: [
             'mask'
           ],
-          width: 51,
-          height: 47,
+          width: 44,
+          height: 40,
           frame_count: 1,
           line_length: 1,
           run_mode: 'forward',
@@ -54401,31 +54229,66 @@ module.exports = {
           apply_runtime_tint: true,
           direction_count: 4,
           shift: [
-            -0.015625,
-            -1.26563
-          ]
+            0,
+            -1.34375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/laser-turret/hr-laser-turret-raising-mask.png',
+            flags: [
+              'mask'
+            ],
+            width: 86,
+            height: 80,
+            frame_count: 1,
+            line_length: 1,
+            run_mode: 'forward',
+            axially_symmetrical: false,
+            apply_runtime_tint: true,
+            direction_count: 4,
+            shift: [
+              0,
+              -1.34375
+            ],
+            scale: 0.5
+          }
         }
       ]
     },
     preparing_animation: {
       layers: [
         {
-          filename: 'graphics/entity/laser-turret/laser-turret-gun-start.png',
+          filename: 'graphics/entity/laser-turret/laser-turret-raising.png',
           priority: 'medium',
           width: 66,
-          height: 67,
+          height: 64,
           frame_count: 15,
           line_length: 0,
           run_mode: 'forward',
           axially_symmetrical: false,
           direction_count: 4,
           shift: [
-            -0.03125,
-            -0.984375
-          ]
+            0,
+            -1
+          ],
+          hr_version: {
+            filename: 'graphics/entity/laser-turret/hr-laser-turret-raising.png',
+            priority: 'medium',
+            width: 130,
+            height: 126,
+            frame_count: 15,
+            line_length: 0,
+            run_mode: 'forward',
+            axially_symmetrical: false,
+            direction_count: 4,
+            shift: [
+              0,
+              -1.015625
+            ],
+            scale: 0.5
+          }
         },
         {
-          filename: 'graphics/entity/laser-turret/laser-turret-gun-start-shadow.png',
+          filename: 'graphics/entity/laser-turret/laser-turret-raising-shadow.png',
           width: 92,
           height: 50,
           frame_count: 15,
@@ -54435,17 +54298,33 @@ module.exports = {
           direction_count: 4,
           draw_as_shadow: true,
           shift: [
-            1.375,
-            0
-          ]
+            1.46875,
+            0.09375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/laser-turret/hr-laser-turret-raising-shadow.png',
+            width: 182,
+            height: 96,
+            frame_count: 15,
+            line_length: 0,
+            run_mode: 'forward',
+            axially_symmetrical: false,
+            direction_count: 4,
+            draw_as_shadow: true,
+            shift: [
+              1.46875,
+              0.078125
+            ],
+            scale: 0.5
+          }
         },
         {
-          filename: 'graphics/entity/laser-turret/laser-turret-gun-start-mask.png',
+          filename: 'graphics/entity/laser-turret/laser-turret-raising-mask.png',
           flags: [
             'mask'
           ],
-          width: 51,
-          height: 47,
+          width: 44,
+          height: 40,
           frame_count: 15,
           line_length: 0,
           run_mode: 'forward',
@@ -54453,79 +54332,182 @@ module.exports = {
           apply_runtime_tint: true,
           direction_count: 4,
           shift: [
-            -0.015625,
-            -1.26563
-          ]
+            0,
+            -1.34375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/laser-turret/hr-laser-turret-raising-mask.png',
+            flags: [
+              'mask'
+            ],
+            width: 86,
+            height: 80,
+            frame_count: 15,
+            line_length: 0,
+            run_mode: 'forward',
+            axially_symmetrical: false,
+            apply_runtime_tint: true,
+            direction_count: 4,
+            shift: [
+              0,
+              -1.34375
+            ],
+            scale: 0.5
+          }
         }
       ]
     },
     prepared_animation: {
       layers: [
         {
-          filename: 'graphics/entity/laser-turret/laser-turret-gun.png',
+          filename: 'graphics/entity/laser-turret/laser-turret-shooting.png',
           line_length: 8,
-          width: 68,
-          height: 68,
+          width: 64,
+          height: 60,
           frame_count: 1,
-          axially_symmetrical: false,
           direction_count: 64,
           shift: [
-            -0.03125,
-            -1
-          ]
+            0,
+            -1.09375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/laser-turret/hr-laser-turret-shooting.png',
+            line_length: 8,
+            width: 126,
+            height: 120,
+            frame_count: 1,
+            direction_count: 64,
+            shift: [
+              0,
+              -1.09375
+            ],
+            scale: 0.5
+          }
         },
         {
-          filename: 'graphics/entity/laser-turret/laser-turret-gun-mask.png',
+          filename: 'graphics/entity/laser-turret/laser-turret-shooting-shadow.png',
+          line_length: 8,
+          width: 86,
+          height: 46,
+          frame_count: 1,
+          direction_count: 64,
+          draw_as_shadow: true,
+          shift: [
+            1.59375,
+            0.0625
+          ],
+          hr_version: {
+            filename: 'graphics/entity/laser-turret/hr-laser-turret-shooting-shadow.png',
+            line_length: 8,
+            width: 170,
+            height: 92,
+            frame_count: 1,
+            direction_count: 64,
+            draw_as_shadow: true,
+            shift: [
+              1.578125,
+              0.078125
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/laser-turret/laser-turret-shooting-mask.png',
           flags: [
             'mask'
           ],
           line_length: 8,
-          width: 54,
-          height: 44,
+          width: 46,
+          height: 42,
           frame_count: 1,
-          axially_symmetrical: false,
           apply_runtime_tint: true,
           direction_count: 64,
           shift: [
-            -0.03125,
-            -1.3125
-          ]
-        },
-        {
-          filename: 'graphics/entity/laser-turret/laser-turret-gun-shadow.png',
-          line_length: 8,
-          width: 88,
-          height: 52,
-          frame_count: 1,
-          axially_symmetrical: false,
-          direction_count: 64,
-          draw_as_shadow: true,
-          shift: [
-            1.5,
-            0
-          ]
+            0,
+            -1.34375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/laser-turret/hr-laser-turret-shooting-mask.png',
+            flags: [
+              'mask'
+            ],
+            line_length: 8,
+            width: 92,
+            height: 80,
+            frame_count: 1,
+            apply_runtime_tint: true,
+            direction_count: 64,
+            shift: [
+              0,
+              -1.359375
+            ],
+            scale: 0.5
+          }
         }
       ]
+    },
+    energy_glow_animation: {
+      filename: 'graphics/entity/laser-turret/laser-turret-shooting-light.png',
+      line_length: 8,
+      width: 62,
+      height: 58,
+      frame_count: 1,
+      direction_count: 64,
+      blend_mode: 'additive',
+      shift: [
+        0,
+        -1.09375
+      ],
+      hr_version: {
+        filename: 'graphics/entity/laser-turret/hr-laser-turret-shooting-light.png',
+        line_length: 8,
+        width: 122,
+        height: 116,
+        frame_count: 1,
+        direction_count: 64,
+        shift: [
+          -0.015625,
+          -1.09375
+        ],
+        blend_mode: 'additive',
+        scale: 0.5
+      }
     },
     folding_animation: {
       layers: [
         {
-          filename: 'graphics/entity/laser-turret/laser-turret-gun-start.png',
+          filename: 'graphics/entity/laser-turret/laser-turret-raising.png',
           priority: 'medium',
           width: 66,
-          height: 67,
+          height: 64,
           frame_count: 15,
           line_length: 0,
           run_mode: 'backward',
           axially_symmetrical: false,
           direction_count: 4,
           shift: [
-            -0.03125,
-            -0.984375
-          ]
+            0,
+            -1
+          ],
+          hr_version: {
+            filename: 'graphics/entity/laser-turret/hr-laser-turret-raising.png',
+            priority: 'medium',
+            width: 130,
+            height: 126,
+            frame_count: 15,
+            line_length: 0,
+            run_mode: 'backward',
+            axially_symmetrical: false,
+            direction_count: 4,
+            shift: [
+              0,
+              -1.015625
+            ],
+            scale: 0.5
+          }
         },
         {
-          filename: 'graphics/entity/laser-turret/laser-turret-gun-start-shadow.png',
+          filename: 'graphics/entity/laser-turret/laser-turret-raising-shadow.png',
           width: 92,
           height: 50,
           frame_count: 15,
@@ -54535,17 +54517,33 @@ module.exports = {
           direction_count: 4,
           draw_as_shadow: true,
           shift: [
-            1.375,
-            0
-          ]
+            1.46875,
+            0.09375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/laser-turret/hr-laser-turret-raising-shadow.png',
+            width: 182,
+            height: 96,
+            frame_count: 15,
+            line_length: 0,
+            run_mode: 'backward',
+            axially_symmetrical: false,
+            direction_count: 4,
+            draw_as_shadow: true,
+            shift: [
+              1.46875,
+              0.078125
+            ],
+            scale: 0.5
+          }
         },
         {
-          filename: 'graphics/entity/laser-turret/laser-turret-gun-start-mask.png',
+          filename: 'graphics/entity/laser-turret/laser-turret-raising-mask.png',
           flags: [
             'mask'
           ],
-          width: 51,
-          height: 47,
+          width: 44,
+          height: 40,
           frame_count: 15,
           line_length: 0,
           run_mode: 'backward',
@@ -54553,9 +54551,28 @@ module.exports = {
           apply_runtime_tint: true,
           direction_count: 4,
           shift: [
-            -0.015625,
-            -1.26563
-          ]
+            0,
+            -1.34375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/laser-turret/hr-laser-turret-raising-mask.png',
+            flags: [
+              'mask'
+            ],
+            width: 86,
+            height: 80,
+            frame_count: 15,
+            line_length: 0,
+            run_mode: 'backward',
+            axially_symmetrical: false,
+            apply_runtime_tint: true,
+            direction_count: 4,
+            shift: [
+              0,
+              -1.34375
+            ],
+            scale: 0.5
+          }
         }
       ]
     },
@@ -54564,32 +54581,60 @@ module.exports = {
         {
           filename: 'graphics/entity/laser-turret/laser-turret-base.png',
           priority: 'high',
-          width: 98,
-          height: 82,
-          axially_symmetrical: false,
+          width: 70,
+          height: 52,
           direction_count: 1,
           frame_count: 1,
           shift: [
-            0.015625,
-            0.03125
-          ]
+            0,
+            0.0625
+          ],
+          hr_version: {
+            filename: 'graphics/entity/laser-turret/hr-laser-turret-base.png',
+            priority: 'high',
+            width: 138,
+            height: 104,
+            direction_count: 1,
+            frame_count: 1,
+            shift: [
+              -0.015625,
+              0.0625
+            ],
+            scale: 0.5
+          }
         },
         {
-          filename: 'graphics/entity/laser-turret/laser-turret-base-mask.png',
+          filename: 'graphics/entity/laser-turret/laser-turret-base-shadow.png',
           flags: [
             'mask'
           ],
           line_length: 1,
-          width: 54,
-          height: 46,
-          axially_symmetrical: false,
-          apply_runtime_tint: true,
+          width: 66,
+          height: 42,
+          draw_as_shadow: true,
           direction_count: 1,
           frame_count: 1,
           shift: [
-            -0.046875,
-            -0.109375
-          ]
+            0.1875,
+            0.09375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/laser-turret/hr-laser-turret-base-shadow.png',
+            flags: [
+              'mask'
+            ],
+            line_length: 1,
+            width: 132,
+            height: 82,
+            draw_as_shadow: true,
+            direction_count: 1,
+            frame_count: 1,
+            shift: [
+              0.1875,
+              0.09375
+            ],
+            scale: 0.5
+          }
         }
       ]
     },
@@ -54647,99 +54692,10 @@ module.exports = {
     attacking_speed: 1,
     ending_attack_speed: 0.2,
     dying_explosion: 'medium_explosion',
-    inventory_size: 1,
-    automated_ammo_count: 10,
-    attacking_animation_fade_out: 10,
     turret_base_has_direction: true,
     fluid_box: {
       secondary_draw_order: 0,
       render_layer: 'lower_object',
-      pipe_picture: {
-        north: {
-          filename: 'graphics/entity/pipe/pipe-straight-vertical.png',
-          priority: 'extra_high',
-          width: 64,
-          height: 64,
-          hr_version: {
-            filename: 'graphics/entity/pipe/hr-pipe-straight-vertical.png',
-            priority: 'extra_high',
-            width: 128,
-            height: 128,
-            scale: 0.5,
-            shift: [
-              0,
-              1
-            ]
-          },
-          shift: [
-            0,
-            1
-          ]
-        },
-        south: {
-          filename: 'graphics/entity/pipe/pipe-straight-vertical.png',
-          priority: 'extra_high',
-          width: 64,
-          height: 64,
-          hr_version: {
-            filename: 'graphics/entity/pipe/hr-pipe-straight-vertical.png',
-            priority: 'extra_high',
-            width: 128,
-            height: 128,
-            scale: 0.5,
-            shift: [
-              0,
-              -1
-            ]
-          },
-          shift: [
-            0,
-            -1
-          ]
-        },
-        east: {
-          filename: 'graphics/entity/pipe/pipe-straight-horizontal.png',
-          priority: 'extra_high',
-          width: 64,
-          height: 64,
-          hr_version: {
-            filename: 'graphics/entity/pipe/hr-pipe-straight-horizontal.png',
-            priority: 'extra_high',
-            width: 128,
-            height: 128,
-            scale: 0.5,
-            shift: [
-              -1,
-              0
-            ]
-          },
-          shift: [
-            -1,
-            0
-          ]
-        },
-        west: {
-          filename: 'graphics/entity/pipe/pipe-straight-horizontal.png',
-          priority: 'extra_high',
-          width: 64,
-          height: 64,
-          hr_version: {
-            filename: 'graphics/entity/pipe/hr-pipe-straight-horizontal.png',
-            priority: 'extra_high',
-            width: 128,
-            height: 128,
-            scale: 0.5,
-            shift: [
-              1,
-              0
-            ]
-          },
-          shift: [
-            1,
-            0
-          ]
-        }
-      },
       pipe_covers: {
         north: {
           layers: [
@@ -54898,14 +54854,31 @@ module.exports = {
             frame_count: 1,
             line_length: 1,
             run_mode: 'forward',
-            width: 78,
-            height: 65,
+            width: 80,
+            height: 64,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0,
-              -1.109375
+              -0.0625,
+              -1
             ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension.png',
+              priority: 'medium',
+              frame_count: 1,
+              line_length: 1,
+              run_mode: 'forward',
+              width: 152,
+              height: 128,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0,
+                -1
+              ],
+              scale: 0.5,
+              y: 0
+            },
             y: 0
           },
           {
@@ -54916,15 +54889,35 @@ module.exports = {
             frame_count: 1,
             line_length: 1,
             run_mode: 'forward',
-            width: 74,
-            height: 61,
+            width: 76,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0,
-              -1.109375
+              -0.0625,
+              -1
             ],
             apply_runtime_tint: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-mask.png',
+              flags: [
+                'mask'
+              ],
+              frame_count: 1,
+              line_length: 1,
+              run_mode: 'forward',
+              width: 144,
+              height: 120,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0,
+                -1
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5,
+              y: 0
+            },
             y: 0
           },
           {
@@ -54932,15 +54925,32 @@ module.exports = {
             frame_count: 1,
             line_length: 1,
             run_mode: 'forward',
-            width: 91,
-            height: 56,
+            width: 92,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              1.04688,
-              -0.3125
+              1,
+              -0.25
             ],
             draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-shadow.png',
+              frame_count: 1,
+              line_length: 1,
+              run_mode: 'forward',
+              width: 180,
+              height: 114,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                1.03125,
+                -0.21875
+              ],
+              draw_as_shadow: true,
+              scale: 0.5,
+              y: 0
+            },
             y: 0
           }
         ]
@@ -54953,15 +54963,32 @@ module.exports = {
             frame_count: 1,
             line_length: 1,
             run_mode: 'forward',
-            width: 78,
-            height: 65,
+            width: 80,
+            height: 64,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0.625,
-              -0.484375
+              0.515625,
+              -0.515625
             ],
-            y: 585
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension.png',
+              priority: 'medium',
+              frame_count: 1,
+              line_length: 1,
+              run_mode: 'forward',
+              width: 152,
+              height: 128,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0.578125,
+                -0.515625
+              ],
+              scale: 0.5,
+              y: 1152
+            },
+            y: 576
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-mask.png',
@@ -54971,32 +54998,69 @@ module.exports = {
             frame_count: 1,
             line_length: 1,
             run_mode: 'forward',
-            width: 74,
-            height: 61,
+            width: 76,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0.625,
-              -0.484375
+              0.515625,
+              -0.515625
             ],
             apply_runtime_tint: true,
-            y: 549
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-mask.png',
+              flags: [
+                'mask'
+              ],
+              frame_count: 1,
+              line_length: 1,
+              run_mode: 'forward',
+              width: 144,
+              height: 120,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0.578125,
+                -0.515625
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5,
+              y: 1080
+            },
+            y: 540
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-shadow.png',
             frame_count: 1,
             line_length: 1,
             run_mode: 'forward',
-            width: 91,
-            height: 56,
+            width: 92,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              1.67188,
-              0.3125
+              1.578125,
+              0.234375
             ],
             draw_as_shadow: true,
-            y: 504
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-shadow.png',
+              frame_count: 1,
+              line_length: 1,
+              run_mode: 'forward',
+              width: 180,
+              height: 114,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                1.609375,
+                0.265625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5,
+              y: 1026
+            },
+            y: 540
           }
         ]
       },
@@ -55008,15 +55072,32 @@ module.exports = {
             frame_count: 1,
             line_length: 1,
             run_mode: 'forward',
-            width: 78,
-            height: 65,
+            width: 80,
+            height: 64,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0,
-              -0.171875
+              -0.0625,
+              -0.21875
             ],
-            y: 390
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension.png',
+              priority: 'medium',
+              frame_count: 1,
+              line_length: 1,
+              run_mode: 'forward',
+              width: 152,
+              height: 128,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0,
+                -0.21875
+              ],
+              scale: 0.5,
+              y: 768
+            },
+            y: 384
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-mask.png',
@@ -55026,32 +55107,69 @@ module.exports = {
             frame_count: 1,
             line_length: 1,
             run_mode: 'forward',
-            width: 74,
-            height: 61,
+            width: 76,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0,
-              -0.171875
+              -0.0625,
+              -0.21875
             ],
             apply_runtime_tint: true,
-            y: 366
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-mask.png',
+              flags: [
+                'mask'
+              ],
+              frame_count: 1,
+              line_length: 1,
+              run_mode: 'forward',
+              width: 144,
+              height: 120,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0,
+                -0.21875
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5,
+              y: 720
+            },
+            y: 360
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-shadow.png',
             frame_count: 1,
             line_length: 1,
             run_mode: 'forward',
-            width: 91,
-            height: 56,
+            width: 92,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              1.04688,
-              0.625
+              1,
+              0.53125
             ],
             draw_as_shadow: true,
-            y: 336
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-shadow.png',
+              frame_count: 1,
+              line_length: 1,
+              run_mode: 'forward',
+              width: 180,
+              height: 114,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                1.03125,
+                0.5625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5,
+              y: 684
+            },
+            y: 360
           }
         ]
       },
@@ -55063,15 +55181,32 @@ module.exports = {
             frame_count: 1,
             line_length: 1,
             run_mode: 'forward',
-            width: 78,
-            height: 65,
+            width: 80,
+            height: 64,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              -0.46875,
-              -0.484375
+              -0.4375,
+              -0.640625
             ],
-            y: 195
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension.png',
+              priority: 'medium',
+              frame_count: 1,
+              line_length: 1,
+              run_mode: 'forward',
+              width: 152,
+              height: 128,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                -0.375,
+                -0.640625
+              ],
+              scale: 0.5,
+              y: 384
+            },
+            y: 192
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-mask.png',
@@ -55081,32 +55216,69 @@ module.exports = {
             frame_count: 1,
             line_length: 1,
             run_mode: 'forward',
-            width: 74,
-            height: 61,
+            width: 76,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              -0.46875,
-              -0.484375
+              -0.4375,
+              -0.640625
             ],
             apply_runtime_tint: true,
-            y: 183
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-mask.png',
+              flags: [
+                'mask'
+              ],
+              frame_count: 1,
+              line_length: 1,
+              run_mode: 'forward',
+              width: 144,
+              height: 120,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                -0.375,
+                -0.640625
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5,
+              y: 360
+            },
+            y: 180
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-shadow.png',
             frame_count: 1,
             line_length: 1,
             run_mode: 'forward',
-            width: 91,
-            height: 56,
+            width: 92,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0.57813,
-              0.3125
+              0.625,
+              0.109375
             ],
             draw_as_shadow: true,
-            y: 168
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-shadow.png',
+              frame_count: 1,
+              line_length: 1,
+              run_mode: 'forward',
+              width: 180,
+              height: 114,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0.65625,
+                0.140625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5,
+              y: 342
+            },
+            y: 180
           }
         ]
       }
@@ -55120,14 +55292,31 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'forward',
-            width: 78,
-            height: 65,
+            width: 80,
+            height: 64,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0,
-              -1.109375
+              -0.0625,
+              -1
             ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension.png',
+              priority: 'medium',
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'forward',
+              width: 152,
+              height: 128,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0,
+                -1
+              ],
+              scale: 0.5,
+              y: 0
+            },
             y: 0
           },
           {
@@ -55138,15 +55327,35 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'forward',
-            width: 74,
-            height: 61,
+            width: 76,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0,
-              -1.109375
+              -0.0625,
+              -1
             ],
             apply_runtime_tint: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-mask.png',
+              flags: [
+                'mask'
+              ],
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'forward',
+              width: 144,
+              height: 120,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0,
+                -1
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5,
+              y: 0
+            },
             y: 0
           },
           {
@@ -55154,15 +55363,32 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'forward',
-            width: 91,
-            height: 56,
+            width: 92,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              1.04688,
-              -0.3125
+              1,
+              -0.25
             ],
             draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-shadow.png',
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'forward',
+              width: 180,
+              height: 114,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                1.03125,
+                -0.21875
+              ],
+              draw_as_shadow: true,
+              scale: 0.5,
+              y: 0
+            },
             y: 0
           }
         ]
@@ -55175,15 +55401,32 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'forward',
-            width: 78,
-            height: 65,
+            width: 80,
+            height: 64,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0.625,
-              -0.484375
+              0.515625,
+              -0.515625
             ],
-            y: 585
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension.png',
+              priority: 'medium',
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'forward',
+              width: 152,
+              height: 128,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0.578125,
+                -0.515625
+              ],
+              scale: 0.5,
+              y: 1152
+            },
+            y: 576
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-mask.png',
@@ -55193,32 +55436,69 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'forward',
-            width: 74,
-            height: 61,
+            width: 76,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0.625,
-              -0.484375
+              0.515625,
+              -0.515625
             ],
             apply_runtime_tint: true,
-            y: 549
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-mask.png',
+              flags: [
+                'mask'
+              ],
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'forward',
+              width: 144,
+              height: 120,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0.578125,
+                -0.515625
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5,
+              y: 1080
+            },
+            y: 540
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-shadow.png',
             frame_count: 15,
             line_length: 5,
             run_mode: 'forward',
-            width: 91,
-            height: 56,
+            width: 92,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              1.67188,
-              0.3125
+              1.578125,
+              0.234375
             ],
             draw_as_shadow: true,
-            y: 504
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-shadow.png',
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'forward',
+              width: 180,
+              height: 114,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                1.609375,
+                0.265625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5,
+              y: 1026
+            },
+            y: 540
           }
         ]
       },
@@ -55230,15 +55510,32 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'forward',
-            width: 78,
-            height: 65,
+            width: 80,
+            height: 64,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0,
-              -0.171875
+              -0.0625,
+              -0.21875
             ],
-            y: 390
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension.png',
+              priority: 'medium',
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'forward',
+              width: 152,
+              height: 128,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0,
+                -0.21875
+              ],
+              scale: 0.5,
+              y: 768
+            },
+            y: 384
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-mask.png',
@@ -55248,32 +55545,69 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'forward',
-            width: 74,
-            height: 61,
+            width: 76,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0,
-              -0.171875
+              -0.0625,
+              -0.21875
             ],
             apply_runtime_tint: true,
-            y: 366
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-mask.png',
+              flags: [
+                'mask'
+              ],
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'forward',
+              width: 144,
+              height: 120,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0,
+                -0.21875
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5,
+              y: 720
+            },
+            y: 360
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-shadow.png',
             frame_count: 15,
             line_length: 5,
             run_mode: 'forward',
-            width: 91,
-            height: 56,
+            width: 92,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              1.04688,
-              0.625
+              1,
+              0.53125
             ],
             draw_as_shadow: true,
-            y: 336
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-shadow.png',
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'forward',
+              width: 180,
+              height: 114,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                1.03125,
+                0.5625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5,
+              y: 684
+            },
+            y: 360
           }
         ]
       },
@@ -55285,15 +55619,32 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'forward',
-            width: 78,
-            height: 65,
+            width: 80,
+            height: 64,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              -0.46875,
-              -0.484375
+              -0.4375,
+              -0.640625
             ],
-            y: 195
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension.png',
+              priority: 'medium',
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'forward',
+              width: 152,
+              height: 128,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                -0.375,
+                -0.640625
+              ],
+              scale: 0.5,
+              y: 384
+            },
+            y: 192
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-mask.png',
@@ -55303,32 +55654,69 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'forward',
-            width: 74,
-            height: 61,
+            width: 76,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              -0.46875,
-              -0.484375
+              -0.4375,
+              -0.640625
             ],
             apply_runtime_tint: true,
-            y: 183
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-mask.png',
+              flags: [
+                'mask'
+              ],
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'forward',
+              width: 144,
+              height: 120,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                -0.375,
+                -0.640625
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5,
+              y: 360
+            },
+            y: 180
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-shadow.png',
             frame_count: 15,
             line_length: 5,
             run_mode: 'forward',
-            width: 91,
-            height: 56,
+            width: 92,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0.57813,
-              0.3125
+              0.625,
+              0.109375
             ],
             draw_as_shadow: true,
-            y: 168
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-shadow.png',
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'forward',
+              width: 180,
+              height: 114,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0.65625,
+                0.140625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5,
+              y: 342
+            },
+            y: 180
           }
         ]
       }
@@ -55341,15 +55729,31 @@ module.exports = {
             priority: 'medium',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 64,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0,
-              -1.0625
-            ]
+              -0.0625,
+              -1
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun.png',
+              priority: 'medium',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 128,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.03125,
+                -0.96875
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-mask.png',
@@ -55358,31 +55762,66 @@ module.exports = {
             ],
             counterclockwise: true,
             line_length: 8,
-            width: 72,
-            height: 57,
+            width: 74,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0,
-              -1.171875
+              -0.0625,
+              -1.0625
             ],
-            apply_runtime_tint: true
+            apply_runtime_tint: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-mask.png',
+              flags: [
+                'mask'
+              ],
+              counterclockwise: true,
+              line_length: 8,
+              width: 144,
+              height: 112,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.03125,
+                -1.0625
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-shadow.png',
             counterclockwise: true,
             line_length: 8,
-            width: 91,
-            height: 57,
+            width: 90,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.984375,
-              -0.296875
+              1,
+              -0.1875
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-shadow.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 182,
+              height: 116,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.96875,
+                -0.21875
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       },
@@ -55393,15 +55832,31 @@ module.exports = {
             priority: 'medium',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 64,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.625,
-              -0.4375
-            ]
+              0.515625,
+              -0.515625
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun.png',
+              priority: 'medium',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 128,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.546875,
+                -0.484375
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-mask.png',
@@ -55410,31 +55865,66 @@ module.exports = {
             ],
             counterclockwise: true,
             line_length: 8,
-            width: 72,
-            height: 57,
+            width: 74,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.625,
-              -0.546875
+              0.515625,
+              -0.578125
             ],
-            apply_runtime_tint: true
+            apply_runtime_tint: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-mask.png',
+              flags: [
+                'mask'
+              ],
+              counterclockwise: true,
+              line_length: 8,
+              width: 144,
+              height: 112,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.546875,
+                -0.578125
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-shadow.png',
             counterclockwise: true,
             line_length: 8,
-            width: 91,
-            height: 57,
+            width: 90,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              1.609375,
-              0.328125
+              1.578125,
+              0.296875
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-shadow.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 182,
+              height: 116,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                1.546875,
+                0.265625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       },
@@ -55445,15 +55935,31 @@ module.exports = {
             priority: 'medium',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 64,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0,
-              -0.125
-            ]
+              -0.0625,
+              -0.21875
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun.png',
+              priority: 'medium',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 128,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.03125,
+                -0.1875
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-mask.png',
@@ -55462,31 +55968,66 @@ module.exports = {
             ],
             counterclockwise: true,
             line_length: 8,
-            width: 72,
-            height: 57,
+            width: 74,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0,
-              -0.234375
+              -0.0625,
+              -0.28125
             ],
-            apply_runtime_tint: true
+            apply_runtime_tint: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-mask.png',
+              flags: [
+                'mask'
+              ],
+              counterclockwise: true,
+              line_length: 8,
+              width: 144,
+              height: 112,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.03125,
+                -0.28125
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-shadow.png',
             counterclockwise: true,
             line_length: 8,
-            width: 91,
-            height: 57,
+            width: 90,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.984375,
-              0.640625
+              1,
+              0.59375
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-shadow.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 182,
+              height: 116,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.96875,
+                0.5625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       },
@@ -55497,15 +56038,31 @@ module.exports = {
             priority: 'medium',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 64,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              -0.46875,
-              -0.4375
-            ]
+              -0.4375,
+              -0.640625
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun.png',
+              priority: 'medium',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 128,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.40625,
+                -0.609375
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-mask.png',
@@ -55514,31 +56071,66 @@ module.exports = {
             ],
             counterclockwise: true,
             line_length: 8,
-            width: 72,
-            height: 57,
+            width: 74,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              -0.46875,
-              -0.546875
+              -0.4375,
+              -0.703125
             ],
-            apply_runtime_tint: true
+            apply_runtime_tint: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-mask.png',
+              flags: [
+                'mask'
+              ],
+              counterclockwise: true,
+              line_length: 8,
+              width: 144,
+              height: 112,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.40625,
+                -0.703125
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-shadow.png',
             counterclockwise: true,
             line_length: 8,
-            width: 91,
-            height: 57,
+            width: 90,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.515625,
-              0.328125
+              0.625,
+              0.171875
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-shadow.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 182,
+              height: 116,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.59375,
+                0.140625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       }
@@ -55551,28 +56143,44 @@ module.exports = {
             priority: 'medium',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 64,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0,
-              -1.0625
-            ]
+              -0.0625,
+              -1
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun.png',
+              priority: 'medium',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 128,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.03125,
+                -0.96875
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-active.png',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 63,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0,
-              -1.078125
+              -0.0625,
+              -1
             ],
             tint: {
               r: 0.5,
@@ -55580,7 +56188,29 @@ module.exports = {
               b: 0.5,
               a: 0.5
             },
-            blend_mode: 'additive'
+            blend_mode: 'additive',
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-active.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 126,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.03125,
+                -0.96875
+              ],
+              tint: {
+                r: 0.5,
+                g: 0.5,
+                b: 0.5,
+                a: 0.5
+              },
+              blend_mode: 'additive',
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-mask.png',
@@ -55589,31 +56219,66 @@ module.exports = {
             ],
             counterclockwise: true,
             line_length: 8,
-            width: 72,
-            height: 57,
+            width: 74,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0,
-              -1.171875
+              -0.0625,
+              -1.0625
             ],
-            apply_runtime_tint: true
+            apply_runtime_tint: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-mask.png',
+              flags: [
+                'mask'
+              ],
+              counterclockwise: true,
+              line_length: 8,
+              width: 144,
+              height: 112,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.03125,
+                -1.0625
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-shadow.png',
             counterclockwise: true,
             line_length: 8,
-            width: 91,
-            height: 57,
+            width: 90,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.984375,
-              -0.296875
+              1,
+              -0.1875
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-shadow.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 182,
+              height: 116,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.96875,
+                -0.21875
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       },
@@ -55624,28 +56289,44 @@ module.exports = {
             priority: 'medium',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 64,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.625,
-              -0.4375
-            ]
+              0.515625,
+              -0.515625
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun.png',
+              priority: 'medium',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 128,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.546875,
+                -0.484375
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-active.png',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 63,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.625,
-              -0.453125
+              0.515625,
+              -0.515625
             ],
             tint: {
               r: 0.5,
@@ -55653,7 +56334,29 @@ module.exports = {
               b: 0.5,
               a: 0.5
             },
-            blend_mode: 'additive'
+            blend_mode: 'additive',
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-active.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 126,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.546875,
+                -0.484375
+              ],
+              tint: {
+                r: 0.5,
+                g: 0.5,
+                b: 0.5,
+                a: 0.5
+              },
+              blend_mode: 'additive',
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-mask.png',
@@ -55662,31 +56365,66 @@ module.exports = {
             ],
             counterclockwise: true,
             line_length: 8,
-            width: 72,
-            height: 57,
+            width: 74,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.625,
-              -0.546875
+              0.515625,
+              -0.578125
             ],
-            apply_runtime_tint: true
+            apply_runtime_tint: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-mask.png',
+              flags: [
+                'mask'
+              ],
+              counterclockwise: true,
+              line_length: 8,
+              width: 144,
+              height: 112,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.546875,
+                -0.578125
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-shadow.png',
             counterclockwise: true,
             line_length: 8,
-            width: 91,
-            height: 57,
+            width: 90,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              1.609375,
-              0.328125
+              1.578125,
+              0.296875
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-shadow.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 182,
+              height: 116,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                1.546875,
+                0.265625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       },
@@ -55697,28 +56435,44 @@ module.exports = {
             priority: 'medium',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 64,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0,
-              -0.125
-            ]
+              -0.0625,
+              -0.21875
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun.png',
+              priority: 'medium',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 128,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.03125,
+                -0.1875
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-active.png',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 63,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0,
-              -0.140625
+              -0.0625,
+              -0.21875
             ],
             tint: {
               r: 0.5,
@@ -55726,7 +56480,29 @@ module.exports = {
               b: 0.5,
               a: 0.5
             },
-            blend_mode: 'additive'
+            blend_mode: 'additive',
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-active.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 126,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.03125,
+                -0.1875
+              ],
+              tint: {
+                r: 0.5,
+                g: 0.5,
+                b: 0.5,
+                a: 0.5
+              },
+              blend_mode: 'additive',
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-mask.png',
@@ -55735,31 +56511,66 @@ module.exports = {
             ],
             counterclockwise: true,
             line_length: 8,
-            width: 72,
-            height: 57,
+            width: 74,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0,
-              -0.234375
+              -0.0625,
+              -0.28125
             ],
-            apply_runtime_tint: true
+            apply_runtime_tint: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-mask.png',
+              flags: [
+                'mask'
+              ],
+              counterclockwise: true,
+              line_length: 8,
+              width: 144,
+              height: 112,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.03125,
+                -0.28125
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-shadow.png',
             counterclockwise: true,
             line_length: 8,
-            width: 91,
-            height: 57,
+            width: 90,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.984375,
-              0.640625
+              1,
+              0.59375
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-shadow.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 182,
+              height: 116,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.96875,
+                0.5625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       },
@@ -55770,28 +56581,44 @@ module.exports = {
             priority: 'medium',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 64,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              -0.46875,
-              -0.4375
-            ]
+              -0.4375,
+              -0.640625
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun.png',
+              priority: 'medium',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 128,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.40625,
+                -0.609375
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-active.png',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 63,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              -0.46875,
-              -0.453125
+              -0.4375,
+              -0.640625
             ],
             tint: {
               r: 0.5,
@@ -55799,7 +56626,29 @@ module.exports = {
               b: 0.5,
               a: 0.5
             },
-            blend_mode: 'additive'
+            blend_mode: 'additive',
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-active.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 126,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.40625,
+                -0.609375
+              ],
+              tint: {
+                r: 0.5,
+                g: 0.5,
+                b: 0.5,
+                a: 0.5
+              },
+              blend_mode: 'additive',
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-mask.png',
@@ -55808,31 +56657,66 @@ module.exports = {
             ],
             counterclockwise: true,
             line_length: 8,
-            width: 72,
-            height: 57,
+            width: 74,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              -0.46875,
-              -0.546875
+              -0.4375,
+              -0.703125
             ],
-            apply_runtime_tint: true
+            apply_runtime_tint: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-mask.png',
+              flags: [
+                'mask'
+              ],
+              counterclockwise: true,
+              line_length: 8,
+              width: 144,
+              height: 112,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.40625,
+                -0.703125
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-shadow.png',
             counterclockwise: true,
             line_length: 8,
-            width: 91,
-            height: 57,
+            width: 90,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.515625,
-              0.328125
+              0.625,
+              0.171875
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-shadow.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 182,
+              height: 116,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.59375,
+                0.140625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       }
@@ -55845,28 +56729,44 @@ module.exports = {
             priority: 'medium',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 64,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0,
-              -1.0625
-            ]
+              -0.0625,
+              -1
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun.png',
+              priority: 'medium',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 128,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.03125,
+                -0.96875
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-active.png',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 63,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0,
-              -1.078125
+              -0.0625,
+              -1
             ],
             tint: {
               r: 0.5,
@@ -55874,7 +56774,29 @@ module.exports = {
               b: 0.5,
               a: 0.5
             },
-            blend_mode: 'additive'
+            blend_mode: 'additive',
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-active.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 126,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.03125,
+                -0.96875
+              ],
+              tint: {
+                r: 0.5,
+                g: 0.5,
+                b: 0.5,
+                a: 0.5
+              },
+              blend_mode: 'additive',
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-mask.png',
@@ -55883,31 +56805,66 @@ module.exports = {
             ],
             counterclockwise: true,
             line_length: 8,
-            width: 72,
-            height: 57,
+            width: 74,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0,
-              -1.171875
+              -0.0625,
+              -1.0625
             ],
-            apply_runtime_tint: true
+            apply_runtime_tint: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-mask.png',
+              flags: [
+                'mask'
+              ],
+              counterclockwise: true,
+              line_length: 8,
+              width: 144,
+              height: 112,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.03125,
+                -1.0625
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-shadow.png',
             counterclockwise: true,
             line_length: 8,
-            width: 91,
-            height: 57,
+            width: 90,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.984375,
-              -0.296875
+              1,
+              -0.1875
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-shadow.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 182,
+              height: 116,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.96875,
+                -0.21875
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       },
@@ -55918,28 +56875,44 @@ module.exports = {
             priority: 'medium',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 64,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.625,
-              -0.4375
-            ]
+              0.515625,
+              -0.515625
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun.png',
+              priority: 'medium',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 128,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.546875,
+                -0.484375
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-active.png',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 63,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.625,
-              -0.453125
+              0.515625,
+              -0.515625
             ],
             tint: {
               r: 0.5,
@@ -55947,7 +56920,29 @@ module.exports = {
               b: 0.5,
               a: 0.5
             },
-            blend_mode: 'additive'
+            blend_mode: 'additive',
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-active.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 126,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.546875,
+                -0.484375
+              ],
+              tint: {
+                r: 0.5,
+                g: 0.5,
+                b: 0.5,
+                a: 0.5
+              },
+              blend_mode: 'additive',
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-mask.png',
@@ -55956,31 +56951,66 @@ module.exports = {
             ],
             counterclockwise: true,
             line_length: 8,
-            width: 72,
-            height: 57,
+            width: 74,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.625,
-              -0.546875
+              0.515625,
+              -0.578125
             ],
-            apply_runtime_tint: true
+            apply_runtime_tint: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-mask.png',
+              flags: [
+                'mask'
+              ],
+              counterclockwise: true,
+              line_length: 8,
+              width: 144,
+              height: 112,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.546875,
+                -0.578125
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-shadow.png',
             counterclockwise: true,
             line_length: 8,
-            width: 91,
-            height: 57,
+            width: 90,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              1.609375,
-              0.328125
+              1.578125,
+              0.296875
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-shadow.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 182,
+              height: 116,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                1.546875,
+                0.265625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       },
@@ -55991,28 +57021,44 @@ module.exports = {
             priority: 'medium',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 64,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0,
-              -0.125
-            ]
+              -0.0625,
+              -0.21875
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun.png',
+              priority: 'medium',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 128,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.03125,
+                -0.1875
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-active.png',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 63,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0,
-              -0.140625
+              -0.0625,
+              -0.21875
             ],
             tint: {
               r: 0.5,
@@ -56020,7 +57066,29 @@ module.exports = {
               b: 0.5,
               a: 0.5
             },
-            blend_mode: 'additive'
+            blend_mode: 'additive',
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-active.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 126,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.03125,
+                -0.1875
+              ],
+              tint: {
+                r: 0.5,
+                g: 0.5,
+                b: 0.5,
+                a: 0.5
+              },
+              blend_mode: 'additive',
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-mask.png',
@@ -56029,31 +57097,66 @@ module.exports = {
             ],
             counterclockwise: true,
             line_length: 8,
-            width: 72,
-            height: 57,
+            width: 74,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0,
-              -0.234375
+              -0.0625,
+              -0.28125
             ],
-            apply_runtime_tint: true
+            apply_runtime_tint: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-mask.png',
+              flags: [
+                'mask'
+              ],
+              counterclockwise: true,
+              line_length: 8,
+              width: 144,
+              height: 112,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.03125,
+                -0.28125
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-shadow.png',
             counterclockwise: true,
             line_length: 8,
-            width: 91,
-            height: 57,
+            width: 90,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.984375,
-              0.640625
+              1,
+              0.59375
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-shadow.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 182,
+              height: 116,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.96875,
+                0.5625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       },
@@ -56064,28 +57167,44 @@ module.exports = {
             priority: 'medium',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 64,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              -0.46875,
-              -0.4375
-            ]
+              -0.4375,
+              -0.640625
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun.png',
+              priority: 'medium',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 128,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.40625,
+                -0.609375
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-active.png',
             counterclockwise: true,
             line_length: 8,
-            width: 78,
-            height: 63,
+            width: 82,
+            height: 66,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              -0.46875,
-              -0.453125
+              -0.4375,
+              -0.640625
             ],
             tint: {
               r: 0.5,
@@ -56093,7 +57212,29 @@ module.exports = {
               b: 0.5,
               a: 0.5
             },
-            blend_mode: 'additive'
+            blend_mode: 'additive',
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-active.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 158,
+              height: 126,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.40625,
+                -0.609375
+              ],
+              tint: {
+                r: 0.5,
+                g: 0.5,
+                b: 0.5,
+                a: 0.5
+              },
+              blend_mode: 'additive',
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-mask.png',
@@ -56102,31 +57243,66 @@ module.exports = {
             ],
             counterclockwise: true,
             line_length: 8,
-            width: 72,
-            height: 57,
+            width: 74,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              -0.46875,
-              -0.546875
+              -0.4375,
+              -0.703125
             ],
-            apply_runtime_tint: true
+            apply_runtime_tint: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-mask.png',
+              flags: [
+                'mask'
+              ],
+              counterclockwise: true,
+              line_length: 8,
+              width: 144,
+              height: 112,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                -0.40625,
+                -0.703125
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-shadow.png',
             counterclockwise: true,
             line_length: 8,
-            width: 91,
-            height: 57,
+            width: 90,
+            height: 56,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 64,
             shift: [
-              0.515625,
-              0.328125
+              0.625,
+              0.171875
             ],
-            draw_as_shadow: true
+            draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-shadow.png',
+              counterclockwise: true,
+              line_length: 8,
+              width: 182,
+              height: 116,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 64,
+              shift: [
+                0.59375,
+                0.140625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5
+            }
           }
         ]
       }
@@ -56140,14 +57316,31 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'backward',
-            width: 78,
-            height: 65,
+            width: 80,
+            height: 64,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0,
-              -1.109375
+              -0.0625,
+              -1
             ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension.png',
+              priority: 'medium',
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'backward',
+              width: 152,
+              height: 128,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0,
+                -1
+              ],
+              scale: 0.5,
+              y: 0
+            },
             y: 0
           },
           {
@@ -56158,15 +57351,35 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'backward',
-            width: 74,
-            height: 61,
+            width: 76,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0,
-              -1.109375
+              -0.0625,
+              -1
             ],
             apply_runtime_tint: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-mask.png',
+              flags: [
+                'mask'
+              ],
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'backward',
+              width: 144,
+              height: 120,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0,
+                -1
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5,
+              y: 0
+            },
             y: 0
           },
           {
@@ -56174,15 +57387,32 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'backward',
-            width: 91,
-            height: 56,
+            width: 92,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              1.04688,
-              -0.3125
+              1,
+              -0.25
             ],
             draw_as_shadow: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-shadow.png',
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'backward',
+              width: 180,
+              height: 114,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                1.03125,
+                -0.21875
+              ],
+              draw_as_shadow: true,
+              scale: 0.5,
+              y: 0
+            },
             y: 0
           }
         ]
@@ -56195,15 +57425,32 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'backward',
-            width: 78,
-            height: 65,
+            width: 80,
+            height: 64,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0.625,
-              -0.484375
+              0.515625,
+              -0.515625
             ],
-            y: 585
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension.png',
+              priority: 'medium',
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'backward',
+              width: 152,
+              height: 128,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0.578125,
+                -0.515625
+              ],
+              scale: 0.5,
+              y: 1152
+            },
+            y: 576
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-mask.png',
@@ -56213,32 +57460,69 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'backward',
-            width: 74,
-            height: 61,
+            width: 76,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0.625,
-              -0.484375
+              0.515625,
+              -0.515625
             ],
             apply_runtime_tint: true,
-            y: 549
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-mask.png',
+              flags: [
+                'mask'
+              ],
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'backward',
+              width: 144,
+              height: 120,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0.578125,
+                -0.515625
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5,
+              y: 1080
+            },
+            y: 540
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-shadow.png',
             frame_count: 15,
             line_length: 5,
             run_mode: 'backward',
-            width: 91,
-            height: 56,
+            width: 92,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              1.67188,
-              0.3125
+              1.578125,
+              0.234375
             ],
             draw_as_shadow: true,
-            y: 504
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-shadow.png',
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'backward',
+              width: 180,
+              height: 114,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                1.609375,
+                0.265625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5,
+              y: 1026
+            },
+            y: 540
           }
         ]
       },
@@ -56250,15 +57534,32 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'backward',
-            width: 78,
-            height: 65,
+            width: 80,
+            height: 64,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0,
-              -0.171875
+              -0.0625,
+              -0.21875
             ],
-            y: 390
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension.png',
+              priority: 'medium',
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'backward',
+              width: 152,
+              height: 128,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0,
+                -0.21875
+              ],
+              scale: 0.5,
+              y: 768
+            },
+            y: 384
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-mask.png',
@@ -56268,32 +57569,69 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'backward',
-            width: 74,
-            height: 61,
+            width: 76,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0,
-              -0.171875
+              -0.0625,
+              -0.21875
             ],
             apply_runtime_tint: true,
-            y: 366
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-mask.png',
+              flags: [
+                'mask'
+              ],
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'backward',
+              width: 144,
+              height: 120,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0,
+                -0.21875
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5,
+              y: 720
+            },
+            y: 360
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-shadow.png',
             frame_count: 15,
             line_length: 5,
             run_mode: 'backward',
-            width: 91,
-            height: 56,
+            width: 92,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              1.04688,
-              0.625
+              1,
+              0.53125
             ],
             draw_as_shadow: true,
-            y: 336
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-shadow.png',
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'backward',
+              width: 180,
+              height: 114,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                1.03125,
+                0.5625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5,
+              y: 684
+            },
+            y: 360
           }
         ]
       },
@@ -56305,15 +57643,32 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'backward',
-            width: 78,
-            height: 65,
+            width: 80,
+            height: 64,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              -0.46875,
-              -0.484375
+              -0.4375,
+              -0.640625
             ],
-            y: 195
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension.png',
+              priority: 'medium',
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'backward',
+              width: 152,
+              height: 128,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                -0.375,
+                -0.640625
+              ],
+              scale: 0.5,
+              y: 384
+            },
+            y: 192
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-mask.png',
@@ -56323,32 +57678,69 @@ module.exports = {
             frame_count: 15,
             line_length: 5,
             run_mode: 'backward',
-            width: 74,
-            height: 61,
+            width: 76,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              -0.46875,
-              -0.484375
+              -0.4375,
+              -0.640625
             ],
             apply_runtime_tint: true,
-            y: 183
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-mask.png',
+              flags: [
+                'mask'
+              ],
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'backward',
+              width: 144,
+              height: 120,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                -0.375,
+                -0.640625
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5,
+              y: 360
+            },
+            y: 180
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-gun-extension-shadow.png',
             frame_count: 15,
             line_length: 5,
             run_mode: 'backward',
-            width: 91,
-            height: 56,
+            width: 92,
+            height: 60,
             direction_count: 1,
             axially_symmetrical: false,
             shift: [
-              0.57813,
-              0.3125
+              0.625,
+              0.109375
             ],
             draw_as_shadow: true,
-            y: 168
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-gun-extension-shadow.png',
+              frame_count: 15,
+              line_length: 5,
+              run_mode: 'backward',
+              width: 180,
+              height: 114,
+              direction_count: 1,
+              axially_symmetrical: false,
+              shift: [
+                0.65625,
+                0.140625
+              ],
+              draw_as_shadow: true,
+              scale: 0.5,
+              y: 342
+            },
+            y: 180
           }
         ]
       }
@@ -56357,111 +57749,227 @@ module.exports = {
       north: {
         filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-led-indicator-north.png',
         line_length: 2,
-        width: 5,
-        height: 9,
+        width: 4,
+        height: 10,
         frame_count: 2,
         axially_symmetrical: false,
         direction_count: 1,
         shift: [
-          0.234375,
-          0.640625
-        ]
+          0.25,
+          0.625
+        ],
+        hr_version: {
+          filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-led-indicator-north.png',
+          line_length: 2,
+          width: 10,
+          height: 18,
+          frame_count: 2,
+          axially_symmetrical: false,
+          direction_count: 1,
+          shift: [
+            0.21875,
+            0.625
+          ],
+          scale: 0.5
+        }
       },
       east: {
         filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-led-indicator-east.png',
         line_length: 2,
-        width: 10,
+        width: 12,
         height: 6,
         frame_count: 2,
         axially_symmetrical: false,
         direction_count: 1,
         shift: [
-          -1.03125,
-          -0.15625
-        ]
+          -1.0625,
+          -0.1875
+        ],
+        hr_version: {
+          filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-led-indicator-east.png',
+          line_length: 2,
+          width: 18,
+          height: 8,
+          frame_count: 2,
+          axially_symmetrical: false,
+          direction_count: 1,
+          shift: [
+            -1.03125,
+            -0.15625
+          ],
+          scale: 0.5
+        }
       },
       south: {
         filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-led-indicator-south.png',
         line_length: 2,
-        width: 5,
-        height: 8,
+        width: 4,
+        height: 12,
         frame_count: 2,
         axially_symmetrical: false,
         direction_count: 1,
         shift: [
-          -0.234375,
-          -1.375
-        ]
+          -0.25,
+          -1.4375
+        ],
+        hr_version: {
+          filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-led-indicator-south.png',
+          line_length: 2,
+          width: 8,
+          height: 18,
+          frame_count: 2,
+          axially_symmetrical: false,
+          direction_count: 1,
+          shift: [
+            -0.25,
+            -1.40625
+          ],
+          scale: 0.5
+        }
       },
       west: {
         filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-led-indicator-west.png',
         line_length: 2,
         width: 10,
-        height: 6,
+        height: 10,
         frame_count: 2,
         axially_symmetrical: false,
         direction_count: 1,
         shift: [
-          1.03125,
-          -0.46875
-        ]
+          1,
+          -0.6875
+        ],
+        hr_version: {
+          filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-led-indicator-west.png',
+          line_length: 2,
+          width: 20,
+          height: 10,
+          frame_count: 2,
+          axially_symmetrical: false,
+          direction_count: 1,
+          shift: [
+            1,
+            -0.625
+          ],
+          scale: 0.5
+        }
       }
     },
     enough_fuel_indicator_picture: {
       north: {
         filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-led-indicator-north.png',
         line_length: 2,
-        width: 5,
-        height: 9,
+        width: 4,
+        height: 10,
         frame_count: 2,
         axially_symmetrical: false,
         direction_count: 1,
         shift: [
-          0.234375,
-          0.640625
+          0.25,
+          0.625
         ],
-        x: 5
+        hr_version: {
+          filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-led-indicator-north.png',
+          line_length: 2,
+          width: 10,
+          height: 18,
+          frame_count: 2,
+          axially_symmetrical: false,
+          direction_count: 1,
+          shift: [
+            0.21875,
+            0.625
+          ],
+          scale: 0.5,
+          x: 10
+        },
+        x: 4
       },
       east: {
         filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-led-indicator-east.png',
         line_length: 2,
-        width: 10,
+        width: 12,
         height: 6,
         frame_count: 2,
         axially_symmetrical: false,
         direction_count: 1,
         shift: [
-          -1.03125,
-          -0.15625
+          -1.0625,
+          -0.1875
         ],
-        x: 10
+        hr_version: {
+          filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-led-indicator-east.png',
+          line_length: 2,
+          width: 18,
+          height: 8,
+          frame_count: 2,
+          axially_symmetrical: false,
+          direction_count: 1,
+          shift: [
+            -1.03125,
+            -0.15625
+          ],
+          scale: 0.5,
+          x: 18
+        },
+        x: 12
       },
       south: {
         filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-led-indicator-south.png',
         line_length: 2,
-        width: 5,
-        height: 8,
+        width: 4,
+        height: 12,
         frame_count: 2,
         axially_symmetrical: false,
         direction_count: 1,
         shift: [
-          -0.234375,
-          -1.375
+          -0.25,
+          -1.4375
         ],
-        x: 5
+        hr_version: {
+          filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-led-indicator-south.png',
+          line_length: 2,
+          width: 8,
+          height: 18,
+          frame_count: 2,
+          axially_symmetrical: false,
+          direction_count: 1,
+          shift: [
+            -0.25,
+            -1.40625
+          ],
+          scale: 0.5,
+          x: 8
+        },
+        x: 4
       },
       west: {
         filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-led-indicator-west.png',
         line_length: 2,
         width: 10,
-        height: 6,
+        height: 10,
         frame_count: 2,
         axially_symmetrical: false,
         direction_count: 1,
         shift: [
-          1.03125,
-          -0.46875
+          1,
+          -0.6875
         ],
+        hr_version: {
+          filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-led-indicator-west.png',
+          line_length: 2,
+          width: 20,
+          height: 10,
+          frame_count: 2,
+          axially_symmetrical: false,
+          direction_count: 1,
+          shift: [
+            1,
+            -0.625
+          ],
+          scale: 0.5,
+          x: 20
+        },
         x: 10
       }
     },
@@ -56471,7 +57979,7 @@ module.exports = {
     },
     gun_animation_render_layer: 'object',
     gun_animation_secondary_draw_order: 1,
-    base_picture_render_layer: 'lower_object',
+    base_picture_render_layer: 'lower_object_above_shadow',
     base_picture_secondary_draw_order: 1,
     base_picture: {
       north: {
@@ -56479,15 +57987,29 @@ module.exports = {
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-base-north.png',
             line_length: 1,
-            width: 69,
-            height: 86,
+            width: 80,
+            height: 96,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 1,
             shift: [
-              -0.015625,
-              0.34375
-            ]
+              -0.0625,
+              0.4375
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-base-north.png',
+              line_length: 1,
+              width: 158,
+              height: 196,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 1,
+              shift: [
+                -0.03125,
+                0.40625
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-base-north-mask.png',
@@ -56495,30 +58017,63 @@ module.exports = {
               'mask'
             ],
             line_length: 1,
-            width: 37,
-            height: 37,
+            width: 36,
+            height: 38,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 1,
             shift: [
-              -0.015625,
-              1.04688
+              0,
+              1
             ],
-            apply_runtime_tint: true
+            apply_runtime_tint: true,
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-base-north-mask.png',
+              flags: [
+                'mask'
+              ],
+              line_length: 1,
+              width: 74,
+              height: 70,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 1,
+              shift: [
+                -0.03125,
+                1.03125
+              ],
+              apply_runtime_tint: true,
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-base-north-shadow.png',
             draw_as_shadow: true,
             line_length: 1,
-            width: 71,
+            width: 70,
             height: 78,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 1,
             shift: [
-              0.140625,
-              0.46875
-            ]
+              0.0625,
+              0.4375
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-base-north-shadow.png',
+              draw_as_shadow: true,
+              line_length: 1,
+              width: 134,
+              height: 152,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 1,
+              shift: [
+                0.09375,
+                0.46875
+              ],
+              scale: 0.5
+            }
           }
         ]
       },
@@ -56527,15 +58082,29 @@ module.exports = {
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-base-east.png',
             line_length: 1,
-            width: 95,
-            height: 60,
+            width: 106,
+            height: 72,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 1,
             shift: [
-              -0.140625,
-              0.125
-            ]
+              -0.1875,
+              0.0625
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-base-east.png',
+              line_length: 1,
+              width: 216,
+              height: 146,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 1,
+              shift: [
+                -0.1875,
+                0.09375
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-base-east-mask.png',
@@ -56544,29 +58113,62 @@ module.exports = {
             ],
             apply_runtime_tint: true,
             line_length: 1,
-            width: 33,
+            width: 32,
             height: 42,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 1,
             shift: [
-              -1.01563,
-              0.03125
-            ]
+              -1,
+              0
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-base-east-mask.png',
+              flags: [
+                'mask'
+              ],
+              apply_runtime_tint: true,
+              line_length: 1,
+              width: 66,
+              height: 82,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 1,
+              shift: [
+                -1.03125,
+                0.03125
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-base-east-shadow.png',
             draw_as_shadow: true,
             line_length: 1,
-            width: 100,
-            height: 44,
+            width: 72,
+            height: 46,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 1,
             shift: [
-              0.03125,
-              0.28125
-            ]
+              0.4375,
+              0.25
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-base-east-shadow.png',
+              draw_as_shadow: true,
+              line_length: 1,
+              width: 144,
+              height: 86,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 1,
+              shift: [
+                0.4375,
+                0.28125
+              ],
+              scale: 0.5
+            }
           }
         ]
       },
@@ -56575,15 +58177,29 @@ module.exports = {
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-base-south.png',
             line_length: 1,
-            width: 70,
-            height: 90,
+            width: 64,
+            height: 84,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 1,
             shift: [
               0,
-              -0.15625
-            ]
+              -0.25
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-base-south.png',
+              line_length: 1,
+              width: 128,
+              height: 166,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 1,
+              shift: [
+                0,
+                -0.25
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-base-south-mask.png',
@@ -56592,29 +58208,62 @@ module.exports = {
             ],
             apply_runtime_tint: true,
             line_length: 1,
-            width: 37,
-            height: 37,
+            width: 36,
+            height: 38,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 1,
             shift: [
-              0.015625,
-              -0.953125
-            ]
+              0,
+              -1
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-base-south-mask.png',
+              flags: [
+                'mask'
+              ],
+              apply_runtime_tint: true,
+              line_length: 1,
+              width: 72,
+              height: 72,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 1,
+              shift: [
+                0,
+                -0.96875
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-base-south-shadow.png',
             draw_as_shadow: true,
             line_length: 1,
-            width: 67,
-            height: 70,
+            width: 70,
+            height: 52,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 1,
             shift: [
-              0.140625,
-              -0.0625
-            ]
+              0.0625,
+              0.25
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-base-south-shadow.png',
+              draw_as_shadow: true,
+              line_length: 1,
+              width: 134,
+              height: 98,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 1,
+              shift: [
+                0.09375,
+                0.28125
+              ],
+              scale: 0.5
+            }
           }
         ]
       },
@@ -56623,15 +58272,29 @@ module.exports = {
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-base-west.png',
             line_length: 1,
-            width: 93,
-            height: 59,
+            width: 100,
+            height: 74,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 1,
             shift: [
-              0.140625,
-              0.203125
-            ]
+              0.25,
+              -0.0625
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-base-west.png',
+              line_length: 1,
+              width: 208,
+              height: 144,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 1,
+              shift: [
+                0.21875,
+                -0.03125
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-base-west-mask.png',
@@ -56640,29 +58303,62 @@ module.exports = {
             ],
             apply_runtime_tint: true,
             line_length: 1,
-            width: 33,
+            width: 32,
             height: 40,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 1,
             shift: [
-              1.01563,
-              0.09375
-            ]
+              1,
+              -0.0625
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-base-west-mask.png',
+              flags: [
+                'mask'
+              ],
+              apply_runtime_tint: true,
+              line_length: 1,
+              width: 64,
+              height: 74,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 1,
+              shift: [
+                1,
+                -0.03125
+              ],
+              scale: 0.5
+            }
           },
           {
             filename: 'graphics/entity/flamethrower-turret/flamethrower-turret-base-west-shadow.png',
             draw_as_shadow: true,
             line_length: 1,
-            width: 103,
-            height: 45,
+            width: 104,
+            height: 44,
             frame_count: 1,
             axially_symmetrical: false,
             direction_count: 1,
             shift: [
-              0.484375,
-              0.296875
-            ]
+              0.4375,
+              0.125
+            ],
+            hr_version: {
+              filename: 'graphics/entity/flamethrower-turret/hr-flamethrower-turret-base-west-shadow.png',
+              draw_as_shadow: true,
+              line_length: 1,
+              width: 206,
+              height: 88,
+              frame_count: 1,
+              axially_symmetrical: false,
+              direction_count: 1,
+              shift: [
+                0.46875,
+                0.125
+              ],
+              scale: 0.5
+            }
           }
         ]
       }
@@ -56685,2221 +58381,6 @@ module.exports = {
     muzzle_light: {
       intensity: 0.7,
       size: 3
-    },
-    folded_muzzle_animation_shift: {
-      rotations: [
-        {
-          frames: [
-            [
-              6.547803732916165e-17,
-              -1.4590777198723306
-            ]
-          ],
-          render_layer: 'object'
-        },
-        {
-          frames: [
-            [
-              1.0693375,
-              -0.7029419222453116
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              6.547803732916165e-17,
-              0.05319387538170744
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -1.0693375,
-              -0.7029419222453115
-            ]
-          ]
-        }
-      ],
-      direction_shift: {
-        north: [
-          0,
-          -0.3125
-        ],
-        east: [
-          0.625,
-          0.3125
-        ],
-        south: [
-          0,
-          0.625
-        ],
-        west: [
-          -0.46875,
-          0.3125
-        ]
-      }
-    },
-    preparing_muzzle_animation_shift: {
-      rotations: [
-        {
-          frames: [
-            [
-              6.547803732916165e-17,
-              -1.4590777198723306
-            ],
-            [
-              6.430237263876306e-17,
-              -1.4914130973926114
-            ],
-            [
-              6.295363094513917e-17,
-              -1.5211108176413644
-            ],
-            [
-              6.143440298106037e-17,
-              -1.548113835702266
-            ],
-            [
-              5.974760695813893e-17,
-              -1.5723702827822625
-            ],
-            [
-              5.789648296137726e-17,
-              -1.593833565843828
-            ],
-            [
-              5.588458672544502e-17,
-              -1.6124624571032795
-            ],
-            [
-              5.371578280464032e-17,
-              -1.6282211732232355
-            ],
-            [
-              5.139423714965394e-17,
-              -1.641079444047103
-            ],
-            [
-              4.8924409105395874e-17,
-              -1.6510125707435543
-            ],
-            [
-              4.631104284525516e-17,
-              -1.6580014732493227
-            ],
-            [
-              4.355915825824629e-17,
-              -1.6620327269191726
-            ],
-            [
-              4.067404130654696e-17,
-              -1.6630985883126534
-            ],
-            [
-              3.7661233871948606e-17,
-              -1.6611970100680988
-            ],
-            [
-              3.452652311072337e-17,
-              -1.6563316448353067
-            ]
-          ],
-          render_layer: 'object'
-        },
-        {
-          frames: [
-            [
-              1.0693375,
-              -0.7029419222453116
-            ],
-            [
-              1.0501374385420006,
-              -0.7488537934217412
-            ],
-            [
-              1.0281108151177947,
-              -0.7941266884603916
-            ],
-            [
-              1.003299939604356,
-              -0.83867364484402
-            ],
-            [
-              0.9757524700140081,
-              -0.8824090944758805
-            ],
-            [
-              0.9455213209504496,
-              -0.9252490280433479
-            ],
-            [
-              0.9126645619676474,
-              -0.967111156387349
-            ],
-            [
-              0.8772453060268373,
-              -1.0079150685676326
-            ],
-            [
-              0.8393315882658836,
-              -1.0475823863202611
-            ],
-            [
-              0.7989962353138709,
-              -1.0860369146106317
-            ],
-            [
-              0.7563167254019478,
-              -1.1232047879928373
-            ],
-            [
-              0.7113750395391369,
-              -1.1590146124942344
-            ],
-            [
-              0.6642575040389737,
-              -1.1933976027526763
-            ],
-            [
-              0.6150546246994615,
-              -1.226287714142992
-            ],
-            [
-              0.5638609129548549,
-              -1.257621769638918
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              6.547803732916165e-17,
-              0.05319387538170744
-            ],
-            [
-              6.430237263876306e-17,
-              -0.006294489450871084
-            ],
-            [
-              6.295363094513917e-17,
-              -0.06714255927941898
-            ],
-            [
-              6.143440298106037e-17,
-              -0.1292334539857739
-            ],
-            [
-              5.974760695813893e-17,
-              -0.19244790616949825
-            ],
-            [
-              5.789648296137726e-17,
-              -0.25666449024286786
-            ],
-            [
-              5.588458672544502e-17,
-              -0.32175985567141885
-            ],
-            [
-              5.371578280464032e-17,
-              -0.3876089639120295
-            ],
-            [
-              5.139423714965394e-17,
-              -0.4540853285934194
-            ],
-            [
-              4.8924409105395874e-17,
-              -0.5210612584777091
-            ],
-            [
-              4.631104284525516e-17,
-              -0.5884081027363519
-            ],
-            [
-              4.355915825824629e-17,
-              -0.655996498069296
-            ],
-            [
-              4.067404130654696e-17,
-              -0.7236966171926988
-            ],
-            [
-              3.7661233871948606e-17,
-              -0.791378418217885
-            ],
-            [
-              3.452652311072337e-17,
-              -0.8589118944425292
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -1.0693375,
-              -0.7029419222453115
-            ],
-            [
-              -1.0501374385420006,
-              -0.748853793421741
-            ],
-            [
-              -1.0281108151177947,
-              -0.7941266884603915
-            ],
-            [
-              -1.003299939604356,
-              -0.8386736448440198
-            ],
-            [
-              -0.9757524700140081,
-              -0.8824090944758802
-            ],
-            [
-              -0.9455213209504496,
-              -0.9252490280433477
-            ],
-            [
-              -0.9126645619676474,
-              -0.9671111563873489
-            ],
-            [
-              -0.8772453060268373,
-              -1.0079150685676326
-            ],
-            [
-              -0.8393315882658836,
-              -1.0475823863202611
-            ],
-            [
-              -0.7989962353138709,
-              -1.0860369146106317
-            ],
-            [
-              -0.7563167254019478,
-              -1.1232047879928373
-            ],
-            [
-              -0.7113750395391369,
-              -1.1590146124942344
-            ],
-            [
-              -0.6642575040389737,
-              -1.1933976027526763
-            ],
-            [
-              -0.6150546246994615,
-              -1.226287714142992
-            ],
-            [
-              -0.5638609129548549,
-              -1.257621769638918
-            ]
-          ]
-        }
-      ],
-      direction_shift: {
-        north: [
-          0,
-          -0.3125
-        ],
-        east: [
-          0.625,
-          0.3125
-        ],
-        south: [
-          0,
-          0.625
-        ],
-        west: [
-          -0.46875,
-          0.3125
-        ]
-      }
-    },
-    prepared_muzzle_animation_shift: {
-      rotations: [
-        {
-          frames: [
-            [
-              3.452652311072337e-17,
-              -1.6563316448353067
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.055268034231450255,
-              -1.6544117478077418
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.11000380708067072,
-              -1.648670546382945
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.16368018313350652,
-              -1.6391633314690972
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.215780229546077,
-              -1.6259816627429913
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.26580219439064656,
-              -1.609252486880292
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.31326433880097443,
-              -1.5891369149896557
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.3577095763809419,
-              -1.5658286710246785
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.39870987519641543,
-              -1.5395522261163266
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.43587037995675915,
-              -1.5105606367932323
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.46883321468713246,
-              -1.4791331079089922
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.4972809292697634,
-              -1.4455723037467965
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5209395566621187,
-              -1.4102014331969286
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5395812513492886,
-              -1.3733611370784686
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5530264836208488,
-              -1.3354062075819917
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5611457685401126,
-              -1.296702171426824
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5638609129548549,
-              -1.257621769638918
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5611457685401126,
-              -1.218541367851012
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5530264836208488,
-              -1.1798373316958441
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5395812513492886,
-              -1.1418824021993674
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5209395566621187,
-              -1.1050421060809075
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.4972809292697634,
-              -1.0696712355310394
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.46883321468713246,
-              -1.0361104313688438
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.43587037995675915,
-              -1.0046829024846036
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.39870987519641543,
-              -0.9756913131615094
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.3577095763809419,
-              -0.9494148682531574
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.31326433880097443,
-              -0.9261066242881804
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.26580219439064656,
-              -0.9059910523975441
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.215780229546077,
-              -0.8892618765348449
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.16368018313350652,
-              -0.8760802078087386
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.11000380708067072,
-              -0.866572992894891
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.055268034231450255,
-              -0.8608317914700941
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              3.452652311072337e-17,
-              -0.8589118944425292
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.055268034231450186,
-              -0.8608317914700941
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.11000380708067065,
-              -0.866572992894891
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.16368018313350646,
-              -0.8760802078087386
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.21578022954607695,
-              -0.8892618765348449
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.26580219439064656,
-              -0.9059910523975441
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.31326433880097426,
-              -0.9261066242881804
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.3577095763809418,
-              -0.949414868253157
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.39870987519641543,
-              -0.9756913131615094
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.43587037995675915,
-              -1.0046829024846036
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.4688332146871325,
-              -1.0361104313688438
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.4972809292697633,
-              -1.0696712355310394
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5209395566621187,
-              -1.1050421060809072
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5395812513492886,
-              -1.1418824021993672
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5530264836208488,
-              -1.179837331695844
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5611457685401126,
-              -1.218541367851012
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5638609129548549,
-              -1.257621769638918
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5611457685401126,
-              -1.296702171426824
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5530264836208488,
-              -1.335406207581992
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5395812513492887,
-              -1.3733611370784686
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5209395566621186,
-              -1.4102014331969286
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.4972809292697634,
-              -1.4455723037467965
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.46883321468713246,
-              -1.479133107908992
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.43587037995675926,
-              -1.510560636793232
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.39870987519641554,
-              -1.5395522261163266
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.3577095763809421,
-              -1.5658286710246785
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.3132643388009744,
-              -1.5891369149896557
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.2658021943906467,
-              -1.609252486880292
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.21578022954607723,
-              -1.6259816627429908
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.16368018313350657,
-              -1.6391633314690972
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.11000380708067092,
-              -1.648670546382945
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.05526803423145008,
-              -1.6544117478077418
-            ]
-          ]
-        }
-      ],
-      direction_shift: {
-        north: [
-          0,
-          -0.3125
-        ],
-        east: [
-          0.625,
-          0.3125
-        ],
-        south: [
-          0,
-          0.625
-        ],
-        west: [
-          -0.46875,
-          0.3125
-        ]
-      }
-    },
-    attacking_muzzle_animation_shift: {
-      rotations: [
-        {
-          frames: [
-            [
-              3.452652311072337e-17,
-              -1.6563316448353067
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.055268034231450255,
-              -1.6544117478077418
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.11000380708067072,
-              -1.648670546382945
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.16368018313350652,
-              -1.6391633314690972
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.215780229546077,
-              -1.6259816627429913
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.26580219439064656,
-              -1.609252486880292
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.31326433880097443,
-              -1.5891369149896557
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.3577095763809419,
-              -1.5658286710246785
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.39870987519641543,
-              -1.5395522261163266
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.43587037995675915,
-              -1.5105606367932323
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.46883321468713246,
-              -1.4791331079089922
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.4972809292697634,
-              -1.4455723037467965
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5209395566621187,
-              -1.4102014331969286
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5395812513492886,
-              -1.3733611370784686
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5530264836208488,
-              -1.3354062075819917
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5611457685401126,
-              -1.296702171426824
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5638609129548549,
-              -1.257621769638918
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5611457685401126,
-              -1.218541367851012
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5530264836208488,
-              -1.1798373316958441
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5395812513492886,
-              -1.1418824021993674
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5209395566621187,
-              -1.1050421060809075
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.4972809292697634,
-              -1.0696712355310394
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.46883321468713246,
-              -1.0361104313688438
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.43587037995675915,
-              -1.0046829024846036
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.39870987519641543,
-              -0.9756913131615094
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.3577095763809419,
-              -0.9494148682531574
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.31326433880097443,
-              -0.9261066242881804
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.26580219439064656,
-              -0.9059910523975441
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.215780229546077,
-              -0.8892618765348449
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.16368018313350652,
-              -0.8760802078087386
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.11000380708067072,
-              -0.866572992894891
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.055268034231450255,
-              -0.8608317914700941
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              3.452652311072337e-17,
-              -0.8589118944425292
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.055268034231450186,
-              -0.8608317914700941
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.11000380708067065,
-              -0.866572992894891
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.16368018313350646,
-              -0.8760802078087386
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.21578022954607695,
-              -0.8892618765348449
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.26580219439064656,
-              -0.9059910523975441
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.31326433880097426,
-              -0.9261066242881804
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.3577095763809418,
-              -0.949414868253157
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.39870987519641543,
-              -0.9756913131615094
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.43587037995675915,
-              -1.0046829024846036
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.4688332146871325,
-              -1.0361104313688438
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.4972809292697633,
-              -1.0696712355310394
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5209395566621187,
-              -1.1050421060809072
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5395812513492886,
-              -1.1418824021993672
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5530264836208488,
-              -1.179837331695844
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5611457685401126,
-              -1.218541367851012
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5638609129548549,
-              -1.257621769638918
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5611457685401126,
-              -1.296702171426824
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5530264836208488,
-              -1.335406207581992
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5395812513492887,
-              -1.3733611370784686
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5209395566621186,
-              -1.4102014331969286
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.4972809292697634,
-              -1.4455723037467965
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.46883321468713246,
-              -1.479133107908992
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.43587037995675926,
-              -1.510560636793232
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.39870987519641554,
-              -1.5395522261163266
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.3577095763809421,
-              -1.5658286710246785
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.3132643388009744,
-              -1.5891369149896557
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.2658021943906467,
-              -1.609252486880292
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.21578022954607723,
-              -1.6259816627429908
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.16368018313350657,
-              -1.6391633314690972
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.11000380708067092,
-              -1.648670546382945
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.05526803423145008,
-              -1.6544117478077418
-            ]
-          ]
-        }
-      ],
-      direction_shift: {
-        north: [
-          0,
-          -0.3125
-        ],
-        east: [
-          0.625,
-          0.3125
-        ],
-        south: [
-          0,
-          0.625
-        ],
-        west: [
-          -0.46875,
-          0.3125
-        ]
-      }
-    },
-    ending_attack_muzzle_animation_shift: {
-      rotations: [
-        {
-          frames: [
-            [
-              3.452652311072337e-17,
-              -1.6563316448353067
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.055268034231450255,
-              -1.6544117478077418
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.11000380708067072,
-              -1.648670546382945
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.16368018313350652,
-              -1.6391633314690972
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.215780229546077,
-              -1.6259816627429913
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.26580219439064656,
-              -1.609252486880292
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.31326433880097443,
-              -1.5891369149896557
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.3577095763809419,
-              -1.5658286710246785
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.39870987519641543,
-              -1.5395522261163266
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.43587037995675915,
-              -1.5105606367932323
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.46883321468713246,
-              -1.4791331079089922
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.4972809292697634,
-              -1.4455723037467965
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5209395566621187,
-              -1.4102014331969286
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5395812513492886,
-              -1.3733611370784686
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5530264836208488,
-              -1.3354062075819917
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5611457685401126,
-              -1.296702171426824
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5638609129548549,
-              -1.257621769638918
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5611457685401126,
-              -1.218541367851012
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5530264836208488,
-              -1.1798373316958441
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5395812513492886,
-              -1.1418824021993674
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.5209395566621187,
-              -1.1050421060809075
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.4972809292697634,
-              -1.0696712355310394
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.46883321468713246,
-              -1.0361104313688438
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.43587037995675915,
-              -1.0046829024846036
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.39870987519641543,
-              -0.9756913131615094
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.3577095763809419,
-              -0.9494148682531574
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.31326433880097443,
-              -0.9261066242881804
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.26580219439064656,
-              -0.9059910523975441
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.215780229546077,
-              -0.8892618765348449
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.16368018313350652,
-              -0.8760802078087386
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.11000380708067072,
-              -0.866572992894891
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              0.055268034231450255,
-              -0.8608317914700941
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              3.452652311072337e-17,
-              -0.8589118944425292
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.055268034231450186,
-              -0.8608317914700941
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.11000380708067065,
-              -0.866572992894891
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.16368018313350646,
-              -0.8760802078087386
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.21578022954607695,
-              -0.8892618765348449
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.26580219439064656,
-              -0.9059910523975441
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.31326433880097426,
-              -0.9261066242881804
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.3577095763809418,
-              -0.949414868253157
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.39870987519641543,
-              -0.9756913131615094
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.43587037995675915,
-              -1.0046829024846036
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.4688332146871325,
-              -1.0361104313688438
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.4972809292697633,
-              -1.0696712355310394
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5209395566621187,
-              -1.1050421060809072
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5395812513492886,
-              -1.1418824021993672
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5530264836208488,
-              -1.179837331695844
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5611457685401126,
-              -1.218541367851012
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5638609129548549,
-              -1.257621769638918
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5611457685401126,
-              -1.296702171426824
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5530264836208488,
-              -1.335406207581992
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5395812513492887,
-              -1.3733611370784686
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5209395566621186,
-              -1.4102014331969286
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.4972809292697634,
-              -1.4455723037467965
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.46883321468713246,
-              -1.479133107908992
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.43587037995675926,
-              -1.510560636793232
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.39870987519641554,
-              -1.5395522261163266
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.3577095763809421,
-              -1.5658286710246785
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.3132643388009744,
-              -1.5891369149896557
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.2658021943906467,
-              -1.609252486880292
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.21578022954607723,
-              -1.6259816627429908
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.16368018313350657,
-              -1.6391633314690972
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.11000380708067092,
-              -1.648670546382945
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.05526803423145008,
-              -1.6544117478077418
-            ]
-          ]
-        }
-      ],
-      direction_shift: {
-        north: [
-          0,
-          -0.3125
-        ],
-        east: [
-          0.625,
-          0.3125
-        ],
-        south: [
-          0,
-          0.625
-        ],
-        west: [
-          -0.46875,
-          0.3125
-        ]
-      }
-    },
-    folding_muzzle_animation_shift: {
-      rotations: [
-        {
-          frames: [
-            [
-              3.452652311072337e-17,
-              -1.6563316448353067
-            ],
-            [
-              3.7661233871948606e-17,
-              -1.6611970100680988
-            ],
-            [
-              4.067404130654696e-17,
-              -1.6630985883126534
-            ],
-            [
-              4.355915825824629e-17,
-              -1.6620327269191726
-            ],
-            [
-              4.631104284525516e-17,
-              -1.6580014732493227
-            ],
-            [
-              4.8924409105395874e-17,
-              -1.6510125707435543
-            ],
-            [
-              5.139423714965394e-17,
-              -1.641079444047103
-            ],
-            [
-              5.371578280464032e-17,
-              -1.6282211732232355
-            ],
-            [
-              5.588458672544502e-17,
-              -1.6124624571032795
-            ],
-            [
-              5.789648296137726e-17,
-              -1.593833565843828
-            ],
-            [
-              5.974760695813893e-17,
-              -1.5723702827822625
-            ],
-            [
-              6.143440298106037e-17,
-              -1.548113835702266
-            ],
-            [
-              6.295363094513917e-17,
-              -1.5211108176413644
-            ],
-            [
-              6.430237263876306e-17,
-              -1.4914130973926114
-            ],
-            [
-              6.547803732916165e-17,
-              -1.4590777198723306
-            ]
-          ],
-          render_layer: 'object'
-        },
-        {
-          frames: [
-            [
-              0.5638609129548549,
-              -1.257621769638918
-            ],
-            [
-              0.6150546246994615,
-              -1.226287714142992
-            ],
-            [
-              0.6642575040389737,
-              -1.1933976027526763
-            ],
-            [
-              0.7113750395391369,
-              -1.1590146124942344
-            ],
-            [
-              0.7563167254019478,
-              -1.1232047879928373
-            ],
-            [
-              0.7989962353138709,
-              -1.0860369146106317
-            ],
-            [
-              0.8393315882658836,
-              -1.0475823863202611
-            ],
-            [
-              0.8772453060268373,
-              -1.0079150685676326
-            ],
-            [
-              0.9126645619676474,
-              -0.967111156387349
-            ],
-            [
-              0.9455213209504496,
-              -0.9252490280433479
-            ],
-            [
-              0.9757524700140081,
-              -0.8824090944758805
-            ],
-            [
-              1.003299939604356,
-              -0.83867364484402
-            ],
-            [
-              1.0281108151177947,
-              -0.7941266884603916
-            ],
-            [
-              1.0501374385420006,
-              -0.7488537934217412
-            ],
-            [
-              1.0693375,
-              -0.7029419222453116
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              3.452652311072337e-17,
-              -0.8589118944425292
-            ],
-            [
-              3.7661233871948606e-17,
-              -0.791378418217885
-            ],
-            [
-              4.067404130654696e-17,
-              -0.7236966171926988
-            ],
-            [
-              4.355915825824629e-17,
-              -0.655996498069296
-            ],
-            [
-              4.631104284525516e-17,
-              -0.5884081027363519
-            ],
-            [
-              4.8924409105395874e-17,
-              -0.5210612584777091
-            ],
-            [
-              5.139423714965394e-17,
-              -0.4540853285934194
-            ],
-            [
-              5.371578280464032e-17,
-              -0.3876089639120295
-            ],
-            [
-              5.588458672544502e-17,
-              -0.32175985567141885
-            ],
-            [
-              5.789648296137726e-17,
-              -0.25666449024286786
-            ],
-            [
-              5.974760695813893e-17,
-              -0.19244790616949825
-            ],
-            [
-              6.143440298106037e-17,
-              -0.1292334539857739
-            ],
-            [
-              6.295363094513917e-17,
-              -0.06714255927941898
-            ],
-            [
-              6.430237263876306e-17,
-              -0.006294489450871084
-            ],
-            [
-              6.547803732916165e-17,
-              0.05319387538170744
-            ]
-          ]
-        },
-        {
-          frames: [
-            [
-              -0.5638609129548549,
-              -1.257621769638918
-            ],
-            [
-              -0.6150546246994615,
-              -1.226287714142992
-            ],
-            [
-              -0.6642575040389737,
-              -1.1933976027526763
-            ],
-            [
-              -0.7113750395391369,
-              -1.1590146124942344
-            ],
-            [
-              -0.7563167254019478,
-              -1.1232047879928373
-            ],
-            [
-              -0.7989962353138709,
-              -1.0860369146106317
-            ],
-            [
-              -0.8393315882658836,
-              -1.0475823863202611
-            ],
-            [
-              -0.8772453060268373,
-              -1.0079150685676326
-            ],
-            [
-              -0.9126645619676474,
-              -0.9671111563873489
-            ],
-            [
-              -0.9455213209504496,
-              -0.9252490280433477
-            ],
-            [
-              -0.9757524700140081,
-              -0.8824090944758802
-            ],
-            [
-              -1.003299939604356,
-              -0.8386736448440198
-            ],
-            [
-              -1.0281108151177947,
-              -0.7941266884603915
-            ],
-            [
-              -1.0501374385420006,
-              -0.748853793421741
-            ],
-            [
-              -1.0693375,
-              -0.7029419222453115
-            ]
-          ]
-        }
-      ],
-      direction_shift: {
-        north: [
-          0,
-          -0.3125
-        ],
-        east: [
-          0.625,
-          0.3125
-        ],
-        south: [
-          0,
-          0.625
-        ],
-        west: [
-          -0.46875,
-          0.3125
-        ]
-      }
     },
     prepare_range: 35,
     shoot_in_prepare_state: false,

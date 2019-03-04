@@ -61,10 +61,11 @@ function cropAndGenSpritesheet(paths, spritesheetName, tempDir) {
         'flamethrower-turret-gun(-[^e]|[^-])',
         'pump-[a-z]+?-liquid',
         'pump-[a-z]+?-glass',
-        'accumulator-[a-z]+?-animation',
+        'accumulator-(dis)*charge',
         'connector\/(hr-)?.-.-',
         'heated',
-        'gun-turret-gun-[m12]',
+        'gun-turret-shooting',
+        'laser-turret-shooting',
         'roboport-recharging',
         'segment-visualisation',
         'graphics\/[^/]*$',
@@ -85,9 +86,8 @@ function cropAndGenSpritesheet(paths, spritesheetName, tempDir) {
     const cropImages = [
         ['artillery-wagon-cannon', 4, 4],
         ['flamethrower-turret-gun-extension', 5, 1],
-        ['gun-turret-gun-extension', 5, 1],
-        ['laser-turret-gun-start', 15, 1],
-        ['laser-turret-gun', 8, 1],
+        ['gun-turret-raising', 5, 1],
+        ['laser-turret-raising', 15, 1],
         ['burner-mining-drill', 4, 8],
         ['electric-mining-drill', 8, 8],
         ['pumpjack-horsehead', 8, 5],
@@ -95,22 +95,22 @@ function cropAndGenSpritesheet(paths, spritesheetName, tempDir) {
         ['centrifuge', 8, 8],
         ['lab.png', 11, 3],
         ['pump-', 8, 4],
-        ['hr-.*?splitter', 8, 4],
-        ['splitter', 16, 2],
+        ['splitter', 8, 4],
         ['radar', 8, 8],
         ['steam-engine', 8, 4],
         ['steam-turbine', 4, 2],
-        ['hr-.*?transport-belt', 16, 1],
-        ['^transport-belt\.png', 16, 1],
-        ['-transport-belt', 32, 1],
+        ['^(hr-)*transport-belt', 16, 1],
+        ['^(hr-)*(fast|express)-transport-belt', 32, 1],
         ['beacon-antenna.png', 8, 4],
         ['roboport-door-', 16, 1],
-        ['gate(-rail(-base)?)?-[a-z]+?(-(left|right))?\.png', 8, 2],
-        ['arm|satellite', 4, 3],
+        ['gate', 8, 2],
+        ['rocket-silo-arms', 32, 1],
+        ['rocket-silo-turbine', 8, 4],
         ['rail-signal\.png', 3, 1],
-        ['rail-chain-signal\.png', 4, 1],
-        ['power-switch', 2, 3]
-    ].map(cI => { return { regex: cI[0], x: cI[1], y: cI[2] } })
+        ['rail-chain-signal\.png', 5, 1, 3],
+        ['power-switch', 2, 3],
+        ['logistic-chest', 7, 1]
+    ].map(cI => { return { regex: cI[0], x: cI[1], y: cI[2], xOffset: cI[3] || 0 } })
 
     Promise.all(
         paths
@@ -122,7 +122,8 @@ function cropAndGenSpritesheet(paths, spritesheetName, tempDir) {
                         path: path,
                         outPath: tempDir + path.replace(factorioDataDirectory + 'base/', ''),
                         x: cropImage.x,
-                        y: cropImage.y
+                        y: cropImage.y,
+                        xOffset: cropImage.xOffset
                     }
                 }
             }
@@ -133,7 +134,12 @@ function cropAndGenSpritesheet(paths, spritesheetName, tempDir) {
             return Jimp
                 .read(data.path)
                 .then(img => img
-                    .crop(0, 0, img.bitmap.width / data.x, img.bitmap.height / data.y)
+                    .crop(
+                        data.xOffset * (img.bitmap.width / data.x),
+                        0,
+                        img.bitmap.width / data.x,
+                        img.bitmap.height / data.y
+                    )
                     .write(data.outPath))
                 .then(() => data.outPath)
         }
@@ -159,7 +165,8 @@ function cropAndGenSpritesheet(paths, spritesheetName, tempDir) {
                 execFile(pngquant, [
                     '-o',
                     spritesheetsOutDir + spritesheetName + 'Compressed.png',
-                    spritesheetsOutDir + spritesheetName + '.png'
+                    spritesheetsOutDir + spritesheetName + '.png',
+                    '--force'
                 ], err => {
                     if (err) {
                         console.log(err)

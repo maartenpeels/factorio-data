@@ -3,11 +3,24 @@ const utils = require('./utils')
 const rawData = utils.loadRawData(process.argv[2])
 const outputFile = process.argv[3]
 
+const blacklistedEntities = [
+    'escape_pod_assembler',
+    'escape_pod_lab',
+    'escape_pod_power',
+    'compilatron_chest',
+    'player_port'
+]
+
 let entities = {}
 const placeableEntities = utils.stringMatchAll(JSON.stringify(rawData), /"place_result":"(.+?)"/g).concat(['curved_rail'])
 function findAllEntities(data) {
     if (data.constructor === Object) {
-        if (placeableEntities.includes(data.name) && data.hasOwnProperty('collision_box') && (!data.flags.includes('placeable_off_grid') || data.name === 'land_mine')) {
+        if (
+            placeableEntities.includes(data.name) &&
+            !blacklistedEntities.includes(data.name) &&
+            data.hasOwnProperty('collision_box') &&
+            (!data.flags.includes('placeable_off_grid') || data.name === 'land_mine')
+        ) {
             entities[data.name] = data
         } else {
             for (let k in data) {
@@ -25,10 +38,13 @@ for (let k in entities) {
     e = entities[k]
 
     // Size
-    if (e.name === 'offshore_pump') e.size = { width: 1, height: 1 }
-    else e.size = {
-        width: Math.ceil(Math.abs(e.selection_box[0][0]) + Math.abs(e.selection_box[1][0])),
-        height: Math.ceil(Math.abs(e.selection_box[0][1]) + Math.abs(e.selection_box[1][1]))
+    if (e.name === 'offshore_pump') {
+        e.size = { width: 1, height: 1 }
+    } else {
+        e.size = {
+            width: Math.ceil(Math.abs(e.selection_box[0][0]) + Math.abs(e.selection_box[1][0])),
+            height: Math.ceil(Math.abs(e.selection_box[0][1]) + Math.abs(e.selection_box[1][1]))
+        }
     }
 
     // Move out splitters and underground_belts from transport_belt fast_replaceable_group
@@ -55,7 +71,8 @@ for (let k in entities) {
         'inserter',
         'boiler',
         'mining_drill',
-        'assembling_machine'
+        'assembling_machine',
+        'loader'
     ].includes(e.type)) e.possible_rotations = [0, 2, 4, 6]
     if ([
         'storage_tank',
@@ -75,8 +92,6 @@ for (let k in entities) {
 // fix shifts
 entities.storage_tank.pictures.window_background.shift = [0, 1]
 entities.storage_tank.pictures.window_background.hr_version.shift = [0, 1]
-
-add_to_Y_shift(-1, entities.gate.wall_patch.south.layers[0])
 
 add_to_Y_shift(-0.6875, entities.artillery_turret.base_picture.layers[0])
 add_to_Y_shift(-0.6875, entities.artillery_turret.cannon_barrel_pictures.layers[0])
@@ -98,7 +113,15 @@ const keysToDelete = [
     'meltdown_action',
     'ammo_type',
     'attack_parameters',
-    'fluid_wagon_connector_graphics'
+    'fluid_wagon_connector_graphics',
+    'cannon_base_shiftings',
+    'cannon_barrel_recoil_shiftings',
+    'folded_muzzle_animation_shift',
+    'preparing_muzzle_animation_shift',
+    'prepared_muzzle_animation_shift',
+    'attacking_muzzle_animation_shift',
+    'ending_attack_muzzle_animation_shift',
+    'folding_muzzle_animation_shift'
 ]
 
 Object.keys(entities).forEach(entK =>
