@@ -897,6 +897,23 @@ module.exports = {
         transition_group: 0,
         transition_group1: 0,
         transition_group2: 2,
+        inner_corner_background: {
+          picture: 'graphics/terrain/out-of-map-transition/grass-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 0,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-grass-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 0,
+            tall: true,
+            scale: 0.5
+          }
+        },
         inner_corner_mask: {
           picture: 'graphics/terrain/out-of-map-transition/grass-out-of-map-transition.png',
           count: 3,
@@ -909,6 +926,23 @@ module.exports = {
             line_length: 3,
             x: 2176,
             y: 0,
+            scale: 0.5
+          }
+        },
+        outer_corner_background: {
+          picture: 'graphics/terrain/out-of-map-transition/grass-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 288,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-grass-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 576,
+            tall: true,
             scale: 0.5
           }
         },
@@ -927,6 +961,23 @@ module.exports = {
             scale: 0.5
           }
         },
+        side_background: {
+          picture: 'graphics/terrain/out-of-map-transition/grass-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 576,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-grass-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 1152,
+            tall: true,
+            scale: 0.5
+          }
+        },
         side_mask: {
           picture: 'graphics/terrain/out-of-map-transition/grass-out-of-map-transition.png',
           count: 3,
@@ -939,6 +990,23 @@ module.exports = {
             line_length: 3,
             x: 2176,
             y: 1152,
+            scale: 0.5
+          }
+        },
+        u_transition_background: {
+          picture: 'graphics/terrain/out-of-map-transition/grass-out-of-map-transition.png',
+          count: 1,
+          line_length: 1,
+          x: 544,
+          y: 864,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-grass-out-of-map-transition.png',
+            count: 1,
+            line_length: 1,
+            x: 1088,
+            y: 1728,
+            tall: true,
             scale: 0.5
           }
         },
@@ -1974,6 +2042,23 @@ module.exports = {
             scale: 0.5
           }
         },
+        inner_corner_background: {
+          picture: 'graphics/terrain/out-of-map-transition/stone-path-out-of-map-transition-b.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 0,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-stone-path-out-of-map-transition-b.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 0,
+            tall: true,
+            scale: 0.5
+          }
+        },
         outer_corner: {
           picture: 'graphics/terrain/out-of-map-transition/stone-path-out-of-map-transition-b.png',
           count: 3,
@@ -1986,6 +2071,23 @@ module.exports = {
             count: 3,
             line_length: 3,
             x: 0,
+            y: 576,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        outer_corner_background: {
+          picture: 'graphics/terrain/out-of-map-transition/stone-path-out-of-map-transition-b.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 288,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-stone-path-out-of-map-transition-b.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
             y: 576,
             tall: true,
             scale: 0.5
@@ -2008,6 +2110,23 @@ module.exports = {
             scale: 0.5
           }
         },
+        side_background: {
+          picture: 'graphics/terrain/out-of-map-transition/stone-path-out-of-map-transition-b.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 576,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-stone-path-out-of-map-transition-b.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 1152,
+            tall: true,
+            scale: 0.5
+          }
+        },
         u_transition: {
           picture: 'graphics/terrain/out-of-map-transition/stone-path-out-of-map-transition-b.png',
           count: 1,
@@ -2022,6 +2141,238 @@ module.exports = {
             x: 0,
             y: 1728,
             tall: true,
+            scale: 0.5
+          }
+        },
+        u_transition_background: {
+          picture: 'graphics/terrain/out-of-map-transition/stone-path-out-of-map-transition-b.png',
+          count: 1,
+          line_length: 1,
+          x: 544,
+          y: 864,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-stone-path-out-of-map-transition-b.png',
+            count: 1,
+            line_length: 1,
+            x: 1088,
+            y: 1728,
+            tall: true,
+            scale: 0.5
+          }
+        }
+      },
+      {
+        water_patch: {
+          filename: 'graphics/terrain/water-transitions/water-patch.png',
+          width: 32,
+          height: 32,
+          hr_version: {
+            filename: 'graphics/terrain/water-transitions/hr-water-patch.png',
+            scale: 0.5,
+            width: 64,
+            height: 64
+          }
+        },
+        background_layer_offset: 1,
+        background_layer_group: 'zero',
+        offset_background_layer_by_tile_layer: true,
+        transition_group: 1,
+        transition_group1: 1,
+        transition_group2: 2,
+        inner_corner: {
+          picture: 'graphics/terrain/out-of-map-transition/stone-path-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 0,
+          y: 0,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-stone-path-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 0,
+            y: 0,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        inner_corner_background: {
+          picture: 'graphics/terrain/out-of-map-transition/stone-path-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 0,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-stone-path-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 0,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        inner_corner_mask: {
+          picture: 'graphics/terrain/out-of-map-transition/stone-path-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 1088,
+          y: 0,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-stone-path-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 2176,
+            y: 0,
+            scale: 0.5
+          }
+        },
+        outer_corner: {
+          picture: 'graphics/terrain/out-of-map-transition/stone-path-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 0,
+          y: 288,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-stone-path-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 0,
+            y: 576,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        outer_corner_background: {
+          picture: 'graphics/terrain/out-of-map-transition/stone-path-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 288,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-stone-path-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 576,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        outer_corner_mask: {
+          picture: 'graphics/terrain/out-of-map-transition/stone-path-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 1088,
+          y: 288,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-stone-path-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 2176,
+            y: 576,
+            scale: 0.5
+          }
+        },
+        side: {
+          picture: 'graphics/terrain/out-of-map-transition/stone-path-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 0,
+          y: 576,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-stone-path-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 0,
+            y: 1152,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        side_background: {
+          picture: 'graphics/terrain/out-of-map-transition/stone-path-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 576,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-stone-path-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 1152,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        side_mask: {
+          picture: 'graphics/terrain/out-of-map-transition/stone-path-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 1088,
+          y: 576,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-stone-path-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 2176,
+            y: 1152,
+            scale: 0.5
+          }
+        },
+        u_transition: {
+          picture: 'graphics/terrain/out-of-map-transition/stone-path-shore-out-of-map-transition.png',
+          count: 1,
+          line_length: 1,
+          x: 0,
+          y: 864,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-stone-path-shore-out-of-map-transition.png',
+            count: 1,
+            line_length: 1,
+            x: 0,
+            y: 1728,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        u_transition_background: {
+          picture: 'graphics/terrain/out-of-map-transition/stone-path-shore-out-of-map-transition.png',
+          count: 1,
+          line_length: 1,
+          x: 544,
+          y: 864,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-stone-path-shore-out-of-map-transition.png',
+            count: 1,
+            line_length: 1,
+            x: 1088,
+            y: 1728,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        u_transition_mask: {
+          picture: 'graphics/terrain/out-of-map-transition/stone-path-shore-out-of-map-transition.png',
+          count: 1,
+          line_length: 1,
+          x: 1088,
+          y: 864,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-stone-path-shore-out-of-map-transition.png',
+            count: 1,
+            line_length: 1,
+            x: 2176,
+            y: 1728,
             scale: 0.5
           }
         }
@@ -2929,6 +3280,23 @@ module.exports = {
             scale: 0.5
           }
         },
+        inner_corner_background: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-out-of-map-transition-b.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 0,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-out-of-map-transition-b.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 0,
+            tall: true,
+            scale: 0.5
+          }
+        },
         inner_corner_mask: {
           picture: 'graphics/terrain/out-of-map-transition/concrete-out-of-map-transition-b.png',
           count: 3,
@@ -2956,6 +3324,23 @@ module.exports = {
             count: 3,
             line_length: 3,
             x: 0,
+            y: 576,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        outer_corner_background: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-out-of-map-transition-b.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 288,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-out-of-map-transition-b.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
             y: 576,
             tall: true,
             scale: 0.5
@@ -2993,6 +3378,23 @@ module.exports = {
             scale: 0.5
           }
         },
+        side_background: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-out-of-map-transition-b.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 576,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-out-of-map-transition-b.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 1152,
+            tall: true,
+            scale: 0.5
+          }
+        },
         side_mask: {
           picture: 'graphics/terrain/out-of-map-transition/concrete-out-of-map-transition-b.png',
           count: 3,
@@ -3025,6 +3427,23 @@ module.exports = {
             scale: 0.5
           }
         },
+        u_transition_background: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-out-of-map-transition-b.png',
+          count: 1,
+          line_length: 1,
+          x: 544,
+          y: 864,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-out-of-map-transition-b.png',
+            count: 1,
+            line_length: 1,
+            x: 1088,
+            y: 1728,
+            tall: true,
+            scale: 0.5
+          }
+        },
         u_transition_mask: {
           picture: 'graphics/terrain/out-of-map-transition/concrete-out-of-map-transition-b.png',
           count: 1,
@@ -3033,6 +3452,221 @@ module.exports = {
           y: 864,
           hr_version: {
             picture: 'graphics/terrain/out-of-map-transition/hr-concrete-out-of-map-transition-b.png',
+            count: 1,
+            line_length: 1,
+            x: 2176,
+            y: 1728,
+            scale: 0.5
+          }
+        }
+      },
+      {
+        water_patch: {
+          filename: 'graphics/terrain/water-transitions/water-patch.png',
+          width: 32,
+          height: 32,
+          hr_version: {
+            filename: 'graphics/terrain/water-transitions/hr-water-patch.png',
+            scale: 0.5,
+            width: 64,
+            height: 64
+          }
+        },
+        background_layer_offset: 1,
+        background_layer_group: 'zero',
+        offset_background_layer_by_tile_layer: true,
+        transition_group: 1,
+        transition_group1: 1,
+        transition_group2: 2,
+        inner_corner: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 0,
+          y: 0,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 0,
+            y: 0,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        inner_corner_background: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 0,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 0,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        inner_corner_mask: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 1088,
+          y: 0,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 2176,
+            y: 0,
+            scale: 0.5
+          }
+        },
+        outer_corner: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 0,
+          y: 288,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 0,
+            y: 576,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        outer_corner_background: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 288,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 576,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        outer_corner_mask: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 1088,
+          y: 288,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 2176,
+            y: 576,
+            scale: 0.5
+          }
+        },
+        side: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 0,
+          y: 576,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 0,
+            y: 1152,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        side_background: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 576,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 1152,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        side_mask: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 1088,
+          y: 576,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 2176,
+            y: 1152,
+            scale: 0.5
+          }
+        },
+        u_transition: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 1,
+          line_length: 1,
+          x: 0,
+          y: 864,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 1,
+            line_length: 1,
+            x: 0,
+            y: 1728,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        u_transition_background: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 1,
+          line_length: 1,
+          x: 544,
+          y: 864,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 1,
+            line_length: 1,
+            x: 1088,
+            y: 1728,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        u_transition_mask: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 1,
+          line_length: 1,
+          x: 1088,
+          y: 864,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
             count: 1,
             line_length: 1,
             x: 2176,
@@ -4159,6 +4793,23 @@ module.exports = {
             scale: 0.5
           }
         },
+        inner_corner_background: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-out-of-map-transition-b.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 0,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-out-of-map-transition-b.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 0,
+            tall: true,
+            scale: 0.5
+          }
+        },
         inner_corner_mask: {
           picture: 'graphics/terrain/out-of-map-transition/concrete-out-of-map-transition-b.png',
           count: 3,
@@ -4186,6 +4837,23 @@ module.exports = {
             count: 3,
             line_length: 3,
             x: 0,
+            y: 576,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        outer_corner_background: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-out-of-map-transition-b.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 288,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-out-of-map-transition-b.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
             y: 576,
             tall: true,
             scale: 0.5
@@ -4223,6 +4891,23 @@ module.exports = {
             scale: 0.5
           }
         },
+        side_background: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-out-of-map-transition-b.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 576,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-out-of-map-transition-b.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 1152,
+            tall: true,
+            scale: 0.5
+          }
+        },
         side_mask: {
           picture: 'graphics/terrain/out-of-map-transition/concrete-out-of-map-transition-b.png',
           count: 3,
@@ -4255,6 +4940,23 @@ module.exports = {
             scale: 0.5
           }
         },
+        u_transition_background: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-out-of-map-transition-b.png',
+          count: 1,
+          line_length: 1,
+          x: 544,
+          y: 864,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-out-of-map-transition-b.png',
+            count: 1,
+            line_length: 1,
+            x: 1088,
+            y: 1728,
+            tall: true,
+            scale: 0.5
+          }
+        },
         u_transition_mask: {
           picture: 'graphics/terrain/out-of-map-transition/concrete-out-of-map-transition-b.png',
           count: 1,
@@ -4263,6 +4965,221 @@ module.exports = {
           y: 864,
           hr_version: {
             picture: 'graphics/terrain/out-of-map-transition/hr-concrete-out-of-map-transition-b.png',
+            count: 1,
+            line_length: 1,
+            x: 2176,
+            y: 1728,
+            scale: 0.5
+          }
+        }
+      },
+      {
+        water_patch: {
+          filename: 'graphics/terrain/water-transitions/water-patch.png',
+          width: 32,
+          height: 32,
+          hr_version: {
+            filename: 'graphics/terrain/water-transitions/hr-water-patch.png',
+            scale: 0.5,
+            width: 64,
+            height: 64
+          }
+        },
+        background_layer_offset: 1,
+        background_layer_group: 'zero',
+        offset_background_layer_by_tile_layer: true,
+        transition_group: 1,
+        transition_group1: 1,
+        transition_group2: 2,
+        inner_corner: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 0,
+          y: 0,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 0,
+            y: 0,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        inner_corner_background: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 0,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 0,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        inner_corner_mask: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 1088,
+          y: 0,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 2176,
+            y: 0,
+            scale: 0.5
+          }
+        },
+        outer_corner: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 0,
+          y: 288,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 0,
+            y: 576,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        outer_corner_background: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 288,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 576,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        outer_corner_mask: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 1088,
+          y: 288,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 2176,
+            y: 576,
+            scale: 0.5
+          }
+        },
+        side: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 0,
+          y: 576,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 0,
+            y: 1152,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        side_background: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 544,
+          y: 576,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 1088,
+            y: 1152,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        side_mask: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 3,
+          line_length: 3,
+          x: 1088,
+          y: 576,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 3,
+            line_length: 3,
+            x: 2176,
+            y: 1152,
+            scale: 0.5
+          }
+        },
+        u_transition: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 1,
+          line_length: 1,
+          x: 0,
+          y: 864,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 1,
+            line_length: 1,
+            x: 0,
+            y: 1728,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        u_transition_background: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 1,
+          line_length: 1,
+          x: 544,
+          y: 864,
+          tall: true,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
+            count: 1,
+            line_length: 1,
+            x: 1088,
+            y: 1728,
+            tall: true,
+            scale: 0.5
+          }
+        },
+        u_transition_mask: {
+          picture: 'graphics/terrain/out-of-map-transition/concrete-shore-out-of-map-transition.png',
+          count: 1,
+          line_length: 1,
+          x: 1088,
+          y: 864,
+          hr_version: {
+            picture: 'graphics/terrain/out-of-map-transition/hr-concrete-shore-out-of-map-transition.png',
             count: 1,
             line_length: 1,
             x: 2176,

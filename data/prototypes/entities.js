@@ -6628,22 +6628,22 @@ module.exports = {
         {
           filename: 'graphics/entity/small-electric-pole/small-electric-pole.png',
           priority: 'extra_high',
-          width: 38,
+          width: 36,
           height: 108,
           direction_count: 4,
           shift: [
-            0,
+            0.0625,
             -1.3125
           ],
           hr_version: {
             filename: 'graphics/entity/small-electric-pole/hr-small-electric-pole.png',
             priority: 'extra_high',
-            width: 70,
+            width: 72,
             height: 220,
             direction_count: 4,
             shift: [
-              0.03125,
-              -1.34375
+              0.046875,
+              -1.328125
             ],
             scale: 0.5
           }
@@ -6862,22 +6862,22 @@ module.exports = {
         {
           filename: 'graphics/entity/big-electric-pole/big-electric-pole.png',
           priority: 'extra_high',
-          width: 74,
-          height: 158,
+          width: 76,
+          height: 156,
           direction_count: 4,
           shift: [
-            0,
-            -1.625
+            0.03125,
+            -1.59375
           ],
           hr_version: {
             filename: 'graphics/entity/big-electric-pole/hr-big-electric-pole.png',
             priority: 'extra_high',
             width: 148,
-            height: 314,
+            height: 312,
             direction_count: 4,
             shift: [
               0,
-              -1.625
+              -1.59375
             ],
             scale: 0.5
           }
@@ -7098,22 +7098,22 @@ module.exports = {
         {
           filename: 'graphics/entity/medium-electric-pole/medium-electric-pole.png',
           priority: 'extra_high',
-          width: 48,
-          height: 120,
+          width: 40,
+          height: 124,
           direction_count: 4,
           shift: [
-            0,
-            -1.3125
+            0.125,
+            -1.375
           ],
           hr_version: {
             filename: 'graphics/entity/medium-electric-pole/hr-medium-electric-pole.png',
             priority: 'extra_high',
-            width: 92,
-            height: 244,
+            width: 84,
+            height: 252,
             direction_count: 4,
             shift: [
-              0.03125,
-              -1.34375
+              0.109375,
+              -1.375
             ],
             scale: 0.5
           }
@@ -7126,18 +7126,18 @@ module.exports = {
           direction_count: 4,
           shift: [
             1.75,
-            0.125
+            -0.03125
           ],
           draw_as_shadow: true,
           hr_version: {
             filename: 'graphics/entity/medium-electric-pole/hr-medium-electric-pole-shadow.png',
             priority: 'extra_high',
             width: 280,
-            height: 60,
+            height: 64,
             direction_count: 4,
             shift: [
-              1.75,
-              0.15625
+              1.765625,
+              -0.03125
             ],
             draw_as_shadow: true,
             scale: 0.5
@@ -7149,120 +7149,120 @@ module.exports = {
       {
         shadow: {
           copper: [
-            3.5625,
-            -0.21875
+            3.578125,
+            -0.203125
           ],
           red: [
             3.84375,
-            -0.046875
+            -0.03125
           ],
           green: [
-            3.203125,
-            -0.203125
+            3.140625,
+            -0.03125
           ]
         },
         wire: {
           copper: [
-            0.21875,
-            -3.125
+            0.234375,
+            -3.109375
           ],
           red: [
-            0.65625,
-            -2.8125
+            0.671875,
+            -2.796875
           ],
           green: [
             -0.234375,
-            -2.921875
+            -2.890625
           ]
         }
       },
       {
         shadow: {
           copper: [
-            2.984375,
-            0.390625
+            3.578125,
+            -0.203125
           ],
           red: [
-            3.21875,
-            0.5625
+            3.59375,
+            0.15625
           ],
           green: [
-            2.671875,
-            0.046875
+            3.0625,
+            -0.359375
           ]
         },
         wire: {
           copper: [
-            -0.34375,
-            -2.515625
+            0.234375,
+            -3.109375
           ],
           red: [
-            0.046875,
-            -2.1875
+            0.421875,
+            -2.609375
           ],
           green: [
-            -0.515625,
-            -2.71875
+            -0.140625,
+            -3.125
           ]
         }
       },
       {
         shadow: {
           copper: [
-            2.921875,
-            0.078125
+            3.578125,
+            -0.203125
           ],
           red: [
-            2.828125,
-            0.390625
+            3.25,
+            0.1875
           ],
           green: [
-            2.9375,
-            -0.234375
+            3.390625,
+            -0.46875
           ]
         },
         wire: {
           copper: [
-            -0.4375,
-            -2.828125
+            0.234375,
+            -3.109375
           ],
           red: [
-            -0.34375,
-            -2.359375
+            0.078125,
+            -2.59375
           ],
           green: [
-            -0.21875,
-            -3
+            0.203125,
+            -3.21875
           ]
         }
       },
       {
         shadow: {
           copper: [
-            2.828125,
-            -0.046875
+            3.578125,
+            -0.203125
           ],
           red: [
-            2.5625,
-            0.125
+            3.046875,
+            0.015625
           ],
           green: [
-            3.28125,
-            -0.265625
+            3.71875,
+            -0.359375
           ]
         },
         wire: {
           copper: [
-            -0.359375,
-            -3.046875
+            0.234375,
+            -3.109375
           ],
           red: [
-            -0.609375,
-            -2.625
+            -0.1875,
+            -2.734375
           ],
           green: [
-            0.125,
-            -3.015625
+            0.5625,
+            -3.109375
           ]
         }
       }
