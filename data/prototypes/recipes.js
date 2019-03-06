@@ -3546,84 +3546,6 @@ module.exports = {
     ],
     ui_name: 'Express underground belt'
   },
-  loader: {
-    name: 'loader',
-    category: 'crafting',
-    time: 1,
-    ingredients: [
-      {
-        name: 'inserter',
-        amount: 5
-      },
-      {
-        name: 'electronic_circuit',
-        amount: 5
-      },
-      {
-        name: 'iron_gear_wheel',
-        amount: 5
-      },
-      {
-        name: 'iron_plate',
-        amount: 5
-      },
-      {
-        name: 'transport_belt',
-        amount: 5
-      }
-    ],
-    results: [
-      {
-        name: 'loader',
-        amount: 1
-      }
-    ],
-    ui_name: 'Loader'
-  },
-  fast_loader: {
-    name: 'fast_loader',
-    category: 'crafting',
-    time: 3,
-    ingredients: [
-      {
-        name: 'fast_transport_belt',
-        amount: 5
-      },
-      {
-        name: 'loader',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        name: 'fast_loader',
-        amount: 1
-      }
-    ],
-    ui_name: 'Fast loader'
-  },
-  express_loader: {
-    name: 'express_loader',
-    category: 'crafting',
-    time: 10,
-    ingredients: [
-      {
-        name: 'express_transport_belt',
-        amount: 5
-      },
-      {
-        name: 'fast_loader',
-        amount: 1
-      }
-    ],
-    results: [
-      {
-        name: 'express_loader',
-        amount: 1
-      }
-    ],
-    ui_name: 'Express loader'
-  },
   splitter: {
     name: 'splitter',
     category: 'crafting',
@@ -4914,28 +4836,6 @@ module.exports = {
     ],
     ui_name: 'Landfill',
     description: 'Used to fill in water that\'s in the way.'
-  },
-  electric_energy_interface: {
-    name: 'electric_energy_interface',
-    category: 'crafting',
-    time: 0.5,
-    ingredients: [
-      {
-        name: 'iron_plate',
-        amount: 2
-      },
-      {
-        name: 'electronic_circuit',
-        amount: 5
-      }
-    ],
-    results: [
-      {
-        name: 'electric_energy_interface',
-        amount: 1
-      }
-    ],
-    ui_name: 'Electric energy interface'
   },
   nuclear_reactor: {
     name: 'nuclear_reactor',

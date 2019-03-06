@@ -3,8 +3,20 @@ const utils = require('./utils')
 const rawData = utils.loadRawData(process.argv[2])
 const outputFile = process.argv[3]
 
+const blacklistedCreativeItemRecipes = [
+    'loader',
+    'fast_loader',
+    'express_loader',
+    'infinity_chest',
+    'heat_interface',
+    'infinity_pipe',
+    'electric_energy_interface'
+]
+
 const RECIPES = {}
 for (const k in rawData.recipe) {
+    if (blacklistedCreativeItemRecipes.includes(k)) continue
+
     let recipe = rawData.recipe[k]
     if (recipe.normal) recipe = Object.assign(recipe, recipe.normal)
 
