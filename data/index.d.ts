@@ -754,6 +754,7 @@ declare module FD {
         priority?: string
         frame_count?: number
         line_length?: number
+        variation_count?: number
         direction_count?: number
         axially_symmetrical?: boolean
         shift?: number[]
