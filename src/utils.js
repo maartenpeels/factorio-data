@@ -1,5 +1,5 @@
 const fse = require('fs-extra')
-const javascriptStringify = require('javascript-stringify')
+const jss = require('javascript-stringify')
 
 function loadRawData(path) {
     return JSON.parse(fse.readFileSync(path)
@@ -13,7 +13,7 @@ function loadRawData(path) {
 }
 
 function writeJSObject(path, object) {
-    fse.writeFile(path, 'module.exports = ' + javascriptStringify(JSON.parse(JSON.stringify(object)
+    fse.writeFile(path, 'module.exports = ' + jss.stringify(JSON.parse(JSON.stringify(object)
         .replace(/"(__base__|__core__)\/(.+?)"/g, '"$2"')
     ), null, 2))
 }

@@ -23,7 +23,7 @@
   "devDependencies": {
     "fs-extra": "^7.0.1",
     "glob": "^7.1.3",
-    "javascript-stringify": "^1.6.0",
+    "javascript-stringify": "^2.0.0",
     "jimp": "^0.6.0",
     "lua-in-js": "^1.1.0",
     "node-sprite-generator": "^0.10.2",
