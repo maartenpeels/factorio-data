@@ -1649,7 +1649,7 @@ module.exports = {
     order: 'c[landfill]_a[dirt]',
     stack_size: 100,
     place_as_tile: {
-      result: 'grass_1',
+      result: 'landfill',
       condition_size: 1,
       condition: [
         'ground_tile'

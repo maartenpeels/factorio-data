@@ -1,6 +1,6 @@
 # factorio-data
 
-Factorio (v0.17.4) prototype data in JS + spritesheets
+Factorio (v0.17.11) prototype data in JS + spritesheets
 
 ## Install
 
