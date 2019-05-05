@@ -1,5 +1,4 @@
 declare module FD {
-
     interface Color {
         r: number
         g: number
@@ -105,9 +104,6 @@ declare module FD {
         place_as_tile?: PlaceAsTile
         rocket_launch_product?: string | number[]
 
-        /** Virtual signal only property (type: 'virtual_signal') */
-        special_signal?: boolean
-
         /** Ammo only property (type: 'ammo') */
         magazine_size?: number
 
@@ -194,7 +190,7 @@ declare module FD {
         transitions_between_transitions?: Transition[]
         walking_sound?: Sound[]
         map_color: Color
-        ageing: number
+        pollution_absorption_per_second: number
         vehicle_friction_modifier: number
         transition_overlay_layer_offset?: number
         next_direction?: string
@@ -283,7 +279,13 @@ declare module FD {
         animation?: SpriteData | SpriteLayers | DirectionalSpriteData | DirectionalSpriteLayers
         animations?: SpriteData | DirectionalSpriteData | DirectionalSpriteLayers
         picture?: SpriteData | SpriteLayers | DirectionalSpriteData
-        pictures?: SpriteLayers | DirectionalSpriteData | PipePictures | WallPictures | RailPictures | StorageTankPictures
+        pictures?:
+            | SpriteLayers
+            | DirectionalSpriteData
+            | PipePictures
+            | WallPictures
+            | RailPictures
+            | StorageTankPictures
         base_picture?: SpriteData | SpriteLayers | DirectionalSpriteData | SpriteSheets | DirectionalSpriteLayers
         structure?: DirectionalSpriteData | DirectionalSpriteLayers | UndergroundBeltStructure
 
@@ -453,7 +455,6 @@ declare module FD {
         glow_color_intensity?: number
         signal_to_color_mapping?: SignalToColorMapping[]
         underground_sprite?: SpriteData
-        underground_remove_pipes_sprite?: SpriteData
         scale_entity_info_icon?: boolean
         has_backer_name?: boolean
         always_draw_idle_animation?: boolean
@@ -632,6 +633,7 @@ declare module FD {
         base_picture_render_layer?: string
         cannon_barrel_pictures?: SpriteLayers
         cannon_base_pictures?: SpriteLayers
+        out_of_ammo_alert_icon?: SpriteData
         // cannon_base_shiftings?: number[][]
         // cannon_barrel_recoil_shiftings?: CannonBarrelRecoilShiftings[]
         cannon_barrel_light_direction?: number[]
@@ -702,7 +704,7 @@ declare module FD {
         effectivity?: number
         fuel_inventory_size?: number
         burnt_inventory_size?: number
-        emissions?: number
+        emissions_per_minute?: number
         smoke?: Smoke[]
         usage_priority?: string
         max_temperature?: number
@@ -1112,10 +1114,9 @@ declare module FD {
         size: Size
         corpse?: string
         remains_when_mined?: string
-        emissions_per_tick?: number
+        emissions_per_second?: number
         drawing_box?: any[]
         variations?: VariationsItem[]
-        colors?: Color[]
         darkness_of_burnt_tree?: number
         variation_weights?: number[]
         colors?: Color[]

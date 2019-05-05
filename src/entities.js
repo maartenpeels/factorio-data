@@ -8,11 +8,16 @@ const blacklistedEntities = [
     'escape_pod_lab',
     'escape_pod_power',
     'compilatron_chest',
-    'player_port'
+    'player_port',
+    'simple_entity_with_force',
+    'simple_entity_with_owner'
 ]
 
 let entities = {}
-const placeableEntities = utils.stringMatchAll(JSON.stringify(rawData), /"place_result":"(.+?)"/g).concat(['curved_rail'])
+const placeableEntities = utils
+    .stringMatchAll(JSON.stringify(rawData), /"place_result":"(.+?)"/g)
+    .concat(['curved_rail'])
+
 function findAllEntities(data) {
     if (data.constructor === Object) {
         if (
@@ -33,7 +38,6 @@ function findAllEntities(data) {
 }
 findAllEntities(rawData)
 
-
 for (let k in entities) {
     e = entities[k]
 
@@ -52,41 +56,42 @@ for (let k in entities) {
     if (e.type === 'underground_belt') e.fast_replaceable_group = 'underground_belt'
 
     // Possible Rotations
-    if ([
-        'pipe_to_ground',
-        'train_stop',
-        'arithmetic_combinator',
-        'decider_combinator',
-        'constant_combinator',
-        'gun_turret',
-        'artillery_turret',
-        'laser_turret',
-        'flamethrower_turret',
-        'offshore_pump',
-        'pump'
-    ].includes(e.name) || [
-        'underground_belt',
-        'transport_belt',
-        'splitter',
-        'inserter',
-        'boiler',
-        'mining_drill',
-        'assembling_machine',
-        'loader'
-    ].includes(e.type)) e.possible_rotations = [0, 2, 4, 6]
-    if ([
-        'storage_tank',
-        'gate',
-        'straight_rail'
-    ].includes(e.name) || e.type === 'generator') e.possible_rotations = [0, 2]
-    if ([
-        'rail_signal',
-        'rail_chain_signal'
-    ].includes(e.name)) e.possible_rotations = [0, 1, 2, 3, 4, 5, 6, 7]
-    if ([
-        'centrifuge',
-        'assembling_machine_1'
-    ].includes(e.name)) delete e.possible_rotations
+    if (
+        [
+            'pipe_to_ground',
+            'train_stop',
+            'arithmetic_combinator',
+            'decider_combinator',
+            'constant_combinator',
+            'gun_turret',
+            'artillery_turret',
+            'laser_turret',
+            'flamethrower_turret',
+            'offshore_pump',
+            'pump'
+        ].includes(e.name) ||
+        [
+            'underground_belt',
+            'transport_belt',
+            'splitter',
+            'inserter',
+            'boiler',
+            'mining_drill',
+            'assembling_machine',
+            'loader'
+        ].includes(e.type)
+    ) {
+        e.possible_rotations = [0, 2, 4, 6]
+    }
+    if (['storage_tank', 'gate', 'straight_rail'].includes(e.name) || e.type === 'generator') {
+        e.possible_rotations = [0, 2]
+    }
+    if (['rail_signal', 'rail_chain_signal'].includes(e.name)) {
+        e.possible_rotations = [0, 1, 2, 3, 4, 5, 6, 7]
+    }
+    if (['centrifuge', 'assembling_machine_1'].includes(e.name)) {
+        delete e.possible_rotations
+    }
 }
 
 // fix shifts

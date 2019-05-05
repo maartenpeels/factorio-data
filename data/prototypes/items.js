@@ -208,7 +208,8 @@ module.exports = {
     infinite: true,
     equipment_grid: 'large_equipment_grid',
     inventory_size_bonus: 30,
-    ui_name: 'Power armor MK2'
+    ui_name: 'Power armor MK2',
+    description: 'Armor with a huge equipment grid and inventory size bonus.'
   },
   pistol: {
     type: 'gun',
@@ -739,7 +740,7 @@ module.exports = {
     order: 'e[belt_immunity]_a[belt_immunity]',
     stack_size: 20,
     ui_name: 'Belt immunity equipment',
-    description: 'Prevents belts from moving you while it has power.'
+    description: 'Prevents belts from moving the player.'
   },
   exoskeleton_equipment: {
     type: 'item',
@@ -771,7 +772,8 @@ module.exports = {
     subgroup: 'equipment',
     order: 'e[robotics]_b[personal_roboport_mk2_equipment]',
     stack_size: 20,
-    ui_name: 'Personal roboport MK2'
+    ui_name: 'Personal roboport MK2',
+    description: 'Inserted into armor to allow many construction robots to work from your inventory.'
   },
   night_vision_equipment: {
     type: 'item',
@@ -3000,7 +3002,6 @@ module.exports = {
   signal_everything: {
     type: 'virtual_signal',
     name: 'signal_everything',
-    special_signal: true,
     icon: 'graphics/icons/signal/signal_everything.png',
     icon_size: 32,
     subgroup: 'virtual_signal_special',
@@ -3011,7 +3012,6 @@ module.exports = {
   signal_anything: {
     type: 'virtual_signal',
     name: 'signal_anything',
-    special_signal: true,
     icon: 'graphics/icons/signal/signal_anything.png',
     icon_size: 32,
     subgroup: 'virtual_signal_special',
@@ -3022,7 +3022,6 @@ module.exports = {
   signal_each: {
     type: 'virtual_signal',
     name: 'signal_each',
-    special_signal: true,
     icon: 'graphics/icons/signal/signal_each.png',
     icon_size: 32,
     subgroup: 'virtual_signal_special',
@@ -3890,7 +3889,7 @@ module.exports = {
         bonus: 0.6
       },
       pollution: {
-        bonus: 0.075
+        bonus: 0.07
       },
       speed: {
         bonus: -0.15

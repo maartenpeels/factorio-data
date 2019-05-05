@@ -1287,7 +1287,7 @@ module.exports = {
       }
     ],
     ui_name: 'Belt immunity equipment',
-    description: 'Prevents belts from moving you while it has power.'
+    description: 'Prevents belts from moving the player.'
   },
   energy_shield_equipment: {
     name: 'energy_shield_equipment',
@@ -1575,7 +1575,8 @@ module.exports = {
         amount: 1
       }
     ],
-    ui_name: 'Personal roboport MK2'
+    ui_name: 'Personal roboport MK2',
+    description: 'Inserted into armor to allow many construction robots to work from your inventory.'
   },
   steel_plate: {
     name: 'steel_plate',
@@ -3006,7 +3007,8 @@ module.exports = {
       }
     ],
     requester_paste_multiplier: 1,
-    ui_name: 'Power armor MK2'
+    ui_name: 'Power armor MK2',
+    description: 'Armor with a huge equipment grid and inventory size bonus.'
   },
   iron_chest: {
     name: 'iron_chest',

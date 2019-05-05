@@ -1188,8 +1188,12 @@
       "frame": { "x": 6568, "y": 2824, "w": 83, "h": 70 },
       "sourceSize": { "w": 83, "h": 70 }
     },
+    "graphics/entity/infinity-chest/hr-infinity-chest.png": {
+      "frame": { "x": 6560, "y": 6168, "w": 68, "h": 84 },
+      "sourceSize": { "w": 68, "h": 84 }
+    },
     "graphics/entity/flamethrower-turret/hr-flamethrower-turret-base-east-mask.png": {
-      "frame": { "x": 6560, "y": 6168, "w": 66, "h": 82 },
+      "frame": { "x": 6349, "y": 1124, "w": 66, "h": 82 },
       "sourceSize": { "w": 66, "h": 82 }
     },
     "graphics/entity/assembling-machine-2/hr-assembling-machine-2-pipe-S.png": {
@@ -1201,7 +1205,7 @@
       "sourceSize": { "w": 88, "h": 61 }
     },
     "graphics/entity/flamethrower-turret/hr-flamethrower-turret-base-south-mask.png": {
-      "frame": { "x": 6349, "y": 1124, "w": 72, "h": 72 },
+      "frame": { "x": 6327, "y": 1546, "w": 72, "h": 72 },
       "sourceSize": { "w": 72, "h": 72 }
     },
     "graphics/entity/flamethrower-turret/hr-flamethrower-turret-base-north-mask.png": {
@@ -1209,11 +1213,11 @@
       "sourceSize": { "w": 74, "h": 70 }
     },
     "graphics/entity/steel-chest/hr-steel-chest.png": {
-      "frame": { "x": 6327, "y": 1546, "w": 64, "h": 80 },
+      "frame": { "x": 6327, "y": 1676, "w": 64, "h": 80 },
       "sourceSize": { "w": 64, "h": 80 }
     },
     "graphics/entity/iron-chest/hr-iron-chest.png": {
-      "frame": { "x": 6327, "y": 1676, "w": 66, "h": 76 },
+      "frame": { "x": 6327, "y": 1806, "w": 66, "h": 76 },
       "sourceSize": { "w": 66, "h": 76 }
     },
     "graphics/entity/gate/hr-gate-rail-vertical-left.png": {
@@ -1229,31 +1233,31 @@
       "sourceSize": { "w": 184, "h": 26 }
     },
     "graphics/entity/gate/hr-gate-rail-horizontal-left.png": {
-      "frame": { "x": 6327, "y": 1806, "w": 66, "h": 74 },
-      "sourceSize": { "w": 66, "h": 74 }
-    },
-    "graphics/entity/gate/hr-gate-rail-horizontal-right.png": {
       "frame": { "x": 6327, "y": 1936, "w": 66, "h": 74 },
       "sourceSize": { "w": 66, "h": 74 }
     },
-    "graphics/entity/logistic-chest/hr-logistic-chest-passive-provider.png": {
+    "graphics/entity/gate/hr-gate-rail-horizontal-right.png": {
       "frame": { "x": 6327, "y": 2066, "w": 66, "h": 74 },
       "sourceSize": { "w": 66, "h": 74 }
     },
-    "graphics/entity/logistic-chest/hr-logistic-chest-active-provider.png": {
+    "graphics/entity/logistic-chest/hr-logistic-chest-passive-provider.png": {
       "frame": { "x": 6327, "y": 2196, "w": 66, "h": 74 },
       "sourceSize": { "w": 66, "h": 74 }
     },
-    "graphics/entity/logistic-chest/hr-logistic-chest-storage.png": {
+    "graphics/entity/logistic-chest/hr-logistic-chest-active-provider.png": {
       "frame": { "x": 6327, "y": 2326, "w": 66, "h": 74 },
       "sourceSize": { "w": 66, "h": 74 }
     },
-    "graphics/entity/logistic-chest/hr-logistic-chest-buffer.png": {
+    "graphics/entity/logistic-chest/hr-logistic-chest-storage.png": {
       "frame": { "x": 6327, "y": 2456, "w": 66, "h": 74 },
       "sourceSize": { "w": 66, "h": 74 }
     },
-    "graphics/entity/logistic-chest/hr-logistic-chest-requester.png": {
+    "graphics/entity/logistic-chest/hr-logistic-chest-buffer.png": {
       "frame": { "x": 6327, "y": 2586, "w": 66, "h": 74 },
+      "sourceSize": { "w": 66, "h": 74 }
+    },
+    "graphics/entity/logistic-chest/hr-logistic-chest-requester.png": {
+      "frame": { "x": 6327, "y": 2716, "w": 66, "h": 74 },
       "sourceSize": { "w": 66, "h": 74 }
     },
     "graphics/entity/rocket-silo/hr-15-rocket-silo-turbine.png": {
@@ -1261,11 +1265,11 @@
       "sourceSize": { "w": 54, "h": 88 }
     },
     "graphics/entity/flamethrower-turret/hr-flamethrower-turret-base-west-mask.png": {
-      "frame": { "x": 6327, "y": 2716, "w": 64, "h": 74 },
+      "frame": { "x": 6327, "y": 2846, "w": 64, "h": 74 },
       "sourceSize": { "w": 64, "h": 74 }
     },
     "graphics/entity/wooden-chest/hr-wooden-chest.png": {
-      "frame": { "x": 6327, "y": 2846, "w": 62, "h": 72 },
+      "frame": { "x": 6327, "y": 2976, "w": 62, "h": 72 },
       "sourceSize": { "w": 62, "h": 72 }
     },
     "graphics/entity/inserter/hr-inserter-hand-base.png": {
@@ -1297,7 +1301,7 @@
       "sourceSize": { "w": 32, "h": 136 }
     },
     "graphics/entity/transport-belt/connector/hr-ccm-belt-04d-LED-R.png": {
-      "frame": { "x": 6327, "y": 2976, "w": 34, "h": 126 },
+      "frame": { "x": 6327, "y": 3106, "w": 34, "h": 126 },
       "sourceSize": { "w": 34, "h": 126 }
     },
     "graphics/entity/heat-pipe/hr-heat-pipe-straight-vertical-single.png": {
@@ -1309,179 +1313,179 @@
       "sourceSize": { "w": 64, "h": 64 }
     },
     "graphics/entity/heat-pipe/hr-heat-pipe-straight-vertical-2.png": {
-      "frame": { "x": 6327, "y": 3106, "w": 64, "h": 64 },
-      "sourceSize": { "w": 64, "h": 64 }
-    },
-    "graphics/entity/heat-pipe/hr-heat-pipe-straight-vertical-3.png": {
       "frame": { "x": 6327, "y": 3236, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-straight-vertical-4.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-straight-vertical-3.png": {
       "frame": { "x": 6327, "y": 3366, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-straight-vertical-5.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-straight-vertical-4.png": {
       "frame": { "x": 6327, "y": 3496, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-straight-vertical-6.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-straight-vertical-5.png": {
       "frame": { "x": 6327, "y": 3626, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-straight-horizontal-1.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-straight-vertical-6.png": {
       "frame": { "x": 6327, "y": 3756, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-straight-horizontal-2.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-straight-horizontal-1.png": {
       "frame": { "x": 6327, "y": 3886, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-straight-horizontal-3.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-straight-horizontal-2.png": {
       "frame": { "x": 6327, "y": 4016, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-straight-horizontal-4.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-straight-horizontal-3.png": {
       "frame": { "x": 6327, "y": 4146, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-straight-horizontal-5.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-straight-horizontal-4.png": {
       "frame": { "x": 6327, "y": 4276, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-straight-horizontal-6.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-straight-horizontal-5.png": {
       "frame": { "x": 6327, "y": 4406, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-right-1.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-straight-horizontal-6.png": {
       "frame": { "x": 6327, "y": 4536, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-right-2.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-right-1.png": {
       "frame": { "x": 6327, "y": 4666, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-right-3.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-right-2.png": {
       "frame": { "x": 6327, "y": 4796, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-right-4.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-right-3.png": {
       "frame": { "x": 6327, "y": 4926, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-right-5.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-right-4.png": {
       "frame": { "x": 6337, "y": 5056, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-right-6.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-right-5.png": {
       "frame": { "x": 6329, "y": 5236, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-left-1.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-right-6.png": {
       "frame": { "x": 6337, "y": 5347, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-left-2.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-left-1.png": {
       "frame": { "x": 6329, "y": 5449, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-left-3.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-left-2.png": {
       "frame": { "x": 6271, "y": 5967, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-left-4.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-left-3.png": {
       "frame": { "x": 6337, "y": 5967, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-left-5.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-left-4.png": {
       "frame": { "x": 5627, "y": 3289, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-left-6.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-left-5.png": {
       "frame": { "x": 5693, "y": 3289, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-right-1.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-up-left-6.png": {
       "frame": { "x": 5759, "y": 3289, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-right-2.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-right-1.png": {
       "frame": { "x": 5627, "y": 3355, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-right-3.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-right-2.png": {
       "frame": { "x": 5693, "y": 3355, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-right-4.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-right-3.png": {
       "frame": { "x": 5759, "y": 3355, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-right-5.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-right-4.png": {
       "frame": { "x": 5639, "y": 3437, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-right-6.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-right-5.png": {
       "frame": { "x": 5705, "y": 3437, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-left-1.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-right-6.png": {
       "frame": { "x": 5771, "y": 3437, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-left-2.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-left-1.png": {
       "frame": { "x": 5639, "y": 3503, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-left-3.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-left-2.png": {
       "frame": { "x": 5705, "y": 3503, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-left-4.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-left-3.png": {
       "frame": { "x": 5771, "y": 3503, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-left-5.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-left-4.png": {
       "frame": { "x": 5639, "y": 3569, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-left-6.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-left-5.png": {
       "frame": { "x": 5705, "y": 3569, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-t-up-1.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-corner-down-left-6.png": {
       "frame": { "x": 5771, "y": 3569, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-t-down-1.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-t-up-1.png": {
       "frame": { "x": 5639, "y": 3635, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-t-right-1.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-t-down-1.png": {
       "frame": { "x": 5705, "y": 3635, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-t-left-1.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-t-right-1.png": {
       "frame": { "x": 5771, "y": 3635, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-t-1.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-t-left-1.png": {
       "frame": { "x": 5691, "y": 3739, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-ending-up-1.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-t-1.png": {
       "frame": { "x": 5757, "y": 3739, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-ending-down-1.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-ending-up-1.png": {
       "frame": { "x": 5691, "y": 3805, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-ending-right-1.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-ending-down-1.png": {
       "frame": { "x": 5757, "y": 3805, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
-    "graphics/entity/heat-pipe/hr-heat-pipe-ending-left-1.png": {
+    "graphics/entity/heat-pipe/hr-heat-pipe-ending-right-1.png": {
       "frame": { "x": 5691, "y": 3871, "w": 64, "h": 64 },
+      "sourceSize": { "w": 64, "h": 64 }
+    },
+    "graphics/entity/heat-pipe/hr-heat-pipe-ending-left-1.png": {
+      "frame": { "x": 5757, "y": 3871, "w": 64, "h": 64 },
       "sourceSize": { "w": 64, "h": 64 }
     },
     "graphics/entity/roboport/hr-roboport-door-down.png": {
@@ -1493,7 +1497,7 @@
       "sourceSize": { "w": 148, "h": 25 }
     },
     "graphics/entity/roboport/hr-roboport-door-up.png": {
-      "frame": { "x": 6327, "y": 1628, "w": 97, "h": 38 },
+      "frame": { "x": 6327, "y": 1620, "w": 97, "h": 38 },
       "sourceSize": { "w": 97, "h": 38 }
     },
     "graphics/entity/pipe/fluid-flow-low-temperature.png": {
@@ -1513,7 +1517,7 @@
       "sourceSize": { "w": 42, "h": 76 }
     },
     "graphics/entity/assembling-machine-3/hr-assembling-machine-3-pipe-E.png": {
-      "frame": { "x": 6363, "y": 2976, "w": 42, "h": 76 },
+      "frame": { "x": 6363, "y": 3106, "w": 42, "h": 76 },
       "sourceSize": { "w": 42, "h": 76 }
     },
     "graphics/entity/assembling-machine-2/hr-assembling-machine-2-pipe-W.png": {
@@ -1529,7 +1533,7 @@
       "sourceSize": { "w": 71, "h": 38 }
     },
     "graphics/entity/assembling-machine-3/hr-assembling-machine-3-pipe-N.png": {
-      "frame": { "x": 6349, "y": 1198, "w": 71, "h": 38 },
+      "frame": { "x": 6327, "y": 1758, "w": 71, "h": 38 },
       "sourceSize": { "w": 71, "h": 38 }
     },
     "graphics/entity/beacon/beacon-antenna.png": {
@@ -1537,11 +1541,11 @@
       "sourceSize": { "w": 54, "h": 50 }
     },
     "graphics/entity/steel-furnace/steel-furnace-glow.png": {
-      "frame": { "x": 6327, "y": 1754, "w": 60, "h": 43 },
+      "frame": { "x": 6327, "y": 1884, "w": 60, "h": 43 },
       "sourceSize": { "w": 60, "h": 43 }
     },
     "graphics/entity/pipe/hr-fluid-background.png": {
-      "frame": { "x": 6327, "y": 1882, "w": 64, "h": 40 },
+      "frame": { "x": 6327, "y": 2012, "w": 64, "h": 40 },
       "sourceSize": { "w": 64, "h": 40 }
     },
     "graphics/entity/transport-belt/connector/transport-belt-connector-frame-main-scanner-sw-se.png": {
@@ -1553,12 +1557,8 @@
       "sourceSize": { "w": 34, "h": 48 }
     },
     "graphics/entity/electric-furnace/hr-electric-furnace-propeller-2.png": {
-      "frame": { "x": 6560, "y": 6252, "w": 92, "h": 15 },
+      "frame": { "x": 6560, "y": 6254, "w": 92, "h": 15 },
       "sourceSize": { "w": 92, "h": 15 }
-    },
-    "graphics/entity/infinity-chest/infinity-chest.png": {
-      "frame": { "x": 6389, "y": 1754, "w": 34, "h": 42 },
-      "sourceSize": { "w": 34, "h": 42 }
     },
     "graphics/entity/transport-belt/connector/transport-belt-connector-frame-main-scanner-nw-ne.png": {
       "frame": { "x": 6643, "y": 227, "w": 14, "h": 96 },
@@ -1569,11 +1569,11 @@
       "sourceSize": { "w": 64, "h": 16 }
     },
     "graphics/entity/combinator/activity-leds/hr-decider-combinator-LED-E.png": {
-      "frame": { "x": 6302, "y": 1527, "w": 64, "h": 16 },
+      "frame": { "x": 6349, "y": 1208, "w": 64, "h": 16 },
       "sourceSize": { "w": 64, "h": 16 }
     },
     "graphics/entity/combinator/activity-leds/hr-decider-combinator-LED-W.png": {
-      "frame": { "x": 6327, "y": 2012, "w": 64, "h": 16 },
+      "frame": { "x": 6349, "y": 1226, "w": 64, "h": 16 },
       "sourceSize": { "w": 64, "h": 16 }
     },
     "graphics/entity/land-mine/land-mine.png": {
@@ -1597,11 +1597,11 @@
       "sourceSize": { "w": 64, "h": 14 }
     },
     "graphics/entity/combinator/activity-leds/hr-decider-combinator-LED-N.png": {
-      "frame": { "x": 6327, "y": 2030, "w": 64, "h": 14 },
+      "frame": { "x": 6302, "y": 1527, "w": 64, "h": 14 },
       "sourceSize": { "w": 64, "h": 14 }
     },
     "graphics/entity/combinator/activity-leds/hr-decider-combinator-LED-S.png": {
-      "frame": { "x": 6327, "y": 2046, "w": 64, "h": 14 },
+      "frame": { "x": 6327, "y": 1660, "w": 64, "h": 14 },
       "sourceSize": { "w": 64, "h": 14 }
     },
     "graphics/entity/combinator/activity-leds/hr-constant-combinator-LED-S.png": {

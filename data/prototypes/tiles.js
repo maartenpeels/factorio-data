@@ -1265,7 +1265,7 @@ module.exports = {
       g: 52,
       b: 27
     },
-    ageing: 0.00045,
+    pollution_absorption_per_second: 0.0000075,
     vehicle_friction_modifier: 1.6
   },
   stone_path: {
@@ -2401,7 +2401,7 @@ module.exports = {
       g: 50,
       b: 50
     },
-    ageing: 0,
+    pollution_absorption_per_second: 0,
     vehicle_friction_modifier: 1.1
   },
   concrete: {
@@ -3699,7 +3699,7 @@ module.exports = {
       g: 100,
       b: 100
     },
-    ageing: 0,
+    pollution_absorption_per_second: 0,
     vehicle_friction_modifier: 0.8
   },
   hazard_concrete_left: {
@@ -3819,7 +3819,7 @@ module.exports = {
       g: 0.5,
       b: 0
     },
-    ageing: 0,
+    pollution_absorption_per_second: 0,
     vehicle_friction_modifier: 0.8
   },
   hazard_concrete_right: {
@@ -3914,7 +3914,7 @@ module.exports = {
       g: 0.5,
       b: 0
     },
-    ageing: 0,
+    pollution_absorption_per_second: 0,
     vehicle_friction_modifier: 0.8
   },
   refined_concrete: {
@@ -5212,7 +5212,7 @@ module.exports = {
       g: 100,
       b: 100
     },
-    ageing: 0,
+    pollution_absorption_per_second: 0,
     vehicle_friction_modifier: 0.8
   },
   refined_hazard_concrete_left: {
@@ -5332,7 +5332,7 @@ module.exports = {
       g: 0.5,
       b: 0
     },
-    ageing: 0,
+    pollution_absorption_per_second: 0,
     vehicle_friction_modifier: 0.8
   },
   refined_hazard_concrete_right: {
@@ -5427,7 +5427,7 @@ module.exports = {
       g: 0.5,
       b: 0
     },
-    ageing: 0,
+    pollution_absorption_per_second: 0,
     vehicle_friction_modifier: 0.8
   }
 }

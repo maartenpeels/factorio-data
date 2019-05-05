@@ -14,7 +14,7 @@ module.exports = {
       result: 'stone_furnace'
     },
     max_health: 200,
-    corpse: 'medium_remnants',
+    corpse: 'stone_furnace_remnants',
     mined_sound: {
       filename: 'sound/deconstruct-bricks.ogg'
     },
@@ -63,7 +63,7 @@ module.exports = {
       fuel_category: 'chemical',
       effectivity: 1,
       fuel_inventory_size: 1,
-      emissions: 0.01,
+      emissions_per_minute: 2,
       smoke: [
         {
           name: 'smoke',
@@ -214,7 +214,7 @@ module.exports = {
       result: 'steel_furnace'
     },
     max_health: 300,
-    corpse: 'medium_remnants',
+    corpse: 'medium_small_remnants',
     working_sound: {
       sound: {
         filename: 'sound/furnace.ogg'
@@ -251,7 +251,7 @@ module.exports = {
       type: 'burner',
       fuel_category: 'chemical',
       effectivity: 1,
-      emissions: 0.02,
+      emissions_per_minute: 4,
       fuel_inventory_size: 1,
       smoke: [
         {
@@ -475,7 +475,7 @@ module.exports = {
       result: 'electric_furnace'
     },
     max_health: 350,
-    corpse: 'big_remnants',
+    corpse: 'medium_remnants',
     dying_explosion: 'medium_explosion',
     collision_box: [
       [
@@ -520,7 +520,7 @@ module.exports = {
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input',
-      emissions: 0.005
+      emissions_per_minute: 1
     },
     working_sound: {
       sound: {
@@ -698,7 +698,7 @@ module.exports = {
       result: 'transport_belt'
     },
     max_health: 150,
-    corpse: 'small_remnants',
+    corpse: 'transport_belt_remnants',
     collision_box: [
       [
         -0.4,
@@ -1918,7 +1918,7 @@ module.exports = {
       result: 'fast_transport_belt'
     },
     max_health: 160,
-    corpse: 'small_remnants',
+    corpse: 'fast_transport_belt_remnants',
     collision_box: [
       [
         -0.4,
@@ -3156,7 +3156,7 @@ module.exports = {
       result: 'express_transport_belt'
     },
     max_health: 170,
-    corpse: 'small_remnants',
+    corpse: 'express_transport_belt_remnants',
     collision_box: [
       [
         -0.4,
@@ -4392,7 +4392,7 @@ module.exports = {
       result: 'boiler'
     },
     max_health: 200,
-    corpse: 'medium_remnants',
+    corpse: 'boiler_remnants',
     mode: 'output_to_separate_pipe',
     collision_box: [
       [
@@ -4720,7 +4720,7 @@ module.exports = {
       fuel_category: 'chemical',
       effectivity: 1,
       fuel_inventory_size: 1,
-      emissions: 0.015384615384615385,
+      emissions_per_minute: 30,
       smoke: [
         {
           name: 'smoke',
@@ -5211,7 +5211,7 @@ module.exports = {
       result: 'heat_exchanger'
     },
     max_health: 200,
-    corpse: 'medium_remnants',
+    corpse: 'boiler_remnants',
     mode: 'output_to_separate_pipe',
     collision_box: [
       [
@@ -6588,7 +6588,7 @@ module.exports = {
       result: 'small_electric_pole'
     },
     max_health: 100,
-    corpse: 'small_remnants',
+    corpse: 'small_electric_pole_remnants',
     collision_box: [
       [
         -0.15,
@@ -6824,7 +6824,7 @@ module.exports = {
       result: 'big_electric_pole'
     },
     max_health: 150,
-    corpse: 'medium_remnants',
+    corpse: 'big_electric_pole_remnants',
     collision_box: [
       [
         -0.65,
@@ -7058,7 +7058,7 @@ module.exports = {
       result: 'medium_electric_pole'
     },
     max_health: 100,
-    corpse: 'small_remnants',
+    corpse: 'medium_electric_pole_remnants',
     track_coverage_during_build_by_moving: true,
     fast_replaceable_group: 'electric_pole',
     collision_box: [
@@ -7293,7 +7293,7 @@ module.exports = {
       result: 'substation'
     },
     max_health: 200,
-    corpse: 'medium_remnants',
+    corpse: 'substation_remnants',
     track_coverage_during_build_by_moving: true,
     collision_box: [
       [
@@ -7535,8 +7535,8 @@ module.exports = {
       result: 'steam_engine'
     },
     max_health: 400,
-    corpse: 'big_remnants',
     dying_explosion: 'medium_explosion',
+    corpse: 'steam_engine_remnants',
     alert_icon_shift: [
       0.09375,
       -1.0625
@@ -7878,7 +7878,7 @@ module.exports = {
       result: 'steam_turbine'
     },
     max_health: 300,
-    corpse: 'big_remnants',
+    corpse: 'steam_turbine_remnants',
     dying_explosion: 'medium_explosion',
     alert_icon_shift: [
       0,
@@ -9005,7 +9005,7 @@ module.exports = {
       result: 'inserter'
     },
     max_health: 150,
-    corpse: 'small_remnants',
+    corpse: 'inserter_remnants',
     collision_box: [
       [
         -0.15,
@@ -9775,7 +9775,7 @@ module.exports = {
       result: 'burner_inserter'
     },
     max_health: 100,
-    corpse: 'small_remnants',
+    corpse: 'burner_inserter_remnants',
     collision_box: [
       [
         -0.15,
@@ -10556,7 +10556,7 @@ module.exports = {
       result: 'long_handed_inserter'
     },
     max_health: 160,
-    corpse: 'small_remnants',
+    corpse: 'long_handed_inserter_remnants',
     collision_box: [
       [
         -0.15,
@@ -11326,7 +11326,7 @@ module.exports = {
       result: 'fast_inserter'
     },
     max_health: 150,
-    corpse: 'small_remnants',
+    corpse: 'fast_inserter_remnants',
     collision_box: [
       [
         -0.15,
@@ -12098,7 +12098,7 @@ module.exports = {
       result: 'stack_inserter'
     },
     max_health: 160,
-    corpse: 'small_remnants',
+    corpse: 'stack_inserter_remnants',
     collision_box: [
       [
         -0.15,
@@ -12870,7 +12870,7 @@ module.exports = {
       result: 'stack_filter_inserter'
     },
     max_health: 160,
-    corpse: 'small_remnants',
+    corpse: 'stack_filter_inserter_remnants',
     collision_box: [
       [
         -0.15,
@@ -13639,7 +13639,7 @@ module.exports = {
       result: 'filter_inserter'
     },
     max_health: 150,
-    corpse: 'small_remnants',
+    corpse: 'filter_inserter_remnants',
     working_sound: {
       match_progress_to_activity: true,
       sound: [
@@ -14409,7 +14409,7 @@ module.exports = {
       result: 'pipe'
     },
     max_health: 100,
-    corpse: 'small_remnants',
+    corpse: 'pipe_remnants',
     fast_replaceable_group: 'pipe',
     collision_box: [
       [
@@ -14823,7 +14823,7 @@ module.exports = {
       result: 'radar'
     },
     max_health: 250,
-    corpse: 'big_remnants',
+    corpse: 'radar_remnants',
     collision_box: [
       [
         -1.2,
@@ -14972,7 +14972,7 @@ module.exports = {
       result: 'small_lamp'
     },
     max_health: 100,
-    corpse: 'small_remnants',
+    corpse: 'lamp_remnants',
     collision_box: [
       [
         -0.15,
@@ -15326,7 +15326,7 @@ module.exports = {
       result: 'pipe_to_ground'
     },
     max_health: 150,
-    corpse: 'small_remnants',
+    corpse: 'pipe_remnants',
     fast_replaceable_group: 'pipe',
     collision_box: [
       [
@@ -15496,21 +15496,6 @@ module.exports = {
         }
       ]
     },
-    underground_sprite: {
-      filename: 'graphics/arrows/underground-lines.png',
-      priority: 'extra_high_no_scale',
-      width: 64,
-      height: 64,
-      scale: 0.5
-    },
-    underground_remove_pipes_sprite: {
-      filename: 'graphics/arrows/underground-lines-remove.png',
-      priority: 'high',
-      width: 64,
-      height: 64,
-      x: 0,
-      scale: 0.5
-    },
     pictures: {
       north: {
         filename: 'graphics/entity/pipe-to-ground/pipe-to-ground-up.png',
@@ -15592,8 +15577,8 @@ module.exports = {
       result: 'assembling_machine_1'
     },
     max_health: 300,
-    corpse: 'big_remnants',
     dying_explosion: 'medium_explosion',
+    corpse: 'medium_remnants',
     collision_box: [
       [
         -1.2,
@@ -15687,7 +15672,7 @@ module.exports = {
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input',
-      emissions: 0.04
+      emissions_per_minute: 4
     },
     energy_usage: '75kW',
     open_sound: {
@@ -15736,8 +15721,8 @@ module.exports = {
       result: 'assembling_machine_2'
     },
     max_health: 350,
-    corpse: 'big_remnants',
     dying_explosion: 'medium_explosion',
+    corpse: 'medium_remnants',
     alert_icon_shift: [
       -0.09375,
       -0.375
@@ -16323,7 +16308,7 @@ module.exports = {
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input',
-      emissions: 0.015
+      emissions_per_minute: 3
     },
     energy_usage: '150kW',
     module_specification: {
@@ -16362,8 +16347,8 @@ module.exports = {
       result: 'assembling_machine_3'
     },
     max_health: 400,
-    corpse: 'big_remnants',
     dying_explosion: 'medium_explosion',
+    corpse: 'medium_remnants',
     alert_icon_shift: [
       -0.09375,
       -0.375
@@ -16958,7 +16943,7 @@ module.exports = {
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input',
-      emissions: 0.005
+      emissions_per_minute: 2
     },
     energy_usage: '375kW',
     module_specification: {
@@ -16996,8 +16981,8 @@ module.exports = {
       result: 'oil_refinery'
     },
     max_health: 350,
-    corpse: 'big_remnants',
     dying_explosion: 'medium_explosion',
+    corpse: 'oil_refinery_remnants',
     collision_box: [
       [
         -2.4,
@@ -17046,7 +17031,7 @@ module.exports = {
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input',
-      emissions: 0.008571428571428572
+      emissions_per_minute: 6
     },
     energy_usage: '420kW',
     animation: {
@@ -18090,7 +18075,7 @@ module.exports = {
       result: 'chemical_plant'
     },
     max_health: 300,
-    corpse: 'big_remnants',
+    corpse: 'medium_remnants',
     dying_explosion: 'medium_explosion',
     collision_box: [
       [
@@ -18539,7 +18524,7 @@ module.exports = {
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input',
-      emissions: 0.008571428571428572
+      emissions_per_minute: 4
     },
     energy_usage: '210kW',
     crafting_categories: [
@@ -19146,7 +19131,7 @@ module.exports = {
       result: 'centrifuge'
     },
     max_health: 350,
-    corpse: 'big_remnants',
+    corpse: 'centrifuge_remnants',
     dying_explosion: 'medium_explosion',
     collision_box: [
       [
@@ -19474,7 +19459,7 @@ module.exports = {
     energy_source: {
       type: 'electric',
       usage_priority: 'secondary_input',
-      emissions: 0.016
+      emissions_per_minute: 4
     },
     energy_usage: '350kW',
     module_specification: {
@@ -20390,7 +20375,7 @@ module.exports = {
       result: 'lab'
     },
     max_health: 150,
-    corpse: 'big_remnants',
+    corpse: 'lab_remnants',
     dying_explosion: 'medium_explosion',
     collision_box: [
       [
@@ -20615,7 +20600,17 @@ module.exports = {
   electric_energy_interface: {
     type: 'electric_energy_interface',
     name: 'electric_energy_interface',
-    icon: 'graphics/icons/accumulator.png',
+    icons: [
+      {
+        icon: 'graphics/icons/accumulator.png',
+        tint: {
+          r: 1,
+          g: 0.8,
+          b: 1,
+          a: 1
+        }
+      }
+    ],
     icon_size: 32,
     flags: [
       'placeable_neutral',
@@ -20673,7 +20668,7 @@ module.exports = {
       layers: [
         {
           filename: 'graphics/entity/accumulator/accumulator.png',
-          priority: 'extra_high',
+          priority: 'high',
           width: 66,
           height: 94,
           shift: [
@@ -20689,7 +20684,7 @@ module.exports = {
           animation_speed: 0.5,
           hr_version: {
             filename: 'graphics/entity/accumulator/hr-accumulator.png',
-            priority: 'extra_high',
+            priority: 'high',
             width: 130,
             height: 189,
             shift: [
@@ -20708,7 +20703,7 @@ module.exports = {
         },
         {
           filename: 'graphics/entity/accumulator/accumulator-shadow.png',
-          priority: 'extra_high',
+          priority: 'high',
           width: 120,
           height: 54,
           shift: [
@@ -20718,7 +20713,7 @@ module.exports = {
           draw_as_shadow: true,
           hr_version: {
             filename: 'graphics/entity/accumulator/hr-accumulator-shadow.png',
-            priority: 'extra_high',
+            priority: 'high',
             width: 234,
             height: 106,
             shift: [
@@ -20765,7 +20760,7 @@ module.exports = {
     resource_categories: [
       'basic_solid'
     ],
-    corpse: 'big_remnants',
+    corpse: 'medium_remnants',
     collision_box: [
       [
         -1.4,
@@ -22034,7 +22029,7 @@ module.exports = {
     mining_speed: 0.5,
     energy_source: {
       type: 'electric',
-      emissions: 0.09999999999999999,
+      emissions_per_minute: 10,
       usage_priority: 'secondary_input'
     },
     energy_usage: '90kW',
@@ -22659,7 +22654,7 @@ module.exports = {
       result: 'burner_mining_drill'
     },
     max_health: 150,
-    corpse: 'medium_remnants',
+    corpse: 'burner_mining_drill_remnants',
     collision_box: [
       [
         -0.7,
@@ -22693,7 +22688,7 @@ module.exports = {
       fuel_category: 'chemical',
       effectivity: 1,
       fuel_inventory_size: 1,
-      emissions: 0.03333333333333333,
+      emissions_per_minute: 12,
       smoke: [
         {
           name: 'smoke',
@@ -23577,8 +23572,8 @@ module.exports = {
       'basic_fluid'
     ],
     max_health: 200,
-    corpse: 'big_remnants',
     dying_explosion: 'medium_explosion',
+    corpse: 'pumpjack_remnants',
     collision_box: [
       [
         -1.2,
@@ -23611,7 +23606,7 @@ module.exports = {
     ],
     energy_source: {
       type: 'electric',
-      emissions: 0.09999999999999999,
+      emissions_per_minute: 10,
       usage_priority: 'secondary_input'
     },
     output_fluid_box: {
@@ -24506,7 +24501,7 @@ module.exports = {
       result: 'gun_turret'
     },
     max_health: 400,
-    corpse: 'medium_remnants',
+    corpse: 'gun_turret_remnants',
     collision_box: [
       [
         -0.7,
@@ -25379,7 +25374,7 @@ module.exports = {
       result: 'underground_belt'
     },
     max_health: 150,
-    corpse: 'small_remnants',
+    corpse: 'underground_belt_remnants',
     max_distance: 5,
     underground_sprite: {
       filename: 'graphics/arrows/underground-lines.png',
@@ -25584,7 +25579,7 @@ module.exports = {
       result: 'fast_underground_belt'
     },
     max_health: 160,
-    corpse: 'small_remnants',
+    corpse: 'fast_underground_belt_remnants',
     max_distance: 7,
     underground_sprite: {
       filename: 'graphics/arrows/underground-lines.png',
@@ -25789,7 +25784,7 @@ module.exports = {
       result: 'express_underground_belt'
     },
     max_health: 170,
-    corpse: 'small_remnants',
+    corpse: 'express_underground_belt_remnants',
     max_distance: 9,
     underground_sprite: {
       filename: 'graphics/arrows/underground-lines.png',
@@ -26323,7 +26318,7 @@ module.exports = {
       result: 'splitter'
     },
     max_health: 170,
-    corpse: 'medium_remnants',
+    corpse: 'splitter_remnants',
     collision_box: [
       [
         -0.9,
@@ -26518,7 +26513,7 @@ module.exports = {
       result: 'fast_splitter'
     },
     max_health: 180,
-    corpse: 'medium_remnants',
+    corpse: 'fast_splitter_remnants',
     collision_box: [
       [
         -0.9,
@@ -26713,7 +26708,7 @@ module.exports = {
       result: 'express_splitter'
     },
     max_health: 190,
-    corpse: 'medium_remnants',
+    corpse: 'express_splitter_remnants',
     collision_box: [
       [
         -0.9,
@@ -26907,7 +26902,7 @@ module.exports = {
       result: 'solar_panel'
     },
     max_health: 200,
-    corpse: 'big_remnants',
+    corpse: 'solar_panel_remnants',
     collision_box: [
       [
         -1.4,
@@ -35946,7 +35941,7 @@ module.exports = {
       result: 'train_stop'
     },
     max_health: 250,
-    corpse: 'medium_remnants',
+    corpse: 'train_stop_remnants',
     collision_box: [
       [
         -0.5,
@@ -37612,7 +37607,7 @@ module.exports = {
       result: 'rail_signal'
     },
     max_health: 100,
-    corpse: 'small_remnants',
+    corpse: 'rail_signal_remnants',
     collision_box: [
       [
         -0.2,
@@ -38877,7 +38872,7 @@ module.exports = {
       result: 'rail_chain_signal'
     },
     max_health: 100,
-    corpse: 'small_remnants',
+    corpse: 'rail_chain_signal_remnants',
     collision_box: [
       [
         -0.2,
@@ -41447,7 +41442,7 @@ module.exports = {
       module_slots: 4,
       module_info_icon_shift: [
         0,
-        4.3
+        3.3
       ]
     },
     fixed_recipe: 'rocket_part',
@@ -41463,8 +41458,8 @@ module.exports = {
       result: 'rocket_silo'
     },
     max_health: 5000,
-    corpse: 'big_remnants',
     dying_explosion: 'medium_explosion',
+    corpse: 'rocket_silo_generic_remnants',
     collision_box: [
       [
         -4.4,
@@ -42136,7 +42131,7 @@ module.exports = {
       result: 'roboport'
     },
     max_health: 500,
-    corpse: 'big_remnants',
+    corpse: 'roboport_remnants',
     collision_box: [
       [
         -1.7,
@@ -43398,7 +43393,7 @@ module.exports = {
     },
     max_health: 180,
     fast_replaceable_group: 'pipe',
-    corpse: 'small_remnants',
+    corpse: '1x2_remnants',
     collision_box: [
       [
         -0.29,
@@ -43571,8 +43566,7 @@ module.exports = {
     },
     energy_source: {
       type: 'electric',
-      usage_priority: 'secondary_input',
-      emissions: 0.004
+      usage_priority: 'secondary_input'
     },
     energy_usage: '30kW',
     pumping_speed: 200,
@@ -44404,7 +44398,7 @@ module.exports = {
       result: 'accumulator'
     },
     max_health: 150,
-    corpse: 'medium_remnants',
+    corpse: 'accumulator_remnants',
     collision_box: [
       [
         -0.9,
@@ -44446,7 +44440,7 @@ module.exports = {
       layers: [
         {
           filename: 'graphics/entity/accumulator/accumulator.png',
-          priority: 'extra_high',
+          priority: 'high',
           width: 66,
           height: 94,
           shift: [
@@ -44456,7 +44450,7 @@ module.exports = {
           animation_speed: 0.5,
           hr_version: {
             filename: 'graphics/entity/accumulator/hr-accumulator.png',
-            priority: 'extra_high',
+            priority: 'high',
             width: 130,
             height: 189,
             shift: [
@@ -44469,7 +44463,7 @@ module.exports = {
         },
         {
           filename: 'graphics/entity/accumulator/accumulator-shadow.png',
-          priority: 'extra_high',
+          priority: 'high',
           width: 120,
           height: 54,
           shift: [
@@ -44479,7 +44473,7 @@ module.exports = {
           draw_as_shadow: true,
           hr_version: {
             filename: 'graphics/entity/accumulator/hr-accumulator-shadow.png',
-            priority: 'extra_high',
+            priority: 'high',
             width: 234,
             height: 106,
             shift: [
@@ -44498,7 +44492,7 @@ module.exports = {
           layers: [
             {
               filename: 'graphics/entity/accumulator/accumulator.png',
-              priority: 'extra_high',
+              priority: 'high',
               width: 66,
               height: 94,
               repeat_count: 24,
@@ -44515,7 +44509,7 @@ module.exports = {
               animation_speed: 0.5,
               hr_version: {
                 filename: 'graphics/entity/accumulator/hr-accumulator.png',
-                priority: 'extra_high',
+                priority: 'high',
                 width: 130,
                 height: 189,
                 repeat_count: 24,
@@ -44535,7 +44529,7 @@ module.exports = {
             },
             {
               filename: 'graphics/entity/accumulator/accumulator-shadow.png',
-              priority: 'extra_high',
+              priority: 'high',
               width: 120,
               height: 54,
               repeat_count: 24,
@@ -44546,7 +44540,7 @@ module.exports = {
               draw_as_shadow: true,
               hr_version: {
                 filename: 'graphics/entity/accumulator/hr-accumulator-shadow.png',
-                priority: 'extra_high',
+                priority: 'high',
                 width: 234,
                 height: 106,
                 repeat_count: 24,
@@ -44562,6 +44556,7 @@ module.exports = {
         },
         {
           filename: 'graphics/entity/accumulator/accumulator-charge.png',
+          priority: 'high',
           width: 90,
           height: 100,
           line_length: 6,
@@ -44573,6 +44568,7 @@ module.exports = {
           ],
           hr_version: {
             filename: 'graphics/entity/accumulator/hr-accumulator-charge.png',
+            priority: 'high',
             width: 178,
             height: 206,
             line_length: 6,
@@ -44603,7 +44599,7 @@ module.exports = {
           layers: [
             {
               filename: 'graphics/entity/accumulator/accumulator.png',
-              priority: 'extra_high',
+              priority: 'high',
               width: 66,
               height: 94,
               repeat_count: 24,
@@ -44620,7 +44616,7 @@ module.exports = {
               animation_speed: 0.5,
               hr_version: {
                 filename: 'graphics/entity/accumulator/hr-accumulator.png',
-                priority: 'extra_high',
+                priority: 'high',
                 width: 130,
                 height: 189,
                 repeat_count: 24,
@@ -44640,7 +44636,7 @@ module.exports = {
             },
             {
               filename: 'graphics/entity/accumulator/accumulator-shadow.png',
-              priority: 'extra_high',
+              priority: 'high',
               width: 120,
               height: 54,
               repeat_count: 24,
@@ -44651,7 +44647,7 @@ module.exports = {
               draw_as_shadow: true,
               hr_version: {
                 filename: 'graphics/entity/accumulator/hr-accumulator-shadow.png',
-                priority: 'extra_high',
+                priority: 'high',
                 width: 234,
                 height: 106,
                 repeat_count: 24,
@@ -44667,6 +44663,7 @@ module.exports = {
         },
         {
           filename: 'graphics/entity/accumulator/accumulator-discharge.png',
+          priority: 'high',
           width: 88,
           height: 104,
           line_length: 6,
@@ -44678,6 +44675,7 @@ module.exports = {
           ],
           hr_version: {
             filename: 'graphics/entity/accumulator/hr-accumulator-discharge.png',
+            priority: 'high',
             width: 170,
             height: 210,
             line_length: 6,
@@ -44881,7 +44879,7 @@ module.exports = {
       result: 'beacon'
     },
     max_health: 200,
-    corpse: 'big_remnants',
+    corpse: 'medium_remnants',
     dying_explosion: 'medium_explosion',
     collision_box: [
       [
@@ -44993,7 +44991,7 @@ module.exports = {
       result: 'arithmetic_combinator'
     },
     max_health: 150,
-    corpse: 'small_remnants',
+    corpse: '1x2_remnants',
     collision_box: [
       [
         -0.35,
@@ -46615,7 +46613,7 @@ module.exports = {
       result: 'decider_combinator'
     },
     max_health: 150,
-    corpse: 'small_remnants',
+    corpse: '1x2_remnants',
     collision_box: [
       [
         -0.35,
@@ -48294,7 +48292,7 @@ module.exports = {
       result: 'power_switch'
     },
     max_health: 200,
-    corpse: 'medium_remnants',
+    corpse: 'medium_small_remnants',
     collision_box: [
       [
         -0.7,
@@ -51008,7 +51006,7 @@ module.exports = {
       result: 'nuclear_reactor'
     },
     max_health: 500,
-    corpse: 'big_remnants',
+    corpse: 'nuclear_reactor_remnants',
     consumption: '40MW',
     neighbour_bonus: 1,
     energy_source: {
@@ -51316,7 +51314,7 @@ module.exports = {
       result: 'heat_pipe'
     },
     max_health: 200,
-    corpse: 'small_remnants',
+    corpse: 'heat_pipe_remnants',
     collision_box: [
       [
         -0.3,
@@ -52645,128 +52643,6 @@ module.exports = {
     },
     ui_name: 'Heat pipe'
   },
-  simple_entity_with_force: {
-    type: 'simple_entity_with_force',
-    name: 'simple_entity_with_force',
-    render_layer: 'object',
-    icon: 'graphics/icons/steel-chest.png',
-    icon_size: 32,
-    flags: [
-      'placeable_neutral',
-      'player_creation'
-    ],
-    order: 's_e_w_f',
-    minable: {
-      mining_time: 0.1,
-      result: 'simple_entity_with_force'
-    },
-    max_health: 100,
-    corpse: 'small_remnants',
-    collision_box: [
-      [
-        -0.35,
-        -0.35
-      ],
-      [
-        0.35,
-        0.35
-      ]
-    ],
-    selection_box: [
-      [
-        -0.5,
-        -0.5
-      ],
-      [
-        0.5,
-        0.5
-      ]
-    ],
-    picture: {
-      filename: 'graphics/entity/steel-chest/steel-chest.png',
-      priority: 'extra_high',
-      width: 32,
-      height: 40,
-      shift: [
-        -0.34375,
-        0.140625
-      ]
-    },
-    size: {
-      width: 1,
-      height: 1
-    },
-    ui_name: 'Simple entity with force'
-  },
-  simple_entity_with_owner: {
-    type: 'simple_entity_with_owner',
-    name: 'simple_entity_with_owner',
-    render_layer: 'object',
-    icon: 'graphics/icons/wooden-chest.png',
-    icon_size: 32,
-    flags: [
-      'placeable_neutral',
-      'player_creation'
-    ],
-    order: 's_e_w_o',
-    minable: {
-      mining_time: 0.1,
-      result: 'simple_entity_with_owner'
-    },
-    max_health: 100,
-    corpse: 'small_remnants',
-    collision_box: [
-      [
-        -0.35,
-        -0.35
-      ],
-      [
-        0.35,
-        0.35
-      ]
-    ],
-    selection_box: [
-      [
-        -0.5,
-        -0.5
-      ],
-      [
-        0.5,
-        0.5
-      ]
-    ],
-    picture: {
-      layers: [
-        {
-          filename: 'graphics/entity/iron-chest/iron-chest.png',
-          priority: 'extra_high',
-          width: 34,
-          height: 38,
-          shift: [
-            0,
-            -0.015625
-          ]
-        },
-        {
-          filename: 'graphics/entity/iron-chest/iron-chest.png',
-          priority: 'extra_high',
-          width: 10,
-          height: 33,
-          x: 18,
-          shift: [
-            0,
-            -0.015625
-          ],
-          apply_runtime_tint: true
-        }
-      ]
-    },
-    size: {
-      width: 1,
-      height: 1
-    },
-    ui_name: 'Simple entity with owner'
-  },
   infinity_chest: {
     type: 'infinity_container',
     name: 'infinity_chest',
@@ -52961,9 +52837,52 @@ module.exports = {
     gui_mode: 'admins',
     erase_contents_when_mined: true,
     picture: {
-      filename: 'graphics/entity/infinity-chest/infinity-chest.png',
-      width: 34,
-      height: 42
+      layers: [
+        {
+          filename: 'graphics/entity/infinity-chest/infinity-chest.png',
+          priority: 'extra_high',
+          width: 34,
+          height: 42,
+          shift: [
+            0,
+            -0.09375
+          ],
+          hr_version: {
+            filename: 'graphics/entity/infinity-chest/hr-infinity-chest.png',
+            priority: 'extra_high',
+            width: 68,
+            height: 84,
+            shift: [
+              0,
+              -0.09375
+            ],
+            scale: 0.5
+          }
+        },
+        {
+          filename: 'graphics/entity/infinity-chest/infinity-chest-shadow.png',
+          priority: 'extra_high',
+          width: 58,
+          height: 24,
+          shift: [
+            0.375,
+            0.1875
+          ],
+          draw_as_shadow: true,
+          hr_version: {
+            filename: 'graphics/entity/infinity-chest/hr-infinity-chest-shadow.png',
+            priority: 'extra_high',
+            width: 116,
+            height: 48,
+            shift: [
+              0.375,
+              0.1875
+            ],
+            draw_as_shadow: true,
+            scale: 0.5
+          }
+        }
+      ]
     },
     size: {
       width: 1,
@@ -52985,7 +52904,7 @@ module.exports = {
       result: 'infinity_pipe'
     },
     max_health: 100,
-    corpse: 'small_remnants',
+    corpse: 'pipe_remnants',
     fast_replaceable_group: 'pipe',
     collision_box: [
       [
@@ -53722,8 +53641,8 @@ module.exports = {
       filename: 'sound/deconstruct-medium.ogg'
     },
     max_health: 2000,
-    corpse: 'medium_remnants',
     dying_explosion: 'medium_explosion',
+    corpse: 'artillery_turret_remnants',
     collision_box: [
       [
         -1.45,
@@ -54119,7 +54038,6 @@ module.exports = {
       result: 'laser_turret'
     },
     max_health: 1000,
-    corpse: 'medium_remnants',
     collision_box: [
       [
         -0.7,
@@ -54143,6 +54061,7 @@ module.exports = {
     rotation_speed: 0.01,
     preparing_speed: 0.05,
     dying_explosion: 'medium_explosion',
+    corpse: 'laser_turret_remnants',
     folding_speed: 0.05,
     energy_source: {
       type: 'electric',
@@ -54665,7 +54584,7 @@ module.exports = {
       result: 'flamethrower_turret'
     },
     max_health: 1400,
-    corpse: 'medium_remnants',
+    corpse: 'flamethrower_turret_remnants',
     collision_box: [
       [
         -0.7,
@@ -54694,6 +54613,7 @@ module.exports = {
     dying_explosion: 'medium_explosion',
     turret_base_has_direction: true,
     fluid_box: {
+      production_type: 'input_output',
       secondary_draw_order: 0,
       render_layer: 'lower_object',
       pipe_covers: {
@@ -57972,6 +57892,15 @@ module.exports = {
         },
         x: 10
       }
+    },
+    out_of_ammo_alert_icon: {
+      filename: 'graphics/fuel-icon-red.png',
+      priority: 'extra_high_no_scale',
+      width: 64,
+      height: 64,
+      flags: [
+        'icon'
+      ]
     },
     indicator_light: {
       intensity: 0.8,
